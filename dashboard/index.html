@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI泡沫崩盘信号监测仪表盘 · Perplexity Computer</title>
+<meta name="description" content="实时跟踪AI产业崩盘前兆信号：CAPE席勒PE、巴菲特指标、Oracle CDS、英伟达增速、私募估值、循环融资比" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:        #0E1411;
+    --surface:   #141C18;
+    --surface-2: #1B2520;
+    --border:    #283631;
+    --text:      #E7E5DD;
+    --muted:     #93958A;
+    --faint:     #5A5C53;
+    --primary:   #4F98A3;
+    --primary-h: #6BB6C1;
+    --accent:    #FFC553;
+    --danger:    #D163A7;
+    --warning:   #DA7101;
+    --success:   #6DAA45;
+    --teal:      #20808D;
+    --terra:     #A84B2F;
+  }
+  html, body { background: var(--bg); color: var(--text); font-family: 'Noto Sans SC', system-ui, sans-serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+  .card-hover { transition: border-color .2s, transform .2s; }
+  .card-hover:hover { border-color: var(--primary); }
+  .pulse-danger { animation: pulse-d 2.4s infinite; }
+  .pulse-warning { animation: pulse-w 2.4s infinite; }
+  @keyframes pulse-d { 0%,100% { box-shadow: 0 0 0 0 rgba(209, 99, 167, .4); } 50% { box-shadow: 0 0 0 6px rgba(209, 99, 167, 0); } }
+  @keyframes pulse-w { 0%,100% { box-shadow: 0 0 0 0 rgba(218, 113, 1, .4); } 50% { box-shadow: 0 0 0 6px rgba(218, 113, 1, 0); } }
+  .h-divider { height: 1px; background: var(--border); }
+  .marker-line { height: 2px; }
+  .gauge-track { stroke: var(--border); }
+  .gauge-fill { stroke-linecap: round; transition: stroke-dashoffset .8s ease-out; }
+  details summary { list-style: none; cursor: pointer; }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] .chevron { transform: rotate(90deg); }
+  .chevron { transition: transform .2s; }
+  .signal-bar { height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; position: relative; }
+  .signal-fill { height: 100%; transition: width .8s ease-out; }
+  .badge-d { background: rgba(209,99,167,.12); color: #E296C5; border: 1px solid rgba(209,99,167,.35); }
+  .badge-w { background: rgba(218,113,1,.12); color: #F0A36A; border: 1px solid rgba(218,113,1,.35); }
+  .badge-s { background: rgba(109,170,69,.12); color: #95C77A; border: 1px solid rgba(109,170,69,.35); }
+  .badge-n { background: rgba(79,152,163,.12); color: #6BB6C1; border: 1px solid rgba(79,152,163,.35); }
+  a { color: var(--primary-h); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ::selection { background: rgba(79,152,163,.4); }
+  /* 限制图表高度——避免 Chart.js 在 responsive 下被父容器拉高 */
+  .chart-box { position: relative; width: 100%; }
+  .chart-box-sm { height: 64px; }
+  .chart-box-md { height: 220px; }
+  .chart-box-lg { height: 260px; }
+  .chart-box canvas { display: block; width: 100% !important; height: 100% !important; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="border-b" style="border-color: var(--border);">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between flex-wrap gap-4">
+    <div class="flex items-center gap-4">
+      <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="var(--primary)" stroke-width="1.5" fill="none"/>
+        <path d="M8 26 Q14 8, 20 20 T 32 14" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="32" cy="14" r="2.5" fill="var(--danger)"/>
+      </svg>
+      <div>
+        <h1 class="text-xl font-semibold tracking-tight">AI泡沫崩盘信号监测仪表盘</h1>
+        <p class="text-xs mono" style="color: var(--muted);">Bubble Crash Signal Monitor · 2026 H2</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-6 text-xs mono" style="color: var(--muted);">
+      <div>数据快照 <span style="color: var(--text);">2026-06-13 收盘</span></div>
+      <div>版本 <span style="color: var(--text);">V1.1</span></div>
+      <div>下次更新 <span style="color: var(--text);">SPCX 锁定期外二级表现</span></div>
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full pulse-warning" style="background: var(--danger);"></span>
+        <span>当前状态：<span style="color: var(--danger);">严重 · 告警</span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Top summary -->
+<section class="max-w-7xl mx-auto px-6 py-8">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+    <!-- Crash Probability gauge -->
+    <div class="card p-6">
+      <div class="flex items-baseline justify-between mb-3">
+        <h2 class="text-sm uppercase tracking-wider" style="color: var(--muted);">综合崩盘指数</h2>
+        <span class="badge-w text-[10px] px-2 py-0.5 rounded mono">SEVERE</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <svg width="140" height="140" viewBox="0 0 140 140">
+          <circle cx="70" cy="70" r="58" class="gauge-track" stroke-width="10" fill="none"/>
+          <circle cx="70" cy="70" r="58" class="gauge-fill"
+                  stroke="var(--danger)" stroke-width="10" fill="none"
+                  stroke-dasharray="364.4" stroke-dashoffset="98.39"
+                  transform="rotate(-90 70 70)"/>
+          <text x="70" y="68" text-anchor="middle" class="mono" fill="var(--text)" font-size="32" font-weight="700">73</text>
+          <text x="70" y="88" text-anchor="middle" fill="var(--muted)" font-size="11">/ 100</text>
+        </svg>
+        <div class="flex-1">
+          <p class="text-sm leading-relaxed" style="color: var(--text);">
+            指数由 <span class="mono">7 项核心信号</span> 加权得出（V1.1 含 OBBBA 立法连续性灯）。
+            当前 <span class="mono" style="color: var(--danger);">73</span> 分（6/13 收盘核校；V0.9=70、V1.0=72、V1.1=73）<span style="color: var(--danger);">距警戒线 75 仅 2 档</span>。
+            V1.1 升分驱动：<span style="color: var(--danger);">SpaceX 6/12 上市首日 +25%、估值 $2 万亿+、募 $750 亿</span>（史上最大 IPO，高盛同时 Sell PT $115，二级市场首次给 AI 基建定价锚）；<span style="color: var(--danger);">WSJ 独家 OpenAI 考虑大幅下调 token 价格抢 Anthropic 客户</span>（双方未盈利就价格战）；Morgan Stanley 预测 2026 全球 AI 债务发行 <span style="color: var(--danger);">$5700 亿</span>（vs 2025 翻倍）；42 州 AG 6/13 联合调查 OpenAI；收入确认口径分歧（gross vs net）；三家 IPO 合计募资 <span style="color: var(--danger);">$2000 亿 vs $2670 亿 5 年总盘</span>。
+            历史增量（V1.0）：OpenAI 6/8 递 S-1 目标 $1T + Apollo/Blackstone 给 Anthropic $350 亿私募信贷 + Amazon 拿到 $175 亿银团贷 + UBS 上调 CapEx 至 $8200 亿。
+          </p>
+          <div class="mt-3 text-xs mono space-y-1" style="color: var(--muted);">
+            <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm" style="background: var(--success);"></span><span>0-30 绿色 · 正常</span></div>
+            <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm" style="background: var(--accent);"></span><span>30-55 黄色 · 关注</span></div>
+            <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm" style="background: var(--warning);"></span><span>55-80 橙色 · 警惕</span></div>
+            <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm" style="background: var(--danger);"></span><span>80-100 红色 · 触发</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trigger signals -->
+    <div class="card p-6 lg:col-span-2">
+      <div class="flex items-baseline justify-between mb-4">
+        <h2 class="text-sm uppercase tracking-wider" style="color: var(--muted);">三大核心触发信号</h2>
+        <span class="text-xs mono" style="color: var(--muted);">任意 <span style="color: var(--danger);">2/3</span> 触发 = 强烈做空信号</span>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Oracle CDS -->
+        <div>
+          <div class="flex items-baseline justify-between mb-1.5">
+            <div class="flex items-center gap-2">
+              <span class="badge-d text-[10px] px-2 py-0.5 rounded mono">CONFIRMED</span>
+              <span class="text-sm">①  Oracle Q4 FY26 财报已发 + 循环融资完整曝光</span>
+            </div>
+            <span class="mono text-sm"><span style="color: var(--danger);">RPO $638B / FCF -$237亿</span></span>
+          </div>
+          <div class="signal-bar"><div class="signal-fill" style="width: 88%; background: var(--danger);"></div></div>
+          <p class="text-xs mt-1.5" style="color: var(--muted);">Oracle Q4 FY26（6/10 发布）：RPO 暴涨至 <span style="color: var(--danger);">$6380 亿</span>（季度 +359%）、FCF <span style="color: var(--danger);">-$237 亿</span>（季度首次大幅转负）、回购 <span style="color: var(--danger);">下降 84%</span>。Oracle 5Y CDS 维持 >160bp 高位；<span style="color: var(--danger);">Q4 计划新发 $400 亿债</span>。Anthropic-SpaceX $400 亿数据中心合同首现反向循环融资；七大科技 CDS 净名义 $125 亿历史新高，Oracle 单家占 52%。已签未交付订单中 OpenAI 占 $3000 亿——客户集中度风险登顶。</p>
+        </div>
+
+        <!-- Private valuation -->
+        <div>
+          <div class="flex items-baseline justify-between mb-1.5">
+            <div class="flex items-center gap-2">
+              <span class="badge-w text-[10px] px-2 py-0.5 rounded mono">WATCH</span>
+              <span class="text-sm">②  OpenAI / Anthropic 下一轮融资首次持平或下修</span>
+            </div>
+            <span class="mono text-sm"><span style="color: var(--danger);">极致加速 · 反向高风险</span></span>
+          </div>
+          <div class="signal-bar"><div class="signal-fill" style="width: 32%; background: var(--warning);"></div></div>
+          <p class="text-xs mt-1.5" style="color: var(--muted);">OpenAI 6/8 机密递交 S-1，目标 IPO 估值 <span style="color: var(--danger);">$1 万亿</span>（vs 3 月私募 $852B，9 月挂牌目标，先于 SPCX 价格战测试）；Anthropic 5/28 H 轮 $9650 亿、6/1 递交 S-1，<span style="color: var(--danger);">5 月 ARR 已达 $47B → 6 月底冲 $50B</span>，企业采用率 34.4% 首次超 OpenAI 32.3%；<span style="color: var(--danger);">6/10 Apollo+Blackstone 给 Anthropic $350 亿私募信贷包</span>（史上最大）+ Amazon $175 亿银团贷款（首次为 AI 举债）；<span style="color: var(--danger);">三家 IPO 合计目标 $2000 亿 vs 过去 5 年全美 IPO 总募资 $2670 亿</span>——流动性物理上限被首次量化。</p>
+        </div>
+
+        <!-- NVDA growth -->
+        <div>
+          <div class="flex items-baseline justify-between mb-1.5">
+            <div class="flex items-center gap-2">
+              <span class="badge-s text-[10px] px-2 py-0.5 rounded mono">SAFE</span>
+              <span class="text-sm">③  英伟达数据中心收入增速跌至 +25% 以下</span>
+            </div>
+            <span class="mono text-sm"><span style="color: var(--success);">+92%</span> / +25%</span>
+          </div>
+          <div class="signal-bar"><div class="signal-fill" style="width: 10%; background: var(--success);"></div></div>
+          <p class="text-xs mt-1.5" style="color: var(--muted);">FY27 Q1（5/20 发布）：总营收 $81.6B（YoY +85% / QoQ +20%），数据中心 $75.2B（YoY +92%）；超大规模客户 $38B + AI 云/工业/企业 $37B；Q2 指引 $91B ±2%，毛利率 75%。距 +25% 阈值仍远。<span style="color: var(--danger);">V1.1 新风险：OpenAI/Anthropic 价格战将传导到 NVDA</span>——前沿模型公司毛利率受压 → 单价 token 算力需求被迫降本 → 长期挤压 NVDA 定价权。<span style="color: var(--danger);">UBS 上调 2026 全行业 AI CapEx 至 $8200 亿（vs $7000 亿）、2027 $9900 亿</span>——基础设施环短期继续加固，但杠杆形态已彻底改变（股权 + 收入 + 债务三层叠加）。下一观察点：8 月底 FY27 Q2 财报。</p>
+        </div>
+      </div>
+
+      <div class="mt-5 pt-4 border-t" style="border-color: var(--border);">
+        <p class="text-xs" style="color: var(--muted);">
+          <span class="mono" style="color: var(--text);">当前触发数：1/3 → 1.5/3</span>（① 已 CONFIRMED，② 从 SAFE 升至 WATCH，③ 仍 SAFE 但出现新挤压传导路径）。四情景概率调整：<span class="mono" style="color: var(--danger);">A40 / B22 / C13 / D25</span>（C 软着陆路径受损——价格战 + 收入确认争议直接打击软着陆假设）。
+          <br/><span class="mono" style="color: var(--danger);">⚡ V1.1 三大新触发节点：</span>① <span style="color: var(--text);">SPCX 30 天内二级表现</span>（先于 OpenAI 9 月 IPO 定价；若 30 天回吐首日涨幅 50%+ 则 A 跳升至 45-50%）；② <span style="color: var(--text);">价格战是否正式落地</span>（7 月 API 价格表调整）；③ <span style="color: var(--text);">OpenAI 定价</span>（9 月，若 &lt;$700B 则 A 跳升至 50-55%；若达 $1T 则 A 推迟至 2027 H1）。
+          <br/><span class="mono" style="color: var(--accent);">⚡ V0.8.2 历史灯：</span>OBBBA 永久 21% 补贴 + 等待 2028 中期政治反转——黄灯持续。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Macro indicators -->
+<section class="max-w-7xl mx-auto px-6 pb-8">
+  <h2 class="text-lg font-semibold mb-4 tracking-tight">宏观估值指标</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+    <div class="card card-hover p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs uppercase tracking-wider mono" style="color: var(--muted);">CAPE 席勒PE</span>
+        <span class="badge-w text-[10px] px-2 py-0.5 rounded mono">高位</span>
+      </div>
+      <div class="flex items-baseline gap-2">
+        <span class="text-3xl mono font-semibold">43.12</span>
+        <span class="text-xs mono" style="color: var(--danger);">▲ 距 P100 仅 2.4%</span>
+      </div>
+      <div class="mt-3 text-xs" style="color: var(--muted);">
+        155 年历史，仅 <span style="color: var(--text);">2000 年峰值 44.19</span> 高于现在，差距仅 <span style="color: var(--danger);">2.4%</span>（6/13 收盘）。
+        阈值：<span class="mono" style="color: var(--danger);">> 45 = 红色</span>（差 1.88）
+      </div>
+      <div class="chart-box chart-box-sm mt-3"><canvas id="cape-spark"></canvas></div>
+    </div>
+
+    <div class="card card-hover p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs uppercase tracking-wider mono" style="color: var(--muted);">巴菲特指标</span>
+        <span class="badge-d text-[10px] px-2 py-0.5 rounded mono">极高</span>
+      </div>
+      <div class="flex items-baseline gap-2">
+        <span class="text-3xl mono font-semibold">240%</span>
+        <span class="text-xs mono" style="color: var(--danger);">▲ 历史新高</span>
+      </div>
+      <div class="mt-3 text-xs" style="color: var(--muted);">
+        美股总市值/GDP 比率。
+        2000 年峰值 <span style="color: var(--text);">153%</span>，2008 年 <span style="color: var(--text);">135%</span>，<span style="color: var(--danger);">已破 220% 红线</span>。
+      </div>
+      <div class="chart-box chart-box-sm mt-3"><canvas id="buffet-spark"></canvas></div>
+    </div>
+
+    <div class="card card-hover p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs uppercase tracking-wider mono" style="color: var(--muted);">VIX 恐慌指数</span>
+        <span class="badge-s text-[10px] px-2 py-0.5 rounded mono">低位</span>
+      </div>
+      <div class="flex items-baseline gap-2">
+        <span class="text-3xl mono font-semibold">14.83</span>
+        <span class="text-xs mono" style="color: var(--success);">极低</span>
+      </div>
+      <div class="mt-3 text-xs" style="color: var(--muted);">
+        市场恐慌情绪极度压抑，反向指标含义升高。
+        阈值：<span class="mono" style="color: var(--warning);">> 30 = 警告</span>，
+        <span class="mono" style="color: var(--danger);">> 40 = 触发</span>
+      </div>
+      <div class="chart-box chart-box-sm mt-3"><canvas id="vix-spark"></canvas></div>
+    </div>
+
+    <div class="card card-hover p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs uppercase tracking-wider mono" style="color: var(--muted);">HY OAS 利差</span>
+        <span class="badge-s text-[10px] px-2 py-0.5 rounded mono">正常</span>
+      </div>
+      <div class="flex items-baseline gap-2">
+        <span class="text-3xl mono font-semibold">268<span class="text-base">bp</span></span>
+        <span class="text-xs mono" style="color: var(--success);">极低</span>
+      </div>
+      <div class="mt-3 text-xs" style="color: var(--muted);">
+        高收益债期权调整利差。
+        2020峰值 <span style="color: var(--text);">1100bp</span>，2008峰值 <span style="color: var(--text);">2000bp</span>。
+        阈值：<span class="mono" style="color: var(--warning);">> 600bp = 警告</span>
+      </div>
+      <div class="chart-box chart-box-sm mt-3"><canvas id="hy-spark"></canvas></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AI industry signals -->
+<section class="max-w-7xl mx-auto px-6 pb-8">
+  <h2 class="text-lg font-semibold mb-4 tracking-tight">AI产业内生信号</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+    <div class="card p-5">
+      <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-sm font-semibold">Oracle / CoreWeave CDS</h3>
+        <span class="text-xs mono" style="color: var(--warning);">关键信号</span>
+      </div>
+      <div class="chart-box chart-box-md"><canvas id="oracle-cds"></canvas></div>
+      <div class="mt-3 text-xs space-y-1" style="color: var(--muted);">
+        <div>Oracle 5Y CDS：当前 <span class="mono" style="color: var(--text);">175bp</span>（Q4 FY26 财报后扩张）；CoreWeave <span class="mono" style="color: var(--text);">680bp+</span></div>
+        <div>Q4 FY26（6/10）：RPO <span class="mono" style="color: var(--danger);">$6380亿（+359% QoQ）</span> / FCF <span class="mono" style="color: var(--danger);">-$237亿</span> / 回购 -84%</div>
+        <div>计划：Q4 计划新发 <span class="mono" style="color: var(--danger);">$400 亿债</span>；OpenAI 单家占 RPO 47%；客户集中度风险登顶</div>
+      </div>
+    </div>
+
+    <div class="card p-5">
+      <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-sm font-semibold">英伟达 数据中心收入增速</h3>
+        <span class="text-xs mono" style="color: var(--success);">仍强劲</span>
+      </div>
+      <div class="chart-box chart-box-md"><canvas id="nvda-growth"></canvas></div>
+      <div class="mt-3 text-xs space-y-1" style="color: var(--muted);">
+        <div>FY27 Q1 数据中心：<span class="mono" style="color: var(--text);">$75.2B YoY +92% / QoQ +21%</span></div>
+        <div>Q2 指引：<span class="mono" style="color: var(--text);">$91B ±2%</span>（超共识 4.3%，毛利率 75%，已排除中国）</div>
+        <div>触发线 <span class="mono" style="color: var(--warning);">+25%</span> · 超大规模 $38B + AI 云 $37B · $80B 回购</div>
+      </div>
+    </div>
+
+    <div class="card p-5">
+      <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-sm font-semibold">私募AI独角兽估值轨迹</h3>
+        <span class="text-xs mono" style="color: var(--warning);">加速膨胀</span>
+      </div>
+      <div class="chart-box chart-box-md"><canvas id="unicorn-val"></canvas></div>
+      <div class="mt-3 text-xs space-y-1" style="color: var(--muted);">
+        <div>OpenAI：<span class="mono" style="color: var(--danger);">$1 万亿</span>（6/8 机密 S-1 目标，9 月挂牌）+ Apollo+Blackstone $350 亿私募信贷给 Anthropic</div>
+        <div>Anthropic：<span class="mono" style="color: var(--text);">$9650 亿</span>（5/28 H 轮，ARR $47B→$50B）</div>
+        <div>SpaceX：<span class="mono" style="color: var(--danger);">$2 万亿+</span>（6/12 上市首日 +25%、收 $161.11，募 $750 亿，<span style="color: var(--danger);">史上最大 IPO</span>；高盛 Sell PT $115）</div>
+        <div>三家合计目标募资：<span class="mono" style="color: var(--danger);">$2000 亿</span> vs 过去 5 年全美 IPO 总盘 <span class="mono">$2670 亿</span></div>
+        <div><span style="color: var(--danger);">⚡ MS 预测：</span>2026 全球 AI 债务发行 $5700 亿（vs 2025 翻倍）</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- V0.8.2 新增：光模块抢装 + OBBBA 立法反转双卡 -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+
+    <div class="card p-5" style="border-color: rgba(255,197,83,.35);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-w text-[10px] px-2 py-0.5 rounded mono">NEW V0.8.2</span>
+          <h3 class="text-sm font-semibold">光模块抢装信号 (800G / 1.6T)</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--warning);">认知滞后警报</span>
+      </div>
+      <div class="chart-box chart-box-md"><canvas id="optical-demand"></canvas></div>
+      <div class="mt-3 text-xs space-y-1" style="color: var(--muted);">
+        <div>800G 2026 需求：<span class="mono" style="color: var(--text);">25M → 33.5M</span> 块（高盛 <span class="mono" style="color: var(--warning);">+58%</span>）</div>
+        <div>1.6T 2026 需求：<span class="mono" style="color: var(--text);">8.6M–20M</span> 块（放量元年）</div>
+        <div>中际旭创：订单能见度已锁至 <span class="mono" style="color: var(--text);">2028</span></div>
+        <div>800G+ 占比：<span class="mono">19.5% (2024) → 60%+ (2026)</span></div>
+      </div>
+    </div>
+
+    <div class="card p-5" style="border-color: rgba(255,197,83,.35);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-w text-[10px] px-2 py-0.5 rounded mono">NEW V0.8.2</span>
+          <h3 class="text-sm font-semibold">OBBBA 折旧反转 · 三层驱动机制</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--accent);">黄灯 · 监控中</span>
+      </div>
+      <div class="text-xs space-y-2.5 leading-relaxed" style="color: var(--muted);">
+        <p>
+          <span style="color: var(--text); font-weight: 600;">事实：</span>
+          One Big Beautiful Bill Act（P.L. 119-21）<span class="mono">2025/07/04</span> 签署。
+          §168(k) 永久恢复 <span class="mono" style="color: var(--text);">100%</span> 加速折旧，
+          反转 TCJA 原定 2025≈40% / 2026≈20% / 2027+≈0%。
+        </p>
+        <div class="pt-1 border-t" style="border-color: var(--border);">
+          <p class="mt-2"><span class="mono" style="color: var(--accent);">① 会计套利锁定</span> — 锁三年订单锁 21% 永久补贴</p>
+          <p><span class="mono" style="color: var(--accent);">② 关税对冲</span> — Trump 二轮关税，锁价/交付期</p>
+          <p><span class="mono" style="color: var(--accent);">③ Allocation 博弈</span> — 激光芯供货紧，光模厂 35.76% 集中度</p>
+        </div>
+        <p class="pt-1">
+          <span style="color: var(--danger); font-weight: 600;">D 情景新触发器：</span>
+          2028 中期后 OBBBA 被废 → 21% 补贴消失 → CapEx 断崖。
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+
+    <div class="card p-5">
+      <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-sm font-semibold">四大云商 Capex / OCF 比率</h3>
+        <span class="text-xs mono" style="color: var(--danger);">已超100% 警戒线</span>
+      </div>
+      <div class="chart-box chart-box-lg"><canvas id="capex-ratio"></canvas></div>
+      <p class="mt-3 text-xs" style="color: var(--muted);">
+        <span style="color: var(--danger);">UBS 6/1 上调 2026 全行业 AI CapEx 预测：$7000 亿 → $8200 亿</span>（占 GDP 2.7%，电信泡沫顶 2.25 倍），2027 $9900 亿。四大云商合计 $650-725B（YoY +77%）。<span style="color: var(--danger);">现金流缺口三雷：</span>① Alphabet 6/1 启动 $80B 增发；② Meta 6/5 FT 增发数百亿 + 10 月 $300 亿债券 + Blue Owl $270 亿表外（总债 $1000 亿）；③ <span style="color: var(--danger);">Amazon 6/10 拿到 $175 亿银团贷款</span>（花旗+BofA+JPM+汇丰+富国，<span class="mono">首次为 AI 大规模举债</span>）+ Apollo/Blackstone 给 Anthropic $350 亿私募信贷（史上最大）+ Morgan Stanley 预测 2026 全球 AI 债务发行 $5700 亿——四大云商已三家承认 OCF 不够。
+      </p>
+    </div>
+
+    <div class="card p-5">
+      <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-sm font-semibold">英伟达供应商融资 vs 朗讯</h3>
+        <span class="text-xs mono" style="color: var(--warning);">规模 2.8倍朗讯</span>
+      </div>
+      <div class="chart-box chart-box-lg"><canvas id="vendor-finance"></canvas></div>
+      <p class="mt-3 text-xs" style="color: var(--muted);">
+        当前 <span class="mono" style="color: var(--text);">67%</span> 显著高于朗讯1999年 <span class="mono" style="color: var(--text);">24%</span>。
+        但英伟达运营现金流 <span class="mono" style="color: var(--success);">$1027亿</span>，
+        是朗讯当年的 <span class="mono">34倍</span>，安全垫显著。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- V1.1 新增：六大新触发事件矩阵 -->
+<section class="max-w-7xl mx-auto px-6 pb-8">
+  <h2 class="text-lg font-semibold mb-4 tracking-tight">V1.1 新触发事件矩阵（2026/06/10-13）</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+    <div class="card p-5" style="border-color: rgba(216,75,42,.45);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-d text-[10px] px-2 py-0.5 rounded mono">NEW V1.1</span>
+          <h3 class="text-sm font-semibold">SpaceX 6/12 上市 · 二级定锚</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--danger);">★★★ 一级触发</span>
+      </div>
+      <div class="text-xs space-y-1.5 leading-relaxed" style="color: var(--muted);">
+        <div>IPO 价 <span class="mono" style="color: var(--text);">$150</span> → 首日收 <span class="mono" style="color: var(--danger);">$161.11 (+25%)</span></div>
+        <div>估值冲到 <span class="mono" style="color: var(--danger);">$2 万亿+</span>，募 <span class="mono">$750 亿</span>（史上最大 IPO）</div>
+        <div>高盛同时给 <span style="color: var(--danger);">Sell 评级、PT $115</span>（远低于 IPO 价）</div>
+        <div class="pt-1 border-t" style="border-color: var(--border);"><span style="color: var(--text);">意义：</span>AI 基建估值首次在二级被定价。OpenAI/Anthropic IPO 真实定价锚。</div>
+      </div>
+    </div>
+
+    <div class="card p-5" style="border-color: rgba(216,75,42,.45);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-d text-[10px] px-2 py-0.5 rounded mono">NEW V1.1</span>
+          <h3 class="text-sm font-semibold">OpenAI/Anthropic 价格战开火</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--danger);">★★ 商业模式预警</span>
+      </div>
+      <div class="text-xs space-y-1.5 leading-relaxed" style="color: var(--muted);">
+        <div>WSJ 6/11 独家：<span style="color: var(--text);">OpenAI 考虑大幅下调 token 价格</span>抢 Anthropic 客户</div>
+        <div>OpenAI 当前 Plus $20 / Team $25 / Pro $200；Anthropic Pro $17/Max $100+</div>
+        <div>企业开始用 <span class="mono">模型路由 + 开源/DeepSeek/Qwen</span> 压成本</div>
+        <div class="pt-1 border-t" style="border-color: var(--border);"><span style="color: var(--danger);">关键判断：</span>双方未盈利就价格战 → AI 从信仰期进入会计期。</div>
+      </div>
+    </div>
+
+    <div class="card p-5" style="border-color: rgba(216,75,42,.45);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-d text-[10px] px-2 py-0.5 rounded mono">NEW V1.1</span>
+          <h3 class="text-sm font-semibold">Morgan Stanley · AI 债务系统性翻倍</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--danger);">★★★ 行业结构</span>
+      </div>
+      <div class="text-xs space-y-1.5 leading-relaxed" style="color: var(--muted);">
+        <div>2026 全球 AI 相关债务发行预计 <span class="mono" style="color: var(--danger);">$5700 亿</span>（vs 2025 翻倍）</div>
+        <div>hyperscaler 转向债券融资满足 AI CapEx</div>
+        <div>结合 Amazon $175 亿 + Anthropic $350 亿私募信贷 → <span style="color: var(--text);">完整债务循环图谱</span></div>
+        <div class="pt-1 border-t" style="border-color: var(--border);"><span style="color: var(--text);">机制：</span>股权 + 收入 + 债务三层循环叠加，行业杠杆系统性放大。</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+
+    <div class="card p-5" style="border-color: rgba(255,197,83,.45);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-w text-[10px] px-2 py-0.5 rounded mono">NEW V1.1</span>
+          <h3 class="text-sm font-semibold">42 州 AG 联合调查 OpenAI</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--warning);">★★ 法律黑天鹅</span>
+      </div>
+      <div class="text-xs space-y-1.5 leading-relaxed" style="color: var(--muted);">
+        <div>6/13 (S-1 递交后 5 日内)：<span class="mono" style="color: var(--text);">42 个州总检察长</span>联合调查</div>
+        <div>调查方向：数据实践、AI 对消费者影响</div>
+        <div>时间节点：紧贴 OpenAI 6/8 机密 S-1 递交</div>
+        <div class="pt-1 border-t" style="border-color: var(--border);"><span style="color: var(--warning);">影响：</span>IPO 路演前法律黑天鹅，剧本 A 新触发点。</div>
+      </div>
+    </div>
+
+    <div class="card p-5" style="border-color: rgba(255,197,83,.45);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-w text-[10px] px-2 py-0.5 rounded mono">NEW V1.1</span>
+          <h3 class="text-sm font-semibold">收入确认口径分歧</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--warning);">★★ 利润真实性</span>
+      </div>
+      <div class="text-xs space-y-1.5 leading-relaxed" style="color: var(--muted);">
+        <div><span class="mono">Anthropic 报 gross revenue</span>（声称是 principal）</div>
+        <div><span class="mono">OpenAI 报 net</span>（扣除给微软的支付）</div>
+        <div>双 S-1 投资者讨论已聚焦此点</div>
+        <div class="pt-1 border-t" style="border-color: var(--border);"><span style="color: var(--warning);">影响：</span>SEC 审计追问导火索；Anthropic 真实净 ARR 可能仅 $28-35B（扣 25-40% 云成本）。</div>
+      </div>
+    </div>
+
+    <div class="card p-5" style="border-color: rgba(216,75,42,.45);">
+      <div class="flex items-baseline justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="badge-d text-[10px] px-2 py-0.5 rounded mono">NEW V1.1</span>
+          <h3 class="text-sm font-semibold">IPO 资金池物理上限</h3>
+        </div>
+        <span class="text-xs mono" style="color: var(--danger);">★★ 流动性瓶颈</span>
+      </div>
+      <div class="text-xs space-y-1.5 leading-relaxed" style="color: var(--muted);">
+        <div>三家 AI IPO 合计目标募资 <span class="mono" style="color: var(--danger);">$2000 亿</span></div>
+        <div>vs 过去 5 年全美 IPO 总募资 <span class="mono">$2670 亿</span>（占 75%）</div>
+        <div>三家估值合计约 <span class="mono">$4 万亿</span></div>
+        <div class="pt-1 border-t" style="border-color: var(--border);"><span style="color: var(--danger);">机制：</span>先上市者吃最大份额；禁售期后系统性减持压力。</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card p-5 mt-4" style="background: rgba(216,75,42,.06); border-color: rgba(216,75,42,.35);">
+    <div class="flex items-start gap-3">
+      <div class="text-xs leading-relaxed flex-1" style="color: var(--muted);">
+        <span class="mono" style="color: var(--danger); font-weight: 600;">V1.1 综合判断：</span>
+        V0.9 (70) → V1.0 (72) → V1.1 (73) 三周内连续升档 3 分；A 情景概率虽保持 40%，但触发节奏前移——
+        <span style="color: var(--text);">SPCX 锁定期外二级表现 (6 月底-7 月)</span> → 
+        <span style="color: var(--text);">价格战是否正式落地 (7 月)</span> → 
+        <span style="color: var(--text);">Anthropic 首个盈利季 (Q3)</span> → 
+        <span style="color: var(--text);">OpenAI IPO 定价 (9 月)</span> → 
+        <span style="color: var(--text);">42 州 AG 调查实质进展 (Q4)</span> 五段连环触发链已形成。
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Three-stage timeline -->
+<section class="max-w-7xl mx-auto px-6 pb-8">
+  <h2 class="text-lg font-semibold mb-4 tracking-tight">三阶段崩盘时间形态预案</h2>
+  <div class="card p-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+      <!-- timeline line -->
+      <div class="hidden md:block absolute top-6 left-[16.5%] right-[16.5%] h-px" style="background: var(--border);"></div>
+
+      <div class="relative">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-sm font-semibold" style="background: var(--surface-2); border: 2px solid var(--warning); color: var(--warning);">I</div>
+          <div>
+            <h3 class="text-sm font-semibold">触发期</h3>
+            <p class="text-xs mono" style="color: var(--muted);">1-3 个月</p>
+          </div>
+        </div>
+        <ul class="text-xs space-y-1.5 mt-3" style="color: var(--muted);">
+          <li>• 某关键客户违约迹象（Oracle / CoreWeave）</li>
+          <li>• Anthropic或OpenAI某轮融资首次估值持平</li>
+          <li>• 某主权基金叫停AI承诺</li>
+          <li>• 一家头部AI独角兽推迟IPO</li>
+        </ul>
+        <p class="text-xs mt-3 mono" style="color: var(--warning);">市场反应：股价回撤 -10% ~ -20%</p>
+      </div>
+
+      <div class="relative">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-sm font-semibold" style="background: var(--surface-2); border: 2px solid var(--danger); color: var(--danger);">II</div>
+          <div>
+            <h3 class="text-sm font-semibold">重定价期</h3>
+            <p class="text-xs mono" style="color: var(--muted);">3-12 个月</p>
+          </div>
+        </div>
+        <ul class="text-xs space-y-1.5 mt-3" style="color: var(--muted);">
+          <li>• 私募估值开始系统性下修（down rounds）</li>
+          <li>• 二级市场恐慌抛售，VIX上40+</li>
+          <li>• CDS全面扩大，企业债再融资困难</li>
+          <li>• 被动指数基金强制减仓踩踏</li>
+        </ul>
+        <p class="text-xs mt-3 mono" style="color: var(--danger);">市场反应：标普回撤 -30% ~ -45%</p>
+      </div>
+
+      <div class="relative">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-sm font-semibold" style="background: var(--surface-2); border: 2px solid var(--primary); color: var(--primary);">III</div>
+          <div>
+            <h3 class="text-sm font-semibold">出清期</h3>
+            <p class="text-xs mono" style="color: var(--muted);">12-36 个月</p>
+          </div>
+        </div>
+        <ul class="text-xs space-y-1.5 mt-3" style="color: var(--muted);">
+          <li>• 循环交易按真实收入重述</li>
+          <li>• 部分独角兽倒闭/被收购</li>
+          <li>• 幸存者以 5-10x PS 重新定价</li>
+          <li>• AI需求侧重新被发现，赢家显现</li>
+        </ul>
+        <p class="text-xs mt-3 mono" style="color: var(--primary);">市场反应：进入抄底窗口</p>
+      </div>
+    </div>
+
+    <div class="mt-6 pt-5 border-t text-xs" style="border-color: var(--border); color: var(--muted);">
+      参考2000-2002年：纳斯达克从5048跌至1114，<span style="color: var(--text);">耗时31个月，跌幅78%</span>。
+      本轮特征不同：现金垫存在 + 真实需求存在 → 预计 <span style="color: var(--text);">浅衰退（GDP -1% ~ -2%）</span> +
+      <span style="color: var(--text);">深估值重估（科技股 -50% ~ -65%）</span>。
+    </div>
+  </div>
+</section>
+
+<!-- Investment response -->
+<section class="max-w-7xl mx-auto px-6 pb-8">
+  <h2 class="text-lg font-semibold mb-4 tracking-tight">投资应对策略（针对中国投资者）</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+    <div class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-6 h-6 rounded flex items-center justify-center text-xs mono font-semibold" style="background: rgba(109,170,69,.15); color: var(--success);">D</div>
+        <h3 class="text-sm font-semibold">防御端</h3>
+      </div>
+      <p class="text-xs mb-3" style="color: var(--muted);">增配低估值高分红 A 股</p>
+      <ul class="text-xs space-y-1.5" style="color: var(--text);">
+        <li>• 煤炭（中国神华、陕煤、中煤能源）</li>
+        <li>• 电力（长江电力、华能水电）</li>
+        <li>• 银行（招商、工建中农）</li>
+        <li>• 高息红利股 ETF（510880、563180）</li>
+      </ul>
+    </div>
+
+    <div class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-6 h-6 rounded flex items-center justify-center text-xs mono font-semibold" style="background: rgba(218,113,1,.15); color: var(--warning);">H</div>
+        <h3 class="text-sm font-semibold">对冲端</h3>
+      </div>
+      <p class="text-xs mb-3" style="color: var(--muted);">做空美股科技/反向ETF</p>
+      <ul class="text-xs space-y-1.5" style="color: var(--text);">
+        <li>• QQQ Put / SQQQ 反向</li>
+        <li>• 恒生科技 Put（HSTECH）</li>
+        <li>• 黄金 ETF 避险（518880）</li>
+        <li>• VIX 期货 / VIXY</li>
+      </ul>
+    </div>
+
+    <div class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-6 h-6 rounded flex items-center justify-center text-xs mono font-semibold" style="background: rgba(79,152,163,.15); color: var(--primary);">A</div>
+        <h3 class="text-sm font-semibold">进攻端</h3>
+      </div>
+      <p class="text-xs mb-3" style="color: var(--muted);">保留现金待抄底</p>
+      <ul class="text-xs space-y-1.5" style="color: var(--text);">
+        <li>• NVDA、MSFT、META watchlist</li>
+        <li>• Anthropic / OpenAI 二级机会</li>
+        <li>• AI真实赢家：英伟达供应链</li>
+        <li>• 等待 5-10x PS 入场点</li>
+      </ul>
+    </div>
+
+    <div class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-6 h-6 rounded flex items-center justify-center text-xs mono font-semibold" style="background: rgba(255,197,83,.15); color: var(--accent);">C</div>
+        <h3 class="text-sm font-semibold">中国受益方向</h3>
+      </div>
+      <p class="text-xs mb-3" style="color: var(--muted);">中美差距收窄至 2.7%</p>
+      <ul class="text-xs space-y-1.5" style="color: var(--text);">
+        <li>• 阿里云 / 字节跳动相关</li>
+        <li>• DeepSeek 生态链</li>
+        <li>• 半导体国产化（中芯国际）</li>
+        <li>• 华为产业链（卓胜微等）</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Methodology -->
+<section class="max-w-7xl mx-auto px-6 pb-10">
+  <details class="card p-5">
+    <summary class="flex items-center justify-between">
+      <span class="text-sm font-semibold">方法论与数据来源</span>
+      <span class="chevron" style="color: var(--muted);">›</span>
+    </summary>
+    <div class="mt-5 pt-5 border-t text-xs space-y-3 leading-relaxed" style="border-color: var(--border); color: var(--muted);">
+      <p>
+        <span style="color: var(--text); font-weight: 600;">综合崩盘指数计算 (V1.1)</span>：
+        加权平均 7 项核心信号（每项 0-100 标准化），权重重校准后：
+        Oracle CDS (18%) / 私募估值轨迹 (18%) / 英伟达增速 (14%) /
+        CAPE (14%) / 巴菲特指标 (12%) / VIX+HY OAS (12%) /
+        <span class="mono" style="color: var(--accent);">OBBBA 立法连续性灯 (12%)</span>。
+        新增灯位检测 OBBBA 永久 100% 折旧政策是否被反转（2028 中期后废除风险），当前为黄灯。
+      </p>
+      <p>
+        <span style="color: var(--text); font-weight: 600;">数据来源</span>：
+        Oracle CDS 引自 <a href="https://www.spglobal.com/market-intelligence" target="_blank">S&P Market Intelligence</a>；
+        CAPE 引自 <a href="https://www.multpl.com/shiller-pe" target="_blank">Multpl Shiller PE</a>；
+        巴菲特指标引自 <a href="https://www.currentmarketvaluation.com/models/buffett-indicator.php" target="_blank">Current Market Valuation</a>；
+        VIX 与 HY OAS 引自 <a href="https://fred.stlouisfed.org/" target="_blank">FRED</a>；
+        英伟达数据引自 <a href="https://investor.nvidia.com" target="_blank">NVIDIA Investor</a>；
+        私募估值引自 <a href="https://www.theinformation.com/" target="_blank">The Information</a>、
+        <a href="https://www.bloomberg.com/" target="_blank">Bloomberg</a>；
+        OBBBA 法案文本引自 <a href="https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions" target="_blank">IRS 官方</a>、
+        <a href="https://www.grantthornton.com/insights/alerts/tax/2025/insights/obbba-offers-new-ways-to-accelerate-depreciation" target="_blank">Grant Thornton</a>、
+        <a href="https://www.cbh.com/insights/articles/trumps-tax-bill-bonus-depreciation-cost-segregation/" target="_blank">Cherry Bekaert</a>；
+        光模块需求引自 <a href="https://www.yicai.com/news/103177534.html" target="_blank">第一财经</a>、
+        <a href="https://finance.sina.com.cn/stock/observe/2026-05-07/doc-inhxanxf5037714.shtml" target="_blank">新浪财经</a>、
+        <a href="https://www.chipstrat.com/p/inside-the-800g-16t-32t-race" target="_blank">Chipstrat</a>。
+      </p>
+      <p>
+        <span style="color: var(--text); font-weight: 600;">免责声明</span>：
+        本仪表盘为 大队长 基于公开数据的研究性可视化，
+        不构成任何投资建议。所有阈值为分析师设定的"研究性触发线"，并非市场共识。
+        实际投资决策应结合个人风险承受能力和专业财务顾问意见。
+      </p>
+    </div>
+  </details>
+</section>
+
+<!-- Footer -->
+<footer class="border-t" style="border-color: var(--border);">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between flex-wrap gap-4 text-xs" style="color: var(--muted);">
+    <div>
+      <span class="mono">Perplexity Computer</span> · AI 周期与泡沫深度研究系列
+    </div>
+    <div class="flex items-center gap-6">
+      <span>研究时间：V1.1 · 2026/06/14 事件驱动版（SpaceX 上市 + 价格战 + MS $570B AI 债）</span>
+      <span>数据基准：SPCX 6/12 +25%·OpenAI $1T S-1·Anthropic $35B 私募信贷·Amazon $17.5B 银团贷·UBS $820B AI CapEx·MS $570B AI 债</span>
+      <span>下次更新：SPCX 锁定期外二级表现 / NVDA FY27 Q2</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ============ Chart.js global config ============
+Chart.defaults.color = '#93958A';
+Chart.defaults.font.family = "'Noto Sans SC', system-ui, sans-serif";
+Chart.defaults.font.size = 11;
+Chart.defaults.borderColor = 'rgba(40, 54, 49, 0.5)';
+
+const COL = {
+  teal:    '#20808D',
+  tealH:   '#6BB6C1',
+  accent:  '#FFC553',
+  danger:  '#D163A7',
+  warning: '#DA7101',
+  success: '#6DAA45',
+  terra:   '#A84B2F',
+  muted:   '#5A5C53',
+  text:    '#E7E5DD',
+  border:  '#283631',
+};
+
+// ============ Sparklines ============
+function spark(id, data, color, threshold) {
+  const ctx = document.getElementById(id);
+  if (!ctx) return;
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: data.map((_,i)=>i),
+      datasets: [{
+        data: data,
+        borderColor: color,
+        backgroundColor: hexA(color, 0.12),
+        borderWidth: 1.5,
+        fill: true,
+        tension: 0.35,
+        pointRadius: 0,
+        pointHoverRadius: 3,
+      }]
+    },
+    options: {
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: {
+        enabled: true, displayColors: false,
+        backgroundColor: '#1B2520', borderColor: '#283631', borderWidth: 1,
+        callbacks: { title: ()=>'', label: (c)=>c.parsed.y.toFixed(1) }
+      }},
+      scales: {
+        x: { display: false },
+        y: { display: false, grace: '10%' }
+      }
+    }
+  });
+}
+
+function hexA(hex, a) {
+  const r = parseInt(hex.slice(1,3),16);
+  const g = parseInt(hex.slice(3,5),16);
+  const b = parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${a})`;
+}
+
+// CAPE history (last 30 years, approx) — 末点 2026/05/20 = 41.78
+spark('cape-spark', [25,28,33,38,44,38,30,25,22,18,15,18,22,17,22,25,26,28,30,31,29,32,30,33,38,40,38,35,38,42.84], COL.danger);
+// Buffett indicator — 末点 2026 Q1 = 219%
+spark('buffet-spark', [85,110,130,153,140,90,95,110,120,125,130,135,140,150,165,175,180,195,200,213,237.8,236], COL.danger);
+// VIX — 末点 2026/05 近期收盘 ≈ 15.1
+spark('vix-spark', [13,15,18,22,30,28,24,20,17,15,16,19,18,16.05,16.06], COL.success);
+// HY OAS — 末点 2026/05/19 = 286bp
+spark('hy-spark', [550,800,1100,950,700,500,420,380,360,340,330,320,310,274,272], COL.success);
+
+// ============ Oracle CDS ============
+new Chart(document.getElementById('oracle-cds'), {
+  type: 'line',
+  data: {
+    labels: ['2024 Q1','2024 Q2','2024 Q3','2024 Q4','2025 Q1','2025 Q2','2025 Q3','2025 Q4','2025/11','2026/01','2026/03','2026/05'],
+    datasets: [{
+      label: 'Oracle 5Y CDS (bp)',
+      data: [82, 88, 95, 92, 105, 110, 116, 145, 178, 198, 165, 160],
+      borderColor: COL.warning,
+      backgroundColor: hexA(COL.warning, 0.1),
+      borderWidth: 2,
+      fill: true,
+      tension: 0.3,
+      pointRadius: 3,
+      pointBackgroundColor: COL.warning,
+    },{
+      label: '2008危机后最高线',
+      data: Array(12).fill(180),
+      borderColor: COL.danger,
+      borderDash: [4,4],
+      borderWidth: 1,
+      pointRadius: 0,
+      fill: false,
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { padding: 12, boxWidth: 12 } },
+    },
+    scales: {
+      y: { ticks: { callback: (v)=>v+'bp' }, grid: { color: 'rgba(40,54,49,.4)' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ============ NVDA growth ============
+new Chart(document.getElementById('nvda-growth'), {
+  type: 'bar',
+  data: {
+    labels: ['FY23','FY24','FY25','FY26','FY27 Q1','FY27 (Est)','FY28 (Est)'],
+    datasets: [{
+      label: '数据中心收入 YoY (%)',
+      data: [41, 217, 142, 68, 92, 50, 22],
+      backgroundColor: [COL.tealH, COL.teal, COL.teal, COL.teal, COL.teal, COL.accent, COL.warning],
+      borderRadius: 4,
+    },{
+      label: '+25% 触发线',
+      type: 'line',
+      data: Array(7).fill(25),
+      borderColor: COL.danger,
+      borderDash: [4,4],
+      borderWidth: 1.5,
+      pointRadius: 0,
+      fill: false,
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { padding: 12, boxWidth: 12 } } },
+    scales: {
+      y: { ticks: { callback: (v)=>v+'%' }, grid: { color: 'rgba(40,54,49,.4)' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ============ Unicorn valuations ============
+new Chart(document.getElementById('unicorn-val'), {
+  type: 'line',
+  data: {
+    labels: ['2023','2024 H1','2024 H2','2025 H1','2025 H2','2026 Q1','2026/05'],
+    datasets: [{
+      label: 'OpenAI 估值 ($B)',
+      data: [29, 80, 157, 300, 500, 852, 830],
+      borderColor: COL.teal,
+      backgroundColor: hexA(COL.teal, 0.08),
+      borderWidth: 2,
+      fill: false,
+      tension: 0.3,
+    },{
+      label: 'Anthropic 估值 ($B)',
+      data: [18, 25, 60, 183, 320, 380, 965],
+      borderColor: COL.terra,
+      borderWidth: 2,
+      fill: false,
+      tension: 0.3,
+    },{
+      label: 'xAI 估值 ($B)',
+      data: [null, 24, 45, 80, 230, 250, 250],
+      borderColor: COL.accent,
+      borderWidth: 2,
+      fill: false,
+      tension: 0.3,
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { padding: 12, boxWidth: 12 } } },
+    scales: {
+      y: { ticks: { callback: (v)=>'$'+v+'B' }, grid: { color: 'rgba(40,54,49,.4)' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ============ Capex / OCF ratio ============
+new Chart(document.getElementById('capex-ratio'), {
+  type: 'bar',
+  data: {
+    labels: ['Amazon','Microsoft','Meta','Alphabet'],
+    datasets: [
+      { label: '2022', data: [30, 20, 45, 25], backgroundColor: COL.muted, borderRadius: 3 },
+      { label: '2025', data: [97, 73, 62, 56], backgroundColor: COL.teal, borderRadius: 3 },
+      { label: '2026E', data: [200, 190, 185, 145], backgroundColor: COL.terra, borderRadius: 3 },
+    ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { padding: 12, boxWidth: 12 } },
+    },
+    scales: {
+      y: {
+        ticks: { callback: (v)=>v+'%' },
+        grid: { color: 'rgba(40,54,49,.4)' },
+        max: 160
+      },
+      x: { grid: { display: false } }
+    }
+  },
+  plugins: [{
+    id: 'redline',
+    afterDraw(chart) {
+      const { ctx, chartArea: ca, scales: { y } } = chart;
+      const yPos = y.getPixelForValue(100);
+      ctx.save();
+      ctx.strokeStyle = COL.danger;
+      ctx.setLineDash([5,5]);
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(ca.left, yPos);
+      ctx.lineTo(ca.right, yPos);
+      ctx.stroke();
+      ctx.fillStyle = COL.danger;
+      ctx.font = "10px 'JetBrains Mono'";
+      ctx.fillText('100% 红线', ca.right - 60, yPos - 4);
+      ctx.restore();
+    }
+  }]
+});
+
+// ============ Optical module demand (V0.8.2) ============
+new Chart(document.getElementById('optical-demand'), {
+  type: 'bar',
+  data: {
+    labels: ['2024','2025','2026 原预计','2026 上调','2027E'],
+    datasets: [
+      {
+        label: '800G (M 块)',
+        data: [8, 16, 25, 33.5, 45],
+        backgroundColor: COL.teal,
+        borderRadius: 3,
+      },
+      {
+        label: '1.6T (M 块)',
+        data: [0.1, 1.2, 8.6, 20, 38],
+        backgroundColor: COL.accent,
+        borderRadius: 3,
+      }
+    ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { padding: 12, boxWidth: 12 } },
+      tooltip: {
+        callbacks: { label: (c)=> c.dataset.label + ': ' + c.parsed.y + 'M' }
+      }
+    },
+    scales: {
+      y: { ticks: { callback: (v)=>v+'M' }, grid: { color: 'rgba(40,54,49,.4)' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ============ Vendor financing comparison ============
+new Chart(document.getElementById('vendor-finance'), {
+  type: 'bar',
+  data: {
+    labels: ['供应商融资规模','融资/营收比 (%)','运营现金流'],
+    datasets: [
+      { label: '朗讯 (1999-2000)', data: [150, 24, 30], backgroundColor: COL.terra, borderRadius: 3 },
+      { label: '英伟达 (2025-2026)', data: [1100, 67, 1027], backgroundColor: COL.teal, borderRadius: 3 },
+    ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: {
+      legend: { position: 'bottom', labels: { padding: 12, boxWidth: 12 } },
+    },
+    scales: {
+      x: {
+        type: 'logarithmic',
+        ticks: { callback: (v)=> {
+          if (v === 10) return '10';
+          if (v === 100) return '100';
+          if (v === 1000) return '1k';
+          return '';
+        }},
+        grid: { color: 'rgba(40,54,49,.4)' }
+      },
+      y: { grid: { display: false } }
+    }
+  }
+});
+
+</script>
+</body>
+</html>
