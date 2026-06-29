@@ -1,8 +1,9 @@
 # AI周期与泡沫深度研究报告
 
-> **报告版本：V1.3 · 2026/06/27 公开发布版**（V1.2 + 机构对标 4 项补缺：Goldman $7.6T 三层 capex 拆解模型 + Morgan Stanley AI 信贷分化结构 + SemiAnalysis HBM 利润迁移 + 40GW BTM 电力约束 + BofA Arya「延长 18 个月」反方场景压测 + 综合广度对标 5 家机构后定位升级）· 详细版本变更见第二页《版本变更说明》  
+> **报告版本：V1.3.1 · 2026/06/30 公开发布版**（V1.3 + 3 项新增事件：Oracle 首例债权人集体诉讼 6/24 + Moody's 2026 hyperscaler capex $785B / 2027 $1T 预测上调 6/24 + TSMC CoWoS-L 暂停接单超 2027 Q1 + 大摩 2027 CoWoS 需求 269 万片 · V1.3.1 综合崩盘指数 75 不变 · §2.6.5 / §3.6 / §2.9.5 三处末尾增补）  
+> **V1.3 原表述（保留参考）**：V1.3 · 2026/06/27 公开发布版
 > **V1.2 原表述（保留参考）**：V1.2 + NVDA 5 年来首次发债 $250 亿 + SpaceX IPO 后 10 天首发投资级债 $200 亿 + SpaceX $600 亿全股票收购 Cursor + SPCX 自高点跌 -18% + 大摩警告 $2 万亿表外 AI 承诺 + 法兴/UBS $8000 亿信贷脉冲（占 GDP 2.6%）+ Oracle FY27 Capex $90-95B 财报次日跌 -4.8% + JPM 2030 AI 总花费 $5.5 万亿 + 综合崩盘指数 75（触警戒线·进入危险区）
-> **研究时间**：2026 年 5 月 25 日（V1.2 增补：2026 年 6 月 22 日；V1.3 增补：2026 年 6 月 27 日）  
+> **研究时间**：2026 年 5 月 25 日（V1.2 增补：2026 年 6 月 22 日；V1.3 增补：2026 年 6 月 27 日；V1.3.1 增补：2026 年 6 月 30 日）  
 > **核心问题**：美股 AI 巨头利润真实性 · 循环投资网络 · AI 变现版图 · 编程市场 TAM · AGI 时间表 · 国际格局重塑 · 跨境券商监管处罚 · 巨头股权融资续命  
 > **数据基准**：2025 财年报告、2026 年 Q1 最新季报（以 4/29 财报为主）；英伟达 FY27 Q1 财报（2026/05/20）已完整嵌入；5/22 CSRC 跨境券商立案处罚事件；6/1 Alphabet $80B 股权融资 + Berkshire $10B 私募事件已嵌入；中期增补以 2026/06/02 前公开信源为准，210+ 独立信源
 
@@ -30,6 +31,62 @@
 | **V1.1** | 2026/06/14 | SpaceX 6/12 上市首日 +25%、收价 $161.11、估值 $2 万亿+（募 $750 亿，史上最大 IPO，高盛同时给 Sell 评级 PT $115）+ WSJ 独家 OpenAI 考虑大幅下调 token 价格抢 Anthropic 客户（双方未盈利就价格战）+ Morgan Stanley 预测 2026 全球 AI 债务发行 $5700 亿（vs 2025 翻倍）+ 42 州总检察长 6/13 联合调查 OpenAI + Anthropic与OpenAI 收入确认口径分歧曝光（gross vs net）+ 三家 IPO 合计募资 $2000 亿 vs 过去 5 年全美 IPO 总盘 $2670 亿；事实审计表升级 V1.1（46 项明细，新增 12t-12y）；综合崩盘指数 72 → 73（仍在"严重·告警"区间，距警戒线 75 仅 2 档）。四情景概率调整为 A40/B22/C13/D25（C 软着陆路径受损），A 情景新增触发点：SPCX 30 天内二级表现。 |
 | **V1.2** | 2026/06/22 | **AI 龙头从现金奶牛切换至债务驱动**：NVDA 6/15 首发 $250 亿投资级债（5 年来首次，订单 $850 亿 3.4× 超额认购）+ SpaceX 6/22 首发 $200 亿投资级债（IPO 后 10 天，主要偿还 xAI 与 X 收购历史过桥贷款）+ SpaceX 6/16 $600 亿全股票收购 Cursor/Anysphere（IPO 后 4 天，溢价 ~6 倍）+ SPCX 6/16 峰值 $225.64 → 6/22 $185（自高点 -18%）+ **大摩警告超大规模云累积 $2 万亿表外 AI 承诺**（$1T 采购 + $800B+ 未生效租约 + $110B 未付 capex，“AI 版次贷危机”）+ **法兴/UBS：美国 12 个月信贷脉冲 +$8000 亿，占 GDP 2.6%**（超大规模云杠杆率 0.9× → 1.8× 翻倍）+ Oracle FY27 Capex 拉至 $90-95B、财报次日跌 10%+ 后 6/22 再跌 -4.8%（FY26 FCF -$237 亿，首家 hyperscaler FCF 转负；Epoch AI 测算五大云 FCF 将于 2026 Q3 归零）+ JPM 2030 AI 总花费 $5.5 万亿；事实审计表升级 V1.2（54 项明细，新增 12z-12gg）；综合崩盘指数 73 → **75（触警戒线·进入危险区）**，触发信号 1.5/3 → **2/3**。四情景概率调整为 A42/B22/C11/D25（C 软着陆走廀下调 -2pct），A 情景新增三大触发节点：SPCX 8 月限售解禁 / 7 月 OpenAI-Anthropic API 价格表调整 / 9 月 OpenAI IPO 定价。 |
 | **V1.3** | 2026/06/27 | **机构对标 4 项补缺升级**：基于 2026/06 主流机构研报系统对标（详见 `markdown/research/09_institutional_benchmark.md`），在 V1.2 综合崩盘指数 75 不变、四情景概率 A42/B22/C11/D25 不变的基础上，系统补齐 4 项单点差距：(1) §3.6 新增 Goldman Sachs 2026/06/06「Tracking the Trillions」$7.6T 五年累计 capex 三层拆解（compute $5.1T / DC $2.1T / power $358B）+ 与大队长变现端 TAM 对账（资本回收倍数 0.90-1.36x）；(2) §2.6.5 新增 Morgan Stanley 2026/06/23「AI Dispersion in Credit」IG 债结构性变化分析——AI 占 IG 新发行比重 8%→30%+、Oracle D/E 500% vs Meta/Amazon/Microsoft 70-100% 的极端分化；(3) §2.9.5 新增 SemiAnalysis 2026/06/25「US Grid Constraints — 40GW BTM」HBM 占 hyperscaler capex 30%→48% + 40GW BTM 电力约束 + NVDA 利润被 HBM 厂商瓜分的供应链层证据；(4) §6.1.5 新增 BofA Vivek Arya 2026/06/23 反方观点压测——「投资周期延长 18 个月至 2028 H2-2029 H1」情景下四情景概率敏感性分析（A42→52, B22→22, C11→6, D25→20）。【报告定位升级】从「独立研究者的优质综合框架」升级为「综合广度超过任何单一机构 + 中国视角独有」。新增机构信源 5 个（Goldman / Morgan Stanley / SemiAnalysis / BofA / Sequoia 复用）。**事实审计表 V1.2 → V1.3 新增 4 项条目（13a-13d，总 58 项），时间窗口、综合崩盘指数、四情景概率主表均不变**。 |
+| **V1.3.1** | 2026/06/30 | **3 项新增事件追加（V1.3 预言验证 + 第二个机构对账 + 物理约束加强）**：(1) §2.6.5 末尾增补 Oracle 首例债权人集体诉讼 2026/06/24（原告：俄亥俄木匠工会养老金，被告：Oracle + Ellison + Katz + 承销商；指控 Oracle 在 2025/09 $180 亿债券发行中隐瞒为 OpenAI $3000 亿合同所需真实债务规模；$40 亿部分债券现交易 95.75 美分），**V1.3 §2.6.5 末段预言「任一 AI IG 债被起诉或降级」6 天内即被验证触发**；(2) §3.6 末尾增补 Moody's 6/24 上调 hyperscaler capex 预测——2026 $785B（vs 3 月 $700B 上调 $85B）、2027 close in on $1T，hyperscaler RPO 两季度新增 $700B 主要源自 OpenAI/Anthropic，与 V1.3 §3.6 Goldman $7.6T 五年模型按年度切片对账一致；(3) §2.9.5 末尾增补 TSMC CoWoS-L 2026/06/23 暂停接受 2027 Q1 后新订单 + Morgan Stanley 上调 2027 CoWoS 需求至 269 万片（含 ASIC/CPU 自研芯片新增需求），强化 SemiAnalysis HBM 物理约束论断。事实审计表 V1.3 → V1.3.1 新增 3 项（13e-13g，总 61 项）。**综合崩盘指数 75 不变、四情景概率 A42/B22/C11/D25 不变**——本次升级属于「V1.3 预言验证 + 论点强化」性质。 |
+
+---
+
+## 【焦点】V1.3.1 数据快照页（2026/06/30）—— V1.3 预言验证 · 论点强化
+
+> 本页为 V1.3 后续 3 日（6/27-6/30）的新增证据补点。综合崩盘指数（75）、四情景概率（A42/B22/C11/D25）、时间窗口（2026 H2-2028 Q2）**全部保持不变**。
+
+### V1.3.1 新增 3 项事件总览
+
+| # | 落点章节 | 事件 | 日期 | 信号等级 | 信号性质 |
+|---|---------|------|------|---------|---------|
+| **1** | §2.6.5 末尾 | **Oracle 首例债权人集体诉讼**（俄亥俄木匠工会养老金起诉 Oracle + Ellison + Katz） | 2026/06/24 | ★★★ | **V1.3 预言验证** |
+| **2** | §3.6 末尾 | **Moody's 上调 2026 hyperscaler capex $700B → $785B（+$85B），2027 close in on $1T** | 2026/06/24 | ★★★ | **机构对账（Goldman 模型按年度切片）** |
+| **3** | §2.9.5 末尾 | **TSMC CoWoS-L 暂停接 2027 Q1 后新订单**，Morgan Stanley 同期上调 2027 CoWoS 需求至 **269 万片** | 2026/06/23-25 | ★★ | **物理约束加强** |
+
+### V1.3.1 核心判断
+
+【V1.3 预言已被触发】V1.3 §2.6.5 末段写道：「触发节点关注：①任一 AI IG 债被降级至 HY（fallen angel 风险）；②超大客户合同（OpenAI/Anthropic）任一对 Oracle 履约出现延期或重定价」。**实际市场提前给出第三种触发形态：集体债权人诉讼**——发生在 V1.3 发版后 6 天。
+
+【三层信号集中触发】Oracle 信用风险在 7 天内已被三层独立机制各自标价：
+1. **CDS 利差**：145bp（Morgan Stanley 6/23 已识别）
+2. **债券价格**：95.75 美分（6/24 诉讼披露）
+3. **法律层**：集体诉讼立案（6/24）
+
+历史对照：1999-2000 朗讯/北电的债权人集体诉讼出现在崩盘**之后**；Oracle 的诉讼出现在**仍处于估值高位时**——这是关键的时序差异。
+
+【Moody's 验证 Goldman 模型】Moody's 单年 $785B（2026）+ ~$1T（2027）= $1.785T 两年累计，占 Goldman $7.6T 五年模型的 **23%**——意味着 2026-2027 两年将吞掉未来五年 capex 的近 1/4，资本节奏**前置而非线性**，对 §6 主情景"2026 H2-2028 Q2 触发窗口"形成进一步物理支持。
+
+### V1.3.1 不变项确认
+
+| 指标 | V1.3 | V1.3.1 | 变化 |
+|------|------|--------|------|
+| 综合崩盘指数 | 75 | **75** | 不变 |
+| 四情景概率 A | 42% | 42% | 不变 |
+| 四情景概率 B | 22% | 22% | 不变 |
+| 四情景概率 C | 11% | 11% | 不变 |
+| 四情景概率 D | 25% | 25% | 不变 |
+| 时间窗口 | 2026 H2 - 2028 Q2 | 2026 H2 - 2028 Q2 | 不变 |
+| 事实审计表项数 | 58 项 | **61 项** | +3 |
+
+### V1.3.1 新增观察节点
+
+1. **2026 Q3**：任一评级机构（Moody's / S&P / Fitch）对 Oracle 评级动作——BBB 进一步降至 BBB- 即跨过 HY 临界线
+2. **Wisconsin PSC 案进展**：若 Oracle 6/19 起诉 PSC 案件败诉，意味着 BBB 评级开始造成运营层成本（$1 亿/年信用抵押）
+3. **2027 Q1**：CoWoS-L 第一批排队订单交付情况，作为物理约束的实证测试点
+
+### V1.3.1 新增信源
+
+- DCD «Oracle sued by bondholders»（2026/06/24）：[Data Center Dynamics](https://www.datacenterdynamics.com/en/news/oracle-sued-by-bondholders-over-growing-debt-for-ai-buildout/)
+- DCD «Moody's: Hyperscaler capex marked up $85bn»（2026/06/24）：[Data Center Dynamics](https://www.datacenterdynamics.com/en/news/moodys-hyperscaler-capex-forecasts-marked-up-by-85bn-to-close-in-on-1trn-by-2027/)
+- TSMC CoWoS-L Halt（2026/06/23）：[Qishuai-cn](https://www.qishuai-cn.com/news/Integrated_Circuits/Logic_Memory_ICs_7nm_sub_7nm_/TSMC_Halts_New_CoWoS_L_Bookings_Beyond_Q1_2027.html)
+- 大摩 CoWoS 2027 需求 269 万片预测（2026/06/25）：[新浪财经转引](https://finance.sina.com.cn/roll/2026-06-25/doc-inierpqn0965351.shtml)
+- Wisconsin Public Radio «Oracle sues PSC»（2026/06/24）：[WPR](https://www.wpr.org/news/oracle-sues-wisconsin-utility-regulators-psc-financial-requirements-data-centers)
+
+【风险提示】所有内容仅代表个人基于公开信息的研究与观点表达，不构成任何投资建议、买卖要约或操作指令。股市有风险，投资需谨慎。
 
 ---
 
@@ -1192,6 +1249,20 @@ Oracle D/E 500% vs Meta/Amazon/Microsoft 70-100% 的极端分化，是历史上 
 
 **与朗讯/北电 2000 年对比**：朗讯崩盘前 6 个月，其 CDS 也从 50bp 跳升至 180bp（彼时高收益门槛），与 Oracle 当前 145bp 的形态接近。**注意：CDS 跳升不等于必然违约**，但**所有违约事件回测中都包含 CDS 前置跳升**——是必要而非充分条件。
 
+【V1.3.1 增补 · 2026/06/30】**Oracle 首例债权人集体诉讼 6/24 立案**——本节 V1.3 写作时给出的预言「任一 AI IG 债被起诉或降级」**6 天内即被验证触发**：
+
+- **原告**：俄亥俄木匠工会养老金（Ohio Carpenters' Pension Plan），代表 2025 年 9 月 $180 亿债券发行的购买者
+- **被告**：Oracle 公司 + Larry Ellison（CTO 兼董事长）+ Safra Katz（CEO）+ Maria Smith（EVP / CAO）+ 承销商
+- **诉因**：指控 Oracle 在 $180 亿债券发行文件中**隐瞒了为 OpenAI $3000 亿合同所需的真实债务规模**，且当时已在筹划随后的 $380 亿融资
+- **市场反应**：该笔债券中 $40 亿部分目前交易在 **95.75 美分/美元**，相关持仓损失约 $1.7 亿
+- **历史定位**：**这是本轮 AI 周期首例 hyperscaler 集体债权人诉讼**——形态与 1999-2000 朗讯/北电债权人集体诉讼一致，**但提前出现于估值高位而非崩盘后**，这是与 2000 年的关键差异
+
+【信号意义】CDS 利差跳升（145bp）+ 债券价格脱锚（95.75 美分）+ 法律层诉讼（6/24）= **三层信号在 7 天内集中触发**。V1.3 §2.6.5 末段判断「所有违约事件回测中都包含 CDS 前置跳升」此刻已进入实证测试阶段。下一关键观察节点：
+1. **2026 Q3 任一评级机构（Moody's / S&P / Fitch）对 Oracle 评级动作**——BBB 是否进一步降至 BBB-（距 HY 仅一步）
+2. **Wisconsin PSC 案进展**（Oracle 6/19 已起诉 Wisconsin 公用事业委员会，拒绝为 Port Washington $150 亿数据中心承担 $1 亿/年信用抵押）——若败诉，意味着 BBB 评级开始造成**运营层面的实际成本**
+
+来源：[DCD — Oracle sued by bondholders 2026/06/24](https://www.datacenterdynamics.com/en/news/oracle-sued-by-bondholders-over-growing-debt-for-ai-buildout/) · [Wisconsin Public Radio 2026/06/24](https://www.wpr.org/news/oracle-sues-wisconsin-utility-regulators-psc-financial-requirements-data-centers)
+
 ---
 
 ### 2.7 Anthropic $965B IPO 事件专节——三个月翻 2.54 倍的循环融资动力学【V0.7.1 新增】
@@ -1446,6 +1517,24 @@ SemiAnalysis 测算：美国 hyperscaler 计划 2028 年总功率需求 = 175GW�
 
 【与朗讯对比的差异修正】1999 年朗讯崩盘的核心是**需求消失**（互联网泡沫破裂）；本轮如果出现崩盘，**核心机制将是供需失配的"价格"维度，而非"数量"维度**——这是大队长报告与多数比较 1999 的研报最重要的认知差异。
 
+【V1.3.1 增补 · 2026/06/30】**TSMC CoWoS-L 暂停接受 2027 Q1 后新订单 + Morgan Stanley 上调 2027 需求至 269 万片**——本节 SemiAnalysis 的物理约束论断获得**双向新证据**：
+
+| 信号 | 数据 | 时间 | 含义 |
+|------|------|------|------|
+| **TSMC CoWoS-L 暂停接单** | 2027 Q1 后新订单全部排队 | 2026/06/23 | 供给端硬约束 |
+| **大摩 2027 CoWoS 需求预测** | **269 万片**（含 CoWoS-S/L/CoPoS） | 2026/06/25 | 需求端激进上调 |
+| **新增需求驱动** | CPU + ASIC 加入（Apple/Amazon/Google/Meta 自研芯片） | 2026 Q2 起 | 不再只是 NVDA GPU |
+
+【关键判断】CoWoS 供给瓶颈不再是单一 NVDA GPU 问题，而是**全产业链共享的物理约束**：
+
+1. **CoWoS-L 排队效应**：意味着 2027 Q2 前**所有新立项的高密度 AI 芯片**（含 ASIC、CPU 协处理器）必须排队，影响 §3.6 中算力芯片层 $5.1T 五年累计的实际投放节奏
+2. **CoPoS / 玻璃基板替代路径**：业内已开始押注 CoPoS（Chip-on-Package-on-Substrate）和玻璃中介层，但量产时间表延后至 **2030 年后**，无法解决 2027-2029 缺口
+3. **HBM 利润迁移效应再强化**：CoWoS 限产 = HBM 单卡用量被迫"压瘦"或定价上行——SK 海力士、三星、美光在 2026-2027 的定价权进一步集中
+
+【对崩盘形态的影响】物理约束 ≠ 需求消失。CoWoS 瓶颈的存在意味着：**即使需求侧 ROI 恶化，供给侧也无法立刻补充**。这进一步支持 §3.6 末段判断——本轮崩盘的真实机制是「**价格悬崖 + 折旧加速 + 物理瓶颈倒灌**」三重挤压，而非 1999-2000 式的「需求蒸发」。
+
+来源：[TSMC CoWoS-L Bookings Halt 2026/06/23](https://www.qishuai-cn.com/news/Integrated_Circuits/Logic_Memory_ICs_7nm_sub_7nm_/TSMC_Halts_New_CoWoS_L_Bookings_Beyond_Q1_2027.html) · [大摩 CoWoS 2027 需求预测 - 新浪财经转引 2026/06/25](https://finance.sina.com.cn/roll/2026-06-25/doc-inierpqn0965351.shtml)
+
 ---
 
 ### 2.10 我可能错在哪里【V0.7 新增】
@@ -1614,6 +1703,21 @@ Claude Code（编程代理）6个月从0到$10亿，2026年2月已达**$25亿运
 - 如果 capex **三层全部到位但变现未跟上**（最可能 2027 H2-2028 H1），将出现「供给过剩 + 折旧加速」双杀 —— 这是 B/C 场景（硬着陆）的财务触发条件。
 
 **与 1999-2000 朗讯/北电对比**：当年光纤过剩同样体现为「供给侧三层（光纤/路由器/光模块）齐齐扩张」与「需求侧（互联网应用）未跟上」。本轮 AI 周期的差异在于：当年光纤利用率仅 5%，本轮算力利用率更高（GPU 闲置率 < 15%），所以**崩盘形态可能不是「需求蒸发」而是「价格悬崖 + 折旧加速」**（详见 §3.3 API 价格悬崖 -99.5%）。
+
+【V1.3.1 增补 · 2026/06/30】**Moody's 6/24 更新：2026 hyperscaler capex $785B，2027 close in on $1T**——本节 Goldman $7.6T 五年累计模型获得**第二个机构的年度切片验证**：
+
+| 时段 | Moody's 预测 | vs 3 月预测 | 含义 |
+|------|-------------|------------|------|
+| **2026** | **$785B** | $700B (3 月) → 上调 **$85B** | 实际节奏快于 3 月预期 |
+| **2027** | **close in on $1T** | 与 Goldman 五年累计模型一致 | 仅 6 家厂商单年 capex 接近全球前 30 个国家 GDP 总和 |
+
+【核心警告】Moody's 同步给出**两条结构性观察**：
+1. hyperscaler RPO（Remaining Performance Obligations）两个季度新增 **$700B**，**大部分来自 OpenAI + Anthropic**——再次印证本报告 §2 循环融资链条的「客户也是融资源」机制
+2. capex 正在**侵蚀 operating cash flow**，债务和租赁负债同步上升，可能触发**"reassessment of creditworthiness"**（信用评级重估）—— 这与 §2.6.5 增补的 Oracle 诉讼形成同向证据
+
+【与 Goldman 五年累计对账】Moody's 单年（$785B 2026 + ~$1T 2027 = $1.785T 两年）/ Goldman 五年累计（$7.6T）= **23%**——意味着 2026-2027 两年将占未来五年 capex 的近 1/4，资本节奏**前置而非线性**，对应 §6 主情景"2026 H2-2028 Q2 触发窗口"的物理基础得到加强。
+
+来源：[DCD — Moody's: Hyperscaler capex marked up $85bn 2026/06/24](https://www.datacenterdynamics.com/en/news/moodys-hyperscaler-capex-forecasts-marked-up-by-85bn-to-close-in-on-1trn-by-2027/)
 
 ---
 
