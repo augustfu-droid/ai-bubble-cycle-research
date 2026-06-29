@@ -2,15 +2,19 @@
 
 > **【报告版本与变更概览】**
 
-> **当前版本：V1.3.2 · 2026/06/30 公开发布版**
+> **当前版本：V1.3.3 · 2026/06/30 公开发布版**
 >
-> V1.3.1 + V0.7 历史口径标注清理：6 处正文段落追加「【V1.2 起最新口径：A42/B22/C11/D25】」标注，避免与变更表历史行混淆。综合崩盘指数 75 不变 · 四情景 A42/B22/C11/D25 不变 · 事实审计表条目数 61 不变。
+> V1.3.2 + OpenAI 推迟 IPO 至 2027（6/25 NYT 报道）追加：§2.6.5 新增独立小节「OpenAI 推迟 IPO——A 情景关键观察点的传导链实证」+ §6.1 V1.0 二元分支段追加 V1.3.3 反转注解 + 审计表新增 13h 条目（总 62 项）。**综合崩盘指数 75 不变 · 四情景 A42/B22/C11/D25 不变**——A 情景观察窗口由 2026 Q3 平移至 2027 H1，触发逻辑不变。
 
-> **上一版：V1.3.1 · 2026/06/30**（保留参考）
+> **上一版：V1.3.2 · 2026/06/30**（保留参考）
 >
-> V1.3 + 3 项新增事件追加：Oracle 首例债权人集体诉讼（6/24）+ Moody's 2026 hyperscaler capex $785B / 2027 close in on $1T（6/24）+ TSMC CoWoS-L 暂停接单超 2027 Q1 + 大摩 2027 CoWoS 需求 269 万片。
+> V0.7 历史口径标注清理：6 处正文段落追加「【V1.2 起最新口径：A42/B22/C11/D25】」标注 + 头部版本概览段落化排版优化。
 
-> **上上版：V1.3 · 2026/06/27**（保留参考）
+> **上上版：V1.3.1 · 2026/06/30**（保留参考）
+>
+> **V1.3.1 摘要**：V1.3 + 3 项新增事件追加：Oracle 首例债权人集体诉讼（6/24）+ Moody's 2026 hyperscaler capex $785B / 2027 close in on $1T（6/24）+ TSMC CoWoS-L 暂停接单超 2027 Q1 + 大摩 2027 CoWoS 需求 269 万片。
+
+> **V1.3 摘要：2026/06/27**
 >
 > 机构对标 4 项补缺：Goldman $7.6T 五年累计 capex 三层拆解 + Morgan Stanley AI IG 信贷分化 + SemiAnalysis 40GW BTM 电力约束 + BofA 反方场景压测。
 
@@ -22,7 +26,7 @@
 
 > **【研究时间】**：2026 年 5 月 25 日
 >
-> 增补节点：V1.2 (06/22) → V1.3 (06/27) → V1.3.1 (06/30) → V1.3.2 历史口径标注清理 (06/30)
+> 增补节点：V1.2 (06/22) → V1.3 (06/27) → V1.3.1 (06/30) → V1.3.2 历史口径标注清理 (06/30) → V1.3.3 OpenAI 推迟 IPO 至 2027 追加 (06/30)
 
 > **【核心问题】**
 >
@@ -56,6 +60,7 @@
 | **V1.1** | 2026/06/14 | SpaceX 6/12 上市首日 +25%、收价 $161.11、估值 $2 万亿+（募 $750 亿，史上最大 IPO，高盛同时给 Sell 评级 PT $115）+ WSJ 独家 OpenAI 考虑大幅下调 token 价格抢 Anthropic 客户（双方未盈利就价格战）+ Morgan Stanley 预测 2026 全球 AI 债务发行 $5700 亿（vs 2025 翻倍）+ 42 州总检察长 6/13 联合调查 OpenAI + Anthropic与OpenAI 收入确认口径分歧曝光（gross vs net）+ 三家 IPO 合计募资 $2000 亿 vs 过去 5 年全美 IPO 总盘 $2670 亿；事实审计表升级 V1.1（46 项明细，新增 12t-12y）；综合崩盘指数 72 → 73（仍在"严重·告警"区间，距警戒线 75 仅 2 档）。四情景概率调整为 A40/B22/C13/D25（C 软着陆路径受损），A 情景新增触发点：SPCX 30 天内二级表现。 |
 | **V1.2** | 2026/06/22 | **AI 龙头从现金奶牛切换至债务驱动**：NVDA 6/15 首发 $250 亿投资级债（5 年来首次，订单 $850 亿 3.4× 超额认购）+ SpaceX 6/22 首发 $200 亿投资级债（IPO 后 10 天，主要偿还 xAI 与 X 收购历史过桥贷款）+ SpaceX 6/16 $600 亿全股票收购 Cursor/Anysphere（IPO 后 4 天，溢价 ~6 倍）+ SPCX 6/16 峰值 $225.64 → 6/22 $185（自高点 -18%）+ **大摩警告超大规模云累积 $2 万亿表外 AI 承诺**（$1T 采购 + $800B+ 未生效租约 + $110B 未付 capex，“AI 版次贷危机”）+ **法兴/UBS：美国 12 个月信贷脉冲 +$8000 亿，占 GDP 2.6%**（超大规模云杠杆率 0.9× → 1.8× 翻倍）+ Oracle FY27 Capex 拉至 $90-95B、财报次日跌 10%+ 后 6/22 再跌 -4.8%（FY26 FCF -$237 亿，首家 hyperscaler FCF 转负；Epoch AI 测算五大云 FCF 将于 2026 Q3 归零）+ JPM 2030 AI 总花费 $5.5 万亿；事实审计表升级 V1.2（54 项明细，新增 12z-12gg）；综合崩盘指数 73 → **75（触警戒线·进入危险区）**，触发信号 1.5/3 → **2/3**。四情景概率调整为 A42/B22/C11/D25（C 软着陆走廀下调 -2pct），A 情景新增三大触发节点：SPCX 8 月限售解禁 / 7 月 OpenAI-Anthropic API 价格表调整 / 9 月 OpenAI IPO 定价。 |
 | **V1.3** | 2026/06/27 | **机构对标 4 项补缺升级**：基于 2026/06 主流机构研报系统对标（详见 `markdown/research/09_institutional_benchmark.md`），在 V1.2 综合崩盘指数 75 不变、四情景概率 A42/B22/C11/D25 不变的基础上，系统补齐 4 项单点差距：(1) §3.6 新增 Goldman Sachs 2026/06/06「Tracking the Trillions」$7.6T 五年累计 capex 三层拆解（compute $5.1T / DC $2.1T / power $358B）+ 与大队长变现端 TAM 对账（资本回收倍数 0.90-1.36x）；(2) §2.6.5 新增 Morgan Stanley 2026/06/23「AI Dispersion in Credit」IG 债结构性变化分析——AI 占 IG 新发行比重 8%→30%+、Oracle D/E 500% vs Meta/Amazon/Microsoft 70-100% 的极端分化；(3) §2.9.5 新增 SemiAnalysis 2026/06/25「US Grid Constraints — 40GW BTM」HBM 占 hyperscaler capex 30%→48% + 40GW BTM 电力约束 + NVDA 利润被 HBM 厂商瓜分的供应链层证据；(4) §6.1.5 新增 BofA Vivek Arya 2026/06/23 反方观点压测——「投资周期延长 18 个月至 2028 H2-2029 H1」情景下四情景概率敏感性分析（A42→52, B22→22, C11→6, D25→20）。【报告定位升级】从「独立研究者的优质综合框架」升级为「综合广度超过任何单一机构 + 中国视角独有」。新增机构信源 5 个（Goldman / Morgan Stanley / SemiAnalysis / BofA / Sequoia 复用）。**事实审计表 V1.2 → V1.3 新增 4 项条目（13a-13d，总 58 项），时间窗口、综合崩盘指数、四情景概率主表均不变**。 |
+| **V1.3.3** | 2026/06/30 | **OpenAI 推迟 IPO 至 2027 事件追加（A 情景关键观察点反转实证）**：(1) §2.6.5 末尾新增独立小节「**OpenAI 推迟 IPO 至 2027——A 情景关键观察点的传导链实证**」——基于 2026/06/25 [纽约时报报道](https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html)：OpenAI 内部讨论把 IPO 从 2026 Q3-Q4 推迟至 2027 年；Altman 坚持 $1T 估值、CFO Friar 主张推迟（理由：现金燃烧大、算力承诺重、披露合规未达标）；Kalshi 显示 2027 Q1 前 IPO 概率仅 59%；市场实时定价：软银 6/26 单日 -12%、Oracle 5 个交易日 -17%。(2) §6.1 V1.0 「IPO 定价 < $700B vs $1T」二元分支段追加 V1.3.3 反转注解——出现**第三种形态：定价测试事件本身被推迟**，观察窗口由 2026 Q3 平移至 2027 H1。(3) 事实审计表 V1.3.2 → V1.3.3 新增 1 项（13h，总 62 项）。**综合崩盘指数 75 不变、四情景概率 A42/B22/C11/D25 不变**——A 情景内部时序调整，不改变触发逻辑；下一观察节点：OpenAI 新一轮私募估值是否守住 $852B / CFO Friar 任期 / Anthropic 10 月 IPO 是否随之推迟。 |
 | **V1.3.2** | 2026/06/30 | **V0.7 历史口径标注清理（无新增事件，仅可读性优化）**：响应读者反馈，正文 6 处涉及「A40 / B20 / C15 / D25」表述的段落（§历史口径映射段 / V0.7 核心观点段 / 中国投资者两窗口段 / 主概率口径段 / "综合看空 75%"自审段 / 结论页第 6 条）后均追加「**【V1.2 起最新口径：A42/B22/C11/D25】**」标注，避免读者将 V0.7 阶段历史口径误读为当前主概率框架。**变更表中 V0.7/V0.7.2/V0.8.2/V0.9/V1.0 历史行保留原样（A40/B20/C15/D25 为当时定稿口径，是真实历史记录）**。综合崩盘指数 75 / 四情景 A42/B22/C11/D25 / 时间窗口 2026 H2–2028 Q2 / 事实审计表 61 项条目 **全部保持不变**——本次升级属于「可读性 + 口径混淆防御」性质，不涉及任何分析判断变更。 |
 | **V1.3.1** | 2026/06/30 | **3 项新增事件追加（V1.3 预言验证 + 第二个机构对账 + 物理约束加强）**：(1) §2.6.5 末尾增补 Oracle 首例债权人集体诉讼 2026/06/24（原告：俄亥俄木匠工会养老金，被告：Oracle + Ellison + Katz + 承销商；指控 Oracle 在 2025/09 $180 亿债券发行中隐瞒为 OpenAI $3000 亿合同所需真实债务规模；$40 亿部分债券现交易 95.75 美分），**V1.3 §2.6.5 末段预言「任一 AI IG 债被起诉或降级」6 天内即被验证触发**；(2) §3.6 末尾增补 Moody's 6/24 上调 hyperscaler capex 预测——2026 $785B（vs 3 月 $700B 上调 $85B）、2027 close in on $1T，hyperscaler RPO 两季度新增 $700B 主要源自 OpenAI/Anthropic，与 V1.3 §3.6 Goldman $7.6T 五年模型按年度切片对账一致；(3) §2.9.5 末尾增补 TSMC CoWoS-L 2026/06/23 暂停接受 2027 Q1 后新订单 + Morgan Stanley 上调 2027 CoWoS 需求至 269 万片（含 ASIC/CPU 自研芯片新增需求），强化 SemiAnalysis HBM 物理约束论断。事实审计表 V1.3 → V1.3.1 新增 3 项（13e-13g，总 61 项）。**综合崩盘指数 75 不变、四情景概率 A42/B22/C11/D25 不变**——本次升级属于「V1.3 预言验证 + 论点强化」性质。 |
 
@@ -302,6 +307,8 @@ V1.2 已建立 3 大触发节点（SPCX 8 月限售 / 7 月 API 价格 / 9 月 O
 
 - 若 IPO 定价低于 $700B（即 -30% 于目标），意味着公开市场拒绝为私募估值买单，A 情景启动概率会瞬间上修至 50-55%
 - 若 IPO 定价达到 $1T 目标，A 情景被推后至 2027 H1（核心驱动是 Oracle/Meta 下一轮发债的信用市场反应）
+
+> **【V1.3.3 反转注解】**：2026/06/25 [纽约时报](https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html) 报道 OpenAI 倾向把 IPO 推迟至 2027 年——市场没有按以上二元分支演化，而是出现**第三种形态：定价测试事件本身被推迟**。Altman 坚持 $1T 估值不让步、CFO Sarah Friar 主张推迟、Kalshi 显示 2027 Q1 前 IPO 概率仅 59%。**观察窗口由 2026 Q3 平移至 2027 H1**，但二元分支结构（定价 < $700B vs 达 $1T）的判断逻辑保留——只是触发时点后移。市场已实时定价该反转：软银 6/26 单日 -12%、Oracle 5 个交易日 -17%。详见 §2.6.5（V1.3.3 增补）。
 
 ### V1.0 新增观察窗口
 
@@ -1292,6 +1299,51 @@ Oracle D/E 500% vs Meta/Amazon/Microsoft 70-100% 的极端分化，是历史上 
 2. **Wisconsin PSC 案进展**（Oracle 6/19 已起诉 Wisconsin 公用事业委员会，拒绝为 Port Washington $150 亿数据中心承担 $1 亿/年信用抵押）——若败诉，意味着 BBB 评级开始造成**运营层面的实际成本**
 
 来源：[DCD — Oracle sued by bondholders 2026/06/24](https://www.datacenterdynamics.com/en/news/oracle-sued-by-bondholders-over-growing-debt-for-ai-buildout/) · [Wisconsin Public Radio 2026/06/24](https://www.wpr.org/news/oracle-sues-wisconsin-utility-regulators-psc-financial-requirements-data-centers)
+
+---
+
+#### 2.6.5（V1.3.3 增补）OpenAI 推迟 IPO 至 2027——A 情景关键观察点的传导链实证
+
+**事件**【★★★ 一手报道】2026/06/25 [纽约时报](https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html) 援引三名知情人士披露：OpenAI 内部正讨论将 IPO 时间从 2026 Q3-Q4 推迟至 2027 年；CEO Sam Altman 坚持 $1 万亿挂牌估值（vs 上一轮私募 $852B），拒绝接受顾问提出的「降估值快上市」方案；CFO Sarah Friar 从 2025 年起就主张推迟至 2027（理由：现金燃烧大、算力投入承诺繁重、公开披露合规未达标），与 Altman 内部分歧首次公开化。
+
+**导火索**：
+
+- **SpaceX 上市首秀压力**——SpaceX 6/11 IPO 首日 +25% 后股价大幅震荡，[NYT DealBook 6/26](https://www.nytimes.com/2026/06/26/business/dealbook/ai-openai-ipo-slump.html) 指出零售投资者热情减退令 OpenAI 顾问团对万亿估值的市场吸纳能力产生疑问
+- **CFO Friar 的合规备忘**——[Content Fans 6/23](https://content.fans/news/openais-ipo-faces-delays-amid-governance-and-microsoft-contract-debates) 援引行业报告，Friar 警告 OpenAI 在「内部控制、营收透明度、cap table 清晰度」三项上**仍低于公开市场标准**
+- **预测市场的真金白银**：[Polymarket](https://polymarket.com/event/openai-ipo-by?marketSlug=will-openai-ipo-by-september-30-2026&outcomeIndex=0) 9/30 之前 IPO 概率从 6/8 报告递交时的 ~60% 跌至 6/25 后的低位；[Kalshi](https://hao.cnyes.com/post/256819) 显示 2027 Q1 前 IPO 概率仅 59%、2027 Q2 前 73%，仅 1/3 合约押注 2026 内有动静
+
+**市场传导链实证**（V1.3 §A 情景观察点的实时演绎）：
+
+| 标的 | 时间 | 跌幅 | 机制 |
+|---|---|---|---|
+| **软银（9984.T）** | 6/26 单日 | **-12%** | 外部最大投资人，IPO 推迟 → 持仓变现周期拉长，单日蒸发 5.6 万亿日元 |
+| **Oracle (ORCL)** | 6/22-6/26 5 个交易日 | **-17%**（过去 12 个月 -33%）| 与 OpenAI $3000 亿 5 年云合同绑定，市场抛售 OpenAI 基建标的 |
+| **甲骨文** | 6/26 单日 | -2.58% | OpenAI IPO 推迟传导日内确认 |
+
+数据来源：[新浪财经 6/26](https://finance.sina.cn/2026-06-26/detail-inietspu1970850.d.html) · [网易 6/27](https://www.163.com/dy/article/L0EKRE7V0556C0TI.html) · [新浪 OpenAI IPO 与 Oracle 传导分析](https://finance.sina.com.cn/stock/usstock/summary/2026-06-26/doc-inietspp7278088.shtml)
+
+**对 V1.3 §A 情景关键观察点的意义**：
+
+V1.0 / V1.2 把「**2026 年 9 月 OpenAI IPO 定价**」列为 A 情景关键触发点，并预设两个二元分支：
+
+> - 若 IPO 定价 < $700B（-30%）→ A 跳升至 50-55%
+> - 若 IPO 定价达到 $1T 目标 → A 推迟至 2027 H1
+
+**6/25 报道意味着出现了第三种形态——「定价测试事件本身被推迟」**。这与 V1.3.1 Oracle 债权人诉讼（V1.3 预言「任一 AI IG 债被起诉/降级」的 6 天验证）属于**同一类反转**：市场没有按预设二元分支演化，而是**让触发事件本身先延后**——观察窗口从 2026 Q3 移至 2027 H1，与 V1.3 §A 情景主时间窗口「2027 H1-2028 Q2」**形成同向加压**。
+
+**为什么不调整四情景概率**：
+
+1. 推迟不是取消——OpenAI 已于 6/8 递 S-1，2027 H1 上市概率（Kalshi 73%）仍高，A 情景**触发节点平移**而非**触发概率改变**
+2. 推迟同时强化了 A 情景的内部矛盾——CFO 公开承认「现金燃烧大、算力投入重、披露合规未达标」，这是 V1.3.1 §2.6.5 Oracle 债权人诉讼之后的**第二个内部裂痕信号**
+3. 综合崩盘指数 75 维持不变——观察窗口后移属于 A 情景内部时序调整，触发数仍为 2/3
+
+**下一观察节点**：
+
+1. **2026 H2 OpenAI 新一轮私募**（若 IPO 推迟，需要更多桥接融资覆盖 $34B 年度运营缺口）——估值是否守住 $852B？是否被迫接受 down round？
+2. **CFO Friar 任期稳定性**——CFO 与 CEO 公开分歧在 IPO 前夕罕见，若 Friar 离职将是 A 情景的强触发信号
+3. **Anthropic 10 月 IPO 是否随之推迟**——若 Anthropic 跟进推迟，则秋季 IPO 集中期（V0.7.1 §6.1 标记）整体熄火，A 情景主时间窗口前移概率上升
+
+来源：[纽约时报 6/25 - OpenAI Leans Toward Waiting Until Next Year for I.P.O.](https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html) · [Yahoo Finance 6/26](https://finance.yahoo.com/technology/article/ai-trade-hits-a-wall-amid-report-that-openai-will-delay-ipo-until-2027-150642366.html) · [21 财经 6/29](https://m.21jingji.com/article/20260629/herald/855162a7e7751a592cc6822aacd95a4f.html) · [Tencent News 6/26 - GPT-5.6 推迟 + IPO 2027 + 政府审查](https://news.qq.com/rain/a/20260626A0523800)
 
 ---
 
