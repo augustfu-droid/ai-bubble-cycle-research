@@ -427,30 +427,35 @@ def optimize_pdf(path: Path) -> None:
 
 
 def build_thick(update_pdf: Path, out: Path) -> int:
-    """Promote the formal panorama cover, then retain the update body and historical TOC."""
+    """Place the full disclaimer up front, then join V1.4 and V1.3 revision material."""
     update_reader = PdfReader(str(update_pdf))
     base_reader = PdfReader(str(THICK_BASE_PDF))
     writer = PdfWriter()
     writer.add_page(promoted_cover_page(THICK_BASE_PDF, 0, "2026年AI泡沫研究 · 全景版"))
+    # Original page 2 is the full legal/risk disclaimer. Move it directly behind
+    # the current cover so it no longer separates the V1.4 update from the V1.3
+    # frozen revision record.
+    writer.append(base_reader, pages=(1, 2), import_outline=False)
     writer.append(update_reader, pages=(1, len(update_reader.pages)), import_outline=False)
-    # The historical cover has moved to physical page 1. Keep original pages 2–310,
-    # which contain every historical TOC target.
-    writer.append(base_reader, pages=(1, len(base_reader.pages)), import_outline=True)
-    front_count = len(update_reader.pages)
+    # The cover and disclaimer have moved to the front. Keep original pages
+    # 3–310, which contain the revision record and every historical TOC target.
+    writer.append(base_reader, pages=(2, len(base_reader.pages)), import_outline=True)
+    front_count = len(update_reader.pages) + 1
     for page_index in range(front_count, len(writer.pages)):
         stamp_page(
             writer.pages[page_index],
-            "Historical V1.3.4 edition; current data and corrections are in the 7-page module at document front",
+            "Historical V1.3.4 edition; current data and corrections are in the 8-page update body at document front",
         )
     writer.set_page_label(0, front_count - 1, style=PageLabelStyle.DECIMAL, start=1)
-    writer.set_page_label(front_count, len(writer.pages) - 1, style=PageLabelStyle.DECIMAL, start=2)
+    writer.set_page_label(front_count, len(writer.pages) - 1, style=PageLabelStyle.DECIMAL, start=3)
     writer.add_outline_item("V1.4 当前封面", 0)
-    writer.add_outline_item("V1.4·7/24 更新与勘误", 1)
-    writer.add_outline_item("V1.3.4 冻结历史正文（原页2–310）", front_count)
+    writer.add_outline_item("重要免责声明", 1)
+    writer.add_outline_item("V1.4·7/24 更新与勘误", 2)
+    writer.add_outline_item("V1.3.4 冻结历史正文（原页3–310）", front_count)
     writer.add_metadata({
         "/Title": "2026年AI泡沫研究 · 全景版 V1.4超全景版",
         "/Author": "付强",
-        "/Subject": "V1.4 formal cover and update body plus frozen historical pages 2-310",
+        "/Subject": "V1.4 cover, front disclaimer and update body plus frozen historical pages 3-310",
     })
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("wb") as fh:
@@ -554,8 +559,9 @@ def main() -> None:
 
     build_markdown_pdf(
         read(MASTER_MD) + "\n\n## 超全景整合说明\n\n"
-        "本模块置于 V1.3.4 超全景冻结版之前。其后完整保留 310 页历史版及其原目录和内部链接；"
-        "更新模块与历史版各自从第1页独立计页。动态分数、概率、价格、触发状态与观察日全部以本模块为准。",
+        "在超全景版中，完整免责声明置于当前封面之后，本模块随后呈现；其后衔接 V1.3.4 "
+        "冻结历史正文原第3—310页，并保留原目录和内部链接。卷首当前部分与冻结历史正文独立计页；"
+        "动态分数、概率、价格、触发状态与观察日全部以本模块为准。",
         UPDATE_OUT,
         "AI周期与泡沫研究 · V1.4更新模块",
         "全报告统一动态口径 · 用于主报告、审计表、完整全景版与 300+ 页超全景版",

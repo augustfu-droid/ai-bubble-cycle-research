@@ -92,15 +92,20 @@ def validate_generated_pdf(path: Path, expected_pages: int) -> None:
 def validate_thick() -> None:
     reader = PdfReader(str(THICK))
     update_pages = PDFS[ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf"]
+    front_count = update_pages + 1
     assert len(reader.pages) == 318, len(reader.pages)
-    assert reader.page_labels[: update_pages + 2] == [
-        *[str(i) for i in range(1, update_pages + 1)],
-        "2",
+    assert reader.page_labels[: front_count + 2] == [
+        *[str(i) for i in range(1, front_count + 1)],
         "3",
-    ], reader.page_labels[: update_pages + 2]
+        "4",
+    ], reader.page_labels[: front_count + 2]
 
     first_page_text = reader.pages[0].extract_text() or ""
     assert "V1.4" in first_page_text and "全景版" in first_page_text, first_page_text[:200]
+    disclaimer_text = reader.pages[1].extract_text() or ""
+    assert "免责声明" in disclaimer_text, disclaimer_text[:200]
+    update_text = reader.pages[2].extract_text() or ""
+    assert "V1.4" in update_text, update_text[:200]
 
     # Historical TOC occupies original pages 6–9, now physical pages 14–17.
     page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
@@ -113,7 +118,7 @@ def validate_thick() -> None:
                 checked += 1
     assert checked >= 150, checked
     print(
-        f"[PASS] {THICK.name}: 318 pages, formal V1.4 cover promoted to page 1, "
+        f"[PASS] {THICK.name}: 318 pages, formal V1.4 cover and disclaimer promoted, "
         f"{checked} historical TOC link rectangles resolve"
     )
 
