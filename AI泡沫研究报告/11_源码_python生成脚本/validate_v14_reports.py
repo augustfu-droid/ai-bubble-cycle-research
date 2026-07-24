@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 from pypdf import PdfReader
@@ -15,7 +16,7 @@ PDFS = {
     ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf": 74,
     ROOT / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.4.pdf": 14,
     ROOT / "05_简版与执行摘要/AI周期与泡沫_机构简版_V1.4_内部署名版.pdf": 5,
-    ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf": 93,
+    ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf": 94,
 }
 
 THICK = ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4超全景版_300页级.pdf"
@@ -39,6 +40,77 @@ REQUIRED_TEXT = (
     "2026-07-24",
     "DeepSeek",
 )
+
+CURRENT_REQUIRED_TEXT = (
+    "规则内临界成立",
+    "0.23元",
+    "首发适配",
+    "V4-Flash API",
+    "208.76",
+)
+
+FORBIDDEN_CURRENT_TEXT = (
+    "华为云完成V4系列零日适配",
+    "可在ModelArts完成V4系列",
+    "市场开始提高对CapEx与FCF错配的惩罚",
+    "也未接近7/1阶段高点",
+    "投递后维护版",
+    "已投递",
+    "203.28",
+)
+
+CURRENT_SOURCES = (
+    ROOT / "12_增量素材/2026-07-20_V1.4更新模块_全报告统一口径.md",
+    ROOT / "10_源码_markdown/AI周期与泡沫_事实审计表_V1.4_增量.md",
+    ROOT / "10_源码_markdown/AI周期与泡沫_机构简版_V1.4.md",
+)
+
+CURRENT_METADATA = (
+    ROOT / "00_使用说明/README_付强_全量存档说明.md",
+    ROOT / "00_使用说明/版本矩阵_V1.4_2026-07-24.md",
+    ROOT / "复审与版本记录/PDF与目录核验报告_2026-07-24.md",
+)
+
+
+def validate_current_sources() -> None:
+    texts = {path: path.read_text(encoding="utf-8") for path in CURRENT_SOURCES}
+    joined = "\n".join(texts.values())
+    for token in CURRENT_REQUIRED_TEXT:
+        assert token in joined, ("current sources", token)
+    for token in FORBIDDEN_CURRENT_TEXT:
+        assert token not in joined, ("current sources", token)
+    for path, source_text in texts.items():
+        compact = re.sub(r"\s+", "", source_text)
+        assert "77/100" in compact or "指数75→77" in compact, (path.name, "score")
+        assert "A44/B22/C10/D24" in compact, (path.name, "scenario probabilities")
+        assert "1/3" in source_text and "2/3" in source_text, (path.name, "trigger counts")
+
+    audit_text = texts[ROOT / "10_源码_markdown/AI周期与泡沫_事实审计表_V1.4_增量.md"]
+    ids = re.findall(r"^\| \*\*(13[a-r])【V1\.4", audit_text, flags=re.M)
+    assert len(ids) == 10 and len(set(ids)) == 10, ids
+    assert ids == [f"13{letter}" for letter in "ijklmnopqr"], ids
+    audit_rows = [
+        line.strip().strip("|").split("|")
+        for line in audit_text.splitlines()
+        if re.match(r"^\| \*\*13[a-r]【V1\.4", line)
+    ]
+    assert all(len(row) == 8 for row in audit_rows), [
+        (ids[index], len(row)) for index, row in enumerate(audit_rows)
+    ]
+    for item_id, row in zip(ids, audit_rows):
+        assert "http" in row[3], (item_id, "missing source URL")
+        assert re.search(r"2026[/.-]\d{2}", row[4]), (item_id, "missing source date")
+        assert "★" in row[5], (item_id, "missing source grade")
+        assert row[6].strip(), (item_id, "missing audit verdict")
+        assert row[7].strip(), (item_id, "missing change note")
+    assert "73 项" in audit_text and "★★/★★★" in audit_text, "audit count/source grade"
+    for path in CURRENT_METADATA:
+        metadata_text = path.read_text(encoding="utf-8")
+        assert "94" in metadata_text and "93页" not in metadata_text, (path.name, "panorama page count")
+    print(
+        "[PASS] Current Markdown sources: 10 unique V1.4 items, 8 fields per row, "
+        "source URL/date/grade/verdict/change note complete; metadata page counts aligned"
+    )
 
 
 def named_toc_targets(reader: PdfReader, page_index: int) -> list[int]:
@@ -71,6 +143,10 @@ def validate_generated_pdf(path: Path, expected_pages: int) -> None:
     full_text = "\n".join((page.extract_text() or "") for page in reader.pages)
     for token in REQUIRED_TEXT:
         assert token in full_text, (path.name, token)
+    for token in CURRENT_REQUIRED_TEXT:
+        assert token in full_text, (path.name, token)
+    for token in FORBIDDEN_CURRENT_TEXT:
+        assert token not in full_text, (path.name, token)
     compact_text = full_text.replace(" ", "")
     assert "73项" in compact_text or "63→73" in compact_text, (path.name, "73项")
     assert "Alphabet" in full_text and "官方" in full_text, (path.name, "Alphabet官方")
@@ -132,19 +208,25 @@ def validate_thick() -> None:
     historical_text = reader.pages[front_count].extract_text() or ""
     assert "历史冻结正文" in historical_text and "卷首 V1.4" in historical_text, historical_text[:200]
 
-    # Historical TOC occupies original pages 6–9, offset by the current front matter.
+    # Discover historical internal-link pages instead of relying on magic offsets.
     page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
     checked = 0
-    for page_index in range(front_count + 3, front_count + 7):
+    toc_pages = 0
+    for page_index in range(front_count, len(reader.pages)):
+        page_checked = 0
         for ref in reader.pages[page_index].get("/Annots", []):
             dest = ref.get_object().get("/Dest")
             if isinstance(dest, list) and dest and hasattr(dest[0], "idnum"):
                 assert dest[0].idnum in page_object_ids, (page_index + 1, dest[0].idnum)
                 checked += 1
+                page_checked += 1
+        if page_checked >= 5:
+            toc_pages += 1
     assert checked >= 150, checked
+    assert toc_pages >= 4, toc_pages
     print(
         f"[PASS] {THICK.name}: {len(reader.pages)} pages, clean V1.4 cover and disclaimer promoted, "
-        f"{checked} historical TOC link rectangles resolve"
+        f"{checked} historical internal link rectangles resolve across {toc_pages} link-dense pages"
     )
 
 
@@ -201,6 +283,7 @@ def validate_maintenance(path: Path, base_pages: int, cover_index: int) -> None:
 
 
 def main() -> None:
+    validate_current_sources()
     for path, expected in PDFS.items():
         validate_generated_pdf(path, expected)
     validate_thick()

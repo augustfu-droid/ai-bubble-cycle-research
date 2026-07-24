@@ -31,8 +31,8 @@
 5. 市场地基更新：CAPE **41.52**、VIX **16.73**、HY OAS **271bp**；高估值、低波动、窄利差仍并存。
 6. Alphabet Q2形成双验证：Google Cloud收入 **$24.768B（+81.8%）**、营业利润率 **35.6%**；单季CapEx **$44.924B** 超过OCF **$39.069B**，FCF **-$5.855B**。E判断4成立，但指数、概率和触发数不变。
 7. Alphabet官方CEO书面发言进一步披露：Cloud积压订单 **$514B**、模型API每分钟处理 **220亿tokens**、既有客户使用量超过承诺额50%以上，且供给仍受限；这强化需求，不等同于资本回报率。
-8. 复审更正DeepSeek旧口径：一手资料支持“V4家族完成昇腾上线适配＋910C上的全参数后训练”，不能写成“V4-Pro完整预训练全部在华为芯片完成”；无一手来源的“R2 32B/AIME 92.7%”撤销。
-9. E判断2完成7/24价格腿结算：新易盛收 **476.02元**，预告后五日最高收盘 **551.77元**，未恢复6/23收盘锚552.00元。新易盛盈利腿与价格腿均成立；中际旭创业绩腿仍待披露，整条继续记“部分验证”。
+8. 复审更正DeepSeek旧口径：一手资料支持“华为云基于昇腾宣布V4首发适配、提供V4-Flash API服务＋910C上的全参数后训练”，不能写成“V4-Pro完整预训练全部在华为芯片完成”；无一手来源的“R2 32B/AIME 92.7%”撤销。
+9. E判断2完成7/24价格腿结算：新易盛收 **476.02元**，预告后五日最高收盘 **551.77元**，仅比6/23收盘锚552.00元低0.23元（0.04%）。价格腿按事前零容差规则临界成立；若另设0.1%安全边际则为临界未决。中际旭创业绩腿仍待披露，整条继续记“部分验证”。
 
 ## 三条证据链
 
@@ -54,7 +54,7 @@ SPCX 上市后先冲高至 $225.64，至 7/20 收于 $119.85，已经低于 $135
 
 ## 技术证据勘误：DeepSeek与昇腾
 
-DeepSeek官方资料确认V4于4/24发布，华为云同日完成V4系列零日适配；7/22论文报告在昇腾910C SuperPOD上完成V4家族全参数后训练。以上支持国产算力生态的工程适配与后训练能力，却不能证明V4-Pro从零开始的完整预训练全部由华为芯片完成。历史强表述已更正，“DeepSeek R2 32B/AIME 92.7%/单24GB GPU”因缺少一手来源撤销。
+DeepSeek官方资料确认V4于4/24发布；华为云同日宣布V4首发适配，其MaaS平台提供V4-Flash API免部署调用，并披露基于昇腾的推理适配；7/22论文报告在昇腾910C SuperPOD上完成V4家族全参数后训练。华为云公告没有使用“零日适配”，也未披露V4-Pro训练基础设施。以上支持国产算力生态的工程适配与后训练能力，却不能证明V4-Pro从零开始的完整预训练全部由华为芯片完成。历史强表述已更正，“DeepSeek R2 32B/AIME 92.7%/单24GB GPU”因缺少一手来源撤销。
 
 ## 触发器：把预警与执行分开
 
@@ -92,10 +92,10 @@ UBS 对四大 hyperscaler 合计总 CapEx 的估算——2026 年 $673B（+76%�
 | VIX | 16.73 | 未进入恐慌 |
 | HY OAS | 271bp | 系统性信用收缩尚未发生 |
 | ORCL | $120.05（7/23） | 评级下调后的权益观察锚 |
-| NVDA | $203.28（7/23） | 8/26 财报前需求触发仍安全 |
+| NVDA | $208.76（7/23） | 8/26 财报前需求触发仍安全 |
 | SPCX | $118.24（7/23） | 较发行价低 12.4%，承接预警继续验证 |
 | GOOGL | 单日-7.13%（7/23） | 高CapEx容忍度下降，但存在宏观共同因素 |
-| 新易盛 | 476.02元（7/24） | 五日价格腿成立；当天A股普跌，结果成立不等于单因归因 |
+| 新易盛 | 476.02元（7/24） | 五日价格腿规则内临界成立；仅比锚点低0.04%，且当天A股普跌 |
 
 下一窗口：7/28–29 FOMC；7/29 Microsoft、Meta与维谛技术；7/30 Amazon；8/26 NVIDIA FY27 Q2。
 
@@ -108,9 +108,9 @@ UBS 对四大 hyperscaler 合计总 CapEx 的估算——2026 年 $673B（+76%�
 
 ## 版本治理与来源
 
-本版是当前研究维护版。已投递材料和前瞻判断原件保持冻结；所有动态判断均以日期标记，历史快照保留原值。
+本版是当前研究维护版。历史发布材料和前瞻判断原件保持冻结；所有动态判断均以日期标记，历史快照保留原值。
 
-主要来源：[Alphabet 2026Q2财报](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)、[Alphabet CEO官方书面发言](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[TSMC Q2 官方业绩](https://investor.tsmc.com/english/quarterly-results/2026/q2)、[Oracle FY26 官方公告](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/)、[S&P Oracle 评级行动转引](https://www.streetinsider.com/Credit%2BRatings/S%26P%2BDowngrades%2BOracle%2BTo%2B%27bbb-A-3%27%3B%2BOutlook%2BStable/26752616.html)、[Reuters 7/23市场综述](https://www.reuters.com/business/autos-transportation/wall-st-futures-ease-big-tech-results-revive-ai-spending-worries-oil-jumps-2026-07-23/)、[新易盛历史行情](https://cn.investing.com/equities/eoptolink-tech-historical-data)、[7/24 A股收盘综述](https://4g.stockstar.com/detail/RB2026072400023910)、[DeepSeek V4官方公告](https://api-docs.deepseek.com/news/news260424/)、[华为云V4零日适配](https://www.huaweicloud.com/news/2026/20260424172129152.html)、[arXiv 2607.20145](https://arxiv.org/abs/2607.20145)、[FRED HY OAS](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)。
+主要来源：[Alphabet 2026Q2财报](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)、[Alphabet CEO官方书面发言](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[TSMC Q2 官方业绩](https://investor.tsmc.com/english/quarterly-results/2026/q2)、[Oracle FY26 官方公告](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/)、[S&P Oracle 评级行动转引](https://www.streetinsider.com/Credit%2BRatings/S%26P%2BDowngrades%2BOracle%2BTo%2B%27bbb-A-3%27%3B%2BOutlook%2BStable/26752616.html)、[Newsquawk评级复核](https://www.newsquawk.com/headlines/sp-downgrades-oracle-orcl-to-bbb--outlook-stable)、[Reuters 7/23市场综述](https://www.reuters.com/business/autos-transportation/wall-st-futures-ease-big-tech-results-revive-ai-spending-worries-oil-jumps-2026-07-23/)、[新易盛历史行情](https://cn.investing.com/equities/eoptolink-tech-historical-data)、[新易盛7/24收盘复核](https://stock.aigupiao.com/code/sz300502)、[7/24 A股收盘综述](https://m.cnfin.com/yw-lb/zixun/20260724/4445682_1.html)、[DeepSeek V4官方公告](https://api-docs.deepseek.com/news/news260424/)、[华为云V4首发适配与V4-Flash API服务](https://www.huaweicloud.com/news/2026/20260424172129152.html)、[arXiv 2607.20145](https://arxiv.org/abs/2607.20145)、[FRED HY OAS](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)。
 
 ---
 

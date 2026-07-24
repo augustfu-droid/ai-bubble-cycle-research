@@ -1,0 +1,6 @@
+# V1.4 report build and validation dependencies.
+# WeasyPrint also requires native Pango/GLib libraries.
+Markdown==3.10.2
+pypdf==6.10.0
+reportlab==4.4.9
+weasyprint==69.0
