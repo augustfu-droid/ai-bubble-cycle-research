@@ -7,8 +7,13 @@ Outputs:
   - institutional brief V1.4
   - complete panorama V1.4 (source re-render)
   - 300+ page super-panorama V1.4 (integrated update module + complete frozen legacy edition)
+  - public, Snowball, summary and execution maintenance editions
+  - four component-report maintenance editions
+  - complete compilation, delayed-amplification, crash-script and public-intro maintenance editions
 
-The submitted ZIP and every V1.3.4 PDF remain read-only inputs.
+The submitted ZIP and every historical PDF remain read-only inputs. Maintenance
+editions prepend the current update module and retain the complete historical
+layout, page links and source text behind an explicit frozen-edition divider.
 """
 from __future__ import annotations
 
@@ -55,6 +60,69 @@ AUDIT_INCR_MD = SRC / "AI周期与泡沫_事实审计表_V1.4_增量.md"
 BRIEF_MD = SRC / "AI周期与泡沫_机构简版_V1.4.md"
 PANO_BASE_MD = SRC / "AI周期与泡沫深度研究报告_全景版_V1.3.4重排合成源.md"
 THICK_BASE_PDF = ARCHIVE / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.3.4修订版.pdf"
+
+LEGACY_VARIANTS = (
+    (
+        ARCHIVE / "09_历史冻结基线/04_分项报告/01_利润真实性拆解_历史冻结版.pdf",
+        ARCHIVE / "04_分项报告/01_利润真实性拆解_V1.4维护版.pdf",
+        "分项报告01 · 利润真实性拆解",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/04_分项报告/02_循环投资网络_V1.3.4勘误附页冻结版.pdf",
+        ARCHIVE / "04_分项报告/02_循环投资网络_V1.4维护版.pdf",
+        "分项报告02 · 循环投资网络",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/04_分项报告/03_AI变现与编程TAM_历史冻结版.pdf",
+        ARCHIVE / "04_分项报告/03_AI变现与编程TAM_V1.4维护版.pdf",
+        "分项报告03 · AI变现与编程TAM",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/04_分项报告/04_AGI与国际格局_历史冻结版.pdf",
+        ARCHIVE / "04_分项报告/04_AGI与国际格局_V1.4维护版.pdf",
+        "分项报告04 · AGI与国际格局",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/公开精简版_V1.3.4冻结版.pdf",
+        ARCHIVE / "05_简版与执行摘要/2026年AI泡沫研究 · 公开精简版_V1.4维护版.pdf",
+        "2026年AI泡沫研究 · 公开精简版",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/雪球公开版_V1.3.4冻结版.pdf",
+        ARCHIVE / "05_简版与执行摘要/2026年AI泡沫研究 · 雪球公开版_V1.4维护版.pdf",
+        "2026年AI泡沫研究 · 雪球公开版",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/摘要版_历史冻结版.pdf",
+        ARCHIVE / "05_简版与执行摘要/2026年AI泡沫研究 · 摘要版_V1.4维护版.pdf",
+        "2026年AI泡沫研究 · 摘要版",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/执行简版_历史冻结版.pdf",
+        ARCHIVE / "05_简版与执行摘要/AI周期与泡沫研究_执行简版_V1.4维护版.pdf",
+        "AI周期与泡沫研究 · 执行简版",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/06_全景与剧本版/完整合集_V1.3.4勘误附页冻结版.pdf",
+        ARCHIVE / "06_全景与剧本版/AI周期与泡沫_完整合集_V1.4维护版.pdf",
+        "AI周期与泡沫 · 完整合集",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/06_全景与剧本版/延迟即放大版_历史冻结版.pdf",
+        ARCHIVE / "06_全景与剧本版/AI泡沫全景研究_延迟即放大版_V1.4维护版.pdf",
+        "AI泡沫全景研究 · 延迟即放大版",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/06_全景与剧本版/AI泡沫崩盘剧本_历史冻结版.pdf",
+        ARCHIVE / "06_全景与剧本版/AI泡沫崩盘剧本_V1.4维护版.pdf",
+        "AI泡沫崩盘剧本",
+    ),
+    (
+        ARCHIVE / "09_历史冻结基线/06_全景与剧本版/公众号00_发布引流稿_历史冻结版.pdf",
+        ARCHIVE / "06_全景与剧本版/公众号00_发布引流稿_V1.4维护版.pdf",
+        "公众号00 · 发布引流稿",
+    ),
+)
 
 
 def read(path: Path) -> str:
@@ -248,6 +316,27 @@ def stamp_page(page, label: str):
     return page
 
 
+def optimize_pdf(path: Path) -> None:
+    """Deduplicate appended PDF objects while preserving links and page labels."""
+    try:
+        import fitz
+    except ImportError:
+        print(f"[WARN] PyMuPDF unavailable; skipped object deduplication for {path.name}")
+        return
+    tmp = path.with_suffix(".optimized.tmp.pdf")
+    doc = fitz.open(path)
+    doc.save(
+        tmp,
+        garbage=4,
+        clean=True,
+        deflate=True,
+        deflate_images=True,
+        deflate_fonts=True,
+    )
+    doc.close()
+    tmp.replace(path)
+
+
 def build_thick(update_pdf: Path, out: Path) -> int:
     """Prepend the V1.4 module to the complete frozen edition and retain its internal TOC."""
     update_reader = PdfReader(str(update_pdf))
@@ -272,8 +361,55 @@ def build_thick(update_pdf: Path, out: Path) -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("wb") as fh:
         writer.write(fh)
+    optimize_pdf(out)
     pages = len(PdfReader(str(out)).pages)
     print(f"[OK] {out.name}: {pages} pages")
+    return pages
+
+
+def build_maintenance_edition(update_pdf: Path, base_pdf: Path, out: Path, title: str) -> int:
+    """Create a current wrapper without silently rewriting a legacy-layout PDF.
+
+    ``append`` (rather than page-by-page reconstruction) is intentional: it
+    preserves named destinations and internal TOC links in the old public
+    editions. The two sections use independent printed page-label ranges.
+    """
+    update_reader = PdfReader(str(update_pdf))
+    base_reader = PdfReader(str(base_pdf))
+    writer = PdfWriter()
+    writer.append(update_reader, import_outline=False)
+    writer.append(base_reader, import_outline=True)
+
+    update_count = len(update_reader.pages)
+    for page_index in range(update_count, len(writer.pages)):
+        stamp_page(
+            writer.pages[page_index],
+            "Historical frozen text; current conclusions, facts and corrections are in the V1.4 module at document front",
+        )
+
+    writer.set_page_label(0, update_count - 1, style=PageLabelStyle.DECIMAL, start=1)
+    writer.set_page_label(update_count, len(writer.pages) - 1, style=PageLabelStyle.DECIMAL, start=1)
+    writer.add_outline_item("V1.4·7/24 更新模块（当前口径）", 0)
+    writer.add_outline_item(
+        f"历史冻结正文（独立页码 1–{len(base_reader.pages)}）",
+        update_count,
+    )
+    writer.add_metadata(
+        {
+            "/Title": f"{title} · V1.4维护版",
+            "/Author": "付强",
+            "/Subject": (
+                "Current V1.4 update module plus complete frozen historical layout; "
+                "the update module governs all dynamic facts and conclusions"
+            ),
+        }
+    )
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("wb") as fh:
+        writer.write(fh)
+    optimize_pdf(out)
+    pages = len(PdfReader(str(out)).pages)
+    print(f"[OK] {out.name}: {pages} pages ({len(base_reader.pages)} frozen + {update_count} current)")
     return pages
 
 
@@ -316,6 +452,8 @@ def main() -> None:
         extra_cover="全量历史正文重新排版输出；卷首更新模块统一所有动态口径。",
     )
     build_thick(UPDATE_OUT, THICK_OUT)
+    for base_pdf, out, title in LEGACY_VARIANTS:
+        build_maintenance_edition(UPDATE_OUT, base_pdf, out, title)
 
 
 if __name__ == "__main__":

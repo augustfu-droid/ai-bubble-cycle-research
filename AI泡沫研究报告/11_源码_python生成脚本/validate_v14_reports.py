@@ -20,6 +20,21 @@ PDFS = {
 
 THICK = ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4超全景版_300页级.pdf"
 
+MAINTENANCE_PDFS = {
+    ROOT / "04_分项报告/01_利润真实性拆解_V1.4维护版.pdf": 26,
+    ROOT / "04_分项报告/02_循环投资网络_V1.4维护版.pdf": 25,
+    ROOT / "04_分项报告/03_AI变现与编程TAM_V1.4维护版.pdf": 27,
+    ROOT / "04_分项报告/04_AGI与国际格局_V1.4维护版.pdf": 19,
+    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 公开精简版_V1.4维护版.pdf": 74,
+    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 雪球公开版_V1.4维护版.pdf": 74,
+    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 摘要版_V1.4维护版.pdf": 13,
+    ROOT / "05_简版与执行摘要/AI周期与泡沫研究_执行简版_V1.4维护版.pdf": 7,
+    ROOT / "06_全景与剧本版/AI周期与泡沫_完整合集_V1.4维护版.pdf": 182,
+    ROOT / "06_全景与剧本版/AI泡沫全景研究_延迟即放大版_V1.4维护版.pdf": 139,
+    ROOT / "06_全景与剧本版/AI泡沫崩盘剧本_V1.4维护版.pdf": 19,
+    ROOT / "06_全景与剧本版/公众号00_发布引流稿_V1.4维护版.pdf": 4,
+}
+
 REQUIRED_TEXT = (
     "2026-07-24",
     "DeepSeek",
@@ -98,10 +113,44 @@ def validate_thick() -> None:
     )
 
 
+def validate_maintenance(path: Path, base_pages: int) -> None:
+    reader = PdfReader(str(path))
+    update_pages = PDFS[ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf"]
+    assert len(reader.pages) == update_pages + base_pages, (path.name, len(reader.pages), base_pages)
+    assert reader.page_labels[:9] == ["1", "2", "3", "4", "5", "6", "7", "1", "2"], (
+        path.name,
+        reader.page_labels[:9],
+    )
+    front_text = "\n".join((page.extract_text() or "") for page in reader.pages[:update_pages])
+    assert "2026-07-24" in front_text and "DeepSeek" in front_text and "Alphabet" in front_text, path.name
+
+    names = reader.named_destinations
+    page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
+    checked_named = 0
+    checked_direct = 0
+    for page in reader.pages:
+        for ref in page.get("/Annots", []):
+            dest = ref.get_object().get("/Dest")
+            if isinstance(dest, str):
+                assert dest in names, (path.name, dest)
+                target = reader.get_destination_page_number(names[dest])
+                assert 0 <= target < len(reader.pages), (path.name, dest, target)
+                checked_named += 1
+            elif isinstance(dest, list) and dest and hasattr(dest[0], "idnum"):
+                assert dest[0].idnum in page_object_ids, (path.name, dest[0].idnum)
+                checked_direct += 1
+    print(
+        f"[PASS] {path.name}: {len(reader.pages)} pages, dual page labels, "
+        f"{checked_named} named and {checked_direct} direct internal link rectangles resolve"
+    )
+
+
 def main() -> None:
     for path, expected in PDFS.items():
         validate_generated_pdf(path, expected)
     validate_thick()
+    for path, base_pages in MAINTENANCE_PDFS.items():
+        validate_maintenance(path, base_pages)
     print("[PASS] All V1.4 PDF and TOC checks completed")
 
 
