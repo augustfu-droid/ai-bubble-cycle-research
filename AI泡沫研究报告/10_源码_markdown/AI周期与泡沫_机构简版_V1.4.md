@@ -1,6 +1,7 @@
 # AI 周期与泡沫研究｜机构简版 V1.4
 
-> **作者：付强｜版本：V1.4·7/24滚动核验｜更新日：2026-07-24｜公司与研究资料核验至7/24，市场收盘至7/23**  
+> **作者：付强｜版本：V1.4·7/24收盘核验｜更新日：2026-07-24｜研究资料核验至7/24 18:53，A股收盘至7/24，海外市场收盘至7/23**
+>
 > 个人研究，基于公开信息，不构成投资建议。
 
 ## 一页结论
@@ -31,6 +32,7 @@
 6. Alphabet Q2形成双验证：Google Cloud收入 **$24.768B（+81.8%）**、营业利润率 **35.6%**；单季CapEx **$44.924B** 超过OCF **$39.069B**，FCF **-$5.855B**。E判断4成立，但指数、概率和触发数不变。
 7. Alphabet官方CEO书面发言进一步披露：Cloud积压订单 **$514B**、模型API每分钟处理 **220亿tokens**、既有客户使用量超过承诺额50%以上，且供给仍受限；这强化需求，不等同于资本回报率。
 8. 复审更正DeepSeek旧口径：一手资料支持“V4家族完成昇腾上线适配＋910C上的全参数后训练”，不能写成“V4-Pro完整预训练全部在华为芯片完成”；无一手来源的“R2 32B/AIME 92.7%”撤销。
+9. E判断2完成7/24价格腿结算：新易盛收 **476.02元**，预告后五日最高收盘 **551.77元**，未恢复6/23收盘锚552.00元。新易盛盈利腿与价格腿均成立；中际旭创业绩腿仍待披露，整条继续记“部分验证”。
 
 ## 三条证据链
 
@@ -93,8 +95,9 @@ UBS 对四大 hyperscaler 合计总 CapEx 的估算——2026 年 $673B（+76%�
 | NVDA | $203.28（7/23） | 8/26 财报前需求触发仍安全 |
 | SPCX | $118.24（7/23） | 较发行价低 12.4%，承接预警继续验证 |
 | GOOGL | 单日-7.13%（7/23） | 高CapEx容忍度下降，但存在宏观共同因素 |
+| 新易盛 | 476.02元（7/24） | 五日价格腿成立；当天A股普跌，结果成立不等于单因归因 |
 
-下一窗口：7/24收盘后结算E判断2价格腿；7/28–29 FOMC；7/29 Microsoft、Meta与维谛技术；7/30 Amazon；8/26 NVIDIA FY27 Q2。
+下一窗口：7/28–29 FOMC；7/29 Microsoft、Meta与维谛技术；7/30 Amazon；8/26 NVIDIA FY27 Q2。
 
 ## 我可能错在哪里
 
@@ -105,10 +108,10 @@ UBS 对四大 hyperscaler 合计总 CapEx 的估算——2026 年 $673B（+76%�
 
 ## 版本治理与来源
 
-本版是投递后的研究维护版。已投递材料和前瞻判断原件保持冻结；所有动态判断均以日期标记，历史快照保留原值。
+本版是当前研究维护版。已投递材料和前瞻判断原件保持冻结；所有动态判断均以日期标记，历史快照保留原值。
 
-主要来源：[Alphabet 2026Q2财报](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)、[Alphabet CEO官方书面发言](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[TSMC Q2 官方业绩](https://investor.tsmc.com/english/quarterly-results/2026/q2)、[Oracle FY26 官方公告](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/)、[S&P Oracle 评级行动转引](https://www.streetinsider.com/Credit%2BRatings/S%26P%2BDowngrades%2BOracle%2BTo%2B%27bbb-A-3%27%3B%2BOutlook%2BStable/26752616.html)、[Reuters 7/23市场综述](https://www.reuters.com/business/autos-transportation/wall-st-futures-ease-big-tech-results-revive-ai-spending-worries-oil-jumps-2026-07-23/)、[DeepSeek V4官方公告](https://api-docs.deepseek.com/news/news260424/)、[华为云V4零日适配](https://www.huaweicloud.com/news/2026/20260424172129152.html)、[arXiv 2607.20145](https://arxiv.org/abs/2607.20145)、[FRED HY OAS](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)。
+主要来源：[Alphabet 2026Q2财报](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)、[Alphabet CEO官方书面发言](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[TSMC Q2 官方业绩](https://investor.tsmc.com/english/quarterly-results/2026/q2)、[Oracle FY26 官方公告](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/)、[S&P Oracle 评级行动转引](https://www.streetinsider.com/Credit%2BRatings/S%26P%2BDowngrades%2BOracle%2BTo%2B%27bbb-A-3%27%3B%2BOutlook%2BStable/26752616.html)、[Reuters 7/23市场综述](https://www.reuters.com/business/autos-transportation/wall-st-futures-ease-big-tech-results-revive-ai-spending-worries-oil-jumps-2026-07-23/)、[新易盛历史行情](https://cn.investing.com/equities/eoptolink-tech-historical-data)、[7/24 A股收盘综述](https://4g.stockstar.com/detail/RB2026072400023910)、[DeepSeek V4官方公告](https://api-docs.deepseek.com/news/news260424/)、[华为云V4零日适配](https://www.huaweicloud.com/news/2026/20260424172129152.html)、[arXiv 2607.20145](https://arxiv.org/abs/2607.20145)、[FRED HY OAS](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)。
 
 ---
 
-**付强｜V1.4·7/24滚动核验｜2026-07-24｜不构成投资建议**
+**付强｜V1.4·7/24收盘核验｜2026-07-24｜不构成投资建议**

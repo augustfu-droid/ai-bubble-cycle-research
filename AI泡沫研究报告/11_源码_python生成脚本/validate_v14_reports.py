@@ -11,8 +11,8 @@ from pypdf import PdfReader
 ROOT = Path(__file__).resolve().parents[1]
 
 PDFS = {
-    ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf": 9,
-    ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf": 73,
+    ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf": 10,
+    ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf": 74,
     ROOT / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.4.pdf": 14,
     ROOT / "05_简版与执行摘要/AI周期与泡沫_机构简版_V1.4_内部署名版.pdf": 5,
     ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf": 93,
@@ -132,10 +132,10 @@ def validate_thick() -> None:
     historical_text = reader.pages[front_count].extract_text() or ""
     assert "历史冻结正文" in historical_text and "卷首 V1.4" in historical_text, historical_text[:200]
 
-    # Historical TOC occupies original pages 6–9, now physical pages 14–17.
+    # Historical TOC occupies original pages 6–9, offset by the current front matter.
     page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
     checked = 0
-    for page_index in range(13, 17):
+    for page_index in range(front_count + 3, front_count + 7):
         for ref in reader.pages[page_index].get("/Annots", []):
             dest = ref.get_object().get("/Dest")
             if isinstance(dest, list) and dest and hasattr(dest[0], "idnum"):
@@ -143,7 +143,7 @@ def validate_thick() -> None:
                 checked += 1
     assert checked >= 150, checked
     print(
-        f"[PASS] {THICK.name}: 318 pages, clean V1.4 cover and disclaimer promoted, "
+        f"[PASS] {THICK.name}: {len(reader.pages)} pages, clean V1.4 cover and disclaimer promoted, "
         f"{checked} historical TOC link rectangles resolve"
     )
 

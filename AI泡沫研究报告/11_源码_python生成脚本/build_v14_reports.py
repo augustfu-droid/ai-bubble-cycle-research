@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the post-submission V1.4 report line without touching submitted files.
+"""Build the current V1.4 report line without touching frozen submitted files.
 
 Outputs:
   - main report V1.4
@@ -251,12 +251,12 @@ code {{ background:#F4F3EF; padding:1px 3px; }}
 
 def cover_html(title: str, subtitle: str, extra: str = "") -> str:
     return f"""<section id="cover">
-<div class="rule"></div><div class="brand">付强 · 独立研究 · 投递后维护版</div>
+<div class="rule"></div><div class="brand">付强 · 独立研究 · 研究维护版</div>
 <div class="title">{title}</div><div class="sub">{subtitle}</div>
 <div class="kpi"><b>综合崩盘指数</b>　77 / 100<br/>
 <b>四情景</b>　A44 / B22 / C10 / D24（软着陆以外合计 76%）<br/>
 <b>触发器</b>　严格执行 1/3 · 广义早期预警 2/3<br/>
-<b>数据截止</b>　公司与研究资料核验至2026-07-24，市场收盘至2026-07-23</div>
+<b>数据截止</b>　研究资料至2026-07-24 18:53；A股收盘至7/24，海外市场收盘至7/23</div>
 <div class="rev"><b>当前判断</b>：需求仍然满载，融资与估值侧裂缝扩大；严格执行触发仍为1/3，尚未达到系统性减仓或对冲的全面执行信号。<br/>
 <b>阅读规则</b>：卷首V1.4为当前口径；后接历史冻结正文，仅用于展示研究过程。{extra}</div>
 <div class="foot">V1.4 · 2026-07-24滚动核验｜已投递材料与前瞻判断原件保持冻结｜不构成投资建议</div>
@@ -370,7 +370,7 @@ def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
     c.rect(margin_x, height - 82, min(118, content_w * 0.28), 8, fill=1, stroke=0)
     c.setFillColorRGB(0.48, 0.47, 0.44)
     c.setFont("NotoSansSC", 8.3)
-    c.drawString(margin_x, height - 112, "付强 · 独立研究 · 投递后维护版")
+    c.drawString(margin_x, height - 112, "付强 · 独立研究 · 研究维护版")
 
     title_size = 24
     title_y = height - 205
@@ -423,7 +423,7 @@ def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
     c.drawString(
         margin_x,
         box_y - 61,
-        "数据　研究资料核验至2026/07/24 14:00 · 权益市场收盘至2026/07/23",
+        "数据　研究资料至2026/07/24 18:53 · A股收盘至7/24 · 海外市场收盘至7/23",
     )
 
     c.setStrokeColorRGB(0.84, 0.83, 0.80)
@@ -602,7 +602,7 @@ def main() -> None:
         extra_cover="本模块不是单页勘误，而是包含结论、触发器对账、八项硬事实、Alphabet官方书面发言、DeepSeek口径勘误、市场快照、证伪条件和更新位置的完整动态正文。",
     )
     build_markdown_pdf(
-        main_md, MAIN_OUT, "AI周期与泡沫深度研究报告", "主报告 V1.4 · 投递后研究维护版",
+        main_md, MAIN_OUT, "AI周期与泡沫深度研究报告", "主报告 V1.4 · 研究维护版",
         extra_cover="历史正文保留研究过程，动态口径以卷首更新模块为准。",
     )
     build_markdown_pdf(
