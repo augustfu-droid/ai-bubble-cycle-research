@@ -66,61 +66,73 @@ LEGACY_VARIANTS = (
         ARCHIVE / "09_历史冻结基线/04_分项报告/01_利润真实性拆解_历史冻结版.pdf",
         ARCHIVE / "04_分项报告/01_利润真实性拆解_V1.4维护版.pdf",
         "分项报告01 · 利润真实性拆解",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/04_分项报告/02_循环投资网络_V1.3.4勘误附页冻结版.pdf",
         ARCHIVE / "04_分项报告/02_循环投资网络_V1.4维护版.pdf",
         "分项报告02 · 循环投资网络",
+        1,
     ),
     (
         ARCHIVE / "09_历史冻结基线/04_分项报告/03_AI变现与编程TAM_历史冻结版.pdf",
         ARCHIVE / "04_分项报告/03_AI变现与编程TAM_V1.4维护版.pdf",
         "分项报告03 · AI变现与编程TAM",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/04_分项报告/04_AGI与国际格局_历史冻结版.pdf",
         ARCHIVE / "04_分项报告/04_AGI与国际格局_V1.4维护版.pdf",
         "分项报告04 · AGI与国际格局",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/公开精简版_V1.3.4冻结版.pdf",
         ARCHIVE / "05_简版与执行摘要/2026年AI泡沫研究 · 公开精简版_V1.4维护版.pdf",
         "2026年AI泡沫研究 · 公开精简版",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/雪球公开版_V1.3.4冻结版.pdf",
         ARCHIVE / "05_简版与执行摘要/2026年AI泡沫研究 · 雪球公开版_V1.4维护版.pdf",
         "2026年AI泡沫研究 · 雪球公开版",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/摘要版_历史冻结版.pdf",
         ARCHIVE / "05_简版与执行摘要/2026年AI泡沫研究 · 摘要版_V1.4维护版.pdf",
         "2026年AI泡沫研究 · 摘要版",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/05_简版与执行摘要/执行简版_历史冻结版.pdf",
         ARCHIVE / "05_简版与执行摘要/AI周期与泡沫研究_执行简版_V1.4维护版.pdf",
         "AI周期与泡沫研究 · 执行简版",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/06_全景与剧本版/完整合集_V1.3.4勘误附页冻结版.pdf",
         ARCHIVE / "06_全景与剧本版/AI周期与泡沫_完整合集_V1.4维护版.pdf",
         "AI周期与泡沫 · 完整合集",
+        1,
     ),
     (
         ARCHIVE / "09_历史冻结基线/06_全景与剧本版/延迟即放大版_历史冻结版.pdf",
         ARCHIVE / "06_全景与剧本版/AI泡沫全景研究_延迟即放大版_V1.4维护版.pdf",
         "AI泡沫全景研究 · 延迟即放大版",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/06_全景与剧本版/AI泡沫崩盘剧本_历史冻结版.pdf",
         ARCHIVE / "06_全景与剧本版/AI泡沫崩盘剧本_V1.4维护版.pdf",
         "AI泡沫崩盘剧本",
+        0,
     ),
     (
         ARCHIVE / "09_历史冻结基线/06_全景与剧本版/公众号00_发布引流稿_历史冻结版.pdf",
         ARCHIVE / "06_全景与剧本版/公众号00_发布引流稿_V1.4维护版.pdf",
         "公众号00 · 发布引流稿",
+        0,
     ),
 )
 
@@ -227,15 +239,17 @@ h1 {{ color:#004098; font-size:19pt; margin:.2em 0 .45em; padding-bottom:.2em; b
 h2 {{ color:#004098; font-size:13pt; margin:1.2em 0 .4em; padding-left:.3em; border-left:4px solid #004098; page-break-after:avoid; }}
 h3 {{ color:#003070; font-size:10.8pt; margin:1em 0 .3em; page-break-after:avoid; }}
 h4 {{ color:#003070; font-size:9.8pt; margin:.8em 0 .25em; page-break-after:avoid; }}
-p {{ margin:.38em 0; }}
+p {{ margin:.48em 0; }}
 table {{ border-collapse:collapse; width:100%; margin:.45em 0 .8em; font-size:{'7.1pt' if compact else '7.8pt'}; }}
+.keep-table {{ height:0; margin:0; padding:0; page-break-after:avoid; }}
+.keep-table + table {{ page-break-inside:avoid; }}
 thead {{ display:table-header-group; }} tr {{ page-break-inside:avoid; }}
 th {{ background:#004098; color:white; border:1px solid #004098; padding:4px 6px; text-align:left; }}
 td {{ border:.5px solid #D4D1CA; padding:4px 6px; vertical-align:top; line-height:1.4; overflow-wrap:anywhere; }}
 tr:nth-child(even) td {{ background:#FAF9F7; }}
 blockquote {{ border-left:3px solid #004098; background:#F7F9FC; margin:.5em 0; padding:.35em .8em; color:#55524A; }}
 a {{ color:#004098; text-decoration:none; overflow-wrap:anywhere; }}
-ul,ol {{ margin:.35em 0; padding-left:1.5em; }} li {{ margin:.12em 0; }}
+ul,ol {{ margin:.55em 0; padding-left:1.5em; }} li {{ margin:.45em 0; }}
 hr {{ border:0; border-top:.5px solid #D4D1CA; margin:1em 0; }}
 img {{ max-width:100%; max-height:21cm; object-fit:contain; }}
 figure {{ page-break-inside:avoid; text-align:center; }}
@@ -316,6 +330,81 @@ def stamp_page(page, label: str):
     return page
 
 
+def stamp_current_cover(page, title: str):
+    """Promote a legacy formal cover into the visible V1.4 front cover."""
+    width = float(page.mediabox.width)
+    height = float(page.mediabox.height)
+    packet = io.BytesIO()
+    c = canvas.Canvas(packet, pagesize=(width, height))
+    if "NotoSansSC" not in pdfmetrics.getRegisteredFontNames():
+        pdfmetrics.registerFont(TTFont("NotoSansSC", str(FONT_DIR / "NotoSansSC-Regular.ttf")))
+        pdfmetrics.registerFont(TTFont("NotoSansSC-Bold", str(FONT_DIR / "NotoSansSC-Bold.ttf")))
+    c.setFillColorRGB(1, 1, 1)
+    c.rect(18, height - 67, width - 36, 48, fill=1, stroke=0)
+    c.setFillColorRGB(0.0, 0.25, 0.60)
+    c.rect(18, height - 63, 70, 7, fill=1, stroke=0)
+    c.setFont("NotoSansSC-Bold", 15)
+    c.drawString(102, height - 57, "V1.4")
+    c.setFont("NotoSansSC", 8.5)
+    c.drawString(153, height - 56, "2026/07/24 当前维护版")
+    c.setFillColorRGB(0.34, 0.34, 0.34)
+    c.setFont("NotoSansSC", 6.8)
+    c.drawRightString(
+        width - 18,
+        height - 55,
+        "历史正文保留原时点；当前结论、事实与勘误以随后更新模块为准",
+    )
+    c.setStrokeColorRGB(0.78, 0.82, 0.88)
+    c.setLineWidth(0.35)
+    c.line(18, height - 68, width - 18, height - 68)
+    c.save()
+    packet.seek(0)
+    page.merge_page(PdfReader(packet).pages[0])
+    return page
+
+
+def promoted_cover_page(base_pdf: Path, cover_index: int, title: str):
+    """Extract the legacy formal cover and update only its visible edition/date marks."""
+    import fitz
+
+    source = fitz.open(base_pdf)
+    cover_doc = fitz.open()
+    cover_doc.insert_pdf(source, from_page=cover_index, to_page=cover_index)
+    source.close()
+    page = cover_doc[0]
+
+    replacements: list[tuple[str, str]] = []
+    for old_version in ("V1.3.4", "V0.8.2", "V0.6.0", "V1.1"):
+        if page.search_for(old_version):
+            replacements.append((old_version, "V1.4"))
+            break
+    for old_date in ("2026/07/07", "2026/06/14", "2026/06/03", "2026/05/21"):
+        if page.search_for(old_date):
+            replacements.append((old_date, "2026/07/24"))
+            break
+
+    queued: list[tuple[fitz.Rect, str]] = []
+    for old, new in replacements:
+        for rect in page.search_for(old):
+            box = fitz.Rect(rect.x0 - 0.5, rect.y0 - 0.5, rect.x1 + 2.0, rect.y1 + 0.5)
+            page.add_redact_annot(box, fill=(1, 1, 1))
+            queued.append((box, new))
+    if queued:
+        page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE)
+        for box, new in queued:
+            page.insert_text(
+                (box.x0, box.y1 - 1.2),
+                new,
+                fontname="helv",
+                fontsize=max(6.0, min(9.5, box.height * 0.72)),
+                color=(0.0, 0.25, 0.60),
+            )
+
+    payload = cover_doc.tobytes(garbage=4, clean=True, deflate=True)
+    cover_doc.close()
+    return stamp_current_cover(PdfReader(io.BytesIO(payload)).pages[0], title)
+
+
 def optimize_pdf(path: Path) -> None:
     """Deduplicate appended PDF objects while preserving links and page labels."""
     try:
@@ -338,25 +427,30 @@ def optimize_pdf(path: Path) -> None:
 
 
 def build_thick(update_pdf: Path, out: Path) -> int:
-    """Prepend the V1.4 module to the complete frozen edition and retain its internal TOC."""
+    """Promote the formal panorama cover, then retain the update body and historical TOC."""
     update_reader = PdfReader(str(update_pdf))
     base_reader = PdfReader(str(THICK_BASE_PDF))
     writer = PdfWriter()
-    for page in update_reader.pages:
-        writer.add_page(page)
-    # Keep all 310 legacy pages so every historical TOC destination remains present.
-    for page in base_reader.pages:
-        stamped = stamp_page(page, "Historical V1.3.4 edition; current data and corrections are in the 7-page module at document front")
-        writer.add_page(stamped)
-    update_count = len(update_reader.pages)
-    writer.set_page_label(0, update_count - 1, style=PageLabelStyle.DECIMAL, start=1)
-    writer.set_page_label(update_count, len(writer.pages) - 1, style=PageLabelStyle.DECIMAL, start=1)
-    writer.add_outline_item("V1.4·7/24 更新模块", 0)
-    writer.add_outline_item("V1.3.4 冻结历史版（独立页码 1–310）", update_count)
+    writer.add_page(promoted_cover_page(THICK_BASE_PDF, 0, "2026年AI泡沫研究 · 全景版"))
+    writer.append(update_reader, pages=(1, len(update_reader.pages)), import_outline=False)
+    # The historical cover has moved to physical page 1. Keep original pages 2–310,
+    # which contain every historical TOC target.
+    writer.append(base_reader, pages=(1, len(base_reader.pages)), import_outline=True)
+    front_count = len(update_reader.pages)
+    for page_index in range(front_count, len(writer.pages)):
+        stamp_page(
+            writer.pages[page_index],
+            "Historical V1.3.4 edition; current data and corrections are in the 7-page module at document front",
+        )
+    writer.set_page_label(0, front_count - 1, style=PageLabelStyle.DECIMAL, start=1)
+    writer.set_page_label(front_count, len(writer.pages) - 1, style=PageLabelStyle.DECIMAL, start=2)
+    writer.add_outline_item("V1.4 当前封面", 0)
+    writer.add_outline_item("V1.4·7/24 更新与勘误", 1)
+    writer.add_outline_item("V1.3.4 冻结历史正文（原页2–310）", front_count)
     writer.add_metadata({
         "/Title": "2026年AI泡沫研究 · 全景版 V1.4超全景版",
         "/Author": "付强",
-        "/Subject": "V1.4 integrated update module plus complete 310-page frozen historical edition",
+        "/Subject": "V1.4 formal cover and update body plus frozen historical pages 2-310",
     })
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("wb") as fh:
@@ -367,7 +461,13 @@ def build_thick(update_pdf: Path, out: Path) -> int:
     return pages
 
 
-def build_maintenance_edition(update_pdf: Path, base_pdf: Path, out: Path, title: str) -> int:
+def build_maintenance_edition(
+    update_pdf: Path,
+    base_pdf: Path,
+    out: Path,
+    title: str,
+    cover_index: int,
+) -> int:
     """Create a current wrapper without silently rewriting a legacy-layout PDF.
 
     ``append`` (rather than page-by-page reconstruction) is intentional: it
@@ -377,22 +477,48 @@ def build_maintenance_edition(update_pdf: Path, base_pdf: Path, out: Path, title
     update_reader = PdfReader(str(update_pdf))
     base_reader = PdfReader(str(base_pdf))
     writer = PdfWriter()
-    writer.append(update_reader, import_outline=False)
-    writer.append(base_reader, import_outline=True)
+    writer.add_page(promoted_cover_page(base_pdf, cover_index, title))
+    writer.append(update_reader, pages=(1, len(update_reader.pages)), import_outline=False)
 
-    update_count = len(update_reader.pages)
-    for page_index in range(update_count, len(writer.pages)):
+    # Move (rather than duplicate) the old formal cover. Errata pages that
+    # preceded a legacy cover remain at the start of the frozen section.
+    if cover_index:
+        writer.append(base_reader, pages=(0, cover_index), import_outline=False)
+    if cover_index + 1 < len(base_reader.pages):
+        writer.append(
+            base_reader,
+            pages=(cover_index + 1, len(base_reader.pages)),
+            import_outline=True,
+        )
+
+    front_count = len(update_reader.pages)
+    for page_index in range(front_count, len(writer.pages)):
         stamp_page(
             writer.pages[page_index],
             "Historical frozen text; current conclusions, facts and corrections are in the V1.4 module at document front",
         )
 
-    writer.set_page_label(0, update_count - 1, style=PageLabelStyle.DECIMAL, start=1)
-    writer.set_page_label(update_count, len(writer.pages) - 1, style=PageLabelStyle.DECIMAL, start=1)
-    writer.add_outline_item("V1.4·7/24 更新模块（当前口径）", 0)
+    writer.set_page_label(0, front_count - 1, style=PageLabelStyle.DECIMAL, start=1)
+    if cover_index:
+        writer.set_page_label(
+            front_count,
+            front_count + cover_index - 1,
+            style=PageLabelStyle.DECIMAL,
+            start=1,
+        )
+    post_cover_start = front_count + cover_index
+    if post_cover_start < len(writer.pages):
+        writer.set_page_label(
+            post_cover_start,
+            len(writer.pages) - 1,
+            style=PageLabelStyle.DECIMAL,
+            start=cover_index + 2,
+        )
+    writer.add_outline_item("V1.4 当前封面", 0)
+    writer.add_outline_item("V1.4·7/24 更新与勘误", 1)
     writer.add_outline_item(
-        f"历史冻结正文（独立页码 1–{len(base_reader.pages)}）",
-        update_count,
+        f"历史冻结正文（原封面已移至首页，共{len(base_reader.pages) - 1}页）",
+        front_count,
     )
     writer.add_metadata(
         {
@@ -409,7 +535,11 @@ def build_maintenance_edition(update_pdf: Path, base_pdf: Path, out: Path, title
         writer.write(fh)
     optimize_pdf(out)
     pages = len(PdfReader(str(out)).pages)
-    print(f"[OK] {out.name}: {pages} pages ({len(base_reader.pages)} frozen + {update_count} current)")
+    print(
+        f"[OK] {out.name}: {pages} pages "
+        f"(promoted cover + {len(update_reader.pages) - 1} current pages + "
+        f"{len(base_reader.pages) - 1} frozen pages)"
+    )
     return pages
 
 
@@ -452,8 +582,8 @@ def main() -> None:
         extra_cover="全量历史正文重新排版输出；卷首更新模块统一所有动态口径。",
     )
     build_thick(UPDATE_OUT, THICK_OUT)
-    for base_pdf, out, title in LEGACY_VARIANTS:
-        build_maintenance_edition(UPDATE_OUT, base_pdf, out, title)
+    for base_pdf, out, title, cover_index in LEGACY_VARIANTS:
+        build_maintenance_edition(UPDATE_OUT, base_pdf, out, title, cover_index)
 
 
 if __name__ == "__main__":

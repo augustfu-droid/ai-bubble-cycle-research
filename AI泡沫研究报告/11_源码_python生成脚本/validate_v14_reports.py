@@ -11,28 +11,28 @@ from pypdf import PdfReader
 ROOT = Path(__file__).resolve().parents[1]
 
 PDFS = {
-    ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf": 7,
-    ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf": 70,
-    ROOT / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.4.pdf": 13,
+    ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf": 9,
+    ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf": 73,
+    ROOT / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.4.pdf": 14,
     ROOT / "05_简版与执行摘要/AI周期与泡沫_机构简版_V1.4_内部署名版.pdf": 5,
-    ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf": 90,
+    ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf": 93,
 }
 
 THICK = ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4超全景版_300页级.pdf"
 
 MAINTENANCE_PDFS = {
-    ROOT / "04_分项报告/01_利润真实性拆解_V1.4维护版.pdf": 26,
-    ROOT / "04_分项报告/02_循环投资网络_V1.4维护版.pdf": 25,
-    ROOT / "04_分项报告/03_AI变现与编程TAM_V1.4维护版.pdf": 27,
-    ROOT / "04_分项报告/04_AGI与国际格局_V1.4维护版.pdf": 19,
-    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 公开精简版_V1.4维护版.pdf": 74,
-    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 雪球公开版_V1.4维护版.pdf": 74,
-    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 摘要版_V1.4维护版.pdf": 13,
-    ROOT / "05_简版与执行摘要/AI周期与泡沫研究_执行简版_V1.4维护版.pdf": 7,
-    ROOT / "06_全景与剧本版/AI周期与泡沫_完整合集_V1.4维护版.pdf": 182,
-    ROOT / "06_全景与剧本版/AI泡沫全景研究_延迟即放大版_V1.4维护版.pdf": 139,
-    ROOT / "06_全景与剧本版/AI泡沫崩盘剧本_V1.4维护版.pdf": 19,
-    ROOT / "06_全景与剧本版/公众号00_发布引流稿_V1.4维护版.pdf": 4,
+    ROOT / "04_分项报告/01_利润真实性拆解_V1.4维护版.pdf": (26, 0),
+    ROOT / "04_分项报告/02_循环投资网络_V1.4维护版.pdf": (25, 1),
+    ROOT / "04_分项报告/03_AI变现与编程TAM_V1.4维护版.pdf": (27, 0),
+    ROOT / "04_分项报告/04_AGI与国际格局_V1.4维护版.pdf": (19, 0),
+    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 公开精简版_V1.4维护版.pdf": (74, 0),
+    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 雪球公开版_V1.4维护版.pdf": (74, 0),
+    ROOT / "05_简版与执行摘要/2026年AI泡沫研究 · 摘要版_V1.4维护版.pdf": (13, 0),
+    ROOT / "05_简版与执行摘要/AI周期与泡沫研究_执行简版_V1.4维护版.pdf": (7, 0),
+    ROOT / "06_全景与剧本版/AI周期与泡沫_完整合集_V1.4维护版.pdf": (182, 1),
+    ROOT / "06_全景与剧本版/AI泡沫全景研究_延迟即放大版_V1.4维护版.pdf": (139, 0),
+    ROOT / "06_全景与剧本版/AI泡沫崩盘剧本_V1.4维护版.pdf": (19, 0),
+    ROOT / "06_全景与剧本版/公众号00_发布引流稿_V1.4维护版.pdf": (4, 0),
 }
 
 REQUIRED_TEXT = (
@@ -91,16 +91,21 @@ def validate_generated_pdf(path: Path, expected_pages: int) -> None:
 
 def validate_thick() -> None:
     reader = PdfReader(str(THICK))
-    assert len(reader.pages) == 317, len(reader.pages)
-    assert reader.page_labels[:9] == ["1", "2", "3", "4", "5", "6", "7", "1", "2"], reader.page_labels[:9]
+    update_pages = PDFS[ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf"]
+    assert len(reader.pages) == 318, len(reader.pages)
+    assert reader.page_labels[: update_pages + 2] == [
+        *[str(i) for i in range(1, update_pages + 1)],
+        "2",
+        "3",
+    ], reader.page_labels[: update_pages + 2]
 
-    # Current update module TOC is on physical page 2 and must match its own 1–7 page labels.
-    assert printed_toc_numbers(reader, 1) == named_toc_targets(reader, 1)
+    first_page_text = reader.pages[0].extract_text() or ""
+    assert "V1.4" in first_page_text and "全景版" in first_page_text, first_page_text[:200]
 
-    # Historical TOC occupies original pages 6–9, now physical pages 13–16.
+    # Historical TOC occupies original pages 6–9, now physical pages 14–17.
     page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
     checked = 0
-    for page_index in range(12, 16):
+    for page_index in range(13, 17):
         for ref in reader.pages[page_index].get("/Annots", []):
             dest = ref.get_object().get("/Dest")
             if isinstance(dest, list) and dest and hasattr(dest[0], "idnum"):
@@ -108,21 +113,32 @@ def validate_thick() -> None:
                 checked += 1
     assert checked >= 150, checked
     print(
-        f"[PASS] {THICK.name}: 317 pages, dual page labels reset correctly, "
+        f"[PASS] {THICK.name}: 318 pages, formal V1.4 cover promoted to page 1, "
         f"{checked} historical TOC link rectangles resolve"
     )
 
 
-def validate_maintenance(path: Path, base_pages: int) -> None:
+def validate_maintenance(path: Path, base_pages: int, cover_index: int) -> None:
     reader = PdfReader(str(path))
     update_pages = PDFS[ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf"]
-    assert len(reader.pages) == update_pages + base_pages, (path.name, len(reader.pages), base_pages)
-    assert reader.page_labels[:9] == ["1", "2", "3", "4", "5", "6", "7", "1", "2"], (
+    assert len(reader.pages) == update_pages + base_pages - 1, (
         path.name,
-        reader.page_labels[:9],
+        len(reader.pages),
+        base_pages,
+    )
+    expected_tail = ["1", "3"] if cover_index else ["2", "3"]
+    label_probe = reader.page_labels[: update_pages + 2]
+    assert label_probe == [*[str(i) for i in range(1, update_pages + 1)], *expected_tail], (
+        path.name,
+        label_probe,
     )
     front_text = "\n".join((page.extract_text() or "") for page in reader.pages[:update_pages])
-    assert "2026-07-24" in front_text and "DeepSeek" in front_text and "Alphabet" in front_text, path.name
+    assert (
+        "V1.4" in (reader.pages[0].extract_text() or "")
+        and "2026-07-24" in front_text
+        and "DeepSeek" in front_text
+        and "Alphabet" in front_text
+    ), path.name
 
     names = reader.named_destinations
     page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
@@ -149,8 +165,8 @@ def main() -> None:
     for path, expected in PDFS.items():
         validate_generated_pdf(path, expected)
     validate_thick()
-    for path, base_pages in MAINTENANCE_PDFS.items():
-        validate_maintenance(path, base_pages)
+    for path, (base_pages, cover_index) in MAINTENANCE_PDFS.items():
+        validate_maintenance(path, base_pages, cover_index)
     print("[PASS] All V1.4 PDF and TOC checks completed")
 
 
