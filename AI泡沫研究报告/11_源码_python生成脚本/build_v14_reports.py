@@ -215,7 +215,7 @@ def css_for(title: str, landscape: bool = False, compact: bool = False) -> str:
     return FONT_FACE + f"""
 @page {{ size:{size}; margin:{margin};
   @top-left {{ content:"付强 · {title}"; font-family:NotoSansSC; font-size:7.2pt; color:#77756F; }}
-  @top-right {{ content:"V1.4 · 数据截至 {DATA_DATE}"; font-family:NotoSansSC; font-size:7.2pt; color:#77756F; }}
+  @top-right {{ content:"V1.4 · 滚动核验至 {DATA_DATE}"; font-family:NotoSansSC; font-size:7.2pt; color:#77756F; }}
   @bottom-left {{ content:"个人研究 · 基于公开信息 · 不构成投资建议"; font-family:NotoSansSC; font-size:7pt; color:#AAA8A2; }}
   @bottom-right {{ content:"第 " counter(page) " 页 / 共 " counter(pages) " 页"; font-family:NotoSansSC; font-size:7.2pt; color:#77756F; }}
 }}
@@ -317,8 +317,11 @@ def stamp_page(page, label: str):
     height = float(page.mediabox.height)
     packet = io.BytesIO()
     c = canvas.Canvas(packet, pagesize=(width, height))
+    if "NotoSansSC" not in pdfmetrics.getRegisteredFontNames():
+        pdfmetrics.registerFont(TTFont("NotoSansSC", str(FONT_DIR / "NotoSansSC-Regular.ttf")))
+        pdfmetrics.registerFont(TTFont("NotoSansSC-Bold", str(FONT_DIR / "NotoSansSC-Bold.ttf")))
     c.setFillColorRGB(0.35, 0.35, 0.35)
-    c.setFont("Helvetica", 6.5)
+    c.setFont("NotoSansSC", 6.2)
     c.drawRightString(width - 18, height - 12, label)
     c.setStrokeColorRGB(0.82, 0.82, 0.82)
     c.setLineWidth(0.25)
@@ -327,6 +330,30 @@ def stamp_page(page, label: str):
     packet.seek(0)
     overlay = PdfReader(packet).pages[0]
     page.merge_page(overlay)
+    return page
+
+
+def stamp_disclaimer_header(page, title: str):
+    """Replace a stale legacy header on the promoted full disclaimer page."""
+    width = float(page.mediabox.width)
+    height = float(page.mediabox.height)
+    packet = io.BytesIO()
+    c = canvas.Canvas(packet, pagesize=(width, height))
+    if "NotoSansSC" not in pdfmetrics.getRegisteredFontNames():
+        pdfmetrics.registerFont(TTFont("NotoSansSC", str(FONT_DIR / "NotoSansSC-Regular.ttf")))
+        pdfmetrics.registerFont(TTFont("NotoSansSC-Bold", str(FONT_DIR / "NotoSansSC-Bold.ttf")))
+    c.setFillColorRGB(1, 1, 1)
+    c.rect(0, height - 42, width, 42, fill=1, stroke=0)
+    c.setFillColorRGB(0.48, 0.47, 0.44)
+    c.setFont("NotoSansSC", 6.7)
+    c.drawString(36, height - 22, f"付强 · {title}")
+    c.drawRightString(width - 36, height - 22, "重要免责声明 · V1.4维护版")
+    c.setStrokeColorRGB(0.84, 0.83, 0.80)
+    c.setLineWidth(0.3)
+    c.line(36, height - 28, width - 36, height - 28)
+    c.save()
+    packet.seek(0)
+    page.merge_page(PdfReader(packet).pages[0])
     return page
 
 
@@ -435,7 +462,7 @@ def build_thick(update_pdf: Path, out: Path) -> int:
     # Original page 2 is the full legal/risk disclaimer. Move it directly behind
     # the current cover so it no longer separates the V1.4 update from the V1.3
     # frozen revision record.
-    writer.append(base_reader, pages=(1, 2), import_outline=False)
+    writer.add_page(stamp_disclaimer_header(base_reader.pages[1], "AI周期与泡沫研究 · 全景版"))
     writer.append(update_reader, pages=(1, len(update_reader.pages)), import_outline=False)
     # The cover and disclaimer have moved to the front. Keep original pages
     # 3–310, which contain the revision record and every historical TOC target.
@@ -444,7 +471,7 @@ def build_thick(update_pdf: Path, out: Path) -> int:
     for page_index in range(front_count, len(writer.pages)):
         stamp_page(
             writer.pages[page_index],
-            "Historical V1.3.4 edition; current data and corrections are in the 8-page update body at document front",
+            "历史冻结正文 · V1.3.4｜动态口径见卷首 V1.4",
         )
     writer.set_page_label(0, front_count - 1, style=PageLabelStyle.DECIMAL, start=1)
     writer.set_page_label(front_count, len(writer.pages) - 1, style=PageLabelStyle.DECIMAL, start=3)
@@ -500,7 +527,7 @@ def build_maintenance_edition(
     for page_index in range(front_count, len(writer.pages)):
         stamp_page(
             writer.pages[page_index],
-            "Historical frozen text; current conclusions, facts and corrections are in the V1.4 module at document front",
+            "历史冻结正文｜动态口径见卷首 V1.4",
         )
 
     writer.set_page_label(0, front_count - 1, style=PageLabelStyle.DECIMAL, start=1)

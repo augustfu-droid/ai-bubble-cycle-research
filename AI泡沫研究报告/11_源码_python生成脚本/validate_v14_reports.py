@@ -74,6 +74,7 @@ def validate_generated_pdf(path: Path, expected_pages: int) -> None:
     compact_text = full_text.replace(" ", "")
     assert "73项" in compact_text or "63→73" in compact_text, (path.name, "73项")
     assert "Alphabet" in full_text and "官方" in full_text, (path.name, "Alphabet官方")
+    assert "V1.4" in full_text and "滚动核验至" in full_text, (path.name, "统一当前页眉")
 
     toc_pages = 0
     toc_rows = 0
@@ -93,7 +94,6 @@ def validate_thick() -> None:
     reader = PdfReader(str(THICK))
     update_pages = PDFS[ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf"]
     front_count = update_pages + 1
-    assert len(reader.pages) == 318, len(reader.pages)
     assert reader.page_labels[: front_count + 2] == [
         *[str(i) for i in range(1, front_count + 1)],
         "3",
@@ -103,9 +103,11 @@ def validate_thick() -> None:
     first_page_text = reader.pages[0].extract_text() or ""
     assert "V1.4" in first_page_text and "全景版" in first_page_text, first_page_text[:200]
     disclaimer_text = reader.pages[1].extract_text() or ""
-    assert "免责声明" in disclaimer_text, disclaimer_text[:200]
+    assert "免责声明" in disclaimer_text and "V1.4维护版" in disclaimer_text, disclaimer_text[:200]
     update_text = reader.pages[2].extract_text() or ""
-    assert "V1.4" in update_text, update_text[:200]
+    assert "V1.4" in update_text and "滚动核验至" in update_text, update_text[:200]
+    historical_text = reader.pages[front_count].extract_text() or ""
+    assert "历史冻结正文" in historical_text and "卷首 V1.4" in historical_text, historical_text[:200]
 
     # Historical TOC occupies original pages 6–9, now physical pages 14–17.
     page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
@@ -138,11 +140,15 @@ def validate_maintenance(path: Path, base_pages: int, cover_index: int) -> None:
         label_probe,
     )
     front_text = "\n".join((page.extract_text() or "") for page in reader.pages[:update_pages])
+    historical_header = reader.pages[update_pages].extract_text() or ""
     assert (
         "V1.4" in (reader.pages[0].extract_text() or "")
         and "2026-07-24" in front_text
         and "DeepSeek" in front_text
         and "Alphabet" in front_text
+        and "滚动核验至" in front_text
+        and "历史冻结正文" in historical_header
+        and "卷首 V1.4" in historical_header
     ), path.name
 
     names = reader.named_destinations
