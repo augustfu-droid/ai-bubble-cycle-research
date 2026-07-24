@@ -75,6 +75,20 @@ def validate_generated_pdf(path: Path, expected_pages: int) -> None:
     assert "73项" in compact_text or "63→73" in compact_text, (path.name, "73项")
     assert "Alphabet" in full_text and "官方" in full_text, (path.name, "Alphabet官方")
     assert "V1.4" in full_text and "滚动核验至" in full_text, (path.name, "统一当前页眉")
+    if path in {
+        ROOT / "12_增量素材/2026-07-24_V1.4滚动更新模块.pdf",
+        ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf",
+        ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf",
+    }:
+        assert "V1.4滚动更新日志" in full_text, (path.name, "滚动更新日志")
+        assert "版本变更说明（最新）" not in full_text, (path.name, "旧重复标题")
+    cover_text = reader.pages[0].extract_text() or ""
+    assert "当前判断" in cover_text and "阅读规则" in cover_text, (path.name, "统一首页")
+    if path in {
+        ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf",
+        ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf",
+    }:
+        assert "历史版本沿革" in full_text, (path.name, "历史版本沿革")
 
     toc_pages = 0
     toc_rows = 0
@@ -101,11 +115,20 @@ def validate_thick() -> None:
     ], reader.page_labels[: front_count + 2]
 
     first_page_text = reader.pages[0].extract_text() or ""
-    assert "V1.4" in first_page_text and "全景版" in first_page_text, first_page_text[:200]
+    assert (
+        "V1.4" in first_page_text
+        and "全景版" in first_page_text
+        and "当前判断" in first_page_text
+        and "阅读规则" in first_page_text
+        and "V1.4 修订说明" not in first_page_text
+    ), first_page_text[:300]
     disclaimer_text = reader.pages[1].extract_text() or ""
     assert "免责声明" in disclaimer_text and "V1.4维护版" in disclaimer_text, disclaimer_text[:200]
     update_text = reader.pages[2].extract_text() or ""
     assert "V1.4" in update_text and "滚动核验至" in update_text, update_text[:200]
+    front_text = "\n".join((page.extract_text() or "") for page in reader.pages[:front_count])
+    assert "V1.4滚动更新日志" in front_text, "超全景卷首滚动日志"
+    assert "版本变更说明（最新）" not in front_text, "超全景卷首旧重复标题"
     historical_text = reader.pages[front_count].extract_text() or ""
     assert "历史冻结正文" in historical_text and "卷首 V1.4" in historical_text, historical_text[:200]
 
@@ -120,7 +143,7 @@ def validate_thick() -> None:
                 checked += 1
     assert checked >= 150, checked
     print(
-        f"[PASS] {THICK.name}: 318 pages, formal V1.4 cover and disclaimer promoted, "
+        f"[PASS] {THICK.name}: 318 pages, clean V1.4 cover and disclaimer promoted, "
         f"{checked} historical TOC link rectangles resolve"
     )
 
@@ -143,9 +166,14 @@ def validate_maintenance(path: Path, base_pages: int, cover_index: int) -> None:
     historical_header = reader.pages[update_pages].extract_text() or ""
     assert (
         "V1.4" in (reader.pages[0].extract_text() or "")
+        and "当前判断" in (reader.pages[0].extract_text() or "")
+        and "阅读规则" in (reader.pages[0].extract_text() or "")
+        and "V1.4 修订说明" not in (reader.pages[0].extract_text() or "")
         and "2026-07-24" in front_text
         and "DeepSeek" in front_text
         and "Alphabet" in front_text
+        and "V1.4滚动更新日志" in front_text
+        and "版本变更说明（最新）" not in front_text
         and "滚动核验至" in front_text
         and "历史冻结正文" in historical_header
         and "卷首 V1.4" in historical_header

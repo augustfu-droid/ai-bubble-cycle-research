@@ -39,13 +39,6 @@ VERSION = "V1.4"
 UPDATE_DATE = "2026/07/24"
 DATA_DATE = "2026/07/24"
 
-V14_CHANGELOG_ROW = (
-    "| **V1.4·7/24 滚动** | **2026/07/24** | **投递后研究维护版**：在 V1.4 首发基础上补入 Alphabet 官方 CEO "
-    "书面发言、7/23 市场反应和 DeepSeek 一手资料复核；事实审计表 63→73 项，并显式勘误“DeepSeek V4-Pro 完全运行于"
-    "华为芯片/DeepSeek R2 32B”旧口径。**综合崩盘指数维持 77，四情景维持 A44/B22/C10/D24；"
-    "严格触发 1/3、广义预警 2/3；主时间窗不变。** |"
-)
-
 MAIN_OUT = ARCHIVE / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf"
 AUDIT_OUT = ARCHIVE / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.4.pdf"
 BRIEF_OUT = ARCHIVE / "05_简版与执行摘要/AI周期与泡沫_机构简版_V1.4_内部署名版.pdf"
@@ -149,19 +142,18 @@ def historical_main_body(text: str) -> str:
     """Drop the stale current-version preamble but retain the version history and body."""
     parts = re.split(r"\n## 版本变更说明\s*\n", text, maxsplit=1)
     if len(parts) == 2:
-        history = insert_v14_changelog(parts[1])
-        return "## 完整版本变更记录（V1.4 最新）\n\n" + history
+        return "## 历史版本沿革（V0.1—V1.3.4）\n\n" + parts[1]
     return "## V1.3.4 历史正文基线\n\n" + without_first_h1(text)
 
 
-def insert_v14_changelog(text: str) -> str:
-    """Insert V1.4 as the newest row in the first version-history table."""
-    if V14_CHANGELOG_ROW in text:
-        return text
-    marker = "|---|---|---|\n"
-    if marker in text:
-        return text.replace(marker, marker + V14_CHANGELOG_ROW + "\n", 1)
-    return text
+def rename_historical_changelog(text: str) -> str:
+    """Clarify that the preserved table covers only the frozen pre-V1.4 history."""
+    return re.sub(
+        r"(?m)^## 版本变更说明\s*$",
+        "## 历史版本沿革（V0.1—V1.3.4）",
+        text,
+        count=1,
+    )
 
 
 def assembled_main() -> str:
@@ -189,7 +181,7 @@ def assembled_audit() -> str:
 
 
 def assembled_panorama() -> str:
-    base = insert_v14_changelog(read(PANO_BASE_MD))
+    base = rename_historical_changelog(read(PANO_BASE_MD))
     base = without_first_h1(base)
     return (
         "# 2026年AI泡沫研究 · 全景版 V1.4完整重排版\n\n"
@@ -265,7 +257,8 @@ def cover_html(title: str, subtitle: str, extra: str = "") -> str:
 <b>四情景</b>　A44 / B22 / C10 / D24（软着陆以外合计 76%）<br/>
 <b>触发器</b>　严格执行 1/3 · 广义早期预警 2/3<br/>
 <b>数据截止</b>　公司与研究资料核验至2026-07-24，市场收盘至2026-07-23</div>
-<div class="rev">V1.4 核心更新：Oracle BBB- · TSMC Q2 · SPCX 跌破发行价 · 超大厂 CapEx 增速降档 · Alphabet 经营兑现与现金流裂缝双验证 · DeepSeek 一手资料勘误。{extra}</div>
+<div class="rev"><b>当前判断</b>：需求仍然满载，融资与估值侧裂缝扩大；严格执行触发仍为1/3，尚未达到系统性减仓或对冲的全面执行信号。<br/>
+<b>阅读规则</b>：卷首V1.4为当前口径；后接历史冻结正文，仅用于展示研究过程。{extra}</div>
 <div class="foot">V1.4 · 2026-07-24滚动核验｜已投递材料与前瞻判断原件保持冻结｜不构成投资建议</div>
 </section>"""
 
@@ -357,79 +350,92 @@ def stamp_disclaimer_header(page, title: str):
     return page
 
 
-def stamp_current_cover(page, title: str):
-    """Promote a legacy formal cover into the visible V1.4 front cover."""
-    width = float(page.mediabox.width)
-    height = float(page.mediabox.height)
+def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
+    """Build a clean V1.4 cover instead of patching a crowded legacy cover."""
+    source = PdfReader(str(base_pdf))
+    width = float(source.pages[cover_index].mediabox.width)
+    height = float(source.pages[cover_index].mediabox.height)
     packet = io.BytesIO()
     c = canvas.Canvas(packet, pagesize=(width, height))
     if "NotoSansSC" not in pdfmetrics.getRegisteredFontNames():
         pdfmetrics.registerFont(TTFont("NotoSansSC", str(FONT_DIR / "NotoSansSC-Regular.ttf")))
         pdfmetrics.registerFont(TTFont("NotoSansSC-Bold", str(FONT_DIR / "NotoSansSC-Bold.ttf")))
+
     c.setFillColorRGB(1, 1, 1)
-    c.rect(18, height - 67, width - 36, 48, fill=1, stroke=0)
+    c.rect(0, 0, width, height, fill=1, stroke=0)
+    margin_x = width * 0.105
+    content_w = width - 2 * margin_x
+
     c.setFillColorRGB(0.0, 0.25, 0.60)
-    c.rect(18, height - 63, 70, 7, fill=1, stroke=0)
-    c.setFont("NotoSansSC-Bold", 15)
-    c.drawString(102, height - 57, "V1.4")
-    c.setFont("NotoSansSC", 8.5)
-    c.drawString(153, height - 56, "2026/07/24 当前维护版")
-    c.setFillColorRGB(0.34, 0.34, 0.34)
-    c.setFont("NotoSansSC", 6.8)
-    c.drawRightString(
-        width - 18,
-        height - 55,
-        "历史正文保留原时点；当前结论、事实与勘误以随后更新模块为准",
+    c.rect(margin_x, height - 82, min(118, content_w * 0.28), 8, fill=1, stroke=0)
+    c.setFillColorRGB(0.48, 0.47, 0.44)
+    c.setFont("NotoSansSC", 8.3)
+    c.drawString(margin_x, height - 112, "付强 · 独立研究 · 投递后维护版")
+
+    title_size = 24
+    title_y = height - 205
+    title_lines = [title]
+    if pdfmetrics.stringWidth(title, "NotoSansSC-Bold", title_size) > content_w and "·" in title:
+        left, right = title.split("·", 1)
+        title_lines = [left.strip(), f"· {right.strip()}"]
+    c.setFillColorRGB(0.0, 0.14, 0.32)
+    c.setFont("NotoSansSC-Bold", title_size)
+    for line in title_lines:
+        c.drawString(margin_x, title_y, line)
+        title_y -= 34
+
+    c.setFillColorRGB(0.34, 0.33, 0.30)
+    c.setFont("NotoSansSC", 10.3)
+    c.drawString(margin_x, title_y - 10, "V1.4 · 当前维护版")
+
+    kpi_top = title_y - 75
+    c.setStrokeColorRGB(0.0, 0.25, 0.60)
+    c.setLineWidth(3)
+    c.line(margin_x, kpi_top + 8, margin_x, kpi_top - 76)
+    kpis = (
+        "综合崩盘指数　77 / 100",
+        "四情景　A44 / B22 / C10 / D24（软着陆以外合计76%）",
+        "触发器　严格执行1/3 · 广义早期预警2/3",
     )
-    c.setStrokeColorRGB(0.78, 0.82, 0.88)
-    c.setLineWidth(0.35)
-    c.line(18, height - 68, width - 18, height - 68)
+    c.setFillColorRGB(0.18, 0.17, 0.15)
+    c.setFont("NotoSansSC-Bold", 9.2)
+    for idx, line in enumerate(kpis):
+        c.drawString(margin_x + 16, kpi_top - idx * 27, line)
+
+    box_y = kpi_top - 185
+    c.setFillColorRGB(0.96, 0.97, 0.985)
+    c.setStrokeColorRGB(0.82, 0.87, 0.93)
+    c.setLineWidth(0.6)
+    c.roundRect(margin_x, box_y, content_w, 92, 3, fill=1, stroke=1)
+    c.setFillColorRGB(0.34, 0.26, 0.28)
+    c.setFont("NotoSansSC", 8.5)
+    cover_lines = (
+        "当前判断：需求仍然满载，融资与估值侧裂缝扩大；",
+        "严格执行触发仍为1/3，尚未达到系统性减仓或对冲的全面执行信号。",
+        "阅读规则：卷首V1.4为当前口径；后接历史冻结正文，仅用于展示研究过程。",
+    )
+    for idx, line in enumerate(cover_lines):
+        c.drawString(margin_x + 16, box_y + 64 - idx * 23, line)
+
+    c.setFillColorRGB(0.43, 0.42, 0.39)
+    c.setFont("NotoSansSC", 8.2)
+    c.drawString(margin_x, box_y - 38, "版本　V1.4 · 2026/07/24滚动核验")
+    c.drawString(
+        margin_x,
+        box_y - 61,
+        "数据　研究资料核验至2026/07/24 14:00 · 权益市场收盘至2026/07/23",
+    )
+
+    c.setStrokeColorRGB(0.84, 0.83, 0.80)
+    c.setLineWidth(0.4)
+    c.line(margin_x, 66, width - margin_x, 66)
+    c.setFillColorRGB(0.60, 0.59, 0.56)
+    c.setFont("NotoSansSC", 7.5)
+    c.drawString(margin_x, 48, "付强 · AI周期与泡沫研究")
+    c.drawRightString(width - margin_x, 48, "基于公开信息 · 不构成投资建议")
     c.save()
     packet.seek(0)
-    page.merge_page(PdfReader(packet).pages[0])
-    return page
-
-
-def promoted_cover_page(base_pdf: Path, cover_index: int, title: str):
-    """Extract the legacy formal cover and update only its visible edition/date marks."""
-    import fitz
-
-    source = fitz.open(base_pdf)
-    cover_doc = fitz.open()
-    cover_doc.insert_pdf(source, from_page=cover_index, to_page=cover_index)
-    source.close()
-    page = cover_doc[0]
-
-    replacements: list[tuple[str, str]] = []
-    for old_version in ("V1.3.4", "V0.8.2", "V0.6.0", "V1.1"):
-        if page.search_for(old_version):
-            replacements.append((old_version, "V1.4"))
-            break
-    for old_date in ("2026/07/07", "2026/06/14", "2026/06/03", "2026/05/21"):
-        if page.search_for(old_date):
-            replacements.append((old_date, "2026/07/24"))
-            break
-
-    queued: list[tuple[fitz.Rect, str]] = []
-    for old, new in replacements:
-        for rect in page.search_for(old):
-            box = fitz.Rect(rect.x0 - 0.5, rect.y0 - 0.5, rect.x1 + 2.0, rect.y1 + 0.5)
-            page.add_redact_annot(box, fill=(1, 1, 1))
-            queued.append((box, new))
-    if queued:
-        page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE)
-        for box, new in queued:
-            page.insert_text(
-                (box.x0, box.y1 - 1.2),
-                new,
-                fontname="helv",
-                fontsize=max(6.0, min(9.5, box.height * 0.72)),
-                color=(0.0, 0.25, 0.60),
-            )
-
-    payload = cover_doc.tobytes(garbage=4, clean=True, deflate=True)
-    cover_doc.close()
-    return stamp_current_cover(PdfReader(io.BytesIO(payload)).pages[0], title)
+    return PdfReader(packet).pages[0]
 
 
 def optimize_pdf(path: Path) -> None:
@@ -458,7 +464,7 @@ def build_thick(update_pdf: Path, out: Path) -> int:
     update_reader = PdfReader(str(update_pdf))
     base_reader = PdfReader(str(THICK_BASE_PDF))
     writer = PdfWriter()
-    writer.add_page(promoted_cover_page(THICK_BASE_PDF, 0, "2026年AI泡沫研究 · 全景版"))
+    writer.add_page(clean_current_cover_page(THICK_BASE_PDF, 0, "2026年AI泡沫研究 · 全景版"))
     # Original page 2 is the full legal/risk disclaimer. Move it directly behind
     # the current cover so it no longer separates the V1.4 update from the V1.3
     # frozen revision record.
@@ -509,7 +515,7 @@ def build_maintenance_edition(
     update_reader = PdfReader(str(update_pdf))
     base_reader = PdfReader(str(base_pdf))
     writer = PdfWriter()
-    writer.add_page(promoted_cover_page(base_pdf, cover_index, title))
+    writer.add_page(clean_current_cover_page(base_pdf, cover_index, title))
     writer.append(update_reader, pages=(1, len(update_reader.pages)), import_outline=False)
 
     # Move (rather than duplicate) the old formal cover. Errata pages that
@@ -569,7 +575,7 @@ def build_maintenance_edition(
     pages = len(PdfReader(str(out)).pages)
     print(
         f"[OK] {out.name}: {pages} pages "
-        f"(promoted cover + {len(update_reader.pages) - 1} current pages + "
+        f"(clean V1.4 cover + {len(update_reader.pages) - 1} current pages + "
         f"{len(base_reader.pages) - 1} frozen pages)"
     )
     return pages
