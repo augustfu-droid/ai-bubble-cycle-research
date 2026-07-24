@@ -38,6 +38,10 @@ FONT_DIR = ARCHIVE / "11_源码_python生成脚本/fonts"
 VERSION = "V1.4"
 UPDATE_DATE = "2026/07/24"
 DATA_DATE = "2026/07/24"
+SOUTHERN_BLUE_HEX = "#0C328A"
+SOUTHERN_BLUE_RGB = (12 / 255, 50 / 255, 138 / 255)
+SOUTHERN_BLUE_LIGHT_RGB = (244 / 255, 246 / 255, 251 / 255)
+SOUTHERN_BLUE_BORDER_RGB = (207 / 255, 216 / 255, 236 / 255)
 
 MAIN_OUT = ARCHIVE / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf"
 AUDIT_OUT = ARCHIVE / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.4.pdf"
@@ -214,33 +218,33 @@ def css_for(title: str, landscape: bool = False, compact: bool = False) -> str:
 @page cover {{ margin:0; @top-left {{content:none}} @top-right {{content:none}} @bottom-left {{content:none}} @bottom-right {{content:none}} }}
 body {{ font-family:NotoSansSC,sans-serif; font-size:{body_size}; line-height:1.55; color:#28251D; }}
 #cover {{ page:cover; height:29.7cm; box-sizing:border-box; padding:3.2cm 2.4cm; position:relative; page-break-after:always; }}
-#cover .rule {{ width:4.6cm; height:.34cm; background:#004098; margin-bottom:1.0cm; }}
+#cover .rule {{ width:4.6cm; height:.34cm; background:{SOUTHERN_BLUE_HEX}; margin-bottom:1.0cm; }}
 #cover .brand {{ color:#7A7974; font-size:9pt; letter-spacing:1px; }}
-#cover .title {{ color:#002451; font-size:27pt; line-height:1.3; font-weight:700; margin-top:2.4cm; }}
+#cover .title {{ color:{SOUTHERN_BLUE_HEX}; font-size:27pt; line-height:1.3; font-weight:700; margin-top:2.4cm; }}
 #cover .sub {{ color:#55524A; font-size:11pt; line-height:1.8; margin-top:.8cm; }}
-#cover .kpi {{ border-left:4px solid #004098; padding-left:.55cm; margin-top:1.5cm; font-size:10.5pt; line-height:1.9; }}
-#cover .rev {{ background:#F5F8FC; border:1px solid #D3DFEE; padding:.5cm .6cm; margin-top:1.0cm; color:#70464B; font-size:9pt; line-height:1.65; }}
+#cover .kpi {{ border-left:4px solid {SOUTHERN_BLUE_HEX}; padding-left:.55cm; margin-top:1.5cm; font-size:10.5pt; line-height:1.9; }}
+#cover .rev {{ background:#F4F6FB; border:1px solid #CFD8EC; padding:.5cm .6cm; margin-top:1.0cm; color:{SOUTHERN_BLUE_HEX}; font-size:9pt; line-height:1.65; }}
 #cover .foot {{ position:absolute; bottom:2cm; left:2.4cm; right:2.4cm; border-top:.5pt solid #D4D1CA; padding-top:.35cm; color:#9B9992; font-size:8.2pt; }}
 .toc {{ page-break-after:always; }}
-.toc h1 {{ border:none; color:#002451; }}
+.toc h1 {{ border:none; color:{SOUTHERN_BLUE_HEX}; }}
 .toc-row a {{ display:block; color:#28251D; text-decoration:none; border-bottom:.4pt dotted #CCC; padding:2px 0; }}
-.toc-row a::after {{ content:target-counter(attr(href url), page); float:right; color:#004098; }}
+.toc-row a::after {{ content:target-counter(attr(href url), page); float:right; color:{SOUTHERN_BLUE_HEX}; }}
 .toc-row.l2 {{ font-weight:700; margin-top:3px; }}
 .toc-row.l3 {{ padding-left:1.1em; font-size:8.5pt; }}
-h1 {{ color:#004098; font-size:19pt; margin:.2em 0 .45em; padding-bottom:.2em; border-bottom:2px solid #004098; page-break-after:avoid; }}
-h2 {{ color:#004098; font-size:13pt; margin:1.2em 0 .4em; padding-left:.3em; border-left:4px solid #004098; page-break-after:avoid; }}
-h3 {{ color:#003070; font-size:10.8pt; margin:1em 0 .3em; page-break-after:avoid; }}
-h4 {{ color:#003070; font-size:9.8pt; margin:.8em 0 .25em; page-break-after:avoid; }}
+h1 {{ color:{SOUTHERN_BLUE_HEX}; font-size:19pt; margin:.2em 0 .45em; padding-bottom:.2em; border-bottom:2px solid {SOUTHERN_BLUE_HEX}; page-break-after:avoid; }}
+h2 {{ color:{SOUTHERN_BLUE_HEX}; font-size:13pt; margin:1.2em 0 .4em; padding-left:.3em; border-left:4px solid {SOUTHERN_BLUE_HEX}; page-break-after:avoid; }}
+h3 {{ color:{SOUTHERN_BLUE_HEX}; font-size:10.8pt; margin:1em 0 .3em; page-break-after:avoid; }}
+h4 {{ color:{SOUTHERN_BLUE_HEX}; font-size:9.8pt; margin:.8em 0 .25em; page-break-after:avoid; }}
 p {{ margin:.48em 0; }}
 table {{ border-collapse:collapse; width:100%; margin:.45em 0 .8em; font-size:{'7.1pt' if compact else '7.8pt'}; }}
 .keep-table {{ height:0; margin:0; padding:0; page-break-after:avoid; }}
 .keep-table + table {{ page-break-inside:avoid; }}
 thead {{ display:table-header-group; }} tr {{ page-break-inside:avoid; }}
-th {{ background:#004098; color:white; border:1px solid #004098; padding:4px 6px; text-align:left; }}
+th {{ background:{SOUTHERN_BLUE_HEX}; color:white; border:1px solid {SOUTHERN_BLUE_HEX}; padding:4px 6px; text-align:left; }}
 td {{ border:.5px solid #D4D1CA; padding:4px 6px; vertical-align:top; line-height:1.4; overflow-wrap:anywhere; }}
 tr:nth-child(even) td {{ background:#FAF9F7; }}
-blockquote {{ border-left:3px solid #004098; background:#F7F9FC; margin:.5em 0; padding:.35em .8em; color:#55524A; }}
-a {{ color:#004098; text-decoration:none; overflow-wrap:anywhere; }}
+blockquote {{ border-left:3px solid {SOUTHERN_BLUE_HEX}; background:#F4F6FB; margin:.5em 0; padding:.35em .8em; color:#55524A; }}
+a {{ color:{SOUTHERN_BLUE_HEX}; text-decoration:none; overflow-wrap:anywhere; }}
 ul,ol {{ margin:.55em 0; padding-left:1.5em; }} li {{ margin:.45em 0; }}
 hr {{ border:0; border-top:.5px solid #D4D1CA; margin:1em 0; }}
 img {{ max-width:100%; max-height:21cm; object-fit:contain; }}
@@ -366,7 +370,7 @@ def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
     margin_x = width * 0.105
     content_w = width - 2 * margin_x
 
-    c.setFillColorRGB(0.0, 0.25, 0.60)
+    c.setFillColorRGB(*SOUTHERN_BLUE_RGB)
     c.rect(margin_x, height - 82, min(118, content_w * 0.28), 8, fill=1, stroke=0)
     c.setFillColorRGB(0.48, 0.47, 0.44)
     c.setFont("NotoSansSC", 8.3)
@@ -378,7 +382,7 @@ def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
     if pdfmetrics.stringWidth(title, "NotoSansSC-Bold", title_size) > content_w and "·" in title:
         left, right = title.split("·", 1)
         title_lines = [left.strip(), f"· {right.strip()}"]
-    c.setFillColorRGB(0.0, 0.14, 0.32)
+    c.setFillColorRGB(*SOUTHERN_BLUE_RGB)
     c.setFont("NotoSansSC-Bold", title_size)
     for line in title_lines:
         c.drawString(margin_x, title_y, line)
@@ -389,7 +393,7 @@ def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
     c.drawString(margin_x, title_y - 10, "V1.4 · 当前维护版")
 
     kpi_top = title_y - 75
-    c.setStrokeColorRGB(0.0, 0.25, 0.60)
+    c.setStrokeColorRGB(*SOUTHERN_BLUE_RGB)
     c.setLineWidth(3)
     c.line(margin_x, kpi_top + 8, margin_x, kpi_top - 76)
     kpis = (
@@ -403,11 +407,11 @@ def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
         c.drawString(margin_x + 16, kpi_top - idx * 27, line)
 
     box_y = kpi_top - 185
-    c.setFillColorRGB(0.96, 0.97, 0.985)
-    c.setStrokeColorRGB(0.82, 0.87, 0.93)
+    c.setFillColorRGB(*SOUTHERN_BLUE_LIGHT_RGB)
+    c.setStrokeColorRGB(*SOUTHERN_BLUE_BORDER_RGB)
     c.setLineWidth(0.6)
     c.roundRect(margin_x, box_y, content_w, 92, 3, fill=1, stroke=1)
-    c.setFillColorRGB(0.34, 0.26, 0.28)
+    c.setFillColorRGB(*SOUTHERN_BLUE_RGB)
     c.setFont("NotoSansSC", 8.5)
     cover_lines = (
         "当前判断：需求仍然满载，融资与估值侧裂缝扩大；",
