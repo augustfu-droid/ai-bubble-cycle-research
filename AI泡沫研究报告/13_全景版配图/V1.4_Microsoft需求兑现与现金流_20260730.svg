@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7FAFE"/>
+  <style>
+    text{font-family:'Noto Sans SC','PingFang SC',sans-serif}
+    .title{font-size:34px;font-weight:700;fill:#002451}
+    .sub{font-size:18px;font-weight:400;fill:#5B6675}
+    .h{font-size:22px;font-weight:700;fill:#004098}
+    .label{font-size:18px;font-weight:500;fill:#25344A}
+    .value{font-size:24px;font-weight:700;fill:#002451}
+    .note{font-size:16px;font-weight:400;fill:#5B6675}
+    .small{font-size:14px;font-weight:400;fill:#6C7786}
+  </style>
+
+  <text x="64" y="58" class="title">Microsoft FY26 Q4：需求兑现与资本强度同时上升</text>
+  <text x="64" y="91" class="sub">亿美元；除特别标注外均为截至 2026-06-30 的单季数据</text>
+
+  <rect x="55" y="122" width="585" height="505" rx="18" fill="#FFFFFF" stroke="#D6E2F1"/>
+  <text x="86" y="166" class="h">现金流与资本开支</text>
+  <line x1="86" y1="553" x2="606" y2="553" stroke="#C9D5E5" stroke-width="2"/>
+
+  <rect x="105" y="251" width="82" height="302" rx="7" fill="#004098"/>
+  <text x="146" y="235" text-anchor="middle" class="value">554</text>
+  <text x="146" y="583" text-anchor="middle" class="label">经营现金流</text>
+
+  <rect x="232" y="330" width="82" height="223" rx="7" fill="#2F6FB8"/>
+  <text x="273" y="314" text-anchor="middle" class="value">410</text>
+  <text x="273" y="583" text-anchor="middle" class="label">总CapEx</text>
+  <text x="273" y="607" text-anchor="middle" class="small">含56融资租赁</text>
+
+  <rect x="359" y="358" width="82" height="195" rx="7" fill="#6E9ED3"/>
+  <text x="400" y="342" text-anchor="middle" class="value">358</text>
+  <text x="400" y="583" text-anchor="middle" class="label">现金购置PP&amp;E</text>
+
+  <rect x="486" y="446" width="82" height="107" rx="7" fill="#87AFCF"/>
+  <text x="527" y="430" text-anchor="middle" class="value">196</text>
+  <text x="527" y="583" text-anchor="middle" class="label">自由现金流</text>
+
+  <text x="86" y="657" class="note">现金购置PP&amp;E占经营现金流64.6%；FCF=经营现金流−现金购置PP&amp;E。</text>
+
+  <rect x="665" y="122" width="560" height="505" rx="18" fill="#FFFFFF" stroke="#D6E2F1"/>
+  <text x="696" y="166" class="h">经营兑现、压力与下一季</text>
+
+  <rect x="696" y="196" width="238" height="118" rx="14" fill="#EAF2FC"/>
+  <text x="716" y="230" class="label">Azure收入增速</text>
+  <text x="716" y="276" class="value">+43%</text>
+  <text x="716" y="301" class="small">FY27 Q1指引约+45%（固定汇率）</text>
+
+  <rect x="956" y="196" width="238" height="118" rx="14" fill="#EEF6F4"/>
+  <text x="976" y="230" class="label">商业RPO</text>
+  <text x="976" y="276" class="value">$6,780亿</text>
+  <text x="976" y="301" class="small">总额+84%；剔除OpenAI仍+25%</text>
+
+  <rect x="696" y="337" width="238" height="118" rx="14" fill="#FFF6E8"/>
+  <text x="716" y="371" class="label">Microsoft Cloud毛利率</text>
+  <text x="716" y="417" class="value">65%</text>
+  <text x="716" y="442" class="small">同比下降，AI基础设施拖累仍在</text>
+
+  <rect x="956" y="337" width="238" height="118" rx="14" fill="#F4EFFA"/>
+  <text x="976" y="371" class="label">FY27 Q1总CapEx指引</text>
+  <text x="976" y="417" class="value">&gt;$500亿</text>
+  <text x="976" y="442" class="small">FY27全年仍预计同比增长</text>
+
+  <rect x="696" y="482" width="498" height="112" rx="14" fill="#F5F7FA" stroke="#CDD7E5"/>
+  <text x="716" y="516" class="label">会计口径提醒</text>
+  <text x="716" y="550" class="note">数据中心与办公楼预计使用年限由15年延至25年，</text>
+  <text x="716" y="578" class="note">部分租赁由融资租赁转为经营租赁；约1900→1750并非真实削减。</text>
+
+  <text x="64" y="694" class="small">来源：Microsoft FY26 Q4官方财报、Investor Metrics与官方电话会文字稿。总CapEx含融资租赁，不能与现金购置PP&amp;E混为同一口径。</text>
+</svg>

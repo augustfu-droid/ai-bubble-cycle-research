@@ -1,6 +1,6 @@
 # AI 周期与泡沫研究｜机构简版 V1.4
 
-> **作者：付强｜版本：V1.4·7/24收盘核验｜更新日：2026-07-24｜研究资料核验至7/24 18:53，A股收盘至7/24，海外市场收盘至7/23**
+> **作者：大队长｜版本：V1.4·8/5滚动核验｜更新日：2026-08-05｜研究资料核验至8/5 09:30，E判断A股窗口结算至7/24，信用与波动率至8/3，SPCX收盘至8/4**
 >
 > 个人研究，基于公开信息，不构成投资建议。
 
@@ -16,29 +16,55 @@
 | 广义早期预警 | **2 / 3** | 信用恶化和估值承接转弱均已出现 |
 | 主时间窗 | **2027 H1–2028 Q2** | 2026 H2 为观察与压力累积期 |
 
-## 版本变更说明｜V1.4 · 滚动核验至2026-07-24
+## 版本变更说明｜V1.4 · 滚动核验至2026-08-05
 
-| 上一版 | 当前版 | 指数 | 四情景 | 审计项数 | 信号口径 |
-|---|---|---:|---|---:|---|
-| V1.3.4 · 2026-07-07 | **V1.4·7/24滚动** | **75→77** | **A42/B22/C11/D25 → A44/B22/C10/D24** | **63→73** | 严格触发 1/3；广义预警 2/3 |
+| 上一版 | 当前版 | 指数 | 四情景 | 审计项数 |
+|---|---|---:|---|---:|
+| V1.3.4·7/07 | **V1.4·8/5** | **75→77** | **A42/B22/C11/D25 → A44/B22/C10/D24** | **63→88项** |
+
+**信号口径**：严格触发1/3，广义预警2/3；V1.4从7/20按Trigger ID重新基准化。
 
 ### 本次更新了什么
 
 1. Oracle 7/9 被 S&P 从 BBB 下调至 **BBB-**，严格信用触发①正式确认。
 2. TSMC Q2 收入 **$40.20B**、毛利率 **67.7%**，全年 CapEx 上调至 **$60B–$64B**；需求和物理满载继续证真。
-3. SPCX 7/20 收 **$119.85**，低于 $135 发行价 11.2%，较 $225.64 峰值回撤约 46.9%；计入广义估值预警，但不冒充私募 down round。
+3. SPCX 7/20 收 **$119.85**，低于 $135 发行价 11.2%，较 $225.64 峰值回撤约 46.9%；这是广义估值预警的**首次触发锚**，当前市场价另见8/4快照，且始终不冒充私募 down round。
 4. UBS 估算四大 hyperscaler（Microsoft、Amazon、Alphabet、Meta；据 Reuters 报道上下文）合计总 CapEx：2026 年 **$673B（+76%）**、2027 年约 **$841B（+25%）**、2028 年约 **$892B（+6%）**；绝对额仍升，边际增速开始降档。
-5. 市场地基更新：CAPE **41.52**、VIX **16.73**、HY OAS **271bp**；高估值、低波动、窄利差仍并存。
+5. 市场地基更新：CAPE **40.57**（7/28）、VIX **15.86**（8/3）、HY/IG OAS **278/78bp**（8/3）；高估值仍在，波动与广义信用没有失序。
 6. Alphabet Q2形成双验证：Google Cloud收入 **$24.768B（+81.8%）**、营业利润率 **35.6%**；单季CapEx **$44.924B** 超过OCF **$39.069B**，FCF **-$5.855B**。E判断4成立，但指数、概率和触发数不变。
 7. Alphabet官方CEO书面发言进一步披露：Cloud积压订单 **$514B**、模型API每分钟处理 **220亿tokens**、既有客户使用量超过承诺额50%以上，且供给仍受限；这强化需求，不等同于资本回报率。
 8. 复审更正DeepSeek旧口径：一手资料支持“华为云基于昇腾宣布V4首发适配、提供V4-Flash API服务＋910C上的全参数后训练”，不能写成“V4-Pro完整预训练全部在华为芯片完成”；无一手来源的“R2 32B/AIME 92.7%”撤销。
 9. E判断2完成7/24价格腿结算：新易盛收 **476.02元**，预告后五日最高收盘 **551.77元**，仅比6/23收盘锚552.00元低0.23元（0.04%）。价格腿按事前零容差规则临界成立；若另设0.1%安全边际则为临界未决。中际旭创业绩腿仍待披露，整条继续记“部分验证”。
+10. Alphabet 7/23提交的10-Q新增一手口径：$707.0B长期固定/保证承诺属于更广的$811.0B合同义务披露逻辑；$85.2B未起租租约、$7.6B金融担保、$43.785B信用衍生品名义额和$98.165B长期债务必须分栏，不得相加为“AI总债务”。
+11. Meta 7/28披露El Paso 1GW合资：总成本约$14B，BlackRock/Meta按80%/20%出资，BlackRock一侧拟使用$12.5B项目债，Meta长租全园区并承担初始阈值约$13B的递减剩余价值担保。这验证表外迁移，但$12.5B不是Meta表内债务。
+12. 7/23—7/28，COHR -22.31%、VRT -11.34%、SOXX -10.84%，明显弱于QQQ -2.38%。这是估值/流动性压力，不是订单崩塌；后续财报需用订单、收入、利润率和现金流验证，不能由股价替代。
+13. Microsoft FY26Q4收入 **$90.007B（+18%）**，Azure及其他云服务 **+43%**；Commercial RPO **$678B（+84%，剔除OpenAI后+25%）**，管理层仍称需求超过可用产能。
+14. Microsoft Q4总CapEx约 **$41B**，现金PP&E **$35.802B**，经营现金流 **$55.441B**，公司口径FCF **$19.639B（同比约-23.2%）**。披露CapEx约$190B→约$175B首先来自资产寿命与租赁分类变化，不是削减AI投资$15B。
+15. Meta Q2收入 **$60.801B（+28%）**，营业利润率降至 **31%**；CapEx **$31.080B** 几乎吃完经营现金流 **$31.862B**，FCF仅 **$0.784B**，全年CapEx指引收窄至 **$130B–$145B**。
+16. FOMC维持 **3.50%–3.75%**，9—3通过，三名反对者主张加息25bp。按冻结阈值，E判断5和判断6均成立；记分卡更新为 **5条成立、1条部分验证、0条待核、0条错误**，但指数、概率和触发数不变。
+17. 维谛技术Q2收入 **$3.274B（+24.1%，有机+18%）**，调整后营业利润率 **22.6%**，经营现金流 **$1.100B**，调整后FCF **$0.925B**，并全面上调全年指引。单季有机增速低于原指引下限进入执行观察，但官方未披露新的定量订单/backlog，不能补造本季订单值。
+
+18. Amazon Q2收入 **$200.606B（+20%）**，AWS收入 **$42.232B（+37%）**、营业利润 **$16.621B（+64%）**；管理层称AWS AI与芯片业务年化收入均超过$25B。这是管理层run-rate口径、未单独审计，且两项不能与AWS收入相加。
+
+19. Amazon过去十二个月经营现金流 **$161.403B**，现金购置PP&E **$169.007B**，自由现金流由 **+$18.184B** 转为 **-$7.604B**；长期债务由2025-12-31的$65.648B升至2026-06-30的$128.894B。强需求与现金回报压力同时成立。
+
+20. Amazon Q2净利润 **$62.647B** 中含 **$53.415B** 非经营收益，主要来自Anthropic估值重估；OpenAI和Anthropic的云合同、股权投资和融资额度必须分栏，不能相加成“AI债务”。
+
+21. Microsoft FY2026 10-K披露未起租数据中心租赁 **$329.1B**、采购承诺 **$194.060B**、建设承诺 **$34.566B**；三者的范围、期限和会计分类不同，不能机械相加，但说明资本锁定显著上升。
+
+22. Meta完整官方主电话会与补充电话会文字稿已经取得。管理层称外部买家愿为算力支付显著溢价，但没有披露具名客户、已执行合同金额、期限或Meta Compute利润率；E判断5仍按事前阈值成立。
+
+23. Apple FY26Q3收入 **$109.417B（+16.4%）**、服务收入 **$30.739B（+12.1%）**、研发 **$11.729B（+32.3%）**。Apple使用自有数据中心和第三方云，但没有披露AI收入、AI CapEx或单位经济，不能从现金PP&E下降推导AI投资下降。
+
+24. SpaceX Q2收入 **$7.814B（+91.9%）**、经营亏损 **$0.143B**，RPO **$47.461B**；Connectivity已盈利，AI分部仍有 **$1.257B** 经营亏损。两大客户占Q2收入37.8%，订单质量需持续跟踪。
+
+25. SpaceX上半年经营现金流 **$3.466B**、现金购置PP&E **$28.476B**，研究口径FCF代理 **-$25.010B**；IPO现金提供缓冲。8/6进入首个财报后解禁窗口，属于估值承接观察，不构成私募平/降轮。
 
 ## 三条证据链
 
 ### 1. 需求链：没有崩，甚至更强
 
-TSMC的Q2实际值、Q3指引和全年CapEx上调说明先进制程与封装仍处高负荷。Alphabet Cloud收入同比+81.8%、营业利润同比+211.9%，进一步证明需求已从建设端进入真实经营兑现。两条证据直接反驳“AI需求已经崩塌”，也提醒投资者不要仅凭信用或估值裂缝就提前下结论。
+TSMC的Q2实际值、Q3指引和全年CapEx上调说明先进制程与封装仍处高负荷。Alphabet Cloud收入同比+81.8%，Microsoft Azure同比+43%，AWS收入同比+37%；维谛技术又上调全年收入、利润率和现金流指引，SpaceX Connectivity和AI收入也高速增长。这些链条证明需求已从建设端进入经营兑现，直接反驳“AI需求已经崩塌”，也提醒投资者不要仅凭信用或估值裂缝提前下结论。
 
 Alphabet官方CEO书面发言又给出Cloud积压订单$514B、模型API每分钟处理220亿tokens、Gemini App月活9.5亿和既有客户使用量超过承诺额50%以上等指标。它们强化“真实需求”，但backlog、tokens和MAU不是现金回报率。
 
@@ -46,11 +72,25 @@ Alphabet官方CEO书面发言又给出Cloud积压订单$514B、模型API每分�
 
 Oracle在大规模AI基础设施投入下自由现金流承压，2026财年筹集约$43B债务和$5B股权，随后被下调至BBB-。Alphabet Q2 CapEx超过OCF、FCF转负，上半年又净新增股权融资$49.6B和高级票据融资，说明外部融资扩张已延伸至强资产负债表公司；但其现金及有价证券仍有$242.474B，不能误写成偿债危机。
 
+Microsoft Q4经营现金流仍达$55.441B，但现金PP&E升至$35.802B，公司口径FCF同比下降约23.2%；Meta Q2 CapEx约相当于经营现金流的97.5%，FCF仅$0.784B；Amazon过去十二个月FCF转为-$7.604B，SpaceX上半年研究口径FCF代理为-$25.010B。它们都不是当前偿付危机，真正的信号是“收入与需求强劲，资本回收速度仍落后于建设强度”。
+
+![Microsoft需求兑现与现金流](../13_全景版配图/V1.4_Microsoft需求兑现与现金流_20260730.svg)
+
+> 图表分开总CapEx、融资租赁、现金PP&E与公司口径FCF；约$190B→约$175B为资产寿命和租赁分类口径变化，不是投资真实削减$15B。
+
+Alphabet 10-Q披露多年采购承诺、未起租租约、金融担保与数据中心backstop；Microsoft 10-K披露$329.1B未起租数据中心租赁和$194.060B采购承诺；Meta披露未起租租赁、云容量承诺及El Paso项目债、长租和剩余价值担保。三组一手证据都说明经济暴露不只在表内CapEx和债券，但不同会计口径不得机械求和。
+
+Amazon把OpenAI和Anthropic的云服务、股权投资与融资额度放进同一生态；SpaceX则以IPO现金缓冲高强度AI资本开支。两者都强化循环融资与资本供给观察，但合同金额、股权估值、可用额度和已提款现金必须严格分栏。
+
+![财报窗口需求与现金流](../13_全景版配图/V1.4_财报窗口需求与现金流_20260805.svg)
+
+> 图表把收入增速、经营兑现和现金流压力分开展示；百分比和金额使用各公司官方披露或由官方数字复算，不能跨公司直接相加。
+
 ### 3. 估值链：公开市场开始拒绝一级锚
 
-SPCX 上市后先冲高至 $225.64，至 7/20 收于 $119.85，已经低于 $135 发行价 11.2%，较峰值回撤约 46.9%。它不能替代真正的私募 down round，但说明公开市场对高估值叙事的承接显著转弱。严格触发②仍需等待私募新一轮融资定价。
+SPCX上市后先冲高至$225.64，8/4收于$125.33，低于$135发行价7.2%，较峰值回撤44.5%。8/6最多约9.115亿股进入首个财报后解禁窗口。公开市场折价和解禁供给都不能替代真正的私募down round，因此严格触发②仍需等待私募新一轮融资定价。
 
-7/23收盘，SPCX进一步降至$118.24；GOOGL财报后单日下跌7.13%。这说明市场提高了对高CapEx与FCF错配的惩罚，但同日油价、利率与地缘因素并存，不能把市场跌幅全部单因归结为AI支出。
+7/23—7/28，COHR、VRT和SOXX明显弱于QQQ，说明市场提高了对高CapEx与FCF错配的惩罚；但股价同时受利率、流动性与仓位影响，不能把跌幅单因归结为AI支出，更不能以价格替代订单、利润率和现金流。
 
 ## 技术证据勘误：DeepSeek与昇腾
 
@@ -58,13 +98,13 @@ DeepSeek官方资料确认V4于4/24发布；华为云同日宣布V4首发适配�
 
 ## 触发器：把预警与执行分开
 
-| 触发器 | 严格定义 | 当前 |
+| Trigger ID | 严格定义 | 当前 |
 |---|---|---|
-| ① 信用 | 关键 AI 债务主体发生明确评级/信用事件 | **CONFIRMED**：Oracle BBB- |
-| ② 估值 | 私募 AI 龙头新一轮融资估值持平或下修 | **WATCH↑**：SPCX 跌破发行价，但私募定价未确认 |
-| ③ 需求 | NVIDIA 数据中心收入增速低于 25% | **SAFE**：8/26 财报验证 |
+| T-V14-01 信用 | 关键 AI 债务主体发生明确评级/信用事件 | **CONFIRMED**：S&P官方专题页确认Oracle降级事件；精确细节仍待rating action原文 |
+| T-V14-02 估值 | 私募 AI 龙头新一轮融资估值持平或下修 | **WATCH↑**：SPCX 跌破发行价，但私募定价未确认 |
+| T-V14-03 需求 | NVIDIA 数据中心收入增速低于 25% | **SAFE**：8/26 财报验证 |
 
-**执行纪律**：任意 2/3 严格触发才从高频监测切换为强执行状态。V1.2 历史“2/3”指广义预警，不与 V1.4 严格门槛混用。
+**执行纪律**：任意 2/3 严格触发才从高频监测切换为强执行状态。V1.2的“1.5/3→2/3”使用了不同事件集，旧序列在V1.2停止；V1.4从2026-07-20按Trigger ID重新基准化，不将两者接成连续时序。
 
 ## 四情景
 
@@ -84,20 +124,23 @@ UBS 对四大 hyperscaler 合计总 CapEx 的估算——2026 年 $673B（+76%�
 3. 自由现金流能否在不继续加杠杆的情况下改善；
 4. 客户集中度和循环融资是否下降。
 
+![四大云厂合计总CapEx绝对额与增速斜率](../13_全景版配图/V1.4_四大云厂CapEx斜率_20260729.svg)
+
+> 图表为Reuters转述的UBS估算，不等于公司正式指引或纯AI支出。
+
 ## 市场快照与下一窗口
 
 | 指标 | 最新值 | 含义 |
 |---|---:|---|
-| CAPE | 41.52 | 极高估值，容错率低 |
-| VIX | 16.73 | 未进入恐慌 |
-| HY OAS | 271bp | 系统性信用收缩尚未发生 |
-| ORCL | $120.05（7/23） | 评级下调后的权益观察锚 |
-| NVDA | $208.76（7/23） | 8/26 财报前需求触发仍安全 |
-| SPCX | $118.24（7/23） | 较发行价低 12.4%，承接预警继续验证 |
-| GOOGL | 单日-7.13%（7/23） | 高CapEx容忍度下降，但存在宏观共同因素 |
+| CAPE | 40.57（7/28） | 极高估值，容错率低 |
+| VIX | 15.86（8/3） | 未进入系统性恐慌 |
+| HY / IG OAS | 278bp / 78bp（8/3） | 系统性信用收缩尚未发生 |
+| Oracle 5Y CDS | 198.23bp收盘/约203bp盘中（7/17‑20） | 单名信用压力强于广义IG；不重复计分 |
+| SPCX | $125.33（8/4） | 低于发行价7.2%，8/6解禁承接待观察 |
+| COHR / VRT / SOXX / QQQ | -22.31% / -11.34% / -10.84% / -2.38%（7/23‑28） | 硬件估值/流动性压力，不等于订单崩塌 |
 | 新易盛 | 476.02元（7/24） | 五日价格腿规则内临界成立；仅比锚点低0.04%，且当天A股普跌 |
 
-下一窗口：7/28–29 FOMC；7/29 Microsoft、Meta与维谛技术；7/30 Amazon；8/26 NVIDIA FY27 Q2。
+Alphabet、Microsoft、Meta、Amazon、Apple、维谛技术和SpaceX的本轮官方财报、监管文件及可取得的官方文字稿均已核验。下一窗口：8/6 SPCX解禁；8/10 TSMC 7月营收；8/11 Lumentum财报；8/12美国7月CPI；8/26 NVIDIA FY27Q2。
 
 ## 我可能错在哪里
 
@@ -110,8 +153,8 @@ UBS 对四大 hyperscaler 合计总 CapEx 的估算——2026 年 $673B（+76%�
 
 本版是当前研究维护版。历史发布材料和前瞻判断原件保持冻结；所有动态判断均以日期标记，历史快照保留原值。
 
-主要来源：[Alphabet 2026Q2财报](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)、[Alphabet CEO官方书面发言](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[TSMC Q2 官方业绩](https://investor.tsmc.com/english/quarterly-results/2026/q2)、[Oracle FY26 官方公告](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/)、[S&P Oracle 评级行动转引](https://www.streetinsider.com/Credit%2BRatings/S%26P%2BDowngrades%2BOracle%2BTo%2B%27bbb-A-3%27%3B%2BOutlook%2BStable/26752616.html)、[Newsquawk评级复核](https://www.newsquawk.com/headlines/sp-downgrades-oracle-orcl-to-bbb--outlook-stable)、[Reuters 7/23市场综述](https://www.reuters.com/business/autos-transportation/wall-st-futures-ease-big-tech-results-revive-ai-spending-worries-oil-jumps-2026-07-23/)、[新易盛历史行情](https://cn.investing.com/equities/eoptolink-tech-historical-data)、[新易盛7/24收盘复核](https://stock.aigupiao.com/code/sz300502)、[7/24 A股收盘综述](https://m.cnfin.com/yw-lb/zixun/20260724/4445682_1.html)、[DeepSeek V4官方公告](https://api-docs.deepseek.com/news/news260424/)、[华为云V4首发适配与V4-Flash API服务](https://www.huaweicloud.com/news/2026/20260424172129152.html)、[arXiv 2607.20145](https://arxiv.org/abs/2607.20145)、[FRED HY OAS](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)。
+主要来源：[Microsoft FY26Q4官方材料](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast)、[Microsoft FY2026 10-K](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm)、[Meta 2026Q2财报](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx)、[Meta官方电话会文字稿](https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf)、[Meta 2026Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm)、[Amazon Q2官方业绩](https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx)、[Amazon Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm)、[Apple FY26Q3官方业绩](https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/)、[Apple FY26Q3 10-Q](https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)、[SpaceX Q2业绩附件](https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/earningsreleaseq22608042.htm)、[SpaceX Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm)、[SpaceX最终招股书](https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm)、[FOMC 7/29声明](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm)、[维谛技术2026Q2财报](https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx)、[Alphabet 2026Q2财报](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)、[Alphabet 2026Q2 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm)、[TSMC Q2官方业绩](https://investor.tsmc.com/english/quarterly-results/2026/q2)、[Oracle FY26官方公告](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/)、[S&P Global Oracle降级专题页](https://www.spglobal.com/ratings/en/events/webinars/oracle-downgrade-explained)、[NVIDIA FY2026 10-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm)、[FRED HY OAS](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)、[FRED IG OAS](https://fred.stlouisfed.org/series/BAMLC0A0CM)、[Cboe VIX](https://www.cboe.com/tradable-products/vix/)。
 
 ---
 
-**付强｜V1.4·7/24收盘核验｜2026-07-24｜不构成投资建议**
+**大队长｜V1.4·8/5滚动核验｜2026-08-05｜不构成投资建议**

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">2026Q2与FY26Q4财报窗口：需求仍强，现金回报分化</title>
+  <desc id="chart-desc">对比Amazon、Microsoft、Meta、Alphabet和SpaceX披露的需求增长与自由现金流。自由现金流周期包含单季、过去十二个月和上半年，不能机械横向排名。</desc>
+
+  <rect width="1200" height="760" fill="#F7FAFE"/>
+  <rect x="36" y="26" width="1128" height="708" rx="18" fill="#FFFFFF" stroke="#D3DFEE" stroke-width="2"/>
+
+  <style>
+    text{font-family:'Noto Sans CJK SC','Noto Sans SC','PingFang SC',sans-serif}
+    .title{font-size:32px;font-weight:700;fill:#002451}
+    .subtitle{font-size:18px;font-weight:400;fill:#59697D}
+    .brand{font-size:13px;font-weight:500;fill:#7A8797;letter-spacing:.4px}
+    .guard-title{font-size:16px;font-weight:700;fill:#1C5A9E}
+    .guard{font-size:15px;font-weight:400;fill:#4E6278}
+    .head{font-size:14px;font-weight:700;fill:#718094;letter-spacing:.8px}
+    .company{font-size:20px;font-weight:700;fill:#1E344C}
+    .period{font-size:13px;font-weight:400;fill:#718094}
+    .metric-label{font-size:14px;font-weight:500;fill:#52677E}
+    .demand-value{font-size:24px;font-weight:700;fill:#174F88}
+    .fcf-pos{font-size:24px;font-weight:700;fill:#216C54}
+    .fcf-neg{font-size:24px;font-weight:700;fill:#9C403A}
+    .cycle{font-size:13px;font-weight:700;fill:#52677E}
+    .conclusion{font-size:17px;font-weight:700;fill:#244866}
+    .source{font-size:13px;font-weight:400;fill:#7A8797}
+  </style>
+
+  <text x="72" y="72" class="title">2026Q2 / FY26Q4 财报窗口：需求仍强，现金回报分化</text>
+  <text x="72" y="106" class="subtitle">增长指标与自由现金流并列观察；同一行看传导，不按绝对值给公司排队</text>
+  <text x="1128" y="54" text-anchor="end" class="brand">大队长 · AI周期与泡沫研究 · V1.4</text>
+
+  <rect x="72" y="126" width="1056" height="58" rx="11" fill="#EEF4FA" stroke="#D5E2EF"/>
+  <rect x="72" y="126" width="6" height="58" rx="3" fill="#2D6EAE"/>
+  <text x="94" y="151" class="guard-title">口径护栏</text>
+  <text x="177" y="151" class="guard">需求端分别取云业务或公司收入增速；自由现金流分别为单季、TTM或H1。</text>
+  <text x="177" y="174" class="guard">财季和FCF周期不同，不能机械横向排名；只判断需求兑现能否同步转化为现金。</text>
+
+  <text x="94" y="214" class="head">公司 / 报告期</text>
+  <text x="258" y="214" class="head">需求兑现代理</text>
+  <text x="648" y="214" class="head">自由现金流（USD B）</text>
+  <text x="981" y="214" class="head">FCF周期</text>
+
+  <!-- Amazon -->
+  <rect x="72" y="226" width="1056" height="72" rx="12" fill="#F8FBFE" stroke="#DCE7F2"/>
+  <text x="94" y="255" class="company">亚马逊</text>
+  <text x="94" y="280" class="period">Amazon · 2026Q2</text>
+  <rect x="240" y="238" width="342" height="48" rx="9" fill="#E7F0FA"/>
+  <text x="258" y="258" class="metric-label">AWS收入</text>
+  <text x="558" y="272" text-anchor="end" class="demand-value">+37%</text>
+  <text x="608" y="270" text-anchor="middle" class="subtitle">→</text>
+  <rect x="632" y="238" width="304" height="48" rx="9" fill="#FBEDEC"/>
+  <text x="650" y="258" class="metric-label">自由现金流</text>
+  <text x="916" y="272" text-anchor="end" class="fcf-neg">−$7.600</text>
+  <rect x="968" y="247" width="132" height="30" rx="15" fill="#F0F3F7"/>
+  <text x="1034" y="267" text-anchor="middle" class="cycle">TTM</text>
+
+  <!-- Microsoft -->
+  <rect x="72" y="306" width="1056" height="72" rx="12" fill="#FFFFFF" stroke="#DCE7F2"/>
+  <text x="94" y="335" class="company">微软</text>
+  <text x="94" y="360" class="period">Microsoft · FY26Q4</text>
+  <rect x="240" y="318" width="342" height="48" rx="9" fill="#E7F0FA"/>
+  <text x="258" y="338" class="metric-label">Azure收入</text>
+  <text x="558" y="352" text-anchor="end" class="demand-value">+43%</text>
+  <text x="608" y="350" text-anchor="middle" class="subtitle">→</text>
+  <rect x="632" y="318" width="304" height="48" rx="9" fill="#EAF5F0"/>
+  <text x="650" y="338" class="metric-label">自由现金流</text>
+  <text x="916" y="352" text-anchor="end" class="fcf-pos">+$19.639</text>
+  <rect x="968" y="327" width="132" height="30" rx="15" fill="#F0F3F7"/>
+  <text x="1034" y="347" text-anchor="middle" class="cycle">单季 Q4</text>
+
+  <!-- Meta -->
+  <rect x="72" y="386" width="1056" height="72" rx="12" fill="#F8FBFE" stroke="#DCE7F2"/>
+  <text x="94" y="415" class="company">Meta</text>
+  <text x="94" y="440" class="period">公司口径 · 2026Q2</text>
+  <rect x="240" y="398" width="342" height="48" rx="9" fill="#E7F0FA"/>
+  <text x="258" y="418" class="metric-label">公司收入</text>
+  <text x="558" y="432" text-anchor="end" class="demand-value">+28%</text>
+  <text x="608" y="430" text-anchor="middle" class="subtitle">→</text>
+  <rect x="632" y="398" width="304" height="48" rx="9" fill="#EAF5F0"/>
+  <text x="650" y="418" class="metric-label">自由现金流</text>
+  <text x="916" y="432" text-anchor="end" class="fcf-pos">+$0.784</text>
+  <rect x="968" y="407" width="132" height="30" rx="15" fill="#F0F3F7"/>
+  <text x="1034" y="427" text-anchor="middle" class="cycle">单季 Q2</text>
+
+  <!-- Alphabet -->
+  <rect x="72" y="466" width="1056" height="72" rx="12" fill="#FFFFFF" stroke="#DCE7F2"/>
+  <text x="94" y="495" class="company">Alphabet</text>
+  <text x="94" y="520" class="period">谷歌 · 2026Q2</text>
+  <rect x="240" y="478" width="342" height="48" rx="9" fill="#E7F0FA"/>
+  <text x="258" y="498" class="metric-label">Google Cloud收入</text>
+  <text x="558" y="512" text-anchor="end" class="demand-value">+81.8%</text>
+  <text x="608" y="510" text-anchor="middle" class="subtitle">→</text>
+  <rect x="632" y="478" width="304" height="48" rx="9" fill="#FBEDEC"/>
+  <text x="650" y="498" class="metric-label">自由现金流</text>
+  <text x="916" y="512" text-anchor="end" class="fcf-neg">−$5.855</text>
+  <rect x="968" y="487" width="132" height="30" rx="15" fill="#F0F3F7"/>
+  <text x="1034" y="507" text-anchor="middle" class="cycle">单季 Q2</text>
+
+  <!-- SpaceX -->
+  <rect x="72" y="546" width="1056" height="72" rx="12" fill="#F8FBFE" stroke="#DCE7F2"/>
+  <text x="94" y="575" class="company">SpaceX</text>
+  <text x="94" y="600" class="period">2026Q2 / 2026H1</text>
+  <rect x="240" y="558" width="342" height="48" rx="9" fill="#E7F0FA"/>
+  <text x="258" y="578" class="metric-label">公司收入</text>
+  <text x="558" y="592" text-anchor="end" class="demand-value">+91.9%</text>
+  <text x="608" y="590" text-anchor="middle" class="subtitle">→</text>
+  <rect x="632" y="558" width="304" height="48" rx="9" fill="#FBEDEC"/>
+  <text x="650" y="578" class="metric-label">自由现金流</text>
+  <text x="916" y="592" text-anchor="end" class="fcf-neg">−$25.010</text>
+  <rect x="968" y="567" width="132" height="30" rx="15" fill="#F0F3F7"/>
+  <text x="1034" y="587" text-anchor="middle" class="cycle">H1</text>
+
+  <rect x="72" y="636" width="1056" height="43" rx="10" fill="#E9F2FA"/>
+  <text x="600" y="664" text-anchor="middle" class="conclusion">共同事实是需求仍强；分化发生在资本投入转化为当期现金回报的速度。</text>
+
+  <text x="72" y="706" class="source">来源：各公司2026Q2 / FY26Q4财报、投资者材料及官方文字稿；金额为美元十亿美元。</text>
+  <text x="1128" y="706" text-anchor="end" class="source">不同FCF周期仅作公司内观察 · 不构成投资建议</text>
+</svg>
