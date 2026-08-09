@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#f7fbff"/>
+  <text x="72" y="66" font-family="Noto Sans SC, Arial, sans-serif" font-size="30" font-weight="700" fill="#153b63">AI硬件风险资产相对回撤</text>
+  <text x="72" y="101" font-family="Noto Sans SC, Arial, sans-serif" font-size="18" fill="#58718a">2026/07/23 = 100｜价格与风险偏好信号，不等于订单崩塌</text>
+
+  <g stroke="#d8e5f1" stroke-width="1">
+    <line x1="110" y1="150" x2="1080" y2="150"/>
+    <line x1="110" y1="250" x2="1080" y2="250"/>
+    <line x1="110" y1="350" x2="1080" y2="350"/>
+    <line x1="110" y1="450" x2="1080" y2="450"/>
+    <line x1="110" y1="550" x2="1080" y2="550"/>
+  </g>
+  <g font-family="Noto Sans SC, Arial, sans-serif" font-size="16" fill="#60778d" text-anchor="end">
+    <text x="96" y="156">100</text><text x="96" y="256">95</text><text x="96" y="356">90</text><text x="96" y="456">85</text><text x="96" y="556">80</text>
+  </g>
+  <g font-family="Noto Sans SC, Arial, sans-serif" font-size="16" fill="#60778d" text-anchor="middle">
+    <text x="150" y="588">7/23</text><text x="430" y="588">7/24</text><text x="710" y="588">7/27</text><text x="990" y="588">7/28</text>
+  </g>
+
+  <polyline points="150,150 430,172.4 710,178.4 990,197.6" fill="none" stroke="#98a8b7" stroke-width="5"/>
+  <polyline points="150,150 430,240 710,258.2 990,376.8" fill="none" stroke="#3f78a8" stroke-width="6"/>
+  <polyline points="150,150 430,346.8 710,417.6 990,596.2" fill="none" stroke="#173f67" stroke-width="7"/>
+  <polyline points="150,150 430,238 710,277 990,366.8" fill="none" stroke="#70a8cf" stroke-width="5" stroke-dasharray="12 8"/>
+
+  <g fill="#98a8b7"><circle cx="150" cy="150" r="6"/><circle cx="430" cy="172.4" r="6"/><circle cx="710" cy="178.4" r="6"/><circle cx="990" cy="197.6" r="6"/></g>
+  <g fill="#3f78a8"><circle cx="150" cy="150" r="6"/><circle cx="430" cy="240" r="6"/><circle cx="710" cy="258.2" r="6"/><circle cx="990" cy="376.8" r="6"/></g>
+  <g fill="#173f67"><circle cx="150" cy="150" r="7"/><circle cx="430" cy="346.8" r="7"/><circle cx="710" cy="417.6" r="7"/><circle cx="990" cy="596.2" r="7"/></g>
+  <g fill="#70a8cf"><circle cx="150" cy="150" r="6"/><circle cx="430" cy="238" r="6"/><circle cx="710" cy="277" r="6"/><circle cx="990" cy="366.8" r="6"/></g>
+
+  <g font-family="Noto Sans SC, Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="1010" y="202" fill="#7c8b98">QQQ -2.38%</text>
+    <text x="1010" y="372" fill="#70a8cf">SOXX -10.84%</text>
+    <text x="1010" y="402" fill="#3f78a8">VRT -11.34%</text>
+    <text x="1010" y="602" fill="#173f67">COHR -22.31%</text>
+  </g>
+
+  <rect x="72" y="630" width="1056" height="58" rx="10" fill="#e8f2fa"/>
+  <text x="94" y="655" font-family="Noto Sans SC, Arial, sans-serif" font-size="16" fill="#365b7d">结论边界：硬件资产明显跑输QQQ，广义估值/流动性预警强度上升；</text>
+  <text x="94" y="678" font-family="Noto Sans SC, Arial, sans-serif" font-size="16" fill="#365b7d">维谛技术Q2、订单取消和收入斜率尚未验证，不据此上调严格触发。</text>
+</svg>

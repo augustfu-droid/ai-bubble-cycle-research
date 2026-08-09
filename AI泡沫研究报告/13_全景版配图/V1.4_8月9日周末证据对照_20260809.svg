@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans CJK SC','Noto Sans SC','PingFang SC',sans-serif; }
+      .title { font-size: 42px; font-weight: 700; fill: #153b64; }
+      .sub { font-size: 22px; font-weight: 400; fill: #55728f; }
+      .card-title { font-size: 28px; font-weight: 700; fill: #174a78; }
+      .big { font-size: 44px; font-weight: 700; fill: #0b65a8; }
+      .body { font-size: 23px; font-weight: 400; fill: #294a66; }
+      .tag { font-size: 19px; font-weight: 700; fill: #ffffff; }
+      .foot { font-size: 17px; font-weight: 400; fill: #6c8196; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#274b6b" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="840" fill="#f4f9fd"/>
+  <rect x="0" y="0" width="1400" height="12" fill="#2b79b7"/>
+  <text x="70" y="78" class="title">8月9日周末证据对照</text>
+  <text x="70" y="116" class="sub">需求与承接仍有韧性，宏观尾部风险上升；固定触发器未新增</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="160" rx="22" ry="22" width="600" height="250" fill="#ffffff" stroke="#c8def0"/>
+    <rect x="730" y="160" rx="22" ry="22" width="600" height="250" fill="#ffffff" stroke="#c8def0"/>
+    <rect x="70" y="450" rx="22" ry="22" width="600" height="250" fill="#ffffff" stroke="#c8def0"/>
+    <rect x="730" y="450" rx="22" ry="22" width="600" height="250" fill="#ffffff" stroke="#c8def0"/>
+  </g>
+
+  <rect x="95" y="184" width="88" height="34" rx="17" fill="#2b79b7"/>
+  <text x="139" y="208" text-anchor="middle" class="tag">承接</text>
+  <text x="95" y="258" class="card-title">SPCX 首轮解禁</text>
+  <text x="95" y="316" class="big">9.12亿股可售</text>
+  <text x="95" y="354" class="body">8/6 +6.14%｜8/7 +15.83%</text>
+  <text x="95" y="386" class="body">收 $133.11，仍低发行价 1.4%</text>
+
+  <rect x="755" y="184" width="88" height="34" rx="17" fill="#2b79b7"/>
+  <text x="799" y="208" text-anchor="middle" class="tag">市场</text>
+  <text x="755" y="258" class="card-title">广谱信用与波动</text>
+  <text x="755" y="316" class="big">VIX 14.90</text>
+  <text x="755" y="354" class="body">HY OAS 271bp｜IG OAS 78bp</text>
+  <text x="755" y="386" class="body">系统性融资关闭仍未出现</text>
+
+  <rect x="95" y="474" width="88" height="34" rx="17" fill="#b66a2d"/>
+  <text x="139" y="498" text-anchor="middle" class="tag">宏观</text>
+  <text x="95" y="548" class="card-title">美国7月就业</text>
+  <text x="95" y="606" class="big" fill="#a95d27">-2.3万</text>
+  <text x="95" y="644" class="body">5—6月合计下修10.3万</text>
+  <text x="95" y="676" class="body">失业率4.1%｜尾部风险上升</text>
+
+  <rect x="755" y="474" width="88" height="34" rx="17" fill="#317f76"/>
+  <text x="799" y="498" text-anchor="middle" class="tag">产业</text>
+  <text x="755" y="548" class="card-title">服务器与光互连</text>
+  <text x="755" y="606" class="big" fill="#28726b">AI服务器近+31%</text>
+  <text x="755" y="644" class="body">DRAM/HBM供给仍紧至2027</text>
+  <text x="755" y="676" class="body">FCC光模块限制尚无正式提案</text>
+
+  <line x1="70" y1="752" x2="1330" y2="752" stroke="#bdd2e3"/>
+  <text x="70" y="790" class="foot">来源：Nasdaq、Cboe、FRED、BLS、TrendForce；市场日分别为8/6—8/7，第三方预测不等于公司指引。</text>
+  <text x="1330" y="790" text-anchor="end" class="foot">大队长｜V1.4·2026-08-09</text>
+</svg>
