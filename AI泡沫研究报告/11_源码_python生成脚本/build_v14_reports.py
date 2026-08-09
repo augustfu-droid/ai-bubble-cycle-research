@@ -3,7 +3,7 @@
 
 Outputs:
   - main report V1.4
-  - fact audit V1.4 (63-item frozen base + 25 new items, rolling checked through 2026-08-05)
+  - fact audit V1.4 (63-item frozen base + 32 new items, rolling checked through 2026-08-09)
   - institutional brief V1.4
   - complete panorama V1.4 (source re-render)
   - 300+ page super-panorama V1.4 (integrated update module + complete frozen legacy edition)
@@ -21,6 +21,7 @@ import io
 import re
 from pathlib import Path
 
+import fitz
 import markdown
 from pypdf import PdfReader, PdfWriter
 from pypdf.annotations import Link
@@ -37,10 +38,10 @@ INCR = ARCHIVE / "12_增量素材"
 FONT_DIR = ARCHIVE / "11_源码_python生成脚本/fonts"
 
 VERSION = "V1.4"
-UPDATE_DATE = "2026/08/05"
-DATA_DATE = "2026/08/05"
-AUDIT_TOTAL = 88
-AUDIT_NEW = 25
+UPDATE_DATE = "2026/08/09"
+DATA_DATE = "2026/08/09"
+AUDIT_TOTAL = 95
+AUDIT_NEW = 32
 HISTORY_MARKER = "<!-- HISTORICAL_START -->"
 
 MAIN_OUT = ARCHIVE / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf"
@@ -48,7 +49,7 @@ AUDIT_OUT = ARCHIVE / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.
 BRIEF_OUT = ARCHIVE / "05_简版与执行摘要/AI周期与泡沫_机构简版_V1.4_内部署名版.pdf"
 PANO_OUT = ARCHIVE / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf"
 THICK_OUT = ARCHIVE / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4超全景版_300页级.pdf"
-UPDATE_OUT = INCR / "2026-08-05_V1.4滚动更新模块.pdf"
+UPDATE_OUT = INCR / "2026-08-09_V1.4滚动更新模块.pdf"
 
 MASTER_MD = INCR / "2026-07-20_V1.4更新模块_全报告统一口径.md"
 MAIN_MD = SRC / "AI周期与泡沫深度研究报告.md"
@@ -324,10 +325,10 @@ def cover_html(title: str, subtitle: str, extra: str = "") -> str:
 <div class="kpi"><b>综合崩盘指数</b>　77 / 100<br/>
 <b>四情景</b>　A44 / B22 / C10 / D24（软着陆以外合计 76%）<br/>
 <b>触发器</b>　严格执行 1/3 · 广义早期预警 2/3<br/>
-<b>数据截止</b>　研究资料至2026-08-05 09:30；E判断A股结算至7/24，信用与波动率至8/3，SPCX收盘至8/4</div>
+<b>数据截止</b>　研究资料至2026-08-09；E判断A股结算至7/24，信用利差至8/6，VIX与SPCX至8/7</div>
 <div class="rev"><b>当前判断</b>：需求仍然满载，融资与估值侧裂缝扩大；严格执行触发仍为1/3，尚未达到系统性减仓或对冲的全面执行信号。<br/>
 <b>阅读规则</b>：卷首V1.4为当前口径；后接历史冻结正文，仅用于展示研究过程。{extra}</div>
-<div class="foot">V1.4 · 2026-08-05滚动核验｜历史发布材料与前瞻判断原件保持冻结｜不构成投资建议</div>
+<div class="foot">V1.4 · 2026-08-09周末核验｜历史发布材料与前瞻判断原件保持冻结｜不构成投资建议</div>
 </section>"""
 
 
@@ -511,11 +512,11 @@ def clean_current_cover_page(base_pdf: Path, cover_index: int, title: str):
 
     c.setFillColorRGB(0.43, 0.42, 0.39)
     c.setFont("NotoSansSC", 8.2)
-    c.drawString(margin_x, box_y - 38, "版本　V1.4 · 2026/08/05滚动核验")
+    c.drawString(margin_x, box_y - 38, "版本　V1.4 · 2026/08/09周末核验")
     c.drawString(
         margin_x,
         box_y - 61,
-        "数据　研究资料至2026/08/05 09:30 · E判断A股结算至7/24 · 信用/波动率至8/3 · SPCX至8/4",
+        "数据　研究资料至2026/08/09 · E判断A股结算至7/24 · 信用至8/6 · VIX/SPCX至8/7",
     )
 
     c.setStrokeColorRGB(0.84, 0.83, 0.80)
@@ -549,6 +550,51 @@ def optimize_pdf(path: Path) -> None:
     )
     doc.close()
     tmp.replace(path)
+
+
+PUBLIC_HISTORY_REPLACEMENTS = (
+    ("简历与投递包", "研究归档"),
+    ("V1.3.4 投递包", "V1.3.4 研究归档"),
+    ("见投递包", "见研究归档"),
+)
+
+
+def sanitized_legacy_page(path: Path, page_index: int):
+    """Rasterize one redacted legacy page for the public super-panorama.
+
+    Only the two historical insert pages contain recruiting-context wording.
+    Rasterizing those two pages after redaction keeps the frozen source bytes
+    unchanged and avoids changing the hundreds of historical link targets.
+    """
+    document = fitz.open(path)
+    page = document[page_index]
+    font_path = str(FONT_DIR / "NotoSansSC-Regular.ttf")
+    replacements: list[tuple[fitz.Rect, str]] = []
+    for old, new in PUBLIC_HISTORY_REPLACEMENTS:
+        for rect in page.search_for(old):
+            page.add_redact_annot(rect, fill=(1, 1, 1))
+            replacements.append((rect, new))
+    if replacements:
+        page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE)
+        page.insert_font(fontname="NotoSansSC", fontfile=font_path)
+        for rect, replacement in replacements:
+            page.insert_text(
+                (rect.x0, rect.y1 - 1.2),
+                replacement,
+                fontsize=max(6.0, min(7.2, rect.height * 0.78)),
+                fontname="NotoSansSC",
+                color=(0.12, 0.12, 0.12),
+                overlay=True,
+            )
+    pixmap = page.get_pixmap(matrix=fitz.Matrix(2, 2), alpha=False)
+    width, height = page.rect.width, page.rect.height
+    document.close()
+    public_doc = fitz.open()
+    public_page = public_doc.new_page(width=width, height=height)
+    public_page.insert_image(public_page.rect, stream=pixmap.tobytes("png"))
+    payload = io.BytesIO(public_doc.tobytes(garbage=4, deflate=True))
+    public_doc.close()
+    return PdfReader(payload).pages[0]
 
 
 def find_pdf_page(reader: PdfReader, *tokens: str, start: int = 0) -> int:
@@ -756,14 +802,14 @@ def build_thick(update_pdf: Path, out: Path) -> int:
 
     current_rows = (
         ("重要免责声明", 2, 1, True),
-        update_row("V1.4 当前更新与勘误｜滚动核验至2026-08-05", "V1.4 更新模块", strong=True),
-        update_row("0. V1.4滚动更新日志（7/20—8/5）", "V1.4滚动更新日志"),
+        update_row("V1.4 当前更新与勘误｜滚动核验至2026-08-09", "V1.4 更新模块", strong=True),
+        update_row("0. V1.4滚动更新日志（7/20—8/9）", "V1.4滚动更新日志"),
         update_row("1. V1.4当前结论", "V1.4 当前结论"),
         update_row("2. 触发器治理：V1.4重新基准化", "触发器治理"),
-        update_row("3. 本轮新增二十五项审计事实", "本轮新增二十五项审计事实"),
+        update_row("3. 本轮新增三十二项审计事实", "本轮新增三十二项审计事实"),
         update_row("4. 市场与事件快照", "市场与事件快照"),
         update_row("5. 证伪条件与下一观察窗口", "证伪条件与下一观察窗口"),
-        update_row("6. 8/5复审与勘误结论", "8/5复审与勘误结论"),
+        update_row("6. 8/9复审与勘误结论", "8/9复审与勘误结论"),
         update_row("7. 本版具体更新位置", "本版具体更新位置"),
         update_row("8. 主要来源", "主要来源"),
         update_row("超全景整合说明", "超全景整合说明", strong=True),
@@ -788,7 +834,9 @@ def build_thick(update_pdf: Path, out: Path) -> int:
     writer.append(update_reader, pages=(2, len(update_reader.pages)), import_outline=False)
     # The cover and disclaimer have moved to the front. Keep original pages
     # 3–310, which contain the revision record and every historical TOC target.
-    writer.append(base_reader, pages=(2, len(base_reader.pages)), import_outline=True)
+    writer.add_page(sanitized_legacy_page(THICK_BASE_PDF, 2))
+    writer.add_page(sanitized_legacy_page(THICK_BASE_PDF, 3))
+    writer.append(base_reader, pages=(4, len(base_reader.pages)), import_outline=True)
     front_count = len(update_reader.pages) + 1
     for page_index in range(front_count, len(writer.pages)):
         stamp_page(
@@ -805,7 +853,7 @@ def build_thick(update_pdf: Path, out: Path) -> int:
     writer.add_outline_item("V1.4 当前封面", 0)
     writer.add_outline_item("重要免责声明", 1)
     writer.add_outline_item("总目录", 2)
-    writer.add_outline_item("V1.4·8/5 更新与勘误", 3)
+    writer.add_outline_item("V1.4·8/9 更新与勘误", 3)
     writer.add_outline_item("V1.3.4 冻结历史正文（原页3–310）", front_count)
     writer.add_metadata({
         "/Title": "2026年AI泡沫研究 · 全景版 V1.4超全景版",
@@ -876,7 +924,7 @@ def build_maintenance_edition(
             start=cover_index + 2,
         )
     writer.add_outline_item("V1.4 当前封面", 0)
-    writer.add_outline_item("V1.4·8/5 更新与勘误", 1)
+    writer.add_outline_item("V1.4·8/9 更新与勘误", 1)
     writer.add_outline_item(
         f"历史冻结正文（原封面已移至首页，共{len(base_reader.pages) - 1}页）",
         front_count,
@@ -922,16 +970,16 @@ def main() -> None:
         "AI周期与泡沫研究 · V1.4更新模块",
         "全报告统一动态口径 · 用于主报告、审计表、完整全景版与 300+ 页超全景版",
         toc=True,
-        extra_cover="本模块包含免责声明、当前结论、版本化Trigger ID、二十五项审计事实、市场快照、证伪条件、图表和更新位置。",
+        extra_cover="本模块包含免责声明、当前结论、版本化Trigger ID、三十二项审计事实、市场快照、证伪条件、图表和更新位置。",
     )
     build_markdown_pdf(
         main_md, MAIN_OUT, "AI周期与泡沫深度研究报告", "主报告 V1.4 · 研究维护版",
         extra_cover="历史正文保留研究过程，动态口径以卷首更新模块为准。",
     )
     build_markdown_pdf(
-        audit_md, AUDIT_OUT, "AI周期与泡沫 · 事实审计表", "V1.4 · 88 项（63 项冻结基表 + 25 项新增）",
+        audit_md, AUDIT_OUT, "AI周期与泡沫 · 事实审计表", "V1.4 · 95 项（63 项冻结基表 + 32 项新增）",
         landscape=True, compact=True,
-        extra_cover="新增13i–13ag；13z–13ag审计Amazon、Microsoft、Meta、Apple和SpaceX最新财报与监管文件。",
+        extra_cover="新增13i–13an；13ah–13an审计SPCX解禁、Alphabet融资、Terafab、供应链、政策与就业。",
     )
     build_markdown_pdf(
         read(BRIEF_MD), BRIEF_OUT, "AI周期与泡沫研究 · 机构简版", "V1.4 · 10 分钟投委阅读",

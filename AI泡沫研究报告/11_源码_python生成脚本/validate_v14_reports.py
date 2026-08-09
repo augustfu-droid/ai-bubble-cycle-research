@@ -11,11 +11,17 @@ from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
 PRIVATE_AUTHOR = "\u4ed8\u5f3a"
+PRIVATE_AUTHOR_VARIANTS = (
+    PRIVATE_AUTHOR,
+    "Fu" + " Qiang",
+    "FU" + " QIANG",
+    "fu" + " qiang",
+)
 PUBLIC_AUTHOR = "大队长"
 TEXT_SUFFIXES = {".md", ".py", ".txt", ".html", ".css", ".json", ".yml", ".yaml"}
 
 PDFS = {
-    ROOT / "12_增量素材/2026-08-05_V1.4滚动更新模块.pdf": 10,
+    ROOT / "12_增量素材/2026-08-09_V1.4滚动更新模块.pdf": 10,
     ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf": 65,
     ROOT / "02_主报告V1.4/01_AI周期与泡沫_事实审计表_V1.4.pdf": 12,
     ROOT / "05_简版与执行摘要/AI周期与泡沫_机构简版_V1.4_内部署名版.pdf": 5,
@@ -40,7 +46,7 @@ MAINTENANCE_PDFS = {
 }
 
 REQUIRED_TEXT = (
-    "2026-08-05",
+    "2026-08-09",
     "DeepSeek",
     "Meta",
     "Microsoft",
@@ -59,7 +65,10 @@ CURRENT_REQUIRED_TEXT = (
     "维谛技术",
     "Amazon",
     "SpaceX",
-    "88项",
+    "95项",
+    "25.0B",
+    "133.11",
+    "Terafab",
 )
 
 FORBIDDEN_CURRENT_TEXT = (
@@ -69,6 +78,10 @@ FORBIDDEN_CURRENT_TEXT = (
     "也未接近7/1阶段高点",
     "投递后维护版",
     "已投递",
+    "简历与投递包",
+    "见投递包",
+    "投递ZIP",
+    "8/6解禁承接待观察",
     "203.28",
     "Form 10-Q 在本版截止时未找到",
     "Microsoft与Meta美东盘后发布，均属本版截止时的 PENDING",
@@ -86,12 +99,12 @@ CURRENT_SOURCES = (
 
 CURRENT_METADATA = (
     ROOT / "00_使用说明/README_大队长_全量存档说明.md",
-    ROOT / "00_使用说明/版本矩阵_V1.4_2026-08-05.md",
-    ROOT / "复审与版本记录/版本变更说明_2026-08-05.md",
-    ROOT / "复审与版本记录/引用核验报告_2026-08-05.md",
-    ROOT / "复审与版本记录/专业复审报告_2026-08-05.md",
-    ROOT / "复审与版本记录/PDF与目录核验报告_2026-08-05.md",
-    ROOT / "复审与版本记录/发布清单_2026-08-05.md",
+    ROOT / "00_使用说明/版本矩阵_V1.4_2026-08-09.md",
+    ROOT / "复审与版本记录/版本变更说明_2026-08-09.md",
+    ROOT / "复审与版本记录/引用核验报告_2026-08-09.md",
+    ROOT / "复审与版本记录/专业复审报告_2026-08-09.md",
+    ROOT / "复审与版本记录/PDF与目录核验报告_2026-08-09.md",
+    ROOT / "复审与版本记录/发布清单_2026-08-09.md",
 )
 
 DERIVED_CURRENT_SOURCES = (
@@ -117,14 +130,16 @@ def validate_current_sources() -> None:
             assert target.exists(), (path.name, "missing local image", rel)
 
     audit_text = texts[ROOT / "10_源码_markdown/AI周期与泡沫_事实审计表_V1.4_增量.md"]
-    ids = re.findall(r"^\| \*\*(13(?:[i-z]|a[a-g]))【V1\.4", audit_text, flags=re.M)
-    expected_ids = [f"13{letter}" for letter in "ijklmnopqrstuvwxyz"] + [f"13a{letter}" for letter in "abcdefg"]
-    assert len(ids) == 25 and len(set(ids)) == 25, ids
+    master_text = texts[ROOT / "12_增量素材/2026-07-20_V1.4更新模块_全报告统一口径.md"]
+    assert "评分复算台账" in master_text, "missing 8/9 score-recalculation ledger"
+    ids = re.findall(r"^\| \*\*(13(?:[i-z]|a[a-n]))【V1\.4", audit_text, flags=re.M)
+    expected_ids = [f"13{letter}" for letter in "ijklmnopqrstuvwxyz"] + [f"13a{letter}" for letter in "abcdefghijklmn"]
+    assert len(ids) == 32 and len(set(ids)) == 32, ids
     assert ids == expected_ids, ids
     audit_rows = [
         line.strip().strip("|").split("|")
         for line in audit_text.splitlines()
-        if re.match(r"^\| \*\*13(?:[i-z]|a[a-g])【V1\.4", line)
+        if re.match(r"^\| \*\*13(?:[i-z]|a[a-n])【V1\.4", line)
     ]
     assert all(len(row) == 8 for row in audit_rows), [
         (ids[index], len(row)) for index, row in enumerate(audit_rows)
@@ -135,10 +150,10 @@ def validate_current_sources() -> None:
         assert "★" in row[5], (item_id, "missing source grade")
         assert row[6].strip(), (item_id, "missing audit verdict")
         assert row[7].strip(), (item_id, "missing change note")
-    assert "88 项" in audit_text and "★★★/★★" in audit_text, "audit count/source grade"
+    assert "95 项" in audit_text and "★★★/★★" in audit_text, "audit count/source grade"
     for path in CURRENT_METADATA:
         metadata_text = path.read_text(encoding="utf-8")
-        assert "2026-08-05" in metadata_text, (path.name, "release date")
+        assert "2026-08-09" in metadata_text, (path.name, "release date")
         assert "14_面试准备/" not in metadata_text and "17_招聘Dashboard/" not in metadata_text, (
             path.name,
             "recruiting files must not enter release list",
@@ -154,7 +169,7 @@ def validate_current_sources() -> None:
         )
         assert "当前口径唯一入口" in derived_text, (path.name, "current-version override")
     print(
-        "[PASS] Current Markdown sources: 25 unique V1.4 items, 8 fields per row, "
+        "[PASS] Current Markdown sources: 32 unique V1.4 items, 8 fields per row, "
         "source URL/date/grade/verdict/change note and local images complete"
     )
 
@@ -166,18 +181,22 @@ def validate_public_identity() -> None:
     for path in ROOT.rglob("*"):
         if not path.is_file():
             continue
-        assert PRIVATE_AUTHOR not in path.name, ("private author in path", path)
+        if path.stat().st_size == 0:
+            # Interrupted local user copies may leave an empty temporary PDF;
+            # canonical files are validated explicitly above.
+            continue
+        assert not any(token in path.name for token in PRIVATE_AUTHOR_VARIANTS), ("private author in path", path)
         if path.suffix.lower() in TEXT_SUFFIXES:
             content = path.read_text(encoding="utf-8", errors="ignore")
-            assert PRIVATE_AUTHOR not in content, ("private author in text", path)
+            assert not any(token in content for token in PRIVATE_AUTHOR_VARIANTS), ("private author in text", path)
             checked_text += 1
         elif path.suffix.lower() == ".pdf":
             reader = PdfReader(str(path))
             metadata = " ".join(str(value) for value in (reader.metadata or {}).values())
-            assert PRIVATE_AUTHOR not in metadata, ("private author in PDF metadata", path)
+            assert not any(token in metadata for token in PRIVATE_AUTHOR_VARIANTS), ("private author in PDF metadata", path)
             for page_number, page in enumerate(reader.pages, start=1):
                 text = page.extract_text() or ""
-                assert PRIVATE_AUTHOR not in text, ("private author in PDF", path, page_number)
+                assert not any(token in text for token in PRIVATE_AUTHOR_VARIANTS), ("private author in PDF", path, page_number)
             checked_pdfs += 1
     assert PUBLIC_AUTHOR in (ROOT / "README.md").read_text(encoding="utf-8")
     print(
@@ -223,11 +242,11 @@ def validate_generated_pdf(path: Path, minimum_pages: int) -> None:
     for token in FORBIDDEN_CURRENT_TEXT:
         assert token not in full_text, (path.name, token)
     compact_text = normalized_text
-    assert "88项" in compact_text or "63→88" in compact_text, (path.name, "88项")
+    assert "95项" in compact_text or "63→95" in compact_text, (path.name, "95项")
     assert "Alphabet" in full_text and "官方" in full_text, (path.name, "Alphabet官方")
     assert "V1.4" in full_text and "滚动核验至" in full_text, (path.name, "统一当前页眉")
     if path in {
-        ROOT / "12_增量素材/2026-08-05_V1.4滚动更新模块.pdf",
+        ROOT / "12_增量素材/2026-08-09_V1.4滚动更新模块.pdf",
         ROOT / "02_主报告V1.4/00_AI周期与泡沫深度研究报告_主报告_V1.4.pdf",
         ROOT / "06_全景与剧本版/2026年AI泡沫研究 · 全景版_V1.4完整重排版.pdf",
     }:
@@ -264,7 +283,7 @@ def validate_generated_pdf(path: Path, minimum_pages: int) -> None:
 def validate_thick() -> None:
     reader = PdfReader(str(THICK))
     assert (reader.metadata or {}).get("/Author") == PUBLIC_AUTHOR, (THICK.name, "PDF author metadata")
-    update_path = ROOT / "12_增量素材/2026-08-05_V1.4滚动更新模块.pdf"
+    update_path = ROOT / "12_增量素材/2026-08-09_V1.4滚动更新模块.pdf"
     update_pages = len(PdfReader(str(update_path)).pages)
     front_count = update_pages + 1
     assert reader.page_labels[: front_count + 2] == [
@@ -315,6 +334,9 @@ def validate_thick() -> None:
         "历史原版索引（留档）" in archive_index_text
         and "不作为第二套当前目录" in archive_index_text
     ), archive_index_text[:300]
+    public_text = "\n".join((page.extract_text() or "") for page in reader.pages)
+    for token in ("简历与投递包", "见投递包", "投递ZIP"):
+        assert token not in public_text, (THICK.name, "public-history redaction", token)
 
     # Discover historical internal-link pages instead of relying on magic offsets.
     page_object_ids = {page.indirect_reference.idnum for page in reader.pages}
@@ -341,7 +363,7 @@ def validate_thick() -> None:
 def validate_maintenance(path: Path, base_pages: int, cover_index: int) -> None:
     reader = PdfReader(str(path))
     assert (reader.metadata or {}).get("/Author") == PUBLIC_AUTHOR, (path.name, "PDF author metadata")
-    update_path = ROOT / "12_增量素材/2026-08-05_V1.4滚动更新模块.pdf"
+    update_path = ROOT / "12_增量素材/2026-08-09_V1.4滚动更新模块.pdf"
     update_pages = len(PdfReader(str(update_path)).pages)
     assert len(reader.pages) == update_pages + base_pages - 1, (
         path.name,
@@ -361,7 +383,7 @@ def validate_maintenance(path: Path, base_pages: int, cover_index: int) -> None:
         and "当前判断" in (reader.pages[0].extract_text() or "")
         and "阅读规则" in (reader.pages[0].extract_text() or "")
         and "V1.4 修订说明" not in (reader.pages[0].extract_text() or "")
-        and "2026-08-05" in front_text
+        and "2026-08-09" in front_text
         and "DeepSeek" in front_text
         and "Alphabet" in front_text
         and "V1.4滚动更新日志" in front_text
