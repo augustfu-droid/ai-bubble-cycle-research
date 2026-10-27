@@ -1,0 +1,137 @@
+{
+  "version": "V1.5.1",
+  "cutoff": "2026-10-09 morning Asia/Shanghai",
+  "previous_cutoff": "2026-10-01",
+  "purpose": "Incremental primary-source observations and reproducible inputs; not a complete historical audit or trading model",
+  "facts": [
+    {
+      "id": "TSMC-20261008-01", "class": "unaudited monthly actual; quarterly sum is derived",
+      "published": "2026-10-08", "period": "2026-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "crosscheck_url": "https://investor.tsmc.com/english/monthly-revenue/2026",
+      "locator": "Consolidated Revenue table, NT$ million; monthly table April to September",
+      "unit": "TWD million", "months": ["2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09"],
+      "revenue": [410726, 416975, 442680, 467580, 514806, 511857],
+      "september_2025": 330980, "ytd_2026": 3898727, "ytd_2025": 2762964,
+      "reported_mom_pct": -0.6, "reported_yoy_pct": 54.6, "reported_ytd_yoy_pct": 41.1,
+      "q2_monthly_sum": 1270381, "q3_monthly_sum": 1494243, "derived_qoq_pct": 17.6216426411,
+      "limitations": "Consolidated issuer monthly data, not AI-only revenue or full Q3 financials. Two issuer publications are consistency checks, not independent economic evidence. Rounded million inputs used consistently."
+    },
+    {
+      "id": "SAMSUNG-20261008-01", "class": "preliminary completed-quarter estimate",
+      "published": "2026-10-08", "period": "2026Q3",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026",
+      "locator": "K-IFRS guidance and range midpoints", "unit": "KRW trillion",
+      "revenue": 195, "operating_profit": 107.4, "revenue_range": [194, 196], "operating_profit_range": [107.3, 107.5],
+      "limitations": "Consolidated preliminary estimate, not audited final results, HBM segment profit or cash flow."
+    },
+    {
+      "id": "APLD-20261007-01", "class": "quarterly financial statements and subsequent delivery",
+      "published_et": "2026-10-07 16:27", "published_bj": "2026-10-08 04:27", "period_end": "2026-08-31",
+      "url": "https://www.globenewswire.com/news-release/2026/10/07/3376854/0/en/applied-digital-reports-fiscal-first-quarter-2027-results.html",
+      "crosscheck_url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000059/apld-20260831.htm",
+      "locator": "HPC Hosting Update; 10-Q printed page 5 cash flow statement",
+      "unit": "USD million", "hpc_revenue": 262.6, "base_rent": 65.8, "tenant_fitout": 183.5, "tenant_recoveries": 13.3,
+      "gaap_revenue_rounded": 341.9, "adjusted_revenue_rounded": 300.4,
+      "ocf": 63.921, "ppe_and_other_assets_purchases": 2074.698, "simple_cash_bridge": -2010.777, "net_financing_cash": 1543.472,
+      "subsequent_delivery_date": "2026-10-01", "new_it_mw": 75, "operational_it_mw": 250,
+      "limitations": "HPC segment revenue is distinct from consolidated cash. Adjusted revenue excludes ChronoScale. Simple bridge is not company-defined FCF. October delivery is after August quarter end."
+    },
+    {
+      "id": "SBG-20261001-01", "class": "executed investment; prior-cutoff-day supplemental verification",
+      "published": "2026-10-01", "event_date_japan": "2026-10-01",
+      "url": "https://group.softbank/en/news/press/20261001", "locator": "first three release paragraphs",
+      "unit": "USD billion", "third_tranche": 10, "completed_round": 30, "cumulative_investment": 64.6, "ownership_pct_approx": 13,
+      "limitations": "10 is included in 30, which is included in cumulative 64.6. Senior note funding and equity injection are two sides of one funding chain; not operating income."
+    },
+    {
+      "id": "CRWV-INDIA-20261007-01", "class": "planned infrastructure expansion",
+      "published": "2026-10-07", "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Enters-India-Expanding-AI-Cloud-Platform-With-AdaniConneX/default.aspx",
+      "locator": "three 80 MW buildings; first phase availability paragraph", "planned_mw": 240, "optional_expansion_mw": 240, "first_phase_expected": "mid-2028",
+      "limitations": "Not 480 MW operating capacity. Financing amount and initial phase MW not disclosed; 4.2 GW repeated in release is an August baseline."
+    },
+    {
+      "id": "ORCL-JUPITER-20260930-01", "class": "issuer joint statement; earlier document newly read in full",
+      "published": "2026-09-30", "url": "https://www.oracle.com/news/announcement/project-jupiter-statement-on-southern-new-mexico-floods-2026-09-30/",
+      "locator": "two-paragraph Oracle and STACK statement",
+      "observed": "Floodwater reached campus; company says no critical infrastructure damaged and schedule unchanged.",
+      "limitations": "Company statement, not independent construction acceptance, insurance settlement or proof that future schedule risk is zero."
+    },
+    {
+      "id": "ORCL-ENERGY-20261002-01", "class": "conditional energy cost commitment",
+      "published": "2026-10-02", "url": "https://www.oracle.com/news/announcement/oracle-announces-commitment-to-absorb-rising-point-beach-energy-costs-2026-10-02/",
+      "locator": "opening commitment and final PSC-approval paragraph", "unit": "USD billion", "expected_cost_absorption": 0.3,
+      "limitations": "Existing nuclear plant PPA subscription subject to Wisconsin PSC approval, not paid cash or new generation capacity. No annual payment schedule disclosed."
+    },
+    {
+      "id": "ANTHROPIC-20261007-01", "class": "published API tariffs, not realized prices or margins",
+      "published": "2026-10-07", "readback_date_bj": "2026-10-09",
+      "url": "https://www.anthropic.com/claude-haiku-5-5", "crosscheck_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "locator": "Pricing; Further updates; per-request context tier", "unit": "USD per million tokens",
+      "haiku_up_to_100k": {"input": 0.1, "output": 0.5, "cache_read": 0.01},
+      "haiku_over_100k": {"input": 0.5, "output": 2.5, "cache_read": 0.05},
+      "sonnet": {"input": 2, "output": 10, "old_cache_read": 0.2, "cache_read": 0.1},
+      "short_batch": {"requests": 10, "input_tokens_per_request": 100000, "output_tokens_per_request": 20000, "bill_usd": 0.2},
+      "long_batch": {"requests": 5, "input_tokens_per_request": 200000, "output_tokens_per_request": 40000, "bill_usd": 1.0},
+      "limitations": "100k threshold is per request and includes cached input; not marginal pricing only on excess. Cache write and tool costs omitted from example; vendor cost improvements not independently measured."
+    },
+    {
+      "id": "OPENAI-ADS-20261005-01", "class": "announced test and measurement capabilities",
+      "published": "2026-10-05", "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+      "locator": "Bringing products and services to life; Measuring the impact",
+      "observed": "Visual ads to be tested later in October for US Free/Go image generation; expanded attribution and measurement partnerships.",
+      "limitations": "Not a fully launched format or new financial disclosure. Specific advertiser case results not extrapolated to platform ROI."
+    },
+    {
+      "id": "RATES-20261008-01", "class": "official market-derived curve observations",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_yield_curve",
+      "real_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_real_yield_curve",
+      "crosscheck_url": "https://www.federalreserve.gov/releases/h15/",
+      "baseline_urls": ["https://fred.stlouisfed.org/data/DGS2", "https://fred.stlouisfed.org/data/DGS10", "https://fred.stlouisfed.org/data/DFII10"],
+      "locator": "Treasury October table; H.15 release October 8 with last observation October 7",
+      "observation_dates": ["2026-09-29", "2026-10-01", "2026-10-02", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08"],
+      "treasury_2y_pct": [4.89, 4.78, 4.83, 4.84, 4.79, 4.77, 4.75],
+      "treasury_10y_pct": [5.26, 5.24, 5.28, 5.31, 5.27, 5.28, 5.22],
+      "treasury_real_10y_pct": [2.91, 2.88, 2.92, 2.95, 2.91, 2.92, 2.87],
+      "limitations": "September 29 baseline rechecked at FRED. Different publisher lags are not conflicting observations. CMT is interpolated indicative rate, not a company borrowing rate. Nominal-real spread is not pure inflation expectations."
+    },
+    {
+      "id": "BLS-EMP-20261002-01", "class": "official monthly estimate and revisions",
+      "published_bj": "2026-10-02 20:30", "period": "2026-09",
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm", "crosscheck_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "locator": "opening summary and final revision paragraph", "unit": "thousand persons",
+      "september_payroll": 29, "unemployment_pct": 4.2, "july_old": 21, "july_revised": -10, "august_old": 162, "august_revised": 133,
+      "limitations": "One month does not establish recession, rate cuts, or AI causation. No verified consensus surprise calculated."
+    },
+    {
+      "id": "FOMC-20261007-01", "class": "minutes of earlier meeting, not new decision",
+      "published_bj": "2026-10-08 02:00", "meeting_dates_us": ["2026-09-15", "2026-09-16"],
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20260916.pdf",
+      "publication_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "locator": "printed pages 5 and 9",
+      "observed": "Most participants at September meeting judged another increase likely appropriate by year end, conditional on incoming information. Corporate issuance robust and hyperscaler spreads slightly narrower over that intermeeting period.",
+      "limitations": "Does not incorporate subsequently published September employment. Not October policy action or current issuer CDS."
+    },
+    {
+      "id": "AMD-20261008-01", "class": "vendor explanation of earlier prerelease tests",
+      "published": "2026-10-08", "test_period": "2026-07",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/mi455x-vs-mi355x/README.html",
+      "locator": "How to Read These Numbers; 1K/1K Results; Disclaimers",
+      "model": "DeepSeek-V4-Flash", "input_tokens": 1024, "output_tokens": 1024,
+      "per_user_tokens_second": [20, 90], "per_gpu_throughput_ratio_mi455x_over_mi355x": [2.47, 33.98],
+      "limitations": "Vendor prerelease hardware/software, not independent reproduction, October delivery, NVIDIA comparison or 34x realized return."
+    }
+  ],
+  "future_calendar": [
+    {"event": "US September CPI", "beijing_time": "2026-10-14 20:30", "url": "https://www.bls.gov/schedule/2026/10_sched.htm"},
+    {"event": "TSMC Q3 earnings call", "beijing_time": "2026-10-15 14:00", "url": "https://investor.tsmc.com/english/financial-calendar"},
+    {"event": "US September PPI", "beijing_time": "2026-10-15 20:30", "url": "https://www.bls.gov/schedule/2026/10_sched.htm"},
+    {"event": "FOMC decision and press conference", "beijing_time": "2026-10-29 02:00 / 02:30", "url": "https://www.federalreserve.gov/newsevents/2026-october.htm"}
+  ],
+  "not_upgraded": [
+    "Broadcom October media financing amounts not added to old 35/29/42B mechanisms; no new execution filing verified in this pass.",
+    "Microsoft, Alphabet, Amazon and Meta financial anchors retain their prior verified reporting periods; product announcements do not replace financial statements.",
+    "Micron prior September 30 results retained; no newly verified October financial statement replaces them.",
+    "Historical 112 audit IDs and frozen E windows unchanged. Historical 78/100 and scenario allocations not recalibrated probabilities."
+  ]
+}

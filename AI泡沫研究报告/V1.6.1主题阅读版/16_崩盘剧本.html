@@ -1,0 +1,317 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI泡沫研究 · 风险传导剧本 V1.6.1</title><style>@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:18mm 17mm 19mm;@top-left{content:"大队长 · AI泡沫研究 · 风险传导剧本";font-family:Noto;font-size:7pt;color:#687888}@top-right{content:"V1.6.1 · 正文修订 · 2026-10-27";font-family:Noto;font-size:7pt;color:#687888}@bottom-left{content:"个人研究 · 公开资料 · 不构成投资建议";font-family:Noto;font-size:7pt;color:#687888}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#687888}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{font-family:Noto,sans-serif;font-size:10pt;line-height:1.7;color:#263643;margin:0}
+.cover{page:cover;height:296mm;padding:34mm 25mm;position:relative;break-after:page;background:#fbfdff}
+.cover .line{width:52mm;height:3mm;background:#86b8d5;margin-bottom:14mm}.brand{font-size:10pt;color:#637b8e;letter-spacing:1px}
+.cover .title{font-size:29pt;line-height:1.5;color:#28516e;margin:25mm 0 12mm;font-weight:700}
+.cover .subtitle{font-size:13pt;line-height:1.9;max-width:150mm;color:#526878}.cover .date{margin-top:23mm;font-size:11pt;color:#506f85}
+.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;padding-top:5mm;border-top:1px solid #d8e7ef;font-size:9pt;color:#647b8e}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;border-bottom:.4pt dotted #bfd2df;padding:3pt 0;color:#365a72;text-decoration:none;font-size:9pt}
+.toc .l3{padding-left:12pt;font-weight:400}.toc .l2{font-weight:700;margin-top:3pt}.toc a:after{content:target-counter(attr(href url),page);float:right;color:#315e7c}
+h1,h2,h3,h4{line-height:1.45;break-after:avoid;color:#315e7c}h1{font-size:21pt}h2{font-size:16pt;border-bottom:1.2pt solid #95bbd3;padding-bottom:5pt;margin:18pt 0 10pt}h3{font-size:12pt;margin:15pt 0 7pt}h4{font-size:10.8pt;margin:12pt 0 6pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:7pt 0;orphans:3;widows:3}a{color:#315e7c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #8ab8d4;background:#f2f7fb;padding:6pt 10pt;margin:8pt 0;color:#536776}
+table{border-collapse:collapse;width:100%;margin:9pt 0 13pt;font-size:8.3pt;table-layout:auto}thead{display:table-header-group}tr{break-inside:avoid}th{background:#dcecf6;color:#244b66;font-weight:700;text-align:left}th,td{border:.5pt solid #c7d9e4;padding:5pt 6pt;vertical-align:top;line-height:1.55;overflow-wrap:normal;word-break:normal;hyphens:none}td:first-child{min-width:17mm}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:8pt 0}li{margin:6pt 0}img{display:block;max-width:100%;max-height:210mm;object-fit:contain;margin:12pt auto}figure{break-inside:avoid}code{font-family:Noto;font-size:.95em;background:#edf3f7;padding:1pt 3pt}hr{border:0;border-top:.5pt solid #cadbe5;margin:14pt 0}
+@media screen{body{max-width:960px;margin:0 auto;padding:20px;background:white}.cover{height:auto;min-height:75vh;padding:40px 28px}.cover .foot{position:static;margin-top:45px}.front,.toc,main{padding:10px 12px}.toc a:after{content:none}table{display:block;overflow-x:auto}} .keep-together,.tariff-table{break-inside:avoid} .revision-start{break-before:page}  .revision-group{break-inside:avoid} </style></head><body><section class="cover"><div class="line"></div><div class="brand">大队长 · AI产业周期研究</div><div class="title">AI泡沫研究 · 风险传导剧本</div><div class="subtitle">条件、传导、反证与中止；不预告确定崩盘日期。</div><div class="date">V1.6.1 · 正文修订<br>2026-10-27</div><div class="foot">按本篇主题组织证据与分析<br>个人研究 · 基于公开信息 · 不构成投资建议</div></section><section class="front"><h2>免责声明与阅读边界</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构观点，不构成个性化投资建议、收益保证或交易指令。技术和商业判断可能错误，信息也可能随后修订。</p>
+<p>V1.6.1沿用V1.5.1主题正文并同步V1.6完整校注勘误，增量资料检索截止2026年10月27日；各项财务、统计、行情与政策数据以正文明确的期间或观察日为准，不能全部理解为该日现值。公司指引、研究假设和已实现结果分开阅读；缺失的原始证据不以推测填补。</p>
+<p>本版按主题重编，不沿用旧版分页；旧版与历史档案保留不改。历史评分和预测记录只用于追溯，未完成统计校准的数字不属于经过验证的崩盘概率。审计条目总数不等于本轮全部事实复核通过。</p>
+<h2>本版修订说明</h2>
+<ol>
+<li>
+<p>本篇按目标读者重新组织结论和展开；更新写进相应论点，不以前置全景财报替代原正文。</p>
+</li>
+<li>
+<p>风险结论：需求兑现、现金占用、通胀加速和长端回落分别判断，不以单名负现金流宣布全面崩盘，原评分与E窗口不重校准。</p>
+</li>
+</ol>
+<p>逐项勘误与修订见文末《本版逐项修订记录》，可从目录跳转。</p>
+<p>2026-09-08编排勘误：本册正文从第一章起连续编号，目录和当前章节引用同步；导读不占章号。母稿对应关系见文末“分册编号勘误”，研究数据与结论未因本次编排修改。</p></section><section class="toc"><h1>目录</h1><p>目录及页码依据本版正文生成；PDF内可点击跳转。</p><a class="l2" href="#h-0000">风险传导剧本：不是时间预言，而是条件压力测试</a><a class="l3" href="#h-0001">一、风险从哪一层开始</a><a class="l3" href="#h-0002">二、从局部问题到系统扩散的五步</a><a class="l3" href="#h-0003">三、三条中止路径</a><a class="l3" href="#h-0004">四、每一步都要留下反证</a><a class="l3" href="#h-0005">五、与当前证据怎样连接</a><a class="l2" href="#h-0006">风险教育：研究观点不是交易指令</a><a class="l2" href="#h-0007">第一章：把经营、资本回收与金融条件分别判断</a><a class="l3" href="#h-0008">1.1 六个维度，不再用红灯数量代替模型</a><a class="l3" href="#h-0010">1.2 当前合并判断与反方证据</a><a class="l3" href="#h-0011">1.3 情景定义与既有分数的使用边界</a><a class="l3" href="#h-0012">1.4 原判断怎样结算，怎样纠错</a><a class="l3" href="#h-0013">1.5 还缺哪些能够推翻本报告的证据</a><a class="l2" href="#h-0014">本版逐项修订记录</a><a class="l3" href="#h-0015">分册编号勘误 · 2026-09-08</a><a class="l3" href="#h-0016">风险与综合结论：逐项修订</a></section><main><h2 id="h-0000">风险传导剧本：不是时间预言，而是条件压力测试</h2>
+<h3 id="h-0001">一、风险从哪一层开始</h3>
+<p>风险可能由终端付费不及预期开始，也可能由技术改进导致旧资产经济寿命缩短开始，还可能由融资突然变贵或地缘规则改变交付开始。它们会经过不同的资产负债表，不能全部画成“某家公司股价跌了，然后整个AI行业崩盘”。</p>
+<h3 id="h-0002">二、从局部问题到系统扩散的五步</h3>
+<p>第一步是可核对的经营偏离：价格、用量、客户续约或交付低于原模型。这里应保留原来的基准和统计期，不能用任何一次环比下降自动确认趋势。</p>
+<p>第二步是现金偏离：应收、存货或未完工资产增加，经营现金与建设资金需求分离。要检查季节性、客户预付款和采购节奏，不能把增长期的正常备货直接称为坏账。</p>
+<p>第三步是融资承压：借款价格、保证金、抵押物和担保条件恶化，股权融资的每股摊薄代价增加。单名事件只是单名事件，需观察是否跨客户、跨平台扩散。</p>
+<p>第四步是资产调整：建设延期、订单撤销、设备转售、减值或债务重组。经济损失、会计确认与市场定价发生在不同时间，不能只按公司公告日安排整个冲击。</p>
+<p>第五步才是广谱共振：多家公司同时受到影响，信用、融资、订单和估值出现相互强化。没有跨主体证据，不称为系统性风险已经发生。</p>
+<h3 id="h-0003">三、三条中止路径</h3>
+<p>客户持续付费和成本下降，可以在经营端中止传导；企业削减可选择的建设支出、引入股权或延长债务期限，可以缓冲现金端；新用途或客户迁移，也可能提高闲置资产的再利用价值。每一种缓冲都要看代价，仍不能因为它出现就断言风险已经消失。</p>
+<h3 id="h-0004">四、每一步都要留下反证</h3>
+<table>
+<thead>
+<tr>
+<th>判断</th>
+<th>应观察的支持</th>
+<th>会削弱判断的事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求走弱</td>
+<td>同口径价格、利用率或客户续约恶化</td>
+<td>真实付费扩大、产品升级抵销旧产品减速</td>
+</tr>
+<tr>
+<td>现金缺口扩大</td>
+<td>回款弱而不可撤销支出继续增加</td>
+<td>营运资本释放、建设节奏变得灵活</td>
+</tr>
+<tr>
+<td>信用扩散</td>
+<td>多主体融资成本或担保条件同步恶化</td>
+<td>单名问题隔离，广谱融资继续可用</td>
+</tr>
+<tr>
+<td>旧资产价值下降</td>
+<td>租金下调、转售折价或减值</td>
+<td>新任务需求吸收旧资产并产生正现金</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h-0005">五、与当前证据怎样连接</h3>
+<p>截至10月27日，台积电与设备、模型公司的新披露继续支持需求兑现，但单名公司的资本投入、营运资金与长期合同负担明显分化；通胀加速与长端利率回落也同时存在。现有证据仍不足以确认AI泡沫全面破裂。 Meta单季自由现金流转负不等于全年无现金，Anthropic公开递表不等于IPO完成，供应商正现金也不等于终端已回本。后文综合章列出原件、观察日和反证；历史分数与原判断窗口不倒改。</p>
+<p>本篇不提供看跌期权期限、加减仓比例或固定止损。投资者即使方向判断正确，也可能因杠杆、到期、流动性和路径而亏损；研究压力测试不能代替适当性和风险预算。</p>
+<h2 id="h-0006">风险教育：研究观点不是交易指令</h2>
+<p>直接卖空股票可能面临理论上不封顶的亏损，保证金追缴和借券条件变化会使投资者在观点兑现前被迫退出。期权、反向和杠杆产品也有各自的期限、路径、费用与流动性风险，不能把“看对长期方向”当作收益保证。<a href="https://www.sec.gov/investor/pubs/regsho.htm">SEC：Key Points About Regulation SHO</a></p>
+<p>这里没有读者的资产、负债、风险承受能力或适当性信息，报告本身不提供个性化投资建议，更不能用主观情景权重安排工具期限、止损或仓位。</p>
+<h2 id="h-0007">第一章：把经营、资本回收与金融条件分别判断</h2>
+<h3 id="h-0008">1.1 六个维度，不再用红灯数量代替模型</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>当前正文采用的判断方式</th>
+<th>不能从中直接推出什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求与交付</td>
+<td>按公司已实现收入、产品出货、订单转化及利用率核查；供应商已披露业绩支持经营增长</td>
+<td>全产业链所有项目满载、未来需求永久成立</td>
+</tr>
+<tr>
+<td>盈利与现金</td>
+<td>合法非经营收益与经营利润分栏，现金与营运资本逐项对账</td>
+<td>非现金收益就是造假、现金暂弱就是需求崩溃</td>
+</tr>
+<tr>
+<td>资本与信用</td>
+<td>现有债务、未来承诺、租赁与担保分开，观察客户付款来源</td>
+<td>把不同项目相加成“AI总债务”</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>预测盈利、倍数、折现率、净债务和股数有据可算</td>
+<td>由行业故事直接得出精确跌幅</td>
+</tr>
+<tr>
+<td>技术与商业化</td>
+<td>任务能力、单位成本、生产部署和付费收益逐层验证</td>
+<td>基准进步就是AGI、整体云收入就是AI收入</td>
+</tr>
+<tr>
+<td>宏观与国际约束</td>
+<td>按最新统计修订和生效政策判断，区分单名风险与系统扩散</td>
+<td>就业行业变化可单独归因于AI、出口限制必然强化所有国产公司</td>
+</tr>
+</tbody>
+</table>
+<p>现金回收须以企业或项目为边界，分别记录初始投资、历年经营现金、后续资本支出与残值，再对时间和风险折现。报表经营现金已包含营运资本变化，不能再扣一遍；若从税后营业利润重建企业自由现金流，才另加非现金折旧、减资本支出和营运资本增加。资本开支形成多年资产，收入来自多种业务，产业链内部销售还需抵销；一年的资本开支与某类消费者订阅收入相除，不能代替这个回收模型。</p>
+<h4 id="h-0009">当前证据怎样进入下一次判断</h4>
+<p>增量检索截止2026年10月27日，金额中的B为十亿美元。本轮更新台积电Q3、Meta Q3、Anthropic公开申请及宏观证据，其余各行保留注明的原财季或公告日，不因截止日推进就视为全部重新验真。各主体不求和，也不按事件数量折成风险分；复查窗口仍为下一次正式业绩或融资披露，方向变化应在随后可比披露中解释季节性与口径变化，不能将“连续两次”本身包装成统计检验。</p>
+<table>
+<thead>
+<tr>
+<th>主体与基线</th>
+<th>当前能够支持的判断</th>
+<th>降低担忧的证据</th>
+<th>提高担忧的证据与模型动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美光，FY26Q4截至9月3日：收入54.229B、经营现金43.973B、现金购建11.110B</td>
+<td>供应商利润有实质现金支持；客户押金另列融资，不需从经营现金再扣一次</td>
+<td>价格、交付及现金在新增供给投产后仍可持续：降低对存储端回收的担忧</td>
+<td>售价或交付转弱、合同重议、库存应收持续积压：下调利润与回收，不将合并现金替终端客户证明ROI</td>
+</tr>
+<tr>
+<td>Akamai，9月24日公开Anthropic七年合同11.6B；预计相关建设5.5B、年内增加1.7B</td>
+<td>合同增强需求可见性，先期投入与后期回款仍有时间差；金额不可相加</td>
+<td>按期交付并收到约定付款：缩小建设期资金缺口</td>
+<td>延期、服务中断或客户付款不足：延后收入现金、增加融资与履约压力</td>
+</tr>
+<tr>
+<td>NVIDIA，FY27Q2截至7月26日：收入96.221B，经营现金24.077B；前季经营现金50.344B，应收周转由45天升至60天</td>
+<td>销售强、回款时点需要单独检查；不是已确认坏账</td>
+<td>新增应收按约收回，扣除税款与交付时点影响后现金改善：降低营运资本占用假设</td>
+<td>反复延长账期，叠加客户融资困难或应收减值：下调可收回现金，扩大压力情景</td>
+</tr>
+<tr>
+<td>Alphabet，2026Q2：Cloud营业利润8.814B，集团经营现金39.069B、现金购建44.924B</td>
+<td>云经营盈利与集团单季建设占用同时存在；不能据此计算AI项目回报</td>
+<td>建设增速趋缓、经营现金增长，且服务续用和盈利保持：上调现金回收</td>
+<td>投入继续扩大而交付、利用或回款落后：推迟现金流、增加建设压力；不把全部差额归因AI</td>
+</tr>
+<tr>
+<td>Meta，10月21日公布2026Q3：经营现金32.786B、PP&amp;E现金购建33.942B、融资租赁本金0.964B，公司FCF −2.120B</td>
+<td>单季经营现金未覆盖这两项资产付款；前三季度同口径FCF仍为+11.049B</td>
+<td>后续经营现金增长，建设和租赁付款趋于可承受：降低集团资金缺口假设</td>
+<td>持续建设超支或现金生成落后：扩大压力情景；不将集团缺口全部归因AI</td>
+</tr>
+<tr>
+<td>Anthropic，10月26日宣布已提交拟IPO的公开S-1；声明尚未生效，股数与价格区间未定</td>
+<td>公开上市申请进入可观察阶段；尚不是已成交融资</td>
+<td>后续生效、定价、交割及净到账得到正式文件确认：更新融资能力</td>
+<td>延期、缩量或未完成：保留资金缺口；不能预填IPO收入或用申请确认经营回本</td>
+</tr>
+<tr>
+<td>GitHub Copilot：6月转向按量计费，7月官方电话会披露收入环比增逾60%</td>
+<td>固定低价席位不是唯一收入来源；尚无完整利润和现金披露</td>
+<td>同口径用量收入、续费与毛利改善：上调席位之外的收入和利润假设</td>
+<td>增长主要来自口径变动、低留存或成本更快上升：下调单客现金贡献</td>
+</tr>
+<tr>
+<td>CoreWeave，8月DDTL 5.5：额度2.6B，贷款约5年、底层客户合同平均约3年</td>
+<td>部分还款依赖续租、转租或其他资金，须做期限压力测试；并非已违约</td>
+<td>后续合同净回款可覆盖剩余债务及维护投入：降低续租与残值折价</td>
+<td>续租价格或利用率低于原模型，并影响偿债覆盖：下调剩余期现金及残值</td>
+</tr>
+<tr>
+<td>CoreWeave，9月17日短约及9月22日融资：新签3—6个月合同；完成4.2B可转债</td>
+<td>短期算力价格及融资仍有支持，但短约收入与多年债务期限不同</td>
+<td>短约到期后仍能续接，建设按期投运且净现金覆盖债务：改善流动性判断</td>
+<td>续约降价、利用率下降或融资消耗快于现金生成：收紧租金、期限与稀释假设</td>
+</tr>
+<tr>
+<td>Oracle，FY27Q1截至8月31日：IaaS 7.388B、同比+121%；CapEx 28.499B、FCF −5.396B</td>
+<td>需求兑现；经营现金含11.363B客户预付款，同期完成19.909B ATM净募资</td>
+<td>RPO按期转收入和回款，后续建设由主营现金覆盖：上调回收并降低融资依赖</td>
+<td>预付款、增发或新融资继续快于可支配现金，288B未起租租赁进入执行：提高期限与稀释压力</td>
+</tr>
+<tr>
+<td>Broadcom AI XPV，截至8月2日：初始35B；Backstop全部部署后最大未折现潜在责任约29B</td>
+<td>融资平台仍可支持扩张；风险由客户经租赁与担保转给金融伙伴和供应商</td>
+<td>客户按期付租、机架残值稳定、42B条件性票据无需发行：降低或有损失</td>
+<td>票据发行、租赁违约或处置折价出现：计入信用损失、残值和现金流压力</td>
+</tr>
+<tr>
+<td>台积电，10月15日公布2026Q3：美元收入46.72B、同比+41.2%、环比+16.2%；毛利率66.4%</td>
+<td>季度经营增长已兑现，不再只是月报相加；合并收入不是纯AI收入，毛利率环比仍下降1.3个百分点</td>
+<td>后续订单、利润和现金继续接续，新增产能获得可持续回报：改善供应端回收判断</td>
+<td>利润率、现金或订单转弱：按产品、客户、投产批次与汇率拆解，不直接推断全链条拐点</td>
+</tr>
+<tr>
+<td>Applied Digital，FY27Q1截至8月31日：HPC收入262.6百万美元，基础租金65.8；集团简单现金桥−2.010777B</td>
+<td>租赁开始兑现，建设仍重；分部收入不能与集团现金混成项目回报</td>
+<td>后续投产带动可重复租金，现金增长快于维护与后续投入：改善回收</td>
+<td>装修收入退坡、建设超支或客户回款迟滞：重估租金与融资需求；不凭建设期负现金判破产</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm">NVIDIA CFO说明及现金披露</a>、<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf">Alphabet Q2财报</a>、<a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">GitHub计费上线说明</a>、<a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4">Microsoft 7月官方电话会</a>、<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx">CoreWeave 8月10日贷款公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm">Oracle FY27Q1 10-Q</a>、<a href="https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28">Broadcom FY26Q3 10-Q</a>。这是对已核证据的研究应用，不是新增已命中的预测记分。</p>
+<p>本轮新增原件：<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm">台积电Q3业绩公告及脚注</a>、<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm">台积电Q3业绩演示</a>、<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3现金流及非GAAP调节表</a>、<a href="https://www.anthropic.com/news/s1-sec">Anthropic S-1公告</a>。台积电公告注明该季数字尚未经董事会批准；Meta季度报表未经审计，FCF为公司非GAAP口径，不直接等同FCFF。</p>
+<h3 id="h-0010">1.2 当前合并判断与反方证据</h3>
+<p>截至2026年10月27日，当前判断是：<strong>供应商经营增长仍在兑现，资本回收压力则因公司和项目而异；9月通胀加速与长端收益率回落同时发生，全国就业尚无新一期，现有证据仍不足以确认AI泡沫全面破裂。</strong> 台积电Q3美元收入46.72B、毛利率66.4%是供应端经营兑现，Meta单季负FCF是集团资产付款超过当季经营现金；Anthropic公开S-1同时提供了上半年经营现金为正、Q2经营转盈的反证，但其IPO申请尚未生效。经营改善与融资完成是两个判断，不能把三家公司不同期间的结果相加成同一个融资、盈利或崩盘指标。<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm">台积电Q3公告</a>、<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic S-1财务表</a>、<a href="https://www.anthropic.com/news/s1-sec">申请状态公告</a></p>
+<p>台积电Q3财务表的经营现金为919,776百万新台币，购建PP&amp;E现金为443,206百万新台币，两项相减为476,570百万、即476.570十亿新台币，供应端自身建设仍有现金覆盖。这是应当承认的正面证据，但该简单资金桥没有纳入全部投资、融资和股东分配，不能当作可全部分配现金，也不能由晶圆供应商的现金替终端客户证明回本。本版统一采用财务表原值复算，不与美元收入或演示稿的低精度展示值混算。<a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf">台积电Q3财务表，第4页</a></p>
+<p>Meta的公司口径FCF须按32.786−33.942−0.964＝−2.120B复算，最后一项是融资租赁本金；只减PP&amp;E现金购建所得−1.156B不是该公司披露的FCF。前三季度同口径仍为+11.049B，不能把单季缺口永久化，也不能把集团现金全部归入AI项目。Anthropic的未经审计中期报表披露H1经营现金+3.929B、Q2经营利润+0.974B，而H1仍经营亏损0.693B；改善是真实披露，经营现金也受收付款时点影响，不能外推为全年或全部长期算力承诺已可自给。其发行股数与价格区间仍未确定，不能把这些截至6月的经营表现与10月递表混成IPO完成或融资到账。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta现金流及FCF定义</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic S-1季度损益与现金流</a>、<a href="https://www.anthropic.com/news/s1-sec">Anthropic申请状态</a></p>
+<p>10月9日至27日没有新一期全国就业报告，最新仍是10月2日BLS公布的9月非农新增2.9万人、失业率4.2%；7月由+2.1万下修至−1.0万，8月由+16.2万下修至+13.3万，合计下修6.0万。这个偏弱基线应保留，但不能再算作本轮新增恶化，更不能凭一个月认定衰退或归因于AI。下一期全国就业报告定于11月6日北京时间21:30发布，州就业统计不替代全国月报。<a href="https://www.bls.gov/news.release/archives/empsit_10022026.htm">BLS 10月2日就业报告及下期日程</a>、<a href="https://www.bls.gov/schedule/2026/10_sched.htm">BLS 10月日历</a></p>
+<p>10月14日公布的9月CPI季调环比0.6%、未季调同比3.7%，核心为0.3%和2.6%；总项月涨幅超过一半来自汽油，不能把全部加速归因AI。10月15日公布的9月最终需求PPI环比1.3%、同比6.3%，剔除食品、能源和贸易服务后为0.5%、5.0%。同版PPI已将8月总项更新为0.5%/5.6%、上述剔除项更新为0.3%/4.8%，当前比较必须采用这组修订值，原0.4%/5.4%和4.7%仅属于9月发布时的历史记录。通胀加速提高了成本和政策不确定性，却不能替代下一次FOMC决议。<a href="https://www.bls.gov/news.release/archives/cpi_10142026.htm">BLS 9月CPI，Table A</a>、<a href="https://www.bls.gov/news.release/archives/ppi_10152026.htm">BLS 9月PPI，Table A及修订脚注</a></p>
+<p>美联储9月16日将联邦基金目标区间上调25个基点至3.75%—4.00%，原“等待决议”已经变为实际政策收紧；北京时间为9月17日02:00。同期经济预测中，2026年及2027年末政策利率中位数均为4.1%，2026年核心PCE通胀中位数为3.4%。预测中位数既不是承诺，也不是当前目标区间，更不能直接当作公司的融资利率。<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm">FOMC正式决议</a>、<a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm">9月经济预测表</a></p>
+<p>截至本轮，下一次FOMC决议仍安排在北京时间10月29日02:00，02:30举行发布会，对应美国10月28日14:00、14:30东部夏令时。会议日历不是政策结果，本版不预填利率方向，也不据此改写历史评分或E判断。<a href="https://www.federalreserve.gov/newsevents/2026-october.htm">Fed 10月官方日历</a></p>
+<p>财政部截至本轮最新已公布观察日为10月26日：两年期4.68%、十年期5.00%、十年实际收益率2.66%。相对前版10月8日4.75%、5.22%、2.87%，分别下降7、22、21个基点；不能在通胀上行后就把所有金融条件概括为持续收紧，也不能把10月26日观察冒充10月27日收盘。<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_yield_curve">财政部名义收益率，10月26日行</a>、<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_real_yield_curve">实际收益率，10月26日行</a></p>
+<p>2—10年期限差由10月8日的47收窄至32个基点，十年名义与实际差由2.35降至2.34个百分点；这里记录曲线变化，不识别其全部原因，也不把名实差等同纯通胀预期。相对9月22日较早基线，两年名义已低3个基点，十年名义与实际仍分别高4、3个基点，不能笼统写成“利率全部高于旧基线”。企业资金成本还受信用利差、重定价日和对冲影响，不应把国债变动直接平移到所有公司的加权平均资本成本。<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&amp;type=daily_treasury_yield_curve">财政部9月名义表</a>、<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&amp;type=daily_treasury_real_yield_curve">9月实际表</a></p>
+<p><img alt="国债利率接至十月二十六日：通胀加速与长端回落并存" src="../13_全景版配图/V1.6.1_利率观察_20261027.svg" /></p>
+<p>10月7日公布的9月15—16日FOMC纪要显示，当时多数与会者认为年内再加息可能合适，同时强调以后各次决策依赖新增资料。它记录的是9月会议判断，先于10月2日新就业报告，不能读成10月已经决定加息。纪要还描述会议时公司债发行活跃、AI大云厂利差较前次会议略收窄，这反对“当时融资已全面封闭”，但不能冒充10月27日单名信用现值。<a href="https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20260916.pdf">FOMC纪要，第5、9页</a></p>
+<p>10月14日褐皮书另提供了项目端的双向观察：数据中心建设仍拉动部分地区制造、运输与建设，受访者同时反映技术工短缺、成本上涨，以及地方暂停措施造成个别项目取消或延期。这份资料截至10月5日，属于定性联系人信息，不是全行业利用率或本版独立查证过的地方政策清单；它要求对具体项目的投产时间和成本做压力测试，而不足以确认需求或融资全面崩塌。<a href="https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20261014.pdf">Fed褐皮书，印刷页18—19、25—26、46</a></p>
+<p>9月30日BEA发布的8月PCE价格指数同比3.4%、环比0.3%，核心同比3.0%、环比0.2%；同一修订版本中7月两项环比均为0.1%，不能写成“全面降温”。本次年度修订追溯至2021年1月，原稿保留的7月旧初值不能直接与8月新版相减来证明通胀回落，也不能由单月数据推定后续降息。<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026">BEA 8月个人收入与支出</a></p>
+<p>信用端还要区分公开交易与许可受限的市场序列。本公开版不复载ICE BofA期权调整利差的精确点位；CoreWeave的SEC文件确认9月22日已完成4.2B可转债，比“已定价、等待交割”更进一步。扣初始购买人折扣后的所得约4.137B，再扣0.5662B capped call交易成本，余约3.5708B，尚未扣其他发行费用。新增融资缓冲近期流动性，却不是客户付费或经营利润，2.875%的现金票息也不是包含股权期权和交易成本的综合融资成本。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm">CoreWeave完成发行8-K</a>、<a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2">FRED许可说明</a></p>
+<p>SoftBank已于10月1日执行对OpenAI本轮第三笔10B出资，补核后的本轮30B全部完成，是融资尚可接续的直接证据，却不是客户经营付费。它与CoreWeave9月已完成融资一道，仍不支持融资窗口全面关闭；就业转弱和高利率值得提高警惕，但多主体信用、订单与现金同步恶化尚缺充分证据，本轮不新增C“宏观共振”或严格信用触发。<a href="https://group.softbank/en/news/press/20261001">SoftBank执行公告</a></p>
+<p>反方证据必须保留在正文：如果未来两个季度，投入与折旧的增速趋缓、客户持续付费、同口径现金创造改善，原先对资本回收的谨慎判断就应下调。不能把盈利强解释为“泡沫继续加码”、盈利弱解释为“泡沫证实”，让同一个假说对任何结果都成立。</p>
+<h3 id="h-0011">1.3 情景定义与既有分数的使用边界</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>研究含义</th>
+<th>应出现的观察</th>
+<th>与其他情景的区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 渐进幻灭</td>
+<td>回报低于乐观定价，投资调整与估值消化分阶段发生</td>
+<td>增速回落、盈利预测或倍数下修，未必出现系统违约</td>
+<td>不是软着陆的同义词</td>
+</tr>
+<tr>
+<td>B 技术颠覆</td>
+<td>架构或成本变化重新分配产业利润</td>
+<td>相同任务更低成本、客户迁移、供应商定价变化</td>
+<td>可利好应用、利空部分硬件；不全是看空</td>
+</tr>
+<tr>
+<td>C 宏观共振</td>
+<td>经营压力叠加融资或宏观收缩</td>
+<td>多类信用、融资与订单同步恶化</td>
+<td>不能仅靠一次股价回撤确认</td>
+</tr>
+<tr>
+<td>D 软着陆</td>
+<td>收入与效率吸收前期投入，资本开支有序调整</td>
+<td>回收改善、客户续用、融资无需恶化</td>
+<td>不需要所有股票上涨</td>
+</tr>
+</tbody>
+</table>
+<p>V1.4保留的78/100与A45/B22/C10/D23，是研究者既有评分与情景分配，不是统计模型估出的概率。本次正文纠偏没有重新完成权重校准，不能给换版虚构新的分数；它们作为既有研究假设留档，不再放在每篇分项报告封面上充当本篇结论。由于情景并非天然互斥，B还有双向影响，A+B+C=77%也不能被称为“崩盘概率77%”。</p>
+<p>六维看板、情景权重和固定事件记分承担不同任务。前者是检查框架，情景用于讨论可能路径，固定记分用于复核事前条件；三者不能未经建模就互相换算，更不能由“两个灯亮”直接给出交易动作。</p>
+<h3 id="h-0012">1.4 原判断怎样结算，怎样纠错</h3>
+<p>六条E判断仍按原事件和原阈值登记，原件不倒改。本轮修正了光模块判断的待核原因：两家公司正式半年报已经披露，缺的是原预告事件与对应价格窗口的完整证据，不是缺半年报。既有记录为五条按原阈值成立、一条部分验证；这个汇总是历史规则的结果，不是六个独立概率样本，更不是研究者长期胜率。</p>
+<p>T-V14-03的事前条件是NVIDIA数据中心收入同比低于25%，本期财报核查应按这一条件结算，不应改成早期正文另写的50%。信用事件确认、私募轮次定价和经营增速也应分别使用自己的事件ID。已经发生的信用事件被用于建立规则时，只能是基准状态，不能包装成规则建立后的预测命中。</p>
+<h3 id="h-0013">1.5 还缺哪些能够推翻本报告的证据</h3>
+<p>目前最关键的缺口，是终端客户为AI持续支付多少钱、单位任务成本下降后谁保留利润，以及多年资本承诺怎样与可获得的经营现金对上。公开分部披露不足时，应保留缺口；不能拿整个云或广告收入填满，也不能把缺披露自动判定成亏损。</p>
+<p>台积电10月15日Q3业绩已经发布，不能继续把该日期留作未来验证节点；美元收入增长与毛利率环比回落应同时进入后续判断，合并利润仍不替下游客户证明资本回收。下一轮应接续实际订单、交付和现金，而不是把后续指引提前算作兑现。Anthropic则要继续核申请生效、定价、交割与净到账，不能因10月26日提交申请便结算成已完成融资，更不能据此倒改历史IPO预期或E窗口。<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm">台积电Q3公告</a>、<a href="https://www.anthropic.com/news/s1-sec">Anthropic公开申请</a></p>
+<p>后续继续核对CoreWeave短约续接与资金消耗、Oracle预付款和未起租租赁上表、Broadcom XPV租赁付款及条件性票据状态。模型价格下降和推理效率提高，应先进入成功任务成本与旧资产租价，再验证客户用量能否抵消价格压力；不能直接折算成全行业收入或毛利变化。每项只改变对应模型输入，不把事件数量折成概率。</p>
+<h2 id="h-0014" class="revision-start">本版逐项修订记录</h2>
+<h3 id="h-0015">分册编号勘误 · 2026-09-08</h3>
+<p>按本册实际收录顺序重排章节，正文目录、网页锚点和PDF书签由同一正文重建；未收录主题改用报告名称指引，不再假设读者手里有母稿。</p>
+<table>
+<thead>
+<tr>
+<th>全景母稿位置</th>
+<th>本册位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第八部分（8.x）</td>
+<td>第一章（1.x）</td>
+</tr>
+</tbody>
+</table>
+<p>下列历史修订记录的当前落点已换成本册编号；带“原”“母稿”或描述已删除指引的旧号仍用于追溯。此次只修改编排与定位文字，不重算数据、不改变结论，也不改写冻结记录。</p>
+<p>以下将V1.6.1新变更置于各篇记录前部，随后保留此前版本的带日期修订；每条对应正文纠错或证据更新。</p>
+<h3 id="h-0016">风险与综合结论：逐项修订</h3>
+<p>V1.6.1（10月27日），1.1—1.2：新增台积电已发布Q3及新台币口径现金桥、Meta含融资租赁本金的FCF复算及Anthropic未生效的公开S-1；供应商经营、单名现金缺口与拟融资分别判断，不据此宣布全面崩盘或资本回收完成。</p>
+<p>V1.6.1（10月27日），8.2：接入9月CPI/PPI及8月PPI修订，明确全国就业暂无新一期；利率接至财政部10月26日，长端回落与通胀加速并列，FOMC保持北京时间10月29日待公布。</p>
+<p>V1.6.1（10月27日），8.2、8.5：加入褐皮书定性建设证据及其限制，结转台积电10月15日节点，保留Anthropic后续生效与交割待核；历史78分、情景权重、E事件窗口及阈值均不改变。</p>
+<p>V1.5.1（10月9日），1.1—1.2：加入台积电季度月报汇总、Applied Digital租金与建设现金、SoftBank已执行出资；综合判断由“长端继续抬升”接续为“高位小幅回落，就业转弱，需求与交付仍兑现”，不新增系统性触发。</p>
+<p>V1.5.1（10月9日），8.2：用9月就业及7—8月新修订替换当前宏观输入；区分10月8日财政部观察、只到10月7日的H.15及记录9月会议的FOMC纪要。</p>
+<p>V1.5.1（10月9日），8.5：结转台积电9月营收节点，保留10月15日季报为未来验证；E原窗口、历史权重与触发阈值不倒改。</p>
+<p>V1.5.1（10月1日），1.1—1.2：新增美光强经营现金与Akamai先建设后回款的双向证据；H.15接至9月29日并更新图表，PCE保留同比、环比与修订版本边界。合并结论不再只强调融资接续，明确承认存储端现金改善。</p>
+<p>V1.5.1（10月1日），8.5：美光正式值与下一季指引分开；下一轮观察转向台积电营收与Q3电话会。没有重估历史分数、改写E判断或宣布系统性触发。</p>
+<p>V1.5.1（9月24日），1.1—1.2：补入CoreWeave短约与已完成可转债；FOMC待公布改为加息实际值，政策区间、预测中位数和市场收益率分别列示，新增利率观察图。结论调整为需求与融资仍可接续、资金门槛抬高，但不新增系统性危机触发，不重新包装78分和情景权重。</p>
+<p>V1.5.1（9月24日），8.5：用已确认的美光电话会替换过期日历，增加短约续接、模型定价与现金回收的复查条件。</p>
+<p>风险教育：删除带有具体期限与止损安排的工具建议，保留一般风险原理及SEC出处。</p>
+<p>1.1—1.2：替换旧六灯快照；撤销跨周期、跨口径“6倍脱节”的确定性结论，采用已公布就业修订和有日期的信用观察。</p>
+<p>1.3：统一情景名称；把78分及既有权重限定为未重新校准的研究假设，撤销“77%就是崩盘概率”的表述。</p>
+<p>1.4—1.5：更正E判断2待核原因、固定触发阈值和基准事件的时间纪律；说明真正可能证伪报告的证据。</p>
+<p>V1.5.1，1.1—1.2：将NVIDIA回款、Alphabet建设现金、GitHub计费和CoreWeave期限差四项既有核验证据接入当前判断、复查窗口及正反模型动作；不同公司、期间和业务边界分别列明，不将观察矩阵换成概率。</p>
+<p>V1.5.1，1.1与1.5：现金回收方法和下轮日历直接写在本篇，删除独立风险版本未必收录的第三、第六部分指引；保留1.3既有评分边界及1.4原判断原文，不修改E冻结规则。</p>
+<p>V1.5.1（9月15日证据更新）：台积电、Oracle和Broadcom分别补入需求、资金桥与风险转移证据；PPI、CPI、国债收益率及融资定价、签约和到账状态更新至各自最新可核日期。宏观腿升为偏紧观察，但公开证据不能确认融资全面关闭；许可受限的分层信用精确值不在公开版复载。故78/100、A45/B22/C10/D23、严格1/3与广义2/3均不变。</p></main></body></html>

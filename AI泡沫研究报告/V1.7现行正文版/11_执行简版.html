@@ -1,0 +1,51 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫 · 研究执行清单 V1.7</title><style>@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI周期与泡沫 · 研究执行清单";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.7 · 2026-10-27";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+ .front{font-size:8.8pt}.front,.toc,.references{break-after:auto;break-before:auto}.front h2,.toc h1{font-size:12pt;margin:13pt 0 6pt}.toc a{font-size:8.6pt}.toc p{display:none}</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><header><p class="brand">大队长出品 · V1.7 · 2026-10-27<br>联系邮箱：<a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p><h1>AI周期与泡沫 · 研究执行清单</h1><p>执行核验与模型更新，不是交易指令</p></header><section class="front"><h2>免责声明</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。</p>
+<p>资料核验截至2026年10月27日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。</p>
+<p>这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。</p>
+<h2>本次更新</h2>
+<ol>
+<li>
+<p>把历史原页与校注叠加改为现行正文，原339页中的独有主题保留，重复分册合并；本册不嵌入旧版。</p>
+</li>
+<li>
+<p>目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。</p>
+</li>
+</ol></section><nav class="toc"><h1>目录</h1><p>本册统一目录，页码由当前正文生成；各篇采用全景统一章节标识，便于交叉核对。</p><a class="l2" href="#h-0000">研究执行清单：每项新证据改变哪一个输入</a><a class="l2" href="#h-0001">参考资料索引</a></nav><main><h2 id="h-0000">研究执行清单：每项新证据改变哪一个输入</h2>
+<ol>
+<li>
+<p>收到财报后先锁定报告期、币种、单位和调整后口径，用收入、营业利润与现金流三表互相核对。股权重估、税项和一次性费用单列，不能把净利润变化全部归因于AI。</p>
+</li>
+<li>
+<p>取得融资或合作公告后，记录出资人、收款人、法律实体、提款和交割状态、用途限制以及取消权。已到账、尚未提款、意向上限和或有担保不能占用同一列。</p>
+</li>
+<li>
+<p>将客户预付、应收、存货和应付的变化进入营运资本假设，逐一判断哪些能够重复。现金流量表已有营运资本变动时，不能再扣一次。</p>
+</li>
+<li>
+<p>财报电话会前只准备预期与核验表，不预填实现值。10月28—30日有关电话会和美联储事件按中国传导章的官方日程核查，电话会时间与新闻稿发布时点分开。</p>
+</li>
+<li>
+<p>完成模型后检查反方情景：较低价格、较高效率和较好的续费是否能改善回收；建设延期是否同时推迟支出；融资即使续上，是否只是延后了风险而没有改善经营。</p>
+</li>
+<li>
+<p>形成结论时写明哪些事实被验证、哪些假设改变、哪些关键输入仍缺。未完成概率校准或公司估值时，不给精确概率和目标价。这里执行的是研究核验，不是交易。</p>
+</li>
+</ol>
+<section class="references">
+
+<h2 id="h-0001">参考资料索引</h2>
+<p>本册为阅读导引，未单列外部引文。具体论据、来源及核验限制请见<a href="13_超全景版.html">超全景现行正文</a>。</p></section></main></body></html>

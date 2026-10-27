@@ -1,0 +1,513 @@
+{
+  "status": "PASS_ARITHMETIC",
+  "checked_at_utc": "2026-10-09T03:19:26.878345+00:00",
+  "checks": [
+    {
+      "name": "VRT H1 adjusted FCF",
+      "actual": "1578.1",
+      "expected": "1578.1",
+      "passed": true
+    },
+    {
+      "name": "VRT H2 guidance low implied",
+      "actual": "821.9",
+      "expected": "821.9",
+      "passed": true
+    },
+    {
+      "name": "VRT H2 guidance high implied",
+      "actual": "1021.9",
+      "expected": "1021.9",
+      "passed": true
+    },
+    {
+      "name": "VRT H2 guidance midpoint implied",
+      "actual": "921.9",
+      "expected": "921.9",
+      "passed": true
+    },
+    {
+      "name": "VRT naive Q2 x 4 rejected as forecast",
+      "actual": "3701.2",
+      "expected": "3701.2",
+      "passed": true
+    },
+    {
+      "name": "VRT H1 working capital contribution",
+      "actual": "678.8",
+      "expected": "678.8",
+      "passed": true
+    },
+    {
+      "name": "VRT H2 revenue midpoint implied",
+      "actual": "8076.2",
+      "expected": "8076.2",
+      "passed": true
+    },
+    {
+      "name": "VRT conditional adjusted EPS x 25",
+      "actual": "167.50",
+      "expected": "167.50",
+      "passed": true
+    },
+    {
+      "name": "VRT conditional adjusted EPS x 30",
+      "actual": "201.00",
+      "expected": "201.00",
+      "passed": true
+    },
+    {
+      "name": "VRT conditional adjusted EPS x 35",
+      "actual": "234.50",
+      "expected": "234.50",
+      "passed": true
+    },
+    {
+      "name": "VRT conditional GAAP EPS x 30",
+      "actual": "176.10",
+      "expected": "176.10",
+      "passed": true
+    },
+    {
+      "name": "Lumentum annual defined cash bridge",
+      "actual": "300.1",
+      "expected": "300.1",
+      "passed": true
+    },
+    {
+      "name": "Coherent annual defined cash bridge",
+      "actual": "-1023.395",
+      "expected": "-1023.395",
+      "passed": true
+    },
+    {
+      "name": "Coherent annual bridge also deducting intangibles",
+      "actual": "-1030.569",
+      "expected": "-1030.569",
+      "passed": true
+    },
+    {
+      "name": "Dell quarterly FCF",
+      "actual": "986",
+      "expected": "986",
+      "passed": true
+    },
+    {
+      "name": "Dell adjusted FCF reconciliation",
+      "actual": "8149",
+      "expected": "8149",
+      "passed": true
+    },
+    {
+      "name": "HPE company quarterly FCF",
+      "actual": "958",
+      "expected": "958",
+      "passed": true
+    },
+    {
+      "name": "Marvell quarterly defined cash bridge",
+      "actual": "478.8",
+      "expected": "478.8",
+      "passed": true
+    },
+    {
+      "name": "Marvell bridge also deducting technology licenses",
+      "actual": "474.3",
+      "expected": "474.3",
+      "passed": true
+    },
+    {
+      "name": "InnoLight H1 defined cash bridge CNY100M",
+      "actual": "-30.0248636335",
+      "expected": "-30.0248636335",
+      "passed": true
+    },
+    {
+      "name": "Eoptolink H1 defined cash bridge CNY100M",
+      "actual": "3.5256700438",
+      "expected": "3.5256700438",
+      "passed": true
+    },
+    {
+      "name": "Framework original NPV",
+      "actual": "-5.23033076478879361196142836",
+      "expected": "-5.23",
+      "passed": true
+    },
+    {
+      "name": "Framework one year delayed NPV",
+      "actual": "-13.84575524071708510178311669",
+      "expected": "-13.85",
+      "passed": true
+    },
+    {
+      "name": "Framework delay loss",
+      "actual": "8.61542447592829148982168833",
+      "expected": "8.62",
+      "passed": true
+    },
+    {
+      "name": "Energy incremental savings NPV",
+      "actual": "12.74472061645068953312925719",
+      "expected": "12.74",
+      "passed": true
+    },
+    {
+      "name": "Energy cost halved gross margin",
+      "actual": "0.46",
+      "expected": "0.46",
+      "passed": true
+    },
+    {
+      "name": "Energy savings passed to customer gross margin",
+      "actual": "0.4255319148936170212765957447",
+      "expected": "0.42553",
+      "passed": true
+    },
+    {
+      "name": "Oracle FY27Q1 free cash flow",
+      "actual": "-5.396",
+      "expected": "-5.396",
+      "passed": true
+    },
+    {
+      "name": "Oracle FY27Q1 RPO sequential increase",
+      "actual": "26",
+      "expected": "26",
+      "passed": true
+    },
+    {
+      "name": "Oracle FY27Q1 total borrowings",
+      "actual": "125.337",
+      "expected": "125.337",
+      "passed": true
+    },
+    {
+      "name": "TSMC 2026 August sequential revenue growth",
+      "actual": "0.101000898242012062107019120",
+      "expected": "0.101000",
+      "passed": true
+    },
+    {
+      "name": "Broadcom FY27 and FY28 purchase commitments",
+      "actual": "125.626",
+      "expected": "125.626",
+      "passed": true
+    },
+    {
+      "name": "CoreWeave purchaser discounts B",
+      "actual": "0.063",
+      "expected": "0.063",
+      "passed": true
+    },
+    {
+      "name": "CoreWeave proceeds after capped calls before other expenses B",
+      "actual": "3.5708",
+      "expected": "3.5708",
+      "passed": true
+    },
+    {
+      "name": "CoreWeave annual cash coupon USD million",
+      "actual": "120.750000",
+      "expected": "120.75",
+      "passed": true
+    },
+    {
+      "name": "Treasury 2y September 22 vs September 11 bp",
+      "actual": "8.00",
+      "expected": "8",
+      "passed": true
+    },
+    {
+      "name": "Treasury 10y September 22 vs September 11 bp",
+      "actual": "0.00",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "Sol fixed-token invoice USD",
+      "actual": "4.0",
+      "expected": "4",
+      "passed": true
+    },
+    {
+      "name": "Luna fixed-token invoice USD",
+      "actual": "0.20",
+      "expected": "0.2",
+      "passed": true
+    },
+    {
+      "name": "Opus 5.5 fixed-token invoice USD",
+      "actual": "8.0",
+      "expected": "8",
+      "passed": true
+    },
+    {
+      "name": "Opus input output price reduction",
+      "actual": "0.2",
+      "expected": "0.2",
+      "passed": true
+    },
+    {
+      "name": "Opus cache read price reduction",
+      "actual": "0.6",
+      "expected": "0.6",
+      "passed": true
+    },
+    {
+      "name": "Micron q4_usd_b simple bridge",
+      "actual": "32.863",
+      "expected": "32.863",
+      "passed": true
+    },
+    {
+      "name": "Micron q4_usd_b net CapEx",
+      "actual": "10.774",
+      "expected": "10.774",
+      "passed": true
+    },
+    {
+      "name": "Micron q4_usd_b adjusted FCF",
+      "actual": "33.199",
+      "expected": "33.199",
+      "passed": true
+    },
+    {
+      "name": "Micron fy26_usd_b simple bridge",
+      "actual": "58.963",
+      "expected": "58.963",
+      "passed": true
+    },
+    {
+      "name": "Micron fy26_usd_b net CapEx",
+      "actual": "27.367",
+      "expected": "27.367",
+      "passed": true
+    },
+    {
+      "name": "Micron fy26_usd_b adjusted FCF",
+      "actual": "62.308",
+      "expected": "62.308",
+      "passed": true
+    },
+    {
+      "name": "Micron Q4 QoQ percent",
+      "actual": "30.81098031648012350443844080",
+      "expected": "30.81",
+      "passed": true
+    },
+    {
+      "name": "Micron per week mechanical QoQ percent",
+      "actual": "21.46733886530297182554998070",
+      "expected": "21.47",
+      "passed": true
+    },
+    {
+      "name": "treasury_2y_pct Sept29 minus Sept22 bp",
+      "actual": "18.00",
+      "expected": "18",
+      "passed": true
+    },
+    {
+      "name": "treasury_10y_pct Sept29 minus Sept22 bp",
+      "actual": "30.00",
+      "expected": "30",
+      "passed": true
+    },
+    {
+      "name": "treasury_real_10y_pct Sept29 minus Sept22 bp",
+      "actual": "28.00",
+      "expected": "28",
+      "passed": true
+    },
+    {
+      "name": "Nominal curve September29 bp",
+      "actual": "37.00",
+      "expected": "37",
+      "passed": true
+    },
+    {
+      "name": "Nominal real September29 difference pct",
+      "actual": "2.35",
+      "expected": "2.35",
+      "passed": true
+    },
+    {
+      "name": "Sol 6.1 cache reduction",
+      "actual": "0.5",
+      "expected": "0.5",
+      "passed": true
+    },
+    {
+      "name": "Sonnet 5.5 fixed token bill",
+      "actual": "4.0",
+      "expected": "4",
+      "passed": true
+    },
+    {
+      "name": "Crusoe wind nameplate not IT load MW",
+      "actual": "531.0",
+      "expected": "531",
+      "passed": true
+    },
+    {
+      "name": "TSMC Q2 monthly sum TWD million",
+      "actual": "1270381",
+      "expected": "1270381",
+      "passed": true
+    },
+    {
+      "name": "TSMC Q3 monthly sum TWD million",
+      "actual": "1494243",
+      "expected": "1494243",
+      "passed": true
+    },
+    {
+      "name": "TSMC Q3 monthly sum QoQ pct",
+      "actual": "17.62164264106594793215578630",
+      "expected": "17.62",
+      "passed": true
+    },
+    {
+      "name": "TSMC September MoM rounded pct",
+      "actual": "-0.5728371464202048927168681000",
+      "expected": "-0.6",
+      "passed": true
+    },
+    {
+      "name": "TSMC September YoY rounded pct",
+      "actual": "54.64892138497794428666384680",
+      "expected": "54.6",
+      "passed": true
+    },
+    {
+      "name": "TSMC YTD YoY rounded pct",
+      "actual": "41.10668832456738488087430740",
+      "expected": "41.1",
+      "passed": true
+    },
+    {
+      "name": "APLD HPC revenue component sum",
+      "actual": "262.6",
+      "expected": "262.6",
+      "passed": true
+    },
+    {
+      "name": "APLD base rent share pct",
+      "actual": "25.05712109672505712109672506",
+      "expected": "25.1",
+      "passed": true
+    },
+    {
+      "name": "APLD fitout share pct",
+      "actual": "69.87814166031987814166031988",
+      "expected": "69.9",
+      "passed": true
+    },
+    {
+      "name": "APLD consolidated simple cash bridge USD million",
+      "actual": "-2010.777",
+      "expected": "-2010.777",
+      "passed": true
+    },
+    {
+      "name": "Samsung preliminary midpoint revenue",
+      "actual": "195",
+      "expected": "195",
+      "passed": true
+    },
+    {
+      "name": "Samsung preliminary midpoint operating_profit",
+      "actual": "107.4",
+      "expected": "107.4",
+      "passed": true
+    },
+    {
+      "name": "treasury_2y_pct Oct8 minus Sept29 bp",
+      "actual": "-14.00",
+      "expected": "-14",
+      "passed": true
+    },
+    {
+      "name": "treasury_10y_pct Oct8 minus Sept29 bp",
+      "actual": "-4.00",
+      "expected": "-4",
+      "passed": true
+    },
+    {
+      "name": "treasury_real_10y_pct Oct8 minus Sept29 bp",
+      "actual": "-4.00",
+      "expected": "-4",
+      "passed": true
+    },
+    {
+      "name": "October8 2s10s slope bp",
+      "actual": "47.00",
+      "expected": "47",
+      "passed": true
+    },
+    {
+      "name": "October8 nominal real difference pct",
+      "actual": "2.35",
+      "expected": "2.35",
+      "passed": true
+    },
+    {
+      "name": "July August payroll revisions thousand",
+      "actual": "-60",
+      "expected": "-60",
+      "passed": true
+    },
+    {
+      "name": "Haiku valid request batch short_batch",
+      "actual": "0.2",
+      "expected": "0.2",
+      "passed": true
+    },
+    {
+      "name": "Haiku valid request batch long_batch",
+      "actual": "1.0",
+      "expected": "1.0",
+      "passed": true
+    },
+    {
+      "name": "Haiku same total input",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "Haiku same total output",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "Sonnet cache reduction October7",
+      "actual": "0.5",
+      "expected": "0.5",
+      "passed": true
+    }
+  ],
+  "source_results_present": true,
+  "source_sha256": {
+    "01_利润真实性拆解.md": "fd4e7f463762943ee1bd29f1e36f405b716b2dcb8ce9e19a0834f5167a351e01",
+    "02_循环投资网络.md": "6512ac8aef785fa971ab0bffb28012217fe71740e968222532956501e5e8ee6a",
+    "03_AI变现与编程TAM.md": "f0a8cbeca36f89798988326ff2dac99996182240f808ffaf08977db0e193b1bd",
+    "04_AGI与国际格局.md": "e3a415d1fb9cb5ae8a493e8890ae30d99f956c020f10e57026720b9070d98e82",
+    "06_中国投资者传导.md": "28af0653e60be12dfa9973fc1a5073f5da54d9d62c984e58b00ecc6cd42d4f84",
+    "07_公司分化与估值.md": "178beaf8d11207ffaeafdde36e4531eef233bb33f53c75d688e7289a2cda555a",
+    "08_风险与综合结论.md": "834f76a253587f6feab611bb8f3957134ba063d0d1a8928ecfae88892b1ec5a5",
+    "09_框架与页岩油类比.md": "72fcd5d9f1e3c153002bac91855b060e8402916f51dea22e114ff66988fa26d7",
+    "10_聚变能源与资本回收.md": "7d63a14affb8f0ada5b0555a20d016a764f8c3954fbff9c9ea58802eea50f096",
+    "11_Alphabet融资案例.md": "f419e06edd445422ec4b025f7ce62459c77c76abc36b698c504b96b9ed433c72",
+    "12_各读者版本与情景.md": "f41eefab6fd71e6752c218e5576519b96510a751f95a4353b23a10f1f9f0fa9f",
+    "13_事实审计处置表.md": "2f99484fd45ea4dcfffd067d4501e15f5b79d92a9c32f23b821025f8ab204165"
+  },
+  "script_sha256": "025173a6f9eb700a53848396cee12f9adbcfc9f9bd5320dd568fefa8f0638f3b",
+  "limitations": [
+    "Checks arithmetic only; source evidence is in separate review notes.",
+    "Periods and company definitions differ: no cross-company cash total.",
+    "Conditional PE is not a target price; no complete 2027 FCFF model."
+  ]
+}

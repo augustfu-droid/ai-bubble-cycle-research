@@ -1,0 +1,288 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫 · 雪球公开版 V1.5</title><style>@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:18mm 17mm 19mm;@top-left{content:"大队长 · AI周期与泡沫 · 雪球公开版";font-family:Noto;font-size:7pt;color:#687888}@top-right{content:"V1.5 · 正文修订 · 2026-09-08";font-family:Noto;font-size:7pt;color:#687888}@bottom-left{content:"个人研究 · 公开资料 · 不构成投资建议";font-family:Noto;font-size:7pt;color:#687888}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#687888}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{font-family:Noto,sans-serif;font-size:10pt;line-height:1.7;color:#263643;margin:0}
+.cover{page:cover;height:296mm;padding:34mm 25mm;position:relative;break-after:page;background:#fbfdff}
+.cover .line{width:52mm;height:3mm;background:#86b8d5;margin-bottom:14mm}.brand{font-size:10pt;color:#637b8e;letter-spacing:1px}
+.cover .title{font-size:29pt;line-height:1.5;color:#28516e;margin:25mm 0 12mm;font-weight:700}
+.cover .subtitle{font-size:13pt;line-height:1.9;max-width:150mm;color:#526878}.cover .date{margin-top:23mm;font-size:11pt;color:#506f85}
+.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;padding-top:5mm;border-top:1px solid #d8e7ef;font-size:9pt;color:#647b8e}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;border-bottom:.4pt dotted #bfd2df;padding:3pt 0;color:#365a72;text-decoration:none;font-size:9pt}
+.toc .l3{padding-left:12pt;font-weight:400}.toc .l2{font-weight:700;margin-top:3pt}.toc a:after{content:target-counter(attr(href url),page);float:right;color:#315e7c}
+h1,h2,h3,h4{line-height:1.45;break-after:avoid;color:#315e7c}h1{font-size:21pt}h2{font-size:16pt;border-bottom:1.2pt solid #95bbd3;padding-bottom:5pt;margin:18pt 0 10pt}h3{font-size:12pt;margin:15pt 0 7pt}h4{font-size:10.8pt;margin:12pt 0 6pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:7pt 0;orphans:3;widows:3}a{color:#315e7c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #8ab8d4;background:#f2f7fb;padding:6pt 10pt;margin:8pt 0;color:#536776}
+table{border-collapse:collapse;width:100%;margin:9pt 0 13pt;font-size:8.3pt;table-layout:auto}thead{display:table-header-group}tr{break-inside:avoid}th{background:#dcecf6;color:#244b66;font-weight:700;text-align:left}th,td{border:.5pt solid #c7d9e4;padding:5pt 6pt;vertical-align:top;line-height:1.55;overflow-wrap:anywhere}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:8pt 0}li{margin:6pt 0}img{display:block;max-width:100%;max-height:210mm;object-fit:contain;margin:12pt auto}figure{break-inside:avoid}code{font-family:Noto;font-size:.95em;background:#edf3f7;padding:1pt 3pt}hr{border:0;border-top:.5pt solid #cadbe5;margin:14pt 0}
+@media screen{body{max-width:960px;margin:0 auto;padding:20px;background:white}.cover{height:auto;min-height:75vh;padding:40px 28px}.cover .foot{position:static;margin-top:45px}.front,.toc,main{padding:10px 12px}.toc a:after{content:none}table{display:block;overflow-x:auto}} .keep-together{break-inside:avoid} </style></head><body><section class="cover"><div class="line"></div><div class="brand">大队长 · AI产业周期研究</div><div class="title">AI周期与泡沫 · 雪球公开版</div><div class="subtitle">从产业增长落到公司现金与估值，保留反方条件。</div><div class="date">V1.5 · 正文修订<br>2026-09-08</div><div class="foot">按本篇主题组织证据与分析<br>个人研究 · 基于公开信息 · 不构成投资建议</div></section><section class="front"><h2>免责声明与阅读边界</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构观点，不构成个性化投资建议、收益保证或交易指令。技术和商业判断可能错误，信息也可能随后修订。</p>
+<p>V1.5为正文修订版，资料检索截止2026年9月8日；各项财务、统计、行情与政策数据以正文明确的期间或观察日为准，不能全部理解为该日现值。公司指引、研究假设和已实现结果分开阅读；缺失的原始证据不以推测填补。</p>
+<p>本版按主题重编，不沿用旧版分页；旧版与原投递件保留不改。历史评分和预测记录只用于追溯，未完成统计校准的数字不属于经过验证的崩盘概率。审计条目总数不等于本轮全部事实复核通过。</p>
+<h2>本版修订说明</h2>
+<ol>
+<li>
+<p>本篇按目标读者重新组织结论和展开；更新写进相应论点，不以前置全景财报替代原正文。</p>
+</li>
+<li>
+<p>公司与估值：去除确定输赢和固定跌幅，按盈利、倍数、净债务及现金回收展开。</p>
+</li>
+<li>
+<p>中国传导：用正式半年报替换光模块待披露状态，补足产品、份额、现金和估值链条；纠正跨境额度表述。</p>
+</li>
+</ol>
+<p>逐项勘误与修订见文末《本版逐项修订记录》，可从目录跳转。</p></section><section class="toc"><h1>目录</h1><p>目录及页码依据本版正文生成；PDF内可点击跳转。</p><a class="l2" href="#h-0000">投资者导读：需求真实，为什么还要算估值</a><a class="l3" href="#h-0001">一、先拆掉一个误会</a><a class="l3" href="#h-0002">二、光模块给出一个已经可以对账的例子</a><a class="l3" href="#h-0003">三、只讲方向不够，模型要承受两种反例</a><a class="l3" href="#h-0004">四、这版真正改变了什么</a><a class="l2" href="#h-0005">第七部分：公司分化——经营韧性不等于估值安全</a><a class="l3" href="#h-0006">7.1 用商业模式分组，不给企业预判结局</a><a class="l3" href="#h-0007">7.2 把财报拆成五张小表</a><a class="l3" href="#h-0008">7.3 企业价值与股权价值的桥</a><a class="l3" href="#h-0009">7.4 增长能否抵消倍数回落</a><a class="l3" href="#h-0010">7.5 历史比较能说明什么</a><a class="l3" href="#h-0011">7.6 会改变本章结论的证据</a><a class="l2" href="#h-0012">第六部分：对中国投资者的核心启示</a><a class="l3" href="#h-0013">6.1 从日历判断改为条件判断</a><a class="l3" href="#h-0015">6.2 A股传导需要逐项拆解</a><a class="l3" href="#h-0018">6.3 编程工具与软件公司的传导</a><a class="l3" href="#h-0019">6.4 客户集中与融资暴露</a><a class="l3" href="#h-0020">6.5 公司估值怎样承接行业判断</a><a class="l3" href="#h-0021">6.6 跨境工具：通道规则不能替代研究</a><a class="l3" href="#h-0022">6.7 下一轮核验日历</a><a class="l3" href="#h-0023">6.8 政策冲击的归因</a><a class="l3" href="#h-0024">6.9 本章可能判断错在哪里</a><a class="l2" href="#h-0025">本版逐项修订记录</a><a class="l3" href="#h-0026">公司分化与估值：逐项修订</a><a class="l3" href="#h-0027">中国投资者传导：逐项修订</a></section><main><h2 id="h-0000">投资者导读：需求真实，为什么还要算估值</h2>
+<h3 id="h-0001">一、先拆掉一个误会</h3>
+<p>看好AI的长期用途，与认为所有相关股票都有吸引力，并不是同一句话。公司收入增长可能已经兑现，但如果买入价格需要它多年保持异常高的增速，稍低于定价所需的增长就可能导致估值回落。判断对象应是具体公司的每股现金回报，不是对一个技术标签表态。</p>
+<h3 id="h-0002">二、光模块给出一个已经可以对账的例子</h3>
+<p>中际旭创与新易盛已发布2026年半年报，收入和归母利润大幅增长，不能再写“等待正式业绩”。同时，两家公司经营现金流分别为18.00亿元和16.16亿元，与归母利润136.51亿元和75.29亿元存在明显量级差异；应继续读存货、应收与采购付款解释，而不是一看到差额就给公司贴标签。下文中国传导章列出原件、期间和公司解释。<a href="https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF">中际旭创半年报</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-08-25/1225499406.PDF">新易盛半年报</a></p>
+<h3 id="h-0003">三、只讲方向不够，模型要承受两种反例</h3>
+<p>第一种是公司仍然增长，估值倍数却回落；第二种是产业总投资增速回落，一家公司仍通过份额、单价和产品升级增长。前者提醒我们不把好公司等同好价格，后者提醒我们不把行业宏观判断机械套在每家公司身上。</p>
+<p>本文后续公司分化章提供倍数与现金流模型，中国传导章进一步拆解产品、客户与现金，不给没有现价、股本和完整盈利模型支持的目标价，也不根据一份行业研报替读者安排仓位。</p>
+<h3 id="h-0004">四、这版真正改变了什么</h3>
+<p>判断变得更具体，也因此更容易被反驳：增长是否持续，要看订单转收入；现金是否改善，要看营运资本和建设投入；估值是否合理，要看预期增长与价格之间的关系。原先固定崩盘时间、固定跌幅及缺乏校准的概率，不再作为公开版结论。</p>
+<h2 id="h-0005">第七部分：公司分化——经营韧性不等于估值安全</h2>
+<p>原稿用“破而不死”“破而立死”给公司分组，并附上40%—95%的下跌区间。这种表达把经营风险、信用风险和股票定价压成了一张结局表，没有逐公司盈利和估值模型支持；本版撤出这些跌幅预测，保留更有用的问题：同一轮人工智能投资，风险究竟留在谁的资产负债表上，利润又由谁确认？</p>
+<h3 id="h-0006">7.1 用商业模式分组，不给企业预判结局</h3>
+<table>
+<thead>
+<tr>
+<th>研究组</th>
+<th>代表公司</th>
+<th>基本盘与投入位置</th>
+<th>首要核验问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>综合云与应用</td>
+<td>Alphabet、Microsoft、Amazon</td>
+<td>云、广告或软件现金创造与AI建设并存</td>
+<td>成熟业务现金是否足以承担新增投资，AI贡献能否从整体业务中识别</td>
+</tr>
+<tr>
+<td>广告及终端应用</td>
+<td>Meta、Apple</td>
+<td>广告或终端/服务变现，并含自建或外采AI投入</td>
+<td>效率收益能否覆盖新增研发、算力与折旧，价格和使用变化是否可归因于AI</td>
+</tr>
+<tr>
+<td>计算平台与芯片</td>
+<td>NVIDIA及其他芯片供应商</td>
+<td>当前销售、软件生态、研发、供应承诺与客户融资关系</td>
+<td>盈利兑现与回款、客户集中、替代架构和承诺暴露如何变化</td>
+</tr>
+<tr>
+<td>云基础设施与专用算力</td>
+<td>Oracle、CoreWeave等</td>
+<td>容量建设先投入，收入和租约随交付展开</td>
+<td>客户信用、合同取消、未起租项目与再融资是否形成错配</td>
+</tr>
+<tr>
+<td>物理设备与系统</td>
+<td>维谛技术、服务器及网络设备供应商</td>
+<td>电源散热、系统交付与服务</td>
+<td>订单能否转收入与现金，增长来自数量、价格还是产品结构</td>
+</tr>
+</tbody>
+</table>
+<p>公司可以跨组，分组不是风险等级。Tesla的汽车、自动驾驶和机器人需要独立建模，不能因其通常被列入“七巨头”，就把其他公司的云投资风险直接移植过去；表中也不把Oracle、CoreWeave混称为七巨头成员。</p>
+<h3 id="h-0007">7.2 把财报拆成五张小表</h3>
+<p>第一张记录经营结果：分部收入、营业利润和毛利，标注财季、是否非GAAP、是否包含传统业务。第二张记录现金：经营现金流、现金资本支出和融资租赁付款，统一期间。第三张记录资产与合同：折旧、在建工程、采购承诺、租约、担保、应收和集中度。第四张记录估值：预测年份、净债务与股数、倍数或折现率。第五张记录反证：什么数据会使当前判断失效。</p>
+<p>这五张表的数不能任意互换。AWS收入和营业利润属于经营结果，Anthropic投资重估进入Amazon合并非经营项目，不能再写“AWS增长依赖Anthropic重估”；NVIDIA存在客户投资和增信安排，也不能因此把对该客户的全部收入定义为循环或虚假收入。第一、第二部分提供更新后的逐项证据，本章只讨论这些差异怎样进入估值。</p>
+<p>公司经营现金流强，仍可能以过高价格交易；公司现金流暂时为负，也可能因有价值的建设项目而具有正净现值。需要分析的是未来现金收支及其不确定性，不是把一个季度的正负号直接翻译为公司生死。</p>
+<h3 id="h-0008">7.3 企业价值与股权价值的桥</h3>
+<p>采用企业价值/息税折旧摊销前利润（EV/EBITDA）时，先用目标年度EBITDA乘以可比倍数，得到企业价值，再减去同一估值时点净债务及其他应扣权益项目，除以稀释股数。少数股东权益、租赁负债、养老金或非经营资产是否调整，要与可比公司倍数口径一致。</p>
+<p>EV/EBITDA并不自动比市盈率更正确。折旧反映资产消耗，设备需要更新，EBITDA加回折旧后并没有替股东支付这些更新支出；因此资本密集型公司还要看自由现金流。采用企业自由现金流（FCFF）折现时，基本式为税后营业利润加折旧摊销，减资本支出和营运资本增加，再按加权平均资本成本折现。不得同时重复扣除折旧与资本支出，也不能漏掉租赁付款造成的可比性问题。</p>
+<p>对于维谛技术这类设备企业，关键是订单转收入、增量利润率、营运资本和维护性投资；对于云商，还要区分服务器、网络、建筑和土地的折旧与经济寿命。拿同一个终值倍数套两类公司，会抹掉研究最重要的差异。</p>
+<h3 id="h-0009">7.4 增长能否抵消倍数回落</h3>
+<p>在净债务与股数暂时不变的简化条件下，企业价值变化倍数等于“盈利变化倍数×估值倍数变化倍数”。例如EBITDA上修20%，估值倍数由20倍降至15倍，企业价值变成基准的90%；当净债务为正且企业价值仍高于净债务时，股权价值跌幅会被放大，净现金公司不适用这一方向。第六部分已给出完整算式与九格敏感性表。</p>
+<p>这比从历史泡沫类比直接指定个股跌幅更可复核。真实目标价仍需要预测期盈利、资本结构、同口径可比以及明确的情景假设；评价预期涨跌幅还需注明起点价格，采用概率加权时另披露权重依据。本轮不把7月或8月的旧股价重新标成9月8日现价，也不在缺这些输入时给出新的买卖价位。</p>
+<h3 id="h-0010">7.5 历史比较能说明什么</h3>
+<p>互联网、电信设备和页岩油的经验说明，技术扩散与股东回报可以分离，融资条件变化也可能让设备订单急转。但各行业的资产再利用能力、客户现金储备、合同期限和竞争结构不同，历史上某家公司跌了多少，不能作为今天另一家公司同幅下跌的估值模型。</p>
+<p>全景版的历史类比附篇因此改为比较传导机制，并明确类比失效的条件。原文关于“指数跌70%等于七巨头跌幅加权平均”的说法也撤回：指数权重、其他成分和再平衡均需计算，不能只列出几个个股区间就声称已算出指数回撤。</p>
+<h3 id="h-0011">7.6 会改变本章结论的证据</h3>
+<p>若客户无需新增融资也能稳定付费，未履约订单持续转成现金，供应商扩产同时保持回款与定价，风险应下调；若公司营收仍增长，但依赖更长付款期、客户担保和持续资本注入，增长质量就需要更严的折现或情景假设。两者不宜合成一个不透明的“综合现金流厚度”得分。</p>
+<p>本章的结论是公司之间必须分化研究，不是认定某一组股票一定比另一组涨得好。估值起点和后续证据都能推翻这种简单排序。</p>
+<h2 id="h-0012">第六部分：对中国投资者的核心启示</h2>
+<p>海外资本开支与中国公司的利润之间，至少还隔着产品结构、供应商份额、交付节奏和回款四道关。更新到2026年9月8日，光模块半年报已经给出了增长兑现的证据，因此本章不能继续停留在“等待7月业绩预告”，也不能沿用“海外周期转弱，中国算力公司必然同时下跌”的单线推演。</p>
+<h3 id="h-0013">6.1 从日历判断改为条件判断</h3>
+<p>原稿的2026年下半年至2028年窗口，是研究者安排复查的时间范围，不是已经被模型识别的崩盘日期。项目何时形成收入、融资能否续接、投资开支能否主动调整，比年份本身更有解释力；只要条件没有成立，就不能因为时间到了而宣布周期转折。</p>
+<p>本版分别跟踪三条相互关联的观察路径：供应商订单和收入是否减速，客户资本支出是否超过可持续现金创造，以及融资压力是否由个别公司扩散到更多信用主体。强需求能够反驳第一条的即时崩塌，却不能自动消除第二条；单名降级也不能自动证明第三条已经发生。</p>
+<p>对于原文“未来两家模型公司必在某月上市，随后固定月份解禁”的推演，当前正文只在取得发行人文件后登记确切日期。媒体计划、秘密递交申请、获准上市和实际发行不是同一阶段，不能据其中一个安排完整的后续事件链。</p>
+<h4 id="h-0014">6.1.1 如果投资周期比预计更长</h4>
+<p>物理约束可以让交付延期，既可能让供给扩张放缓、改善最终供需，也可能使在建工程和利息占用继续累积。这两个方向不能一开始就合并为“延迟必然放大”，必须逐项目核对：客户付款是否随交付发生，设备能否转售，合同能否取消，以及建设期利息最终由谁承担。</p>
+<p>反方压力测试采用条件而不预设概率迁移。如果单位任务成本下降使需求扩张快于价格下降，成熟业务能持续补贴建设，且回款没有恶化，那么原先偏谨慎的现金回收判断应当弱化。相反，若收入尚未起量、维护性资本开支已经到来，同时客户依赖新融资付费，时间延长会增加资本缺口。</p>
+<p>原稿把“A渐进幻灭”称为“软着陆”，又用不同年份的情景权重解释同一结论，本版撤销这些混用。情景的统一定义见第八部分；本节不另设一套概率，也不据此给出加减仓百分比。</p>
+<h3 id="h-0015">6.2 A股传导需要逐项拆解</h3>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>需要验证的传导变量</th>
+<th>常见误判</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>光模块</td>
+<td>集群规模、端口密度、速率升级、单价、良率、客户份额和回款</td>
+<td>云厂总CapEx增速直接等于模块收入增速</td>
+</tr>
+<tr>
+<td>服务器与交换设备</td>
+<td>平台切换、单机价值量、订单转收入、存货和信用条件</td>
+<td>订单增加等同于利润和现金增加</td>
+</tr>
+<tr>
+<td>电源与散热</td>
+<td>功率密度、液冷渗透、工程验收、售后服务与项目延期</td>
+<td>数据中心用电增长意味着全部设备公司同幅受益</td>
+</tr>
+<tr>
+<td>国产计算与基础软件</td>
+<td>可交付供给、兼容性、迁移成本、客户预算和使用效率</td>
+<td>出口限制自动带来所有国产公司的高利润</td>
+</tr>
+<tr>
+<td>电力与能源</td>
+<td>项目位置、并网、供电合同、实际电价与回报机制</td>
+<td>美国数据中心扩张直接利好所有中国能源公司</td>
+</tr>
+</tbody>
+</table>
+<p>这些是研究变量，不是行业评级。实际公司模型应从客户和产品出发，再汇总行业暴露；不能先认定某个板块“极高风险”或“确定受益”，再挑数字证明。</p>
+<h4 id="h-0016">光模块：本轮已经可以结算什么</h4>
+<p>中际旭创与新易盛已分别在8月22日、8月25日公告2026年半年报。下表均为2026年上半年，不混用单季或年化数字；金额按原始人民币元除以一亿元换算。</p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: right;">营业收入（亿元）</th>
+<th style="text-align: right;">归母净利润（亿元）</th>
+<th style="text-align: right;">经营现金流净额（亿元）</th>
+<th>收入/归母利润同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中际旭创</td>
+<td style="text-align: right;">417.78</td>
+<td style="text-align: right;">136.51</td>
+<td style="text-align: right;">18.00</td>
+<td>+182.49% / +241.70%</td>
+</tr>
+<tr>
+<td>新易盛</td>
+<td style="text-align: right;">209.10</td>
+<td style="text-align: right;">75.29</td>
+<td style="text-align: right;">16.16</td>
+<td>+100.34% / +90.98%</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF">中际旭创2026半年报，第8、26页</a>；<a href="https://static.cninfo.com.cn/finalpage/2026-08-25/1225499406.PDF">新易盛2026半年报，第7、14页</a>。半年度报告未经审计，数字仍须结合其会计附注阅读。</p>
+<p><img alt="光模块半年报：盈利与经营现金流" src="../13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg" /></p>
+<p>经营兑现已不再只是预期，但现金变化并不一致：中际旭创经营现金流同比下降44.08%，公司解释主要为采购付款增加；新易盛同比增长69.67%，公司解释包括销售回款和税费返还增加。这里比较的是同周期两种财务结果，不能把归母利润与合并经营现金流之比命名为严格的“利润现金转化率”，更不能仅凭差额指控利润失真。</p>
+<p>后续模型应把应收、存货、预付款和应付的变化逐项接上现金流量表。如果扩产和备货后来能随销售回款释放，占用可能是阶段性的；若收入持续增长而账龄、坏账和库存减值同步恶化，盈利质量的风险判断才有进一步依据。</p>
+<h4 id="h-0017">业绩验证与原预测记分分开</h4>
+<p>“半年报增长得到证实”不等于“7月预告事件和股价反应的事先判断全部命中”。原E判断2的双公司预告事件及对应价格窗口证据尚未齐全，因此仍记部分验证。删除的是“正式业绩仍待披露”的过期原因，不是倒改原判断窗口；本篇也不把7月价格锚称为9月8日现价。</p>
+<h3 id="h-0018">6.3 编程工具与软件公司的传导</h3>
+<p>编程工具按席位收费的收入，只覆盖软件生产工具市场的一部分。若企业把节省的工时用于更多项目、采用按用量计价的代理或采购交付服务，市场边界会改变；反过来，个人用户使用频率低、付费席位流失或高频用户推理成本过高，也会削弱利润。</p>
+<p>因此“工具更便宜”既不是外包公司必然受损的证据，也不是工具厂商拥有无限市场的证据。软件公司的模型至少要分合同金额、交付人时、人员成本、工具和算力成本、验收周期，以及客户是否要求分享效率收益。第三部分已校正开发者数量乘价格的美元单位，本章不再沿用旧的固定TAM天花板。</p>
+<h3 id="h-0019">6.4 客户集中与融资暴露</h3>
+<p>客户集中度、关联投资和收入质量应分栏记录。供应商向客户投资，并不能证明所有后续收入虚假；同样，已经签订采购合同，也不代表客户具备无条件履约的现金能力。</p>
+<p>研究底稿应列出具名客户、已确认收入、未履约合同、收款期限、担保或增信、投资余额与取消条件。未披露客户身份的收入不能由研究者擅自分配给某一家云厂，未披露的循环收入占比应保留缺失，不再使用旧稿的“几乎100%”“67%”做行业统一风险排名。</p>
+<h3 id="h-0020">6.5 公司估值怎样承接行业判断</h3>
+<p>先形成产品收入预测，再由毛利、费用、折旧、税和营运资本形成利润及现金流，最后讨论估值倍数。产业判断可以改变这些输入，却不能越过盈利模型直接产生某个精确跌幅。</p>
+<p>例如只为说明敏感性的假设公司：基准EBITDA为100、企业价值倍数为20倍，净债务200、稀释股数100，则每股价值为18。若EBITDA增长20%至120、倍数回落25%至15倍，企业价值变成1800，每股价值为16，较18下降11.1%。盈利上涨与股价估值下降完全可能同时发生；这里的数字是教学假设，不是任何真实公司的目标价。</p>
+<table>
+<thead>
+<tr>
+<th>EBITDA（基准=100）</th>
+<th style="text-align: right;">15倍</th>
+<th style="text-align: right;">20倍</th>
+<th style="text-align: right;">25倍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>100</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td>120</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">28</td>
+</tr>
+</tbody>
+</table>
+<p>表中每股价值统一按“EBITDA×倍数−200，再除以100”计算。净债务、股数固定只是为了看清两个变量；真实模型须同步处理现金生成、融资和稀释，并用现金流折现检验终值是否承担过多价值。</p>
+<h3 id="h-0021">6.6 跨境工具：通道规则不能替代研究</h3>
+<p>港股通南向交易和大湾区跨境理财通是两种不同制度，不能把市场每日额度当成个人可持有、可积攒的配额。港交所常见问题明确每日额度按净买盘管理、未使用部分不结转；原稿“保留持仓来保护历史额度、避免额度被回收”缺乏制度依据，本版删除，不再提供这类操作建议。<a href="https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/FAQ/FAQ_Cn.pdf">港交所互联互通常见问题，2026年7月6日版，第15—16页</a></p>
+<p>场内QDII的溢价必须用同一时点可比净值、汇率和交易价格计算。跨时区净值滞后、停申购和二级流动性会影响结果，原稿“当前普遍溢价25%—40%”没有本轮同日全样本支持，撤出当前结论。基金规模增长或市场回撤也不保证某一天溢价必然归零。</p>
+<p>本报告不对读者的跨境投资资格、汇款用途或适用产品作个别认定。需要交易时，应另按最新官方规则及产品说明核实，而不是根据研究观点提前安排通道或仓位。</p>
+<h3 id="h-0022">6.7 下一轮核验日历</h3>
+<table>
+<thead>
+<tr>
+<th>日期/时间（注明时区）</th>
+<th>已确认事件</th>
+<th>应在正文更新的变量</th>
+<th>截至9月8日状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9月10日13:30，北京时间</td>
+<td>台积电8月月营收</td>
+<td>营收同比/环比、需求斜率；不得将月营收等同先进封装产能</td>
+<td>待公布</td>
+</tr>
+<tr>
+<td>9月11日05:00电话会，北京时间</td>
+<td>Oracle FY27Q1；财报于美东9月10日盘后发布</td>
+<td>OCI、收入转化、资本支出、现金流、债务与担保</td>
+<td>待公布</td>
+</tr>
+<tr>
+<td>9月11日20:30，北京时间</td>
+<td>美国8月CPI</td>
+<td>价格压力和折现率背景</td>
+<td>待公布</td>
+</tr>
+<tr>
+<td>9月15—16日美国会期</td>
+<td>FOMC与经济预测</td>
+<td>政策、利率预期和信用传导</td>
+<td>待公布</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://investor.tsmc.com/english/financial-calendar">台积电日历</a>、<a href="https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-First-Quarter-Fiscal-Year-2027-Earnings-Announcement/default.aspx">Oracle公司公告，9月2日</a>、<a href="https://www.bls.gov/schedule/2026/09_sched.htm">BLS九月日历</a>、<a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">美联储日历</a>。美东与美国中部均按当期夏令时换算；事件时间可能调整。</p>
+<p>季度复查仍有价值，但动作应是重建证据和模型，而不是按季度固定加仓或减仓。更新应回答新增证据改变了哪一项输入、原判断是否被证伪、还有什么需要等待。</p>
+<h3 id="h-0023">6.8 政策冲击的归因</h3>
+<p>出口管制影响可采购产品、部署地点和技术迁移成本，资本市场监管影响交易通道，两者不能合并成一个“AI风险事件”。涉及处罚金额、产品禁令和实施日期时，应有对应监管文件；本章不再沿用未经本轮原文复查的具体处罚金额来增强风险叙事。国际技术规则的实质进展集中在第五部分讨论。</p>
+<h3 id="h-0024">6.9 本章可能判断错在哪里</h3>
+<p>供应商份额提升和产品升级可能抵消行业投资减速，这是宏观外推最容易漏掉的反方；营运资本也有季节性，仅看半年现金不足以给全年结论。与此同时，增长真实不能保护过高的买入估值，政策支持也不能保证单一公司的产品被采用。下一次核验应允许这些方向同时进入模型，而不是只寻找支持原观点的数字。</p>
+<h2 id="h-0025">本版逐项修订记录</h2>
+<p>这里只列本报告实际采用章节的修订；每条对应原文纠错或证据更新，不是全景财报前言。</p>
+<h3 id="h-0026">公司分化与估值：逐项修订</h3>
+<p>7.1：撤销“破而立死”等确定性结局标签和未经模型支撑的个股跌幅，按商业模式重建研究分组。</p>
+<p>7.2：把经营、现金、资本承诺和估值分栏；纠正AWS经营与投资重估的因果混淆。</p>
+<p>7.3—7.4：补足企业价值到股权价值的估值桥，明确EBITDA和自由现金流差异。</p>
+<p>7.5—7.6：删除未经指数权重计算的整体回撤推断，补齐历史类比与公司排序的反证条件。</p>
+<h3 id="h-0027">中国投资者传导：逐项修订</h3>
+<p>6.1与6.1.1：用条件和项目现金约束取代固定崩盘日期，删除错用的情景标签和概率；原6.1.5顺排为6.1.1。</p>
+<p>6.2：直接写入两家光模块2026半年报及现金流分化，替换“业绩待披露”；原E判断2仍部分验证。</p>
+<p>6.3—6.5：补足行业到公司收入、现金和估值的传导，加入可复算倍数敏感性表。</p>
+<p>6.6：删除“持仓保护港股通额度”以及无同日样本的QDII普遍溢价断言。</p>
+<p>6.7—6.9：更新官方事件日历，撤出未重新核实的处罚数字，保留政策与经营的归因边界。</p></main></body></html>

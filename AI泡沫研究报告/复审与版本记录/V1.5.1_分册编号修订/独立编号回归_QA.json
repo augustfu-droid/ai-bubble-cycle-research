@@ -1,0 +1,333 @@
+{
+  "status": "PASS_NUMBERING_REGRESSION",
+  "checked_at_utc": "2026-09-08T05:32:25.520004+00:00",
+  "script_sha256": "b10e233f757804f184999f9507782efb263cfe60d37065b81a91cbfb629880db",
+  "manifest_sha256": "a22fc674c3a99e219c3a6de126d8569c06150d26b3cdc36999eb100ec0412152",
+  "baseline_manifest_sha256": "6dada7d11faf5efcea5160fa7a3fa6a8533386765b79bbce6aae13d54a58b098",
+  "baseline_path": "/Users/fuqiang/Documents/投研投递/AI泡沫研究报告/复审与版本记录/V1.5.1_分册编号修订/改前基线",
+  "source_files_preserved": 12,
+  "assets_preserved": 4,
+  "out_of_scope_artifact_checks": 24,
+  "global_errors": [],
+  "guard_selftests": [
+    {
+      "name": "numbered chapter gap rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong active parent rejected",
+      "passed": true
+    },
+    {
+      "name": "circular 5/6 suffix gap rejected",
+      "passed": true
+    },
+    {
+      "name": "model/tranche mutation rejected: Gemini 3.8",
+      "passed": true
+    },
+    {
+      "name": "model/tranche mutation rejected: Fable 5.1",
+      "passed": true
+    },
+    {
+      "name": "model/tranche mutation rejected: Mythos 5.1",
+      "passed": true
+    },
+    {
+      "name": "model/tranche mutation rejected: OSWorld 2.0",
+      "passed": true
+    },
+    {
+      "name": "model/tranche mutation rejected: DDTL 5.5",
+      "passed": true
+    },
+    {
+      "name": "numeric fact mutation rejected: 额度2.6、期限5年",
+      "passed": true
+    },
+    {
+      "name": "numeric fact mutation rejected: 6.65—6.75美元",
+      "passed": true
+    },
+    {
+      "name": "numeric fact mutation rejected: V1.5.1",
+      "passed": true
+    },
+    {
+      "name": "numeric fact mutation rejected: 原0.8B",
+      "passed": true
+    },
+    {
+      "name": "numeric fact mutation rejected: 公司A利润2.6，公司B利润1.6",
+      "passed": true
+    },
+    {
+      "name": "explicit current reference may remap",
+      "passed": true
+    }
+  ],
+  "reports": [
+    {
+      "slug": "01_主报告",
+      "status": "PASS",
+      "baseline_md_sha256": "9875d927706fe34e2741994513e24d39efe67060e63ea9186df0a1c0fe68c318",
+      "current_artifact_sha256": {
+        "md": "9875d927706fe34e2741994513e24d39efe67060e63ea9186df0a1c0fe68c318",
+        "html": "c88767db914762b219425d438b51b101afcc5ec7139d3ef82dbe1f6319338b79",
+        "pdf": "df6a484106b6a59621ae420debe8331b3bf1b7d20657b8119682e668f9f5b49d"
+      },
+      "research_headings": 147,
+      "pdf_bookmarks_checked": 155,
+      "pdf_toc_links_checked": 166,
+      "pages": 58,
+      "errors": []
+    },
+    {
+      "slug": "02_事实审计表",
+      "status": "PASS",
+      "baseline_md_sha256": "b258408b84d8be34525eea667e80c4b43a0bb282bb12623c59231351ce7b98e3",
+      "current_artifact_sha256": {
+        "md": "83225015deaec342a4a9f50f8ebfcbc675c6e3b8f47914a75941f4be5293b409",
+        "html": "7ab12b098541f68a96fecc1b322c25c94fd791472a838c9f23d5ef9a4a58538e",
+        "pdf": "1373cead609fcc3237ae3186c67e8cd17e10a3dc86be0fa64ad8000ca7ae07e4"
+      },
+      "research_headings": 5,
+      "pdf_bookmarks_checked": 8,
+      "pdf_toc_links_checked": 16,
+      "pages": 18,
+      "errors": []
+    },
+    {
+      "slug": "03_利润真实性拆解",
+      "status": "PASS",
+      "baseline_md_sha256": "0c5bc9d38fa919c42fd66314983404627582f3da0628578d459331872c7904a7",
+      "current_artifact_sha256": {
+        "md": "37fc632322a3c0bab48a2da8877518b3a13013a9c1ea5ca7bdcfe4d3747d2aef",
+        "html": "d7b562f448ea0908094a0681b0b3d57da2fcc866bd1938bf26b0c4d879ad4399",
+        "pdf": "4fe9f9584868d39a5b8a8dc950b0c005cee6cc4807991954c56b31e76dbff275"
+      },
+      "research_headings": 30,
+      "pdf_bookmarks_checked": 33,
+      "pdf_toc_links_checked": 26,
+      "pages": 14,
+      "errors": []
+    },
+    {
+      "slug": "04_循环投资网络",
+      "status": "PASS",
+      "baseline_md_sha256": "09e184206f4e14a6ab6be94432717d745a0c22ef00c985720f1e704fdc2e24b8",
+      "current_artifact_sha256": {
+        "md": "53a3c6a3c2f8f4643671ad5a915e74724bd38700cf9efc28ea548bc06a313b92",
+        "html": "8a13e06dbb84155ce23529eb84921ab3a53d7e77a0f42f6b0e076a3b1f80150a",
+        "pdf": "ea8d49546da0e3e6d255d690cd26cc7dab3fffdc900518e85311e6db47decc52"
+      },
+      "research_headings": 36,
+      "pdf_bookmarks_checked": 39,
+      "pdf_toc_links_checked": 30,
+      "pages": 13,
+      "errors": []
+    },
+    {
+      "slug": "05_AI变现与编程TAM",
+      "status": "PASS",
+      "baseline_md_sha256": "db47967f325c11724c15c0a4beca8379356b983afacef3ab25696587ef0e9465",
+      "current_artifact_sha256": {
+        "md": "c1edf974e45be7f9144c623821d356ef6249d5f591ffc805f291cd3662236800",
+        "html": "9c081a0e2b4a4a62953b3136923dc30e3d6ba296c637e0d864b8d03447d60b37",
+        "pdf": "53f1a16664491cbf9c9495472858a1d7d5f532da6f83500eaa138ae1e31f0d9c"
+      },
+      "research_headings": 33,
+      "pdf_bookmarks_checked": 36,
+      "pdf_toc_links_checked": 30,
+      "pages": 15,
+      "errors": []
+    },
+    {
+      "slug": "06_AGI与国际格局",
+      "status": "PASS",
+      "baseline_md_sha256": "e5fee3ac7f1cfe933eeec75a7aa991ee9c005dc9e7509ed9ef753647adf9ae13",
+      "current_artifact_sha256": {
+        "md": "980b35e417fa93100030bd18e00586db40b8ff963007d67491d53c716d941e4f",
+        "html": "97a1e9cc635ac395b0e187257febfdd3d340133f934ccbbb5b63409d0f027d90",
+        "pdf": "70c0fdc17301722787f9292e55268fb622ff7e20bbd330bf4b1f73e06f503892"
+      },
+      "research_headings": 17,
+      "pdf_bookmarks_checked": 20,
+      "pdf_toc_links_checked": 40,
+      "pages": 15,
+      "errors": []
+    },
+    {
+      "slug": "07_机构简版",
+      "status": "PASS",
+      "baseline_md_sha256": "1405fa6c03b9b79a40e1922f5fcafcfc166fb2bc7d6ab2eccd275e67c6183ca5",
+      "current_artifact_sha256": {
+        "md": "1405fa6c03b9b79a40e1922f5fcafcfc166fb2bc7d6ab2eccd275e67c6183ca5",
+        "html": "054e32c638b216f529a8b9b441939da9ce6e62984a6278233625ca2bee912ffa",
+        "pdf": "cb0d2d229f4eeeac292fb45cf04db38ecbda6c8c7e0a9d05eaaa9ef65c030ee5"
+      },
+      "research_headings": 6,
+      "pdf_bookmarks_checked": 6,
+      "pdf_toc_links_checked": 6,
+      "pages": 2,
+      "errors": []
+    },
+    {
+      "slug": "08_公开精简版",
+      "status": "PASS",
+      "baseline_md_sha256": "b62f7d9183c58deb815be24e7d3e74b8c10d6bf49328b04b4d03a8525f1181b0",
+      "current_artifact_sha256": {
+        "md": "8f9833c3cf58feaf08bc425a1b8e1c30f558d7b99d843150f50e7a40186eab7b",
+        "html": "3d70875794969a801800710396de3c21d8df76d3b6b4a32326fd71ea67bc8714",
+        "pdf": "dd2a0f36d889ae603c60cb6a10b0f85df8a119729c7cb9aedffa24e55ca96c95"
+      },
+      "research_headings": 94,
+      "pdf_bookmarks_checked": 100,
+      "pdf_toc_links_checked": 112,
+      "pages": 44,
+      "errors": []
+    },
+    {
+      "slug": "09_雪球公开版",
+      "status": "PASS",
+      "baseline_md_sha256": "549a7b6861eae0ee1b07d6605220fc679af122d14a026fa01bd600668e714f4a",
+      "current_artifact_sha256": {
+        "md": "2ccc391b725547d270fa12fcef2b06fc66913058598b98d232ce30a6ebe818c1",
+        "html": "2e641e1c961e994ad0096d12d030c848be1585f72ea5c495117f4db8e9dc2057",
+        "pdf": "8db0df6378367077a2cc8e3b9635cdf57cefdc131e2be65e386ad9d594365369"
+      },
+      "research_headings": 28,
+      "pdf_bookmarks_checked": 32,
+      "pdf_toc_links_checked": 52,
+      "pages": 14,
+      "errors": []
+    },
+    {
+      "slug": "10_摘要版",
+      "status": "PASS",
+      "baseline_md_sha256": "52c20822e2630fd788fc5de8258513b66498dbc986432e7bf471b4575ec928e5",
+      "current_artifact_sha256": {
+        "md": "52c20822e2630fd788fc5de8258513b66498dbc986432e7bf471b4575ec928e5",
+        "html": "085caaf91c9db4e6bfe760e0b213aee8c63936f66ca29e31f7e28654349bbf71",
+        "pdf": "f83196936d8750a7d8a6eb6299afdf288c7a632e7e866df80fa0908e6ee57287"
+      },
+      "research_headings": 5,
+      "pdf_bookmarks_checked": 5,
+      "pdf_toc_links_checked": 5,
+      "pages": 2,
+      "errors": []
+    },
+    {
+      "slug": "11_执行简版",
+      "status": "PASS",
+      "baseline_md_sha256": "7c51024bfaa6b2679ba55a520940959b9c14fe76e76476105d93455bc2865114",
+      "current_artifact_sha256": {
+        "md": "7c51024bfaa6b2679ba55a520940959b9c14fe76e76476105d93455bc2865114",
+        "html": "8655dc233129f07f46a4c912f97b85ed8df587da277470378584a9798ee58c78",
+        "pdf": "5a98eccc59dde3baa155ec4340a43814d75e39369f89a912d0d36aaafc2048c4"
+      },
+      "research_headings": 6,
+      "pdf_bookmarks_checked": 6,
+      "pdf_toc_links_checked": 6,
+      "pages": 2,
+      "errors": []
+    },
+    {
+      "slug": "12_全景版",
+      "status": "PASS",
+      "baseline_md_sha256": "15e49b8144a1000bd195d5db9b37be185ea3e0df694d501e97743c46218addc7",
+      "current_artifact_sha256": {
+        "md": "15e49b8144a1000bd195d5db9b37be185ea3e0df694d501e97743c46218addc7",
+        "html": "5ec37c5563fc582bc6770321e5a9d8faf37193179c8fd877c1ea6ade3f54d8d9",
+        "pdf": "a3209117f945cca0398006edc905cab7db44044c7f72ce812e6b92785f5fb1c1"
+      },
+      "research_headings": 205,
+      "pdf_bookmarks_checked": 216,
+      "pdf_toc_links_checked": 234,
+      "pages": 76,
+      "errors": []
+    },
+    {
+      "slug": "13_超全景版",
+      "status": "PASS",
+      "baseline_md_sha256": "c594ecd8090a7652d0bb0eca3d4fa0ea9b007e84cb53959137effa049b177152",
+      "current_artifact_sha256": {
+        "md": "c594ecd8090a7652d0bb0eca3d4fa0ea9b007e84cb53959137effa049b177152",
+        "html": "38cff737b75d59374a88245de324c5e93b60b0338420d87653edbfb9050f076f",
+        "pdf": "ccbd6fa52cf623f400af4d010cff51d517fbad191b0ba2e0b25a297bb551d3cf"
+      },
+      "research_headings": 210,
+      "pdf_bookmarks_checked": 222,
+      "pdf_toc_links_checked": 246,
+      "pages": 90,
+      "errors": []
+    },
+    {
+      "slug": "14_完整合集",
+      "status": "PASS",
+      "baseline_md_sha256": "42b876a576b035401560cb53d7f0778332da1849488f9da53675d5a39ec592e5",
+      "current_artifact_sha256": {
+        "md": "42b876a576b035401560cb53d7f0778332da1849488f9da53675d5a39ec592e5",
+        "html": "e0c6473e30c405e90938ee39ab305538a6b3252e774d1ea20ecf6016dd17afee",
+        "pdf": "a50c25875bc9be864e66443eebe593b727b8c707d3587d787b6bb41d34e27e7c"
+      },
+      "research_headings": 211,
+      "pdf_bookmarks_checked": 222,
+      "pdf_toc_links_checked": 246,
+      "pages": 78,
+      "errors": []
+    },
+    {
+      "slug": "15_延迟情景版",
+      "status": "PASS",
+      "baseline_md_sha256": "4e5b67d6ede1f45cf97bd42aed9104f2001acf6d232b0e5cccfd0f232a9efb3d",
+      "current_artifact_sha256": {
+        "md": "e39fdc75678f5b6a48aed6186b937f73b31a2a92263107eb01c3d25b7d728c9e",
+        "html": "be06e6ea9b3a8469b94b77fe21e21378a274b830264d7d583d0e626438360f7e",
+        "pdf": "7656a0b20a54065194a82e83ec8b157772c666742ad56e02f5347d4e12e55bb6"
+      },
+      "research_headings": 91,
+      "pdf_bookmarks_checked": 96,
+      "pdf_toc_links_checked": 94,
+      "pages": 30,
+      "errors": []
+    },
+    {
+      "slug": "16_崩盘剧本",
+      "status": "PASS",
+      "baseline_md_sha256": "1e0ce2ec08b530203731700e6b9a6632ef2d1bd0f3ee9bc5244d2fbbb47053f7",
+      "current_artifact_sha256": {
+        "md": "a3296083347dbf9cd815655319eac334627ec2a3c3c78735a4a3d7445b8e7ead",
+        "html": "b5b79911888611c2282cbf5be9a71fab764a832254342d1e5549ba86682657a2",
+        "pdf": "f7f430f94faa719a7ecd503d69d5a97f09be49fa035e6dd190e67de096cbbe50"
+      },
+      "research_headings": 14,
+      "pdf_bookmarks_checked": 17,
+      "pdf_toc_links_checked": 32,
+      "pages": 8,
+      "errors": []
+    },
+    {
+      "slug": "17_发布引流稿",
+      "status": "PASS",
+      "baseline_md_sha256": "428679f2f1d61e463a7c64dc3de196a192cd5853b62a6d2942382030eb3bb5e0",
+      "current_artifact_sha256": {
+        "md": "428679f2f1d61e463a7c64dc3de196a192cd5853b62a6d2942382030eb3bb5e0",
+        "html": "42501ccd78498f3459efc61fdb3ca8b88d0e9fee038b4f72e5683577dba6f7e4",
+        "pdf": "f4be1a2a41429a8c9945ce54dbde59d14c4ed491b67026987834f6fcbf4025c8"
+      },
+      "research_headings": 1,
+      "pdf_bookmarks_checked": 1,
+      "pdf_toc_links_checked": 1,
+      "pages": 1,
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "No new fact checking or market-data update is claimed.",
+    "Numeric guards concern existing research body; revision prose receives a separate human/agent review.",
+    "PDF visual quality requires separate image inspection; no WPS or print proof is claimed.",
+    "No Git push or external publishing."
+  ]
+}

@@ -1,0 +1,855 @@
+{
+  "date": "2026-10-27",
+  "unique_urls": 212,
+  "scope": "exact URL deduplication, not full source re-verification",
+  "items": [
+    {
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+      "body_label": "Q3实绩与Q4指引"
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "body_label": "Meta Q3公告，Establishment of New Class C Common Stock"
+    },
+    {
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "body_label": "Anthropic S-1公告"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "body_label": "Anthropic S-1，Infrastructure Service Arrangements与Infrastructure Equipment Leases，第171—173页"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm",
+      "body_label": "NVIDIA，FY27Q2 CFO commentary"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "body_label": "Microsoft财报"
+    },
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+      "body_label": "Alphabet第二季度财报第2页"
+    },
+    {
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+      "body_label": "Amazon第二季度财报"
+    },
+    {
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf",
+      "body_label": "台积电10月15日Q3管理报告，第1—2页"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "body_label": "Amazon Q2 10-Q，利润表及投资附注"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "body_label": "Microsoft FY2026 10-K"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+      "body_label": "Meta Q2 10-Q，承诺附注"
+    },
+    {
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "body_label": "Meta Q2历史财报"
+    },
+    {
+      "url": "https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "body_label": "Oracle FY27Q1业绩"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "body_label": "Oracle FY27Q1 10-Q"
+    },
+    {
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF",
+      "body_label": "中际旭创8/22半年报，第8、60页"
+    },
+    {
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499406.PDF",
+      "body_label": "新易盛8/25半年报，第7、44页"
+    },
+    {
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617691.pdf",
+      "body_label": "中际旭创公告，第1—2页"
+    },
+    {
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617676.pdf",
+      "body_label": "新易盛公告，第1页"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026055726/lite_ex991xq4fy26.htm",
+      "body_label": "Lumentum季度业绩及调节表"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026057358/lite-20260627.htm",
+      "body_label": "Lumentum FY2026 10-K，现金流量表及债务附注"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm",
+      "body_label": "Coherent季度业绩"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm",
+      "body_label": "Coherent FY2026 10-K，现金流量表及流动性分析"
+    },
+    {
+      "url": "https://investors.delltechnologies.com/node/20956/pdf",
+      "body_label": "Dell业绩现金表及FCF调节，第5、8—9页"
+    },
+    {
+      "url": "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q3-2026/q3-2026-earnings-press-release.pdf",
+      "body_label": "HPE季度业绩及现金调节"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000080/hpe-20260731.htm",
+      "body_label": "HPE 10-Q，分部及经营分析"
+    },
+    {
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+      "body_label": "Marvell季度业绩"
+    },
+    {
+      "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000025/mrvl-20260801.htm",
+      "body_label": "Marvell 10-Q，附注3、9及14"
+    },
+    {
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "body_label": "美光官方业绩及财务表"
+    },
+    {
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+      "body_label": "官方演示材料，第43、49页现金调节"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+      "body_label": "美光Q3 10-Q，Note 1及MD&A"
+    },
+    {
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "body_label": "美光官方讲稿，第8—9页"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/10/07/3376854/0/en/applied-digital-reports-fiscal-first-quarter-2027-results.html",
+      "body_label": "Applied Digital，FY27Q1业绩，2026-10-07"
+    },
+    {
+      "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000059/apld-20260831.htm",
+      "body_label": "FY27Q1 10-Q，第5页"
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026",
+      "body_label": "三星Q3预披露"
+    },
+    {
+      "url": "https://www.samsung.com/global/ir/ir-events-presentations/events/",
+      "body_label": "三星投资者日历"
+    },
+    {
+      "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/",
+      "body_label": "SK海力士10月21日邀请函"
+    },
+    {
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+      "body_label": "台积电Q3财务表，第4页"
+    },
+    {
+      "url": "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0",
+      "body_label": "ASML财务表，第2页"
+    },
+    {
+      "url": "https://investor.asml.com/static-files/40c56a6b-1460-4f69-9340-6a869560d24b",
+      "body_label": "管理层讲稿，第1页"
+    },
+    {
+      "url": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
+      "body_label": "正式业绩稿"
+    },
+    {
+      "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-10-26/e8eabd45-e97f-4bed-b05d-27f58665dc50.PDF",
+      "body_label": "德明利2026三季报，第2—4、18—19页"
+    },
+    {
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-15/1225607002.PDF",
+      "body_label": "江波龙业绩预告，第1—2页"
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-the-additional-first-year-depreciation-deduction-amended-as-part-of-the-one-big-beautiful-bill",
+      "body_label": "IRS《额外首年折旧指引》，2026-01-14"
+    },
+    {
+      "url": "https://www.irs.gov/publications/p946",
+      "body_label": "IRS Publication 946（2025），Special Depreciation Allowance"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "body_label": "NVIDIA 8/26所报10-Q的Recent Developments"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase",
+      "body_label": "NVIDIA回购授权公告"
+    },
+    {
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "body_label": "博通官方财报"
+    },
+    {
+      "url": "https://www.bankofengland.co.uk/CalmView/Record.aspx?id=DS%2FUK%2F633&pos=7&src=CalmView.Persons",
+      "body_label": "英格兰银行档案"
+    },
+    {
+      "url": "https://www-users.cse.umn.edu/~odlyzko/doc/bubbles.html",
+      "body_label": "Odlyzko铁路狂热研究目录"
+    },
+    {
+      "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929",
+      "body_label": "美联储历史资料"
+    },
+    {
+      "url": "https://www.imes.boj.or.jp/research/abstracts/english/me14-1-6.html",
+      "body_label": "日本央行研究"
+    },
+    {
+      "url": "https://www.cisco.com/c/dam/en_us/about/ac49/ac20/downloads/annualreport/ar2002/pdf/AR.pdf",
+      "body_label": "Cisco 2002年报"
+    },
+    {
+      "url": "https://www.federalreservehistory.org/essays/subprime-mortgage-crisis",
+      "body_label": "美联储次贷危机回顾"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm",
+      "body_label": "CoreWeave，2026-09-22发行完成备案"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+      "body_label": "英伟达 2026-08-17 8-K"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/crwv-20260123.htm",
+      "body_label": "CoreWeave 1/23交易8-K"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-coreweave-strengthen-collaboration-to-accelerate-buildout-of-ai-factories",
+      "body_label": "NVIDIA 1/26公告"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+      "body_label": "AMD Q2 10-Q"
+    },
+    {
+      "url": "https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28",
+      "body_label": "Broadcom FY26Q3 10-Q，Note 10及MD&A"
+    },
+    {
+      "url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+      "body_label": "Meta项目公告"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+      "body_label": "NVIDIA与六家机构8/10联合公告"
+    },
+    {
+      "url": "https://group.softbank/en/news/press/20261001",
+      "body_label": "SoftBank执行公告"
+    },
+    {
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx",
+      "body_label": "CoreWeave，26亿美元贷款公告，2026-08-10"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "body_label": "CoreWeave Q2 10-Q，债务与季后事项"
+    },
+    {
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Continues-to-Contract-New-Compute-Capacity-at-Higher-Prices/default.aspx",
+      "body_label": "CoreWeave 9月17日公告"
+    },
+    {
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Enters-India-Expanding-AI-Cloud-Platform-With-AdaniConneX/default.aspx",
+      "body_label": "CoreWeave印度项目公告"
+    },
+    {
+      "url": "https://www.oracle.com/news/announcement/project-jupiter-statement-on-southern-new-mexico-floods-2026-09-30/",
+      "body_label": "Oracle与STACK，2026-09-30声明"
+    },
+    {
+      "url": "https://www.oracle.com/news/announcement/project-jupiter-advances-new-mexico-workforce-growth-and-awards-nearly-1-billion-in-contracts-to-local-businesses-2026-10-23/",
+      "body_label": "Oracle，2026-10-23工程进度"
+    },
+    {
+      "url": "https://www.oracle.com/news/announcement/project-jupiter-microgrid-cuts-permitted-emissions-by-35-percent-2026-10-15/",
+      "body_label": "微网设计与许可状态"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/amd-20260223.htm",
+      "body_label": "Meta权证8-K"
+    },
+    {
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000166/amd-20250927.htm",
+      "body_label": "AMD 2025Q3 10-Q，附注15"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/d288154d8k.htm",
+      "body_label": "Akamai，相关8-K及协议公告，2026-09"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/0001193125-26-401048-index.htm",
+      "body_label": "备案接受时间"
+    },
+    {
+      "url": "https://www.akamai.com/newsroom/press-release/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand",
+      "body_label": "Akamai公告"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex101.htm",
+      "body_label": "附件10.1担保文本"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2004-148-sec-charges-qwest-communications-international-inc-multi-faceted-accounting-financial-reporting",
+      "body_label": "SEC公告2004-148"
+    },
+    {
+      "url": "https://www.sec.gov/litigation/complaints/comp18936.pdf",
+      "body_label": "SEC起诉书，第24—25页、第89—95段"
+    },
+    {
+      "url": "https://www.anthropic.com/news/series-h",
+      "body_label": "Anthropic5月H轮公告"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526251733/d160205dfwp.htm",
+      "body_label": "6/1初始融资文件"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+      "body_label": "Alphabet Q2 10-Q，现金流表、附注11和流动性部分"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526336853/d140593d424b5.htm",
+      "body_label": "ATM补充文件"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526340264/d32286d424b2.htm",
+      "body_label": "8/6债券最终招股文件"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+      "body_label": "Microsoft 7月官方电话会"
+    },
+    {
+      "url": "https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d",
+      "body_label": "Alphabet 10月6日公告原样分发"
+    },
+    {
+      "url": "https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/",
+      "body_label": "Microsoft10月7日日程"
+    },
+    {
+      "url": "https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call",
+      "body_label": "Amazon10月15日日程"
+    },
+    {
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "body_label": "OpenAI广告业务公告"
+    },
+    {
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+      "body_label": "OpenAI广告与测量更新"
+    },
+    {
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "body_label": "OpenAI3月公告"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "body_label": "Anthropic4月公告"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+      "body_label": "Claude Code2月披露"
+    },
+    {
+      "url": "https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there",
+      "body_label": "SlashData2025人口研究"
+    },
+    {
+      "url": "https://www.slashdata.co/post/14-software-developer-trends-insights-you-need-to-know-in-q1-2026",
+      "body_label": "2026Q1汇编"
+    },
+    {
+      "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "body_label": "GitHub计费方案公告"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+      "body_label": "GitHub计费上线说明"
+    },
+    {
+      "url": "https://cursor.com/blog/series-d",
+      "body_label": "Cursor公司融资公告"
+    },
+    {
+      "url": "https://cursor.com/blog/topic/press",
+      "body_label": "Cursor Press索引"
+    },
+    {
+      "url": "https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf",
+      "body_label": "METR原始论文"
+    },
+    {
+      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "body_label": "后续实验说明"
+    },
+    {
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+      "body_label": "Salesforce FY27Q2财报"
+    },
+    {
+      "url": "https://www.harvey.ai/newsroom",
+      "body_label": "Harvey新闻室"
+    },
+    {
+      "url": "https://www.alpha-sense.com/press/alphasense-surpasses-500m-in-arr/",
+      "body_label": "AlphaSense公司公告"
+    },
+    {
+      "url": "https://elevenlabs.io/blog/500m-arr-and-new-investors",
+      "body_label": "ElevenLabs公司公告"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "body_label": "Fable/Mythos 5.1发布说明"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "body_label": "Opus 5.5发布与价目"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "body_label": "Sonnet 5.5发布"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "body_label": "Haiku 5.5及缓存调价"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "body_label": "官方定价与分档"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "body_label": "Google部署与防护说明"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "body_label": "9月22日API变更记录"
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "body_label": "9月29日GPT-6.1 Sol发布"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "body_label": "Microsoft 9月25日公告，“Managing AI spend”"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "body_label": "OpenAI 评测表及脚注"
+    },
+    {
+      "url": "https://darioamodei.com/essay/the-adolescence-of-technology",
+      "body_label": "The Adolescence of Technology"
+    },
+    {
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/measuring-progress-toward-agi/measuring-progress-toward-agi-a-cognitive-framework.pdf",
+      "body_label": "DeepMind 认知框架"
+    },
+    {
+      "url": "https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results/",
+      "body_label": "时间跨度拟合与修订说明"
+    },
+    {
+      "url": "https://www.deepseek.com/en/transparency/",
+      "body_label": "DeepSeek 官方透明中心"
+    },
+    {
+      "url": "https://arxiv.org/abs/2311.02462",
+      "body_label": "Levels of AGI"
+    },
+    {
+      "url": "https://deepmind.google/research/publications/239142/",
+      "body_label": "DeepMind 后AGI研究"
+    },
+    {
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "body_label": "OpenAI 安全说明"
+    },
+    {
+      "url": "https://openai.com/index/path-to-astra/",
+      "body_label": "OpenAI训练与恢复说明"
+    },
+    {
+      "url": "https://arxiv.org/html/2403.04132v1",
+      "body_label": "Bradley–Terry评分说明"
+    },
+    {
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "body_label": "Stanford 2026 AI Index"
+    },
+    {
+      "url": "https://www.huaweicloud.com/news/2026/20260424172129152.html",
+      "body_label": "2026年4月24日适配公告"
+    },
+    {
+      "url": "https://openai.com/index/stargate-community/",
+      "body_label": "OpenAI Stargate"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/saudi-arabia-and-nvidia-to-build-ai-factories-to-power-next-wave-of-intelligence-for-the-age-of-reasoning",
+      "body_label": "NVIDIA—HUMAIN 公告"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52025DC0165",
+      "body_label": "欧盟AI行动计划"
+    },
+    {
+      "url": "https://commission.europa.eu/topics/competitiveness/competitiveness-coordination-tool-projects/ai-gigafactories_en",
+      "body_label": "欧委会AI Gigafactories"
+    },
+    {
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2229171&lang=1&reg=1",
+      "body_label": "印度PIB公告"
+    },
+    {
+      "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202508/t20250826_1400058.html",
+      "body_label": "国家发展改革委政策解读"
+    },
+    {
+      "url": "https://www.defense.gov/News/Contracts/Contract/Article/4194643/",
+      "body_label": "美国国防部合同公告"
+    },
+    {
+      "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+      "body_label": "Stanford2026年8月就业修订"
+    },
+    {
+      "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+      "body_label": "Anthropic 研究与样本说明"
+    },
+    {
+      "url": "https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity",
+      "body_label": "IMF 暴露度原文"
+    },
+    {
+      "url": "https://www.imf.org/en/blogs/articles/2026/01/14/new-skills-and-ai-are-reshaping-the-future-of-work",
+      "body_label": "IMF 2026技能研究"
+    },
+    {
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "body_label": "IEA 2026年4月预测"
+    },
+    {
+      "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+      "body_label": "IEA 2025版"
+    },
+    {
+      "url": "https://www.energy.gov/articles/energy-department-closes-loan-restart-nuclear-power-plant-pennsylvania",
+      "body_label": "美国能源部Crane贷款"
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+      "body_label": "欧委会7月31日实施说明"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+      "body_label": "交易8-K"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/0001045810-26-000078-index.htm",
+      "body_label": "SEC披露日期"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+      "body_label": "NVIDIA开放生态说明"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+      "body_label": "NVIDIA测试说明"
+    },
+    {
+      "url": "https://mlcommons.org/2026/09/chairs-mlperf-inference-v6-1/",
+      "body_label": "MLCommons方法与分析"
+    },
+    {
+      "url": "https://www.coreweave.com/blog/cognition-becomes-first-customer-for-nvidia-vera-rubin-nvl72-on-coreweave-cloud",
+      "body_label": "CoreWeave工程说明"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
+      "body_label": "NVIDIA生产部署说明"
+    },
+    {
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/mi455x-vs-mi355x/README.html",
+      "body_label": "AMD技术说明及测试脚注"
+    },
+    {
+      "url": "https://www.gao.gov/products/b-337935",
+      "body_label": "GAO B-337935"
+    },
+    {
+      "url": "https://www.bis.gov/press-release/department-commerce-rescinds-biden-era-artificial-intelligence-diffusion-rule-strengthens-chip-related",
+      "body_label": "BIS 2025年公告"
+    },
+    {
+      "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "body_label": "BIS 2026年1月13日公告"
+    },
+    {
+      "url": "https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf",
+      "body_label": "BIS 5月31日正式指引"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "body_label": "NVIDIA 8月26日展望"
+    },
+    {
+      "url": "https://www.anthropic.com/claude/fable",
+      "body_label": "官方模型页及9月1日日期"
+    },
+    {
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617692.pdf",
+      "body_label": "天孚通信公告，第2页"
+    },
+    {
+      "url": "https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/FAQ/FAQ_Cn.pdf",
+      "body_label": "港交所《互联互通常见问题》，2026-07-06，第15—16页"
+    },
+    {
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Conference-Call/",
+      "body_label": "Vertiv10月14日日程"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/2026-october.htm",
+      "body_label": "美联储2026年10月日历"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm",
+      "body_label": "维谛7月29日业绩公告，SEC附件第1—2、5、7页及现金调节表"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026050609/vrt-20260630.htm",
+      "body_label": "维谛10-Q现金流量表第5页、收入附注第10—11页及MD&A"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+      "body_label": "NVIDIA DSX Ready说明"
+    },
+    {
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_yield_curve",
+      "body_label": "美国财政部，2026年10月名义收益率"
+    },
+    {
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_real_yield_curve",
+      "body_label": "实际收益率，10月26日行"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+      "body_label": "台积电Q3业绩公告及脚注"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm",
+      "body_label": "台积电Q3业绩演示"
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "body_label": "BLS 10月2日就业报告及下期日程"
+    },
+    {
+      "url": "https://www.bls.gov/schedule/2026/10_sched.htm",
+      "body_label": "BLS 10月日历"
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "body_label": "BLS 9月CPI，Table A"
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm",
+      "body_label": "BLS 9月PPI，Table A及修订脚注"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "body_label": "美联储，2026-09-16决议"
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm",
+      "body_label": "9月经济预测表"
+    },
+    {
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&type=daily_treasury_yield_curve",
+      "body_label": "财政部9月名义表"
+    },
+    {
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&type=daily_treasury_real_yield_curve",
+      "body_label": "9月实际表"
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20260916.pdf",
+      "body_label": "FOMC纪要，第5、9页"
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20261014.pdf",
+      "body_label": "Fed褐皮书，印刷页18—19、25—26、46"
+    },
+    {
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026",
+      "body_label": "BEA 8月个人收入与支出"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "body_label": "FRED许可说明"
+    },
+    {
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-25-230895/d28189d8k.htm",
+      "body_label": "AMD 2025-10-06 8-K"
+    },
+    {
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm",
+      "body_label": "AMD 2026Q2 10-Q，Warrants"
+    },
+    {
+      "url": "https://datacenters.lbl.gov/publications/united-states-data-center-energy-2025",
+      "body_label": "LBNL 官方报告页面，2026年6月"
+    },
+    {
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7634328/content.shtml",
+      "body_label": "中国证监会，整治方案答记者问，2026-05-22"
+    },
+    {
+      "url": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/wealth-management-connect/southbound-scheme/",
+      "body_label": "HKMA，南向通银行安排，2026-05-11修订"
+    },
+    {
+      "url": "https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Supervision/Cross-boundary-WMC",
+      "body_label": "SFC，理财通专题页"
+    },
+    {
+      "url": "https://apps.sfc.hk/edistributionWeb/api/circular/openAppendix?appendix=0&lang=EN&refNo=24EC6",
+      "body_label": "2024年通函附件一"
+    },
+    {
+      "url": "https://apps.sfc.hk/edistributionWeb/api/circular/list-content/circular/intermediaries/supervision/doc?lang=EN&refNo=25EC60",
+      "body_label": "2025年补充通函"
+    },
+    {
+      "url": "https://www.hkex.com.hk/-/media/HKEX-Market/Products/Securities/Exchange-Traded-Products/Launch/Inclusion-of-ETFs-in-Stock-Connect-info-for-issuers.pdf",
+      "body_label": "HKEX，ETF互联互通发行人资料，2026-03"
+    },
+    {
+      "url": "https://www.csrc.gov.cn/csrc/c106256/c1653919/content.shtml",
+      "body_label": "中国证监会，QDII管理试行办法第二、三条，2007年公布"
+    },
+    {
+      "url": "https://www.safe.gov.cn/shanxi/file/file/20230704/261d099ca05b479c82f28d0b5e16cd57.pdf",
+      "body_label": "国家外汇管理局，个人外汇业务说明，2023年材料第16页"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2026-09/24/nw.D110000zgzqb_20260924_3-B062.htm",
+      "body_label": "南方基金，二级市场交易价格溢价风险公告，2026-09-24"
+    },
+    {
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-63",
+      "body_label": "SEC，期权投资者教育，2026-07-16更新"
+    },
+    {
+      "url": "https://www.sec.gov/investor/pubs/regsho.htm",
+      "body_label": "SEC，卖空基础风险说明"
+    },
+    {
+      "url": "https://www.cftc.gov/LearnAndProtect/EducationCenter/economicpurpose",
+      "body_label": "CFTC，期货保证金与盯市机制"
+    },
+    {
+      "url": "https://www.ifec.org.hk/web/en/investment/investment-products/leveraged-and-inverse-products/flexible-leverage-structure.page",
+      "body_label": "香港投委会，灵活杠杆结构，2026-08-03"
+    },
+    {
+      "url": "https://syndication.finra.org/content/know-you-invest-volatility-linked-exchange-traded-products",
+      "body_label": "FINRA，波动率相关交易产品风险说明，2017-10-26"
+    },
+    {
+      "url": "https://www.csrc.gov.cn/guangdong/c105589/c3fc6e55bf3e64605959a103db73ad5b0/content.shtml",
+      "body_label": "广东证监局，雪球产品主要交易要素，2021-08-24"
+    },
+    {
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=27112",
+      "body_label": "EIA：陆上油企资本投资与经营现金流，2016-07-18"
+    },
+    {
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=37820",
+      "body_label": "EIA 2018年原油生产回顾"
+    },
+    {
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=39392",
+      "body_label": "EIA 2018年能源生产与进出口"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/895126/000110465920077745/tm2023599d1_ex99-1.htm",
+      "body_label": "公司2020-06-28 SEC公告"
+    },
+    {
+      "url": "https://corporate.exxonmobil.com/news/news-releases/2024/0503_ExxonMobil-completes-acquisition-of-Pioneer-Natural-Resources",
+      "body_label": "ExxonMobil完成收购公告"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1471261/000156459018004275/cie-10k_20171231.htm",
+      "body_label": "Cobalt 2017年10-K"
+    },
+    {
+      "url": "https://www.slb.com/newsroom/press-release/2017/pr-2017-0120-q4-earnings",
+      "body_label": "SLB 2016全年业绩公告"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm",
+      "body_label": "ASML Q3 2026 US GAAP财务表，利润表及现金流量表"
+    },
+    {
+      "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Date-of-Third-Quarter-2026-Financial-Results-Conference-Call-2026-8tpGZsLS6v/default.aspx",
+      "body_label": "Alphabet公告原站"
+    },
+    {
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+      "body_label": "公司托管电话会整理稿第3—4页"
+    },
+    {
+      "url": "https://www.helionenergy.com/orion",
+      "body_label": "Helion Orion项目页"
+    },
+    {
+      "url": "https://www.cfs.energy/technology/sparc/",
+      "body_label": "CFS SPARC技术说明"
+    },
+    {
+      "url": "https://cfs.energy/technology/arc/",
+      "body_label": "ARC项目说明"
+    },
+    {
+      "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-builds-on-learnings-from-sparc-to-publish-five-peer-reviewed-papers-validating-the-physics-of-the-arc-fusion-power-plant/",
+      "body_label": "2026年6月物理基础论文公告"
+    },
+    {
+      "url": "https://blog.cfs.energy/sparc-progress-doe-milestone-approvals-reflect-cfs-power-plant-maturity/",
+      "body_label": "2026年8月工程进展"
+    },
+    {
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-developing-data-center-campus-in-armstrong-county-texas",
+      "body_label": "Crusoe项目公告"
+    },
+    {
+      "url": "https://www.oracle.com/news/announcement/oracle-announces-commitment-to-absorb-rising-point-beach-energy-costs-2026-10-02/",
+      "body_label": "Oracle Point Beach公告"
+    }
+  ]
+}

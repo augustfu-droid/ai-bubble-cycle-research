@@ -1,0 +1,88 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫 · 机构简版 V1.7</title><style>@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI周期与泡沫 · 机构简版";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.7 · 2026-10-27";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+ .front{font-size:8.8pt}.front,.toc,.references{break-after:auto;break-before:auto}.front h2,.toc h1{font-size:12pt;margin:13pt 0 6pt}.toc a{font-size:8.6pt}.toc p{display:none}</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><header><p class="brand">大队长出品 · V1.7 · 2026-10-27<br>联系邮箱：<a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p><h1>AI周期与泡沫 · 机构简版</h1><p>当前判断与公司研究入口</p></header><section class="front"><h2>免责声明</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。</p>
+<p>资料核验截至2026年10月27日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。</p>
+<p>这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。</p>
+<h2>本次更新</h2>
+<ol>
+<li>
+<p>把历史原页与校注叠加改为现行正文，原339页中的独有主题保留，重复分册合并；本册不嵌入旧版。</p>
+</li>
+<li>
+<p>目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。</p>
+</li>
+</ol></section><nav class="toc"><h1>目录</h1><p>本册统一目录，页码由当前正文生成；各篇采用全景统一章节标识，便于交叉核对。</p><a class="l2" href="#h-0000">研究总览：从资本投入到股东回报</a><a class="l3" href="#h-0001">哪些新事实改变了判断</a><a class="l3" href="#h-0002">怎样把这些事实用于公司研究</a><a class="l2" href="#h-0003">参考资料索引</a></nav><main><h2 id="h-0000">研究总览：从资本投入到股东回报</h2>
+<p>截至2026年10月27日，已取得的公开证据支持一个分化的判断：供应商收入、交付和部分经营现金仍在兑现，模型服务的收入与经营表现也有改善；与此同时，先建资产后收回现金的期限差、客户融资安排和长期采购承诺，继续要求按公司与项目分别核算。尚无充分证据确认全行业需求和融资同时崩塌，也没有理由把每个新增订单都当成已实现的投资回报。</p>
+<p>这份研究追踪同一笔资本投入怎样经过融资、建设、采购、交付和付费，最后回到可分配现金与每股价值。若资金在产业链内从投资转为采购、再成为设备收入，交易的法律和会计真实性并不因此消失；真正需要识别的是最终付款人、现金来源、风险承担者以及合同能否取消。</p>
+<h3 id="h-0001">哪些新事实改变了判断</h3>
+<p>台积电第三季度美元收入46.72十亿、毛利率66.4%，显示供应端经营兑现；以新台币财务表复算，经营现金扣除固定资产购建为476.570十亿新台币。这个结果反对“上游已经普遍无法回收现金”，却不能替下游模型公司或终端应用证明回本。<a href="https://investor.tsmc.com/english/quarterly-results/2026/q3">台积电季度资料</a></p>
+<p>Meta第三季度经营现金32.786十亿美元，扣除固定资产付款33.942及融资租赁本金0.964后，公司自由现金流为−2.120十亿美元，前三季度同口径累计仍为正11.049十亿美元。单季建设压力与累计现金韧性应同时进入模型；公司合并数据不等于AI项目独立回报。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta第三季度业绩及非GAAP调节表</a></p>
+<p>Anthropic于10月26日公开S-1，未经审计的上半年收入16.286十亿美元、经营现金3.929十亿美元；第二季度营业利润0.974十亿美元，上半年合计仍营业亏损0.693十亿美元。经营改善是必须接纳的反方证据，净亏损中非现金公允价值计量和多年合同承诺则另行分析，既不能把净亏损称为同额烧钱，也不能把递表当作融资到账。<a href="https://www.anthropic.com/news/s1-sec">申请状态</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">S-1财务与合同披露</a></p>
+<h3 id="h-0002">怎样把这些事实用于公司研究</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>模型输入</th>
+<th>需要的反证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求能否持续</td>
+<td>客户、量价、交付、利用率、续约和实际收费</td>
+<td>付费留存改善、投入趋缓而收入增长，可降低回收担忧</td>
+</tr>
+<tr>
+<td>利润是否能转成现金</td>
+<td>营运资本、折旧、现金建设、租赁和税</td>
+<td>客户预付减弱后仍有稳定现金，才支持可重复性</td>
+</tr>
+<tr>
+<td>风险落在谁身上</td>
+<td>股权、债务、采购、担保、残值和取消权</td>
+<td>融资完成、合同续接和真实回款分别核验</td>
+</tr>
+<tr>
+<td>价格是否预支增长</td>
+<td>分季度盈利、净债务、股本、倍数和折现率</td>
+<td>盈利上修未必抵消倍数回落，反之亦然</td>
+</tr>
+</tbody>
+</table>
+<p>本报告据此展开利润、循环融资、商业化、技术与国际约束、中国传导、公司估值，以及风险传导和有序消化两类情景。情景用于压力测试，不是经统计校准的概率，也不是交易指令。</p>
+<section class="references">
+
+<h2 id="h-0003">参考资料索引</h2>
+<p>本册按URL去重收录4项参考资料，保留正文中的就近链接，下面按首次引用顺序集中列出完整网址，便于打印后追溯。名称采用已核对的公司、报告期与文档类型或正文来源简称，并非一律为官方原标题；资料的期间、核验程度和访问限制以对应段落为准，不表示全部旧引文都在本轮重新取得原件。</p>
+<ol>
+<li>
+<p><a href="https://investor.tsmc.com/english/quarterly-results/2026/q3">台积电季度资料</a> · investor.tsmc.com</p>
+<p><span class="ref-url">https://investor.tsmc.com/english/quarterly-results/2026/q3</span></p>
+</li>
+<li>
+<p><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Platforms：2026年第三季度业绩公告及非GAAP调节表</a> · investor.atmeta.com  2026-10-21；正文另引用同一公告中的Class C事项，不作为另一份独立证据。</p>
+<p><span class="ref-url">https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx</span></p>
+</li>
+<li>
+<p><a href="https://www.anthropic.com/news/s1-sec">Anthropic：公开递交S-1的公司公告</a> · www.anthropic.com  2026-10-26；发行状态以原公告与申报文件为准。</p>
+<p><span class="ref-url">https://www.anthropic.com/news/s1-sec</span></p>
+</li>
+<li>
+<p><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic PBC：公开Form S-1注册声明</a> · www.sec.gov  2026-10-26；含未经审计中期财务。申请文件不等于发行生效、定价或交割。</p>
+<p><span class="ref-url">https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm</span></p>
+</li>
+</ol></section></main></body></html>

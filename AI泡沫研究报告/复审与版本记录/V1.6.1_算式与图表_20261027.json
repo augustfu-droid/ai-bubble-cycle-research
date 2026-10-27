@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "ledger_sha256": "0eefcb7e7e9cd44d3f3dac9f7a8c2f6310d0fc78a8cc1e2110c6369207e16623",
+  "checks": [
+    {
+      "label": "Meta Q3 company FCF",
+      "result": "-2.120",
+      "expected": "-2.12",
+      "passed": true
+    },
+    {
+      "label": "Meta Q3 CapEx including lease principal",
+      "result": "34.906",
+      "expected": "34.906",
+      "passed": true
+    },
+    {
+      "label": "TSMC USD revenue QoQ using rounded issuer inputs",
+      "result": "16.21890547263681592039801000",
+      "expected": "16.2189054726",
+      "passed": true
+    },
+    {
+      "label": "TSMC financial-statement simple bridge NTD million",
+      "result": "476570",
+      "expected": "476570",
+      "passed": true
+    },
+    {
+      "label": "Treasury 2Y nominal change bp",
+      "result": "-7.00",
+      "expected": "-7",
+      "passed": true
+    },
+    {
+      "label": "Treasury 10Y nominal change bp",
+      "result": "-22.00",
+      "expected": "-22",
+      "passed": true
+    },
+    {
+      "label": "Treasury 10Y real change bp",
+      "result": "-21.00",
+      "expected": "-21",
+      "passed": true
+    },
+    {
+      "label": "Treasury 2-10 spread bp",
+      "result": "32.00",
+      "expected": "32",
+      "passed": true
+    },
+    {
+      "label": "Treasury 10Y nominal-real pp",
+      "result": "2.34",
+      "expected": "2.34",
+      "passed": true
+    },
+    {
+      "label": "ASML FCF EUR million",
+      "result": "11350.4",
+      "expected": "11350.4",
+      "passed": true
+    },
+    {
+      "label": "Demingli YTD simple cash bridge CNY yi",
+      "result": "-141.9070866767",
+      "expected": "-141.9070866767",
+      "passed": true
+    },
+    {
+      "label": "PPI revised-vintage monthly acceleration pp",
+      "result": "0.8",
+      "expected": "0.8",
+      "passed": true
+    }
+  ],
+  "charts": {
+    "V1.6.1_Meta现金桥_20261027.svg": "bae92b0334c50d86de67340e1f1a4395eefede26d935e066843a24c7eed7069c",
+    "V1.6.1_利率观察_20261027.svg": "a3be8435f0e74ff29d0e8cb323d05aaea1b29b5a5b7582b27f7720435e484bac",
+    "V1.6.1_台积电季度_20261027.svg": "9015ca3454d23d4b8fad8e78bf254557aa5d5ac695c3f512363a0c67e188ed1f"
+  },
+  "boundary": "Arithmetic validation only; no forecast accuracy claim."
+}

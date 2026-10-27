@@ -1,0 +1,491 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>循环投资网络 V1.6.1</title><style>@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:18mm 17mm 19mm;@top-left{content:"大队长 · 循环投资网络";font-family:Noto;font-size:7pt;color:#687888}@top-right{content:"V1.6.1 · 正文修订 · 2026-10-27";font-family:Noto;font-size:7pt;color:#687888}@bottom-left{content:"个人研究 · 公开资料 · 不构成投资建议";font-family:Noto;font-size:7pt;color:#687888}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#687888}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{font-family:Noto,sans-serif;font-size:10pt;line-height:1.7;color:#263643;margin:0}
+.cover{page:cover;height:296mm;padding:34mm 25mm;position:relative;break-after:page;background:#fbfdff}
+.cover .line{width:52mm;height:3mm;background:#86b8d5;margin-bottom:14mm}.brand{font-size:10pt;color:#637b8e;letter-spacing:1px}
+.cover .title{font-size:29pt;line-height:1.5;color:#28516e;margin:25mm 0 12mm;font-weight:700}
+.cover .subtitle{font-size:13pt;line-height:1.9;max-width:150mm;color:#526878}.cover .date{margin-top:23mm;font-size:11pt;color:#506f85}
+.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;padding-top:5mm;border-top:1px solid #d8e7ef;font-size:9pt;color:#647b8e}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;border-bottom:.4pt dotted #bfd2df;padding:3pt 0;color:#365a72;text-decoration:none;font-size:9pt}
+.toc .l3{padding-left:12pt;font-weight:400}.toc .l2{font-weight:700;margin-top:3pt}.toc a:after{content:target-counter(attr(href url),page);float:right;color:#315e7c}
+h1,h2,h3,h4{line-height:1.45;break-after:avoid;color:#315e7c}h1{font-size:21pt}h2{font-size:16pt;border-bottom:1.2pt solid #95bbd3;padding-bottom:5pt;margin:18pt 0 10pt}h3{font-size:12pt;margin:15pt 0 7pt}h4{font-size:10.8pt;margin:12pt 0 6pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:7pt 0;orphans:3;widows:3}a{color:#315e7c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #8ab8d4;background:#f2f7fb;padding:6pt 10pt;margin:8pt 0;color:#536776}
+table{border-collapse:collapse;width:100%;margin:9pt 0 13pt;font-size:8.3pt;table-layout:auto}thead{display:table-header-group}tr{break-inside:avoid}th{background:#dcecf6;color:#244b66;font-weight:700;text-align:left}th,td{border:.5pt solid #c7d9e4;padding:5pt 6pt;vertical-align:top;line-height:1.55;overflow-wrap:normal;word-break:normal;hyphens:none}td:first-child{min-width:17mm}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:8pt 0}li{margin:6pt 0}img{display:block;max-width:100%;max-height:210mm;object-fit:contain;margin:12pt auto}figure{break-inside:avoid}code{font-family:Noto;font-size:.95em;background:#edf3f7;padding:1pt 3pt}hr{border:0;border-top:.5pt solid #cadbe5;margin:14pt 0}
+@media screen{body{max-width:960px;margin:0 auto;padding:20px;background:white}.cover{height:auto;min-height:75vh;padding:40px 28px}.cover .foot{position:static;margin-top:45px}.front,.toc,main{padding:10px 12px}.toc a:after{content:none}table{display:block;overflow-x:auto}} .keep-together,.tariff-table{break-inside:avoid} .revision-start{break-before:page}  .revision-group{break-inside:avoid} </style></head><body><section class="cover"><div class="line"></div><div class="brand">大队长 · AI产业周期研究</div><div class="title">循环投资网络</div><div class="subtitle">区分投资、采购、承诺与担保，沿合同寻找最终付款来源。</div><div class="date">V1.6.1 · 正文修订<br>2026-10-27</div><div class="foot">按本篇主题组织证据与分析<br>个人研究 · 基于公开信息 · 不构成投资建议</div></section><section class="front"><h2>免责声明与阅读边界</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构观点，不构成个性化投资建议、收益保证或交易指令。技术和商业判断可能错误，信息也可能随后修订。</p>
+<p>V1.6.1沿用V1.5.1主题正文并同步V1.6完整校注勘误，增量资料检索截止2026年10月27日；各项财务、统计、行情与政策数据以正文明确的期间或观察日为准，不能全部理解为该日现值。公司指引、研究假设和已实现结果分开阅读；缺失的原始证据不以推测填补。</p>
+<p>本版按主题重编，不沿用旧版分页；旧版与历史档案保留不改。历史评分和预测记录只用于追溯，未完成统计校准的数字不属于经过验证的崩盘概率。审计条目总数不等于本轮全部事实复核通过。</p>
+<h2>本版修订说明</h2>
+<ol>
+<li>循环篇：Anthropic公开S-1与长期算力承诺分别核对；Jupiter工程合同、已付款和算力投产分开，最高承诺额不重复相加。</li>
+</ol>
+<p>逐项勘误与修订见文末《本版逐项修订记录》，可从目录跳转。</p>
+<p>2026-09-08编排勘误：本册正文从第一章起连续编号，目录和当前章节引用同步；导读不占章号。母稿对应关系见文末“分册编号勘误”，研究数据与结论未因本次编排修改。</p></section><section class="toc"><h1>目录</h1><p>目录及页码依据本版正文生成；PDF内可点击跳转。</p><a class="l2" href="#h-0000">第一章：资本循环网络——出资、采购、融资与担保怎样相互连接</a><a class="l3" href="#h-0001">本篇内容地图与逻辑链</a><a class="l3" href="#h-0002">1.1 三大循环关系网络</a><a class="l3" href="#h-0006">1.2 核心交易明细：已执行与未执行分栏</a><a class="l3" href="#h-0007">1.3 交易性质分层：为什么撤下6100亿总数</a><a class="l3" href="#h-0011">1.4 合同与融资中的风险集中点</a><a class="l3" href="#h-0017">1.5 量化估算：不再用单一“循环乘数”代替现金模型</a><a class="l3" href="#h-0021">1.6 与2000年前后电信设备周期的比较</a><a class="l3" href="#h-0024">1.7 Anthropic：公开递表以后，融资与采购终于可以分账看</a><a class="l3" href="#h-0029">1.8 Alphabet融资：从初始计划更新到实际执行</a><a class="l3" href="#h-0033">1.9 事件总判断：风险向哪里移动，而不只是金额变大</a><a class="l3" href="#h-0037">1.10 我可能错在哪里</a><a class="l2" href="#h-0038">本版逐项修订记录</a><a class="l3" href="#h-0039">分册编号勘误 · 2026-09-08</a><a class="l3" href="#h-0040">循环投资网络：逐项修订</a></section><main><h2 id="h-0000">第一章：资本循环网络——出资、采购、融资与担保怎样相互连接</h2>
+<blockquote>
+<p>V1.6.1 正文修订｜增量核验截至2026-10-27，北京时间。金额无特别说明均为十亿美元，GW为吉瓦。本轮依据Anthropic公开S-1更新上市状态与算力合同，补入Oracle工程付款及Meta新股类安排；既有交易保留原统计期，没有新执行证据的额度、担保与建设计划不升级为已到账或已交付。</p>
+</blockquote>
+<h3 id="h-0001">本篇内容地图与逻辑链</h3>
+<p>NVIDIA在8月签署的OpenAI相关建设担保，风险上限可达105，首批义务预计到FY2029、相应机房具备服务条件并开始租赁后才逐步生效。它比旧文笼统的“投资客户、客户再买GPU”更具体：供应商不只提供设备，还为客户未来的土地、电力和机房支付提供部分信用支持，而自己希望由此获得长期设备需求。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">NVIDIA 8/17相关8-K</a></p>
+<p>这不是105已支付，也不是105已违约。真正值得研究的是：建设未完成、客户不能履约、设备迭代或第三方不再承接时，各方分别承担什么义务。股权投资可能损失本金；授信可能尚未提款；多年采购只在履约进度中转成收入；担保有触发条件。把这些加在一起叫“循环融资总额”，会使风险识别失去最关键的期限与状态。</p>
+<p>本篇保留资本循环的研究问题，但不再预设所有循环都是虚假交易。一个产业内企业互相采购并不异常，融资促成的真实交付也可以按照准则确认收入；问题在于，收入与外部终端付款之间还隔着多少次融资，以及哪一方最终承担项目不能赚回成本的损失。</p>
+<h3 id="h-0002">1.1 三大循环关系网络</h3>
+<h4 id="h-0003">1.1.1 股权与商业合同：两条方向相反的线</h4>
+<table>
+<thead>
+<tr>
+<th>资金或义务方向</th>
+<th>法律/经济内容</th>
+<th>研究上要问的事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云商、芯片商→模型公司</td>
+<td>已出资股权或未来资本承诺</td>
+<td>实际付了多少，何时支付，亏损由谁承担？</td>
+</tr>
+<tr>
+<td>模型公司→云商</td>
+<td>云服务合同、最低消费或容量协议</td>
+<td>是否可取消，是否与供给性能或建设里程碑绑定？</td>
+</tr>
+<tr>
+<td>云商/算力运营商→设备供应商</td>
+<td>设备采购与付款</td>
+<td>已交付和应收多少，账期是否延长？</td>
+</tr>
+<tr>
+<td>外部客户→模型公司/云商</td>
+<td>订阅、API、企业服务付费</td>
+<td>是否覆盖推理、研发、基础设施与资本成本？</td>
+</tr>
+</tbody>
+</table>
+<p>这张图中最容易被遗漏的是最后一行。前三行可以让建设持续一段时间，却不能单独证明整条链的投资回报。判断循环能否持续，最终要看圈外客户带来的现金，或外部资本是否愿意继续承担亏损与建设风险。</p>
+<p>另一方面，不能把前三行每次付款都视为重复收入。芯片、基础设施和模型服务是不同产品，供应链各环节本来会分别确认收入。只有在测算最终市场规模、生态净融资或资本回报时，才需要做合并与抵销，而不是事后给全部合法营业收入贴上“虚假”的标签。</p>
+<h4 id="h-0004">1.1.2 项目融资：设备与合同共同支持借款</h4>
+<p>算力运营商可以把GPU、客户合同及相关回款质押给贷款方，以贷款支付设备和建设。风险由客户信用、可实现收入、设备残值、利率和期限共同决定。客户信用强，并不保证设备期满续租价格；设备账面价值高，也不保证违约处置时能按账面值出售。</p>
+<p>当债务期限长于底层客户合同，贷款不再完全由已有合同覆盖，需要依赖续租、转租、其他现金或再融资。2.4将以CoreWeave最新贷款展示这一变化，而不是沿用一个“GPU贷款利率14%”代表全公司的债务。</p>
+<h4 id="h-0005">1.1.3 担保与承购：融资风险向供应商回传</h4>
+<p>供应商承诺购买客户的未售算力、保证部分租金或支持机房建设，可以降低客户获得融资的难度。若第三方使用量上升，这些义务可能减少；如果使用量不及预期，原本的设备卖方又承担了下游现金支出。</p>
+<p>因此，分析应同时保留有利路径与风险路径。前者是支持建设、交付增长、终端需求接上；后者是账面订单继续增长，但终端现金不足，新增投入只能继续由股权、债务或担保支持。区分两者，需要合同执行数据，不能靠几家公司在同一张关系图上互相连线就下结论。</p>
+<h3 id="h-0006">1.2 核心交易明细：已执行与未执行分栏</h3>
+<p>下表不是完整的产业交易普查，只纳入本轮核到一手文件、且对研究结论重要的安排。不同栏之间不求和，同一交易后续变更也不能再加成一笔新交易。</p>
+<table>
+<thead>
+<tr>
+<th>关系/项目</th>
+<th>可确认事实及统计时点</th>
+<th>状态与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon→OpenAI股权</td>
+<td>Q1投入15；Q2再投入13.7；Q2 10-Q披露季后已付剩余21.3</td>
+<td>合计50为逐笔出资序列；截至6/30已投入28.7，季后部分另列</td>
+</tr>
+<tr>
+<td>AWS↔OpenAI商业合同</td>
+<td>原有38多年合同，Q1宣布扩大100、期限8年</td>
+<td>商业安排，包含AWS芯片性能义务；不是Q2收入或同期现金回流</td>
+</tr>
+<tr>
+<td>Amazon→Anthropic股权</td>
+<td>Q2分别投入Series G 5和Series H 5</td>
+<td>同期出资分列；不与融资轮总额重复求和</td>
+</tr>
+<tr>
+<td>Amazon→Anthropic后续融资</td>
+<td>上限20，按算力交付里程碑逐步可用；H轮后剩余上限15</td>
+<td>剩余额度不是已经提款15</td>
+</tr>
+<tr>
+<td>AWS↔Anthropic商业合同</td>
+<td>10/26公开S-1披露：2026/5至2036/4最低消费110，实际使用不足时需按条款补差</td>
+<td>更新同一合作的合同口径，不与Q2“扩大逾100”重复相加；并非已付现金</td>
+</tr>
+<tr>
+<td>NVIDIA→CoreWeave股权</td>
+<td>1/23已完成2现金出资，每股87.20；1/26官宣</td>
+<td>更正旧文“7/9新增”；同一笔不得再加一次</td>
+</tr>
+<tr>
+<td>AMD→OpenAI/Meta权证</td>
+<td>各最多1.6亿股，行权价0.01美元</td>
+<td>截至6/27均未归属、不可行权；不是已付款或确定稀释</td>
+</tr>
+<tr>
+<td>NVIDIA→OpenAI相关建设信用支持</td>
+<td>8月签约、总上限105；约4.25GW、分期生效</td>
+<td>或有风险；不等于当期出资105</td>
+</tr>
+<tr>
+<td>NVIDIA与六家资本机构→独立算力融资平台</td>
+<td>8/10宣布签署谅解备忘录，拟长期动员逾500第三方资本</td>
+<td>目标，不是已募资或已提款；初步安排仍可能不形成最终协议</td>
+</tr>
+<tr>
+<td>Oracle FY27Q1扩建资金</td>
+<td>当季CapEx 28.499；客户预付款11.363；ATM增发净到账19.909</td>
+<td>预付款、股权资金和经营收入分开；不把融资现金写成项目回报</td>
+</tr>
+<tr>
+<td>Broadcom AI XPV</td>
+<td>初始35支持逾1GW；五年租赁Backstop全部部署后最大未折现潜在责任约29</td>
+<td>29不是已付损失；42条件性可转票据截至8/2尚未发行</td>
+</tr>
+<tr>
+<td>Meta/BlackRock El Paso</td>
+<td>宣布80%/20%合资，约14开发成本；Meta租赁并提供残值担保</td>
+<td>公告安排与交割、租赁开始分开，不能只凭持股20%称风险出表</td>
+</tr>
+<tr>
+<td>SoftBank→OpenAI股权</td>
+<td>10/1第三笔10已执行，本轮30完成；累计出资64.6、约13%持股</td>
+<td>10包含在30内，30包含在累计额内；不能相加，也不是OpenAI经营现金</td>
+</tr>
+</tbody>
+</table>
+<p>资料：<a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm">Amazon Q2 10-Q</a>、<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/crwv-20260123.htm">CoreWeave 1/23交易8-K</a>、<a href="https://nvidianews.nvidia.com/news/nvidia-and-coreweave-strengthen-collaboration-to-accelerate-buildout-of-ai-factories">NVIDIA 1/26公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm">AMD Q2 10-Q</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">NVIDIA担保8-K</a>、<a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm">Oracle FY27Q1 10-Q</a>、<a href="https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28">Broadcom FY26Q3 10-Q</a>、<a href="https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/">Meta项目公告</a>。</p>
+<p>Anthropic的10月26日S-1已使Lambda、SpaceXAI和Nscale的部分合同进入可核范围，见2.7.2；本轮补齐的是合同义务与取消条件，尚未取得逐笔付款及全部实际交付，不能把这些数改作网络新增现金。Mistral等未完成本轮逐笔核验的关系仍不进入总量，未列入不代表交易不存在。</p>
+<p>融资平台一行的来源为<a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital">NVIDIA与六家机构8/10联合公告</a>及<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVIDIA 8/26所报10-Q的Recent Developments</a>。公告与定期报告相互补足的是目标及条款边界，不能算作两次融资；具体风险见1.5.3。</p>
+<p>SoftBank的10月1日公告属于旧截止日同日补核：第三笔10由9月24日外币高级债融资所得支持，9月30日取消剩余10的未提款桥贷额度，桥贷借款已清偿。它确认新股权资金已进入OpenAI，不证明OpenAI项目经营回本；债券融资和随后股权出资是同一资金链的两端，不能再合计成双倍生态新增资金。<a href="https://group.softbank/en/news/press/20261001">SoftBank执行公告</a></p>
+<h3 id="h-0007">1.3 交易性质分层：为什么撤下6100亿总数</h3>
+<h4 id="h-0008">1.3.1 五类义务的计量并不相同</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>应记的量</th>
+<th>不应替代成什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股权出资</td>
+<td>实际支付、账面值、未支付资本承诺分别记录</td>
+<td>不把持仓市值当历史投入，不把额度当现金</td>
+</tr>
+<tr>
+<td>债务/授信</td>
+<td>已提款本金、未提款额度、利率、抵押和到期表</td>
+<td>不把新融资额度全部当新增债务余额</td>
+</tr>
+<tr>
+<td>服务/采购合同</td>
+<td>剩余合同额、当期交付、已收/已付及解约条款</td>
+<td>不把多年RPO、GW容量当当期收入</td>
+</tr>
+<tr>
+<td>权证等客户激励</td>
+<td>股数、行权价、归属条件、会计计量</td>
+<td>不以目标股价×最大股数称当期现金融资</td>
+</tr>
+<tr>
+<td>担保/残值承诺</td>
+<td>最大风险、触发条件、开始时间和已确认负债</td>
+<td>不把最大上限当必付损失或当期债务</td>
+</tr>
+</tbody>
+</table>
+<p>旧标题把不同性质、不同时间、可能同一底层资产的金额合成6100亿，随后又扩到7000亿、7800亿和其他口径。正文即使补一句“不可加总”，仍会让读者把这个数字当作研究结果。因此本版直接撤销它，而不是换一个更大的总数。</p>
+<h4 id="h-0009">1.3.2 现金逐笔流转，不等于可以追踪同一张钞票</h4>
+<p>如果云商投资模型公司，模型公司同时向云商买算力，两笔现金有相反方向，但公开报表通常不能证明“投资款恰好全部回流”。模型公司还可能支付工资、其他供应商、研发和税，资金又与其他投资人出资混合。商业合同可以说明绑定强度，不能自动提供逐笔资金来源的穿透证明。</p>
+<p>反之，只要公开文件明确把融资额度与算力交付挂钩，就不能当作彼此完全独立的交易。Amazon对Anthropic安排已提供这样的直接线索：未来资金可用性与交付里程碑有关。风险判断应围绕哪些里程碑、供应商性能责任、终端客户付费以及未用额度的期限展开。</p>
+<h4 id="h-0010">1.3.3 数据底表的最低要求</h4>
+<p>每条关系至少登记：出资人和最终风险承担者、收款人和法律实体、合同币种、公告日与发生日、已执行金额、剩余额度、期限、担保和退出条件、报表位置及原件链接。报表未披露的行填写“未披露”，不能用媒体摘要或总额差额补全。</p>
+<p>只有在同一截止日、同一币种与净额规则下，才能做有限范围合计。例如，Amazon对OpenAI某轮的逐笔股权支付可以对账；它不能与AWS未来云合同再次相加，宣称公司已经产生同额AI新增需求。</p>
+<h3 id="h-0011">1.4 合同与融资中的风险集中点</h3>
+<h4 id="h-0012">1.4.1 CoreWeave：股权支持之外，续租风险进入债务结构</h4>
+<p>NVIDIA的2现金出资在1/23已经完成，官方1/26公告把它与2030年前建设逾5GW的合作联系起来。旧正文将它误写为7月股价下跌后的新救援，还在累计敞口中再加一次。本版撤回这个事件时点和“跌后托底”的因果解释。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/crwv-20260123.htm">成交8-K</a></p>
+<p>更值得纳入当前正文的是8月DDTL 5.5：额度2.6、期限约5年，而底层客户合同平均约3年，利率为SOFR加5.50%。公司明确表示可以续约或转租给其他客户，但要满足信贷合同条件；公司认为这体现贷款人信心，也让它接触更广泛的客户。对研究者而言，这同时意味着合同期满后租价和残值风险进入了还款模型。<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx">8/10融资公告</a></p>
+<p>10-Q的季后事项披露，这笔额度已提款1.2，不能继续只把2.6当作全部未使用承诺，也不能把额度2.6全部列作新增已提款。文件还区分有追索与非追索安排：DDTL 4.0为附有限例外担保的非追索结构，其他若干贷款受母公司担保，不能统称“已把风险完全放在项目公司”。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm">CoreWeave Q2 10-Q，债务与季后事项</a></p>
+<p>分析上的压力测试应保持简单而透明：若三年后原客户不续约，剩余两年需要由新客户净回款、设备处置或其他资金补齐。先估可出租设备的性能、单位租价和维护成本，再测利息、本金与契约约束；没有这些输入，不能仅凭“5年对3年”宣布违约，也不能因贷款超额认购就认定风险消失。</p>
+<p>9月17日，公司又披露第三季度新签3—6个月客户合同，相关集群每兆瓦对应的年化收入约4000万美元。这支持短期算力租价仍强，却不是一年已收现金，也不是全公司统一租价；不能乘以全部4.2GW承诺电力来外推集团收入。公告同时重述的逾250亿美元新增承诺及4.2GW电力为8月既有披露，不再计成9月新增。<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Continues-to-Contract-New-Compute-Capacity-at-Higher-Prices/default.aspx">CoreWeave 9月17日公告</a></p>
+<p>9月22日已完成的可转债总本金为4.2，其中包含全额行使的0.5增购权；扣初始购买人折扣后所得约4.137，减去0.5662的capped call交易成本，余约3.5708，尚未扣其他发行费用。按2.875%票息计算，年现金付息约0.12075；2033年到期及转股条件影响资本结构，低票息不能与普通债直接相比后称为信用风险下降。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm">CoreWeave完成发行8-K</a></p>
+<p><img alt="CoreWeave可转债本金与可支配所得之间的差额" src="../13_全景版配图/V1.5.1_CoreWeave融资现金桥_20260924.svg" /></p>
+<p>这两条消息同时加强短期承接能力，也使期限问题更值得跟踪：3—6个月短约不能直接覆盖多年建设与还债，新增融资不能代替经营回收。上文约5年贷款与约3年客户合同是另一笔融资，不能假定这些新短约全部抵押给它；应分别建表，再看续租、替代客户和残值能否接住长期义务。</p>
+<p>10月7日公布的印度项目仍处于计划阶段：CoreWeave拟在Navi Mumbai部署240MW、分三栋各80MW建筑，首期预计2028年中可用，另最多240MW只是扩展机会。不能写成480MW已经运营，也不能把公告重述的8月4.2GW承诺电力再算一次新增。对模型，它增加的是待跟踪的长周期交付与资金需求，公告尚未给融资金额或终端客户现金。<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Enters-India-Expanding-AI-Cloud-Platform-With-AdaniConneX/default.aspx">CoreWeave印度项目公告</a></p>
+<h4 id="h-0013">1.4.2 OpenAI—Oracle—NVIDIA：收入能见度与建设信用相互捆绑</h4>
+<p>Oracle FY27Q1已给出两面证据。IaaS收入7.388、同比增长121%，公司当季新增逾30的AI云合同，RPO由FY2026末638增至664；但664中约13%预计未来12个月确认，约37%在第13—36个月、34%在第37—60个月，其余更晚。RPO说明未来收入能见度，不是近一年现金或利润。<a href="https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf">Oracle FY27Q1业绩</a>、<a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm">Oracle FY27Q1 10-Q</a></p>
+<p>建设端更能说明资金循环：当季资本开支28.499，经营现金23.103中包含11.363具有重大融资成分的客户预付款，自由现金流为−5.396；公司又通过ATM增发净募19.909，同时偿还4.202长期债务。8月31日短期借款7.625、长期借款117.712，合计125.337。现金和借款没有在本季形成即时流动性事故，但扩建明显依赖经营现金中的带融资成分客户预付款，以及经营现金之外的股权资金。</p>
+<p>Oracle另有约288未起租租赁承诺，基本都是数据中心，预计FY27Q2至FY29开始、通常持续15—19年，尚未反映在8月31日资产负债表。它不能与RPO、当季资本开支或已确认租赁负债相加成“总风险”，却把客户履约、机房交付和资产残值的观察期拉得更长。</p>
+<p>NVIDIA的SB Energy担保则把风险延长到建设和租赁阶段：105总上限对应约4.25GW，按不同机房开始服务逐步生效；客户付款后敞口递减，只涵盖明确的部分租金和电力付款，不涵盖整个园区成本。额外约3.8GW信用支持是NVIDIA可自行决定是否行使的选项，不能预先算成已生效担保。未来收入机会与风险上限也不是同一量，不能拿管理层预期的多代GPU销售额直接抵销担保。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">担保8-K</a></p>
+<p>Broadcom 9月10日提交的FY26Q3 10-Q又把同一结构写得更直白：AI XPV以金融伙伴出资、Broadcom提供技术，弥合前沿模型实验室当前现金流与前置投资之间的缺口。初始35安排支持逾1GW；全部机架部署后，五年租赁Backstop最大未折现潜在责任约29，客户违约时按未偿Backstop的85%减处置机架价值计算。该责任公允价值目前不重大且尚无付款，因此29不是当期负债或损失。<a href="https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28">Broadcom FY26Q3 10-Q，Note 10及MD&amp;A</a></p>
+<p>同一文件还允许客户在特定条件且有需要时，向Broadcom发行总本金最高42的可转票据，所得只能用于客户的租赁义务；截至8月2日一张也未发行。这是新的条件性融资机制，不是Broadcom已经提供42融资、取得42应收或确认42收入。Broadcom另有126.821不可无罚取消、具法律约束力的采购承诺，主要是库存，其中FY2027为52.674、FY2028为72.952；公司没有披露其中AI占比，而且总额较上一季度略低，不能与29和42相加，也不能写成“本周新增198”。</p>
+<p>Oracle、NVIDIA与Broadcom三条线共同提示的是集中度和期限风险，并非某家已经无力履约。对Oracle应观察RPO转收入、回款、建设投入与融资成本；对NVIDIA观察交付后应收、客户支持义务和担保是否触发；对Broadcom观察AI机架部署、租赁付款、票据发行、资产处置与采购承诺消化。公司现金垫能缓冲风险，但不能使一份长期或有义务失去经济意义。</p>
+<p>Oracle与STACK于9月30日对Jupiter洪水的联合声明称，洪水到达园区，但关键基础设施未损坏、项目仍按原计划推进。10月23日Oracle进一步披露，截至9月30日已向30家新墨西哥州企业授予超过0.994的合同；10月23日公告另称迄今已支付超过0.160，未单列付款截止日。这比单纯建设目标多了一层实际付款证据，却还不是GPU投产或客户验收；合同授予额、已付款和园区总投资不能相加。<a href="https://www.oracle.com/news/announcement/project-jupiter-statement-on-southern-new-mexico-floods-2026-09-30/">Oracle/STACK洪水声明</a>、<a href="https://www.oracle.com/news/announcement/project-jupiter-advances-new-mexico-workforce-growth-and-awards-nearly-1-billion-in-contracts-to-local-businesses-2026-10-23/">Oracle工程与付款更新</a></p>
+<p>供电许可仍是待兑现环节。10月15日Oracle与YGI提交燃料电池微网设计修订，称预计排放下降约35%、IT容量保持不变，但公告明确是对尚待批准空气许可申请的补充，不能写成许可已经获批。10月23日关于就业、投资和经济影响的预测也以空气许可及管线获批为前提；下一步应核许可决定、建设节点和客户接收，不用公司预测替代监管结果。<a href="https://www.oracle.com/news/announcement/project-jupiter-microgrid-cuts-permitted-emissions-by-35-percent-2026-10-15/">微网设计与许可状态</a></p>
+<p>10月26日Anthropic公开S-1补充了Broadcom交易另一方的设备租赁与母公司担保条款，见2.7.2，但没有据此把上文截至8月2日尚未发行的42条件性票据直接改成已提款。供应商Backstop、客户租金与潜在融资可能涉及同一批设备，必须逐项对账，不能合计成三份独立风险。</p>
+<h4 id="h-0014">1.4.3 AMD—OpenAI/Meta：权证激励不能按目标股价折成现金</h4>
+<p>AMD分别向OpenAI与Meta发行最多1.6亿股权证，行权价0.01美元，归属与Instinct GPU采购里程碑、股价条件等挂钩。Meta最后一档涉及每股600美元门槛；这不是今天可兑现的每股价值。两份权证截至6/27均未归属或可行权，Q2 10-Q明确称其对当季及半年财务报表没有影响。<a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm">AMD Q2 10-Q</a>、<a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/amd-20260223.htm">Meta权证8-K</a></p>
+<p>原文以最大股数乘目标股价得到“名义1900亿”，再计入网络规模，实际上把完全归属、高股价与全部采购同时成立的远期情景当成当前融资。修订后保留两个观察：芯片商通过权益激励争取大客户；采购扩大若触发权证，会影响后续股权与会计。实际影响要随归属、行权与财务确认逐期更新，不能提前一次记足。</p>
+<p>本期没有报表影响，也不等于未来只有股数稀释。AMD披露的处理机制包括相关收入确认时按授予日公允价值冲减收入，以及负债分类期间将公允价值变动计入其他损益；分类条件与当期状态需逐期核对。完整机制见<a href="12_全景版.html">《全景版》</a>附篇A.2.2及<a href="https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000166/amd-20250927.htm">AMD 2025Q3 10-Q附注15</a>。</p>
+<p>6GW是合作规模，亦不能无模型换算为900亿或1000亿收入。需要每代产品、交付节奏、单价与合同边界，且部分购买可经第三方进行。缺少正式总价时，本篇只保留官方容量和条件。</p>
+<h4 id="h-0015">1.4.4 美光：锁定采购与客户押金不是同一笔收入</h4>
+<p>9月30日官方讲稿披露26份战略客户协议（SCA），金融承诺32B，但不是全部现金已收；约150B剩余履约义务（RPO）只计已有价格框架的协议，按承诺数量和最低价格计算。2027日历年HBM绝大部分bit供应已签约、约定价格同比显著上升，是公司的合同披露，不能扩大成全部产品售罄，也不能将RPO、金融承诺和押金相加。<a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf">美光讲稿，第3—4、6页</a></p>
+<p>FY2026融资现金流所列客户合同押金流入为12.747B；期末约12.7B客户现金押金与资产负债表12.895B非流动客户合同负债是不同字段。押金按融资分类，并在客户达到最低采购要求后于协议后半段逐步退还；它缓冲供应商建设资金，不增加本期经营现金，也不自动证明终端客户的项目回报。下一步应核合同兑现、返还条件及新产能支出，而不是给押金贴上永久利润的标签。<a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">美光财务表</a>、<a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf">官方讲稿，第8—9页</a></p>
+<h4 id="h-0016">1.4.5 Akamai与Anthropic：七年合同的收入要在建设之后兑现</h4>
+<p>Akamai 9月24日公开的8-K记录9月18日签订的两份项目计划，Anthropic合计承诺约11.6B，各自从服务开始日起计七年；付款受交付、可用性及终止条款限制。该备案美东9月24日16:14:58才被接受，折合北京时间9月25日04:14:58，属于上一版之后的新公开证据，不是9月25日才签约。<a href="https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/d288154d8k.htm">SEC 8-K，Item 1.01</a>、<a href="https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/0001193125-26-401048-index.htm">备案接受时间</a></p>
+<p>公司预计相关总资本支出约5.5B、2026年增加约1.7B，而当年收入指引不变。这是明确的先建设、后确认收入安排，不宜用11.6减5.5当利润，因为运营、融资、税项和现金时序尚未计入；额外最多9B扩展只是潜在合同，并未完成。<a href="https://www.akamai.com/newsroom/press-release/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand">Akamai公告</a></p>
+<p>权证首批40%以Plan 3首次付款等条件为归属前提，其余批次与新增合同挂钩，不能写成Anthropic已持有约5%普通股。同一备案还授权Jabil采购约1.7B内存，Jabil收到组件时，Akamai向其支付对应供应商发票金额；它不证明已经付款，也不应再与上述建设增量机械相加。需求承诺增强与供应商先垫资金可以同时成立，后续要核客户付款、实际交付、资金成本和取消条款，而不是只看合同标题。</p>
+<h3 id="h-0017">1.5 量化估算：不再用单一“循环乘数”代替现金模型</h3>
+<h4 id="h-0018">1.5.1 原式子能说明什么，不能说明什么</h4>
+<p>旧文使用I₀/(1−r)，设r=0.8得到5倍。数学上这是无限等比级数；经济上却需要每轮资金以相同比例、无时间损耗、无成本泄漏、可无限再投入等强假设。现实中设备采购、工资、税、利润留存、亏损、交付时滞和融资约束都使这些条件不成立，r也没有公开可复算数据。</p>
+<p>本版撤回“系统放大5倍、r下降必然腰斩”的实证表述。若教学中使用该公式，只能标注为不含现实摩擦的思想实验，不能据此削减NVIDIA收入、计算泡沫指数或预测股价。</p>
+<h4 id="h-0019">1.5.2 按主体重建资金桥</h4>
+<p>可操作的起点是每家企业的现金约束：</p>
+<blockquote>
+<p>期末现金 = 期初现金 + 经营现金 + 新股权现金 + 净借款 − 现金资本开支 − 股权投资 − 股息回购 − 未计入前项的租赁及其他支付。</p>
+</blockquote>
+<p>这里“净借款”已扣还本，不能再扣同笔本金；经营现金已经包含的利息与经营租赁，也不能重复扣。模型应直接贴公司现金流表与附注，再为项目投入、合同现金和担保付款建立到期表。</p>
+<p>对某一项目，可以另算“现有客户合同覆盖期/债务期限”“未来十二个月可用现金/刚性付款”和“客户集中度”。这些指标能指出资金缺口在哪里，但阈值要由具体契约和风险承受能力确定，不使用跨公司统一的武断及格线。</p>
+<h4 id="h-0020">1.5.3 NVIDIA最新承诺表：大数的意义在分类</h4>
+<p>7/26的10-Q将供应与产能承诺列为279、公司自用云服务29、未起租数据中心25、股权投资25和资本支出8，合计366；另列AI云协议36与拟服务第三方的未起租机房20，合计56。担保又单独呈现。这些是公司披露的不同合同类别，不能改名为“向客户循环注资422”。供应承诺主要涉及生产所需组件，亦有部分可取消、改期或调整但可能产生费用。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVIDIA Q2 10-Q，承诺附注</a></p>
+<p>AI云协议的结构值得保留：云商购入NVIDIA基础设施，NVIDIA作出云服务承诺；云商可以将资源转售给第三方，NVIDIA义务随使用而减少，满足条件时还可参与收入分成。这比旧版“循环回款”更接近合同机制，也表明必须跟踪第三方使用与付款，而不是只看宣布的额度。</p>
+<p>原“供应商融资1100亿/收入67%，为朗讯2.8倍”的分子包含计划、承诺与不同性质支持，分母又混用年度和滚动收入；没有可比底表，本版撤销比例及其历史倍数比较。最新承诺很大是事实，风险大小仍取决于执行时间、可调整程度与对手方。</p>
+<p>8月10日公布的安排，拟通过融资平台引入更多外部资本。NVIDIA与Apollo、BlackRock、Blackstone、Brookfield、Goldman Sachs和KKR签署谅解备忘录，目标是长期动员逾500的第三方资本，并非六家各承诺500，也不是NVIDIA出资500。8月26日10-Q还限定：资金结构拟由资本机构独立承销和提供，初步安排可能无法形成最终协议；NVIDIA可自行选择，为部分特定项目提供有限残值支持。独立融资可能增加供给，残值支持又可能把部分风险留给供应商，不能把两面简化为“资金已经全部出表”或“全部由NVIDIA兜底”。截至本版，尚未核得平台最终协议及实际到账总额。<a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital">联合公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">10-Q平台安排</a></p>
+<p>这里尤其不能把500目标与105担保直接相加。10-Q及其附件10.1中的105上限对应俄亥俄州Piketon的SB Energy PORTS项目、约4.25GW租赁安排，不是六家平台的统一担保条款；项目是否包含在平台将来支持的资产中，公开资料尚不足以逐项去重。研究底表应先对应项目、法律实体和风险承担者，再分列平台募资目标、实际投入与担保上限，不把同一建设资产的融资和信用支持重复算作新增需求。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">10-Q项目说明</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex101.htm">附件10.1担保文本</a></p>
+<h3 id="h-0021">1.6 与2000年前后电信设备周期的比较</h3>
+<table>
+<thead>
+<tr>
+<th>比较维度</th>
+<th>保留的历史问题</th>
+<th>本轮怎样核查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供应商支持客户</td>
+<td>客户融资能促进设备销售，也可能把信用风险回传</td>
+<td>股权、应收账期、承购与担保逐项拆分</td>
+</tr>
+<tr>
+<td>长期需求预测</td>
+<td>行业增长可能被多个主体重复外推</td>
+<td>去重终端客户与容量，分开已交付与合同上限</td>
+</tr>
+<tr>
+<td>库存和采购承诺</td>
+<td>客户放缓时，供货商可能来不及调整</td>
+<td>存货增长、减值、取消成本与延迟交货</td>
+</tr>
+<tr>
+<td>现金缓冲</td>
+<td>强现金能拖慢风险暴露，但不能替终端付费</td>
+<td>现金、可变现资产、债务到期与或有义务</td>
+</tr>
+<tr>
+<td>风险转移</td>
+<td>项目与金融工具会改变谁承担损失</td>
+<td>法律追索、担保、抵押物和关联交易</td>
+</tr>
+</tbody>
+</table>
+<p>Cisco2002年报记录，2001年需求下降导致额外库存费用约2.2。它提供的是“订单预期突然失真时资产如何调整”的证据，不是所有设备公司必跌相同幅度的定律。朗讯、北电的客户融资与会计争议需要分别取原始年报和监管材料；本轮没有完成其同口径融资比率重建，因此不保留旧百分比和“当前危险2.8倍”的结论。<a href="https://www.cisco.com/c/dam/en_us/about/ac49/ac20/downloads/annualreport/ar2002/pdf/AR.pdf">Cisco历史年报</a></p>
+<p>当下NVIDIA仍有强经营利润和正自由现金流，但其Q2回款节奏已与Q1不同，且客户支持形式更复杂；把它写成“现金垫绝对安全”或“朗讯翻版”都会丢掉最有价值的信息。历史类比的作用是提醒检查项目，而不是替代当前财报。</p>
+<h4 id="h-0022">1.6.1 信用市场：保留价差信号，不制造因果时钟</h4>
+<p>本册信用与IPO小节顺排为1.6.1和1.6.2，均属于1.6的比较与边界讨论；全景母稿仍保留历史编号2.6.5和2.6.6，供原审计ID与引用追溯。</p>
+<p>旧文把不同债券期限的发行利差、二级利差和单名CDS放在同一条数列，又据此声称“超过行业两倍后6—12个月必有重估”。本版撤销这个未经验证的经验规则，以及“所有违约事件都有CDS前置跳升”的必要条件表述。</p>
+<p>信用跟踪应分别记录基准日期、债券或合约代码、期限、币种、报价来源和买卖价差。Oracle旧的198.18bp只能作为2026年3月的历史报价线索，不是9月15日现值；本轮没有取得可核的同日终端序列，不补写当前CDS、债券价格或价差趋势。</p>
+<p>“AI占投资级新发债约三分之一”也需要样本地域、发行定义、再融资是否重复及AI分类规则。未核到原始数据集之前，不把卖方比例改称一个正式独立信用行业，也不能据此推出养老基金已被动持有同等比例的AI风险。</p>
+<p>已经可核的信用证据，是新合同的资金成本、追索与期限：CoreWeave DDTL 5.5按SOFR+5.50%定价，且借款期限覆盖了客户合同之外的年份。相较模糊的“信用裂缝扩大”，这能直接进入现金压力测试。</p>
+<h4 id="h-0023">1.6.2 IPO：融资窗口是变量，不是既定时间表</h4>
+<p>Anthropic已于10月26日公开提交S-1，拟以ANT代码在Nasdaq Global Select Market上市；官方公告同时明确，发行股数和价格区间未定，注册声明尚未生效。因此状态应从“仅有上市线索”更新为“已公开递表”，不能写成IPO完成或融资到账。旧文给OpenAI、Anthropic设置的确定上市月份不恢复，OpenAI新一轮融资谈判也不能在缺少成交公告时写成已完成。<a href="https://www.anthropic.com/news/s1-sec">Anthropic递表公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">SEC S-1封面</a></p>
+<p>上市可能为股东提供后续流动性，IPO募资、老股出售和锁定期又是不同现金流。即使一家模型公司推迟IPO，仍可能通过私募、债务或经营现金融资；相反，完成IPO也不能证明单位经济转正。因此观察栏保留“正式文件、募资与售股结构、锁定安排、实际收入披露”，不把未落定日期当硬触发。</p>
+<h3 id="h-0024">1.7 Anthropic：公开递表以后，融资与采购终于可以分账看</h3>
+<h4 id="h-0025">1.7.1 以公司官网替代不完整转引</h4>
+<p>Anthropic在5/28官网宣布H轮融资65、投后估值965，并称当月收入run-rate越过47。公告说明融资总额包含此前云商已承诺的15，其中Amazon为5；同时确认扩大AWS、Google/Broadcom TPU及SpaceX算力合作。该轮融资不是新增65再加云商15，也不是一次IPO。<a href="https://www.anthropic.com/news/series-h">Anthropic H轮公告</a></p>
+<p>47的run-rate只保留为5月时点的公司指标，不是现金收款或全年GAAP收入；965除以47得到约20.5倍，也只能描述当时私募估值与年化速度的关系。10月26日S-1已披露2025年收入4.585、2026年上半年收入16.286及相应财务表，后者是新公开的旧期间实际值，不能被写成三季度业绩或当前年化收入；经营表现的更新见第三部分3.3。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">SEC S-1，合并经营报表</a></p>
+<h4 id="h-0026">1.7.2 合作伙伴增加，需分辨供应与资本风险</h4>
+<p>模型公司扩大算力来源，有助于降低单一平台和芯片路线依赖；同时多个供应商成为投资或基础设施伙伴，会让商业关系更紧密。其结果并非单方向：供应更可靠可能加速收入，也可能增加最低采购和建设承诺。</p>
+<p>本篇不再把5GW容量按自行猜测单价换成新增数百亿美元，叠加到“循环网络总额”。容量协议是否包含融资、租赁、保证采购或担保，要以各方合同附注为准；GW只保留为设施规模，不作为当期收入。</p>
+<p>S-1的合同文字比容量口号更能说明现金压力落在哪里。下表来自MD&amp;A第171—173页，反映截至递表时所述安排；有些合同在更早月份签订，10月26日是本轮取得公开细节的日期，不是全都在当天新增。</p>
+<table>
+<thead>
+<tr>
+<th>对手方与工具</th>
+<th>披露金额、期间</th>
+<th>最影响现金压力测试的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft算力服务</td>
+<td>至少44.9；2026/11—2033/5；2026/10再次修订</td>
+<td>与实际用量无关的最低消费；未补救重大违约、未交付批次等为例外</td>
+</tr>
+<tr>
+<td>Google算力服务</td>
+<td>至少114.5；2026/4—2033/7</td>
+<td>未达消费额须按条款补差；另有2028—2031交付TPU预计支出125—150，金额取决于容量、部署和价格，不能当作同质固定承诺</td>
+</tr>
+<tr>
+<td>Amazon算力服务</td>
+<td>至少110；2026/5—2036/4</td>
+<td>与实际用量无关；存在补差及合同例外，不是当年费用或已付现金</td>
+</tr>
+<tr>
+<td>SpaceXAI算力服务</td>
+<td>最多120.5，期限延伸至2029；全部交付后合计每月约3.1</td>
+<td>全量交付预计2026/12；初始不可取消期分别至2027/1及2027/3，其后双方可提前90天通知取消</td>
+</tr>
+<tr>
+<td>Nscale与Lambda服务</td>
+<td>分别最多约44.6、约41.3，期限延伸至2033及2034</td>
+<td>容量交付且被接收后才起费；融资、设施租约、服务可用性和分批交付各有终止条件</td>
+</tr>
+<tr>
+<td>Broadcom五年设备融资租赁</td>
+<td>租期内不含利息租金合计约161.2</td>
+<td>通常设备ready-for-service后起付，特定场地延期情形可提前；专用子公司义务由Anthropic母公司担保，并有交叉违约条款</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic S-1，Infrastructure Service Arrangements与Infrastructure Equipment Leases，第171—173页</a>。这些金额既有最低额、上限、估计支出，也有不含利息租金，服务与设备安排还可能相关；本篇不合计成一个“不可撤销总账单”，也不与各供应商RPO、担保及融资额度再次相加。</p>
+<p>附注13另给出截至6月30日、剩余期限超过一年的未来固定或最低采购承诺约265.6，合同期限为1—20年。这个总口径有明确截止日和排除项，不能再与上表逐项求和；它也不能直接代表10月26日所有租赁、季后新增及可变容量安排。S-1证明长期付款约束已相当具体，但要判断能否覆盖，仍要把各年度实际交付、现金收款和取消条件排进同一张时间表。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">S-1附注13，F-59页</a></p>
+<h4 id="h-0027">1.7.3 Amazon持仓重估已经有Q2实数</h4>
+<p>旧版假定Amazon持续固定持股，并将私募总估值线性外推成后三季净利润。Q2 10-Q已经提供实际投资与重估；<a href="03_利润真实性拆解.html">《利润真实性拆解》</a>据此拆分经营和非经营，不再保留未来三季超过一半净利润来自重估的断言。</p>
+<p>下一次融资若价格下降，也不一定按持仓比例机械冲减当季利润：证券权利、会计计量、可观察交易、减值与税项共同决定实际结果。可以设置“估值下降会怎样影响净利润”的情景，但必须标明假设，不把它当成公司已经会发生的会计分录。</p>
+<h4 id="h-0028">1.7.4 商业化要验证的不是名义估值本身</h4>
+<p>公开S-1让收入、经营损益和现金流有了报表依据，却没有使旧文的特定毛利率、亏损年限或统一gross/net折扣自动成立。后续要将报表与渠道收入确认、训练及推理成本、付费留存和最低算力付款衔接起来；单季经营转盈是需要纳入的反证，不是未来所有建设投入已经回本，详细数字见3.3。</p>
+<p>同理，不同模型在不同年份的每百万token价格，不能未经能力、输入输出、缓存和推理设置匹配，就称“同等能力价格下降99.7%”。价格竞争仍是机制，但单位经济判断要使用可比任务的收入与全部服务成本。</p>
+<h3 id="h-0029">1.8 Alphabet融资：从初始计划更新到实际执行</h3>
+<h4 id="h-0030">1.8.1 初始80方案真实，完成值却不是80现金</h4>
+<p>6/1自由书面招股材料提出总计80的初始权益融资方案：30承销发行、40 ATM市价发行计划和10伯克希尔私募。该方案确有SEC原件，不应因规模大就直接判为假消息；但“宣布”与“已募得”必须分开。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526251733/d160205dfwp.htm">6/1初始方案</a></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Q2 10-Q披露的执行结果</th>
+<th>正确解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6/4公开普通股发行</td>
+<td>净募集约20.5</td>
+<td>已完成，净额口径；不再沿用初始15的组成</td>
+</tr>
+<tr>
+<td>6/4伯克希尔关联公司私募</td>
+<td>募集10.0</td>
+<td>已完成，不是公司自身“关联方循环回款”的证据</td>
+</tr>
+<tr>
+<td>6/5强制可转换优先股</td>
+<td>净募集约19.0</td>
+<td>已完成，有其股息与未来转换条件</td>
+</tr>
+<tr>
+<td>ATM计划</td>
+<td>上限40；截至6/30未发行</td>
+<td>可用工具，不是已进入银行账户的现金</td>
+</tr>
+</tbody>
+</table>
+<p>股本附注的分项取整值合计约49.5；现金流表则列普通股发行净额30.499、强制可转优先股发行净额19.063，两项合计49.562，与管理层概述的约49.6一致。不能用已取整的20.5、10.0和19.0反推精确到账，也不能把股东权益变动表的入账额直接当现金收款。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm">Alphabet Q2 10-Q，现金流表及股本附注</a></p>
+<p>10-Q把ATM潜在募资用途主要描述为员工股权奖励相关税务义务，而普通股和优先股已完成融资用于一般公司用途，包括扩大AI基础设施。原文将整个40 ATM直接认作AI建设融资，不再沿用。8月补充文件新增销售代理，并明确其他条款不变；它没有披露新增40额度，也不是执行完成证明。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526336853/d140593d424b5.htm">ATM补充文件</a></p>
+<h4 id="h-0031">1.8.2 外部融资增加，不等于公司濒临现金断裂</h4>
+<p>Alphabet截至6/30长期债务账面值98.165，年末为46.547；现金及有价证券242.474，但其中可出售限制、市场风险与现金本身不同，不能全部视为随时可用的现金。原文“账上现金加短债证券1000B+”为单位错误，本版撤回。扩大的融资工具与增长中的建设投入并存，说明公司选择改变资本来源，尚不能单凭发行股票判断被迫续命。</p>
+<p>8/6最终债券招股补充文件列示25高级无抵押票据，覆盖2028至2066年到期档，预计8/10交割。它证明融资条款和发行安排已落定，不能仅凭这份事前文件声称已逐美元收到募集资金；后续资产负债表和现金流再确认其执行。此处也不将它与6/30债务余额直接相加作为9/8精确净债务。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526340264/d32286d424b2.htm">25债券最终文件</a></p>
+<p>对股东更实在的影响是潜在稀释、优先股股息、债务利息以及这些资金买来的资产能否获得足够回报。股权融资可能改善偿债能力，也可能让现有股东分到更少未来利润；评价融资应同时问价格、资金用途与项目回报，而不是给所有融资贴“顶部动作”的标签。</p>
+<h4 id="h-0032">1.8.3 伯克希尔参与不是循环交易的充分证据</h4>
+<p>伯克希尔关联公司是外部出资方。仅因其投资Alphabet，就称“超出公允定价的关联性投资”并纳入云生态内部循环，没有合同和公允价值分析支持。持股也不能被直接写成Abel对某家技术路线、其他巨头或未来股价的官方判断。</p>
+<p>本版删除“若没有伯克希尔股价应再跌5%”以及“第二家巨头融资就是顶部钟声”的反事实断言。尚无识别方法把当日股价中的背书、稀释、业绩、市场环境分别量化，更不能以两次融资作为未经校准的崩盘触发器。</p>
+<h3 id="h-0033">1.9 事件总判断：风险向哪里移动，而不只是金额变大</h3>
+<h4 id="h-0034">1.9.1 Meta El Paso：股权占比不能代替风险占比</h4>
+<p>7/28公告中的El Paso项目预计2028年起分阶段投入使用，约14开发成本，BlackRock管理资金持80%、Meta持20%；但Meta拟租用整个园区。租赁初期4年、可选延长至20年，同时提供初始阈值约13、随时间递减的残值担保；一定条件下，担保付款与届时资产公允价值不足额有关。BlackRock一侧融资12.5，与Meta担保上限不是同一个项目的两笔独立债务。<a href="https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/">Meta项目公告</a></p>
+<p>这项安排能减少某一主体直接持有的建设资产并引入长期资本，也会留下租赁与残值风险。要判断经济上是否去杠杆，须看交割、会计控制权、租金、担保触发和资产残值，不能因Meta只保留20%就宣布80%风险已转走。本轮没有以独立交割回执更新完成状态，仍将其列为公告安排。</p>
+<p>Meta Q2 10-Q还披露未起租租赁278.99、不可取消合同承诺349.31和条件性云容量购买义务至多14.72。它们期限与覆盖范围不同，部分可能重叠，不能合计成同一“总债务”，也不能把美元十亿误写成中文十亿美元的十倍。<a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm">Meta Q2 10-Q，承诺附注</a></p>
+<p>10月21日Meta随Q3业绩宣布新增无投票权Class C股类，拟于2027年1月19日使修订章程生效，并在条件满足后对每股A、B类股派发一股C类股；股息登记及支付日仍待董事会确定。公司解释新股类可用于后续融资、员工薪酬或并购，但设立股类和派股本身没有带来融资现金，不能把它写成已完成增发募资，更不能据此判断El Paso项目已经交割。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3公告，Establishment of New Class C Common Stock</a></p>
+<h4 id="h-0035">1.9.2 建设、电力和芯片：不同的锁定程度</h4>
+<p>电力与长期机房合同可能具有照付不议或终止成本，设备订单则可能在未形成正式采购前调整。Alphabet担保支持交易对手采购长交期电力设备，NVIDIA供应承诺也披露部分可改期；不能把全部CapEx写成绝对不可逆，更不能以物理供给不足推出需求一定持续。</p>
+<p>本版把旧文中未完成本轮原件核验的“Meta加拿大项目”“SK海力士美国上市募资”“CoWoS停止某期新订单”和各自精确金额、因果行情移出本篇当前证据。供给约束仍可作为另篇研究对象，这里只保留已核合同怎样锁定现金，不让交易篇继续承载未经验证的全产业新闻汇编。</p>
+<h4 id="h-0036">1.9.3 当前有证据的结论与尚无证据的结论</h4>
+<p>已有证据表明：模型公司融资与算力供给关系紧密；供应商的下游支持从股权延伸到云协议和建设担保；部分项目借款开始承担合同期外的续租风险；强现金平台也使用股权、债券和合资工具分配建设资本。这些是资本结构复杂化的事实基础。</p>
+<p>尚未由公开材料证明的是：整个网络真实净回流率、最终外部客户现金贡献、统一的循环收入占比，以及一个可以可靠预测崩盘的乘数或时间点。本篇不据新增合同自动提高泡沫分数，也不从同一事件同时推导“更快崩盘”和“更晚崩盘”来保证结论永远正确。</p>
+<p>下一轮优先核验Oracle FY27Q2对Q1高增指引的兑现、288未起租租赁承诺何时上表、Broadcom AI XPV机架部署与42条件性票据是否发行，以及各公司季度回款、新投资实付、AMD权证归属、CoreWeave续租、Meta项目交割和NVIDIA担保生效里程碑。每次更新把旧状态改在原交易行，保留版本记录，而不是再添一段“最新大事”。</p>
+<h3 id="h-0037">1.10 我可能错在哪里</h3>
+<p>公开报表很难把同一模型公司经不同云平台购买的算力完全去重，也难以追踪股权资金与商业付款逐笔对应。这限制了网络量化，不是可以靠估计总额掩盖的小缺口。</p>
+<p>合作关系也可能创造效率：更稳定的供给、共享研发和更多客户入口，能使本来独立经营时不可行的项目获得正回报。如果外部付费和现金回收持续增强，融资支持可能是建设期过桥，而不是不可持续需求。相反，若客户用量增长但单位价格和利润不足，融资仍可能掩盖回报压力。</p>
+<p>对风险的判断应在证据改善时下降，也应在账期、融资和履约恶化时上升。当前可以说信用联系比单纯买卖更深，不能说它已经证明收入虚假、崩盘必然或任何一家公司会违约。</p>
+<h2 id="h-0038" class="revision-start">本版逐项修订记录</h2>
+<h3 id="h-0039">分册编号勘误 · 2026-09-08</h3>
+<p>按本册实际收录顺序重排章节，正文目录、网页锚点和PDF书签由同一正文重建；未收录主题改用报告名称指引，不再假设读者手里有母稿。</p>
+<table>
+<thead>
+<tr>
+<th>全景母稿位置</th>
+<th>本册位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第二部分（2.x）</td>
+<td>第一章（1.x）</td>
+</tr>
+<tr>
+<td>历史小节2.6.5、2.6.6</td>
+<td>本册1.6.1、1.6.2</td>
+</tr>
+</tbody>
+</table>
+<p>下列历史修订记录的当前落点已换成本册编号；带“原”“母稿”或描述已删除指引的旧号仍用于追溯。此次只修改编排与定位文字，不重算数据、不改变结论，也不改写冻结记录。</p>
+<p>以下将V1.6.1新变更置于各篇记录前部，随后保留此前版本的带日期修订；每条对应正文纠错或证据更新。</p>
+<h3 id="h-0040">循环投资网络：逐项修订</h3>
+<p>V1.6.1（10月27日），2.2、2.4.2、2.6.6—2.7及2.9.1：以Anthropic公开S-1更新递表、合同最低额、可取消上限及设备租赁条件，保留6月采购承诺总口径且拒绝重复加总；补Oracle实际工程付款、待批供电许可和Meta新股类安排，分别区分已支付、未来条件与尚未融资。</p>
+<p>V1.5.1（10月9日），2.2：补核SoftBank10月1日已执行第三笔出资，区别当笔、本轮、累计额及其融资来源；不重复加总。</p>
+<p>V1.5.1（10月9日），2.4.1—2.4.2：新增印度分期建设计划，补读Jupiter洪水公司声明；计划、公司回应与独立验收分别列示，Broadcom媒体金额未升级为新提款。</p>
+<p>V1.5.1（10月1日），2.4.4：分列美光SCA、金融承诺、RPO、押金现金及合同负债，不重复加总，不把融资押金当收入。</p>
+<p>V1.5.1（10月1日），2.4.5：加入Akamai—Anthropic七年合同、建设计划和权证条件；签约日与公开日分开，前置资本开支不与采购安排重复相加。</p>
+<p>V1.5.1（9月24日），2.4.1：补短约租价、可转债实际发行、所得扣项与现金票息计算，并新增融资现金桥图；明确短约、既有贷款和本次可转债为不同观察对象，不作收入或融资重复加总。</p>
+<ol>
+<li>
+<p>撤下6100亿及后续异质总额，交易改按五类法律性质与执行状态登记，不再用增量新闻做网络总额。</p>
+</li>
+<li>
+<p>校正NVIDIA对CoreWeave 2现金投资日期至1/23成交、1/26公告，撤销7月救援因果及重复敞口。</p>
+</li>
+<li>
+<p>更新Amazon对OpenAI、Anthropic实际支付、未用融资上限和算力合同，股权、服务采购与未提款额度分开。</p>
+</li>
+<li>
+<p>纳入NVIDIA 105担保的生效、范围、递减及选项边界，删除未确认媒体巨额担保作为当前事实。</p>
+</li>
+<li>
+<p>纳入CoreWeave DDTL 5.5实际提款、贷款与客户合同期限差；不同贷款追索性质分开。</p>
+</li>
+<li>
+<p>核实AMD两份权证截至6/27尚未归属，撤销目标股价乘股数的现金融资误读及GW直接换算收入。</p>
+</li>
+<li>
+<p>Anthropic H轮改引官网，确认融资含以前承诺15；run-rate与已实现收入分离，停止持仓收益线性外推。</p>
+</li>
+<li>
+<p>Alphabet6月初方案改为Q2执行表，ATM截至6/30零发行及用途单列；8月代理扩容和25债券条款不冒充执行到账。</p>
+</li>
+<li>
+<p>加入Meta El Paso项目租赁与残值担保，撤回“持股低即风险完全出表”；相关金额和单位逐项核对。</p>
+</li>
+<li>
+<p>删除未经证明的IPO确定日历、乘数、67%供应商融资比例、CDS因果时钟和“融资第二发即顶部”；历史机制保留，缺证说明放回相应章节。</p>
+</li>
+</ol>
+<p><strong>本篇V1.5.1变更记录</strong></p>
+<ol>
+<li>
+<p><strong>融资状态补核。</strong> 1.2与1.5.3补入8/10谅解备忘录，按8/26定期报告区分长期动员目标、独立承销、可能提供的有限残值支持及尚未核得的最终协议和到账；不由平台目标上调循环融资总额。来源见对应正文的联合公告及10-Q。</p>
+</li>
+<li>
+<p><strong>项目去重。</strong> 1.5.3将105担保绑定至PORTS具体站点，明确其不能当作六家融资平台的通用担保，也不与平台目标求和。来源见对应正文的10-Q与附件10.1；旧V1.5记录保留，本轮仅补相关正文。</p>
+</li>
+<li>
+<p><strong>9月15日证据更新。</strong> Oracle FY27Q1从未来日历改为已实现数据，RPO、客户预付款、资本开支、ATM增发与未起租租赁承诺分列；Broadcom AI XPV补入五年Backstop、最大潜在责任、条件性可转票据和采购承诺的状态边界。两组资料均显示需求与融资可继续扩张，同时把长期履约和残值风险向供应商及资本伙伴延伸；不新增循环总额或崩盘触发。</p>
+</li>
+</ol></main></body></html>

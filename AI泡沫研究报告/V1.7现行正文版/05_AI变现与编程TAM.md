@@ -1,0 +1,499 @@
+# AI变现与编程市场
+
+大队长出品 · V1.7 · 2026-10-27
+
+联系邮箱：fqsx@mail.ustc.edu.cn
+
+## 免责声明
+
+本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。
+
+资料核验截至2026年10月27日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。
+
+这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。
+
+## 本次更新
+
+1. 把历史原页与校注叠加改为现行正文，原339页中的独有主题保留，重复分册合并；本册不嵌入旧版。
+
+2. 融资和变现篇接入Anthropic公开S-1；合同最低采购、可取消上限、租赁及担保分列，递表不视为融资到账。
+
+3. 目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。
+
+<!-- BODY_START -->
+
+## 第三部分：AI靠什么赚钱——变现版图与编程TAM
+
+口径截至2026年10月27日（北京时间）。B代表十亿美元，1B等于10亿美元；ARR、run-rate与已确认财报收入分别使用。Anthropic公开S-1和Meta Q3纳入已披露信息，未公布财季保持空缺；产品价格、人口统计和测试采用文中注明的观察日，未作全量当日重测。
+
+### 本篇内容地图与逻辑链
+
+Anthropic在公开S-1中报告2026年第二季度经营利润0.974B，而上半年仍经营亏损0.693B；Meta最新一季广告收入增长26%，自由现金流却转为负数。这两组数字把AI商业化的争论推到更具体的位置：付费需求可以增长，经营可以改善，新建设施的现金回收仍然可能滞后。下文先辨认谁在付钱，再核对这些钱在云、模型和应用之间如何流转，最后检验客户收益与供应商利润能否同时成立。来源见3.2—3.3。
+
+| 研究问题 | 落点 | 结论与边界 |
+|---|---|---|
+| 谁在付钱，卖的是什么 | 3.1—3.3 | 分清云服务、广告、订阅与API；整体业务收入不冒充纯AI收入 |
+| 编程市场到底有多大 | 3.4 | 固定席位与额外用量分别建模，非开发者按实际付费月份计入 |
+| 编程以外能否赚钱 | 3.5 | 逐个看合同、续费和交付成本；不从估值推断经营规模 |
+| 收入能否消化资本投入 | 3.6—3.8 | 用资产批次、服务成本和现金流建模，收入比不能替代IRR |
+| 什么事实会改变判断 | 3.9—3.10 | 观察同口径增长、付费留存、成功任务成本与回收期；未知保留未知 |
+
+本篇没有给出“所有AI收入合计”，因为现有公开披露不足以完成全链条抵销。一个企业给应用公司付款，应用公司向模型公司买API，模型公司再向云厂租算力，三层都可能确认收入，但不能据此认定社会终端支付了三遍钱。这个缺口影响的是总量测算的可信度，不是否认各层真实提供了服务。
+
+### 3.1 14个变现领域：先识别付费方与收费单位
+
+收入、运行率、投资额和公司估值衡量的不是同一件事，不能据此排出统一的变现规模榜。以下14类覆盖从基础设施到终端工作流，每类都先问客户买什么、按什么单位付款，再看成本和续费证据。已经有产品收费，不等于产品利润为正；一家公司的净利润为正，也不能证明其每个AI产品盈利。
+
+| 领域 | 主要付费方与收费单位 | 可用证据 | 不能直接推出什么 |
+|---|---|---|---|
+| 云算力与模型托管 | 企业、模型公司；算力时长、token及承诺用量 | 云分部收入，部分专项AI run-rate，见3.2 | 云整体收入不是纯AI收入；长期承诺不是已收现金 |
+| 广告优化 | 广告主；展示、点击或转化 | 广告收入、展示量与单价；ChatGPT Ads新增披露，见3.2 | 全部广告增长不能归因于AI；广告主流水不是平台收入 |
+| 企业生产力 | 企业；席位加额外用量 | M365 Copilot付费席位，见3.3 | 席位×标价不能冒充实际ARR或利润 |
+| 聊天订阅与API | 消费者、开发者及企业 | 公司run-rate、API费率，见3.3与3.7 | 年化速度不是已完成全年收入 |
+| 编程与开发智能体 | 开发者、工程组织；席位、用量及任务 | 订阅、计费规则、部分收入增速，见3.4 | 注册用户不是付费开发者；生成代码不是验收产出 |
+| 客服与CRM | 企业；席位、会话、动作或成功解决量 | Agentforce ARR及口径说明，见3.5 | 计费动作数不等于独立客户数，也不等于成功解决数 |
+| 法律科技 | 律所与企业法务；用户、文档或项目 | 具名部署、采购与续费应逐项核查 | 部署公告不能替代合同金额与法律责任成本 |
+| 金融研究与信息 | 金融机构及企业；内容订阅和工作流 | AlphaSense公司ARR历史锚，见3.5 | 数据许可、专家网络等收入不全是新增生成式AI收入 |
+| 医疗文书与辅助诊断 | 医院、医生或支付方；席位、就诊次序 | 采购合同、实际使用、临床评价 | 签约额不等于已确认收入；节时不等于诊疗质量提高 |
+| 音频、视频与内容生成 | 创作者、企业；订阅、时长、生成量 | ElevenLabs公司ARR，见3.5 | 内容全市场规模不等于生成工具可收费规模 |
+| 教育 | 学生、家庭、学校；订阅或课程 | 付费留存、考试与学习效果 | 传统教育应用全部收入不属于AI新增收入 |
+| 自动驾驶与机器人 | 乘客、物流和工业客户；运量、工时或设备 | 付费运营许可、单位作业成本与交付 | 估值、融资及演示不能替代可复制的经营利润 |
+| 科研与生物医药 | 药企、实验室；服务、授权及里程碑 | 已收服务费、研发里程碑和临床结果 | 合同最大里程碑金额不是当前收入 |
+| 主权AI与防务 | 政府及承包商；项目和维护合同 | 拨款、签约、履约与验收 | 预算意向不是订单，订单不是当期财政付款 |
+
+后八类缺少足够一致的公开数据来做行业利润排名，不能被统一判为亏损。研究可以先跟踪客户价值和合同兑现，再决定哪些公司值得建立盈利模型，不能用同一个ARR标签把所有场景磨平。
+
+### 3.2 云与广告：最成熟的收费渠道，不等于全部都是AI收入
+
+#### 3.2.1 云分部实际收入与AI专项披露
+
+| 公司及统计期 | 已确认收入或经营指标 | AI归因边界 |
+|---|---|---|
+| Amazon AWS，2026Q2 | 收入42.232B，营业利润16.621B，利润率复算39.4% | 公司称AI业务run-rate超过25B；它包含在业务体系内，不能与AWS收入再加总 |
+| Microsoft Azure，FY2026全年 | 公司披露全年收入超过100B，增长41% | Azure不等于Intelligent Cloud部门，也不等于Microsoft Cloud，更不是纯AI收入 |
+| Google Cloud，2026Q2 | 收入24.768B，营业利润8.814B，利润率复算35.6% | 公司把AI基础设施、AI解决方案与核心GCP服务并列为增长来源，没有给出可抵销的纯AI收入表 |
+
+来源：[Amazon第二季度财报](https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx)、[Microsoft官方电话会](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4)、[Alphabet第二季度财报第2页](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)。三行统计期间不同，刻意不做合计或排名。
+
+这组数字证明平台具备真实收费能力和分部盈利，并不能单独说明本轮新增算力的资本回报率。成熟数据库、存储、网络及既有客户的利润可以与新AI业务共存；如果拿全云分部利润去覆盖新增AI资产，再声称每一批新资产已经回本，会把存量利润垫成新投资的证据。
+
+截至北京时间10月27日，Alphabet、Microsoft与Amazon尚未发布下一财季结果，因此上表仍保留各自已披露期间。Alphabet Q3电话会定于北京时间10月29日04:30，Microsoft FY27Q1为10月29日05:30，Amazon Q3为10月30日05:00；会前的市场预期不能先填入实际收入栏。Meta则已在10月21日发布Q3，不能与三家一并标成“待财报”。[Alphabet 10月6日公告原样分发](https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d)、[Microsoft财报日历公告](https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/)、[Amazon财报日历公告](https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call)
+
+电话会时刻不是新闻稿精确发布时间；Alphabet原站本轮访问受阻，实际读取的是公司公告分发件。
+
+AWS另行披露AI业务与芯片业务的run-rate都超过25B。芯片业务涵盖的工作负载与AI业务可能交叉，在公司未提供抵销表前，两项不能相加为“50B新增AI收入”。同样，云厂给模型公司提供的融资可能支持客户付云账单，需继续追踪现金来源，但不能因此把客户实际消耗算力的收入一概判为虚假。
+
+#### 3.2.2 广告的两种AI变现方式
+
+Meta在10月21日公布的2026Q3广告收入为63.061B，同比增长26%；广告展示量增长10%、平均单价增长14%。Alphabet尚未公布Q3，本篇仍保留其Q2广告收入81.629B作为历史比较值，不把不同季度相加。Meta的增长提供了真实付费的反证，但仍需分项或实验才能区分AI推荐、客户结构、广告需求与汇率的贡献，不能把63.061B全算作生成式AI收入。[Meta Q3财报，经营指标及分部表](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx)、[Alphabet Q2财报](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf)
+
+收费增长与建设压力在同一份Meta财报里同时出现：Q3经营现金流32.786B，现金购买固定资产33.942B、融资租赁本金0.964B，按公司口径自由现金流为32.786－33.942－0.964＝−2.120B；前九个月FCF仍为正11.049B，期末现金、现金等价物与有价证券合计82.45B，不能拿一个负季度代表全年耗尽现金。公司把全年含租赁本金的CapEx指引由130—145B收窄至135—145B，这仍是全年预测。GAAP营业利润还包含9.89B法律费用，不能把利润降幅全部归给AI投入。[Meta Q3财报，现金流调节表与CFO展望](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx)
+
+一种变现是在原有广告业务里提高转化或降低广告主获客成本；另一种是在新AI入口直接卖广告。OpenAI于2026年8月31日披露，ChatGPT Ads推出不足200天，年化收入运行率达到1B。这是比“AI优化了4000亿美元广告盘子”更直接的新增收费证据，但它仍不是全年广告收入已经达到1B，也没有独立披露广告业务利润。来源：[OpenAI广告业务公告](https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/)。
+
+广告模式能补贴免费用户的推理成本，也会引入新的约束：广告库存、商业意图和转化测量是否充足，增加商业内容是否损害用户信任，以及新的广告预算是否只是从其他平台转移。对单个平台，抢到份额可以增长；对整个产业，预算转移不能被算成同等规模的新终端需求。
+
+10月5日OpenAI又公布图像生成场景的视觉广告，计划当月稍后在美国Free/Go用户中测试，并扩展归因与增量效果测量合作。这使广告变现具备更多可测试的场景，但新格式并非已全面上线，公告也没有新增广告收入或利润数字；特定广告主的效果案例不能外推成全平台投资回报。[OpenAI广告与测量更新](https://openai.com/index/new-chatgpt-ads-format-and-measurement/)
+
+### 3.3 模型层和企业订阅：公开报表开始检验年化收入叙事
+
+#### 3.3.1 先分清三个“年收入”
+
+财报收入对应已经履约的统计期间。ARR是公司对经常性合同收入所定义的年化指标，定义并不跨公司统一；run-rate则把最近一个月或季度的经营速度外推成年。高速增长企业的期末run-rate通常会高于过去一年的已确认收入，按量业务还会受客户集中采购、季节性和短期活动影响。
+
+因此本篇保留披露日期，宁可把新值列为未决，也不把“目前公开核实到的旧锚”改写成“目前公司只做到这个规模”。
+
+| 主体 | 已披露信息及观察日 | 如何使用 |
+|---|---|---|
+| OpenAI | 2026-03-31公司公告称每月收入2B | 算术年化约24B，是3月时点经营速度，不是2025全年收入，也不是10月经营现值 |
+| Anthropic | 10/26公开S-1：2025全年收入4.585B；2026H1收入16.286B、经营亏损0.693B | 2026H1为未经审计中期报表；5月47B run-rate保留为历史速度，不再代替实际收入和现金流 |
+| Claude Code | 2026-02-12公司披露run-rate超过2.5B | 是Anthropic内的产品；不能再与母公司总额相加；不可冒充10月现值 |
+| M365 Copilot | 2026-07-29官方电话会称付费席位超过3000万 | 是明确的付费覆盖证据；没有足够信息用统一牌价还原全部合同收入 |
+| ChatGPT Ads | 2026-08-31公司披露广告run-rate1B | 新商业渠道的收费证据，不再与OpenAI整体收入机械相加 |
+
+来源：[OpenAI3月公告](https://openai.com/index/accelerating-the-next-phase-ai/)、[Anthropic10月公开S-1](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm)、[Anthropic5月H轮公告](https://www.anthropic.com/news/series-h)、[Anthropic4月公告](https://www.anthropic.com/news/anthropic-amazon-compute)、[Claude Code2月披露](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation)、[Microsoft7月电话会](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4)、[OpenAI8月广告公告](https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/)。
+
+Anthropic的证据已经向前走了一步：10月26日公开S-1披露，Q1、Q2收入分别为4.731B、11.555B，Q2经营利润为0.974B，而上半年仍合计经营亏损0.693B。三者并不矛盾，因为Q1经营亏损1.667B；单季转盈必须进入研究判断，也不能外推成全年、全部模型或全部新增算力已经盈利。文件中的这些中期数字未经审计，不能因它们出现在SEC就改称经审计Q3结果。[Anthropic S-1，合并经营报表及Quarterly Results of Operations](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm)
+
+最容易误读的是80.748B上半年净亏损。现金流表分别调回72.388B可转票据、衍生负债及SAFE公允价值变动，以及8.720B其他金融工具确认和公允价值变动，因此不能把净亏损直接叫作“半年烧掉807亿美元”。同期经营现金流为正3.929B，公司解释既有剔除非现金项目后的经营改善，也受客户收款和供应商付款时点影响；融资现金净流入110.774B则是另一类现金，不是客户付款。[S-1，Cash Flows及合并现金流量表](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm)
+
+| 2026H1财务观察，单位B美元 | 已披露数值 | 能回答什么，仍不能回答什么 |
+|---|---:|---|
+| 按用量确认的收入 | 13.064 | 说明收入结构中用量业务占主要部分，不等于只来自编程 |
+| 订阅收入 | 3.222 | 与用量收入合计16.286；不能把订阅运行率再加一遍 |
+| Q1经营损益 | −1.667 | 说明半年内并非连续盈利 |
+| Q2经营损益 | +0.974 | 单季经营转盈；与Q1相加，H1仍为−0.693 |
+| H1净亏损 | −80.748 | 包含大额非现金金融工具项目，不能直接当作现金消耗 |
+| H1经营现金流 | +3.929 | 当期经营现金净流入，仍需分解收付时点及未来刚性支出 |
+
+表中中期数均未经审计。收入拆分来自S-1财务附注的Revenue分项，经营损益来自季度经营结果，不能混用调整后经营利润或把它们转换成某一产品毛利。[Anthropic 2026-10-26 S-1，Revenue及Quarterly Results of Operations](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm)
+
+这使“模型层始终只靠融资、没有经营改善”的判断需要收缩，却还不足以证明长期自给：一次正经营现金流不能证明未来各期能覆盖第二部分列出的最低采购和租赁付款，也不能把投资现金流中的短期证券购买全部当作基础设施资本开支。接下来应把持续客户收款、营运资金、实际设备投入和租赁付款逐季对齐。OpenAI更晚的媒体run-rate与融资谈判仍未在本轮取得同等级正式财务表，不与Anthropic的新报表拼成同口径排名。
+
+#### 3.3.2 收费增长为什么仍不等于单位经济跑通
+
+把用户拉进产品，只解决了第一步。订阅收入相对稳定而使用量迅速增加时，每个付费席位消耗的推理、工具调用和人工支持可能上升，收入增长与产品毛利改善可以分开走；相反，缓存、模型路由和更低成本模型也可能使使用增长快于成本增长，利润不必随API标价下降。
+
+财务模型应逐月跟踪：付费客户和付费席位、每席实际收入、额外用量收入、折扣与赠送额度、活跃率、取消或降档、推理与支持成本。只拿“付费席位×公开月费”计算ARR会忽略大客户折扣、年付时点、不同产品组合和试用安排，M365 Copilot的席位证据不能据此转换成一个未经披露的精确ARR。
+
+判断上，我现在更看重同一客户跨季度的付费用量和毛利，而不是用户总数。增长可能足够快，也可能主要由一批重度用户驱动；没有净收入留存、毛利和现金收款的配套数据，无法仅凭run-rate大小裁决最终赢家。
+
+#### 3.3.3 云渠道总额与净额确认，不等于利润真假
+
+Anthropic公开S-1财务附注F-21—F-22说明，通过云服务商市场分发时，公司仍直接与客户建立合同关系、负责提供智能服务并制定价格，云服务商在服务转给客户前不取得控制权，公司因此按主要责任人采用总额确认。按量服务随着token消耗确认收入，订阅则按相应服务期间确认；这份正式政策提供了检验渠道收入的依据。[Anthropic S-1，Revenue Recognition，F-21—F-22](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm)
+
+总额法与净额法首先回答谁控制交付的服务，并不是“总额收入不真实、净额收入才真实”的二分法。跨公司比较时，应统一渠道范围、履约责任、收入期间和相关成本；没有对应合同与财务政策，不能给Anthropic收入统一扣除25%—40%，再把剩余值称为与另一家公司可比的真实净ARR。费用可以影响利润，产业链内部支付也需要在终端需求测算中抵销，但这两项调整都不等于随意重写发行人的已确认收入。
+
+### 3.4 编程市场TAM：席位、额外用量与任务收入
+
+#### 3.4.1 人数基数与实际计费边界
+
+3650万专业开发者来自SlashData对2025年初的调查估算，同期总开发者约4720万；SlashData在2026Q1汇编中把总数更新为4840万，但本次未取得同口径更新后的专业开发者分项。以下继续用3650万作历史基数的敏感性测算，不称其为2026年10月精确人口。来源：[SlashData2025人口研究](https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there)、[2026Q1汇编](https://www.slashdata.co/post/14-software-developer-trends-insights-you-need-to-know-in-q1-2026)。
+
+GitHub在Microsoft FY26Q4电话会中披露的平台用户与Copilot用户是另外两种统计对象，不能用注册平台账户替代职业人口，也不能把Copilot用户全算成付费用户。一个工程师同时订阅多个工具时，个人数要去重，但实际支付给不同供应商的费用可以分别记录；工具公司再向上游支付的模型费，则需要在全产业终端市场汇总时抵销。
+
+2026年6月，GitHub开始把Copilot计费转向按token消耗的AI Credits，席位内含额度之外还可追加用量，旧年付合同存在过渡安排。这意味着市场已经不完全遵循“每名程序员每月只买一份固定20美元软件”的约束。来源：[GitHub计费方案公告](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)、[6月上线说明](https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/)。
+
+#### 3.4.2 席位敏感性：人数×渗透×单价
+
+纯席位市场年收入 = 可触达专业人数N × 付费渗透率s × 月均实际收入P × 12。
+
+下表是机械敏感性，不是市场预测。基数N=3650万，忽略新增非专业用户，假设每人只购一个产品，价格是情景变量而非任一公司的实际平均售价。
+
+| 月均实际收入 | 25%付费渗透 | 50%付费渗透 | 100%付费渗透 |
+|---|---:|---:|---:|
+| 10美元 | 10.95亿美元 | 21.90亿美元 | 43.80亿美元 |
+| 20美元 | 21.90亿美元 | 43.80亿美元 | 87.60亿美元 |
+| 30美元 | 32.85亿美元 | 65.70亿美元 | 131.40亿美元 |
+| 40美元 | 43.80亿美元 | 87.60亿美元 | 175.20亿美元 |
+| 100美元 | 109.50亿美元 | 219.00亿美元 | 438.00亿美元 |
+
+在100%渗透、每月30美元这一格，3650万×30×12＝131.4亿美元，即13.14B。人数、美元和十亿美元之间必须保持量纲一致；这只是单一席位假设下的年收入，不是市场实测值。
+
+席位模型仍然有用：它能问清客户规模、支付能力和份额假设。但它不是一个不受商业模式变化影响的硬天花板。重度企业可能把工具费归入研发预算，按任务或计算用量支付；非开发者可能只在建站、数据清洗或自动化项目期间付费，新增用户也未必全年留存。
+
+#### 3.4.3 扩展模型：不能既算席位又重复算同一笔用量
+
+收入可以写成：基础席位收入＋超过内含额度的按量收入＋独立任务或服务收入－退款与折扣。其中“超过内含额度”很重要，如果某订阅已包含一部分token，再把该部分token价值加一遍，模型就高估收入。
+
+举一个只用于计算的企业情景：有1000万付费席位，平均实际订阅费每月30美元，形成36亿美元年收入；每席全年额外消耗100美元，新增10亿美元，合计46亿美元。若另有100万非开发者每年只购买两个月、每月20美元，新增0.4亿美元，而不是把他们算成全年2.4亿美元订阅。这里的用户数、价格与消耗全是研究假设，没有被写成行业实际值。
+
+任务计费还有另一条边界：用户愿意为完成一次迁移、修复或构建支付多少，取决于替代的总成本，而不是输出了多少代码。代码生成便宜可以扩大需求，但如果需求澄清、测试、上线、合规与维护仍依赖人，应用公司只能获取其中一部分价值。软件外包总市场不能无折扣搬成AI编程工具的收入空间。
+
+#### 3.4.4 当前竞争证据与估值方法
+
+Cursor于2025年11月公司公告披露年化收入超过1B、该轮投后估值29.3B；其官网2026年3月Press索引转引Bloomberg关于2B年化收入的报道，证据性质仍是媒体报道。谈判中的估值不能标作已完成融资估值，2B年化收入也不是全年经审计收入。来源：[Cursor公司融资公告](https://cursor.com/blog/series-d)、[Cursor Press索引](https://cursor.com/blog/topic/press)。
+
+Microsoft7月官方电话会披露GitHub Copilot收入环比增长超过60%，并指出新按量模式对收入和毛利有影响。这是“市场不只靠固定低价席位”的直接反向证据，但仍不足以复原其收入绝对额、利润和全部付费人数。Claude Code的母子产品重复统计也必须避免，不能把Anthropic全部收入再加上Code收入来估编程市场。
+
+估值高于传统席位TAM，不能单独用于判定泡沫：估值是未来现金流存量，TAM是每年收入流量，两者没有必须小于1的关系。真正应问的是未来可服务市场、份额、净利或现金利润率、竞争下的定价、资本消耗与股权稀释；高增长能否使目前的高倍数下降，以及增长放慢后利润能否接上。缺少这些输入，不给出貌似精确的公司合理估值。
+
+#### 3.4.5 生产力：不能把个人感受直接外推为TAM
+
+一个反例值得保留。METR对16名熟悉自己代码库的开源开发者、246项任务做早2025年工具随机试验，允许使用AI时平均完成时间增加19%。这只适用于该工具版本、任务与样本，不能推出今天所有AI编程无效。METR在2026年2月的后续说明又明确指出，不愿在无AI条件下工作的开发者和任务退出实验、并行agent计时等问题，使新实验难以可靠估计加速幅度。来源：[METR原始论文](https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf)、[后续实验说明](https://metr.org/blog/2026-02-24-uplift-update/)。
+
+无条件的“效率提高5—10倍”不足以支持采购和市场预测。客户采购更适合测一项真实任务从提出到验收的总时间，包括提示词、复核、失败重试、集成和维护，并同时记录缺陷与风险。愿意付费说明客户看到了价值，不代表每个客户都已经把价值准确算成现金收益。
+
+#### 3.4.6 软件需求扩张与岗位替代，可以同时发生
+
+如果同样数量的软件需求用更少工时完成，固定席位数可能承压；如果开发成本下降使原来做不起的项目有了预算，新增项目和非开发者用量又可能扩大。两种机制不能预先相抵，更不能把代码量增长当成付费增长。研究时应分别观察现有客户减少了多少席位、增加了多少额外用量，以及新增客户在试用结束后是否继续付费。
+
+代码更容易生成，也不会让需求判断、系统架构、数据权限、分发和维护责任自动消失。对工具商，应核验它能够收取哪一段价值；对软件企业，应核验客户是否因更便宜的替代品压价，还是仍为数据、集成和可靠服务支付溢价。这里不预设所有软件壁垒必然消失，也不把整个软件服务市场无折扣计入编程工具TAM。
+
+### 3.5 编程之外：按工作流寻找可续费的需求
+
+#### 3.5.1 客服与CRM：看结果，也看计量变化
+
+Salesforce于2026年8月26日披露，Agentforce ARR超过1.5B，与Data360合计接近3.9B；公司同时说明本季Agentforce ARR纳入其AI offerings、Slackbot与Headless360。这比原0.8B更近，但产品口径已变化，不能把所有同比增幅视作同一产品自然增长，更不能将Agentforce、合计值和全公司收入相加。来源：[Salesforce FY27Q2财报](https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/)。
+
+客服是容易形成闭环的场景，因为工单成本、解决率、人工转接率及投诉可以量化。研究时仍要警惕“动作数”指标：一个问题拆成十个动作，平台计费可能上升，但客户没有因此获得十个问题的解决。实际商业价值应落在成功解决、重复联系、处理时长和客户损失上，而不只看agent活跃。
+
+#### 3.5.2 法律与金融研究：付费能力来自责任和内容
+
+Harvey官方新闻室在8—9月持续披露具名律所与企业部署，证明其不是只有演示；但部署公告没有提供足以重建当前ARR、回款或利润的统一财务明细。第三方不同日期的估算不足以拼出一个当前“精确收入”。来源：[Harvey新闻室](https://www.harvey.ai/newsroom)。
+
+法律工作流的价值不只是更快生成文本，还包括引用核验、案例权限、版本留痕和责任分配。金融研究同理，内容许可、专家访谈、公告检索和工作流已经有预算池。AlphaSense在2025年10月官方披露ARR超过0.5B，可作为历史收费锚，但它包括原有信息与工作流业务，不是0.5B纯AI新增收入，也不是10月现值。来源：[AlphaSense公司公告](https://www.alpha-sense.com/press/alphasense-surpasses-500m-in-arr/)。
+
+这些业务可能比通用聊天更有留存，却也承担数据授权、审查和企业销售成本。是否有定价权，要看客户会不会在下一份合同里继续付费、能否用更便宜的通用模型加现有内容替代，以及错误发生后谁承担成本。
+
+#### 3.5.3 音频与内容：把订阅增长和权利成本同时建模
+
+ElevenLabs5月5日公司公告披露，2026年前四个月ARR超过0.5B，2025年末为0.35B。该页面后来标注8月31日更新，但收入句子的统计区间仍是前四个月，不能把它改成“截至8月底0.5B”。来源：[ElevenLabs公司公告](https://elevenlabs.io/blog/500m-arr-and-new-investors)。
+
+这类产品已有明确付费用户，却还要分创作者、企业客服和媒体制作：个人可能按项目订阅又取消，企业可能为低时延、授权声音和服务质量付高价；合成量增长还会带来推理、存储、审核和内容授权成本。不能用生成分钟数推全年订阅收入，也不能假定模型成本下降全部留给应用商。
+
+#### 3.5.4 医疗、教育与物理世界：确认价值的时间更长
+
+医疗文书可以先看记录时长、复核率和病历质量，辅助诊断还需要临床安全与支付方认可；教育要看留存与学习效果，不能将某教育公司的所有订阅收入都贴成AI变现；自动驾驶、机器人则必须把人工接管、设备维护、保险及利用率算入单位作业成本。
+
+科研和新药更容易出现“合同上限很大、近期现金很小”的情况。里程碑付款必须按条件、触发概率与时间拆开，项目合作证明对方愿意试，不等于药品已经上市。主权AI与防务也要区分意向、预算、合同、验收与收款，不能把政治优先级直接变成年收入预测。这些是不同的研究模型，不能用统一的“AI应用ARR”加总代替。
+
+### 3.6 全球资本开支三层拆解与资产回收
+
+算力芯片、数据中心物理层与电力层对应不同资产和付款方式，不能把三层企业收入一加，就当作终端用户投入了同样多的新增资本。芯片卖给服务器厂，服务器卖给云厂，会在不同公司分别形成收入；设备购置、数据中心租赁与电力采购还可能分别落在资本开支、租赁和运营成本中。
+
+| 层级 | 应记录的投入 | 回收与风险变量 | 与本篇变现端怎样对接 |
+|---|---|---|---|
+| 算力芯片及网络 | 设备购置、服务器和网络配置 | 有效利用率、服务年限、更新替换、单位任务成本 | 转化为可收费算力与成功任务，不以峰值性能直接推收入 |
+| 数据中心物理层 | 土建、配电、冷却、机柜及租赁 | 达到可用状态日期、爬坡、建设成本、可转用性 | 未投运部分不能与已上线收入假定同年满产匹配 |
+| 电力与接入 | 发电与电网投资、接入、长期购电 | 能否按期交付、价格、最低采购及弃电约束 | 电力瓶颈可能限制收入，也可能推迟开支，不必然导致需求消失 |
+
+全球多年累计资本开支与若干云厂某一年的投资预测，样本、起止年及资产口径不同；没有原始完整模型，不能用两个看似接近的总数证明彼此得到验证。多年预测也不是已经签署的资本承诺，判断投资是否前置需要逐年付款路径，而非只看其中几年的占比。
+
+#### 3.6.1 终点收入不能直接给出资本回收率
+
+把第五年收入乘五，再除以累计资本开支，既没有得到实际累计收入，也没有得到IRR，因为这省略了收入实现路径、运营费用、税、营运资金、投资发生日期和残值。收入不是可还给投资人的现金；折旧也不能在现金投资扣除后再当作现金流出重复扣减。
+
+即使只检查数学，“五年线性达峰”也不能直接用终点乘五。假设年收入从零按连续直线升至R，第五年末达到R，五年累计收入面积为2.5R；若规定五个年末收入分别为0.2R、0.4R、0.6R、0.8R和R，离散合计为3R。两种定义都不是5R。它们只是例题，不能作为对真实AI产业收入的预测。
+
+#### 3.6.2 改用项目或资产批次现金流
+
+在企业自由现金流口径下，FCFF = 税后经营利润＋折旧摊销－资本开支－营运资金增加；企业价值是这些未来FCFF和终值的贴现。项目回报则应按建设期投入、投产爬坡、收入、服务成本、更新资本和退出残值逐期列示。没有完整现金流时，应保留“回报未证实”，不能把粗糙收入比升级为收益率。
+
+这也改变了周期判断的力度：资本开支高、云利润增长与应用收入增长可以同时发生，风险不自动消失；资本开支暂时放缓，也可能是接电和建设约束，不能自动解释为需求崩塌。真正需要跟踪的是已投运批次的收入利用率、服务毛利和回收周期，与下一批投入是否匹配。
+
+### 3.7 API定价与收入方程：降价、用量和成功任务成本
+
+#### 3.7.1 已披露费率按产品、观察日与上下文分档
+
+价格竞争确实存在，但缓存降价、低价新模型和同一模型标准价下降不是同一个事件。以下价格是2026年9月至10月9日已核公告或价目的观察值，本轮未对全部价目重新抓取，因此不标作10月27日实时现价。表中单位均为美元/百万token，标准模式之外的快速模式、工具、缓存写入等费用另计；这些数字也不是厂商实际平均收入。
+
+| 产品与价格观察依据 | 未缓存输入 | 输出 | 缓存读取 | 使用限制 |
+|---|---:|---:|---:|---|
+| Fable 5.1，9月1日发布 | 10.00 | 50.00 | 0.25 | 缓存写入另收费；与前代缓存1美元的比较只针对该费项 |
+| Gemini 3.8 Flash，9月2日公告推广价 | 0.75 | 3.75 | 未在本表列示 | 公告有效期至2026-12-31；2027-01-01拟适用输入1.50、输出7.50 |
+| GPT-6 Sol，9月22日公告 | 2.00 | 10.00 | 0.20 | 提示输入不超过272k token |
+| GPT-6 Luna，9月22日公告 | 0.10 | 0.50 | 0.01 | 同上；能力层级不同，不作同质量价格比较 |
+| Claude Opus 5.5，9月22日发布 | 4.00 | 20.00 | 0.20 | 标准模式，缓存写入及快速模式另计 |
+| GPT-6.1 Sol，9月29日发布 | 2.00 | 10.00 | 0.10 | 保留发布时点，缓存项变化不改变无缓存账单 |
+| Sonnet 5.5，10月7日调价、10月9日回读 | 2.00 | 10.00 | 0.10 | 9月发布时缓存0.20已被此公告接续 |
+| Haiku 5.5，10月7日发布、10月9日回读 | 0.10 | 0.50 | 0.01 | 每条请求提示输入不超过100k token |
+| Haiku 5.5，高上下文档 | 0.50 | 2.50 | 0.05 | 每条请求提示输入超过100k token；整条请求按高档计价 |
+
+来源：Anthropic，[Fable/Mythos 5.1发布说明](https://www.anthropic.com/claude-fable-and-mythos-5-1)、[Opus 5.5发布与价目](https://www.anthropic.com/claude-opus-5-5)、[Sonnet 5.5发布](https://www.anthropic.com/claude-sonnet-5-5)、[Haiku 5.5及缓存调价](https://www.anthropic.com/claude-haiku-5-5)、[官方定价与分档](https://platform.claude.com/docs/en/about-claude/pricing)；Google，[9月2日发布及价格脚注](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/)；OpenAI，[9月22日API变更记录](https://developers.openai.com/api/docs/changelog)、[9月29日GPT-6.1 Sol发布](https://openai.com/index/introducing-gpt-6-1-sol/)。
+
+Opus 5.5相对Opus 5的输入、输出标价由5和25美元降至4和20美元，下降20%；缓存读取由0.50降至0.20美元，下降60%。公司所称典型工作成本降低40%，还包含任务耗用量变化，是厂商工作流测试，不是独立实测，也不意味着毛利提高40%。Sonnet多数智能体任务成本约降20%的声明同样需要保留这一限制。
+
+若一批请求全部满足相应上下文条件，共有100万未缓存输入、20万计费输出token，按表中费率，Sol账单为4美元，Luna为0.20美元，Opus 5.5为8美元；GPT-6.1 Sol与Sonnet 5.5同为4美元。这只是固定用量账单。实际任务可能消耗不同token数，重试、工具及人工复核也不同，不能按账单比例认定真实交付成本同比例下降。
+
+Haiku的门槛按每条请求判断，提示输入包括缓存读写输入，而不是只对超过10万的部分加价。若10条请求各含10万未缓存输入、2万输出，合计100万输入、20万输出，账单为0.20美元；若同样总量拆成5条各20万输入、4万输出的请求，每条进入高档，合计就是1美元。总token相同，分档后的费用并不相同。
+
+开源权重也不能在价格图上记为零成本。它可能免去部分授权费，推理仍需要服务器、能耗、运维和服务质量投入；不同tokenizer对相同文字计数还可能不同。研究价格趋势时，应固定任务、质量、延迟与完整账单，而不是把不同代际、不同能力的最低输入价连成“价格归零”曲线。
+
+商业计费则在向更长任务延伸。Microsoft 9月25日公告将Cowork、Code和Autopilot等长任务纳入按使用量计费，配套预算和消耗管理；Home、Code拟在随后数周经Frontier分批推出，Autopilot计划月底扩大私人预览。这里保留公告状态，本轮未另核实际覆盖范围；按量收费能够使重任务匹配消耗，却尚不能证明客户持续购买或产品毛利为正。[Microsoft 9月25日公告，“Managing AI spend”](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/)
+
+#### 3.7.2 离散增长要保留交叉项
+
+对一个固定口径的收费品类，收入R=P×Q。若本月平均实际单价变化p、收费量变化q，则收入增长率为：
+
+**g = (1+p)×(1+q)－1 = p＋q＋p×q。**
+
+连续时间的微分近似可以写dR/R=dP/P+dQ/Q，但不能把它直接当较大月变动的精确公式。以下用统一的离散算法比较压力情景，输入不代表市场观测。
+
+| 假设情景，不是观测事实 | 单价月变化p | 收费量月变化q | 收入月变化g |
+|---|---:|---:|---:|
+| 用量较强 | -15% | +20% | +2.00% |
+| 中间压力情景 | -15% | +10% | -6.50% |
+| 用量较弱 | -15% | +5% | -10.75% |
+| 收入保持不变 | -15% | +17.65% | 约0.00% |
+
+固定-15%降价时，维持收入所需用量增幅为1/0.85－1=17.647%。但本篇没有证据表明所有平台一直处于这个单价和用量组合；公司披露的收费扩张也表明，不能把中间压力情景当成多数平台已经发生的收入轨迹。
+
+多产品公司的收入应写为各品类P×Q之和，再加订阅和其他收入。廉价模型用量占比提高可能拉低混合单价，同时更长的agent任务增加收费量；缓存提高还会改变价格结构。两个时期的混合单价下降，未必意味着同一服务遭遇同等幅度的价格战。
+
+#### 3.7.3 一笔API账单应该怎样复算
+
+以下是按Fable5.1公开价构造的例题，流量不是实际客户数据：未缓存输入100万token、缓存读取1000万token、输出20万token，则三项费用分别为10美元、2.5美元和10美元，合计22.5美元。若只将缓存读取价换成上一代的1美元、其余条件保持不变，则为30美元，账单下降25%，不是75%。
+
+这张简化账单假设缓存已写入，不含新缓存写入、工具、运行环境、地区加价、税费或协议折扣；真实预算要补齐这些项目，并比较任务成功率。价格低25%而失败重试翻倍，成功任务成本仍可能更高；高价模型一次成功，也可能比低价模型反复调用便宜。
+
+### 3.8 单位经济与客户ROI：让利润、现金和价值各归各位
+
+#### 3.8.1 应用商的收入与毛利桥
+
+先看一组假设，不把它冒充任何公司的盈利预测：10万个付费用户，每人每月平均实际付款30美元，月收入为300万美元；月推理与托管成本120万美元，另有60万美元交付成本，包括支持、内容许可和支付费用，则毛利120万美元、毛利率40%。这还没有减研发、销售、管理、利息和税，不能叫净利润率。
+
+若推理与托管单价降30%、总用量增20%，这项成本由120万美元变为100.8万美元；收入与其他交付成本暂时不变时，毛利变为139.2万美元、毛利率46.4%。因此上游API价格下降不必导致下游应用毛利下降。若竞争又迫使应用售价降20%，月收入变为240万美元，同样成本下毛利率则仅33.0%。最后结果取决于节约由用户、应用商还是模型商拿走。
+
+#### 3.8.2 客户值不值得付钱
+
+客户月净收益 = 可兑现的新增毛利或成本节约－工具费用－新增集成与复核成本－错误和合规损失。节省时间只有在释放出有效产能、减少加班或产生新增业务时，才进一步转成财务收益，不能直接把员工工资按分钟乘出来全部视作现金节约。
+
+例如，一项假设工作流每月节约20小时，每小时完全成本200元，其中只有40%能够转化为可兑现产能或成本节约，则月收益先计1600元；若工具及复核每月合计1000元，净收益600元。按该例，以“净收益/本期投入1000元”定义的月度简单ROI为60%；若可兑现比例降到20%，收益只有800元，反而净亏200元。这里没有预测哪家企业能做到这个比例，模型只是把真正需要调研的变量暴露出来。
+
+医疗、法律、金融和生产代码不能只优化这道平均数。一项低概率大损失也可能决定产品必须增加人工复核，所以本篇不把任务自动完成率直接视作可替代人员比例。
+
+#### 3.8.3 从毛利走到资本回报
+
+应用企业的预收款可能先增加现金，收入后确认；云企业资本投入先发生，折旧和收入在以后期间展开；模型公司还需要持续训练和研发。比较各层利润时，需要注明研发处理、内容授权、股权薪酬和租赁口径，并检查是否把某公司的投资收益误当经营利润。
+
+要计算每1美元终端消费最终留在哪一层，需要完整的合同及抵销表。把企业利润率、设备投资与产业链收入切片混在一起，不能得出全球利润分配比例。更可行的办法是选择有账单和合同的单一项目，把终端付款、渠道分成、模型费、云资源费与设备折旧逐项对上，再讨论可复制程度。
+
+### 3.9 2026年余下阶段与2027年的核验表
+
+观察阈值必须能在相同收入、资产和现金口径下解释。年度运行率与年度资本开支不对应相同资产寿命、收入范围或现金流，它们的比值可以提示压力，但不能直接判回本。下面的观察按每家公司下一次正式披露或合同复核滚动进行，不把尚未宣布的日期写成日历事实。
+
+| 要验证什么 | 当前可确认 | 后续需要的证据 | 什么会迫使我改判断 |
+|---|---|---|---|
+| 编程从席位扩展到用量 | GitHub已调整计费并披露收入增长 | 同口径付费留存、单客消费与毛利 | 用量收入持续增长且留存稳定，应上调固定席位模型之外的空间 |
+| 企业AI愿付费而非只试用 | 付费席位和Agentforce ARR已有披露 | 续费、折扣、范围变化与同口径增长 | 合同扩张主要来自降价、合并口径或赠额，应下调收入质量判断 |
+| 对话广告是否可复制 | ChatGPT Ads披露1B run-rate | 后续实际收入、客户复投与成本 | 多期增长、复投与产品体验保持，支持新增渠道；只有短期投放则不外推 |
+| 模型层是否形成可持续利润 | Anthropic S-1披露Q2经营转盈、H1仍经营亏损但经营现金为正 | 后续季度、分产品成本、营运资金与长期付款兑现 | 持续经营改善应降低纯烧钱判断；单季转盈不等于所有建设回本 |
+| API便宜是否降低成功任务成本 | 缓存等具体费项下降 | 固定任务集账单、失败重试和复核 | 成功任务成本下降同时客户净收益改善，扩大可付费场景 |
+| 新资产能否回收 | 云分部仍有真实收入与利润 | 资产投产批次、利用率和新增自由现金流 | 新资产回报逐批改善，应收敛资本错配担忧；靠重复融资维持则相反 |
+
+### 3.10 我可能错在哪里
+
+我仍可能低估按任务计费带来的市场扩张。若少量高强度企业用户愿意持续购买昂贵但可靠的工作成果，收入可以超出传统开发者席位模型；但也不能把理论能节省的全部劳动成本默认交给工具公司。
+
+我也可能高估公司指标的可比性。订阅、用量、渠道收入和合同范围一变，增长曲线就会断口径；Anthropic公开S-1改善了公司整体经营与现金的可见度，但其中未经审计的中期表、历史run-rate和分产品毛利仍不是同一种证据。尚未披露的产品成本与后续季度现金，不能靠精确小数填平。
+
+还有一项风险：我可能低估硬件和推理成本下降、计算效率提高对应用商的帮助。如果单位任务成本下降快于售价，收入不必爆发也可能实现更好的利润；若更可靠的模型减少复核，用户的实际投资回报也会提高。对此不能只看标价，而要同时验证质量、用量和费用。
+
+本篇当前判断是：AI收费渠道已经拓宽，收入增长不应被“价格归零”叙事一笔抹去；资本回报仍要逐家公司、逐批资产核验。研究重点由“有没有人在付钱”，转为“谁付的钱没有重复统计，谁在承担交付成本，谁最终留住现金”。
+
+<!-- REFERENCES_START -->
+
+## 参考资料索引
+
+本册按URL去重收录35项参考资料，保留正文中的就近链接，下面按首次引用顺序集中列出完整网址，便于打印后追溯。名称采用已核对的公司、报告期与文档类型或正文来源简称，并非一律为官方原标题；资料的期间、核验程度和访问限制以对应段落为准，不表示全部旧引文都在本轮重新取得原件。
+
+1. [Amazon第二季度财报](https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx) · ir.aboutamazon.com
+
+    <span class="ref-url">https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx</span>
+
+2. [Microsoft官方电话会](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4) · www.microsoft.com
+
+    <span class="ref-url">https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4</span>
+
+3. [Alphabet第二季度财报第2页](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf) · s206.q4cdn.com
+
+    <span class="ref-url">https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf</span>
+
+4. [Alphabet 10月6日公告原样分发](https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d) · www.marketscreener.com  新闻分发或转载平台，不能视为新增独立经营证据。
+
+    <span class="ref-url">https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d</span>
+
+5. [Microsoft财报日历公告](https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/) · news.microsoft.com
+
+    <span class="ref-url">https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/</span>
+
+6. [Amazon财报日历公告](https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call) · press.aboutamazon.com
+
+    <span class="ref-url">https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call</span>
+
+7. [Meta Platforms：2026年第三季度业绩公告及非GAAP调节表](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx) · investor.atmeta.com  2026-10-21；正文另引用同一公告中的Class C事项，不作为另一份独立证据。
+
+    <span class="ref-url">https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx</span>
+
+8. [OpenAI广告业务公告](https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/) · openai.com
+
+    <span class="ref-url">https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/</span>
+
+9. [OpenAI广告与测量更新](https://openai.com/index/new-chatgpt-ads-format-and-measurement/) · openai.com
+
+    <span class="ref-url">https://openai.com/index/new-chatgpt-ads-format-and-measurement/</span>
+
+10. [OpenAI3月公告](https://openai.com/index/accelerating-the-next-phase-ai/) · openai.com
+
+    <span class="ref-url">https://openai.com/index/accelerating-the-next-phase-ai/</span>
+
+11. [Anthropic PBC：公开Form S-1注册声明](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm) · www.sec.gov  2026-10-26；含未经审计中期财务。申请文件不等于发行生效、定价或交割。
+
+    <span class="ref-url">https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm</span>
+
+12. [Anthropic5月H轮公告](https://www.anthropic.com/news/series-h) · www.anthropic.com
+
+    <span class="ref-url">https://www.anthropic.com/news/series-h</span>
+
+13. [Anthropic4月公告](https://www.anthropic.com/news/anthropic-amazon-compute) · www.anthropic.com
+
+    <span class="ref-url">https://www.anthropic.com/news/anthropic-amazon-compute</span>
+
+14. [Claude Code2月披露](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) · www.anthropic.com
+
+    <span class="ref-url">https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation</span>
+
+15. [SlashData2025人口研究](https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there) · www.slashdata.co
+
+    <span class="ref-url">https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there</span>
+
+16. [2026Q1汇编](https://www.slashdata.co/post/14-software-developer-trends-insights-you-need-to-know-in-q1-2026) · www.slashdata.co
+
+    <span class="ref-url">https://www.slashdata.co/post/14-software-developer-trends-insights-you-need-to-know-in-q1-2026</span>
+
+17. [GitHub计费方案公告](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/) · github.blog
+
+    <span class="ref-url">https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</span>
+
+18. [6月上线说明](https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/) · github.blog
+
+    <span class="ref-url">https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/</span>
+
+19. [Cursor公司融资公告](https://cursor.com/blog/series-d) · cursor.com
+
+    <span class="ref-url">https://cursor.com/blog/series-d</span>
+
+20. [Cursor Press索引](https://cursor.com/blog/topic/press) · cursor.com
+
+    <span class="ref-url">https://cursor.com/blog/topic/press</span>
+
+21. [METR原始论文](https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf) · metr.org
+
+    <span class="ref-url">https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf</span>
+
+22. [后续实验说明](https://metr.org/blog/2026-02-24-uplift-update/) · metr.org
+
+    <span class="ref-url">https://metr.org/blog/2026-02-24-uplift-update/</span>
+
+23. [Salesforce FY27Q2财报](https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/) · www.salesforce.com
+
+    <span class="ref-url">https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/</span>
+
+24. [Harvey：公司新闻室索引](https://www.harvey.ai/newsroom) · www.harvey.ai  动态索引，不是特定日期的一篇公告。
+
+    <span class="ref-url">https://www.harvey.ai/newsroom</span>
+
+25. [AlphaSense：ARR超过5亿美元的公司公告](https://www.alpha-sense.com/press/alphasense-surpasses-500m-in-arr/) · www.alpha-sense.com  正文采用2025年10月披露口径；ARR不是同期已确认收入。
+
+    <span class="ref-url">https://www.alpha-sense.com/press/alphasense-surpasses-500m-in-arr/</span>
+
+26. [ElevenLabs：5亿美元ARR及新投资者公告](https://elevenlabs.io/blog/500m-arr-and-new-investors) · elevenlabs.io  2026-05-05公告，页面后标8/31更新；正文数据仍指前四个月。
+
+    <span class="ref-url">https://elevenlabs.io/blog/500m-arr-and-new-investors</span>
+
+27. [Fable/Mythos 5.1发布说明](https://www.anthropic.com/claude-fable-and-mythos-5-1) · www.anthropic.com
+
+    <span class="ref-url">https://www.anthropic.com/claude-fable-and-mythos-5-1</span>
+
+28. [Opus 5.5发布与价目](https://www.anthropic.com/claude-opus-5-5) · www.anthropic.com
+
+    <span class="ref-url">https://www.anthropic.com/claude-opus-5-5</span>
+
+29. [Sonnet 5.5发布](https://www.anthropic.com/claude-sonnet-5-5) · www.anthropic.com
+
+    <span class="ref-url">https://www.anthropic.com/claude-sonnet-5-5</span>
+
+30. [Haiku 5.5及缓存调价](https://www.anthropic.com/claude-haiku-5-5) · www.anthropic.com
+
+    <span class="ref-url">https://www.anthropic.com/claude-haiku-5-5</span>
+
+31. [官方定价与分档](https://platform.claude.com/docs/en/about-claude/pricing) · platform.claude.com
+
+    <span class="ref-url">https://platform.claude.com/docs/en/about-claude/pricing</span>
+
+32. [9月2日发布及价格脚注](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/) · blog.google
+
+    <span class="ref-url">https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/</span>
+
+33. [9月22日API变更记录](https://developers.openai.com/api/docs/changelog) · developers.openai.com
+
+    <span class="ref-url">https://developers.openai.com/api/docs/changelog</span>
+
+34. [9月29日GPT-6.1 Sol发布](https://openai.com/index/introducing-gpt-6-1-sol/) · openai.com
+
+    <span class="ref-url">https://openai.com/index/introducing-gpt-6-1-sol/</span>
+
+35. [Microsoft 9月25日公告，“Managing AI spend”](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/) · blogs.microsoft.com
+
+    <span class="ref-url">https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/</span>

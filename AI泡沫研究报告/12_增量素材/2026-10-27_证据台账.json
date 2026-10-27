@@ -1,0 +1,326 @@
+{
+  "version": "V1.6.1",
+  "cutoff": "2026-10-27 Asia/Shanghai",
+  "previous_cutoff": "2026-10-09",
+  "facts": [
+    {
+      "id": "TSMC-20261015",
+      "published": "2026-10-15",
+      "period": "2026Q3 ended 2026-09-30",
+      "observed_periods": [
+        "2026Q2",
+        "2026Q3"
+      ],
+      "status": "unaudited_quarter_actual",
+      "issuer": "TSMC",
+      "urls": [
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf"
+      ],
+      "locator": "Management Report pp1-2; FS p4; issuer-hosted earnings call transcript pp3-4 for Q4 revenue and FY2026 capital budget guidance",
+      "usd_revenue_b": [
+        40.2,
+        46.72
+      ],
+      "gross_margin_pct": [
+        67.7,
+        66.4
+      ],
+      "ntd_million": {
+        "revenue": 1494243,
+        "ocf": 919776,
+        "ppe": 443206,
+        "simple_bridge": 476570
+      },
+      "guidance_q4_revenue_usd_b": [
+        52.3,
+        54.3
+      ],
+      "boundary": "Quarterly actual replaces pending status; USD growth differs from NTD growth. HPC is not AI-only. Q4 is guidance. Simple cash bridge computed from financial-statement million inputs, not presentation rounded values."
+    },
+    {
+      "id": "ASML-20261014",
+      "published": "2026-10-14",
+      "period": "quarter ended 2026-09-27",
+      "status": "unaudited_quarter_actual",
+      "issuer": "ASML",
+      "urls": [
+        "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm",
+        "https://investor.asml.com/static-files/40c56a6b-1460-4f69-9340-6a869560d24b"
+      ],
+      "locator": "Financial statements pp2,9; prepared remarks pp1-2",
+      "eur_million": {
+        "revenue": 11662,
+        "operating_income": 5172.8,
+        "net_income": 4960.4,
+        "equity_gain_pretax": 509.7,
+        "pretax_income": 5750.7,
+        "ocf": 11797.6,
+        "ppe": 413.3,
+        "intangibles": 33.9,
+        "fcf": 11350.4
+      },
+      "boundary": "Investment gain is pretax, not subtracted unadjusted from aftertax profit. Cash includes working-capital/prepayment timing; do not annualize. FCF is non-GAAP."
+    },
+    {
+      "id": "META-20261021",
+      "published": "2026-10-21",
+      "period": "2026Q3 ended 2026-09-30",
+      "status": "unaudited_quarter_actual",
+      "issuer": "Meta Platforms",
+      "urls": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+      ],
+      "locator": "Financial highlights; CFO Outlook; reconciliation of GAAP to non-GAAP results",
+      "usd_b": {
+        "revenue": 64.601,
+        "operating_income": 12.988,
+        "net_income": 9.86,
+        "legal_charge": 9.89,
+        "ocf": 32.786,
+        "ppe": 33.942,
+        "finance_lease_principal": 0.964,
+        "fcf": -2.12,
+        "nine_month_fcf": 11.049
+      },
+      "capex_guidance_usd_b": [
+        135,
+        145
+      ],
+      "prior_capex_guidance_usd_b": [
+        130,
+        145
+      ],
+      "boundary": "Legal charge and prior-year tax affect earnings comparison. Quarter negative FCF does not imply negative year-to-date FCF. CapEx guidance includes finance-lease principal.",
+      "class_c_state": "Approved new nonvoting class; charter amendment planned effective Jan19 2027, distribution dates pending; no financing proceeds from establishment itself",
+      "comparison_q2_usd_b": {
+        "ocf": 31.862,
+        "ppe": 30.116,
+        "finance_lease_principal": 0.962,
+        "fcf": 0.784
+      }
+    },
+    {
+      "id": "ANTHROPIC-20261026",
+      "published": "2026-10-26",
+      "period": "historical financials through 2026-06-30; subsequent commitments per S-1",
+      "status": "public_s1_not_effective",
+      "issuer": "Anthropic PBC",
+      "urls": [
+        "https://www.anthropic.com/news/s1-sec",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      ],
+      "locator": "S-1 MD&A financial results/cash flows; pp171-173 commitments; Note13 F-59",
+      "local_original": "12_增量素材/2026-10-27_原件/Anthropic_S1_20261026_SEC_000162828026067168.htm",
+      "local_sha256": "b6836006abac03a7ab0244b79b968d9bcecde9f49ada9b79be78546d427f541e",
+      "usd_b": {
+        "h1_revenue": 16.286,
+        "h1_operating_loss": 0.693,
+        "h1_net_loss": 80.748,
+        "h1_ocf": 3.929,
+        "q2_operating_income": 0.974
+      },
+      "commitments_usd_b": {
+        "microsoft_minimum": 44.9,
+        "google_minimum": 114.5,
+        "amazon_minimum": 110,
+        "spacexai_maximum_cancellable": 120.5,
+        "broadcom_lease_ex_interest": 161.2,
+        "june30_fixed_minimum_disclosure": 265.6
+      },
+      "boundary": "No priced/effective/completed IPO. H1 unaudited historical results are not Oct run-rate. Noncash financing remeasurement is not cash burn. Contract periods/cancellation differ; amounts and bilateral guarantees must not be added as homogeneous current debt."
+    },
+    {
+      "id": "ORCL-JUPITER-20261023",
+      "published": "2026-10-23",
+      "period": "contracts as of 2026-09-30; payments to date in issuer release",
+      "status": "issuer_construction_progress",
+      "issuer": "Oracle",
+      "urls": [
+        "https://www.oracle.com/news/announcement/project-jupiter-advances-new-mexico-workforce-growth-and-awards-nearly-1-billion-in-contracts-to-local-businesses-2026-10-23/",
+        "https://www.oracle.com/news/announcement/project-jupiter-microgrid-cuts-permitted-emissions-by-35-percent-2026-10-15/"
+      ],
+      "locator": "Opening; Building Long-Term Economic Value; footnote",
+      "usd_million_lower_bounds": {
+        "awarded_contracts": 994,
+        "paid": 160
+      },
+      "boundary": "Lower bounds not exact spend. Paid is within contracts, not additive. Engineering payments are not operational GPU capacity or customer acceptance; permitting conditions remain.",
+      "permit_state": "Oct15 company proposal supplement to pending air permit application, not approval"
+    },
+    {
+      "id": "DEMINGLI-20261026",
+      "published": "2026-10-26",
+      "period": "2026 January-September; separate Q3 shown in source",
+      "status": "unaudited_quarterly_report_ytd_cash",
+      "issuer": "德明利",
+      "urls": [
+        "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-10-26/e8eabd45-e97f-4bed-b05d-27f58665dc50.PDF"
+      ],
+      "locator": "pp2-4,18-19",
+      "cny_yuan": {
+        "ytd_revenue": 28555260110.13,
+        "ytd_net_parent": 8745688431,
+        "ytd_ocf": -13690577650,
+        "ytd_cash_longterm_assets": 500131017.67,
+        "inventory_end": 28986149073.34,
+        "inventory_start": 7058432849.59
+      },
+      "boundary": "Negative cash is nine months, not Q3 only; inventory balance is a stock. Difference is simple cash bridge, not FCFF, fraud proof or forecast."
+    },
+    {
+      "id": "LONGSYS-20261015",
+      "published": "2026-10-15",
+      "period": "2026 January-September forecast",
+      "status": "preliminary_forecast_not_full_financials",
+      "issuer": "江波龙",
+      "urls": [
+        "https://static.cninfo.com.cn/finalpage/2026-10-15/1225607002.PDF"
+      ],
+      "locator": "pp1-2; announcement 2026-117",
+      "cny_yi_revenue": [
+        380,
+        400
+      ],
+      "cny_yi_parent_net": [
+        140,
+        149
+      ],
+      "boundary": "Management says Q3 OCF positive but no exact amount. Narrowing price increases are not falling prices. Financial-department estimate is not formal complete quarterly statements."
+    },
+    {
+      "id": "OPTICS-20261023",
+      "published": "2026-10-23",
+      "period": "operational status at announcement; historical H1 repeated",
+      "status": "operational_announcements_not_q3_cash_reports",
+      "issuer": "中际旭创/新易盛/天孚通信",
+      "urls": [
+        "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617691.pdf",
+        "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617676.pdf",
+        "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617692.pdf"
+      ],
+      "locator": "each announcement pp1-2",
+      "boundary": "Orders into 2027 differ from 2028 demand indications. Product volume and CPO components do not quantify profit/cash. Incentive targets are not realized or unconditional forecast profits. Full Q3 cash reports not obtained in this review."
+    },
+    {
+      "id": "CPI-20261014",
+      "published": "2026-10-14",
+      "period": "2026-09",
+      "status": "official_statistic",
+      "issuer": "BLS",
+      "urls": [
+        "https://www.bls.gov/news.release/archives/cpi_10142026.htm"
+      ],
+      "locator": "Opening and Table A",
+      "mom_pct": 0.6,
+      "yoy_pct": 3.7,
+      "core_mom_pct": 0.3,
+      "core_yoy_pct": 2.6,
+      "boundary": "Headline monthly acceleration has major gasoline contribution; no AI causal attribution."
+    },
+    {
+      "id": "PPI-20261015",
+      "published": "2026-10-15",
+      "period": "2026-09 plus revised August",
+      "status": "official_statistic_with_revision",
+      "issuer": "BLS",
+      "urls": [
+        "https://www.bls.gov/news.release/archives/ppi_10152026.htm"
+      ],
+      "locator": "Opening and Table A",
+      "mom_pct": 1.3,
+      "yoy_pct": 6.3,
+      "ex_food_energy_trade_mom_pct": 0.5,
+      "ex_food_energy_trade_yoy_pct": 5,
+      "august_same_vintage": {
+        "mom_pct": 0.5,
+        "yoy_pct": 5.6,
+        "ex_food_energy_trade_mom_pct": 0.3,
+        "ex_food_energy_trade_yoy_pct": 4.8
+      },
+      "boundary": "Previous 0.4/5.4 and core4.7 were earlier vintage; do not compare unrevised old observations with new series as if consistent."
+    },
+    {
+      "id": "RATES-20261026",
+      "published": "latest available observation 2026-10-26",
+      "period": "2026-10-08 vs 2026-10-26",
+      "status": "official_market_curve_observation",
+      "issuer": "US Treasury",
+      "urls": [
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_yield_curve",
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_real_yield_curve"
+      ],
+      "locator": "date rows and tenor column headings",
+      "baseline_pct": [
+        4.75,
+        5.22,
+        2.87
+      ],
+      "latest_pct": [
+        4.68,
+        5,
+        2.66
+      ],
+      "labels": [
+        "2Y nominal",
+        "10Y nominal",
+        "10Y real"
+      ],
+      "boundary": "Not Oct27 closing prices, no exact issuer credit-spread update. Nominal-real gap not pure expected inflation; changes not passed mechanically to WACC."
+    },
+    {
+      "id": "BEIGE-20261014",
+      "published": "2026-10-14",
+      "period": "information through 2026-10-05",
+      "status": "qualitative_contact_survey",
+      "issuer": "Federal Reserve",
+      "urls": [
+        "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20261014.pdf"
+      ],
+      "locator": "printed pp18-19,25-26,46",
+      "boundary": "Data-center demand plus reported local cancellation/permit pauses and labor/cost constraints. Contact accounts are not independently audited project status or verified state regulation."
+    },
+    {
+      "id": "CALENDAR-20261027",
+      "published": "reviewed 2026-10-27",
+      "period": "future releases as separately dated",
+      "status": "scheduled_not_results",
+      "issuer": "Issuer IR / Federal Reserve",
+      "urls": [
+        "https://www.federalreserve.gov/newsevents/2026-october.htm",
+        "https://investors.vertiv.com/news/news-details/2026/Vertiv-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Conference-Call/",
+        "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/",
+        "https://www.samsung.com/global/ir/ir-events-presentations/events/",
+        "https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/",
+        "https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call",
+        "https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d"
+      ],
+      "alphabet_access_status": "PARTIAL_PRIMARY_ACCESS: issuer verbatim distribution read; abc.xyz page access blocked",
+      "call_times_beijing": {
+        "SK_hynix": "2026-10-28 08:00",
+        "Vertiv": "2026-10-28 23:00",
+        "Alphabet": "2026-10-29 04:30",
+        "Microsoft": "2026-10-29 05:30",
+        "Samsung": "2026-10-29 09:00",
+        "Amazon": "2026-10-30 05:00"
+      },
+      "locator": "Official release/earnings calendar; full company calendar references in chapter6.7",
+      "boundary": "Call time is not release timestamp. US DST Oct difference ET+12/PT+15; Korea minus1 hour. Alphabet original announcement accessed via distributor, flagged in chapter, not independent multi-source evidence."
+    }
+  ],
+  "audit_legacy_states": {
+    "核验更新": 29,
+    "部分核验": 19,
+    "撤回": 20,
+    "历史待复核": 44
+  },
+  "scope": "13 incremental evidence groups, not 13 independent economic confirmations. Latest-quarter timing and all historical data retain own dates. Not trading instructions.",
+  "validation_status": "LISTED_INPUTS_PRIMARY_READBACK_AND_THREE_AGENT_CROSS_REVIEW_COMPLETE; LEGACY_PENDING_UNCHANGED; FINAL_ARTIFACT_QA_SEPARATE",
+  "review_records": [
+    "复审与版本记录/2026-10-27_供应链独立核验.md",
+    "复审与版本记录/2026-10-27_云厂与融资独立核验.md",
+    "复审与版本记录/2026-10-27_宏观反方独立核验.md"
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "version": "V1.5.1",
+  "cutoff": "2026-10-09",
+  "generated_at_utc": "2026-10-09T03:26:40.520364+00:00",
+  "scope": "local AI research report release only; personal and trading materials excluded; no Git push or external publication",
+  "report_count": 17,
+  "pdf_page_sum_including_duplicate_editions": 568,
+  "pdfs": [
+    {
+      "file": "V1.5.1正文修订版/01_主报告.pdf",
+      "bytes": 4585648,
+      "sha256": "204bc4d1bb2f6bb6c5d560988ae10290961303f41ef1d5d6c91c0460bcd99410",
+      "pages": 71
+    },
+    {
+      "file": "V1.5.1正文修订版/02_事实审计表.pdf",
+      "bytes": 753494,
+      "sha256": "cbe6b86577ff382dfc188d934ad02aec5502f62afc84b1005654c0eb139ed638",
+      "pages": 23
+    },
+    {
+      "file": "V1.5.1正文修订版/03_利润真实性拆解.pdf",
+      "bytes": 1157043,
+      "sha256": "e83fdc6df1b94ffadb0b3ddf2e613533245870afeec9f83ee14988d6b3df4cf6",
+      "pages": 18
+    },
+    {
+      "file": "V1.5.1正文修订版/04_循环投资网络.pdf",
+      "bytes": 965463,
+      "sha256": "f5d6d4a28f15f6c2c96a23ad357e360ddfd11835008f68364c0b5e94949fdc2e",
+      "pages": 16
+    },
+    {
+      "file": "V1.5.1正文修订版/05_AI变现与编程TAM.pdf",
+      "bytes": 862421,
+      "sha256": "84da97f3c877f2e7907deb9ef9e68c119a072e518c4ad123dee065e5004ae114",
+      "pages": 16
+    },
+    {
+      "file": "V1.5.1正文修订版/06_AGI与国际格局.pdf",
+      "bytes": 1074959,
+      "sha256": "c76399008d161c1cd73a8f01cdf6cfc762a616d8c0039646fd4c287f1ec6eb88",
+      "pages": 16
+    },
+    {
+      "file": "V1.5.1正文修订版/07_机构简版.pdf",
+      "bytes": 156153,
+      "sha256": "e4230134b55c3b729567d594d863f59f2c1d2fa4f840b18f23e6e760a8336dbe",
+      "pages": 3
+    },
+    {
+      "file": "V1.5.1正文修订版/08_公开精简版.pdf",
+      "bytes": 3253190,
+      "sha256": "4b29b0cbb1f9787a5d0ec49f720cab18faa56f0f22371406af050ff6c6e4c763",
+      "pages": 50
+    },
+    {
+      "file": "V1.5.1正文修订版/09_雪球公开版.pdf",
+      "bytes": 1483465,
+      "sha256": "071ee93437f38746a2fc45d6554821dab80b5ccb7d26879e85f8b12fa4abae83",
+      "pages": 16
+    },
+    {
+      "file": "V1.5.1正文修订版/10_摘要版.pdf",
+      "bytes": 119419,
+      "sha256": "c3cf8264a6d839c3f9eaa914da31911ff342802bb40c48a1905e77ecd36d7e5d",
+      "pages": 2
+    },
+    {
+      "file": "V1.5.1正文修订版/11_执行简版.pdf",
+      "bytes": 100296,
+      "sha256": "fee89b96ff5cce93641a11ae9feb2f8896b324e2c09e7964aa62c128b54865d2",
+      "pages": 2
+    },
+    {
+      "file": "V1.5.1正文修订版/12_全景版.pdf",
+      "bytes": 5956156,
+      "sha256": "3ec7da6303456690f644f0cbc2ab9394c76872bc9433d8fd8c627ed56fe66540",
+      "pages": 89
+    },
+    {
+      "file": "V1.5.1正文修订版/13_超全景版.pdf",
+      "bytes": 6417483,
+      "sha256": "ad1c76d8d6de771e7f42ca72d04ac51f0faef9fee37deb04af036b24a9ab123a",
+      "pages": 108
+    },
+    {
+      "file": "V1.5.1正文修订版/14_完整合集.pdf",
+      "bytes": 6194298,
+      "sha256": "f792cec6d80e0a4a7676c54cc11b8b54411e95869e3606de39d00643e1f4d19a",
+      "pages": 92
+    },
+    {
+      "file": "V1.5.1正文修订版/15_延迟情景版.pdf",
+      "bytes": 2307904,
+      "sha256": "a169c05138a105ad0661ad3cad140fc4dc42bc156b97392ed67d4949ce4fcfd9",
+      "pages": 34
+    },
+    {
+      "file": "V1.5.1正文修订版/16_崩盘剧本.pdf",
+      "bytes": 928103,
+      "sha256": "1cb429b825aaf68588af9dc2b83a3f5c0e1985174da00dfdac0ffff05f30273e",
+      "pages": 11
+    },
+    {
+      "file": "V1.5.1正文修订版/17_发布引流稿.pdf",
+      "bytes": 77532,
+      "sha256": "4e7b1f9188fbbd5ea3a450376a12be68f5b897b16911dc4f0baa904eec31e2a6",
+      "pages": 1
+    }
+  ],
+  "release_metadata": [
+    {
+      "file": "README.md",
+      "bytes": 4150,
+      "sha256": "8ce75f63c1413762d69982fa4061d329c2a9a910586fd4b309d010a14e530ae6"
+    },
+    {
+      "file": "复审与版本记录/2026-10-09_更新前缺陷与编辑约束.md",
+      "bytes": 1903,
+      "sha256": "a11583fe065d35da1d4d77b69569ffe6f8a65bffcdfea47c7ad2c8d97d8a85aa"
+    },
+    {
+      "file": "00_使用说明/README_大队长_全量存档说明.md",
+      "bytes": 1760,
+      "sha256": "9fac106a013c7502ac01f233a783d4f0ffe3b2e0dfe689e07221fa71028a86c1"
+    },
+    {
+      "file": "00_使用说明/当前文件总索引_2026-10-09.md",
+      "bytes": 6339,
+      "sha256": "af8fa3a4e9cd8e9346bf2d24e0bdada53e25f7d8aa2e02b687cebb3c920ed512"
+    },
+    {
+      "file": "V1.5.1正文修订版/index.html",
+      "bytes": 8963,
+      "sha256": "68ba38d025f4031b1d490d990ba6edd2509b14bd93433be493a08d71c755dd91"
+    },
+    {
+      "file": "V1.5.1正文修订版/manifest.json",
+      "bytes": 217453,
+      "sha256": "c0edcae18605c52b6debfe62dd3aa22de6617ebbd9be7bf641eb17c9510d9e05"
+    },
+    {
+      "file": "V1.5.1正文修订版/qa.json",
+      "bytes": 4420,
+      "sha256": "c6e4c72e91c924a54315d35b0e6cbb3c18792ab9383abfa83cb772d1e6b36221"
+    },
+    {
+      "file": "复审与版本记录/版本变更说明_2026-10-09.md",
+      "bytes": 3197,
+      "sha256": "7744eadb37cddb02a3d4b371be80367c34c65450401392c5fd6f25b06aecc2b8"
+    },
+    {
+      "file": "复审与版本记录/引用核验报告_2026-10-09.md",
+      "bytes": 4807,
+      "sha256": "0c91e87ae3fc49cd08dd41fd8bf3057b2de345cfa09ab60541fec04f1e744d86"
+    },
+    {
+      "file": "复审与版本记录/专业复审报告_2026-10-09.md",
+      "bytes": 2573,
+      "sha256": "61bbe02c456f1fd0f68df40648a3cabb2db71ab0459bb0de4f6cbe99be10cb2d"
+    },
+    {
+      "file": "复审与版本记录/PDF与目录核验报告_2026-10-09.md",
+      "bytes": 3798,
+      "sha256": "047115581605b504c9e9175efc3ebf4aaf9e966e3eccf7153e8b654251b0b243"
+    },
+    {
+      "file": "复审与版本记录/Sepia叙事复核_2026-10-09.md",
+      "bytes": 1177,
+      "sha256": "91203ab44e30315d1a51465af1f18b7db286cb277795befb218b166dc2f294f8"
+    },
+    {
+      "file": "复审与版本记录/V1.5.1_算式复核.json",
+      "bytes": 13158,
+      "sha256": "08de877676c8cbe4498ccdb1a4550fc94969ac27d5a9e05dbf8517717dc8461a"
+    },
+    {
+      "file": "复审与版本记录/V1.5.1_编号一致性_2026-10-09.json",
+      "bytes": 12554,
+      "sha256": "fbce64480a8b755ee528eb03ceb8be9083f009f74ddb9da8baaa185722435e8b"
+    },
+    {
+      "file": "复审与版本记录/发布清单_2026-10-09.md",
+      "bytes": 2684,
+      "sha256": "d06eb6f06bde658e99d90e52d25019ca4be065c1f78ca3c2405ffb28778c92f8"
+    },
+    {
+      "file": "12_增量素材/2026-10-09_证据台账.json",
+      "bytes": 11931,
+      "sha256": "21aea16d438a8d1df464296f74140b1a2dc0775f08eac1b66f8b1e4aa0c1cbf1"
+    },
+    {
+      "file": "11_源码_python生成脚本/build_20261009_figures.py",
+      "bytes": 6223,
+      "sha256": "d2224ae370ba6dce0cec8b339f73b55b38ec606134dedd19009bde24f0deafa1"
+    },
+    {
+      "file": "11_源码_python生成脚本/requirements_v15.txt",
+      "bytes": 208,
+      "sha256": "89d8bde28a6bc77cd52e2a1e75c320fc9afaf1c81ea72783ec2a2f5cfb24e503"
+    },
+    {
+      "file": "11_源码_python生成脚本/build_v151_reports.py",
+      "bytes": 24726,
+      "sha256": "904fb74d2e35fd9fb9042a0b284b18bf326b97ba9dac3513c9f5076ffb8c6d28"
+    },
+    {
+      "file": "11_源码_python生成脚本/check_v151_calculations.py",
+      "bytes": 10084,
+      "sha256": "025173a6f9eb700a53848396cee12f9adbcfc9f9bd5320dd568fefa8f0638f3b"
+    },
+    {
+      "file": "11_源码_python生成脚本/check_v151_numbering.py",
+      "bytes": 23885,
+      "sha256": "c2dec1f69b04c49411904a8a73f236b33bdc3a36cd288d7b00624abaab62d1d9"
+    },
+    {
+      "file": "11_源码_python生成脚本/qa_v151_reports.py",
+      "bytes": 9497,
+      "sha256": "99c9da3239974b9d38542beee6230fa98c310075ce5b0ffd5d46dc1e24f8a716"
+    },
+    {
+      "file": "13_全景版配图/V1.5.1_利率观察_20261009.svg",
+      "bytes": 148359,
+      "sha256": "fbbbd0760028e095219ac727e0a4ae260e62849229b124c9a52665c8a466b0fc"
+    },
+    {
+      "file": "13_全景版配图/V1.5.1_台积电月营收_20261009.svg",
+      "bytes": 139570,
+      "sha256": "7b5e1e85bbaf73eab9116d9ae5b580385d521d70f41621ee469ea7cb63b5f011"
+    },
+    {
+      "file": "13_全景版配图/V1.5.1_APLD收入构成_20261009.svg",
+      "bytes": 164641,
+      "sha256": "a6fd4343f91d75ca4ca0ce4ea171d4ee996364ceb79964943f6163cc0c7d421c"
+    },
+    {
+      "file": "11_源码_python生成脚本/write_v151_release_sha.py",
+      "bytes": 3166,
+      "sha256": "7bd71fc766ca13bf24355714e07ba383c5eac38afaf5b11939903a625eeaf2f6"
+    }
+  ]
+}

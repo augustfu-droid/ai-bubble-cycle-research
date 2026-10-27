@@ -1,0 +1,2717 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫深度研究报告 V1.6.1</title><style>@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:18mm 17mm 19mm;@top-left{content:"大队长 · AI周期与泡沫深度研究报告";font-family:Noto;font-size:7pt;color:#687888}@top-right{content:"V1.6.1 · 正文修订 · 2026-10-27";font-family:Noto;font-size:7pt;color:#687888}@bottom-left{content:"个人研究 · 公开资料 · 不构成投资建议";font-family:Noto;font-size:7pt;color:#687888}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#687888}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{font-family:Noto,sans-serif;font-size:10pt;line-height:1.7;color:#263643;margin:0}
+.cover{page:cover;height:296mm;padding:34mm 25mm;position:relative;break-after:page;background:#fbfdff}
+.cover .line{width:52mm;height:3mm;background:#86b8d5;margin-bottom:14mm}.brand{font-size:10pt;color:#637b8e;letter-spacing:1px}
+.cover .title{font-size:29pt;line-height:1.5;color:#28516e;margin:25mm 0 12mm;font-weight:700}
+.cover .subtitle{font-size:13pt;line-height:1.9;max-width:150mm;color:#526878}.cover .date{margin-top:23mm;font-size:11pt;color:#506f85}
+.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;padding-top:5mm;border-top:1px solid #d8e7ef;font-size:9pt;color:#647b8e}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;border-bottom:.4pt dotted #bfd2df;padding:3pt 0;color:#365a72;text-decoration:none;font-size:9pt}
+.toc .l3{padding-left:12pt;font-weight:400}.toc .l2{font-weight:700;margin-top:3pt}.toc a:after{content:target-counter(attr(href url),page);float:right;color:#315e7c}
+h1,h2,h3,h4{line-height:1.45;break-after:avoid;color:#315e7c}h1{font-size:21pt}h2{font-size:16pt;border-bottom:1.2pt solid #95bbd3;padding-bottom:5pt;margin:18pt 0 10pt}h3{font-size:12pt;margin:15pt 0 7pt}h4{font-size:10.8pt;margin:12pt 0 6pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:7pt 0;orphans:3;widows:3}a{color:#315e7c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #8ab8d4;background:#f2f7fb;padding:6pt 10pt;margin:8pt 0;color:#536776}
+table{border-collapse:collapse;width:100%;margin:9pt 0 13pt;font-size:8.3pt;table-layout:auto}thead{display:table-header-group}tr{break-inside:avoid}th{background:#dcecf6;color:#244b66;font-weight:700;text-align:left}th,td{border:.5pt solid #c7d9e4;padding:5pt 6pt;vertical-align:top;line-height:1.55;overflow-wrap:normal;word-break:normal;hyphens:none}td:first-child{min-width:17mm}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:8pt 0}li{margin:6pt 0}img{display:block;max-width:100%;max-height:210mm;object-fit:contain;margin:12pt auto}figure{break-inside:avoid}code{font-family:Noto;font-size:.95em;background:#edf3f7;padding:1pt 3pt}hr{border:0;border-top:.5pt solid #cadbe5;margin:14pt 0}
+@media screen{body{max-width:960px;margin:0 auto;padding:20px;background:white}.cover{height:auto;min-height:75vh;padding:40px 28px}.cover .foot{position:static;margin-top:45px}.front,.toc,main{padding:10px 12px}.toc a:after{content:none}table{display:block;overflow-x:auto}} .keep-together,.tariff-table{break-inside:avoid} .revision-start{break-before:page} </style></head><body><section class="cover"><div class="line"></div><div class="brand">大队长 · AI产业周期研究</div><div class="title">AI周期与泡沫深度研究报告</div><div class="subtitle">把经营、资本回收与金融条件分别判断。</div><div class="date">V1.6.1 · 正文修订<br>2026-10-27</div><div class="foot">按本篇主题组织证据与分析<br>个人研究 · 基于公开信息 · 不构成投资建议</div></section><section class="front"><h2>免责声明与阅读边界</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构观点，不构成个性化投资建议、收益保证或交易指令。技术和商业判断可能错误，信息也可能随后修订。</p>
+<p>V1.6.1沿用V1.5.1主题正文并同步V1.6完整校注勘误，增量资料检索截止2026年10月27日；各项财务、统计、行情与政策数据以正文明确的期间或观察日为准，不能全部理解为该日现值。公司指引、研究假设和已实现结果分开阅读；缺失的原始证据不以推测填补。</p>
+<p>本版按主题重编，不沿用旧版分页；旧版与历史档案保留不改。历史评分和预测记录只用于追溯，未完成统计校准的数字不属于经过验证的崩盘概率。审计条目总数不等于本轮全部事实复核通过。</p>
+<h2>本版修订说明</h2>
+<ol>
+<li>
+<p>利润篇：台积电、ASML与Meta三季报进入利润和现金桥；新增中国存储分化，既不把投资重估当主营，也不将高利润等同现金回收。</p>
+</li>
+<li>
+<p>循环篇：Anthropic公开S-1与长期算力承诺分别核对；Jupiter工程合同、已付款和算力投产分开，最高承诺额不重复相加。</p>
+</li>
+<li>
+<p>变现篇：用Anthropic S-1中的历史收入、营业损益和经营现金检验商业化，年化指标不冒充GAAP收入。</p>
+</li>
+<li>
+<p>技术与政策：同步V1.6的Arena来源及BIS法律状态勘误；技术测试保留原观察日，不宣称全部政策已重核至今日。</p>
+</li>
+<li>
+<p>中国传导：区分正式三季报、业绩预告与经营公告；结转台积电、CPI/PPI日历，更新未来官方电话会北京时间。</p>
+</li>
+<li>
+<p>估值：财政部观察日接至10月26日，名义与实际利率分列；维谛新季尚未发布，不以预测补实绩或产生新目标价。</p>
+</li>
+<li>
+<p>风险结论：需求兑现、现金占用、通胀加速和长端回落分别判断，不以单名负现金流宣布全面崩盘，原评分与E窗口不重校准。</p>
+</li>
+</ol>
+<p>逐项勘误与修订见文末《本版逐项修订记录》，可从目录跳转。</p></section><section class="toc"><h1>目录</h1><p>目录及页码依据本版正文生成；PDF内可点击跳转。</p><a class="l2" href="#h-0000">第一部分：哪些是真金白银，哪些是估值游戏？</a><a class="l3" href="#h-0001">本篇内容地图与逻辑链</a><a class="l3" href="#h-0002">1.1 五大巨头：经营兑现与现金回收分开判断</a><a class="l3" href="#h-0003">1.2 从账面利润到可支配现金</a><a class="l3" href="#h-0015">1.3 英伟达的“真客户”分类</a><a class="l3" href="#h-0019">1.4 估值层面：现在贵不贵？</a><a class="l3" href="#h-0020">1.5 六大历史泡沫横向对比</a><a class="l3" href="#h-0032">1.6 下一次财报：怎样把现金桥补完整</a><a class="l3" href="#h-0033">1.7 反方路径表——本报告最可能错在哪里</a><a class="l3" href="#h-0034">1.8 我可能错在哪里</a><a class="l2" href="#h-0035">第二部分：资本循环网络——出资、采购、融资与担保怎样相互连接</a><a class="l3" href="#h-0036">本篇内容地图与逻辑链</a><a class="l3" href="#h-0037">2.1 三大循环关系网络</a><a class="l3" href="#h-0041">2.2 核心交易明细：已执行与未执行分栏</a><a class="l3" href="#h-0042">2.3 交易性质分层：为什么撤下6100亿总数</a><a class="l3" href="#h-0046">2.4 合同与融资中的风险集中点</a><a class="l3" href="#h-0052">2.5 量化估算：不再用单一“循环乘数”代替现金模型</a><a class="l3" href="#h-0056">2.6 与2000年前后电信设备周期的比较</a><a class="l3" href="#h-0059">2.7 Anthropic：公开递表以后，融资与采购终于可以分账看</a><a class="l3" href="#h-0064">2.8 Alphabet融资：从初始计划更新到实际执行</a><a class="l3" href="#h-0068">2.9 事件总判断：风险向哪里移动，而不只是金额变大</a><a class="l3" href="#h-0072">2.10 我可能错在哪里</a><a class="l2" href="#h-0073">第三部分：AI靠什么赚钱？——变现版图与编程TAM</a><a class="l3" href="#h-0074">本篇内容地图与逻辑链</a><a class="l3" href="#h-0075">3.1 14个变现领域：按收费机制分类，不再混排规模榜</a><a class="l3" href="#h-0076">3.2 云与广告：最成熟的收费渠道，不等于全部都是AI收入</a><a class="l3" href="#h-0079">3.3 模型层和企业订阅：公开报表开始检验年化收入叙事</a><a class="l3" href="#h-0082">3.4 编程市场TAM：保留席位模型，取消“绝对上限”</a><a class="l3" href="#h-0088">3.5 编程之外：按工作流寻找可续费的需求</a><a class="l3" href="#h-0093">3.6 全球资本开支三层拆解：保留结构，修正回收模型</a><a class="l3" href="#h-0096">3.7 API定价与收入方程：从“死亡螺旋”改为可检验情景</a><a class="l3" href="#h-0100">3.8 单位经济与客户ROI：让利润、现金和价值各归各位</a><a class="l3" href="#h-0104">3.9 2026年余下阶段与2027年的核验表</a><a class="l3" href="#h-0105">3.10 我可能错在哪里</a><a class="l2" href="#h-0106">第四部分：AGI何时到来？</a><a class="l3" href="#h-0107">4.1 实验室的时间表，应怎样读</a><a class="l3" href="#h-0108">4.2 Scaling：从“算得更多”转向“交付同一结果花多少代价”</a><a class="l3" href="#h-0109">4.3 AGI定义：能力、通用性与自主性不能互相替代</a><a class="l3" href="#h-0110">4.4 算力、电力和数据，怎样约束而非决定时间表</a><a class="l3" href="#h-0111">4.5 从技术时间表到估值：保留折现，撤回伪精确归因</a><a class="l3" href="#h-0112">4.6 我可能错在哪里</a><a class="l2" href="#h-0113">第五部分：AI如何颠覆国际格局？</a><a class="l3" href="#h-0114">5.1 中美模型差距：先修正量尺，再讨论追赶</a><a class="l3" href="#h-0115">5.2 主权AI：比较实际能力，而不是把公告金额相加</a><a class="l3" href="#h-0116">5.3 军事与安全：采购需求、可部署能力和实战效果三层证据</a><a class="l3" href="#h-0117">5.4 就业冲击：更新到8月研究，保留因果边界</a><a class="l3" href="#h-0118">5.5 能源格局：采用IEA 2026更新，区分需求与投资回报</a><a class="l3" href="#h-0119">5.6 从货币到制度：国家议价力来自什么</a><a class="l3" href="#h-0120">5.7 模型与硬件：两条曲线保留为可检验框架</a><a class="l3" href="#h-0121">5.8 出口管制：更新法律和商业事实，不把传闻写成规则</a><a class="l3" href="#h-0122">5.9 我可能错在哪里</a><a class="l2" href="#h-0123">第六部分：对中国投资者的核心启示</a><a class="l3" href="#h-0124">6.1 从日历判断改为条件判断</a><a class="l3" href="#h-0126">6.2 A股传导需要逐项拆解</a><a class="l3" href="#h-0131">6.3 编程工具与软件公司的传导</a><a class="l3" href="#h-0132">6.4 客户集中与融资暴露</a><a class="l3" href="#h-0133">6.5 公司估值怎样承接行业判断</a><a class="l3" href="#h-0134">6.6 跨境工具：通道规则不能替代研究</a><a class="l3" href="#h-0135">6.7 下一轮核验日历</a><a class="l3" href="#h-0136">6.8 政策冲击的归因</a><a class="l3" href="#h-0137">6.9 本章可能判断错在哪里</a><a class="l2" href="#h-0138">第七部分：公司分化——经营韧性不等于估值安全</a><a class="l3" href="#h-0139">7.1 用商业模式分组，不给企业预判结局</a><a class="l3" href="#h-0140">7.2 把财报拆成五张小表</a><a class="l3" href="#h-0141">7.3 企业价值与股权价值的桥</a><a class="l3" href="#h-0145">7.4 增长能否抵消倍数回落</a><a class="l3" href="#h-0146">7.5 历史比较能说明什么</a><a class="l3" href="#h-0147">7.6 会改变本章结论的证据</a><a class="l2" href="#h-0148">风险教育：研究观点不是交易指令</a><a class="l2" href="#h-0149">第八部分：把经营、资本回收与金融条件分别判断</a><a class="l3" href="#h-0150">8.1 六个维度，不再用红灯数量代替模型</a><a class="l3" href="#h-0152">8.2 当前合并判断与反方证据</a><a class="l3" href="#h-0153">8.3 情景定义与既有分数的使用边界</a><a class="l3" href="#h-0154">8.4 原判断怎样结算，怎样纠错</a><a class="l3" href="#h-0155">8.5 还缺哪些能够推翻本报告的证据</a><a class="l2" href="#h-0156">本版逐项修订记录</a><a class="l3" href="#h-0157">利润真实性拆解：逐项修订</a><a class="l3" href="#h-0158">循环投资网络：逐项修订</a><a class="l3" href="#h-0159">AI变现与编程TAM：逐项修订</a><a class="l3" href="#h-0160">AGI与国际格局：逐项修订</a><a class="l3" href="#h-0161">中国投资者传导：逐项修订</a><a class="l3" href="#h-0162">公司分化与估值：逐项修订</a><a class="l3" href="#h-0163">风险与综合结论：逐项修订</a></section><main><h2 id="h-0000">第一部分：哪些是真金白银，哪些是估值游戏？</h2>
+<blockquote>
+<p>V1.6.1 正文修订｜增量检索截至2026-10-27，北京时间；本轮加入Meta、台积电及ASML第三季度实绩，德明利三季报和江波龙业绩预告分别标注。既有财报保留各自期间，不把Q2改称最新。金额无特别说明均为十亿美元；台积电、ASML、中国公司及韩国初步值另标本币。季度财务表及美光既有全年业绩表未经审计，Microsoft、Lumentum及Coherent既有全年数据来自已审计10-K。本篇讨论盈利来源、可持续性与现金转化，不把会计估计或投资收益本身认定为舞弊。</p>
+</blockquote>
+<h3 id="h-0001">本篇内容地图与逻辑链</h3>
+<p>Alphabet第二季度的稀释每股收益是9.11美元，其中股权证券收益的税后贡献为6.26美元；与此同时，Google Cloud收入与营业利润仍在快速增长。Amazon也同时呈现AWS经营改善和投资重估拉高净利润。仅看净利润，会高估经营改善；把重估全部剔除后说“没有真需求”，又会漏掉已经实现的云业务增长。</p>
+<p>本篇沿着一笔收入走到现金：先辨认客户支付的是什么，再把营业利润、持仓收益与税项分开，随后检查回款、资本开支和租赁，最后问新投入能否在设备失去经济竞争力前赚回成本。Oracle最新季度把矛盾推得更清楚：云基础设施收入增长121%，资本开支却超过经营现金流，经营现金又得到大额客户预付款支持。当前证据支持“经营兑现与资本回收压力并存”，不支持“五家公司利润都不真实”，也不支持“高增长足以证明任何建设成本都合理”。</p>
+<table>
+<thead>
+<tr>
+<th>阅读位置</th>
+<th>要回答的问题</th>
+<th>不能偷换的口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1—1.2</td>
+<td>哪些经营已兑现，利润如何进入现金？</td>
+<td>非经营收益不等于假利润，现金支出不等于当期费用</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>NVIDIA的客户和回款发生了什么变化？</td>
+<td>直接客户、最终客户、应收集中度分开</td>
+</tr>
+<tr>
+<td>1.4—1.5</td>
+<td>公司好与投资回报好之间差在哪里？</td>
+<td>估值时点、历史案例与预测概率分开</td>
+</tr>
+<tr>
+<td>1.6—1.8</td>
+<td>下一次财报应怎样推翻或加强判断？</td>
+<td>观察规则不冒充统计模型，风险不等于交易指令</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h-0002">1.1 五大巨头：经营兑现与现金回收分开判断</h3>
+<p>本版撤下旧的“真实性星级”。没有统一权重和可复算评分，给公司打两星或四星会制造精确感；更有用的是把已经确认的经营、还未收回的现金以及需要解释的会计项目放在同一张表里。</p>
+<table>
+<thead>
+<tr>
+<th>公司与统计期</th>
+<th>已确认的经营</th>
+<th>本篇重点核查</th>
+<th>当前判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVIDIA，FY27Q2，截至7/26</td>
+<td>收入96.221，数据中心89.023；GAAP毛利率75.0%</td>
+<td>经营现金24.077，低于前季50.344；应收周转天数由45天升至60天</td>
+<td>需求和利润强，回款节奏与支持客户的安排需跟踪</td>
+</tr>
+<tr>
+<td>Microsoft，FY26Q4，截至6/30</td>
+<td>收入90.007，营业利润40.603；Azure及其他云服务收入增43%</td>
+<td>经营现金55.441，现金购置固定资产35.802</td>
+<td>现金仍厚，不能用OpenAI投资关系否定整个云业务</td>
+</tr>
+<tr>
+<td>Alphabet，2026Q2</td>
+<td>Cloud收入24.768、营业利润8.814</td>
+<td>股权证券收益税前99.031；单季自由现金流−5.855</td>
+<td>经营和持仓收益均真实入账，但估值不能混用</td>
+</tr>
+<tr>
+<td>Amazon，2026Q2</td>
+<td>AWS收入42.232、营业利润16.621</td>
+<td>其他收益净额53.415，全部非营业税前净额53.396；截至6/30过去12个月FCF−7.604</td>
+<td>AWS增长成立，合并净利润和现金回收需分别解释</td>
+</tr>
+<tr>
+<td>Meta，2026Q3，截至9/30</td>
+<td>收入64.601，其中广告63.061；GAAP净利润9.860</td>
+<td>经营现金32.786，现金固定资产购置33.942、融资租赁本金0.964；损益含法律和解费用9.89</td>
+<td>广告继续增长，单季FCF转负；营业利润下降不能全部归因于AI投入</td>
+</tr>
+</tbody>
+</table>
+<p>资料：<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm">NVIDIA CFO说明</a>、<a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast">Microsoft财报</a>、<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf">Alphabet财报</a>、<a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx">Amazon财报</a>、<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta10月21日Q3财报</a>。这不是同期间排名：NVIDIA季度终点不同，Amazon所列FCF为滚动12个月；尚未取得新季报的公司不提前填入预测。</p>
+<p>台积电10月15日已发布Q3正式业绩：美元收入46.72B，较Q2的40.20B增长约16.2%；新台币收入1,494.24B，同比增长50.9%，与美元口径的41.2%不能互换。毛利率由67.7%降至66.4%，但归母净利润由706.56B升至763.06B新台币。HPC占收入68%并不等于AI占比，Q4的52.3—54.3B美元收入区间仍是指引。这些实际经营结果反驳即时需求断崖，却不能证明下游每个项目均已回本。<a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf">台积电Q3管理报告，第1—2页</a>、<a href="https://investor.tsmc.com/english/quarterly-results/2026/q3">Q3实绩与Q4指引</a></p>
+<p><img alt="台积电季度收入实绩与毛利率" src="../13_全景版配图/V1.6.1_台积电季度_20261027.svg" /></p>
+<h3 id="h-0003">1.2 从账面利润到可支配现金</h3>
+<h4 id="h-0004">1.2.1 持仓重估：单列，不把“非现金”写成“不真实”</h4>
+<p>持有的股权升值可以按照适用准则进入损益，这一收益有经济含义，但它既不是售出云服务的收入，也不一定在当季变成现金。对投资者的直接影响是：使用含巨额重估的每股收益计算市盈率，可能得到看似便宜、实际不可持续的倍数。</p>
+<p>Alphabet官方披露，Q2股权证券收益净额99.031，税后使净利润增加约77.1，每股收益增加6.26。因此9.11减6.26约为2.85美元，这是“只剔除该项影响后的EPS”，并非公司提供的纯经营EPS，更不是已剔净全部一次性项目的标准化盈利。该证券收益也不能全部指认为Anthropic；公司资产组合还包括其他上市及非上市投资，逐项归因要以附注为准。<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf">Alphabet财报附表第9页</a></p>
+<p>Amazon的Q2净利润62.647与税前项目不能直接相减得到税后“真实净利润”。其中53.415是其他收益净额；加上利息收入、扣除利息费用后的全部非营业税前净额为53.396，不能把两个标签混用。10-Q进一步列出，私营股权可观察价格上调约50.5，主要涉及Anthropic；估值考虑证券权利、流动性事件时间、其他证券类别以及缺乏流动性折价，并不是“最新估值×固定持股比例”。本版据此撤回旧文对后续三个季度重估收益和净利润占比的线性外推。<a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm">Amazon Q2 10-Q，利润表及投资附注</a></p>
+<p>Microsoft也需要做同样拆分。公司Q4非GAAP净利润调整只排除了OpenAI投资的0.480税后收益，但业绩稿另提示当季存在Anthropic投资收益3.2。因此“公司非GAAP”不能自动等同于“已剔除所有投资收益”。NVIDIA当季股权证券净收益约7.8，同样要与GPU经营利润分开看。对所有公司执行相同规则，才能避免只挑支持泡沫判断的项目。</p>
+<p>用于比较的利润桥应写成：</p>
+<blockquote>
+<p>GAAP净利润 − 已披露的税后非经营收益 + 已披露的税后非经营损失 ± 其他明确调整 = 研究口径调整后净利润。</p>
+</blockquote>
+<p>若只拿到税前项目，保留税前利润桥；不以统一21%税率替公司补出“实际税后值”。投资盈利能否重复、能否兑现、能否分配是三个不同问题。即使下一轮融资继续涨价，也不能把未实现持仓收益赋予云服务收入同样的估值倍数。</p>
+<h4 id="h-0005">1.2.2 折旧：会计寿命与经济寿命之间的差距</h4>
+<p>GPU可以继续开机，并不代表它还能按原租价获得客户。反过来，新一代芯片出现，也不代表旧设备马上归零；旧GPU可能转向价格敏感的推理、内部研发或较低负载任务。检验折旧的对象，应当是特定资产组的可赚取现金，而不是笼统地宣布“GPU都只能用三年”。</p>
+<p>原文把服务器、网络设备与数据中心建筑混成统一寿命，并用“延长折旧虚增利润”作结论，措辞超过了证据。不同公司设备构成、部署批次和残值判断不同；会计估计变更通常影响未来费用分摊，只有出现违背准则、错误估计或重大减值证据，才进一步判断其是否错报。旧版关于某公司全年“虚增29亿美元”及全行业“少提1760亿美元”的外部测算，不再冒充已审计事实。</p>
+<p>在现有财报上，先检查四件事：固定资产新增何时转为可使用，折旧是否随投产增加，闲置或提前退役是否减值，以及租赁资产和自建资产是否被放在不同费用项目。公司会计政策及未来变更须在原附注逐项核对，不用一张多年旧表替代当前政策。<a href="https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm">Microsoft FY2026 10-K</a>、<a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm">Meta Q2 10-Q</a></p>
+<p>一个可复算的敏感性例子：假设某批设备可折旧基础60亿美元、残值为零，直线法6年折旧每年10亿美元；若经济寿命只有3年，每年经济耗损相当于20亿美元。两种假设相差10亿美元税前费用，但这只是同一设备组、全年在用的演示。不能用全公司固定资产乘这个差额，也不能把它记成某家公司实际少提折旧。</p>
+<p>现金流也不能完全解决这个问题。折旧虽在经营现金流中加回，设备最终仍需替换；评价长久期项目应另估维持性资本开支，不能把“经营现金为正”当作“设备全生命周期已经回本”。</p>
+<h4 id="h-0006">1.2.3 自由现金流：先统一计算，再谈压力</h4>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>统计期</th>
+<th style="text-align: right;">经营现金流</th>
+<th style="text-align: right;">扣减项目</th>
+<th style="text-align: right;">FCF或可比计算</th>
+<th>口径边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alphabet</td>
+<td>2026Q2</td>
+<td style="text-align: right;">39.069</td>
+<td style="text-align: right;">现金固定资产购置44.924</td>
+<td style="text-align: right;">−5.855</td>
+<td>公司定义；TTM仍为+53.273，不能把单季转负说成全年无现金</td>
+</tr>
+<tr>
+<td>Microsoft</td>
+<td>FY26Q4</td>
+<td style="text-align: right;">55.441</td>
+<td style="text-align: right;">现金固定资产购置35.802</td>
+<td style="text-align: right;">+19.639</td>
+<td>本表现金桥；不是“总CapEx约41”再额外扣一遍租赁新增</td>
+</tr>
+<tr>
+<td>Meta</td>
+<td>2026Q3</td>
+<td style="text-align: right;">32.786</td>
+<td style="text-align: right;">固定资产33.942+融资租赁本金0.964</td>
+<td style="text-align: right;">−2.120</td>
+<td>公司定义，已包含该租赁本金；前九个月累计仍为+11.049</td>
+</tr>
+<tr>
+<td>NVIDIA</td>
+<td>FY27Q2</td>
+<td style="text-align: right;">24.077</td>
+<td style="text-align: right;">固定资产及无形资产2.677+相关本金0.059</td>
+<td style="text-align: right;">+21.341</td>
+<td>公司定义，不能仅用PP&amp;E现金购置替代全部扣项</td>
+</tr>
+<tr>
+<td>Amazon</td>
+<td>截至6/30的TTM</td>
+<td style="text-align: right;">161.403</td>
+<td style="text-align: right;">净现金购置固定资产169.007</td>
+<td style="text-align: right;">−7.604</td>
+<td>公司主FCF，未在这一行额外扣融资租赁本金</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>FY27Q1，截至8/31</td>
+<td style="text-align: right;">23.103</td>
+<td style="text-align: right;">资本开支28.499</td>
+<td style="text-align: right;">−5.396</td>
+<td>经营现金含11.363客户预付款，且公司明确其具有重大融资成分</td>
+</tr>
+</tbody>
+</table>
+<p>这些数据来自上列各公司财报现金流及非GAAP调节表；前五项算术分别为39.069−44.924、55.441−35.802、32.786−33.942−0.964、24.077−2.677−0.059、161.403−169.007，Oracle为23.103−28.499。不得把季度列与TTM列相加得到“行业FCF”。</p>
+<p>Meta的Q2历史值仍有比较价值：经营现金31.862，现金固定资产购置30.116、租赁本金0.962，FCF为+0.784；Q3经营现金增加0.924，而上述两项付款合计增加3.828，单季FCF因而减少2.904至−2.120。Q3期末现金、现金等价物及有价证券合计约82.45，不能由单季转负推成即将出现支付危机；也不能把公司包含租赁本金的135—145全年资本支出指引写成已发生支出。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx">Meta Q2历史财报</a>、<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Q3现金流及指引</a></p>
+<p><img alt="Meta季度现金桥：Q3建设付款增幅超过经营现金增幅" src="../13_全景版配图/V1.6.1_Meta现金桥_20261027.svg" /></p>
+<p>Oracle FY27Q1总收入19.345、云收入11.607，其中IaaS为7.388、同比增长121%；经营兑现很强，但资金桥不能只看增长率。当季经营现金23.103中，11.363来自具有重大融资成分的客户预付款；资本开支28.499后，自由现金流为−5.396。公司同时完成ATM普通股增发，净到账19.909。客户预付款与股权融资都是真实资金来源，却不是云服务已经赚回成本的证据。<a href="https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf">Oracle FY27Q1业绩</a>、<a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm">Oracle FY27Q1 10-Q</a></p>
+<p><img alt="Oracle FY27Q1：增长、现金与融资必须同时看" src="../13_全景版配图/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg" /></p>
+<p>这张图也刻意没有把664的剩余履约义务、288的未起租数据中心租赁承诺和当季资本开支相加。约13%的RPO预计未来12个月确认，约37%在第13—36个月、34%在第37—60个月，其余更晚；288的租赁承诺预计FY27Q2至FY29陆续开始，合同通常为15—19年，尚未反映在8月31日资产负债表。它们强化的是未来收入能见度和长期履约约束，不是当期现金、收入或损失。</p>
+<p>本版同时更正旧推理：“CapEx大于FCF”并不自动表示需要外部融资，因为FCF已经扣过CapEx。应比较经营现金能否覆盖现金CapEx，再看现金余额、债务到期、股息回购、股权投资和租赁还本。即使FCF为正，大额投资和偿债也可能带来融资需求；即使单季为负，也可能由既有现金余额覆盖。</p>
+<p>Amazon最能说明这个区别：AWS收入和分部利润显著增长，但合并口径建设付款更快，导致滚动FCF转负。这里既不能说AWS利润“依赖Anthropic重估”，也不能用AWS利润率替整个AI建设项目算回报。零售物流、其他技术基础设施和服务采购都在合并报表中，纯AI回报需要更细的资本和利润归属。</p>
+<h4 id="h-0007">1.2.4 利润高增而现金没有同步：光模块的现实检验</h4>
+<p>两家A股光模块公司的半年报，把“需求真实但要查现金”落到了可核对的账上。金额单位在本小节改为人民币亿元，统计期均为2026年1—6月，半年报未经审计。</p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: right;">归母净利润</th>
+<th style="text-align: right;">同比</th>
+<th style="text-align: right;">经营活动现金流量净额</th>
+<th style="text-align: right;">同比</th>
+<th style="text-align: right;">现金购建长期资产</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中际旭创</td>
+<td style="text-align: right;">136.51</td>
+<td style="text-align: right;">+241.70%</td>
+<td style="text-align: right;">18.00</td>
+<td style="text-align: right;">−44.08%</td>
+<td style="text-align: right;">48.02</td>
+</tr>
+<tr>
+<td>新易盛</td>
+<td style="text-align: right;">75.29</td>
+<td style="text-align: right;">+90.98%</td>
+<td style="text-align: right;">16.16</td>
+<td style="text-align: right;">+69.67%</td>
+<td style="text-align: right;">12.64</td>
+</tr>
+</tbody>
+</table>
+<p>资料：<a href="https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF">中际旭创8/22半年报，第8、60页</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-08-25/1225499406.PDF">新易盛8/25半年报，第7、44页</a>。归母利润与合并经营现金并非完全一致的权益归属口径，表中仅比较量级，不将两者相除标成严格的现金转化率。</p>
+<p><img alt="光模块公司：半年利润与经营现金流" src="../13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg" /></p>
+<p>中际旭创利润增长没有在同期等比例变成现金，需继续跟踪存货、应收项目与供应商付款；新易盛经营现金同比上升，也不表示每笔订单均已回款。这些差异可能来自交付增长带来的营运资金占用、备货和结算节奏，不能仅由半年CFO较小推出虚假收入。</p>
+<p>若按“经营现金−现金购建长期资产”做简单资金桥，中际旭创约−30.02亿元、新易盛约+3.53亿元。它们不是估值模型中的FCFF，也未扣除所有融资与投资支出；用途只是找出需要下一期报表解释的资金差额。原先依靠业绩预告的事前判断，应另按事前条件结算，半年报补齐不能倒写成预告节点命中。</p>
+<p>10月23日的经营公告提供了订单和产品进度，却没有补齐Q3现金表：中际旭创披露海外重点客户订单已覆盖2027年，部分客户给出2028年需求指引；新易盛披露800G和1.6T已是主要出货产品，1.6T仍在爬坡。订单、需求指引和已实现收入应分开记录。本轮未取得两家公司正式Q3报告，故前表保留H1期间，不把经营公告改写成新季报。<a href="https://static.cninfo.com.cn/finalpage/2026-10-23/1225617691.pdf">中际旭创公告，第1—2页</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-23/1225617676.pdf">新易盛公告，第1页</a></p>
+<h4 id="h-0008">1.2.5 海外光学供应商：经营改善与融资损失可以同时发生</h4>
+<p>Lumentum（朗美通）8月11日披露，截至6月27日的FY26Q4收入为10.063亿美元，同比增109.3%；GAAP营业利润率27.8%，非GAAP营业利润率36.6%。但同季GAAP净亏损约72亿美元，主要受约78亿美元非现金债务清偿损失影响，来自可转债股权化，而不是同额设备经营亏损或现金外流。非GAAP净利润3.263亿美元有助于观察调整后的经营，仍不能抹去债务转换对普通股股东的稀释。<a href="https://www.sec.gov/Archives/edgar/data/1633978/000162828026055726/lite_ex991xq4fy26.htm">Lumentum季度业绩及调节表</a></p>
+<p>现金要另看完整期间：Lumentum FY2026全年经营现金流7.514亿美元、现金固定资产购置4.513亿美元，两项相减为3.001亿美元。它支持全年经营现金覆盖这项建设付款，却不是单季现金转化率，也未扣除所有投资和融资支出。这一案例提醒我们，看到巨额净亏损时先查发生在哪一层，不能直接判定需求或流动性已经崩塌。<a href="https://www.sec.gov/Archives/edgar/data/1633978/000162828026057358/lite-20260627.htm">Lumentum FY2026 10-K，现金流量表及债务附注</a></p>
+<p>Coherent（高意）的反差在现金端。8月12日披露的FY26Q4收入为20.46亿美元，报告口径同比增33.8%，不与公司另列的备考增速混用；GAAP与非GAAP毛利率分别为38.5%和40.2%，两种利润定义也分别列示。随后提交的FY2026全年10-K显示，经营现金流只有0.79514亿美元，现金固定资产购置11.02909亿美元，两项之差为−10.23395亿美元。年报解释了存货、应收占款及应付抵补；当年获得的NVIDIA股权资金属于融资现金，不是客户买产品产生的经营现金。<a href="https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm">Coherent季度业绩</a>、<a href="https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm">Coherent FY2026 10-K，现金流量表及流动性分析</a></p>
+<p>上述两家全年现金均来自已审计年报，季度业绩仍是未经审计口径，不能将全年现金与单季利润相除。Coherent的负差额表明扩产与营运资金需要资金支持，不足以单独证明收入虚假或公司将发生支付危机；下一步应检查库存何时交付、应收何时回款，以及融资现金能覆盖多久。</p>
+<h4 id="h-0009">1.2.6 整机与芯片：调整后现金需要逐项还原</h4>
+<p>Dell（戴尔科技）截至7月31日的FY27Q2，AI优化服务器收入为164.01亿美元、同比增100%，AI订单609亿美元、期末在手订单约950亿美元；9月1日公司将全年AI服务器收入指引从600亿提高到740亿美元。收入证明交付，订单和上调指引则还需未来履约，不能合成已经收回的现金。<a href="https://investors.delltechnologies.com/node/20956/pdf">Dell官方季度业绩，第1—2页</a></p>
+<p>同季Dell合并经营现金流为22.25亿美元，同比下降约13%。公司现金调节表将其扣除12.39亿美元净资本支出后得到9.86亿美元FCF，再加回66.67亿美元融资应收调整及4.96亿美元经营租赁设备调整，得到81.49亿美元调整后FCF。这三个现金指标不能互换，81.49亿美元不是当季实际经营现金流。客户融资、设备交付与回款的时间差应进入研究；仅凭AI服务器收入翻倍，还无法判断客户的算力项目是否赚回资本成本。<a href="https://investors.delltechnologies.com/node/20956/pdf">Dell业绩现金表及FCF调节，第5、8—9页</a></p>
+<p>HPE（慧与）9月2日发布的FY26Q3同样截至7月31日，合并收入122.13亿美元，“Cloud &amp; AI”分部收入90.42亿美元、分部营业利润率17.0%，但该分部纳入服务器、混合云与金融服务，并非纯AI收入和利润。合并经营现金流16.41亿美元，减去7.45亿美元固定资产及软件投入、加回0.92亿美元资产处置、扣除0.30亿美元汇兑影响，才得到公司定义的9.58亿美元FCF。网络业务还受Juniper并表影响，不能把合并增速全部解释成AI有机增长。<a href="https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q3-2026/q3-2026-earnings-press-release.pdf">HPE季度业绩及现金调节</a>、<a href="https://www.sec.gov/Archives/edgar/data/1645590/000164559026000080/hpe-20260731.htm">HPE 10-Q，分部及经营分析</a></p>
+<p>Marvell（迈威尔）8月27日披露截至8月1日的FY27Q2收入27.393亿美元、同比增37%，GAAP净利润3.080亿美元；经营现金流6.055亿美元、现金固定资产购置1.267亿美元，两项相减为4.788亿美元。这是当季利润与现金同时为正的例子，但无晶圆厂模式仍有资本约束：10-Q列示长期产能预付款余额4.870亿美元，年初为2.788亿美元，并披露供应与产能承诺。预付款余额变化不能再次从已含相关现金影响的CFO中扣除；数据中心收入21.715亿美元也包含多类产品，不能都算作终端AI付费。<a href="https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results">Marvell季度业绩</a>、<a href="https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000025/mrvl-20260801.htm">Marvell 10-Q，附注3、9及14</a></p>
+<p>这三家季度报表未经审计，现金定义各不相同，也不能与前两家全年值求和得到“行业现金回收率”。研究的落点应是各公司的交付、付款条件和投入回收期，而不是让一张高增长表替代全部判断。</p>
+<h4 id="h-0010">1.2.7 美光：存储利润已兑现为现金，但终端回本仍是另一道题</h4>
+<p>美光9月30日公布截至9月3日的FY26Q4及全年业绩，本季收入54.229B、GAAP净利润37.701B、经营现金流43.973B，不能再将其列为“结果尚未公布”。全年收入133.188B、经营现金89.675B；以下财务数据来自公司未经审计的业绩材料，季度与全年分别展示。<a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">美光官方业绩及财务表</a></p>
+<table>
+<thead>
+<tr>
+<th>现金桥（十亿美元）</th>
+<th style="text-align: right;">FY26Q4</th>
+<th style="text-align: right;">FY2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">43.973</td>
+<td style="text-align: right;">89.675</td>
+</tr>
+<tr>
+<td>现金购建固定资产</td>
+<td style="text-align: right;">11.110</td>
+<td style="text-align: right;">30.712</td>
+</tr>
+<tr>
+<td>两项相减：本报告简单现金桥</td>
+<td style="text-align: right;">32.863</td>
+<td style="text-align: right;">58.963</td>
+</tr>
+<tr>
+<td>政府激励款</td>
+<td style="text-align: right;">0.327</td>
+<td style="text-align: right;">3.316</td>
+</tr>
+<tr>
+<td>固定资产出售回款</td>
+<td style="text-align: right;">0.009</td>
+<td style="text-align: right;">0.029</td>
+</tr>
+<tr>
+<td>公司净资本支出</td>
+<td style="text-align: right;">10.774</td>
+<td style="text-align: right;">27.367</td>
+</tr>
+<tr>
+<td>公司调整后自由现金流</td>
+<td style="text-align: right;">33.199</td>
+<td style="text-align: right;">62.308</td>
+</tr>
+</tbody>
+</table>
+<p>净资本支出把政府激励和资产出售回款从购建支出中扣除，因此本季公司调整后自由现金流为43.973−11.110＋0.327＋0.009＝33.199B；本报告仅用经营现金减现金购建，得到32.863B。两种口径都为正，却不是同一指标，更不能称其中一种为“GAAP自由现金流”。<a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf">官方演示材料，第43、49页现金调节</a></p>
+<p><img alt="美光季度经营现金、建设付款与调整后自由现金流" src="../13_全景版配图/V1.5.1_美光现金桥_20261001.svg" /></p>
+<p>同比或环比还要核对周数：FY2026有53周，Q4有14周，Q3有13周。本季收入较上季41.456B增长30.81%，机械按周归一后约增长21.47%，但后一个数字仍未剔除价格、产品结构和交付节奏，不是有机增长率。<a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm">美光Q3 10-Q，Note 1及MD&amp;A</a></p>
+<p>这组现金是对“供应链利润没有经营现金支持”的直接反证。公司披露Q4收取约12.3B客户押金，但其列入融资活动、不增加经营现金或自由现金流，因此不能再从43.973B里重复扣除。长期合同可支持建设，押金也存在满足采购条件后的返还安排，不能当永久收入；供应商现金充裕与云商、模型客户是否收回投资，仍需分别检验。<a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf">美光官方讲稿，第8—9页</a></p>
+<p>公司对FY27Q1给出61.5±1.5B收入指引，预计净资本支出约11.5B、上半年约25B且下半年更高。这些是管理层前瞻，不是本轮已发生支出，也不是明确的全年资本支出点值。后续反证重点是存储售价、交付、应收和库存、合同重议以及新增产能投产后的现金回报。</p>
+<h4 id="h-0011">1.2.8 机房交付开始收费，不等于全部收入都是经常租金</h4>
+<p>Applied Digital于10月7日美东盘后发布FY27Q1业绩，报告期截至8月31日。HPC托管收入262.6百万美元中，基础租金65.8、租户装修服务183.5、费用回收13.3；三项相加与分部收入一致，基础租金仅占约25.1%。装修服务是本期已确认收入，但不能把262.6全部乘四当作稳定年租金，也不能把收入当收现。<a href="https://www.globenewswire.com/news-release/2026/10/07/3376854/0/en/applied-digital-reports-fiscal-first-quarter-2027-results.html">公司季度财报，HPC Hosting Update</a></p>
+<p>集团GAAP收入341.9百万美元与调整后收入300.4不是同一个范围：后者排除合并子公司ChronoScale。10月1日新增75MW达到可服务状态，使Polaris Forge 1园区已投入运营的关键IT负荷容量达到250MW，这是可服务容量而非实时用电负荷，也是季度末之后的交付，不能倒放进截至8月31日的租金中。它提供了建设转运营的正面证据；项目回本仍须对照运营成本、融资和后续现金。</p>
+<p>集团现金表给出的另一面也不能省略：经营现金流63.921百万美元，购建固定资产及其他资产2,074.698百万美元，相减为−2,010.777百万美元；同期净融资现金流1,543.472百万美元。这个简单现金桥不是公司定义的FCF，也不是HPC分部现金流；它说明本季建设远超经营现金支持，却不能仅凭建设期缺口判定项目净现值为负或公司破产。<a href="https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000059/apld-20260831.htm">FY27Q1 10-Q，第5页</a></p>
+<p><img alt="Applied Digital托管收入构成：租金与装修收入分开" src="../13_全景版配图/V1.5.1_APLD收入构成_20261009.svg" /></p>
+<h4 id="h-0012">1.2.9 三星初步利润：能更新方向，不能替代现金表</h4>
+<p>三星10月8日给出的2026Q3初步合并销售额约195万亿韩元、营业利润约107.4万亿韩元，是K-IFRS估计区间的中点，不是已审计完整财报。公告没有将这组数字拆成HBM利润、经营现金或客户回报；本版因此纳入利润观察，不据此补造现金回收，也不与美元公司的收入直接求和。<a href="https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026">三星Q3预披露</a></p>
+<p>三星完整Q3业绩电话会安排在北京时间10月29日09:00；SK海力士Q3电话会为10月28日08:00。上述时间是公司日程，不是财务结果，截止日尚不能把未来季报的利润和现金填入当前表。<a href="https://www.samsung.com/global/ir/ir-events-presentations/events/">三星投资者日历</a>、<a href="https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/">SK海力士电话会邀请</a></p>
+<h4 id="h-0013">1.2.10 台积电与ASML：现金充裕，也要分清重估与预收的影响</h4>
+<p>台积电Q3的经营现金流为919.776B新台币，固定资产购建现金443.206B，相减为476.570B；两项均来自本季现金流表，不是前三季累计，也不与美元收入直接相除。经营现金高于Q2的783.365B，同时收入与归母利润增长，对“供应链只有账面利润”的说法构成反证。不过，Q2营业外收入95.83B降至Q3的34.59B，包含上一季资产处置及重估因素的消退，解释了净利润为何没有跟收入等幅增长。<a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf">台积电财务表，第4页</a>、<a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf">管理报告，第1页</a></p>
+<p>ASML于10月14日披露截至9月27日的Q3美国GAAP业绩，以下改用十亿欧元：收入11.6620、营业利润5.1728、净利润4.9604，分别较上年同期增长约55.2%、109.6%和133.5%。利润增长既有设备及升级业务支持，也含0.5097税前股权投资收益，管理层明确主要来自Mistral AI投资估值上升；该项约占税前利润5.7507的8.9%，不能把税前收益直接从税后净利润减去，伪造一个“调整后净利润”。<a href="https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0">ASML财务表，第2页</a>、<a href="https://investor.asml.com/static-files/40c56a6b-1460-4f69-9340-6a869560d24b">管理层讲稿，第1页</a></p>
+<p>同季ASML经营现金11.7976，减去固定资产0.4133与无形资产0.0339，公司定义的FCF为11.3504。现金很强，但资产负债变动贡献7.0090、约占经营现金59.4%，管理层亦说明订单和客户预付款的推动；该总项不全是客户预付款，也不能当成设备已经交付并赚到利润。现金流表已经调回股权估值收益，不再重复扣一次。Q4收入14.2—15.2、全年44—45仍是公司指引，而2029—2030年的客户意向也不能改称已锁定订单。<a href="https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0">财务表，第9页</a>、<a href="https://investor.asml.com/static-files/40c56a6b-1460-4f69-9340-6a869560d24b">管理层讲稿，第2页</a>、<a href="https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026">正式业绩稿</a></p>
+<h4 id="h-0014">1.2.11 中国存储：利润与备货现金可能走向相反方向</h4>
+<p>德明利10月26日公开的未经审计三季报，使存储链的现金压力有了新样本，以下均为人民币亿元：Q3收入116.45、归母利润27.29，而前三季累计归母利润87.46、经营现金净额−136.91。不能把累计现金流标成单季；从前三季经营现金再减现金购建长期资产5.00，简单资金桥约为−141.91。同期存货由年末70.58升至289.86，公司解释包括企业级存储备货，净融资现金143.93则属于资金来源，不是经营回款。<a href="https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-10-26/e8eabd45-e97f-4bed-b05d-27f58665dc50.PDF">德明利2026三季报，第2—4、18—19页</a></p>
+<p>这个样本要求追踪库存交付、收款与新增借款，尚不足以判定收入虚假或即将违约。江波龙10月15日公布的是业绩预告而非正式三季报：前三季预计收入380—400亿元、归母利润140—149亿元；公司称Q3经营现金转正，却未披露数额。其关于DRAM、NAND涨幅收窄的说明，提示售价与利润弹性不能线性外推，但预告不能替代经营现金明细。<a href="https://static.cninfo.com.cn/finalpage/2026-10-15/1225607002.PDF">江波龙业绩预告，第1—2页</a></p>
+<h3 id="h-0015">1.3 英伟达的“真客户”分类</h3>
+<h4 id="h-0016">1.3.1 先区分三种客户</h4>
+<p>直接向NVIDIA下单的客户可能是云厂，也可能是整机商、分销商或系统集成商；最终使用GPU的客户可能经多家云采购算力，资金提供者又可能是这些企业的投资人。三者不是同一张名单。把匿名直接客户按猜测填成微软、Meta、Amazon和Google，既放大精确感，也会错算穿透集中度。</p>
+<p>最新10-Q披露FY27Q2有一个直接客户占总收入16%，上半年有三个直接客户分别占16%、15%、13%。上年同期“两家占39%”不再是当前季度值。期末应收的五大直接客户分别占22%、14%、13%、11%、10%，这是应收余额占比，也不能当成收入占比。公司还说明一个AI研究与部署企业通过购买其客户的云服务，对NVIDIA收入有重要贡献，但没有提供可直接计算的穿透占比。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVIDIA Q2 10-Q，客户集中度及信用风险附注</a></p>
+<h4 id="h-0017">1.3.2 现金垫仍在，但已不是只看Q1的故事</h4>
+<p>Q2收入环比增18%，经营现金却由50.344降至24.077，DSO从45天升至60天；公司解释与对部分投资级大客户延长付款期限、营运资金及现金税款有关。这里值得跟踪的是新增应收何时收回，而不是仅用“投资级”标签忽略账期，也不是一看到DSO增加就宣布坏账。</p>
+<p>下一期应同时检验收入、回款和客户支持安排：应收增长若主要因为可解释的大型合同交付，后续能按期收款，则当前担忧会减轻；若反复延长账期，并伴随客户再融资困难、合同变更或应收减值，才构成更强的信用证据。分析中还应剔除季度末交付集中、税款支付和库存准备的影响。</p>
+<p>9月28日NVIDIA新增150B股票回购授权，使剩余总授权达到235B；公司预计在FY2028结束前执行。这是潜在现金用途，不是已完成回购，更不是新增产业融资；150B已包含在235B中，不能相加，也不能在估值中预先扣减同额已回购股数。<a href="https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase">NVIDIA回购授权公告</a></p>
+<h4 id="h-0018">1.3.3 从卖设备到承担部分下游风险</h4>
+<p>GPU销售完成并确认收入，不能说明供应商此后没有风险。NVIDIA同时向部分客户提供股权资金、云服务承诺及建设担保，第二部分逐项核对法律状态；这些安排能帮助客户交付，也使供应商暴露于客户的再融资和终端需求。风险取决于合同期限、担保触发和第三方承接能力，不取决于给所有相关收入打一个统一“循环折扣”。</p>
+<p>一个反证也要保留：博通9/2发布的FY26Q3业绩中，AI半导体收入16.7、同比增长221%，合并FCF13.665。这说明供应链确有收入和现金同时兑现的环节，不能把行业描述成纯粹的账面循环；但博通合并口径含基础设施软件，也不是云厂AI项目回报率。<a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial">博通官方财报</a></p>
+<h3 id="h-0019">1.4 估值层面：现在贵不贵？</h3>
+<p>本版不再把2026年5月的CAPE、个股PE或集中度列为9月15日现价。没有同一交易时点的价格、最新股本及一致的盈利预测，不能据旧数给出“现在便宜/昂贵”的精确结论。</p>
+<p>对重估收益较大的公司，先用分部营业利润和经营现金检验核心业务，再把投资资产单独估值；对高投入云厂，检查建设项目何时投产、收入如何爬坡、成熟期维持性资本开支是多少。只把当期负FCF永久化会低估增长资产，只把远期利润率套上今天投入又会高估项目。</p>
+<table>
+<thead>
+<tr>
+<th>估值对象</th>
+<th>较合适的起点</th>
+<th>需要另做的检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>广告、订阅等成熟业务</td>
+<td>正常化营业利润、现金流</td>
+<td>AI效率收益与新增运营成本是否同时计入</td>
+</tr>
+<tr>
+<td>云与AI基础设施</td>
+<td>分部利润、投入资本及分阶段现金流</td>
+<td>新旧资产组、投产率、利用率、资本化费用、租赁</td>
+</tr>
+<tr>
+<td>持有的非上市股权</td>
+<td>证券类别、交易价格与披露账面值</td>
+<td>稀释、流动性折价、税与可出售限制</td>
+</tr>
+<tr>
+<td>GPU供应商</td>
+<td>正常化盈利与经营现金</td>
+<td>周期峰值利润、应收、库存及对客户的支持义务</td>
+</tr>
+</tbody>
+</table>
+<p>“好公司不等于好股票”仍是本报告保留的判断，但它需要价格和现金流共同支持，不是一张历史崩盘图就能证明。相同增长预期下，估值越依赖多年后的现金，折现率和终局竞争格局的误差越重要。</p>
+<h3 id="h-0020">1.5 六大历史泡沫横向对比</h3>
+<h4 id="h-0021">1.5.1 横向对比表：比较机制，不平均跌幅</h4>
+<p>历史案例用于提出问题，不用于从六个样本估计AI崩盘概率。原表混用公司股价和市场指数、局部低点和长期低点、价格恢复和投资总回报，平均“跌79%”没有可比性，本版撤下。</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>可借鉴的机制</th>
+<th>不能直接套到AI的部分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>南海公司，1720</td>
+<td>债转股、融资叙事和投资人信心互相加强</td>
+<td>不能说完全没有业务，更不能由其股价路径推算AI价格</td>
+</tr>
+<tr>
+<td>英国铁路，1840年代</td>
+<td>建设付款先行，收入爬坡慢；重复建设和竞争侵蚀回报</td>
+<td>铁路寿命、监管和融资条件与GPU项目不同</td>
+</tr>
+<tr>
+<td>美国，1929—1932</td>
+<td>保证金和信贷收缩放大资产价格下跌</td>
+<td>宏观萧条及银行危机不能简化为股市一天造成</td>
+</tr>
+<tr>
+<td>日本，1980年代末</td>
+<td>抵押品价格、信贷供给与企业资产负债表相互作用</td>
+<td>土地、银行与人口结构不等于美国云计算行业</td>
+</tr>
+<tr>
+<td>互联网与电信，2000年前后</td>
+<td>订单预期失真、库存积压、供应商与客户同周期</td>
+<td>当年盈利公司与亏损初创必须分别比较</td>
+</tr>
+<tr>
+<td>次贷，2007—2009</td>
+<td>风险转移未必减少总风险，期限和流动性错配会传染</td>
+<td>AI股权投资不等于住房按揭或多层结构化债权</td>
+</tr>
+</tbody>
+</table>
+<h4 id="h-0022">1.5.2 南海泡沫：融资能力不是商业回报</h4>
+<p>南海公司的债转股安排与贸易叙事共同支撑股价，但旧文称其“从未进行实质贸易”不准确。英格兰银行档案明确记录了公司的奴隶贸易活动；历史上存在业务，不意味着业务现金能解释当时估值。这个区别恰好适用于AI：研究者需要追问外部客户愿意付多少钱，而不是在“有业务”与“纯骗局”之间二选一。<a href="https://www.bankofengland.co.uk/CalmView/Record.aspx?id=DS%2FUK%2F633&amp;pos=7&amp;src=CalmView.Persons">英格兰银行档案</a></p>
+<p>本版不再使用流传的牛顿名言、若干轶事或未经同源核对的个体损失作为推理依据。对于当前项目，应把融资额、投资者权利和可分配现金分别登记；融资成功证明资本愿意承受风险，不能直接证明项目净现值为正。</p>
+<h4 id="h-0023">1.5.3 铁路狂热：正确的技术方向也会遇到错误的资本预算</h4>
+<p>铁路案例保留的重点是现金时序：线路立项、征地和施工先消耗资金，客货流量在通车后才逐步形成；预测越乐观，越容易在多个相近市场重复建设。技术改变社会，与早期投资人获得足够回报，是两件事。Odlyzko的研究还强调需求预测、会计分析和资本市场认知的重要性，适合用来校验建设叙事，而非拿一个旧跌幅机械套到GPU。<a href="https://www-users.cse.umn.edu/~odlyzko/doc/bubbles.html">Odlyzko铁路狂热研究目录</a></p>
+<p>AI的差异在于设备更新更快、网络互联和电力约束更复杂；机房建筑可能长期使用，具体加速器却可能很快失去单位成本优势。因此模型至少要拆出土建、电力、冷却、服务器和网络设备，不用一个统一寿命代表整个数据中心。</p>
+<h4 id="h-0024">1.5.4 1929：区分估值损失与融资失灵</h4>
+<p>美联储历史资料记录，道指从1929年9月高点至1932年7月累计跌约89%，价格指数直到1954年才回到旧高点。这个恢复时间不包含股息再投资，也不是通胀调整后的真实购买力回本年限。<a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1929">美联储历史资料</a></p>
+<p>对AI更有用的问题是：价格下降时，谁会被要求追加抵押品，谁必须在短期还债，谁可以等待经营恢复。强现金巨头和高负债算力租赁商不该置于同一个风险桶。但也不能反过来说“大公司有现金，所以全系统不可能出风险”；信用敞口可能集中在项目公司、租赁、银行或私人信贷基金。</p>
+<h4 id="h-0025">1.5.5 日本泡沫：资产负债表修复为何拖慢投资</h4>
+<p>日本央行相关研究把银行对房地产放贷、土地抵押价值和股票价格的共同变化纳入分析，说明资产涨价会反过来扩张融资能力，价格回落后则压缩借款与投资。<a href="https://www.imes.boj.or.jp/research/abstracts/english/me14-1-6.html">日本央行研究</a></p>
+<p>AI产业可借鉴的是抵押品和现金流之间的反馈，而非“必然失去三十年”。若GPU残值下调导致授信收缩，算力运营商可能减少采购、压低供货商订单；如果它们已经锁定长期客户且不靠短期续贷，反馈就可能较弱。需要合同数据才能区分。</p>
+<h4 id="h-0026">1.5.6 互联网：订单、库存与收入之间可以突然脱节</h4>
+<p>Cisco在2001财年因需求急降确认约22亿美元额外库存费用，2002年报保留了这一记录。这比“公司股价25年永不回本”的过期说法更适合用于研究：当供应链以强需求为依据备货，而客户突然削减订单，损失会先表现为存货和采购承诺调整，不一定先表现在过去一季的毛利率。<a href="https://www.cisco.com/c/dam/en_us/about/ac49/ac20/downloads/annualreport/ar2002/pdf/AR.pdf">Cisco 2002年报</a></p>
+<p>Pets.com和Webvan仍可作商业模式与前置建设的历史参照，但不再用未经重核的IPO天数、仓库成本和亏损绝对额给当前实验室排“危险程度”。编程订阅与电商履约的成本结构不同；比烧钱总额更有效的是每单位业务的收入、服务成本、获客支出和留存。</p>
+<h4 id="h-0027">1.5.7 次贷：转移风险与消灭风险不是一回事</h4>
+<p>美联储对次贷危机的回顾强调，住房相关资产损失、金融机构承压和信用收缩相互传导。对本轮AI而言，股权出资、项目贷款、租赁与担保可以重新分配风险，但不能只看某一家公司的表内债务减少，就宣布整个网络去杠杆。<a href="https://www.federalreservehistory.org/essays/subprime-mortgage-crisis">美联储次贷危机回顾</a></p>
+<p>类比也有边界。基础设施贷款的抵押物、借款人、期限与证券化结构必须逐笔查证；没有证据表明某一项目复制了次贷的杠杆层级时，不把“表外”当作“金融危机已重演”。</p>
+<h4 id="h-0028">1.5.8 横向扩展：历史对照落到当前的检查表</h4>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>本轮需要的数据</th>
+<th>哪种证据会加强担忧</th>
+<th>哪种证据会缓解担忧</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>终端需求</td>
+<td>付费、留存、实际用量与客户集中度</td>
+<td>用量减速且客户依赖融资补贴</td>
+<td>外部客户扩散、价格与用量共同支持收入</td>
+</tr>
+<tr>
+<td>资本时序</td>
+<td>投产批次、建设付款、延期与取消条款</td>
+<td>付款不可推迟而收入持续后移</td>
+<td>可分期建设，已投产资产回款好</td>
+</tr>
+<tr>
+<td>设备残值</td>
+<td>利用率、租价、转用途、减值</td>
+<td>租价下降快于成本，续租不畅</td>
+<td>老设备仍可获得正的增量现金贡献</td>
+</tr>
+<tr>
+<td>融资</td>
+<td>债务到期、担保、抵押与授信</td>
+<td>账期延长、抵押折价、再融资成本升</td>
+<td>合同期覆盖债务且外部资金分散</td>
+</tr>
+</tbody>
+</table>
+<h4 id="h-0029">1.5.9 三种调整路径：不是统一的崩盘时间表</h4>
+<p>融资先出问题时，即便需求仍在，资金不足也可能阻断建设和交付。盈利先落后时，企业可以继续经营，但估值随回报预期下降。技术效率或架构改变时，一些资产回报受损，另一些应用或供应商可能获益。这三条路径可能交叉，不能归纳成“已涵盖所有泡沫”的定律。</p>
+<p>本版撤下以物理守恒、熵增或六个历史案例推导“崩盘必然发生”的段落。市值变化并非所有买卖参与者之间的严格零和结算，企业还能创造利润、分红或毁损资本；物理比喻不能替代现金流模型。</p>
+<h4 id="h-0030">1.5.10 AI与2000年的差异：缓冲与风险同时存在</h4>
+<p>当下大型平台拥有成熟广告、订阅和软件业务，能够把这些现金投入新业务，这是其缓冲。另一方面，客户支持已从股权出资延伸到长期承诺与担保，风险并未因当期盈利较强而消失。两者应放在同一个资产负债表分析中。</p>
+<p>本版不再声明“2027年才是首个验证窗口”。2026年已有收入、现金、融资、应收和资产投入可供验证；未来投产和续租还有自己的窗口。研究需要按数据发生时间逐项结算，不能不断把判断推迟到更远年份。</p>
+<h4 id="h-0031">1.5.11 AI与铁路的相似：同一座设施也要分层估值</h4>
+<p>土地和机房可以使用较长时间，GPU与网络设备需要持续更新，软件及模型投入又有不同的费用化方式。把整个项目当铁路，会低估技术替代；把整个项目当三年报废的GPU，又会高估土建和电力资产的损耗。</p>
+<p>因此保留原报告“方向正确不保证投资回报”的核心，但把检验落到资产组：建设资本由谁承担，客户合同覆盖哪些年份，期满后谁接盘，设备升级需要多少钱，最先亏损的是股东、债权人还是供应商。第二部分沿这条线检查循环投资安排。</p>
+<h3 id="h-0032">1.6 下一次财报：怎样把现金桥补完整</h3>
+<p>本节补齐旧版1.5直接跳到1.7的编号缺口，给出可持续更新的底表要求。每家公司应保留至少连续四季同口径数据；短期波动不直接升级为趋势。</p>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>本轮已有观察</th>
+<th>下一次必须补的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业利润→净利润</td>
+<td>Alphabet、Amazon存在大额重估</td>
+<td>投资类别、税后影响、已实现/未实现变化</td>
+</tr>
+<tr>
+<td>净利润→经营现金</td>
+<td>NVIDIA回款节奏放慢；部分光学供应商营运资金占用大</td>
+<td>应收账龄、存货、预付款、应付与税项现金桥</td>
+</tr>
+<tr>
+<td>经营现金→可支配现金</td>
+<td>平台建设支出显著吸收经营现金</td>
+<td>现金固定资产、租赁本金、股权投资和债务到期分列</td>
+</tr>
+<tr>
+<td>本期投入→远期回报</td>
+<td>尚缺纯AI项目组的完整回报表</td>
+<td>项目投产率、利用率、租价、维持性投入和终端付费</td>
+</tr>
+</tbody>
+</table>
+<p>CoreWeave 9月22日完成4.2可转债提供了一个新的资金分类案例：现金增加来自融资，既不增加当期营业收入，也不证明过去的设备投资已经靠客户付款收回。它可以缓解流动性压力，但财报复查仍须把经营、投资、融资三类现金分开；债务展期带来的生存时间与项目本身的盈利能力，是两个问题。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm">CoreWeave完成发行8-K</a></p>
+<h3 id="h-0033">1.7 反方路径表——本报告最可能错在哪里</h3>
+<table>
+<thead>
+<tr>
+<th>反方证据</th>
+<th>对本篇判断的影响</th>
+<th>使用限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云与AI收入高增，同时经营现金和资本回报连续改善</td>
+<td>弱化“资本投入可能无法充分回收”的担忧</td>
+<td>不能只看公司自报run-rate；要有同口径实现收入与现金</td>
+</tr>
+<tr>
+<td>客户来源扩散，应收账期回落且没有减值</td>
+<td>弱化集中度和融资支持依赖</td>
+<td>直接客户变多，不自动代表最终资金来源更分散</td>
+</tr>
+<tr>
+<td>老设备持续取得正现金贡献，退役与减值在原预算内</td>
+<td>支持较长经济寿命假设</td>
+<td>不等于所有资产都可用同一折旧寿命</td>
+</tr>
+<tr>
+<td>新项目阶段性投入可调整，成熟业务现金覆盖建设与还本</td>
+<td>降低外部融资断裂风险</td>
+<td>不同公司分别判断，不用行业总额替代</td>
+</tr>
+<tr>
+<td>应用付费持续增长且服务成本增速低于收入</td>
+<td>支持商业化兑现快于原设想</td>
+<td>宏观就业变化不能直接证明AI替代率或客户ROI</td>
+</tr>
+</tbody>
+</table>
+<p>旧版“任意两条/三条成立就自动改概率”的规则既自相矛盾，也没有统计校准，本版撤下。上述是研究重估条件；如何影响全报告情景权重，需要另记录证据和判断，不能由本篇自行补猜分数。</p>
+<h3 id="h-0034">1.8 我可能错在哪里</h3>
+<p>本篇最主要的识别困难，是无法从合并财报完整分离纯AI投入及其利润。现金CapEx、云租赁、研发费用和预付算力分散在不同科目，投资回报很可能被低估或高估；模型必须公开分配假设，而不是给“AI资本开支”一个看似精确的总量。</p>
+<p>持仓重估可以连续出现，剔除它有利于观察核心业务，却不能否认这部分资产本身有价值。估值时若已经将投资资产单列，再把其收益资本化进主营价值，就会重复计算；反过来全数忽略也会低估公司资产。</p>
+<p>现金流的单季变化还受税款、营运资金和交付时点影响。当前最稳妥的结论是：需求与营业利润已获得多家公司支持，而利润能否持续转成足够现金、覆盖长周期投入与客户支持义务，尚需逐季验证。它不是“需求已崩”的结论，也不是全面减仓或做空AI资产的执行信号。</p>
+<h2 id="h-0035">第二部分：资本循环网络——出资、采购、融资与担保怎样相互连接</h2>
+<blockquote>
+<p>V1.6.1 正文修订｜增量核验截至2026-10-27，北京时间。金额无特别说明均为十亿美元，GW为吉瓦。本轮依据Anthropic公开S-1更新上市状态与算力合同，补入Oracle工程付款及Meta新股类安排；既有交易保留原统计期，没有新执行证据的额度、担保与建设计划不升级为已到账或已交付。</p>
+</blockquote>
+<h3 id="h-0036">本篇内容地图与逻辑链</h3>
+<p>NVIDIA在8月签署的OpenAI相关建设担保，风险上限可达105，首批义务预计到FY2029、相应机房具备服务条件并开始租赁后才逐步生效。它比旧文笼统的“投资客户、客户再买GPU”更具体：供应商不只提供设备，还为客户未来的土地、电力和机房支付提供部分信用支持，而自己希望由此获得长期设备需求。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">NVIDIA 8/17相关8-K</a></p>
+<p>这不是105已支付，也不是105已违约。真正值得研究的是：建设未完成、客户不能履约、设备迭代或第三方不再承接时，各方分别承担什么义务。股权投资可能损失本金；授信可能尚未提款；多年采购只在履约进度中转成收入；担保有触发条件。把这些加在一起叫“循环融资总额”，会使风险识别失去最关键的期限与状态。</p>
+<p>本篇保留资本循环的研究问题，但不再预设所有循环都是虚假交易。一个产业内企业互相采购并不异常，融资促成的真实交付也可以按照准则确认收入；问题在于，收入与外部终端付款之间还隔着多少次融资，以及哪一方最终承担项目不能赚回成本的损失。</p>
+<h3 id="h-0037">2.1 三大循环关系网络</h3>
+<h4 id="h-0038">2.1.1 股权与商业合同：两条方向相反的线</h4>
+<table>
+<thead>
+<tr>
+<th>资金或义务方向</th>
+<th>法律/经济内容</th>
+<th>研究上要问的事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云商、芯片商→模型公司</td>
+<td>已出资股权或未来资本承诺</td>
+<td>实际付了多少，何时支付，亏损由谁承担？</td>
+</tr>
+<tr>
+<td>模型公司→云商</td>
+<td>云服务合同、最低消费或容量协议</td>
+<td>是否可取消，是否与供给性能或建设里程碑绑定？</td>
+</tr>
+<tr>
+<td>云商/算力运营商→设备供应商</td>
+<td>设备采购与付款</td>
+<td>已交付和应收多少，账期是否延长？</td>
+</tr>
+<tr>
+<td>外部客户→模型公司/云商</td>
+<td>订阅、API、企业服务付费</td>
+<td>是否覆盖推理、研发、基础设施与资本成本？</td>
+</tr>
+</tbody>
+</table>
+<p>这张图中最容易被遗漏的是最后一行。前三行可以让建设持续一段时间，却不能单独证明整条链的投资回报。判断循环能否持续，最终要看圈外客户带来的现金，或外部资本是否愿意继续承担亏损与建设风险。</p>
+<p>另一方面，不能把前三行每次付款都视为重复收入。芯片、基础设施和模型服务是不同产品，供应链各环节本来会分别确认收入。只有在测算最终市场规模、生态净融资或资本回报时，才需要做合并与抵销，而不是事后给全部合法营业收入贴上“虚假”的标签。</p>
+<h4 id="h-0039">2.1.2 项目融资：设备与合同共同支持借款</h4>
+<p>算力运营商可以把GPU、客户合同及相关回款质押给贷款方，以贷款支付设备和建设。风险由客户信用、可实现收入、设备残值、利率和期限共同决定。客户信用强，并不保证设备期满续租价格；设备账面价值高，也不保证违约处置时能按账面值出售。</p>
+<p>当债务期限长于底层客户合同，贷款不再完全由已有合同覆盖，需要依赖续租、转租、其他现金或再融资。2.4将以CoreWeave最新贷款展示这一变化，而不是沿用一个“GPU贷款利率14%”代表全公司的债务。</p>
+<h4 id="h-0040">2.1.3 担保与承购：融资风险向供应商回传</h4>
+<p>供应商承诺购买客户的未售算力、保证部分租金或支持机房建设，可以降低客户获得融资的难度。若第三方使用量上升，这些义务可能减少；如果使用量不及预期，原本的设备卖方又承担了下游现金支出。</p>
+<p>因此，分析应同时保留有利路径与风险路径。前者是支持建设、交付增长、终端需求接上；后者是账面订单继续增长，但终端现金不足，新增投入只能继续由股权、债务或担保支持。区分两者，需要合同执行数据，不能靠几家公司在同一张关系图上互相连线就下结论。</p>
+<h3 id="h-0041">2.2 核心交易明细：已执行与未执行分栏</h3>
+<p>下表不是完整的产业交易普查，只纳入本轮核到一手文件、且对研究结论重要的安排。不同栏之间不求和，同一交易后续变更也不能再加成一笔新交易。</p>
+<table>
+<thead>
+<tr>
+<th>关系/项目</th>
+<th>可确认事实及统计时点</th>
+<th>状态与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon→OpenAI股权</td>
+<td>Q1投入15；Q2再投入13.7；Q2 10-Q披露季后已付剩余21.3</td>
+<td>合计50为逐笔出资序列；截至6/30已投入28.7，季后部分另列</td>
+</tr>
+<tr>
+<td>AWS↔OpenAI商业合同</td>
+<td>原有38多年合同，Q1宣布扩大100、期限8年</td>
+<td>商业安排，包含AWS芯片性能义务；不是Q2收入或同期现金回流</td>
+</tr>
+<tr>
+<td>Amazon→Anthropic股权</td>
+<td>Q2分别投入Series G 5和Series H 5</td>
+<td>同期出资分列；不与融资轮总额重复求和</td>
+</tr>
+<tr>
+<td>Amazon→Anthropic后续融资</td>
+<td>上限20，按算力交付里程碑逐步可用；H轮后剩余上限15</td>
+<td>剩余额度不是已经提款15</td>
+</tr>
+<tr>
+<td>AWS↔Anthropic商业合同</td>
+<td>10/26公开S-1披露：2026/5至2036/4最低消费110，实际使用不足时需按条款补差</td>
+<td>更新同一合作的合同口径，不与Q2“扩大逾100”重复相加；并非已付现金</td>
+</tr>
+<tr>
+<td>NVIDIA→CoreWeave股权</td>
+<td>1/23已完成2现金出资，每股87.20；1/26官宣</td>
+<td>更正旧文“7/9新增”；同一笔不得再加一次</td>
+</tr>
+<tr>
+<td>AMD→OpenAI/Meta权证</td>
+<td>各最多1.6亿股，行权价0.01美元</td>
+<td>截至6/27均未归属、不可行权；不是已付款或确定稀释</td>
+</tr>
+<tr>
+<td>NVIDIA→OpenAI相关建设信用支持</td>
+<td>8月签约、总上限105；约4.25GW、分期生效</td>
+<td>或有风险；不等于当期出资105</td>
+</tr>
+<tr>
+<td>NVIDIA与六家资本机构→独立算力融资平台</td>
+<td>8/10宣布签署谅解备忘录，拟长期动员逾500第三方资本</td>
+<td>目标，不是已募资或已提款；初步安排仍可能不形成最终协议</td>
+</tr>
+<tr>
+<td>Oracle FY27Q1扩建资金</td>
+<td>当季CapEx 28.499；客户预付款11.363；ATM增发净到账19.909</td>
+<td>预付款、股权资金和经营收入分开；不把融资现金写成项目回报</td>
+</tr>
+<tr>
+<td>Broadcom AI XPV</td>
+<td>初始35支持逾1GW；五年租赁Backstop全部部署后最大未折现潜在责任约29</td>
+<td>29不是已付损失；42条件性可转票据截至8/2尚未发行</td>
+</tr>
+<tr>
+<td>Meta/BlackRock El Paso</td>
+<td>宣布80%/20%合资，约14开发成本；Meta租赁并提供残值担保</td>
+<td>公告安排与交割、租赁开始分开，不能只凭持股20%称风险出表</td>
+</tr>
+<tr>
+<td>SoftBank→OpenAI股权</td>
+<td>10/1第三笔10已执行，本轮30完成；累计出资64.6、约13%持股</td>
+<td>10包含在30内，30包含在累计额内；不能相加，也不是OpenAI经营现金</td>
+</tr>
+</tbody>
+</table>
+<p>资料：<a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm">Amazon Q2 10-Q</a>、<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/crwv-20260123.htm">CoreWeave 1/23交易8-K</a>、<a href="https://nvidianews.nvidia.com/news/nvidia-and-coreweave-strengthen-collaboration-to-accelerate-buildout-of-ai-factories">NVIDIA 1/26公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm">AMD Q2 10-Q</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">NVIDIA担保8-K</a>、<a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm">Oracle FY27Q1 10-Q</a>、<a href="https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28">Broadcom FY26Q3 10-Q</a>、<a href="https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/">Meta项目公告</a>。</p>
+<p>Anthropic的10月26日S-1已使Lambda、SpaceXAI和Nscale的部分合同进入可核范围，见2.7.2；本轮补齐的是合同义务与取消条件，尚未取得逐笔付款及全部实际交付，不能把这些数改作网络新增现金。Mistral等未完成本轮逐笔核验的关系仍不进入总量，未列入不代表交易不存在。</p>
+<p>融资平台一行的来源为<a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital">NVIDIA与六家机构8/10联合公告</a>及<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVIDIA 8/26所报10-Q的Recent Developments</a>。公告与定期报告相互补足的是目标及条款边界，不能算作两次融资；具体风险见2.5.3。</p>
+<p>SoftBank的10月1日公告属于旧截止日同日补核：第三笔10由9月24日外币高级债融资所得支持，9月30日取消剩余10的未提款桥贷额度，桥贷借款已清偿。它确认新股权资金已进入OpenAI，不证明OpenAI项目经营回本；债券融资和随后股权出资是同一资金链的两端，不能再合计成双倍生态新增资金。<a href="https://group.softbank/en/news/press/20261001">SoftBank执行公告</a></p>
+<h3 id="h-0042">2.3 交易性质分层：为什么撤下6100亿总数</h3>
+<h4 id="h-0043">2.3.1 五类义务的计量并不相同</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>应记的量</th>
+<th>不应替代成什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股权出资</td>
+<td>实际支付、账面值、未支付资本承诺分别记录</td>
+<td>不把持仓市值当历史投入，不把额度当现金</td>
+</tr>
+<tr>
+<td>债务/授信</td>
+<td>已提款本金、未提款额度、利率、抵押和到期表</td>
+<td>不把新融资额度全部当新增债务余额</td>
+</tr>
+<tr>
+<td>服务/采购合同</td>
+<td>剩余合同额、当期交付、已收/已付及解约条款</td>
+<td>不把多年RPO、GW容量当当期收入</td>
+</tr>
+<tr>
+<td>权证等客户激励</td>
+<td>股数、行权价、归属条件、会计计量</td>
+<td>不以目标股价×最大股数称当期现金融资</td>
+</tr>
+<tr>
+<td>担保/残值承诺</td>
+<td>最大风险、触发条件、开始时间和已确认负债</td>
+<td>不把最大上限当必付损失或当期债务</td>
+</tr>
+</tbody>
+</table>
+<p>旧标题把不同性质、不同时间、可能同一底层资产的金额合成6100亿，随后又扩到7000亿、7800亿和其他口径。正文即使补一句“不可加总”，仍会让读者把这个数字当作研究结果。因此本版直接撤销它，而不是换一个更大的总数。</p>
+<h4 id="h-0044">2.3.2 现金逐笔流转，不等于可以追踪同一张钞票</h4>
+<p>如果云商投资模型公司，模型公司同时向云商买算力，两笔现金有相反方向，但公开报表通常不能证明“投资款恰好全部回流”。模型公司还可能支付工资、其他供应商、研发和税，资金又与其他投资人出资混合。商业合同可以说明绑定强度，不能自动提供逐笔资金来源的穿透证明。</p>
+<p>反之，只要公开文件明确把融资额度与算力交付挂钩，就不能当作彼此完全独立的交易。Amazon对Anthropic安排已提供这样的直接线索：未来资金可用性与交付里程碑有关。风险判断应围绕哪些里程碑、供应商性能责任、终端客户付费以及未用额度的期限展开。</p>
+<h4 id="h-0045">2.3.3 数据底表的最低要求</h4>
+<p>每条关系至少登记：出资人和最终风险承担者、收款人和法律实体、合同币种、公告日与发生日、已执行金额、剩余额度、期限、担保和退出条件、报表位置及原件链接。报表未披露的行填写“未披露”，不能用媒体摘要或总额差额补全。</p>
+<p>只有在同一截止日、同一币种与净额规则下，才能做有限范围合计。例如，Amazon对OpenAI某轮的逐笔股权支付可以对账；它不能与AWS未来云合同再次相加，宣称公司已经产生同额AI新增需求。</p>
+<h3 id="h-0046">2.4 合同与融资中的风险集中点</h3>
+<h4 id="h-0047">2.4.1 CoreWeave：股权支持之外，续租风险进入债务结构</h4>
+<p>NVIDIA的2现金出资在1/23已经完成，官方1/26公告把它与2030年前建设逾5GW的合作联系起来。旧正文将它误写为7月股价下跌后的新救援，还在累计敞口中再加一次。本版撤回这个事件时点和“跌后托底”的因果解释。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/crwv-20260123.htm">成交8-K</a></p>
+<p>更值得纳入当前正文的是8月DDTL 5.5：额度2.6、期限约5年，而底层客户合同平均约3年，利率为SOFR加5.50%。公司明确表示可以续约或转租给其他客户，但要满足信贷合同条件；公司认为这体现贷款人信心，也让它接触更广泛的客户。对研究者而言，这同时意味着合同期满后租价和残值风险进入了还款模型。<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx">8/10融资公告</a></p>
+<p>10-Q的季后事项披露，这笔额度已提款1.2，不能继续只把2.6当作全部未使用承诺，也不能把额度2.6全部列作新增已提款。文件还区分有追索与非追索安排：DDTL 4.0为附有限例外担保的非追索结构，其他若干贷款受母公司担保，不能统称“已把风险完全放在项目公司”。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm">CoreWeave Q2 10-Q，债务与季后事项</a></p>
+<p>分析上的压力测试应保持简单而透明：若三年后原客户不续约，剩余两年需要由新客户净回款、设备处置或其他资金补齐。先估可出租设备的性能、单位租价和维护成本，再测利息、本金与契约约束；没有这些输入，不能仅凭“5年对3年”宣布违约，也不能因贷款超额认购就认定风险消失。</p>
+<p>9月17日，公司又披露第三季度新签3—6个月客户合同，相关集群每兆瓦对应的年化收入约4000万美元。这支持短期算力租价仍强，却不是一年已收现金，也不是全公司统一租价；不能乘以全部4.2GW承诺电力来外推集团收入。公告同时重述的逾250亿美元新增承诺及4.2GW电力为8月既有披露，不再计成9月新增。<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Continues-to-Contract-New-Compute-Capacity-at-Higher-Prices/default.aspx">CoreWeave 9月17日公告</a></p>
+<p>9月22日已完成的可转债总本金为4.2，其中包含全额行使的0.5增购权；扣初始购买人折扣后所得约4.137，减去0.5662的capped call交易成本，余约3.5708，尚未扣其他发行费用。按2.875%票息计算，年现金付息约0.12075；2033年到期及转股条件影响资本结构，低票息不能与普通债直接相比后称为信用风险下降。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm">CoreWeave完成发行8-K</a></p>
+<p><img alt="CoreWeave可转债本金与可支配所得之间的差额" src="../13_全景版配图/V1.5.1_CoreWeave融资现金桥_20260924.svg" /></p>
+<p>这两条消息同时加强短期承接能力，也使期限问题更值得跟踪：3—6个月短约不能直接覆盖多年建设与还债，新增融资不能代替经营回收。上文约5年贷款与约3年客户合同是另一笔融资，不能假定这些新短约全部抵押给它；应分别建表，再看续租、替代客户和残值能否接住长期义务。</p>
+<p>10月7日公布的印度项目仍处于计划阶段：CoreWeave拟在Navi Mumbai部署240MW、分三栋各80MW建筑，首期预计2028年中可用，另最多240MW只是扩展机会。不能写成480MW已经运营，也不能把公告重述的8月4.2GW承诺电力再算一次新增。对模型，它增加的是待跟踪的长周期交付与资金需求，公告尚未给融资金额或终端客户现金。<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Enters-India-Expanding-AI-Cloud-Platform-With-AdaniConneX/default.aspx">CoreWeave印度项目公告</a></p>
+<h4 id="h-0048">2.4.2 OpenAI—Oracle—NVIDIA：收入能见度与建设信用相互捆绑</h4>
+<p>Oracle FY27Q1已给出两面证据。IaaS收入7.388、同比增长121%，公司当季新增逾30的AI云合同，RPO由FY2026末638增至664；但664中约13%预计未来12个月确认，约37%在第13—36个月、34%在第37—60个月，其余更晚。RPO说明未来收入能见度，不是近一年现金或利润。<a href="https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf">Oracle FY27Q1业绩</a>、<a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm">Oracle FY27Q1 10-Q</a></p>
+<p>建设端更能说明资金循环：当季资本开支28.499，经营现金23.103中包含11.363具有重大融资成分的客户预付款，自由现金流为−5.396；公司又通过ATM增发净募19.909，同时偿还4.202长期债务。8月31日短期借款7.625、长期借款117.712，合计125.337。现金和借款没有在本季形成即时流动性事故，但扩建明显依赖经营现金中的带融资成分客户预付款，以及经营现金之外的股权资金。</p>
+<p>Oracle另有约288未起租租赁承诺，基本都是数据中心，预计FY27Q2至FY29开始、通常持续15—19年，尚未反映在8月31日资产负债表。它不能与RPO、当季资本开支或已确认租赁负债相加成“总风险”，却把客户履约、机房交付和资产残值的观察期拉得更长。</p>
+<p>NVIDIA的SB Energy担保则把风险延长到建设和租赁阶段：105总上限对应约4.25GW，按不同机房开始服务逐步生效；客户付款后敞口递减，只涵盖明确的部分租金和电力付款，不涵盖整个园区成本。额外约3.8GW信用支持是NVIDIA可自行决定是否行使的选项，不能预先算成已生效担保。未来收入机会与风险上限也不是同一量，不能拿管理层预期的多代GPU销售额直接抵销担保。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm">担保8-K</a></p>
+<p>Broadcom 9月10日提交的FY26Q3 10-Q又把同一结构写得更直白：AI XPV以金融伙伴出资、Broadcom提供技术，弥合前沿模型实验室当前现金流与前置投资之间的缺口。初始35安排支持逾1GW；全部机架部署后，五年租赁Backstop最大未折现潜在责任约29，客户违约时按未偿Backstop的85%减处置机架价值计算。该责任公允价值目前不重大且尚无付款，因此29不是当期负债或损失。<a href="https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28">Broadcom FY26Q3 10-Q，Note 10及MD&amp;A</a></p>
+<p>同一文件还允许客户在特定条件且有需要时，向Broadcom发行总本金最高42的可转票据，所得只能用于客户的租赁义务；截至8月2日一张也未发行。这是新的条件性融资机制，不是Broadcom已经提供42融资、取得42应收或确认42收入。Broadcom另有126.821不可无罚取消、具法律约束力的采购承诺，主要是库存，其中FY2027为52.674、FY2028为72.952；公司没有披露其中AI占比，而且总额较上一季度略低，不能与29和42相加，也不能写成“本周新增198”。</p>
+<p>Oracle、NVIDIA与Broadcom三条线共同提示的是集中度和期限风险，并非某家已经无力履约。对Oracle应观察RPO转收入、回款、建设投入与融资成本；对NVIDIA观察交付后应收、客户支持义务和担保是否触发；对Broadcom观察AI机架部署、租赁付款、票据发行、资产处置与采购承诺消化。公司现金垫能缓冲风险，但不能使一份长期或有义务失去经济意义。</p>
+<p>Oracle与STACK于9月30日对Jupiter洪水的联合声明称，洪水到达园区，但关键基础设施未损坏、项目仍按原计划推进。10月23日Oracle进一步披露，截至9月30日已向30家新墨西哥州企业授予超过0.994的合同；10月23日公告另称迄今已支付超过0.160，未单列付款截止日。这比单纯建设目标多了一层实际付款证据，却还不是GPU投产或客户验收；合同授予额、已付款和园区总投资不能相加。<a href="https://www.oracle.com/news/announcement/project-jupiter-statement-on-southern-new-mexico-floods-2026-09-30/">Oracle/STACK洪水声明</a>、<a href="https://www.oracle.com/news/announcement/project-jupiter-advances-new-mexico-workforce-growth-and-awards-nearly-1-billion-in-contracts-to-local-businesses-2026-10-23/">Oracle工程与付款更新</a></p>
+<p>供电许可仍是待兑现环节。10月15日Oracle与YGI提交燃料电池微网设计修订，称预计排放下降约35%、IT容量保持不变，但公告明确是对尚待批准空气许可申请的补充，不能写成许可已经获批。10月23日关于就业、投资和经济影响的预测也以空气许可及管线获批为前提；下一步应核许可决定、建设节点和客户接收，不用公司预测替代监管结果。<a href="https://www.oracle.com/news/announcement/project-jupiter-microgrid-cuts-permitted-emissions-by-35-percent-2026-10-15/">微网设计与许可状态</a></p>
+<p>10月26日Anthropic公开S-1补充了Broadcom交易另一方的设备租赁与母公司担保条款，见2.7.2，但没有据此把上文截至8月2日尚未发行的42条件性票据直接改成已提款。供应商Backstop、客户租金与潜在融资可能涉及同一批设备，必须逐项对账，不能合计成三份独立风险。</p>
+<h4 id="h-0049">2.4.3 AMD—OpenAI/Meta：权证激励不能按目标股价折成现金</h4>
+<p>AMD分别向OpenAI与Meta发行最多1.6亿股权证，行权价0.01美元，归属与Instinct GPU采购里程碑、股价条件等挂钩。Meta最后一档涉及每股600美元门槛；这不是今天可兑现的每股价值。两份权证截至6/27均未归属或可行权，Q2 10-Q明确称其对当季及半年财务报表没有影响。<a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm">AMD Q2 10-Q</a>、<a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000045/amd-20260223.htm">Meta权证8-K</a></p>
+<p>原文以最大股数乘目标股价得到“名义1900亿”，再计入网络规模，实际上把完全归属、高股价与全部采购同时成立的远期情景当成当前融资。修订后保留两个观察：芯片商通过权益激励争取大客户；采购扩大若触发权证，会影响后续股权与会计。实际影响要随归属、行权与财务确认逐期更新，不能提前一次记足。</p>
+<p>本期没有报表影响，也不等于未来只有股数稀释。AMD披露的处理机制包括相关收入确认时按授予日公允价值冲减收入，以及负债分类期间将公允价值变动计入其他损益；分类条件与当期状态需逐期核对。完整机制见全景附篇A.2.2及<a href="https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000166/amd-20250927.htm">AMD 2025Q3 10-Q附注15</a>。</p>
+<p>6GW是合作规模，亦不能无模型换算为900亿或1000亿收入。需要每代产品、交付节奏、单价与合同边界，且部分购买可经第三方进行。缺少正式总价时，本篇只保留官方容量和条件。</p>
+<h4 id="h-0050">2.4.4 美光：锁定采购与客户押金不是同一笔收入</h4>
+<p>9月30日官方讲稿披露26份战略客户协议（SCA），金融承诺32B，但不是全部现金已收；约150B剩余履约义务（RPO）只计已有价格框架的协议，按承诺数量和最低价格计算。2027日历年HBM绝大部分bit供应已签约、约定价格同比显著上升，是公司的合同披露，不能扩大成全部产品售罄，也不能将RPO、金融承诺和押金相加。<a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf">美光讲稿，第3—4、6页</a></p>
+<p>FY2026融资现金流所列客户合同押金流入为12.747B；期末约12.7B客户现金押金与资产负债表12.895B非流动客户合同负债是不同字段。押金按融资分类，并在客户达到最低采购要求后于协议后半段逐步退还；它缓冲供应商建设资金，不增加本期经营现金，也不自动证明终端客户的项目回报。下一步应核合同兑现、返还条件及新产能支出，而不是给押金贴上永久利润的标签。<a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">美光财务表</a>、<a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf">官方讲稿，第8—9页</a></p>
+<h4 id="h-0051">2.4.5 Akamai与Anthropic：七年合同的收入要在建设之后兑现</h4>
+<p>Akamai 9月24日公开的8-K记录9月18日签订的两份项目计划，Anthropic合计承诺约11.6B，各自从服务开始日起计七年；付款受交付、可用性及终止条款限制。该备案美东9月24日16:14:58才被接受，折合北京时间9月25日04:14:58，属于上一版之后的新公开证据，不是9月25日才签约。<a href="https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/d288154d8k.htm">SEC 8-K，Item 1.01</a>、<a href="https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/0001193125-26-401048-index.htm">备案接受时间</a></p>
+<p>公司预计相关总资本支出约5.5B、2026年增加约1.7B，而当年收入指引不变。这是明确的先建设、后确认收入安排，不宜用11.6减5.5当利润，因为运营、融资、税项和现金时序尚未计入；额外最多9B扩展只是潜在合同，并未完成。<a href="https://www.akamai.com/newsroom/press-release/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand">Akamai公告</a></p>
+<p>权证首批40%以Plan 3首次付款等条件为归属前提，其余批次与新增合同挂钩，不能写成Anthropic已持有约5%普通股。同一备案还授权Jabil采购约1.7B内存，Jabil收到组件时，Akamai向其支付对应供应商发票金额；它不证明已经付款，也不应再与上述建设增量机械相加。需求承诺增强与供应商先垫资金可以同时成立，后续要核客户付款、实际交付、资金成本和取消条款，而不是只看合同标题。</p>
+<h3 id="h-0052">2.5 量化估算：不再用单一“循环乘数”代替现金模型</h3>
+<h4 id="h-0053">2.5.1 原式子能说明什么，不能说明什么</h4>
+<p>旧文使用I₀/(1−r)，设r=0.8得到5倍。数学上这是无限等比级数；经济上却需要每轮资金以相同比例、无时间损耗、无成本泄漏、可无限再投入等强假设。现实中设备采购、工资、税、利润留存、亏损、交付时滞和融资约束都使这些条件不成立，r也没有公开可复算数据。</p>
+<p>本版撤回“系统放大5倍、r下降必然腰斩”的实证表述。若教学中使用该公式，只能标注为不含现实摩擦的思想实验，不能据此削减NVIDIA收入、计算泡沫指数或预测股价。</p>
+<h4 id="h-0054">2.5.2 按主体重建资金桥</h4>
+<p>可操作的起点是每家企业的现金约束：</p>
+<blockquote>
+<p>期末现金 = 期初现金 + 经营现金 + 新股权现金 + 净借款 − 现金资本开支 − 股权投资 − 股息回购 − 未计入前项的租赁及其他支付。</p>
+</blockquote>
+<p>这里“净借款”已扣还本，不能再扣同笔本金；经营现金已经包含的利息与经营租赁，也不能重复扣。模型应直接贴公司现金流表与附注，再为项目投入、合同现金和担保付款建立到期表。</p>
+<p>对某一项目，可以另算“现有客户合同覆盖期/债务期限”“未来十二个月可用现金/刚性付款”和“客户集中度”。这些指标能指出资金缺口在哪里，但阈值要由具体契约和风险承受能力确定，不使用跨公司统一的武断及格线。</p>
+<h4 id="h-0055">2.5.3 NVIDIA最新承诺表：大数的意义在分类</h4>
+<p>7/26的10-Q将供应与产能承诺列为279、公司自用云服务29、未起租数据中心25、股权投资25和资本支出8，合计366；另列AI云协议36与拟服务第三方的未起租机房20，合计56。担保又单独呈现。这些是公司披露的不同合同类别，不能改名为“向客户循环注资422”。供应承诺主要涉及生产所需组件，亦有部分可取消、改期或调整但可能产生费用。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVIDIA Q2 10-Q，承诺附注</a></p>
+<p>AI云协议的结构值得保留：云商购入NVIDIA基础设施，NVIDIA作出云服务承诺；云商可以将资源转售给第三方，NVIDIA义务随使用而减少，满足条件时还可参与收入分成。这比旧版“循环回款”更接近合同机制，也表明必须跟踪第三方使用与付款，而不是只看宣布的额度。</p>
+<p>原“供应商融资1100亿/收入67%，为朗讯2.8倍”的分子包含计划、承诺与不同性质支持，分母又混用年度和滚动收入；没有可比底表，本版撤销比例及其历史倍数比较。最新承诺很大是事实，风险大小仍取决于执行时间、可调整程度与对手方。</p>
+<p>8月10日公布的安排，拟通过融资平台引入更多外部资本。NVIDIA与Apollo、BlackRock、Blackstone、Brookfield、Goldman Sachs和KKR签署谅解备忘录，目标是长期动员逾500的第三方资本，并非六家各承诺500，也不是NVIDIA出资500。8月26日10-Q还限定：资金结构拟由资本机构独立承销和提供，初步安排可能无法形成最终协议；NVIDIA可自行选择，为部分特定项目提供有限残值支持。独立融资可能增加供给，残值支持又可能把部分风险留给供应商，不能把两面简化为“资金已经全部出表”或“全部由NVIDIA兜底”。截至本版，尚未核得平台最终协议及实际到账总额。<a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital">联合公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">10-Q平台安排</a></p>
+<p>这里尤其不能把500目标与105担保直接相加。10-Q及其附件10.1中的105上限对应俄亥俄州Piketon的SB Energy PORTS项目、约4.25GW租赁安排，不是六家平台的统一担保条款；项目是否包含在平台将来支持的资产中，公开资料尚不足以逐项去重。研究底表应先对应项目、法律实体和风险承担者，再分列平台募资目标、实际投入与担保上限，不把同一建设资产的融资和信用支持重复算作新增需求。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">10-Q项目说明</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda2027q2ex101.htm">附件10.1担保文本</a></p>
+<h3 id="h-0056">2.6 与2000年前后电信设备周期的比较</h3>
+<table>
+<thead>
+<tr>
+<th>比较维度</th>
+<th>保留的历史问题</th>
+<th>本轮怎样核查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供应商支持客户</td>
+<td>客户融资能促进设备销售，也可能把信用风险回传</td>
+<td>股权、应收账期、承购与担保逐项拆分</td>
+</tr>
+<tr>
+<td>长期需求预测</td>
+<td>行业增长可能被多个主体重复外推</td>
+<td>去重终端客户与容量，分开已交付与合同上限</td>
+</tr>
+<tr>
+<td>库存和采购承诺</td>
+<td>客户放缓时，供货商可能来不及调整</td>
+<td>存货增长、减值、取消成本与延迟交货</td>
+</tr>
+<tr>
+<td>现金缓冲</td>
+<td>强现金能拖慢风险暴露，但不能替终端付费</td>
+<td>现金、可变现资产、债务到期与或有义务</td>
+</tr>
+<tr>
+<td>风险转移</td>
+<td>项目与金融工具会改变谁承担损失</td>
+<td>法律追索、担保、抵押物和关联交易</td>
+</tr>
+</tbody>
+</table>
+<p>Cisco2002年报记录，2001年需求下降导致额外库存费用约2.2。它提供的是“订单预期突然失真时资产如何调整”的证据，不是所有设备公司必跌相同幅度的定律。朗讯、北电的客户融资与会计争议需要分别取原始年报和监管材料；本轮没有完成其同口径融资比率重建，因此不保留旧百分比和“当前危险2.8倍”的结论。<a href="https://www.cisco.com/c/dam/en_us/about/ac49/ac20/downloads/annualreport/ar2002/pdf/AR.pdf">Cisco历史年报</a></p>
+<p>当下NVIDIA仍有强经营利润和正自由现金流，但其Q2回款节奏已与Q1不同，且客户支持形式更复杂；把它写成“现金垫绝对安全”或“朗讯翻版”都会丢掉最有价值的信息。历史类比的作用是提醒检查项目，而不是替代当前财报。</p>
+<h4 id="h-0057">2.6.5 信用市场：保留价差信号，不制造因果时钟</h4>
+<p>信用与IPO小节保留历史编号2.6.5和2.6.6，便于原审计ID与引用追溯；两节均属于2.6的比较与边界讨论。</p>
+<p>旧文把不同债券期限的发行利差、二级利差和单名CDS放在同一条数列，又据此声称“超过行业两倍后6—12个月必有重估”。本版撤销这个未经验证的经验规则，以及“所有违约事件都有CDS前置跳升”的必要条件表述。</p>
+<p>信用跟踪应分别记录基准日期、债券或合约代码、期限、币种、报价来源和买卖价差。Oracle旧的198.18bp只能作为2026年3月的历史报价线索，不是9月15日现值；本轮没有取得可核的同日终端序列，不补写当前CDS、债券价格或价差趋势。</p>
+<p>“AI占投资级新发债约三分之一”也需要样本地域、发行定义、再融资是否重复及AI分类规则。未核到原始数据集之前，不把卖方比例改称一个正式独立信用行业，也不能据此推出养老基金已被动持有同等比例的AI风险。</p>
+<p>已经可核的信用证据，是新合同的资金成本、追索与期限：CoreWeave DDTL 5.5按SOFR+5.50%定价，且借款期限覆盖了客户合同之外的年份。相较模糊的“信用裂缝扩大”，这能直接进入现金压力测试。</p>
+<h4 id="h-0058">2.6.6 IPO：融资窗口是变量，不是既定时间表</h4>
+<p>Anthropic已于10月26日公开提交S-1，拟以ANT代码在Nasdaq Global Select Market上市；官方公告同时明确，发行股数和价格区间未定，注册声明尚未生效。因此状态应从“仅有上市线索”更新为“已公开递表”，不能写成IPO完成或融资到账。旧文给OpenAI、Anthropic设置的确定上市月份不恢复，OpenAI新一轮融资谈判也不能在缺少成交公告时写成已完成。<a href="https://www.anthropic.com/news/s1-sec">Anthropic递表公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">SEC S-1封面</a></p>
+<p>上市可能为股东提供后续流动性，IPO募资、老股出售和锁定期又是不同现金流。即使一家模型公司推迟IPO，仍可能通过私募、债务或经营现金融资；相反，完成IPO也不能证明单位经济转正。因此观察栏保留“正式文件、募资与售股结构、锁定安排、实际收入披露”，不把未落定日期当硬触发。</p>
+<h3 id="h-0059">2.7 Anthropic：公开递表以后，融资与采购终于可以分账看</h3>
+<h4 id="h-0060">2.7.1 以公司官网替代不完整转引</h4>
+<p>Anthropic在5/28官网宣布H轮融资65、投后估值965，并称当月收入run-rate越过47。公告说明融资总额包含此前云商已承诺的15，其中Amazon为5；同时确认扩大AWS、Google/Broadcom TPU及SpaceX算力合作。该轮融资不是新增65再加云商15，也不是一次IPO。<a href="https://www.anthropic.com/news/series-h">Anthropic H轮公告</a></p>
+<p>47的run-rate只保留为5月时点的公司指标，不是现金收款或全年GAAP收入；965除以47得到约20.5倍，也只能描述当时私募估值与年化速度的关系。10月26日S-1已披露2025年收入4.585、2026年上半年收入16.286及相应财务表，后者是新公开的旧期间实际值，不能被写成三季度业绩或当前年化收入；经营表现的更新见第三部分3.3。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">SEC S-1，合并经营报表</a></p>
+<h4 id="h-0061">2.7.2 合作伙伴增加，需分辨供应与资本风险</h4>
+<p>模型公司扩大算力来源，有助于降低单一平台和芯片路线依赖；同时多个供应商成为投资或基础设施伙伴，会让商业关系更紧密。其结果并非单方向：供应更可靠可能加速收入，也可能增加最低采购和建设承诺。</p>
+<p>本篇不再把5GW容量按自行猜测单价换成新增数百亿美元，叠加到“循环网络总额”。容量协议是否包含融资、租赁、保证采购或担保，要以各方合同附注为准；GW只保留为设施规模，不作为当期收入。</p>
+<p>S-1的合同文字比容量口号更能说明现金压力落在哪里。下表来自MD&amp;A第171—173页，反映截至递表时所述安排；有些合同在更早月份签订，10月26日是本轮取得公开细节的日期，不是全都在当天新增。</p>
+<table>
+<thead>
+<tr>
+<th>对手方与工具</th>
+<th>披露金额、期间</th>
+<th>最影响现金压力测试的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft算力服务</td>
+<td>至少44.9；2026/11—2033/5；2026/10再次修订</td>
+<td>与实际用量无关的最低消费；未补救重大违约、未交付批次等为例外</td>
+</tr>
+<tr>
+<td>Google算力服务</td>
+<td>至少114.5；2026/4—2033/7</td>
+<td>未达消费额须按条款补差；另有2028—2031交付TPU预计支出125—150，金额取决于容量、部署和价格，不能当作同质固定承诺</td>
+</tr>
+<tr>
+<td>Amazon算力服务</td>
+<td>至少110；2026/5—2036/4</td>
+<td>与实际用量无关；存在补差及合同例外，不是当年费用或已付现金</td>
+</tr>
+<tr>
+<td>SpaceXAI算力服务</td>
+<td>最多120.5，期限延伸至2029；全部交付后合计每月约3.1</td>
+<td>全量交付预计2026/12；初始不可取消期分别至2027/1及2027/3，其后双方可提前90天通知取消</td>
+</tr>
+<tr>
+<td>Nscale与Lambda服务</td>
+<td>分别最多约44.6、约41.3，期限延伸至2033及2034</td>
+<td>容量交付且被接收后才起费；融资、设施租约、服务可用性和分批交付各有终止条件</td>
+</tr>
+<tr>
+<td>Broadcom五年设备融资租赁</td>
+<td>租期内不含利息租金合计约161.2</td>
+<td>通常设备ready-for-service后起付，特定场地延期情形可提前；专用子公司义务由Anthropic母公司担保，并有交叉违约条款</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic S-1，Infrastructure Service Arrangements与Infrastructure Equipment Leases，第171—173页</a>。这些金额既有最低额、上限、估计支出，也有不含利息租金，服务与设备安排还可能相关；本篇不合计成一个“不可撤销总账单”，也不与各供应商RPO、担保及融资额度再次相加。</p>
+<p>附注13另给出截至6月30日、剩余期限超过一年的未来固定或最低采购承诺约265.6，合同期限为1—20年。这个总口径有明确截止日和排除项，不能再与上表逐项求和；它也不能直接代表10月26日所有租赁、季后新增及可变容量安排。S-1证明长期付款约束已相当具体，但要判断能否覆盖，仍要把各年度实际交付、现金收款和取消条件排进同一张时间表。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">S-1附注13，F-59页</a></p>
+<h4 id="h-0062">2.7.3 Amazon持仓重估已经有Q2实数</h4>
+<p>旧版假定Amazon持续固定持股，并将私募总估值线性外推成后三季净利润。Q2 10-Q已经提供实际投资与重估；第一部分据此拆分经营和非经营，不再保留未来三季超过一半净利润来自重估的断言。</p>
+<p>下一次融资若价格下降，也不一定按持仓比例机械冲减当季利润：证券权利、会计计量、可观察交易、减值与税项共同决定实际结果。可以设置“估值下降会怎样影响净利润”的情景，但必须标明假设，不把它当成公司已经会发生的会计分录。</p>
+<h4 id="h-0063">2.7.4 商业化要验证的不是名义估值本身</h4>
+<p>公开S-1让收入、经营损益和现金流有了报表依据，却没有使旧文的特定毛利率、亏损年限或统一gross/net折扣自动成立。后续要将报表与渠道收入确认、训练及推理成本、付费留存和最低算力付款衔接起来；单季经营转盈是需要纳入的反证，不是未来所有建设投入已经回本，详细数字见3.3。</p>
+<p>同理，不同模型在不同年份的每百万token价格，不能未经能力、输入输出、缓存和推理设置匹配，就称“同等能力价格下降99.7%”。价格竞争仍是机制，但单位经济判断要使用可比任务的收入与全部服务成本。</p>
+<h3 id="h-0064">2.8 Alphabet融资：从初始计划更新到实际执行</h3>
+<h4 id="h-0065">2.8.1 初始80方案真实，完成值却不是80现金</h4>
+<p>6/1自由书面招股材料提出总计80的初始权益融资方案：30承销发行、40 ATM市价发行计划和10伯克希尔私募。该方案确有SEC原件，不应因规模大就直接判为假消息；但“宣布”与“已募得”必须分开。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526251733/d160205dfwp.htm">6/1初始方案</a></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Q2 10-Q披露的执行结果</th>
+<th>正确解读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6/4公开普通股发行</td>
+<td>净募集约20.5</td>
+<td>已完成，净额口径；不再沿用初始15的组成</td>
+</tr>
+<tr>
+<td>6/4伯克希尔关联公司私募</td>
+<td>募集10.0</td>
+<td>已完成，不是公司自身“关联方循环回款”的证据</td>
+</tr>
+<tr>
+<td>6/5强制可转换优先股</td>
+<td>净募集约19.0</td>
+<td>已完成，有其股息与未来转换条件</td>
+</tr>
+<tr>
+<td>ATM计划</td>
+<td>上限40；截至6/30未发行</td>
+<td>可用工具，不是已进入银行账户的现金</td>
+</tr>
+</tbody>
+</table>
+<p>股本附注的分项取整值合计约49.5；现金流表则列普通股发行净额30.499、强制可转优先股发行净额19.063，两项合计49.562，与管理层概述的约49.6一致。不能用已取整的20.5、10.0和19.0反推精确到账，也不能把股东权益变动表的入账额直接当现金收款。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm">Alphabet Q2 10-Q，现金流表及股本附注</a></p>
+<p>10-Q把ATM潜在募资用途主要描述为员工股权奖励相关税务义务，而普通股和优先股已完成融资用于一般公司用途，包括扩大AI基础设施。原文将整个40 ATM直接认作AI建设融资，不再沿用。8月补充文件新增销售代理，并明确其他条款不变；它没有披露新增40额度，也不是执行完成证明。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526336853/d140593d424b5.htm">ATM补充文件</a></p>
+<h4 id="h-0066">2.8.2 外部融资增加，不等于公司濒临现金断裂</h4>
+<p>Alphabet截至6/30长期债务账面值98.165，年末为46.547；现金及有价证券242.474，但其中可出售限制、市场风险与现金本身不同，不能全部视为随时可用的现金。原文“账上现金加短债证券1000B+”为单位错误，本版撤回。扩大的融资工具与增长中的建设投入并存，说明公司选择改变资本来源，尚不能单凭发行股票判断被迫续命。</p>
+<p>8/6最终债券招股补充文件列示25高级无抵押票据，覆盖2028至2066年到期档，预计8/10交割。它证明融资条款和发行安排已落定，不能仅凭这份事前文件声称已逐美元收到募集资金；后续资产负债表和现金流再确认其执行。此处也不将它与6/30债务余额直接相加作为9/8精确净债务。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526340264/d32286d424b2.htm">25债券最终文件</a></p>
+<p>对股东更实在的影响是潜在稀释、优先股股息、债务利息以及这些资金买来的资产能否获得足够回报。股权融资可能改善偿债能力，也可能让现有股东分到更少未来利润；评价融资应同时问价格、资金用途与项目回报，而不是给所有融资贴“顶部动作”的标签。</p>
+<h4 id="h-0067">2.8.3 伯克希尔参与不是循环交易的充分证据</h4>
+<p>伯克希尔关联公司是外部出资方。仅因其投资Alphabet，就称“超出公允定价的关联性投资”并纳入云生态内部循环，没有合同和公允价值分析支持。持股也不能被直接写成Abel对某家技术路线、其他巨头或未来股价的官方判断。</p>
+<p>本版删除“若没有伯克希尔股价应再跌5%”以及“第二家巨头融资就是顶部钟声”的反事实断言。尚无识别方法把当日股价中的背书、稀释、业绩、市场环境分别量化，更不能以两次融资作为未经校准的崩盘触发器。</p>
+<h3 id="h-0068">2.9 事件总判断：风险向哪里移动，而不只是金额变大</h3>
+<h4 id="h-0069">2.9.1 Meta El Paso：股权占比不能代替风险占比</h4>
+<p>7/28公告中的El Paso项目预计2028年起分阶段投入使用，约14开发成本，BlackRock管理资金持80%、Meta持20%；但Meta拟租用整个园区。租赁初期4年、可选延长至20年，同时提供初始阈值约13、随时间递减的残值担保；一定条件下，担保付款与届时资产公允价值不足额有关。BlackRock一侧融资12.5，与Meta担保上限不是同一个项目的两笔独立债务。<a href="https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/">Meta项目公告</a></p>
+<p>这项安排能减少某一主体直接持有的建设资产并引入长期资本，也会留下租赁与残值风险。要判断经济上是否去杠杆，须看交割、会计控制权、租金、担保触发和资产残值，不能因Meta只保留20%就宣布80%风险已转走。本轮没有以独立交割回执更新完成状态，仍将其列为公告安排。</p>
+<p>Meta Q2 10-Q还披露未起租租赁278.99、不可取消合同承诺349.31和条件性云容量购买义务至多14.72。它们期限与覆盖范围不同，部分可能重叠，不能合计成同一“总债务”，也不能把美元十亿误写成中文十亿美元的十倍。<a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm">Meta Q2 10-Q，承诺附注</a></p>
+<p>10月21日Meta随Q3业绩宣布新增无投票权Class C股类，拟于2027年1月19日使修订章程生效，并在条件满足后对每股A、B类股派发一股C类股；股息登记及支付日仍待董事会确定。公司解释新股类可用于后续融资、员工薪酬或并购，但设立股类和派股本身没有带来融资现金，不能把它写成已完成增发募资，更不能据此判断El Paso项目已经交割。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3公告，Establishment of New Class C Common Stock</a></p>
+<h4 id="h-0070">2.9.2 建设、电力和芯片：不同的锁定程度</h4>
+<p>电力与长期机房合同可能具有照付不议或终止成本，设备订单则可能在未形成正式采购前调整。Alphabet担保支持交易对手采购长交期电力设备，NVIDIA供应承诺也披露部分可改期；不能把全部CapEx写成绝对不可逆，更不能以物理供给不足推出需求一定持续。</p>
+<p>本版把旧文中未完成本轮原件核验的“Meta加拿大项目”“SK海力士美国上市募资”“CoWoS停止某期新订单”和各自精确金额、因果行情移出本篇当前证据。供给约束仍可作为另篇研究对象，这里只保留已核合同怎样锁定现金，不让交易篇继续承载未经验证的全产业新闻汇编。</p>
+<h4 id="h-0071">2.9.3 当前有证据的结论与尚无证据的结论</h4>
+<p>已有证据表明：模型公司融资与算力供给关系紧密；供应商的下游支持从股权延伸到云协议和建设担保；部分项目借款开始承担合同期外的续租风险；强现金平台也使用股权、债券和合资工具分配建设资本。这些是资本结构复杂化的事实基础。</p>
+<p>尚未由公开材料证明的是：整个网络真实净回流率、最终外部客户现金贡献、统一的循环收入占比，以及一个可以可靠预测崩盘的乘数或时间点。本篇不据新增合同自动提高泡沫分数，也不从同一事件同时推导“更快崩盘”和“更晚崩盘”来保证结论永远正确。</p>
+<p>下一轮优先核验Oracle FY27Q2对Q1高增指引的兑现、288未起租租赁承诺何时上表、Broadcom AI XPV机架部署与42条件性票据是否发行，以及各公司季度回款、新投资实付、AMD权证归属、CoreWeave续租、Meta项目交割和NVIDIA担保生效里程碑。每次更新把旧状态改在原交易行，保留版本记录，而不是再添一段“最新大事”。</p>
+<h3 id="h-0072">2.10 我可能错在哪里</h3>
+<p>公开报表很难把同一模型公司经不同云平台购买的算力完全去重，也难以追踪股权资金与商业付款逐笔对应。这限制了网络量化，不是可以靠估计总额掩盖的小缺口。</p>
+<p>合作关系也可能创造效率：更稳定的供给、共享研发和更多客户入口，能使本来独立经营时不可行的项目获得正回报。如果外部付费和现金回收持续增强，融资支持可能是建设期过桥，而不是不可持续需求。相反，若客户用量增长但单位价格和利润不足，融资仍可能掩盖回报压力。</p>
+<p>对风险的判断应在证据改善时下降，也应在账期、融资和履约恶化时上升。当前可以说信用联系比单纯买卖更深，不能说它已经证明收入虚假、崩盘必然或任何一家公司会违约。</p>
+<h2 id="h-0073">第三部分：AI靠什么赚钱？——变现版图与编程TAM</h2>
+<p>本篇口径：V1.6.1正文修订，增量核验截至2026年10月27日（北京时间）。美元数字中，B代表十亿美元；1B等于10亿美元。ARR（年度经常性收入指标）、run-rate（按近期经营速度年化）与财报已确认收入分开使用。本轮新增Anthropic公开S-1和Meta Q3实际财务；未公布的新财季不填预测值，既有产品价格与测试计划保留各自披露日期，不冒充10月27日重新验收的状态。</p>
+<h3 id="h-0074">本篇内容地图与逻辑链</h3>
+<p>AI商业化已经不只发生在编程工具里。企业生产力订阅、客服智能体和对话广告都出现了可以核对的收费或经营指标，因此本篇撤回“编程是唯一被验证的大市场”以及“API降价必然使行业收入持续下降”的判断。更难回答的问题是：这些收入中有多少来自终端客户，有多少在云、模型与应用之间重复出现；客户付费能否覆盖部署和复核成本；平台在重度使用增加时，能否同时留下毛利和现金。</p>
+<table>
+<thead>
+<tr>
+<th>研究问题</th>
+<th>落点</th>
+<th>本版结论与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>谁在付钱，卖的是什么</td>
+<td>3.1—3.3</td>
+<td>分清云服务、广告、订阅与API；整体业务收入不冒充纯AI收入</td>
+</tr>
+<tr>
+<td>编程市场到底有多大</td>
+<td>3.4</td>
+<td>固定席位只是一个情景；按量收费已经出现，原“绝对上限”不成立</td>
+</tr>
+<tr>
+<td>编程以外能否赚钱</td>
+<td>3.5</td>
+<td>逐个看合同、续费和交付成本；不从估值推断经营规模</td>
+</tr>
+<tr>
+<td>收入能否消化资本投入</td>
+<td>3.6—3.8</td>
+<td>用资产批次、服务成本和现金流建模，不再把收入/资本开支比称为IRR</td>
+</tr>
+<tr>
+<td>什么事实会改变判断</td>
+<td>3.9—3.10</td>
+<td>观察同口径增长、付费留存、成功任务成本与回收期；未知保留未知</td>
+</tr>
+</tbody>
+</table>
+<p>本篇没有给出“所有AI收入合计”，因为现有公开披露不足以完成全链条抵销。一个企业给应用公司付款，应用公司向模型公司买API，模型公司再向云厂租算力，三层都可能确认收入，但不能据此认定社会终端支付了三遍钱。这个缺口影响的是总量测算的可信度，不是否认各层真实提供了服务。</p>
+<h3 id="h-0075">3.1 14个变现领域：按收费机制分类，不再混排规模榜</h3>
+<p>原表把收入、运行率、投资额与公司估值放在同一列，排出的名次没有可比意义。下面保留14类覆盖范围，改看客户、收费单位以及仍缺什么证据。已经有产品收费，不等于产品利润为正；一家公司的净利润为正，也不能证明其每个AI产品盈利。</p>
+<table>
+<thead>
+<tr>
+<th>领域</th>
+<th>主要付费方与收费单位</th>
+<th>可用证据</th>
+<th>不能直接推出什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云算力与模型托管</td>
+<td>企业、模型公司；算力时长、token及承诺用量</td>
+<td>云分部收入，部分专项AI run-rate，见3.2</td>
+<td>云整体收入不是纯AI收入；长期承诺不是已收现金</td>
+</tr>
+<tr>
+<td>广告优化</td>
+<td>广告主；展示、点击或转化</td>
+<td>广告收入、展示量与单价；ChatGPT Ads新增披露，见3.2</td>
+<td>全部广告增长不能归因于AI；广告主流水不是平台收入</td>
+</tr>
+<tr>
+<td>企业生产力</td>
+<td>企业；席位加额外用量</td>
+<td>M365 Copilot付费席位，见3.3</td>
+<td>席位×标价不能冒充实际ARR或利润</td>
+</tr>
+<tr>
+<td>聊天订阅与API</td>
+<td>消费者、开发者及企业</td>
+<td>公司run-rate、API费率，见3.3与3.7</td>
+<td>年化速度不是已完成全年收入</td>
+</tr>
+<tr>
+<td>编程与开发智能体</td>
+<td>开发者、工程组织；席位、用量及任务</td>
+<td>订阅、计费规则、部分收入增速，见3.4</td>
+<td>注册用户不是付费开发者；生成代码不是验收产出</td>
+</tr>
+<tr>
+<td>客服与CRM</td>
+<td>企业；席位、会话、动作或成功解决量</td>
+<td>Agentforce ARR及口径说明，见3.5</td>
+<td>计费动作数不等于独立客户数，也不等于成功解决数</td>
+</tr>
+<tr>
+<td>法律科技</td>
+<td>律所与企业法务；用户、文档或项目</td>
+<td>具名部署、采购与续费应逐项核查</td>
+<td>部署公告不能替代合同金额与法律责任成本</td>
+</tr>
+<tr>
+<td>金融研究与信息</td>
+<td>金融机构及企业；内容订阅和工作流</td>
+<td>AlphaSense公司ARR历史锚，见3.5</td>
+<td>数据许可、专家网络等收入不全是新增生成式AI收入</td>
+</tr>
+<tr>
+<td>医疗文书与辅助诊断</td>
+<td>医院、医生或支付方；席位、就诊次序</td>
+<td>采购合同、实际使用、临床评价</td>
+<td>签约额不等于已确认收入；节时不等于诊疗质量提高</td>
+</tr>
+<tr>
+<td>音频、视频与内容生成</td>
+<td>创作者、企业；订阅、时长、生成量</td>
+<td>ElevenLabs公司ARR，见3.5</td>
+<td>内容全市场规模不等于生成工具可收费规模</td>
+</tr>
+<tr>
+<td>教育</td>
+<td>学生、家庭、学校；订阅或课程</td>
+<td>付费留存、考试与学习效果</td>
+<td>传统教育应用全部收入不属于AI新增收入</td>
+</tr>
+<tr>
+<td>自动驾驶与机器人</td>
+<td>乘客、物流和工业客户；运量、工时或设备</td>
+<td>付费运营许可、单位作业成本与交付</td>
+<td>估值、融资及演示不能替代可复制的经营利润</td>
+</tr>
+<tr>
+<td>科研与生物医药</td>
+<td>药企、实验室；服务、授权及里程碑</td>
+<td>已收服务费、研发里程碑和临床结果</td>
+<td>合同最大里程碑金额不是当前收入</td>
+</tr>
+<tr>
+<td>主权AI与防务</td>
+<td>政府及承包商；项目和维护合同</td>
+<td>拨款、签约、履约与验收</td>
+<td>预算意向不是订单，订单不是当期财政付款</td>
+</tr>
+</tbody>
+</table>
+<p>后八类不是被统一判为“仍在烧钱”，而是缺少足够一致的公开数据来做行业利润排名。研究可以先跟踪客户价值和合同兑现，再决定哪些公司值得建立盈利模型，不能用同一个ARR标签把所有场景磨平。</p>
+<h3 id="h-0076">3.2 云与广告：最成熟的收费渠道，不等于全部都是AI收入</h3>
+<h4 id="h-0077">3.2.1 云分部实际收入与AI专项披露</h4>
+<table>
+<thead>
+<tr>
+<th>公司及统计期</th>
+<th>已确认收入或经营指标</th>
+<th>AI归因边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon AWS，2026Q2</td>
+<td>收入42.232B，营业利润16.621B，利润率复算39.4%</td>
+<td>公司称AI业务run-rate超过25B；它包含在业务体系内，不能与AWS收入再加总</td>
+</tr>
+<tr>
+<td>Microsoft Azure，FY2026全年</td>
+<td>公司披露全年收入超过100B，增长41%</td>
+<td>Azure不等于Intelligent Cloud部门，也不等于Microsoft Cloud，更不是纯AI收入</td>
+</tr>
+<tr>
+<td>Google Cloud，2026Q2</td>
+<td>收入24.768B，营业利润8.814B，利润率复算35.6%</td>
+<td>公司把AI基础设施、AI解决方案与核心GCP服务并列为增长来源，没有给出可抵销的纯AI收入表</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx">Amazon第二季度财报</a>、<a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4">Microsoft官方电话会</a>、<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf">Alphabet第二季度财报第2页</a>。三行统计期间不同，刻意不做合计或排名。</p>
+<p>这组数字证明平台具备真实收费能力和分部盈利，并不能单独说明本轮新增算力的资本回报率。成熟数据库、存储、网络及既有客户的利润可以与新AI业务共存；如果拿全云分部利润去覆盖新增AI资产，再声称每一批新资产已经回本，会把存量利润垫成新投资的证据。</p>
+<p>截至北京时间10月27日，Alphabet、Microsoft与Amazon尚未发布下一财季结果，因此上表仍保留各自已披露期间。Microsoft FY27Q1电话会定于北京时间10月29日05:30，Amazon Q3电话会为10月30日05:00；会前的市场预期不能先填入实际收入栏。Meta则已在10月21日发布Q3，不能与三家一并标成“待财报”。<a href="https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/">Microsoft财报日历公告</a>、<a href="https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call">Amazon财报日历公告</a></p>
+<p>AWS另行披露AI业务与芯片业务的run-rate都超过25B。芯片业务涵盖的工作负载与AI业务可能交叉，在公司未提供抵销表前，两项不能相加为“50B新增AI收入”。同样，云厂给模型公司提供的融资可能支持客户付云账单，需继续追踪现金来源，但不能因此把客户实际消耗算力的收入一概判为虚假。</p>
+<h4 id="h-0078">3.2.2 广告的两种AI变现方式</h4>
+<p>Meta在10月21日公布的2026Q3广告收入为63.061B，同比增长26%；广告展示量增长10%、平均单价增长14%。Alphabet尚未公布Q3，本篇仍保留其Q2广告收入81.629B作为历史比较值，不把不同季度相加。Meta的增长提供了真实付费的反证，但仍需分项或实验才能区分AI推荐、客户结构、广告需求与汇率的贡献，不能把63.061B全算作生成式AI收入。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3财报，经营指标及分部表</a>、<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf">Alphabet Q2财报</a></p>
+<p>收费增长与建设压力在同一份Meta财报里同时出现：Q3经营现金流32.786B，现金购买固定资产33.942B、融资租赁本金0.964B，按公司口径自由现金流为32.786－33.942－0.964＝−2.120B；前九个月FCF仍为正11.049B，期末现金、现金等价物与有价证券合计82.45B，不能拿一个负季度代表全年耗尽现金。公司把全年含租赁本金的CapEx指引由130—145B收窄至135—145B，这仍是全年预测。GAAP营业利润还包含9.89B法律费用，不能把利润降幅全部归给AI投入。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3财报，现金流调节表与CFO展望</a></p>
+<p>一种变现是在原有广告业务里提高转化或降低广告主获客成本；另一种是在新AI入口直接卖广告。OpenAI于2026年8月31日披露，ChatGPT Ads推出不足200天，年化收入运行率达到1B。这是比“AI优化了4000亿美元广告盘子”更直接的新增收费证据，但它仍不是全年广告收入已经达到1B，也没有独立披露广告业务利润。来源：<a href="https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/">OpenAI广告业务公告</a>。</p>
+<p>广告模式能补贴免费用户的推理成本，也会引入新的约束：广告库存、商业意图和转化测量是否充足，增加商业内容是否损害用户信任，以及新的广告预算是否只是从其他平台转移。对单个平台，抢到份额可以增长；对整个产业，预算转移不能被算成同等规模的新终端需求。</p>
+<p>10月5日OpenAI又公布图像生成场景的视觉广告，计划当月稍后在美国Free/Go用户中测试，并扩展归因与增量效果测量合作。这使广告变现具备更多可测试的场景，但新格式并非已全面上线，公告也没有新增广告收入或利润数字；特定广告主的效果案例不能外推成全平台投资回报。<a href="https://openai.com/index/new-chatgpt-ads-format-and-measurement/">OpenAI广告与测量更新</a></p>
+<h3 id="h-0079">3.3 模型层和企业订阅：公开报表开始检验年化收入叙事</h3>
+<h4 id="h-0080">3.3.1 先分清三个“年收入”</h4>
+<p>财报收入对应已经履约的统计期间。ARR是公司对经常性合同收入所定义的年化指标，定义并不跨公司统一；run-rate则把最近一个月或季度的经营速度外推成年。高速增长企业的期末run-rate通常会高于过去一年的已确认收入，按量业务还会受客户集中采购、季节性和短期活动影响。</p>
+<p>因此本篇保留披露日期，宁可把新值列为未决，也不把“目前公开核实到的旧锚”改写成“目前公司只做到这个规模”。</p>
+<table>
+<thead>
+<tr>
+<th>主体</th>
+<th>本次直接核实的公开披露锚</th>
+<th>如何使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI</td>
+<td>2026-03-31公司公告称每月收入2B</td>
+<td>算术年化约24B，是3月时点经营速度，不是2025全年收入，也不是9月新值</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>10/26公开S-1：2025全年收入4.585B；2026H1收入16.286B、经营亏损0.693B</td>
+<td>2026H1为未经审计中期报表；5月47B run-rate保留为历史速度，不再代替实际收入和现金流</td>
+</tr>
+<tr>
+<td>Claude Code</td>
+<td>2026-02-12公司披露run-rate超过2.5B</td>
+<td>是Anthropic内的产品；不能再与母公司总额相加；不可冒充9月现值</td>
+</tr>
+<tr>
+<td>M365 Copilot</td>
+<td>2026-07-29官方电话会称付费席位超过3000万</td>
+<td>是明确的付费覆盖证据；没有足够信息用统一牌价还原全部合同收入</td>
+</tr>
+<tr>
+<td>ChatGPT Ads</td>
+<td>2026-08-31公司披露广告run-rate1B</td>
+<td>新商业渠道的收费证据，不再与OpenAI整体收入机械相加</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://openai.com/index/accelerating-the-next-phase-ai/">OpenAI3月公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic10月公开S-1</a>、<a href="https://www.anthropic.com/news/series-h">Anthropic5月H轮公告</a>、<a href="https://www.anthropic.com/news/anthropic-amazon-compute">Anthropic4月公告</a>、<a href="https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation">Claude Code2月披露</a>、<a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4">Microsoft7月电话会</a>、<a href="https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/">OpenAI8月广告公告</a>。</p>
+<p>Anthropic的证据已经向前走了一步：10月26日公开S-1披露，Q1、Q2收入分别为4.731B、11.555B，Q2经营利润为0.974B，而上半年仍合计经营亏损0.693B。三者并不矛盾，因为Q1经营亏损1.667B；单季转盈必须进入研究判断，也不能外推成全年、全部模型或全部新增算力已经盈利。文件中的这些中期数字未经审计，不能因它们出现在SEC就改称经审计Q3结果。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic S-1，合并经营报表及Quarterly Results of Operations</a></p>
+<p>最容易误读的是80.748B上半年净亏损。现金流表分别调回72.388B可转票据、衍生负债及SAFE公允价值变动，以及8.720B其他金融工具确认和公允价值变动，因此不能把净亏损直接叫作“半年烧掉807亿美元”。同期经营现金流为正3.929B，公司解释既有剔除非现金项目后的经营改善，也受客户收款和供应商付款时点影响；融资现金净流入110.774B则是另一类现金，不是客户付款。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">S-1，Cash Flows及合并现金流量表</a></p>
+<p>这使“模型层始终只靠融资、没有经营改善”的判断需要收缩，却还不足以证明长期自给：一次正经营现金流不能证明未来各期能覆盖第二部分列出的最低采购和租赁付款，也不能把投资现金流中的短期证券购买全部当作基础设施资本开支。接下来应把持续客户收款、营运资金、实际设备投入和租赁付款逐季对齐。OpenAI更晚的媒体run-rate与融资谈判仍未在本轮取得同等级正式财务表，不与Anthropic的新报表拼成同口径排名。</p>
+<h4 id="h-0081">3.3.2 收费增长为什么仍不等于单位经济跑通</h4>
+<p>把用户拉进产品，只解决了第一步。订阅收入相对稳定而使用量迅速增加时，每个付费席位消耗的推理、工具调用和人工支持可能上升，收入增长与产品毛利改善可以分开走；相反，缓存、模型路由和更低成本模型也可能使使用增长快于成本增长，利润不必随API标价下降。</p>
+<p>财务模型应逐月跟踪：付费客户和付费席位、每席实际收入、额外用量收入、折扣与赠送额度、活跃率、取消或降档、推理与支持成本。只拿“付费席位×公开月费”计算ARR会忽略大客户折扣、年付时点、不同产品组合和试用安排，原文M365 Copilot“72亿美元ARR”因此退出当前事实表。</p>
+<p>判断上，我现在更看重同一客户跨季度的付费用量和毛利，而不是用户总数。增长可能足够快，也可能主要由一批重度用户驱动；没有净收入留存、毛利和现金收款的配套数据，无法仅凭run-rate大小裁决最终赢家。</p>
+<h3 id="h-0082">3.4 编程市场TAM：保留席位模型，取消“绝对上限”</h3>
+<h4 id="h-0083">3.4.1 人数基数与实际计费边界</h4>
+<p>原主报告把3650万专业开发者归给GitHub，出处有误。这个数字来自SlashData对2025年初的调查估算，同期总开发者约4720万；SlashData在2026Q1汇编中把总数更新为4840万，但本次未取得同口径更新后的专业开发者分项。以下继续用3650万作历史基数的敏感性测算，不称其为2026年9月精确人口。来源：<a href="https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there">SlashData2025人口研究</a>、<a href="https://www.slashdata.co/post/14-software-developer-trends-insights-you-need-to-know-in-q1-2026">2026Q1汇编</a>。</p>
+<p>GitHub在Microsoft FY26Q4电话会中披露的平台用户与Copilot用户是另外两种统计对象，不能用注册平台账户替代职业人口，也不能把Copilot用户全算成付费用户。一个工程师同时订阅多个工具时，个人数要去重，但实际支付给不同供应商的费用可以分别记录；工具公司再向上游支付的模型费，则需要在全产业终端市场汇总时抵销。</p>
+<p>2026年6月，GitHub开始把Copilot计费转向按token消耗的AI Credits，席位内含额度之外还可追加用量，旧年付合同存在过渡安排。这意味着市场已经不完全遵循“每名程序员每月只买一份固定20美元软件”的约束。来源：<a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub计费方案公告</a>、<a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">6月上线说明</a>。</p>
+<h4 id="h-0084">3.4.2 旧模型重算：人数×渗透×单价</h4>
+<p>纯席位市场年收入 = 可触达专业人数N × 付费渗透率s × 月均实际收入P × 12。</p>
+<p>下表是机械敏感性，不是市场预测。基数N=3650万，忽略新增非专业用户，假设每人只购一个产品，价格是情景变量而非任一公司的实际平均售价。</p>
+<table>
+<thead>
+<tr>
+<th>月均实际收入</th>
+<th style="text-align: right;">25%付费渗透</th>
+<th style="text-align: right;">50%付费渗透</th>
+<th style="text-align: right;">100%付费渗透</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10美元</td>
+<td style="text-align: right;">10.95亿美元</td>
+<td style="text-align: right;">21.90亿美元</td>
+<td style="text-align: right;">43.80亿美元</td>
+</tr>
+<tr>
+<td>20美元</td>
+<td style="text-align: right;">21.90亿美元</td>
+<td style="text-align: right;">43.80亿美元</td>
+<td style="text-align: right;">87.60亿美元</td>
+</tr>
+<tr>
+<td>30美元</td>
+<td style="text-align: right;">32.85亿美元</td>
+<td style="text-align: right;">65.70亿美元</td>
+<td style="text-align: right;">131.40亿美元</td>
+</tr>
+<tr>
+<td>40美元</td>
+<td style="text-align: right;">43.80亿美元</td>
+<td style="text-align: right;">87.60亿美元</td>
+<td style="text-align: right;">175.20亿美元</td>
+</tr>
+<tr>
+<td>100美元</td>
+<td style="text-align: right;">109.50亿美元</td>
+<td style="text-align: right;">219.00亿美元</td>
+<td style="text-align: right;">438.00亿美元</td>
+</tr>
+</tbody>
+</table>
+<p>原文“3650万×30美元×12”在不同位置被写成110亿美元、131亿美元或131B，统一更正为131.4亿美元，即13.14B。这个错误会把市场空间放大十倍，也说明不能只检查首页最新数据而保留正文公式与地图的旧结论。</p>
+<p>席位模型仍然有用：它能问清客户规模、支付能力和份额假设。但它不是一个不受商业模式变化影响的硬天花板。重度企业可能把工具费归入研发预算，按任务或计算用量支付；非开发者可能只在建站、数据清洗或自动化项目期间付费，新增用户也未必全年留存。</p>
+<h4 id="h-0085">3.4.3 扩展模型：不能既算席位又重复算同一笔用量</h4>
+<p>收入可以写成：基础席位收入＋超过内含额度的按量收入＋独立任务或服务收入－退款与折扣。其中“超过内含额度”很重要，如果某订阅已包含一部分token，再把该部分token价值加一遍，模型就高估收入。</p>
+<p>举一个只用于计算的企业情景：有1000万付费席位，平均实际订阅费每月30美元，形成36亿美元年收入；每席全年额外消耗100美元，新增10亿美元，合计46亿美元。若另有100万非开发者每年只购买两个月、每月20美元，新增0.4亿美元，而不是把他们算成全年2.4亿美元订阅。这里的用户数、价格与消耗全是研究假设，没有被写成行业实际值。</p>
+<p>任务计费还有另一条边界：用户愿意为完成一次迁移、修复或构建支付多少，取决于替代的总成本，而不是输出了多少代码。代码生成便宜可以扩大需求，但如果需求澄清、测试、上线、合规与维护仍依赖人，应用公司只能获取其中一部分价值。软件外包总市场不能无折扣搬成AI编程工具的收入空间。</p>
+<h4 id="h-0086">3.4.4 当前竞争证据与估值方法</h4>
+<p>Cursor于2025年11月公司公告披露年化收入超过1B、该轮投后估值29.3B；其官网2026年3月Press索引转引Bloomberg关于2B年化收入的报道，证据性质仍是媒体报道。原文“500亿美元谈判估值”不再标作已经完成的当前估值，也不把2B当作全年经审计收入。来源：<a href="https://cursor.com/blog/series-d">Cursor公司融资公告</a>、<a href="https://cursor.com/blog/topic/press">Cursor Press索引</a>。</p>
+<p>Microsoft7月官方电话会披露GitHub Copilot收入环比增长超过60%，并指出新按量模式对收入和毛利有影响。这是“市场不只靠固定低价席位”的直接反向证据，但仍不足以复原其收入绝对额、利润和全部付费人数。Claude Code的母子产品重复统计也必须避免，不能把Anthropic全部收入再加上Code收入来估编程市场。</p>
+<p>原文用“Cursor估值是传统TAM的数倍”直接判定泡沫，逻辑需要撤回：估值是未来现金流存量，TAM是每年收入流量，两者没有必须小于1的关系。真正应问的是未来可服务市场、份额、净利或现金利润率、竞争下的定价、资本消耗与股权稀释；高增长能否使目前的高倍数下降，以及增长放慢后利润能否接上。缺少这些输入，不给出貌似精确的公司合理估值。</p>
+<h4 id="h-0087">3.4.5 生产力：不能把个人感受直接外推为TAM</h4>
+<p>一个反例值得保留。METR对16名熟悉自己代码库的开源开发者、246项任务做早2025年工具随机试验，允许使用AI时平均完成时间增加19%。这只适用于该工具版本、任务与样本，不能推出今天所有AI编程无效。METR在2026年2月的后续说明又明确指出，不愿在无AI条件下工作的开发者和任务退出实验、并行agent计时等问题，使新实验难以可靠估计加速幅度。来源：<a href="https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf">METR原始论文</a>、<a href="https://metr.org/blog/2026-02-24-uplift-update/">后续实验说明</a>。</p>
+<p>所以我撤掉原文无条件的“效率提高5—10倍”。客户采购更适合测一项真实任务从提出到验收的总时间，包括提示词、复核、失败重试、集成和维护，并同时记录缺陷与风险。愿意付费说明客户看到了价值，不代表每个客户都已经把价值准确算成现金收益。</p>
+<h3 id="h-0088">3.5 编程之外：按工作流寻找可续费的需求</h3>
+<h4 id="h-0089">3.5.1 客服与CRM：看结果，也看计量变化</h4>
+<p>Salesforce于2026年8月26日披露，Agentforce ARR超过1.5B，与Data360合计接近3.9B；公司同时说明本季Agentforce ARR纳入其AI offerings、Slackbot与Headless360。这比原0.8B更近，但产品口径已变化，不能把所有同比增幅视作同一产品自然增长，更不能将Agentforce、合计值和全公司收入相加。来源：<a href="https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/">Salesforce FY27Q2财报</a>。</p>
+<p>客服是容易形成闭环的场景，因为工单成本、解决率、人工转接率及投诉可以量化。研究时仍要警惕“动作数”指标：一个问题拆成十个动作，平台计费可能上升，但客户没有因此获得十个问题的解决。实际商业价值应落在成功解决、重复联系、处理时长和客户损失上，而不只看agent活跃。</p>
+<h4 id="h-0090">3.5.2 法律与金融研究：付费能力来自责任和内容</h4>
+<p>Harvey官方新闻室在8—9月持续披露具名律所与企业部署，证明其不是只有演示；但部署公告没有提供足以重建当前ARR、回款或利润的统一财务明细。本版不把第三方不同日期的估算更新成一个新的“精确收入”。来源：<a href="https://www.harvey.ai/newsroom">Harvey新闻室</a>。</p>
+<p>法律工作流的价值不只是更快生成文本，还包括引用核验、案例权限、版本留痕和责任分配。金融研究同理，内容许可、专家访谈、公告检索和工作流已经有预算池。AlphaSense在2025年10月官方披露ARR超过0.5B，可作为历史收费锚，但它包括原有信息与工作流业务，不是0.5B纯AI新增收入，也不是9月最新值。来源：<a href="https://www.alpha-sense.com/press/alphasense-surpasses-500m-in-arr/">AlphaSense公司公告</a>。</p>
+<p>这些业务可能比通用聊天更有留存，却也承担数据授权、审查和企业销售成本。是否有定价权，要看客户会不会在下一份合同里继续付费、能否用更便宜的通用模型加现有内容替代，以及错误发生后谁承担成本。</p>
+<h4 id="h-0091">3.5.3 音频与内容：把订阅增长和权利成本同时建模</h4>
+<p>ElevenLabs5月5日公司公告披露，2026年前四个月ARR超过0.5B，2025年末为0.35B。该页面后来标注8月31日更新，但收入句子的统计区间仍是前四个月，不能把它改成“截至8月底0.5B”。来源：<a href="https://elevenlabs.io/blog/500m-arr-and-new-investors">ElevenLabs公司公告</a>。</p>
+<p>这类产品已有明确付费用户，却还要分创作者、企业客服和媒体制作：个人可能按项目订阅又取消，企业可能为低时延、授权声音和服务质量付高价；合成量增长还会带来推理、存储、审核和内容授权成本。不能用生成分钟数推全年订阅收入，也不能假定模型成本下降全部留给应用商。</p>
+<h4 id="h-0092">3.5.4 医疗、教育与物理世界：确认价值的时间更长</h4>
+<p>医疗文书可以先看记录时长、复核率和病历质量，辅助诊断还需要临床安全与支付方认可；教育要看留存与学习效果，不能将某教育公司的所有订阅收入都贴成AI变现；自动驾驶、机器人则必须把人工接管、设备维护、保险及利用率算入单位作业成本。</p>
+<p>科研和新药更容易出现“合同上限很大、近期现金很小”的情况。里程碑付款必须按条件、触发概率与时间拆开，项目合作证明对方愿意试，不等于药品已经上市。主权AI与防务也要区分意向、预算、合同、验收与收款，不能把政治优先级直接变成年收入预测。这些是不同的研究模型，不能用统一的“AI应用ARR”加总代替。</p>
+<h3 id="h-0093">3.6 全球资本开支三层拆解：保留结构，修正回收模型</h3>
+<p>原来的算力芯片、数据中心物理层与电力层划分仍然有助于研究，只是不能把三层企业收入一加，就当作终端用户投入了同样多的新增资本。芯片卖给服务器厂，服务器卖给云厂，会在不同公司分别形成收入；设备购置、数据中心租赁与电力采购还可能分别落在资本开支、租赁和运营成本中。</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>应记录的投入</th>
+<th>回收与风险变量</th>
+<th>与本篇变现端怎样对接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>算力芯片及网络</td>
+<td>设备购置、服务器和网络配置</td>
+<td>有效利用率、服务年限、更新替换、单位任务成本</td>
+<td>转化为可收费算力与成功任务，不以峰值性能直接推收入</td>
+</tr>
+<tr>
+<td>数据中心物理层</td>
+<td>土建、配电、冷却、机柜及租赁</td>
+<td>达到可用状态日期、爬坡、建设成本、可转用性</td>
+<td>未投运部分不能与已上线收入假定同年满产匹配</td>
+</tr>
+<tr>
+<td>电力与接入</td>
+<td>发电与电网投资、接入、长期购电</td>
+<td>能否按期交付、价格、最低采购及弃电约束</td>
+<td>电力瓶颈可能限制收入，也可能推迟开支，不必然导致需求消失</td>
+</tr>
+</tbody>
+</table>
+<p>旧版引用的Goldman全球五年累计7.6T和Moody's特定云厂年度预测，样本、起止年及资产口径并不相同，本次未获得两份原始完整模型，因此不继续用它们作为“已经相互验证”的当前总盘子。尤其不能把一个覆盖全球的累计值称为已经签署的资本承诺，也不能用某几年占累计值23%就证明投资前置。</p>
+<h4 id="h-0094">3.6.1 为什么旧“资本回收倍数”不能给出IRR</h4>
+<p>旧文把年终收入上限1.36—2.06T乘五，得到6.8—10.3T，再除以7.6T资本开支，称为资本回收倍数并判断IRR为负。这至少少了收入实现路径、运营费用、税、营运资金、投资发生日期和残值。收入不是可还给投资人的现金；折旧也不能在现金投资扣除后再当作现金流出重复扣减。</p>
+<p>即使只检查数学，“五年线性达峰”也不能直接用终点乘五。假设年收入从零按连续直线升至R，第五年末达到R，五年累计收入面积为2.5R；若规定五个年末收入分别为0.2R、0.4R、0.6R、0.8R和R，离散合计为3R。两种定义都不是5R。它们只是例题，不能作为对真实AI产业收入的预测。</p>
+<h4 id="h-0095">3.6.2 改用项目或资产批次现金流</h4>
+<p>在企业自由现金流口径下，FCFF = 税后经营利润＋折旧摊销－资本开支－营运资金增加；企业价值是这些未来FCFF和终值的贴现。项目回报则应按建设期投入、投产爬坡、收入、服务成本、更新资本和退出残值逐期列示。没有完整现金流时，应保留“回报未证实”，不能把粗糙收入比升级为收益率。</p>
+<p>这也改变了周期判断的力度：资本开支高、云利润增长与应用收入增长可以同时发生，风险不自动消失；资本开支暂时放缓，也可能是接电和建设约束，不能自动解释为需求崩塌。真正需要跟踪的是已投运批次的收入利用率、服务毛利和回收周期，与下一批投入是否匹配。</p>
+<h3 id="h-0096">3.7 API定价与收入方程：从“死亡螺旋”改为可检验情景</h3>
+<h4 id="h-0097">3.7.1 当前费率反映分层与缓存，不是统一归零</h4>
+<p>Anthropic9月发布的Fable5.1，标准未缓存输入与输出分别为每百万token10美元和50美元，缓存读取价从Fable5的1美元降为0.25美元；缓存写入仍另收费。这是特定产品、特定计价项目的降价，不是所有token都降75%，更不是同质量全市场价格每月下降15%。来源：<a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">Fable5.1发布说明</a>、<a href="https://platform.claude.com/docs/en/about-claude/pricing">官方定价表</a>。</p>
+<p>费率还要注明有效期。Google9月2日公布Gemini 3.8 Flash每百万token输入0.75美元、输出3.75美元的推广价，脚注明确其于2026年12月31日到期，2027年1月1日起拟适用1.50美元和7.50美元。后者是已公告、尚未生效的价格，不能写成9月已涨价；前者也不能直接外推全年客户成本。预算应分期计价，并与任务耗用量和成功率一起复算。来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google发布说明及价格脚注</a>。</p>
+<p>原图把不同模型代际、不同能力和输入价连成一条“30美元跌到0”的曲线，且把开源模型直接记为零价格，当前撤回。开源权重可能免去部分授权费，但推理仍有服务器、能耗、运维和服务质量成本；不同tokenizer对相同文字计数也可能不同。研究质量调整后的价格，应固定任务、质量门槛、延迟和账单，而不只选最便宜的一项输入价。</p>
+<p>9月22日的两组披露进一步说明，低价竞争与更低任务成本需要分别测量。下表为标准API每百万token的美元标价，不是已实现平均收入，也不代表各模型能力相等。</p>
+<table>
+<thead>
+<tr>
+<th>9月22日发布的模型</th>
+<th style="text-align: right;">未缓存输入</th>
+<th style="text-align: right;">输出</th>
+<th style="text-align: right;">缓存读取</th>
+<th>限定条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI GPT-6 Sol</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">0.20</td>
+<td>提示输入不超过272k token的标准价</td>
+</tr>
+<tr>
+<td>OpenAI GPT-6 Luna</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.01</td>
+<td>同上；不同能力层级，不作同质量降价比较</td>
+</tr>
+<tr>
+<td>Anthropic Claude Opus 5.5</td>
+<td style="text-align: right;">4.00</td>
+<td style="text-align: right;">20.00</td>
+<td style="text-align: right;">0.20</td>
+<td>标准模式；缓存写入、快速模式另计</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://developers.openai.com/api/docs/changelog">OpenAI 9月22日官方变更记录</a>、<a href="https://www.anthropic.com/claude-opus-5-5">Anthropic Opus 5.5发布与价目</a>。Anthropic上一代Opus 5的输入、输出为5和25美元，缓存读取0.50美元，因此前两项下降20%、缓存读取下降60%；公司所称典型工作成本降低40%，还包含任务耗用量变化，是厂商测试结论，不是本报告独立实测，更不是毛利提高40%。</p>
+<p>预算例题可以保持简单：若一批请求均符合上述上下文条件，合计100万未缓存输入和20万计费输出token，Sol账单为4美元，Luna为0.20美元，Opus 5.5为8美元。这里只比较固定用量账单；一旦任务成功率、重试、工具、缓存和人工复核不同，便不能按这个比例宣布真实交付成本下降。价格下降可能扩大付费任务，也可能侵蚀模型商的单位收入，最终仍要用留存、用量与成本一起验证。</p>
+<p>10月1日版记录的Sonnet 5.5输入、输出、缓存读取价为每百万token 2、10、0.20美元；其中缓存价已被10月7日调价接续，不能继续当现价。9月29日GPT-6.1 Sol披露的输入、输出为2和10美元，缓存输入0.10美元，保留该发布时点。固定100万未缓存输入、20万输出的简化账单仍为4美元，缓存读取降价并不改变这个没有缓存的例题。<a href="https://www.anthropic.com/claude-sonnet-5-5">Sonnet 5.5</a>、<a href="https://openai.com/index/introducing-gpt-6-1-sol/">GPT-6.1 Sol发布</a></p>
+<p>10月7日Anthropic发布Haiku 5.5，同时将Sonnet 5.5缓存读取价降至0.10美元，较旧价下降50%，标准输入和输出价未变。10月9日回读的官方价目如下，均为每百万token美元价；这是收费规则，不是已实现单价或模型商毛利。<a href="https://www.anthropic.com/claude-haiku-5-5">Haiku发布及当日调价</a>、<a href="https://platform.claude.com/docs/en/about-claude/pricing">当前价目与上下文分档</a></p>
+<table class="tariff-table">
+<thead>
+<tr>
+<th>模型及每条请求的条件</th>
+<th style="text-align: right;">未缓存输入</th>
+<th style="text-align: right;">输出</th>
+<th style="text-align: right;">缓存读取</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Haiku 5.5，提示输入不超过100k token</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.01</td>
+</tr>
+<tr>
+<td>Haiku 5.5，提示输入超过100k token</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">2.50</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td>Sonnet 5.5，标准模式</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">0.10</td>
+</tr>
+</tbody>
+</table>
+<p>Haiku的100k门槛按每条请求判断，包含缓存读写输入，不是只对超过门槛的部分加价。若10条请求各10万未缓存输入、2万输出，合计100万输入、20万输出，账单为0.20美元；若同一总量拆成5条各20万输入、4万输出的请求，每条都进入高档价，合计为1.00美元。缓存写入、工具等费用另计，实际成本还取决于成功率和重试。Sonnet多数智能体任务成本约降20%只是厂商给出的工作流效果，不能据此认定行业毛利率变化。</p>
+<p>商业计费也在变。Microsoft 9月25日明确将Cowork、Code和Autopilot等长任务纳入按使用量计费，并提供预算和消耗管理；微软宣布Home、Code将在随后数周经Frontier分批推出，Autopilot计划月底扩大私人预览，本轮未另核实际覆盖范围。它让重任务有机会按消耗收费，却尚不能证明客户已经持续购买或贡献正毛利；不能把产品发布写成新增收入。<a href="https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/">Microsoft官方公告，“Managing AI spend”</a></p>
+<h4 id="h-0098">3.7.2 离散增长要保留交叉项</h4>
+<p>对一个固定口径的收费品类，收入R=P×Q。若本月平均实际单价变化p、收费量变化q，则收入增长率为：</p>
+<p><strong>g = (1+p)×(1+q)－1 = p＋q＋p×q。</strong></p>
+<p>连续时间的微分近似可以写dR/R=dP/P+dQ/Q，但不能把它直接当较大月变动的精确公式。以下保留原压力假设，统一使用离散算法。</p>
+<table>
+<thead>
+<tr>
+<th>假设情景，不是观测事实</th>
+<th style="text-align: right;">单价月变化p</th>
+<th style="text-align: right;">收费量月变化q</th>
+<th style="text-align: right;">收入月变化g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用量较强</td>
+<td style="text-align: right;">-15%</td>
+<td style="text-align: right;">+20%</td>
+<td style="text-align: right;">+2.00%</td>
+</tr>
+<tr>
+<td>中间压力情景</td>
+<td style="text-align: right;">-15%</td>
+<td style="text-align: right;">+10%</td>
+<td style="text-align: right;">-6.50%</td>
+</tr>
+<tr>
+<td>用量较弱</td>
+<td style="text-align: right;">-15%</td>
+<td style="text-align: right;">+5%</td>
+<td style="text-align: right;">-10.75%</td>
+</tr>
+<tr>
+<td>收入保持不变</td>
+<td style="text-align: right;">-15%</td>
+<td style="text-align: right;">+17.65%</td>
+<td style="text-align: right;">约0.00%</td>
+</tr>
+</tbody>
+</table>
+<p>固定-15%降价时，维持收入所需用量增幅为1/0.85－1=17.647%。但本篇没有证据表明所有平台一直处于这个单价和用量组合；公司近期披露的收费扩张，恰好要求撤回“中间情景就是大多数API平台实际处境”的旧断言。</p>
+<p>多产品公司的收入应写为各品类P×Q之和，再加订阅和其他收入。廉价模型用量占比提高可能拉低混合单价，同时更长的agent任务增加收费量；缓存提高还会改变价格结构。两个时期的混合单价下降，未必意味着同一服务遭遇同等幅度的价格战。</p>
+<h4 id="h-0099">3.7.3 一笔API账单应该怎样复算</h4>
+<p>以下是按Fable5.1公开价构造的例题，流量不是实际客户数据：未缓存输入100万token、缓存读取1000万token、输出20万token，则三项费用分别为10美元、2.5美元和10美元，合计22.5美元。若只将缓存读取价换成上一代的1美元、其余条件保持不变，则为30美元，账单下降25%，不是75%。</p>
+<p>这张简化账单假设缓存已写入，不含新缓存写入、工具、运行环境、地区加价、税费或协议折扣；真实预算要补齐这些项目，并比较任务成功率。价格低25%而失败重试翻倍，成功任务成本仍可能更高；高价模型一次成功，也可能比低价模型反复调用便宜。</p>
+<h3 id="h-0100">3.8 单位经济与客户ROI：让利润、现金和价值各归各位</h3>
+<h4 id="h-0101">3.8.1 应用商的收入与毛利桥</h4>
+<p>先看一组假设，不把它冒充任何公司的盈利预测：10万个付费用户，每人每月平均实际付款30美元，月收入为300万美元；月推理与托管成本120万美元，另有60万美元交付成本，包括支持、内容许可和支付费用，则毛利120万美元、毛利率40%。这还没有减研发、销售、管理、利息和税，不能叫净利润率。</p>
+<p>若推理与托管单价降30%、总用量增20%，这项成本由120万美元变为100.8万美元；收入与其他交付成本暂时不变时，毛利变为139.2万美元、毛利率46.4%。因此上游API价格下降不必导致下游应用毛利下降。若竞争又迫使应用售价降20%，月收入变为240万美元，同样成本下毛利率则仅33.0%。最后结果取决于节约由用户、应用商还是模型商拿走。</p>
+<h4 id="h-0102">3.8.2 客户值不值得付钱</h4>
+<p>客户月净收益 = 可兑现的新增毛利或成本节约－工具费用－新增集成与复核成本－错误和合规损失。节省时间只有在释放出有效产能、减少加班或产生新增业务时，才进一步转成财务收益，不能直接把员工工资按分钟乘出来全部视作现金节约。</p>
+<p>例如，一项假设工作流每月节约20小时，每小时完全成本200元，其中只有40%能够转化为可兑现产能或成本节约，则月收益先计1600元；若工具及复核每月合计1000元，净收益600元。按该例，以“净收益/本期投入1000元”定义的月度简单ROI为60%；若可兑现比例降到20%，收益只有800元，反而净亏200元。这里没有预测哪家企业能做到这个比例，模型只是把真正需要调研的变量暴露出来。</p>
+<p>医疗、法律、金融和生产代码不能只优化这道平均数。一项低概率大损失也可能决定产品必须增加人工复核，所以本篇不把任务自动完成率直接视作可替代人员比例。</p>
+<h4 id="h-0103">3.8.3 从毛利走到资本回报</h4>
+<p>应用企业的预收款可能先增加现金，收入后确认；云企业资本投入先发生，折旧和收入在以后期间展开；模型公司还需要持续训练和研发。比较各层利润时，需要注明研发处理、内容授权、股权薪酬和租赁口径，并检查是否把某公司的投资收益误当经营利润。</p>
+<p>原文“每1美元终端消费有0.55美元流向芯片、仅0.10美元留给模型应用”的比例缺少完整抵销表，当前撤回。它把某些企业当期利润率、设备投资及产业链收入切片混在一起，不能支持全球利润分配结论。更可行的办法是选择有账单和合同的单一项目，把终端付款、渠道分成、模型费、云资源费与设备折旧逐项对上，再讨论可复制程度。</p>
+<h3 id="h-0104">3.9 2026年余下阶段与2027年的核验表</h3>
+<p>不再设“2027年应用ARR必须达到云厂资本开支50%”这种跨口径阈值。年度运行率与年度资本开支不对应相同资产寿命、收入范围或现金流，它们的比值可以提示压力，但不能直接判回本。下面的观察按每家公司下一次正式披露或合同复核滚动进行，不把尚未宣布的日期写成日历事实。</p>
+<table>
+<thead>
+<tr>
+<th>要验证什么</th>
+<th>当前可确认</th>
+<th>后续需要的证据</th>
+<th>什么会迫使我改判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>编程从席位扩展到用量</td>
+<td>GitHub已调整计费并披露收入增长</td>
+<td>同口径付费留存、单客消费与毛利</td>
+<td>用量收入持续增长且留存稳定，应上调固定席位模型之外的空间</td>
+</tr>
+<tr>
+<td>企业AI愿付费而非只试用</td>
+<td>付费席位和Agentforce ARR已有披露</td>
+<td>续费、折扣、范围变化与同口径增长</td>
+<td>合同扩张主要来自降价、合并口径或赠额，应下调收入质量判断</td>
+</tr>
+<tr>
+<td>对话广告是否可复制</td>
+<td>ChatGPT Ads披露1B run-rate</td>
+<td>后续实际收入、客户复投与成本</td>
+<td>多期增长、复投与产品体验保持，支持新增渠道；只有短期投放则不外推</td>
+</tr>
+<tr>
+<td>模型层是否形成可持续利润</td>
+<td>Anthropic S-1披露Q2经营转盈、H1仍经营亏损但经营现金为正</td>
+<td>后续季度、分产品成本、营运资金与长期付款兑现</td>
+<td>持续经营改善应降低纯烧钱判断；单季转盈不等于所有建设回本</td>
+</tr>
+<tr>
+<td>API便宜是否降低成功任务成本</td>
+<td>缓存等具体费项下降</td>
+<td>固定任务集账单、失败重试和复核</td>
+<td>成功任务成本下降同时客户净收益改善，扩大可付费场景</td>
+</tr>
+<tr>
+<td>新资产能否回收</td>
+<td>云分部仍有真实收入与利润</td>
+<td>资产投产批次、利用率和新增自由现金流</td>
+<td>新资产回报逐批改善，应收敛资本错配担忧；靠重复融资维持则相反</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h-0105">3.10 我可能错在哪里</h3>
+<p>我仍可能低估按任务计费带来的市场扩张。若少量高强度企业用户愿意持续购买昂贵但可靠的工作成果，收入可以超出传统开发者席位模型；但也不能把理论能节省的全部劳动成本默认交给工具公司。</p>
+<p>我也可能高估公司指标的可比性。订阅、用量、渠道收入和合同范围一变，增长曲线就会断口径；Anthropic公开S-1改善了公司整体经营与现金的可见度，但其中未经审计的中期表、历史run-rate和分产品毛利仍不是同一种证据。尚未披露的产品成本与后续季度现金，不能靠精确小数填平。</p>
+<p>还有一项与原文相反的风险：我可能低估硬件和推理成本下降、计算效率提高对应用商的帮助。如果单位任务成本下降快于售价，收入不必爆发也可能实现更好的利润；若更可靠的模型减少复核，用户的实际投资回报也会提高。对此不能只看标价，而要同时验证质量、用量和费用。</p>
+<p>本篇当前判断是：AI收费渠道已经拓宽，收入增长不应被“价格归零”叙事一笔抹去；资本回报仍要逐家公司、逐批资产核验。研究重点由“有没有人在付钱”，转为“谁付的钱没有重复统计，谁在承担交付成本，谁最终留住现金”。</p>
+<h2 id="h-0106">第四部分：AGI何时到来？</h2>
+<p>9月初的新模型，使“能力还没有进步”越来越难成为谨慎定价的理由。Anthropic 在9月1日发布 Fable 5.1 与 Mythos 5.1，Google 在9月2日发布 Gemini 3.8 Flash 与 Flash Cyber，OpenAI 在9月3日发布 GPT-6 Astra；这些产品既拓展长流程任务，也呈现不同的部署限制。对本报告而言，需要重估的是从任务能力到经济产出的传导速度，而不是因为过去担心泡沫，就维持一个必然推迟的 AGI 时间表。<a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic 发布说明</a>、<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google 发布说明</a>、<a href="https://openai.com/index/gpt-6-astra/">OpenAI 发布说明</a></p>
+<p>我仍然把能力、交付和回报分开。模型在某类测试中跨过人类参照线，是技术证据；企业敢不敢交给它连续执行真实业务，要加上可靠性、权限、数据和责任；能力创造的收益最终由模型厂商、应用商、员工还是客户取得，则是另一个竞争问题。此前正文把这几层压成了一个 AGI 年份，又让这个年份承担估值和崩盘时间的解释，证据承受不了这样的推导。</p>
+<h3 id="h-0107">4.1 实验室的时间表，应怎样读</h3>
+<p>公开预测的价值，在于暴露预测者对技术路径的假设。它不是一组口径一致的测量值。有人讨论能否完成多数高价值工作，有人要求跨领域学习达到人类水平，还有人谈的是远超专家群体的超级智能；把这些年份排在一起取中位数，得到的只是一个数字，并没有得到共同定义下的概率。</p>
+<p>Dario Amodei 在2026年1月《The Adolescence of Technology》中继续讨论短时间内出现强大 AI 的可能，并保留时间可能更远的限定。他设想的是具备广泛专业能力、可大规模复制的系统，不只是一个聊天产品升级。本文把它作为实验室负责人提出的风险情景，不作为“2027年已经得到确认”的事实。其商业利益需要识别，技术论证也不能仅因商业利益就被忽略。<a href="https://darioamodei.com/essay/the-adolescence-of-technology">Amodei 原文</a></p>
+<p>另一种更便于研究的进展，是 Google DeepMind 2026年3月16日公布的认知评估框架：把一般认知能力拆成十类，并要求用有保留测试、有人类参照的任务形成能力画像。这一方法没有解决所有定义争议，却比“某位负责人说还差几年”更适合持续更新，因为可以明确看到某一能力改善、另一能力仍薄弱。<a href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/measuring-progress-toward-agi/measuring-progress-toward-agi-a-cognitive-framework.pdf">DeepMind 认知框架</a></p>
+<p>因此，本版撤下 Altman、Hassabis、Musk、LeCun、Sutskever、Hinton、Schmidt 等人在不同场合的年份汇总，不沿用未经逐条找到原始访谈和发布日期的精确概率，也不再用“技术最深”“最独立”给人物打分。这不表示这些人的意见不重要，而是本篇尚未完成那张表所需要的同口径核验。</p>
+<p>预测市场也遵守同一纪律。要保留一个数字，至少要同时存下问题的结算条件、截止日期、观察时点和聚合方式；“通用智能首次宣布”“多数职业自动化”“超级智能”不能互相替代。旧文中的 Metaculus 2033年、Manifold 35%、Polymarket 25%等，不具备可重放的同期快照，本版不把它们写作当前市场共识，更不称为“最客观参考”。</p>
+<p><strong>本篇的时间判断改为：能力继续快速改善有证据，通用性和经济替代程度仍须分别验收；暂不提供统一 AGI 到达年份或经校准概率。</strong> 一个可用的时间判断，必须先说明什么算到达，以及什么新证据会使判断前移或后移。</p>
+<h3 id="h-0108">4.2 Scaling：从“算得更多”转向“交付同一结果花多少代价”</h3>
+<p>预训练、后训练、推理时计算和外部工具共同改变系统能力，不能用其中一代模型的表现宣告整条路径结束。旧文把 GPT-4.5 的媒体评价当作预训练缩放失效的证明，又把推理模型概括成“思考越久越好”，两端都说得太满。预算增加后，某些任务会改善，某些任务可能更早到达收益平台；若增加搜索只是反复走入错误路径，更多计算并不自动变成更可靠的答案。</p>
+<p>评估应固定任务、工具和质量门槛，再比较成本，而不是只比每百万 token 的价目表。一项业务的有效成本至少包含模型调用、重试、工具调用、基础设施、人工复核和失败返工。模型 A 单次调用更便宜，若需要多次尝试和大量人工检查，交付一个合格结果未必便宜；模型 B 单次更贵，但能减少流程往返，也可能更有经济性。这是本篇的研究方法，不是对任何厂商成本的实测结论。</p>
+<p>9月的公开评测提供了一个具体例子。同一模型发布页上的高分项目和低分项目并存，不能挑最醒目的一个分数代表全部能力。下表仅记录当次发布披露，不制作跨年份“智能总量”曲线。</p>
+<table>
+<thead>
+<tr>
+<th>当次披露</th>
+<th>可核结果及条件</th>
+<th>应怎样使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI GPT-6 Astra，9月3日</td>
+<td>FrontierMath Tier 4（v2）97.6%；AutomationBench 41.4%；发布页注明各推理预算中的最高结果，研究/API环境可能不同于产品环境</td>
+<td>专门数学测试与业务流程测试进展不均，不能用前者代替后者</td>
+</tr>
+<tr>
+<td>Anthropic Fable 5.1，9月1日</td>
+<td>OSWorld 2.0 部分计分77.9%、严格计分41.7%；HLE无工具60.9%、有工具65.0%，且有生产防护参与</td>
+<td>同一模型换验收规则或工具，结论会明显变化；不能与其他设置的分数直接排行</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://openai.com/index/gpt-6-astra/">OpenAI 评测表及脚注</a>、<a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic 评测表及防护说明</a>。这些是厂商披露，不是本文完成的独立复测。</p>
+<p>旧版 SWE-bench、HLE、ARC-AGI、GPQA、FrontierMath 的进展表把不同版本和预算连成一条曲线，本版撤掉那条伪可比曲线。此后若恢复趋势图，每个观测点都应绑定模型版本、数据集版本、工具、尝试次数、预算和测试日期；只要关键设置变化，就应另开序列，而不是继续画线。</p>
+<p>长任务能力的进展也需要这样读。METR 的50%时间跨度，是根据人类完成任务所需时间拟合出的成功率尺度，不是“AI已能稳定独立工作这么久”。METR 在2026年3月20日说明，修正拟合错误会改变既有结果，任务分布与统计选择也会显著影响估计。原文直接写“14小时自主工作”，遗漏了可靠性阈值和样本范围，本版撤回这种表述。<a href="https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results/">METR 方法与修订</a></p>
+<p>对 DeepSeek 的讨论回到已公开产品与技术材料。官方透明中心列明 DeepSeek-V4 于2026年4月24日发布，提供模型卡和技术报告入口；此前“R2、32B、AIME 92.7%、单24GB显卡”组合仍缺一手依据，不能继续作为低成本突破的论据。API报价也不等于训练成本，低报价可能包含效率改善、补贴或商业选择，只有完整成本口径才能区分。<a href="https://www.deepseek.com/en/transparency/">DeepSeek 官方透明中心</a></p>
+<p>我的判断是：<strong>竞争正在从一次回答的能力，延伸到一项工作能否在可接受的预算和风险内结束。</strong> 如果高分没有减少人工检查，企业支付的对象仍然是辅助工具；若任务验收率提高、复核成本下降且能持续复现，应用收入的扩张才有更扎实的基础。</p>
+<p>9月22日，OpenAI发布Sol与Luna，Anthropic发布Opus 5.5，竞争继续向不同能力与成本层级展开。Anthropic称Opus 5.5典型工作成本比Opus 5低40%，但其中包含标价与任务耗用量变化；这一厂商声明需用固定任务和验收标准复测，不能直接推出企业人员成本下降40%。这些产品扩大了可选的部署方案，仍没有给出统一AGI到达日期。<a href="https://developers.openai.com/api/docs/changelog">OpenAI官方变更记录</a>、<a href="https://www.anthropic.com/claude-opus-5-5">Anthropic发布说明</a></p>
+<h3 id="h-0109">4.3 AGI定义：能力、通用性与自主性不能互相替代</h3>
+<p>本文保留三类讨论，但不把它们当作已排好先后的三个到达日期。</p>
+<table>
+<thead>
+<tr>
+<th>讨论对象</th>
+<th>真正需要回答的问题</th>
+<th>不足以单独证明它的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>经济上有用的强 AI</td>
+<td>在什么行业、质量和总成本条件下，能够完成多少付费工作？</td>
+<td>竞赛高分、用户数、单次演示</td>
+</tr>
+<tr>
+<td>广泛的人类水平认知能力</td>
+<td>在未专门准备的新任务上，学习、推理、记忆和迁移是否足够稳定？</td>
+<td>少数任务超人、长上下文长度、模型自己声称理解</td>
+</tr>
+<tr>
+<td>超级智能与高度自主系统</td>
+<td>在广泛领域能超越多强的人类参照，且可以多大范围独立行动？</td>
+<td>更快回答、更多并行实例、某项安全阈值被触发</td>
+</tr>
+</tbody>
+</table>
+<p>DeepMind 2023年的“Levels of AGI”把表现深度、能力广度与自主性区分开来；2026年6月12日“From AGI to ASI”继续讨论 AGI 之后的多种发展路径，而不是给出一个从当前模型直接通向超级智能的保证。本文采用这一区分，但表中的经济验收问题属于作者用于产业研究的操作化方法。<a href="https://arxiv.org/abs/2311.02462">AGI 层级论文</a>、<a href="https://deepmind.google/research/publications/239142/">DeepMind 后AGI研究</a></p>
+<p>安全限制也不能简单当作能力不足。模型可能具备一项潜在能力，但部署方因为风险而限制访问；反过来，移除防护后的研究成绩，也不能等同于客户可购买的生产能力。OpenAI 9月3日称 Astra 达到其内部准备度框架的网络安全 Critical 等级，同时披露监控难度与额外部署防护。这是厂商风险分类及测试结果，并非跨机构共同认可的 AGI 认证，也不能推成现实世界普遍失控已经发生。<a href="https://openai.com/index/safety-overview-gpt-6-astra/">OpenAI 安全说明</a></p>
+<p>Google 的同次发布提供了另一种对照：3.8 Flash与Flash Cyber使用同一基础智能，但网络安全防护和开放对象不同。前者进入API、企业及订阅产品，后者因网络安全限制更宽松，仅通过Fairwind计划提供给可信防御方。这个差异提醒我们，评估客户实际可用的能力，必须连同产品版本、权限和防护配置记录，不能把受限环境的成绩全部折算为普通客户能够购买的服务。<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google部署与防护说明</a></p>
+<p>投资研究需要同时保留这两种方向：能力变强可能拓宽收入来源，防护、审批、责任和数据隔离也可能增加交付成本。把产品受限全部解释成“模型不行”，或把实验室上限全部折算成即期收入，都会误读商业化速度。</p>
+<h3 id="h-0110">4.4 算力、电力和数据，怎样约束而非决定时间表</h3>
+<p>原文说 AGI 时间“本质上是前沿训练边际算力的函数”，低估了算法、数据、评估方式和组织能力。算力是重要投入，但投入扩张和能力进展之间没有一张经验证的 AGI 年份换算表；同样的硬件规模，可以因利用率、通信、故障和训练方案不同而产出不同结果。</p>
+<p>安全工程也会改变训练进度。OpenAI9月1日说明，在此前Hugging Face事件后，曾暂停部分前沿训练两周，其中包含部分Astra训练；某些更大的强化学习运行暂停更久，8月28日已恢复此前暂停的一项大型运行，部分小规模实验仍暂缓。公司同时明确Astra没有参与原事件。这是特定训练流程的暂停与恢复，不能写成所有训练停摆，也不能据此推算AGI统一延期；它说明硬件就绪之后，隔离、监控和安全验收仍可能约束有效研发进度。<a href="https://openai.com/index/path-to-astra/">OpenAI训练与恢复说明</a></p>
+<p><strong>先看能够运行的集群，而不是宣布的功率。</strong> 一处站点的公告可能分别提到土地容量、获批供电、已通电容量、已安装服务器及正在提供服务的能力。它们不是五种说法指向同一个数量。原文据规划功率推算2027年前有效训练算力仅能扩张8—12倍，缺少项目清单、投运节奏和利用率，不能保留为事实。</p>
+<p><strong>电力约束是地方性的，也会被重新分配。</strong> 数据中心关心的不只是全国发电量，还有特定节点的变压器、输电、备用电源、许可和可用时间。发电项目排队接入电网的统计，不能直接套给所有新增用电负荷；自备电源也有设备、燃料和监管约束，并非天然快捷通道。第五部分用 IEA 更新说明需求规模，本节只保留机制：某个地点延误，可能带来迁址、降密度、分期投运或推迟交付，不能直接宣布全球技术路线因此延后若干年。</p>
+<p><strong>先进制造约束要穿透到系统交付。</strong> 先进制程、HBM高带宽存储器、先进封装、网络设备和整机集成都可能限制数量，但“封装晶圆/月”不能直接换算成“每年几座训练中心”。需要知道晶圆尺寸、产品组合、良率、每个封装所需资源、芯片互联方式及单站配置。原文 CoWoS 产能支持5—8座集群、供需缺口2—3倍、制程复制固定需要三年的说法，未能给出这条计算链，本版撤出。</p>
+<p><strong>数据约束应按任务讨论。</strong> 高质量、新颖、可合法使用的数据更有价值，不等于互联网文本已全部用完。可自动验证的数学或代码任务，与依靠现实反馈、隐性知识和复杂评价的任务，获得可靠训练信号的难度不同；合成数据能扩展某些训练，也需要筛选与独立检验。对于未披露训练集的模型，本文不再猜测它“已经消耗了公开数据的30—50%”。</p>
+<p>下表替代原来的“算力倍数—AGI年份”表。它是一组研究情景，不分配概率，也不声称可以预测某年到达。</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>需要观察到的变化</th>
+<th>研究含义</th>
+<th>使该情景失效的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>能力与部署共同加速</td>
+<td>新任务稳定通过，单位合格任务成本下降，客户从试点扩为持续使用</td>
+<td>应提高商业化速度假设，复查过度保守的采用率</td>
+<td>成绩只在特定工具或高预算下成立，客户留存和验收未改善</td>
+</tr>
+<tr>
+<td>能力改善、交付受阻</td>
+<td>评测提高，但接入、数据治理、责任或供应交付持续拖延</td>
+<td>延后受影响业务现金流，保留其他已可用场景收入</td>
+<td>客户在同等合规要求下快速规模部署</td>
+</tr>
+<tr>
+<td>成本改善、价值被竞争让渡</td>
+<td>替代模型多、降价快，客户获得明显收益而厂商利润率承压</td>
+<td>区分产业生产率提高与模型供应商的投资回报</td>
+<td>产品差异和迁移成本使净价格、续约及利润率保持稳定</td>
+</tr>
+</tbody>
+</table>
+<p>这张表留下的开放问题很具体：下一次能力跃迁，能否让需要反复人工复核的任务真正减少复核？新建算力是先满足增长的付费需求，还是先成为固定成本？这比保留一个看似精确的 AGI 年份更值得跟踪。</p>
+<h3 id="h-0111">4.5 从技术时间表到估值：保留折现，撤回伪精确归因</h3>
+<p>AI 公司的现金流可以来自广告效率、云服务、代码工具和企业自动化，不必等到所有人都承认 AGI 已经到达。因此，原文“如果AGI不来，当前估值无法用任何模型证成”不成立；相反，某些远期估值确实可能依赖尚未验证的大规模采用，必须通过公司模型识别，不能先给整个行业统一贴上一个比例。</p>
+<p>本版撤回“AGI贡献估值40—60%”“推迟三年通常打折40—55%”及某家实验室估值必然从5000亿美元降到2000—2500亿美元的表述。没有现有业务、未来业务、资本投入和融资条款的拆分，就无法从一个融资估值倒推出 AGI 叙事占比；私募不同轮次的权利条款也会影响表面估值的可比性。</p>
+<p>可以保留的是一个透明的折现计算。假设某一段原本会产生的现金流<strong>整体后移三年，金额与风险不变</strong>，它的新旧现值比为 <code>1 / (1+r)^3</code>。这不是任何公司的目标价，也没有纳入额外投入或业务流失。</p>
+<table>
+<thead>
+<tr>
+<th>年折现率 r（情景输入）</th>
+<th style="text-align: right;">该段现金流后移三年的现值保留比例</th>
+<th style="text-align: right;">该段现值减少</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8%</td>
+<td style="text-align: right;">79.4%</td>
+<td style="text-align: right;">20.6%</td>
+</tr>
+<tr>
+<td>10%</td>
+<td style="text-align: right;">75.1%</td>
+<td style="text-align: right;">24.9%</td>
+</tr>
+<tr>
+<td>12%</td>
+<td style="text-align: right;">71.2%</td>
+<td style="text-align: right;">28.8%</td>
+</tr>
+</tbody>
+</table>
+<p>如果仅有40%的企业价值来自这段被延后的现金流，那么在10%折现率这一简化情景下，企业价值的纯时间损失为 <code>40% × [1 − 1/(1.1)^3] ≈ 9.95%</code>，不是24.9%，更不是自动变成40—55%。40%只是演示输入，不能反向称为市场已经给 AGI 分配了40%的价值。</p>
+<p>竞争可能进一步降低远期净价格，新增训练或服务支出可能减少净现金流，融资可能稀释普通股权益；这些因素都需要进入对应年度的模型，而不是在纯折现损失之上再随意加一个折价。需求超预期、成本下降或者其他业务改善，也可能部分抵消延期损失。方向必须由模型输入决定。</p>
+<p>能力到现金流确有时滞，但“所有企业需要18—24个月采购”“AGI后必有2—4年空窗”缺少统一样本，不再给出这种固定时滞。应逐场景看付费试点、扩容、续约、合同责任和回款：开发工具的用户可能当天尝试，金融核心流程则可能经过数据权限、审计和多层验收。把两者放进同一个采用率，会高估某些业务，也低估另一些业务。</p>
+<p>同理，电力和半导体资产不因 AGI 推迟就天然安全。有明确客户、可执行长约和可承受债务的项目，与依靠未来租约填满的投机性扩建，风险截然不同。能源或设备需求增加，最终还要经过竞争、定价、资本开支和营运资金才到股东回报。本文保留对兑现时间和资本错配的警惕，不提供一个只凭 AGI 判断即可成立的对冲组合。</p>
+<h3 id="h-0112">4.6 我可能错在哪里</h3>
+<p>第一，9月的新模型可能正处于企业采用加速的早期，既有收入与就业数据天然滞后。如果多家客户持续披露同类业务的验收率、人员投入和净收益改善，只用历史落地慢来压低采用率，会低估这一轮变化。</p>
+<p>第二，过度强调榜单限制，也可能漏掉真实技术跃迁。标准化评测不是全部，但也不是没有价值；应保留可复现进步，同时用新任务、不同预算和实际交付补充，而不是因为结果与原判断冲突就否定评测。</p>
+<p>第三，物理瓶颈和数据瓶颈会随着架构、调度与算法变化而移动。如果同等质量的工作需要明显更少的计算，旧产能可能获得更多产出；若更便宜的能力诱发更多调用，绝对需求又可能上升。不能只选择有利于看多或看空的一半机制。</p>
+<p>最后，本篇没有完成 AGI 概率校准，也没有把全部前沿模型放进同一个独立测试。保留缺口意味着暂时少说一个数字，不意味着可以停止研究；下一次修订需要优先补真实工作样本，而不是再添一张名人预测时间表。</p>
+<h2 id="h-0113">第五部分：AI如何颠覆国际格局？</h2>
+<p>中美模型的竞争不等于两国完整产业能力已经相同，芯片受限也不等于受限的一方无法做出有价值的应用。AI 对国际格局的影响，要沿着模型、制造、能源、资本、制度和应用扩散分别观察；其中一层收敛，另一层完全可能仍受约束。原文把“模型差距2.7%”与“中国市场归零”并列为总判断，既混淆了测量口径，也把国家竞争压成了单向叙事。</p>
+<h3 id="h-0114">5.1 中美模型差距：先修正量尺，再讨论追赶</h3>
+<p>本版明确撤销“从15%缩到2.7%的能力差距”。Arena 的配对偏好和 Bradley–Terry 类评分反映特定样本中哪种回答更常被选中，分数原点和尺度不提供“智能相差百分之几”的意义；将30分除以某个总分，不能得到30分所代表的能力比例。即使榜单采用不同评分实现，这条“相对评分不等于能力比率”的限制仍然成立。<a href="https://arxiv.org/html/2403.04132v1">Arena 评分方法说明</a></p>
+<p>Stanford《2026 AI Index》确实认为中美前沿模型表现差距大幅收窄。这支持“竞争更接近”的方向，但报告有统计截点，不能当成9月8日所有模型、所有任务的实时排名，也不能推出成本、长任务、安全和商业化能力全面一致。本版保留收窄判断，不继承错误的百分比解释。<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford 2026 AI Index</a></p>
+<p>要形成一张对投资有用的比较表，我会同时记录任务正确率、同质量成本、响应时延、中文及专业数据适配、部署权限、工具调用和失败恢复。中国模型在中文应用和本地部署上可能更符合某些客户需要，美国模型在另一些复杂任务上可能有优势；两者都应在目标场景里验证，而不是用国别替代模型版本和工作负载。</p>
+<p>DeepSeek-V4 的官方发布和华为云2026年4月24日首发适配说明，能够核实模型与国产平台服务适配的进展。这是有意义的工程证据，但模型可在某平台运行，不等于它全部训练阶段都在该平台完成，更不等于所有企业迁移成本已经消失。本版不再从推理适配外推完整前沿训练的自主供给。<a href="https://www.deepseek.com/en/transparency/">DeepSeek 官方透明中心</a>、<a href="https://www.huaweicloud.com/news/2026/20260424172129152.html">华为云首发适配</a></p>
+<h3 id="h-0115">5.2 主权AI：比较实际能力，而不是把公告金额相加</h3>
+<p>主权 AI 的合理诉求包括数据治理、关键服务连续性、本地语言、产业能力和政策自主。买到外国芯片、租到海外模型与拥有本地长期运维能力，满足的是不同层次的需要；国有资本参与也不自动等于项目具有商业回报。</p>
+<p><strong>美国：把 Stargate 的承诺与运行分开。</strong> OpenAI 2026年1月20日官方更新称，Abilene 已在训练和服务前沿系统，同时把2029年10GW目标及超过半程的数量明确称为规划容量。已经提供服务是比签约更强的证据，却不能据此宣布整个10GW都已投运。多年投资目标、各站点预算和供应商合同可能指向同一项目，不应重复加总。<a href="https://openai.com/index/stargate-community/">Stargate 官方进展</a></p>
+<p><strong>沙特：首期、五年规划与当地吸收能力不同。</strong> NVIDIA 与 HUMAIN 2025年5月13日公告的范围是未来五年最高500MW、数十万颗GPU的规划，首期为18,000颗GB300系统；这不能写成“已采购50万颗GPU”。芯片到货以后，还要解决机房、电力、网络、运维与客户需求，才形成可出售的计算服务。本轮仍未取得各期验收与利用率的连续一手记录，因此不把旧规划升级成2026年9月15日已验证投运规模。<a href="https://nvidianews.nvidia.com/news/saudi-arabia-and-nvidia-to-build-ai-factories-to-power-next-wave-of-intelligence-for-the-age-of-reasoning">NVIDIA—HUMAIN 公告</a></p>
+<p><strong>欧洲：动员投资不是财政已经支出。</strong> 欧盟 InvestAI 的2000亿欧元目标包括动员公共和私人资本，其中200亿欧元用于巨型AI设施的安排也不等于全部资金已拨付。欧委会的具体设施页面强调以欧盟、成员国与金融机构资金降低风险、吸引私营投资。研究时要继续跟踪项目遴选、融资关闭、建设和使用，不把政策目标直接放进年度设备收入。<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52025DC0165">欧盟AI行动计划</a>、<a href="https://commission.europa.eu/topics/competitiveness/competitiveness-coordination-tool-projects/ai-gigafactories_en">欧委会AI Gigafactories</a></p>
+<p><strong>印度：区分已供给与拟增购。</strong> 印度政府2026年2月17日披露现有38,000颗GPU，并宣布随后增加20,000颗；同一声明中的未来两年超过2000亿美元投资，是预期而不是到账记录。本文保留这些数值的公告日期，不把38,000与20,000相加后称为9月已验证运行的58,000颗。<a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2229171&amp;lang=1&amp;reg=1">印度PIB公告</a></p>
+<p><strong>中国：应用扩散需要比装机更细的验收。</strong> 国家发展改革委2025年8月26日对国务院“人工智能+”意见的解读，把科学、产业、消费、民生、治理和全球合作列为重点，并强调应用与基础能力供给协同。政策目标应与实际采用分开；也不能从安全可控要求推出所有国资云和政务云拥有同一个全国强制国产比例。<a href="https://www.ndrc.gov.cn/xxgk/jd/jd/202508/t20250826_1400058.html">国家发展改革委政策解读</a></p>
+<p>英国、日本及阿联酋等地仍是重要观察对象，但本次没有逐个复核其全部项目进度，不再给出缺少边界的“全球主权AI总投入”排名。对这些项目，后续应统一收集投运容量、可用时间、单位成本、外部客户收入和对单一海外供应商的依赖；把地区间可比较的指标补齐，比把各种意向金额汇总成一个更大的数字更有价值。</p>
+<h3 id="h-0116">5.3 军事与安全：采购需求、可部署能力和实战效果三层证据</h3>
+<p>AI 的军用价值不能靠公司估值证明，估值也不能用每一份政府合同总额直接解释。美国国防部2025年5月21日公布 Palantir Maven Smart System 软件许可合同的7.95亿美元修改金额，是可核的采购记录；它不是当年已确认收入，更不提供模型在某次行动中的效果测量。<a href="https://www.defense.gov/News/Contracts/Contract/Article/4194643/">美国国防部合同公告</a></p>
+<p>本版撤下 Anduril、Helsing、Shield AI、Scale AI 等企业的旧私募估值列表，以及“伊朗行动期token上涨4425%”对实效的暗示。资金、调用次数和可交付能力之间没有固定换算关系；如果没有原始合同条款、客户验收和可公开验证的任务结果，不能写成军事 AI 已全面规模化成熟。</p>
+<p>从产业研究角度，可以按证据强度逐步推进：先核正式预算和采购，再核可部署范围、权限与责任，最后才讨论持续服务收入、毛利和续约。某项实验、演习或厂商演示能够说明技术方向，但不能越级成为实战效果的证据。军工客户还可能要求专有集成、离线环境和长周期认证，这些成本不能被“软件毛利率高”的一般印象遮住。</p>
+<p>前沿模型的网络安全能力使这一问题更紧迫，但安全发布材料主要说明受控测试和防护边界，不应被用来渲染未经证实的作战能力。对投资者，更可核的影响是客户安全预算、产品可用范围和部署责任怎样变化，而不是凭一次演示押注全部军事格局已经重写。</p>
+<h3 id="h-0117">5.4 就业冲击：更新到8月研究，保留因果边界</h3>
+<p>本节最重要的新证据来自 Stanford Digital Economy Lab 2026年8月修订的“Canaries in the Coal Mine?”。作者报告：在其分析中，22—25岁、从事AI高暴露职业的年轻人，就业相对较低暴露同龄人的参照路径落后19%；分化主要通过招聘减少而非离职增加体现。同时，研究没有发现全经济范围的普遍岗位替代，作者把这些结果定位为描述性早期信号，不是AI造成失业的因果估计。<a href="https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/">Stanford 修订研究</a></p>
+<p>原文“0—2年经验程序员就业下降20%，资深程序员上升”的写法，把年龄、职业、比较期与对照组混在了一起，也错误挂在 Anthropic 使用报告之下。年龄不等于工作年限，高暴露职业不只包括程序员，相对参照路径的落后不等于绝对岗位同比下降19%。此外，教育控制、样本选择和部分既有趋势都会影响解释，不能省略这些限制后宣称AI已经消灭了对应比例的岗位。</p>
+<p>Anthropic Economic Index 更适合回答用户把什么任务交给模型、如何使用，而不是用来计算全国就业变化。2026年3月24日发布的“Learning curves”研究观察的是2月Claude使用，用户自选样本不等于全部劳动者或企业。使用量上升既可能是自动化，也可能是增强工作，两者对招聘和产出的影响不同。<a href="https://www.anthropic.com/research/economic-index-march-2026-report">Anthropic 研究与样本说明</a></p>
+<p>IMF此前关于发达经济体约60%岗位可能受AI影响的结论，讨论的是暴露和互补/替代潜力，不是60%岗位消失。其2026年1月的新技能研究继续把劳动市场变化拆为技能需求、工资和机会差异，提示单一失业总量并不能概括转型。<a href="https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity">IMF 暴露度原文</a>、<a href="https://www.imf.org/en/blogs/articles/2026/01/14/new-skills-and-ai-are-reshaping-the-future-of-work">IMF 2026技能研究</a></p>
+<p>这会怎样进入国际竞争分析？如果入门任务减少而资深人员产出提高，短期生产率和长期人才培养可能朝相反方向走；企业节省的成本，也未必全部转成利润，可能通过降价交给客户。应跟踪招聘结构、岗位职责、单位产出、工资和培训，而不是仅盯一份裁员名单。中国、印度和美国在服务出口、产业结构和人才路径上不同，不能把美国某一年龄组样本直接外推成全球就业预测。</p>
+<p>本篇据此提高对年轻劳动者入门机会和组织培养机制的关注，但没有把该研究升级为“AI已经引发宏观衰退”，也没有给出净失业人数预测。</p>
+<h3 id="h-0118">5.5 能源格局：采用IEA 2026更新，区分需求与投资回报</h3>
+<p>IEA 2026年4月16日《Key Questions on Energy and AI》把全球数据中心用电估计更新为2025年485TWh，并在其中心预测中给出2030年约950TWh、约占届时全球用电3%；其中AI导向数据中心用电预计增长更快。这里的485和950均是<strong>全部数据中心</strong>口径，2030数字是预测，不是已经发生的需求。<a href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary">IEA 2026更新</a></p>
+<p>旧版2025年报告的2024年415TWh、2030年945TWh可以用于说明预测沿革，不能与新基年混成一条实际增长序列。原文“2026年超过1050TWh”“2030年AI占美国用电8—12%”“2025美国电力增量50%”涉及不同研究、地域和数据中心范围，未完成同口径核查，本版不再使用。<a href="https://www.iea.org/reports/energy-and-ai/executive-summary">IEA 2025版</a></p>
+<table>
+<thead>
+<tr>
+<th>比较项</th>
+<th>旧研究版本</th>
+<th>本版采用</th>
+<th>可得出的结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球数据中心基年用电</td>
+<td>2024年415TWh</td>
+<td>2025年485TWh，IEA2026年估计</td>
+<td>基年向前推进一年，不能称为原年数值被上修</td>
+</tr>
+<tr>
+<td>全球数据中心2030年用电</td>
+<td>2025版预测945TWh</td>
+<td>2026版预测950TWh</td>
+<td>中心预测接近；不能据此说全部近期瓶颈已经解决</td>
+</tr>
+</tbody>
+</table>
+<p>用电增长首先改变的是地区负荷结构。对于已有稳定低成本电源、网络和变压器余量的地区，新增负荷可能提高现有资产利用率；对于本已紧张的地区，新增负荷则需要扩建，建设成本由谁承担、能否收回，会成为居民、监管机构、开发商与公用事业公司的分配问题。因此，“需求更大”与“现有股东赚得更多”之间，还隔着电价机制和资本成本。</p>
+<p>核电重启是一个可核的案例，但仍要区分融资与投运。美国能源部2025年11月18日宣布为835MW的 Crane Clean Energy Center 重启项目提供10亿美元贷款；贷款协议完成交割并不代表机组已经重启，更不能从单一项目推算美国2030年前会新增25GW核电。后续应查许可、施工、试验和实际发电，而不是把长期购电协议当成当期电源。<a href="https://www.energy.gov/articles/energy-department-closes-loan-restart-nuclear-power-plant-pennsylvania">美国能源部项目公告</a></p>
+<p>中东的能源和资本、北欧部分地区的电源与气候、中国东西部的负荷和能源互补，都可能影响选址，但低电价不是完整竞争力。训练、推理与实时交互对延迟要求不同，电费优势可能被数据跨境、网络、人才、设备和低利用率抵消。我们需要的是可用、稳定、合规且有客户的计算服务，不是孤立比较一度电的价格。</p>
+<p>我保留“能源与电网是重要约束”的判断，撤销“能源是全行业最确定受益方”的表述。能够锁定优质客户、合理分担扩建成本且不承担过量闲置风险的企业，更可能把新增需求变成回报；若项目依赖高利用率才能覆盖债务，而客户仍处于试用阶段，技术乐观反而可能放大财务风险。</p>
+<h3 id="h-0119">5.6 从货币到制度：国家议价力来自什么</h3>
+<p>先进计算资源可以影响谈判，但它不是字面意义上的硬通货。芯片有迭代、故障和使用场景，计算服务有时效和地域限制，无法像统一货币那样直接互换。原文从 Stargate 使用美元结算就推出美元体系强化，跨过了贸易、储备、资产供给和资本流动等必要环节，本版不再保留这一直接因果。</p>
+<p>更值得研究的是控制权落在哪里：模型接口能否被单方面关闭，数据与日志由谁处理，软件更新依赖谁，芯片与备件是否持续可得，关键岗位由本地团队还是外部供应商运行。主权基金可以买股份，也可以买服务或建基础设施，三种行为的现金流、稀释、控制权和政治目标并不一样，不能合并成一个“主权资金托底”的利好。</p>
+<p>规则本身也是竞争因素。欧委会2026年7月31日说明，8月2日起开始相关执法及新的透明度要求，包括部分系统告知用户正与AI交互、特定合成内容标识。这些是已进入实施阶段的事项，不再只是未来日历；也不能把这一日期写成所有高风险系统义务在同一天全部生效。<a href="https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august">欧委会7月31日说明</a></p>
+<p>对供应商，这类要求可能增加标识、日志、评估和客户支持成本，也可能让已具备合规能力的企业获得采购信任。究竟形成壁垒还是压缩利润，要看新增成本、可执行的统一标准和客户是否愿意支付，不能预先假定“监管强就必然落后”或“监管强就必然拥有定价权”。具体法律适用仍需按产品、主体及正式文本另行判断，本文不是合规意见。</p>
+<p>先进制造的地域集中同样有双重性：既能形成议价力，也使供应中断的影响更集中。所谓“硅盾”不是可以直接代入估值的安全保证，应通过供应商、产能地区、备份能力和关键交付期分析风险。技术地位重要，并不意味着地缘风险已经被技术地位抵消。</p>
+<h3 id="h-0120">5.7 模型与硬件：两条曲线保留为可检验框架</h3>
+<p>9月28—29日Sonnet 5.5和GPT-6.1 Sol继续降低部分工作流的用量或缓存费用，但能力提高、任务成本下降与企业回报仍是三道验证。厂商测试及公开价目支持预算重算，不支持提前给出统一AGI年份或行业利润率。<a href="https://www.anthropic.com/claude-sonnet-5-5">Sonnet 5.5发布</a>、<a href="https://openai.com/index/introducing-gpt-6-1-sol/">GPT-6.1 Sol发布</a></p>
+<p>旧版认为“模型收敛、训练硬件分化、推理硬件收窄”，这个区分仍有研究价值，但本版不再把它称为已经量化确认的结构性事实。模型能力、训练集群效率和推理部署成本之间有联系，却没有一一对应关系，需要独立测量。</p>
+<p><strong>前沿训练关注的是系统效率。</strong> 单颗芯片的理论浮点算力只是输入之一。大规模训练还取决于存储带宽、互联、通信算法、编译器、容错、调度、有效利用率与整轮训练能否完成。把某国产芯片说成“H100的70%”，若不说明精度、模型、并行规模、软件栈和功耗，就不足以形成采购或产业判断；用这个百分比再推国家落后几代，更不可靠。</p>
+<p><strong>推理关注的是目标工作负载。</strong> 固定模型、上下文、输出质量和延迟后，比较吞吐、每个合格任务成本和运维投入，才可能判断国产设备在哪些场景具有竞争力。短文本批处理、长上下文检索、低延迟对话和复杂多轮代理，对算力、带宽与存储的要求不同，不能从某一种任务成功迁移推出整个推理市场已完成替代。</p>
+<p><strong>后训练进展不能冒充预训练已全面替代。</strong> 适配、微调、全参数后训练、完整预训练的计算规模和目标不同。原版本已提醒910C后训练与完整预训练的边界，本次继续保持这一边界；具体科研结果若没有原始论文、配置和独立复现，就不再往前补猜厂商的整套训练来源。</p>
+<table>
+<thead>
+<tr>
+<th>研究层</th>
+<th>验收时应取的证据</th>
+<th>仍不可直接推出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型</td>
+<td>同任务质量、预算、版本和独立复测</td>
+<td>国家综合AI实力相同</td>
+</tr>
+<tr>
+<td>前沿训练硬件</td>
+<td>训练日志、集群规模、利用率、故障与实际成本</td>
+<td>单卡理论算力等于整集群效率</td>
+</tr>
+<tr>
+<td>推理硬件</td>
+<td>指定服务质量下的吞吐、延迟、能耗和迁移成本</td>
+<td>一个适配案例覆盖全部企业</td>
+</tr>
+<tr>
+<td>产业兑现</td>
+<td>交付、客户验收、复购、回款及利润</td>
+<td>出货规划等于收入或利润</td>
+</tr>
+</tbody>
+</table>
+<p>国产替代可能提供订单机会，但并非所有环节都能同时获得高利润。下游替代加速时，上游设备、存储或关键材料也可能遭遇限制；进口产品重新进入时，本地客户可能受益而本地供应商面临压价。旧版35%、50%替代率和40—60%空间缺少统一分母与一手来源，本版撤销，不用更大的预测数字替代实证。</p>
+<p><strong>开放生态的入口也在变化，但交易状态必须说清。</strong> NVIDIA于9月2日签署收购Hugging Face的协议，9月3日向SEC提交披露，预期在2027年上半年完成，仍须监管批准及满足交割条件。因此，截至本版只能称“已签约”，不能称“已完成收购”。研究意义在于芯片平台与模型、数据集分发入口可能联系更紧；这属于对竞争结构的判断，不是已经实现的排他控制。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm">交易8-K</a>、<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/0001045810-26-000078-index.htm">SEC披露日期</a></p>
+<p>NVIDIA承诺继续支持开放模型和数据集，并保留用户对云、框架及不同硬件的选择，不要求使用NVIDIA算力。这是收购方的公开承诺，后续仍须验证平台治理和实际兼容性，不能由承诺推定开放性永久不变，也不能反过来断言中国模型会被自动排除。对国际竞争，值得跟踪的是跨芯片分发、模型可得性和监管适用怎样变化，而不只是交易规模。<a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/">NVIDIA开放生态说明</a></p>
+<p>本篇的保留判断是：<strong>中国模型和应用有参与全球竞争的基础，硬件约束须按训练、推理和具体供应环节拆开；研究公司时，最终仍要核客户愿意为哪种可交付能力付多少钱。</strong></p>
+<p>9月16日的MLPerf Inference v6.1提供了一组预览证据：NVIDIA披露Vera Rubin NVL72在Qwen3-VL和DeepSeek-R1上的吞吐最高分别达到GB300的3.7倍和2.5倍，软件栈及负载不同。MLCommons次日分析确认Preview类别；本文未独立复跑，不能把测试倍数当收入或利润倍数。<a href="https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/">NVIDIA测试说明</a>、<a href="https://mlcommons.org/2026/09/chairs-mlperf-inference-v6-1/">MLCommons方法与分析</a></p>
+<p>9月30日证据已从预览推进到有限生产使用：CoreWeave称Rubin NVL72向指定客户有限提供，涉及数百颗GPU，Cognition是首个生产客户；其SWE-2推理在相同交互性能条件下，每GPU总token吞吐最高达到GB200 NVL72的4.8倍。这是客户测试、供应商发布，不是本报告独立验收；与前述不同模型、GB300基准的MLPerf不能拼成同一增长序列。设备小时成本及实际利用率尚缺，不能直接把单位成本除以4.8。<a href="https://www.coreweave.com/blog/cognition-becomes-first-customer-for-nvidia-vera-rubin-nvl72-on-coreweave-cloud">CoreWeave工程说明</a></p>
+<p>NVIDIA同日称CoreWeave的V100仍在运行客户工作负载，反驳了“每次换代旧卡就立即无用途”的极端说法，却没有给出租价、余下成本或项目回收率。仍在使用不等于租金不降，也不等于所有旧卡投资已经回本。<a href="https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/">NVIDIA生产部署说明</a></p>
+<p>对资本回收，效率改善有两面：同样设备投入可能支持更多收费任务，也可能降低旧设备的可承受租价。只有利用率、任务需求、功耗和实际采购成本进入同一模型，才能判断哪一面更强；不能将基准吞吐改善直接换算成全行业算力需求减少。</p>
+<p>AMD于10月8日补充解释MI455X相对MI355X的测试：在DeepSeek-V4-Flash、输入输出各1,024 token的单GPU比较中，每用户20 token/秒门槛下总吞吐比为2.47倍，90 token/秒门槛下才达到33.98倍。测试来自AMD于7月使用预发布硬件与软件的厂商测量，不是10月交付验收，也不是对NVIDIA的比较。工作负载和交互门槛一变，倍数随之改变，不能把最高点直接除进全行业推理成本或转成投资回报。<a href="https://rocm.blogs.amd.com/software-tools-optimization/mi455x-vs-mi355x/README.html">AMD技术说明及测试脚注</a></p>
+<h3 id="h-0121">5.8 出口管制：更新法律和商业事实，不把传闻写成规则</h3>
+<p>第一处必须纠正的是法律状态。BIS于2025年5月13日宣布不执行AI Diffusion Rule，并启动正式撤销程序；GAO于2026年5月12日公布的决定援引商务部答复，指出程序完成前规则仍载于CFR。因此，不能把宣布撤销写成已经完成正式废止，也不能不加执行状态说明地沿用旧三层安排。本轮同步V1.6已完成的法律状态勘误，未完成截至10月27日的全部EAR修订沿革核验。<a href="https://www.gao.gov/products/b-337935">GAO B-337935</a>不执行该规则也不等于其他先进计算、最终用途和实体限制一并取消。<a href="https://www.bis.gov/press-release/department-commerce-rescinds-biden-era-artificial-intelligence-diffusion-rule-strengthens-chip-related">BIS 2025年公告</a></p>
+<p>第二处是2026年1月13日已公布的调整。BIS 对 NVIDIA H200、AMD MI325X 及类似芯片向中国出口的申请改为在安全条件下逐案审查，并提出美国供给、买方合规和第三方检测等要求。这不是全面自由出口，也不是所有买方都已获许可。<a href="https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china">BIS 2026年1月13日公告</a></p>
+<p>还要补上2026年5月31日的BIS指引：对于总部或最终母公司总部位于D:5国家组或澳门的主体，即使实体设在其他境外地区，出口属于该指引范围的先进计算物项仍须申请许可，除非适用规定的许可例外。该要求源自2023年，不能把2025年不执行AI Diffusion新增要求理解成一并取消。研究海外供给时，要同时核最终母公司、物项与具体许可，不能只看机房所在地。<a href="https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf">BIS 5月31日正式指引</a></p>
+<p>同一指引也保留存量运行边界：其他活动符合EAR的正常数据中心运营商，在进一步通知前，无须仅因此停止现有物项的使用、存储、处置或维护。它并不是要求所有境外存量机房停运的新禁令，不能省略这项限定后推算全面断供的规模。<a href="https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf">BIS指引末段</a></p>
+<p>商业落地还需另核。NVIDIA 截至2026年7月26日季度的10-Q说明，美方已给予针对特定中国客户的小量H200许可，但中国方面的限制使公司未能出售所有获许可产品；已完成的部分许可项下发货，占最近季度Data Center收入不足1%。8月26日发布的下一季展望仍不假设中国 Data Center compute 收入。这个组合说明少量交货与下一季指引采用什么假设是两件事，不能缩写成“英伟达全部对华营收为零”，更不能说“中国AI需求归零”。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVIDIA 10-Q</a>、<a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027">NVIDIA 8月26日展望</a></p>
+<p>阅读后续消息时，按“正式规则—个别许可—目的地许可—交货验收—收入回款”逐层记录；任何一层未完成，就不能自动标记下一层完成。</p>
+<table>
+<thead>
+<tr>
+<th>情景（不赋概率）</th>
+<th>先核的触发证据</th>
+<th>可能改善的方面</th>
+<th>可能恶化的方面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>部分供给限制缓解</td>
+<td>正式规则或具体许可，随后有可验证交付</td>
+<td>下游获得更多设备选择，部分建设成本或等待时间下降</td>
+<td>国产供应商面临进口竞争、价格与订单压力</td>
+</tr>
+<tr>
+<td>限制延续但有个案通道</td>
+<td>审查政策稳定，个别许可与实际销售分化</td>
+<td>已完成认证的替代方案可能获得持续订单</td>
+<td>关键配套仍受限，客户项目可能延误</td>
+</tr>
+<tr>
+<td>限制扩大</td>
+<td>已生效的规则、清单或正式许可变化</td>
+<td>部分替代研发和本地采购动机增强</td>
+<td>上游断供、迁移成本、利用率和资本回收可能同时受损</td>
+</tr>
+</tbody>
+</table>
+<p>本版删除原先30%/50%/20%的主观权重，也删除“三种情景都有上行机会”的结论。政策带来的情绪交易与公司形成现金流是两件事；没有历史样本和估计程序，这张表只用于压力测试，不能包装成客观概率或直接交易信号。</p>
+<h3 id="h-0122">5.9 我可能错在哪里</h3>
+<p>模型层的收敛可能被下一次架构或数据突破重新拉开，也可能比现有榜单显示得更快。如果只盯公开英语问答榜，既可能忽视某些领域的落后，也可能漏掉中文与企业专有场景的优势。</p>
+<p>国产设备的工程改进也可能快于公开证据出现的速度。本篇对未公开配置不补猜，不意味着断言它没有发生；应把这类信息留在待核层，等待可复核的训练、推理或客户验收材料，而不是先写成确定突破再等待来源。</p>
+<p>主权项目不完全服从商业资本回报，安全和公共服务目标可能支持较长的投资周期。因此，单用普通企业回收期判断所有项目都会停工，会低估政策投入的持续性；但政策持续投入同样不能证明每一家供应商估值合理。</p>
+<p>最后，出口政策、劳动市场和能源数据的变化速度不同。规则可能当天变化，采购与就业统计需要更长时间出现。下一次更新应分别刷新这几条证据链，不以一个新日期给全部旧数据盖章，也不让一个刚发布的模型覆盖仍然未知的产业结果。</p>
+<h2 id="h-0123">第六部分：对中国投资者的核心启示</h2>
+<p>海外资本开支与中国公司的利润之间，至少还隔着产品结构、供应商份额、交付节奏和回款四道关。截至2026年10月27日，台积电Q3正式收入与现金都已增长，光模块公司10月23日公告也给出产品及订单进展；但德明利三季报同时显示利润增长与大量备货占款并存。对中国公司的研究重点，是找到产品升级和份额变化，再判断增长占用了多少资金，不能由海外总投资增速直接代替这两项计算。光模块财务表仍保留已核验H1期间，不把经营公告冒充Q3现金表。<a href="https://investor.tsmc.com/english/quarterly-results/2026/q3">台积电Q3业绩</a>、<a href="https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-10-26/e8eabd45-e97f-4bed-b05d-27f58665dc50.PDF">德明利三季报</a></p>
+<h3 id="h-0124">6.1 从日历判断改为条件判断</h3>
+<p>原稿的2026年下半年至2028年窗口，是研究者安排复查的时间范围，不是已经被模型识别的崩盘日期。项目何时形成收入、融资能否续接、投资开支能否主动调整，比年份本身更有解释力；只要条件没有成立，就不能因为时间到了而宣布周期转折。</p>
+<p>本版分别跟踪三条相互关联的观察路径：供应商订单和收入是否减速，客户资本支出是否超过可持续现金创造，以及融资压力是否由个别公司扩散到更多信用主体。强需求能够反驳第一条的即时崩塌，却不能自动消除第二条；单名降级也不能自动证明第三条已经发生。</p>
+<p>对于原文“未来两家模型公司必在某月上市，随后固定月份解禁”的推演，当前正文只在取得发行人文件后登记确切日期。媒体计划、秘密递交申请、获准上市和实际发行不是同一阶段，不能据其中一个安排完整的后续事件链。</p>
+<h4 id="h-0125">6.1.1 如果投资周期比预计更长</h4>
+<p>物理约束可以让交付延期，既可能让供给扩张放缓、改善最终供需，也可能使在建工程和利息占用继续累积。这两个方向不能一开始就合并为“延迟必然放大”，必须逐项目核对：客户付款是否随交付发生，设备能否转售，合同能否取消，以及建设期利息最终由谁承担。</p>
+<p>反方压力测试采用条件而不预设概率迁移。如果单位任务成本下降使需求扩张快于价格下降，成熟业务能持续补贴建设，且回款没有恶化，那么原先偏谨慎的现金回收判断应当弱化。相反，若收入尚未起量、维护性资本开支已经到来，同时客户依赖新融资付费，时间延长会增加资本缺口。</p>
+<p>这里须区分两种路径：渐进幻灭指回报低于乐观定价，投资和估值分阶段调整；软着陆指收入与效率逐步吸收前期投入，建设节奏有序回落。交付延期可能通向其中任何一种，本节不替它预设概率，也不据此给出加减仓百分比。</p>
+<h3 id="h-0126">6.2 A股传导需要逐项拆解</h3>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>需要验证的传导变量</th>
+<th>常见误判</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>光模块</td>
+<td>集群规模、端口密度、速率升级、单价、良率、客户份额和回款</td>
+<td>云厂总CapEx增速直接等于模块收入增速</td>
+</tr>
+<tr>
+<td>存储</td>
+<td>DRAM/NAND价格、企业级产品结构、备货成本、库存跌价与回款</td>
+<td>海外HBM景气直接等于全部国内存储公司现金增长</td>
+</tr>
+<tr>
+<td>服务器与交换设备</td>
+<td>平台切换、单机价值量、订单转收入、存货和信用条件</td>
+<td>订单增加等同于利润和现金增加</td>
+</tr>
+<tr>
+<td>电源与散热</td>
+<td>功率密度、液冷渗透、工程验收、售后服务与项目延期</td>
+<td>数据中心用电增长意味着全部设备公司同幅受益</td>
+</tr>
+<tr>
+<td>国产计算与基础软件</td>
+<td>可交付供给、兼容性、迁移成本、客户预算和使用效率</td>
+<td>出口限制自动带来所有国产公司的高利润</td>
+</tr>
+<tr>
+<td>电力与能源</td>
+<td>项目位置、并网、供电合同、实际电价与回报机制</td>
+<td>美国数据中心扩张直接利好所有中国能源公司</td>
+</tr>
+</tbody>
+</table>
+<p>这些是研究变量，不是行业评级。实际公司模型应从客户和产品出发，再汇总行业暴露；不能先认定某个板块“极高风险”或“确定受益”，再挑数字证明。</p>
+<h4 id="h-0127">光模块：本轮已经可以结算什么</h4>
+<p>中际旭创与新易盛已分别在8月22日、8月25日公告2026年半年报。下表均为2026年上半年，不混用单季或年化数字；金额按原始人民币元除以一亿元换算。</p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: right;">营业收入（亿元）</th>
+<th style="text-align: right;">归母净利润（亿元）</th>
+<th style="text-align: right;">经营现金流净额（亿元）</th>
+<th>收入/归母利润同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中际旭创</td>
+<td style="text-align: right;">417.78</td>
+<td style="text-align: right;">136.51</td>
+<td style="text-align: right;">18.00</td>
+<td>+182.49% / +241.70%</td>
+</tr>
+<tr>
+<td>新易盛</td>
+<td style="text-align: right;">209.10</td>
+<td style="text-align: right;">75.29</td>
+<td style="text-align: right;">16.16</td>
+<td>+100.34% / +90.98%</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF">中际旭创2026半年报，第8、26页</a>；<a href="https://static.cninfo.com.cn/finalpage/2026-08-25/1225499406.PDF">新易盛2026半年报，第7、14页</a>。半年度报告未经审计，数字仍须结合其会计附注阅读。</p>
+<p><img alt="光模块半年报：盈利与经营现金流" src="../13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg" /></p>
+<p>经营兑现已不再只是预期，但现金变化并不一致：中际旭创经营现金流同比下降44.08%，公司解释主要为采购付款增加；新易盛同比增长69.67%，公司解释包括销售回款和税费返还增加。这里比较的是同周期两种财务结果，不能把归母利润与合并经营现金流之比命名为严格的“利润现金转化率”，更不能仅凭差额指控利润失真。</p>
+<p>再接上同一合并现金流量表中的“购建固定资产、无形资产和其他长期资产支付的现金”，可以先得到一条不依赖盈利假设的资金简桥。以下均为2026H1、人民币亿元，先用原始元数相减，再四舍五入。</p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th style="text-align: right;">经营现金流净额</th>
+<th style="text-align: right;">现金购建长期资产</th>
+<th style="text-align: right;">两项相减</th>
+<th>这一步能够判断什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中际旭创</td>
+<td style="text-align: right;">18.00</td>
+<td style="text-align: right;">48.02</td>
+<td style="text-align: right;">−30.02</td>
+<td>当期经营现金未覆盖该项建设支出</td>
+</tr>
+<tr>
+<td>新易盛</td>
+<td style="text-align: right;">16.16</td>
+<td style="text-align: right;">12.64</td>
+<td style="text-align: right;">+3.53</td>
+<td>当期经营现金覆盖该项支出后仍有余量</td>
+</tr>
+</tbody>
+</table>
+<p>中际旭创算式为（1,799,674,832.02−4,802,161,195.37）÷1亿；新易盛为（1,616,408,524.15−1,263,841,519.77）÷1亿。新易盛展示数16.16减12.64为3.52，与原值计算后显示3.53相差0.01，来自舍入，不是另加了一项现金。<a href="https://static.cninfo.com.cn/finalpage/2026-08-22/1225491753.PDF">中际旭创半年报第60页</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-08-25/1225499406.PDF">新易盛半年报第44页</a></p>
+<p>这不是企业自由现金流（FCFF），也不是全部融资需求：尚未纳入其他投资、分红、偿债和融资支出，负差额可以由存量现金或其他资金支付，正差额也不等于可全部分给股东。现金购建支出已在这里扣除，不能再拿该差额去减同一笔建设支出。</p>
+<p>截至本轮，尚未完成从合并净利润、非现金项目到营运资本变动的逐项调节，也没有把现金购建拆成维护性和扩张性支出。因此暂不能把30.02亿元归因于某一客户拖款，或称3.53亿元为正常化年度现金。下一期应检查应收账龄及期后收款、存货周转与减值、预付款和应付的现金影响；资产负债表期末余额之差还可能含汇兑、并购及非现金变动，不直接充当现金流。</p>
+<p>模型的双向调整有具体落点：如果备货随交付下降、应收按合同收回，便降低后续营运资本占用假设；若账龄延长和库存减值持续增加，则下调可收回现金，并重估扩产计划。两种变化都比单看利润与现金的量级差更有解释力。</p>
+<h4 id="h-0128">光模块：订单能见度尚不能代替现金表</h4>
+<p>10月23日的三份经营公告把产品进展推到更近的观察时点：中际旭创披露海外重点客户订单覆盖2027年，部分客户提供2028年需求指引；新易盛称800G和1.6T已是主要出货产品；天孚通信称用于CPO的FAU、ELS相关产品已稳定量产。这些消息不等于全部订单不可取消，更不等于已经确认收入或收款。天孚2027—2029年股权激励增长目标也不是已实现业绩或公司盈利预测，本轮未取得三家公司正式Q3财务报告，不据此补齐现金。<a href="https://static.cninfo.com.cn/finalpage/2026-10-23/1225617691.pdf">中际旭创公告，第1—2页</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-23/1225617676.pdf">新易盛公告</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-23/1225617692.pdf">天孚通信公告，第2页</a></p>
+<h4 id="h-0129">存储：一份正式季报与一份预告不能合并为行业结论</h4>
+<p>德明利10月26日公开三季报，Q3收入116.45亿元、归母利润27.29亿元；前三季累计归母利润87.46亿元、经营现金−136.91亿元，期末存货289.86亿元，较年末增加219.28亿元。其前三季经营现金减现金购建长期资产，按原始元数计算为（−13,690,577,650−500,131,017.67）÷1亿＝−141.91亿元；这个缺口表明备货与扩张依赖资金支持，不足以认定虚假利润。合并现金与归母利润不构成严格同权益口径比率，累计现金也不能冒充Q3单季现金。<a href="https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-10-26/e8eabd45-e97f-4bed-b05d-27f58665dc50.PDF">德明利三季报，第2—4、18—19页</a></p>
+<p>江波龙10月15日则是预告：前三季预计收入380—400亿元、归母利润140—149亿元，公告称Q3经营现金转正但未给出金额，并指出DRAM、NAND涨幅已收窄。前者支持利润方向，后者要求下调线性外推的把握，二者都不能代替正式现金表。由此应把“行业涨价”拆成公司采购价格、库存交付与收款的时间差；德明利和江波龙的不同情况不能简单平均，更不能由美光或韩国HBM业绩给国内全板块统一上修。<a href="https://static.cninfo.com.cn/finalpage/2026-10-15/1225607002.PDF">江波龙业绩预告，第1—2页</a></p>
+<h4 id="h-0130">业绩验证与原预测记分分开</h4>
+<p>“半年报增长得到证实”不等于“7月预告事件和股价反应的事先判断全部命中”。原E判断2的双公司预告事件及对应价格窗口证据尚未齐全，因此仍记部分验证。删除的是“正式业绩仍待披露”的过期原因，不是倒改原判断窗口；本篇也不把7月价格锚称为9月15日现价。</p>
+<h3 id="h-0131">6.3 编程工具与软件公司的传导</h3>
+<p>编程工具按席位收费的收入，只覆盖软件生产工具市场的一部分。若企业把节省的工时用于更多项目、采用按用量计价的代理或采购交付服务，市场边界会改变；反过来，个人用户使用频率低、付费席位流失或高频用户推理成本过高，也会削弱利润。</p>
+<p>因此“工具更便宜”既不是外包公司必然受损的证据，也不是工具厂商拥有无限市场的证据。软件公司的模型至少要分合同金额、交付人时、人员成本、工具和算力成本、验收周期，以及客户是否要求分享效率收益。项目毛利可以先按“合同收入−交付人工−工具与算力−其他交付成本”建立，再另扣销售、研发与管理费用；节省工时只有变成新增交付或实际成本下降，才进入盈利，而不从全体开发者人数直接推公司收入。</p>
+<h3 id="h-0132">6.4 客户集中与融资暴露</h3>
+<p>客户集中度、关联投资和收入质量应分栏记录。供应商向客户投资，并不能证明所有后续收入虚假；同样，已经签订采购合同，也不代表客户具备无条件履约的现金能力。</p>
+<p>研究底稿应列出具名客户、已确认收入、未履约合同、收款期限、担保或增信、投资余额与取消条件。未披露客户身份的收入不能由研究者擅自分配给某一家云厂，未披露的循环收入占比应保留缺失，不再使用旧稿的“几乎100%”“67%”做行业统一风险排名。</p>
+<h3 id="h-0133">6.5 公司估值怎样承接行业判断</h3>
+<p>先形成产品收入预测，再由毛利、费用、折旧、税和营运资本形成利润及现金流，最后讨论估值倍数。产业判断可以改变这些输入，却不能越过盈利模型直接产生某个精确跌幅。</p>
+<p>例如只为说明敏感性的假设公司：基准EBITDA为100、企业价值倍数为20倍，净债务200、稀释股数100，则每股价值为18。若EBITDA增长20%至120、倍数回落25%至15倍，企业价值变成1800，每股价值为16，较18下降11.1%。盈利上涨与股价估值下降完全可能同时发生；这里的数字是教学假设，不是任何真实公司的目标价。</p>
+<table>
+<thead>
+<tr>
+<th>EBITDA（基准=100）</th>
+<th style="text-align: right;">15倍</th>
+<th style="text-align: right;">20倍</th>
+<th style="text-align: right;">25倍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>100</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td>120</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">28</td>
+</tr>
+</tbody>
+</table>
+<p>表中每股价值统一按“EBITDA×倍数−200，再除以100”计算。净债务、股数固定只是为了看清两个变量；真实模型须同步处理现金生成、融资和稀释，并用现金流折现检验终值是否承担过多价值。</p>
+<h3 id="h-0134">6.6 跨境工具：通道规则不能替代研究</h3>
+<p>港股通南向交易和大湾区跨境理财通是两种不同制度，不能把市场每日额度当成个人可持有、可积攒的配额。港交所常见问题明确每日额度按净买盘管理、未使用部分不结转；原稿“保留持仓来保护历史额度、避免额度被回收”缺乏制度依据，本版删除，不再提供这类操作建议。<a href="https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/FAQ/FAQ_Cn.pdf">港交所互联互通常见问题，2026年7月6日版，第15—16页</a></p>
+<p>场内QDII的溢价必须用同一时点可比净值、汇率和交易价格计算。跨时区净值滞后、停申购和二级流动性会影响结果，原稿“当前普遍溢价25%—40%”没有本轮同日全样本支持，撤出当前结论。基金规模增长或市场回撤也不保证某一天溢价必然归零。</p>
+<p>本报告不对读者的跨境投资资格、汇款用途或适用产品作个别认定。需要交易时，应另按最新官方规则及产品说明核实，而不是根据研究观点提前安排通道或仓位。</p>
+<h3 id="h-0135">6.7 下一轮核验日历</h3>
+<table>
+<thead>
+<tr>
+<th>日期/时间（注明时区）</th>
+<th>已确认事件</th>
+<th>应在正文更新的变量</th>
+<th>截至10月27日状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9月10日13:30，北京时间</td>
+<td>台积电8月月营收</td>
+<td>5148.06亿新台币；环比约+10.1%、同比+53.3%；不得等同AI或先进封装收入</td>
+<td>已更新</td>
+</tr>
+<tr>
+<td>9月10日20:30，北京时间</td>
+<td>美国8月PPI首次发布</td>
+<td>当时初值最终需求环比+0.4%、同比+5.4%；10月15日同版已修订为+0.5%/+5.6%</td>
+<td>保留发布历史，当前分析用修订值</td>
+</tr>
+<tr>
+<td>9月11日05:00电话会，北京时间</td>
+<td>Oracle FY27Q1；财报于美东9月10日盘后发布</td>
+<td>IaaS +121%；CapEx 28.499B、FCF −5.396B、预付款及股权融资</td>
+<td>已更新</td>
+</tr>
+<tr>
+<td>9月11日20:30，北京时间</td>
+<td>美国8月CPI</td>
+<td>总项环比+0.4%、同比+3.4%；核心同比+2.4%</td>
+<td>已更新</td>
+</tr>
+<tr>
+<td>9月17日02:00，北京时间</td>
+<td>FOMC与经济预测</td>
+<td>加息25bp至3.75%—4.00%；2026/27年末利率预测中位数均4.1%，不等于承诺</td>
+<td>已公布，替换旧待核项</td>
+</tr>
+<tr>
+<td>美国9月17日及22日</td>
+<td>CoreWeave短约与可转债</td>
+<td>短期算力租价、续约风险；4.2B发行与现金扣项</td>
+<td>已披露，分别记合同和融资</td>
+</tr>
+<tr>
+<td>美国9月21日</td>
+<td>NVIDIA DSX Ready计划</td>
+<td>维谛参与CDU资格计划；不等于中国供应商订单或收入</td>
+<td>已披露，盈利传导待证</td>
+</tr>
+<tr>
+<td>美国9月30日业绩发布；10月1日04:30北京时间电话会</td>
+<td>美光FY26Q4，截至9月3日</td>
+<td>收入54.229B、经营现金43.973B；现金购建11.110B；14周季度不可无差别同比环比</td>
+<td>已公布；指引另列</td>
+</tr>
+<tr>
+<td>9月30日20:30，北京时间</td>
+<td>美国8月PCE及年度修订</td>
+<td>总项/核心同比3.4%/3.0%，环比0.3%/0.2%；不与旧初值混算</td>
+<td>已公布</td>
+</tr>
+<tr>
+<td>10月2日20:30，北京时间</td>
+<td>美国9月就业报告</td>
+<td>新增2.9万人，7—8月合计下修6万人，失业率4.2%</td>
+<td>已公布；替换当前旧初值</td>
+</tr>
+<tr>
+<td>10月8日，北京时间</td>
+<td>台积电9月月营收</td>
+<td>511.857十亿新台币，同比+54.6%、环比−0.6%</td>
+<td>已公布；原日历节点结转</td>
+</tr>
+<tr>
+<td>10月14日20:30，北京时间</td>
+<td>美国9月CPI</td>
+<td>总项环比+0.6%、同比+3.7%；核心+0.3%/+2.6%</td>
+<td>已公布；替换旧未来节点</td>
+</tr>
+<tr>
+<td>10月14日，公司公告日</td>
+<td>ASML Q3业绩</td>
+<td>收入11.6620B欧元、FCF11.3504B欧元；股权重估及预付款另拆</td>
+<td>已公布；Q4仍为指引</td>
+</tr>
+<tr>
+<td>10月15日14:00，北京时间电话会</td>
+<td>台积电Q3业绩</td>
+<td>美元收入46.72B、毛利率66.4%；现金桥采用新台币</td>
+<td>已公布；月报提升为完整季度证据</td>
+</tr>
+<tr>
+<td>10月15日20:30，北京时间</td>
+<td>美国9月PPI</td>
+<td>总项环比+1.3%、同比+6.3%；剔除食能贸易+0.5%/+5.0%</td>
+<td>已公布；注意8月同步修订</td>
+</tr>
+<tr>
+<td>美国10月21日盘后</td>
+<td>Meta Q3业绩</td>
+<td>收入64.601B、经营现金32.786B、FCF−2.120B；法律和解费用分开</td>
+<td>已公布；不再列入待发云厂名单</td>
+</tr>
+<tr>
+<td>10月23日，中国公司公告日</td>
+<td>中际旭创、新易盛、天孚通信经营公告</td>
+<td>订单覆盖期、产品爬坡、CPO组件量产；不冒充Q3现金表</td>
+<td>已披露经营信息，正式季报本轮未取得</td>
+</tr>
+<tr>
+<td>10月26日，交易所公开日</td>
+<td>德明利三季报</td>
+<td>Q3收入/利润与前三季累计经营现金分开</td>
+<td>已公布；未经审计</td>
+</tr>
+<tr>
+<td>10月28日08:00，北京时间电话会</td>
+<td>SK海力士Q3业绩</td>
+<td>存储价格、HBM、现金和资本支出</td>
+<td>官方未来日程；新闻稿在电话会前发布</td>
+</tr>
+<tr>
+<td>10月28日23:00，北京时间电话会</td>
+<td>Vertiv Q3业绩</td>
+<td>订单、营业利润、现金及液冷交付</td>
+<td>官方未来日程；财报美股开盘前发布</td>
+</tr>
+<tr>
+<td>10月29日02:00，北京时间</td>
+<td>FOMC决议，02:30发布会</td>
+<td>新决策与9月会议纪要分开</td>
+<td>官方未来日程</td>
+</tr>
+<tr>
+<td>10月29日04:30，北京时间电话会</td>
+<td>Alphabet Q3业绩</td>
+<td>Cloud收入与利润、现金购建、证券重估及融资</td>
+<td>公司原样分发稿已核；官网原页访问受阻，PARTIAL_PRIMARY_ACCESS</td>
+</tr>
+<tr>
+<td>10月29日05:30，北京时间电话会</td>
+<td>Microsoft FY27Q1业绩</td>
+<td>Azure、现金CapEx、租赁及经营现金</td>
+<td>官方未来日程；财报美东10月28日盘后</td>
+</tr>
+<tr>
+<td>10月29日09:00，北京时间电话会</td>
+<td>三星Q3完整业绩</td>
+<td>初步合并利润拆分、经营现金及资本支出</td>
+<td>官方未来日程；10月8日估计不冒充完整季报</td>
+</tr>
+<tr>
+<td>10月30日05:00，北京时间电话会</td>
+<td>Amazon Q3业绩</td>
+<td>AWS、非营业收益及滚动自由现金流</td>
+<td>官方未来日程，不预填结果</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://investor.tsmc.com/english/monthly-revenue/2026">台积电月营收</a>、<a href="https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf">Oracle业绩</a>、<a href="https://www.bls.gov/news.release/archives/ppi_09102026.htm">BLS PPI</a>、<a href="https://www.bls.gov/news.release/archives/cpi_09112026.htm">BLS CPI</a>、<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm">FOMC决议</a>、<a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm">经济预测</a>、<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Continues-to-Contract-New-Compute-Capacity-at-Higher-Prices/default.aspx">CoreWeave短约</a>、<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm">CoreWeave融资8-K</a>、<a href="https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/">DSX Ready</a>、<a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx">美光日程</a>。美光列的是电话会时间，不是新闻稿精确发布时间。</p>
+<p>本轮新增日程与结果来源：<a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx">美光正式业绩</a>、<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026">BEA 8月PCE</a>、<a href="https://investor.tsmc.com/english/financial-calendar">台积电财务日历</a>。美光强业绩只证明其自身经营，不能直接写成中国存储、设备或光模块公司的盈利上修；仍需对应产品、供货份额、价格和回款。</p>
+<p>上一轮截至10月9日只具备百万新台币月报合计：Q2为1,270,381，Q3为1,494,243，环比增长17.62%；当时没有把它冒充完整季报。10月15日正式报告补齐了Q3美元收入46.72B、毛利率66.4%及新台币经营现金919.776B，当前证据因而不再停留在月报。美元收入较Q2的40.20B增长约16.2%，与新台币增幅不同；HPC收入占比68%也不是纯AI占比，Q4收入52.3—54.3B美元仍属指引。<a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf">台积电Q3管理报告，第1—2页</a>、<a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf">现金流表，第4页</a></p>
+<p><img alt="台积电Q2与Q3收入实绩及毛利率" src="../13_全景版配图/V1.6.1_台积电季度_20261027.svg" /></p>
+<p>新增宏观日历来源：<a href="https://www.bls.gov/schedule/2026/10_sched.htm">BLS10月发布日历</a>、<a href="https://www.federalreserve.gov/newsevents/2026-october.htm">美联储10月日历</a>。美国东部10月仍为夏令时，北京时间加12小时；日程可能调整。季度复查仍是证据与模型更新，不是按季度固定加减仓。台积电9月环降不用于倒改E中原6月营收判断的事件窗口。</p>
+<p>10月27日结转依据：<a href="https://www.bls.gov/news.release/archives/cpi_10142026.htm">9月CPI</a>、<a href="https://www.bls.gov/news.release/archives/ppi_10152026.htm">9月PPI及8月修订</a>、<a href="https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026">ASML正式业绩</a>、<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta正式业绩</a>、<a href="https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/">SK海力士电话会</a>、<a href="https://investors.vertiv.com/news/news-details/2026/Vertiv-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Conference-Call/">Vertiv电话会</a>、<a href="https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/">Microsoft电话会</a>、<a href="https://www.samsung.com/global/ir/ir-events-presentations/events/">三星日历</a>、<a href="https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call">Amazon电话会</a>。电话会时间不等于新闻稿的精确发布时间，结果发布前只列待核变量。</p>
+<p>Alphabet日程依据：<a href="https://www.marketscreener.com/news/alphabet-announces-date-of-third-quarter-2026-financial-results-conference-call-ce785dd9dc89f62d">公司10月6日原样分发稿</a>。该稿列10月28日13:30美国太平洋时间，即北京时间29日04:30，并说明新闻稿先于电话会；原站访问受阻不是日期未确认，同稿转载也不是独立交叉来源。</p>
+<h3 id="h-0136">6.8 政策冲击的归因</h3>
+<p>出口管制影响可采购产品、部署地点和技术迁移成本，资本市场监管影响交易通道，两者不能合并成一个“AI风险事件”。对具体公司，依次核对产品是否在规则范围、许可证条件、实际可交付时间与替代方案，再调整销量、成本和交期。政策讨论稿不等于生效规则，获准采购也不等于已经交付；涉及处罚金额、产品禁令和实施日期时，必须保留对应监管文件，不把未核实的金额写入风险损失。</p>
+<h3 id="h-0137">6.9 本章可能判断错在哪里</h3>
+<p>供应商份额提升和产品升级可能抵消行业投资减速，这是宏观外推最容易漏掉的反方；营运资本也有季节性，仅看半年现金不足以给全年结论。与此同时，增长真实不能保护过高的买入估值，政策支持也不能保证单一公司的产品被采用。下一次核验应允许这些方向同时进入模型，而不是只寻找支持原观点的数字。</p>
+<h2 id="h-0138">第七部分：公司分化——经营韧性不等于估值安全</h2>
+<p>维谛的设备销售与现金都在增长，但这还不足以直接回答股票值多少钱：有多少现金来自本期交付，有多少来自客户先付款，下一批订单又要占用多少营运资本？同一轮人工智能投资，云厂、设备商和模型公司承担的资产与合同不同，公司研究应先把这些差异落到报表，再讨论价格。</p>
+<h3 id="h-0139">7.1 用商业模式分组，不给企业预判结局</h3>
+<table>
+<thead>
+<tr>
+<th>研究组</th>
+<th>代表公司</th>
+<th>基本盘与投入位置</th>
+<th>首要核验问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>综合云与应用</td>
+<td>Alphabet、Microsoft、Amazon</td>
+<td>云、广告或软件现金创造与AI建设并存</td>
+<td>成熟业务现金是否足以承担新增投资，AI贡献能否从整体业务中识别</td>
+</tr>
+<tr>
+<td>广告及终端应用</td>
+<td>Meta、Apple</td>
+<td>广告或终端/服务变现，并含自建或外采AI投入</td>
+<td>效率收益能否覆盖新增研发、算力与折旧，价格和使用变化是否可归因于AI</td>
+</tr>
+<tr>
+<td>计算平台与芯片</td>
+<td>NVIDIA、Broadcom及其他芯片供应商</td>
+<td>当前销售、软件生态、研发、供应承诺与客户融资关系</td>
+<td>盈利兑现与回款、客户集中、替代架构和承诺暴露如何变化</td>
+</tr>
+<tr>
+<td>云基础设施与专用算力</td>
+<td>Oracle、CoreWeave等</td>
+<td>容量建设先投入，收入和租约随交付展开</td>
+<td>客户信用、合同取消、未起租项目与再融资是否形成错配</td>
+</tr>
+<tr>
+<td>物理设备与系统</td>
+<td>维谛技术、服务器及网络设备供应商</td>
+<td>电源散热、系统交付与服务</td>
+<td>订单能否转收入与现金，增长来自数量、价格还是产品结构</td>
+</tr>
+</tbody>
+</table>
+<p>公司可以跨组，分组不是风险等级。Tesla的汽车、自动驾驶和机器人需要独立建模，不能因其通常被列入“七巨头”，就把其他公司的云投资风险直接移植过去；表中也不把Oracle、CoreWeave混称为七巨头成员。</p>
+<h3 id="h-0140">7.2 把财报拆成五张小表</h3>
+<p>第一张记录经营结果：分部收入、营业利润和毛利，标注财季、是否非GAAP、是否包含传统业务。第二张记录现金：经营现金流、现金资本支出和融资租赁付款，统一期间。第三张记录资产与合同：折旧、在建工程、采购承诺、租约、担保、应收和集中度。第四张记录估值：预测年份、净债务与股数、倍数或折现率。第五张记录反证：什么数据会使当前判断失效。</p>
+<p>这五张表的数不能任意互换。营业利润和持仓重估应分别进入主营价值与投资资产价值，不能重复资本化；客户投资和增信安排也要核对具体合同，不能据此把该客户全部收入定义成虚假收入。下面用维谛的正式披露走一遍这条计算链，其他公司仍须分别重建自己的输入。</p>
+<p>公司经营现金流强，仍可能以过高价格交易；公司现金流暂时为负，也可能因有价值的建设项目而具有正净现值。需要分析的是未来现金收支及其不确定性，不是把一个季度的正负号直接翻译为公司生死。</p>
+<h3 id="h-0141">7.3 企业价值与股权价值的桥</h3>
+<p>采用企业价值/息税折旧摊销前利润（EV/EBITDA）时，先用目标年度EBITDA乘以可比倍数，得到企业价值，再减去同一估值时点净债务及其他应扣权益项目，除以稀释股数。少数股东权益、租赁负债、养老金或非经营资产是否调整，要与可比公司倍数口径一致。</p>
+<p>EV/EBITDA并不自动比市盈率更正确。折旧反映资产消耗，设备需要更新，EBITDA加回折旧后并没有替股东支付这些更新支出；因此资本密集型公司还要看自由现金流。采用企业自由现金流（FCFF）折现时，基本式为税后营业利润加折旧摊销，减资本支出和营运资本增加，再按加权平均资本成本折现。不得同时重复扣除折旧与资本支出，也不能漏掉租赁付款造成的可比性问题。</p>
+<p>对于维谛技术这类设备企业，关键是订单转收入、增量利润率、营运资本和维护性投资；对于云商，还要区分服务器、网络、建筑和土地的折旧与经济寿命。拿同一个终值倍数套两类公司，会抹掉研究最重要的差异。</p>
+<h4 id="h-0142">7.3.1 维谛案例：先锁定实际值和公司指引</h4>
+<p>以下锚定维谛技术（Vertiv，VRT）7月29日发布的2026年第二季度结果及6月30日10-Q，不是9月实时经营数据。金额为百万美元，EPS另为美元/股；实际值与前瞻不混为一列。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">已实现</th>
+<th>公司全年2026指引或边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td style="text-align: right;">Q2为3274.3；H1为5923.8</td>
+<td>13800—14200，尚未实现</td>
+</tr>
+<tr>
+<td>营业利润</td>
+<td style="text-align: right;">Q2 GAAP为637.9</td>
+<td>调整后全年3285—3365，不与左列直接同比</td>
+</tr>
+<tr>
+<td>调整后营业利润率</td>
+<td style="text-align: right;">Q2为22.6%</td>
+<td>全年23.3%—24.3%</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">Q2为1099.8；H1为1866.6</td>
+<td>不能直接乘四作为预测</td>
+</tr>
+<tr>
+<td>调整后自由现金流</td>
+<td style="text-align: right;">Q2为925.3；H1复算1578.1</td>
+<td>全年2400—2600</td>
+</tr>
+<tr>
+<td>稀释EPS</td>
+<td style="text-align: right;">Q2 GAAP为1.27，调整后1.52</td>
+<td>全年GAAP为5.82—5.92，调整后6.65—6.75</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.sec.gov/Archives/edgar/data/1674101/000162828026050323/q22026exhibit991vrt07292026.htm">维谛7月29日业绩公告，SEC附件第1—2、5、7页及现金调节表</a>、<a href="https://www.sec.gov/Archives/edgar/data/1674101/000162828026050609/vrt-20260630.htm">维谛2026Q2 10-Q，现金流量表第5页及MD&amp;A</a>。调整后指标不是GAAP，也不是本报告已经得到的FCFF；后者还须统一利息、税、租赁和资本支出口径。</p>
+<p>9月21日NVIDIA公布DSX Ready资格计划，维谛列入CDU（冷却液分配单元）参与方，初期覆盖储能系统与液冷设备。资格计划是产品进入生态的证据，不能替代具体场站设计、客户订单或验收，更不能据此上调上述收入和EPS指引；下一步应取得订单、交付及毛利信息，再落入模型。<a href="https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/">NVIDIA DSX Ready说明</a></p>
+<h4 id="h-0143">7.3.2 现金强在哪里，又有多少可以重复</h4>
+<p>H1公司口径调整后自由现金流可复算为1866.6−285.9−2.6=1578.1，后两项分别为资本支出和资本化软件投入。若全年2400—2600的公司指引成立，下半年隐含贡献是821.9—1021.9，而不是把Q2的925.3乘四得到3701.2。这是原指引的算术拆解，不是我们另做了一份预测。</p>
+<p><img alt="维谛现金流：已实现半年与全年指引的拆解" src="../13_全景版配图/V1.5.1_维谛现金指引桥_20260908.svg" /></p>
+<p>10-Q现金流量表说明了强现金的一部分来源：上半年营运资本净提供678.8，其中递延收入变化贡献1822.7，应收账款和存货分别占用644.2及1048.0，应付账款提供685.3；其他科目合计后才得到净额。客户先付款可以降低公司的外部融资需要，后续交货与服务仍要支付成本，因此这笔支持不能当成每年固定增加的利润。报表并没有把所有递延收入都标为AI项目订金，也不能把存货增加全判为滞销。<a href="https://www.sec.gov/Archives/edgar/data/1674101/000162828026050609/vrt-20260630.htm">维谛10-Q现金流量表第5页、收入附注第10—11页及MD&amp;A</a></p>
+<p>收入端也要过一次算术检验：全年中点14000减去H1的5923.8，隐含H2收入8076.2。模型下一步应按项目验收、产品组合、供应交付和可确认收入拆季度，而不是把全年31%的有机增长指引平均分摊。若交付延后但收款已经发生，收入和现金可能短期反向移动，届时须判断是时间差还是订单取消。</p>
+<h4 id="h-0144">7.3.3 从盈利锚到估值输入，不抢先报目标价</h4>
+<p>在完整2027年模型尚未建立时，可以先检验一张透明的条件表：用公司2026年调整后EPS指引中点6.70，乘作者假设的25/30/35倍市盈率，得到167.50/201.00/234.50美元。三个倍数没有经过可比公司与历史分位校准，表中数值只说明定价敏感性，<strong>不是合理价值区间、价格预测或买卖点</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>假设调整后市盈率</th>
+<th style="text-align: right;">25倍</th>
+<th style="text-align: right;">30倍</th>
+<th style="text-align: right;">35倍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.70美元调整后EPS对应的条件价格</td>
+<td style="text-align: right;">167.50</td>
+<td style="text-align: right;">201.00</td>
+<td style="text-align: right;">234.50</td>
+</tr>
+</tbody>
+</table>
+<p>若改用同次公司GAAP EPS中点5.87，30倍对应176.10美元。两者差异首先来自盈利定义，不是自动形成两套可比估值；同行采用的摊销、股权激励与一次性项目调整必须一致。市盈率已经对应股权盈利，不能再从结果扣一次净债务；EV/EBITDA则要先完成企业价值到股权价值的桥，两套算式不能混用。</p>
+<p>我会先补2027年的产品收入、正常化利润率、营运资本和维护性投入，再用现金折现检查终值，并取得有日期的现价、净债务和稀释股本。只有这一套输入完整，才有依据把上面的条件演示升级为公司估值结论。当前模型最值得追问的是：预收支持减弱后，交付利润能否继续产生现金，而不只是当前订单是否很多。</p>
+<h3 id="h-0145">7.4 增长能否抵消倍数回落</h3>
+<p>在净债务与股数暂时不变的简化条件下，企业价值变化倍数等于“盈利变化倍数×估值倍数变化倍数”。例如EBITDA上修20%，估值倍数由20倍降至15倍，企业价值变成基准的90%；当净债务为正且企业价值仍高于净债务时，股权价值跌幅会被放大，净现金公司不适用这一方向。条件式为“每股价值＝（目标期EBITDA×同口径倍数−净债务及其他应扣项目）÷稀释股数”，若有应加非经营资产则另加，不能把企业价值的跌幅直接当成股价跌幅。</p>
+<p>这比从历史泡沫类比直接指定个股跌幅更可复核。真实目标价仍需要预测期盈利、资本结构、同口径可比以及明确的情景假设；评价预期涨跌幅还需注明起点价格，采用概率加权时另披露权重依据。本轮不把7月或8月的旧股价重新标成10月27日现价，也不在缺这些输入时给出新的买卖价位。</p>
+<p>截至10月27日本轮核验，财政部最新已公布观察日为10月26日：十年期国债收益率5.00%，较前版10月8日5.22%下降22个基点；对应实际十年收益率2.66%，较2.87%下降21个基点。市场折现基准回落是需要纳入的反方证据，但公司的信用利差、资本结构与项目风险未必同步改善，不等于所有公司WACC同幅下降，更不追溯改变存量固定票息。本轮没有完整的新盈利模型和同日现价，继续不提供新目标价。<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_yield_curve">财政部名义收益率，10月26日行</a>、<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_real_yield_curve">实际收益率，10月26日行</a></p>
+<h3 id="h-0146">7.5 历史比较能说明什么</h3>
+<p>互联网、电信设备和页岩油的经验说明，技术扩散与股东回报可以分离，融资条件变化也可能让设备订单急转。但各行业的资产再利用能力、客户现金储备、合同期限和竞争结构不同，历史上某家公司跌了多少，不能作为今天另一家公司同幅下跌的估值模型。</p>
+<p>全景版的历史类比附篇因此改为比较传导机制，并明确类比失效的条件。原文关于“指数跌70%等于七巨头跌幅加权平均”的说法也撤回：指数权重、其他成分和再平衡均需计算，不能只列出几个个股区间就声称已算出指数回撤。</p>
+<h3 id="h-0147">7.6 会改变本章结论的证据</h3>
+<p>若客户无需新增融资也能稳定付费，未履约订单持续转成现金，供应商扩产同时保持回款与定价，风险应下调；若公司营收仍增长，但依赖更长付款期、客户担保和持续资本注入，增长质量就需要更严的折现或情景假设。两者不宜合成一个不透明的“综合现金流厚度”得分。</p>
+<p>本章的结论是公司之间必须分化研究，不是认定某一组股票一定比另一组涨得好。估值起点和后续证据都能推翻这种简单排序。</p>
+<h2 id="h-0148">风险教育：研究观点不是交易指令</h2>
+<p>直接卖空股票可能面临理论上不封顶的亏损，保证金追缴和借券条件变化会使投资者在观点兑现前被迫退出。期权、反向和杠杆产品也有各自的期限、路径、费用与流动性风险，不能把“看对长期方向”当作收益保证。<a href="https://www.sec.gov/investor/pubs/regsho.htm">SEC：Key Points About Regulation SHO</a></p>
+<p>这里没有读者的资产、负债、风险承受能力或适当性信息，报告本身不提供个性化投资建议，更不能用主观情景权重安排工具期限、止损或仓位。</p>
+<h2 id="h-0149">第八部分：把经营、资本回收与金融条件分别判断</h2>
+<h3 id="h-0150">8.1 六个维度，不再用红灯数量代替模型</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>当前正文采用的判断方式</th>
+<th>不能从中直接推出什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求与交付</td>
+<td>按公司已实现收入、产品出货、订单转化及利用率核查；供应商已披露业绩支持经营增长</td>
+<td>全产业链所有项目满载、未来需求永久成立</td>
+</tr>
+<tr>
+<td>盈利与现金</td>
+<td>合法非经营收益与经营利润分栏，现金与营运资本逐项对账</td>
+<td>非现金收益就是造假、现金暂弱就是需求崩溃</td>
+</tr>
+<tr>
+<td>资本与信用</td>
+<td>现有债务、未来承诺、租赁与担保分开，观察客户付款来源</td>
+<td>把不同项目相加成“AI总债务”</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>预测盈利、倍数、折现率、净债务和股数有据可算</td>
+<td>由行业故事直接得出精确跌幅</td>
+</tr>
+<tr>
+<td>技术与商业化</td>
+<td>任务能力、单位成本、生产部署和付费收益逐层验证</td>
+<td>基准进步就是AGI、整体云收入就是AI收入</td>
+</tr>
+<tr>
+<td>宏观与国际约束</td>
+<td>按最新统计修订和生效政策判断，区分单名风险与系统扩散</td>
+<td>就业行业变化可单独归因于AI、出口限制必然强化所有国产公司</td>
+</tr>
+</tbody>
+</table>
+<p>现金回收须以企业或项目为边界，分别记录初始投资、历年经营现金、后续资本支出与残值，再对时间和风险折现。报表经营现金已包含营运资本变化，不能再扣一遍；若从税后营业利润重建企业自由现金流，才另加非现金折旧、减资本支出和营运资本增加。资本开支形成多年资产，收入来自多种业务，产业链内部销售还需抵销；一年的资本开支与某类消费者订阅收入相除，不能代替这个回收模型。</p>
+<h4 id="h-0151">当前证据怎样进入下一次判断</h4>
+<p>增量检索截止2026年10月27日，金额中的B为十亿美元。本轮更新台积电Q3、Meta Q3、Anthropic公开申请及宏观证据，其余各行保留注明的原财季或公告日，不因截止日推进就视为全部重新验真。各主体不求和，也不按事件数量折成风险分；复查窗口仍为下一次正式业绩或融资披露，方向变化应在随后可比披露中解释季节性与口径变化，不能将“连续两次”本身包装成统计检验。</p>
+<table>
+<thead>
+<tr>
+<th>主体与基线</th>
+<th>当前能够支持的判断</th>
+<th>降低担忧的证据</th>
+<th>提高担忧的证据与模型动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美光，FY26Q4截至9月3日：收入54.229B、经营现金43.973B、现金购建11.110B</td>
+<td>供应商利润有实质现金支持；客户押金另列融资，不需从经营现金再扣一次</td>
+<td>价格、交付及现金在新增供给投产后仍可持续：降低对存储端回收的担忧</td>
+<td>售价或交付转弱、合同重议、库存应收持续积压：下调利润与回收，不将合并现金替终端客户证明ROI</td>
+</tr>
+<tr>
+<td>Akamai，9月24日公开Anthropic七年合同11.6B；预计相关建设5.5B、年内增加1.7B</td>
+<td>合同增强需求可见性，先期投入与后期回款仍有时间差；金额不可相加</td>
+<td>按期交付并收到约定付款：缩小建设期资金缺口</td>
+<td>延期、服务中断或客户付款不足：延后收入现金、增加融资与履约压力</td>
+</tr>
+<tr>
+<td>NVIDIA，FY27Q2截至7月26日：收入96.221B，经营现金24.077B；前季经营现金50.344B，应收周转由45天升至60天</td>
+<td>销售强、回款时点需要单独检查；不是已确认坏账</td>
+<td>新增应收按约收回，扣除税款与交付时点影响后现金改善：降低营运资本占用假设</td>
+<td>反复延长账期，叠加客户融资困难或应收减值：下调可收回现金，扩大压力情景</td>
+</tr>
+<tr>
+<td>Alphabet，2026Q2：Cloud营业利润8.814B，集团经营现金39.069B、现金购建44.924B</td>
+<td>云经营盈利与集团单季建设占用同时存在；不能据此计算AI项目回报</td>
+<td>建设增速趋缓、经营现金增长，且服务续用和盈利保持：上调现金回收</td>
+<td>投入继续扩大而交付、利用或回款落后：推迟现金流、增加建设压力；不把全部差额归因AI</td>
+</tr>
+<tr>
+<td>Meta，10月21日公布2026Q3：经营现金32.786B、PP&amp;E现金购建33.942B、融资租赁本金0.964B，公司FCF −2.120B</td>
+<td>单季经营现金未覆盖这两项资产付款；前三季度同口径FCF仍为+11.049B</td>
+<td>后续经营现金增长，建设和租赁付款趋于可承受：降低集团资金缺口假设</td>
+<td>持续建设超支或现金生成落后：扩大压力情景；不将集团缺口全部归因AI</td>
+</tr>
+<tr>
+<td>Anthropic，10月26日宣布已提交拟IPO的公开S-1；声明尚未生效，股数与价格区间未定</td>
+<td>公开上市申请进入可观察阶段；尚不是已成交融资</td>
+<td>后续生效、定价、交割及净到账得到正式文件确认：更新融资能力</td>
+<td>延期、缩量或未完成：保留资金缺口；不能预填IPO收入或用申请确认经营回本</td>
+</tr>
+<tr>
+<td>GitHub Copilot：6月转向按量计费，7月官方电话会披露收入环比增逾60%</td>
+<td>固定低价席位不是唯一收入来源；尚无完整利润和现金披露</td>
+<td>同口径用量收入、续费与毛利改善：上调席位之外的收入和利润假设</td>
+<td>增长主要来自口径变动、低留存或成本更快上升：下调单客现金贡献</td>
+</tr>
+<tr>
+<td>CoreWeave，8月DDTL 5.5：额度2.6B，贷款约5年、底层客户合同平均约3年</td>
+<td>部分还款依赖续租、转租或其他资金，须做期限压力测试；并非已违约</td>
+<td>后续合同净回款可覆盖剩余债务及维护投入：降低续租与残值折价</td>
+<td>续租价格或利用率低于原模型，并影响偿债覆盖：下调剩余期现金及残值</td>
+</tr>
+<tr>
+<td>CoreWeave，9月17日短约及9月22日融资：新签3—6个月合同；完成4.2B可转债</td>
+<td>短期算力价格及融资仍有支持，但短约收入与多年债务期限不同</td>
+<td>短约到期后仍能续接，建设按期投运且净现金覆盖债务：改善流动性判断</td>
+<td>续约降价、利用率下降或融资消耗快于现金生成：收紧租金、期限与稀释假设</td>
+</tr>
+<tr>
+<td>Oracle，FY27Q1截至8月31日：IaaS 7.388B、同比+121%；CapEx 28.499B、FCF −5.396B</td>
+<td>需求兑现；经营现金含11.363B客户预付款，同期完成19.909B ATM净募资</td>
+<td>RPO按期转收入和回款，后续建设由主营现金覆盖：上调回收并降低融资依赖</td>
+<td>预付款、增发或新融资继续快于可支配现金，288B未起租租赁进入执行：提高期限与稀释压力</td>
+</tr>
+<tr>
+<td>Broadcom AI XPV，截至8月2日：初始35B；Backstop全部部署后最大未折现潜在责任约29B</td>
+<td>融资平台仍可支持扩张；风险由客户经租赁与担保转给金融伙伴和供应商</td>
+<td>客户按期付租、机架残值稳定、42B条件性票据无需发行：降低或有损失</td>
+<td>票据发行、租赁违约或处置折价出现：计入信用损失、残值和现金流压力</td>
+</tr>
+<tr>
+<td>台积电，10月15日公布2026Q3：美元收入46.72B、同比+41.2%、环比+16.2%；毛利率66.4%</td>
+<td>季度经营增长已兑现，不再只是月报相加；合并收入不是纯AI收入，毛利率环比仍下降1.3个百分点</td>
+<td>后续订单、利润和现金继续接续，新增产能获得可持续回报：改善供应端回收判断</td>
+<td>利润率、现金或订单转弱：按产品、客户、投产批次与汇率拆解，不直接推断全链条拐点</td>
+</tr>
+<tr>
+<td>Applied Digital，FY27Q1截至8月31日：HPC收入262.6百万美元，基础租金65.8；集团简单现金桥−2.010777B</td>
+<td>租赁开始兑现，建设仍重；分部收入不能与集团现金混成项目回报</td>
+<td>后续投产带动可重复租金，现金增长快于维护与后续投入：改善回收</td>
+<td>装修收入退坡、建设超支或客户回款迟滞：重估租金与融资需求；不凭建设期负现金判破产</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm">NVIDIA CFO说明及现金披露</a>、<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf">Alphabet Q2财报</a>、<a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">GitHub计费上线说明</a>、<a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4">Microsoft 7月官方电话会</a>、<a href="https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx">CoreWeave 8月10日贷款公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm">Oracle FY27Q1 10-Q</a>、<a href="https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28">Broadcom FY26Q3 10-Q</a>。这是对已核证据的研究应用，不是新增已命中的预测记分。</p>
+<p>本轮新增原件：<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm">台积电Q3业绩公告及脚注</a>、<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm">台积电Q3业绩演示</a>、<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3现金流及非GAAP调节表</a>、<a href="https://www.anthropic.com/news/s1-sec">Anthropic S-1公告</a>。台积电公告注明该季数字尚未经董事会批准；Meta季度报表未经审计，FCF为公司非GAAP口径，不直接等同FCFF。</p>
+<h3 id="h-0152">8.2 当前合并判断与反方证据</h3>
+<p>截至2026年10月27日，当前判断是：<strong>供应商经营增长仍在兑现，资本回收压力则因公司和项目而异；9月通胀加速与长端收益率回落同时发生，全国就业尚无新一期，现有证据仍不足以确认AI泡沫全面破裂。</strong> 台积电Q3美元收入46.72B、毛利率66.4%是供应端经营兑现，Meta单季负FCF是集团资产付款超过当季经营现金；Anthropic公开S-1同时提供了上半年经营现金为正、Q2经营转盈的反证，但其IPO申请尚未生效。经营改善与融资完成是两个判断，不能把三家公司不同期间的结果相加成同一个融资、盈利或崩盘指标。<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm">台积电Q3公告</a>、<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta Q3公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic S-1财务表</a>、<a href="https://www.anthropic.com/news/s1-sec">申请状态公告</a></p>
+<p>台积电Q3财务表的经营现金为919,776百万新台币，购建PP&amp;E现金为443,206百万新台币，两项相减为476,570百万、即476.570十亿新台币，供应端自身建设仍有现金覆盖。这是应当承认的正面证据，但该简单资金桥没有纳入全部投资、融资和股东分配，不能当作可全部分配现金，也不能由晶圆供应商的现金替终端客户证明回本。本版统一采用财务表原值复算，不与美元收入或演示稿的低精度展示值混算。<a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf">台积电Q3财务表，第4页</a></p>
+<p>Meta的公司口径FCF须按32.786−33.942−0.964＝−2.120B复算，最后一项是融资租赁本金；只减PP&amp;E现金购建所得−1.156B不是该公司披露的FCF。前三季度同口径仍为+11.049B，不能把单季缺口永久化，也不能把集团现金全部归入AI项目。Anthropic的未经审计中期报表披露H1经营现金+3.929B、Q2经营利润+0.974B，而H1仍经营亏损0.693B；改善是真实披露，经营现金也受收付款时点影响，不能外推为全年或全部长期算力承诺已可自给。其发行股数与价格区间仍未确定，不能把这些截至6月的经营表现与10月递表混成IPO完成或融资到账。<a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx">Meta现金流及FCF定义</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic S-1季度损益与现金流</a>、<a href="https://www.anthropic.com/news/s1-sec">Anthropic申请状态</a></p>
+<p>10月9日至27日没有新一期全国就业报告，最新仍是10月2日BLS公布的9月非农新增2.9万人、失业率4.2%；7月由+2.1万下修至−1.0万，8月由+16.2万下修至+13.3万，合计下修6.0万。这个偏弱基线应保留，但不能再算作本轮新增恶化，更不能凭一个月认定衰退或归因于AI。下一期全国就业报告定于11月6日北京时间21:30发布，州就业统计不替代全国月报。<a href="https://www.bls.gov/news.release/archives/empsit_10022026.htm">BLS 10月2日就业报告及下期日程</a>、<a href="https://www.bls.gov/schedule/2026/10_sched.htm">BLS 10月日历</a></p>
+<p>10月14日公布的9月CPI季调环比0.6%、未季调同比3.7%，核心为0.3%和2.6%；总项月涨幅超过一半来自汽油，不能把全部加速归因AI。10月15日公布的9月最终需求PPI环比1.3%、同比6.3%，剔除食品、能源和贸易服务后为0.5%、5.0%。同版PPI已将8月总项更新为0.5%/5.6%、上述剔除项更新为0.3%/4.8%，当前比较必须采用这组修订值，原0.4%/5.4%和4.7%仅属于9月发布时的历史记录。通胀加速提高了成本和政策不确定性，却不能替代下一次FOMC决议。<a href="https://www.bls.gov/news.release/archives/cpi_10142026.htm">BLS 9月CPI，Table A</a>、<a href="https://www.bls.gov/news.release/archives/ppi_10152026.htm">BLS 9月PPI，Table A及修订脚注</a></p>
+<p>美联储9月16日将联邦基金目标区间上调25个基点至3.75%—4.00%，原“等待决议”已经变为实际政策收紧；北京时间为9月17日02:00。同期经济预测中，2026年及2027年末政策利率中位数均为4.1%，2026年核心PCE通胀中位数为3.4%。预测中位数既不是承诺，也不是当前目标区间，更不能直接当作公司的融资利率。<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm">FOMC正式决议</a>、<a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm">9月经济预测表</a></p>
+<p>截至本轮，下一次FOMC决议仍安排在北京时间10月29日02:00，02:30举行发布会，对应美国10月28日14:00、14:30东部夏令时。会议日历不是政策结果，本版不预填利率方向，也不据此改写历史评分或E判断。<a href="https://www.federalreserve.gov/newsevents/2026-october.htm">Fed 10月官方日历</a></p>
+<p>财政部截至本轮最新已公布观察日为10月26日：两年期4.68%、十年期5.00%、十年实际收益率2.66%。相对前版10月8日4.75%、5.22%、2.87%，分别下降7、22、21个基点；不能在通胀上行后就把所有金融条件概括为持续收紧，也不能把10月26日观察冒充10月27日收盘。<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_yield_curve">财政部名义收益率，10月26日行</a>、<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_real_yield_curve">实际收益率，10月26日行</a></p>
+<p>2—10年期限差由10月8日的47收窄至32个基点，十年名义与实际差由2.35降至2.34个百分点；这里记录曲线变化，不识别其全部原因，也不把名实差等同纯通胀预期。相对9月22日较早基线，两年名义已低3个基点，十年名义与实际仍分别高4、3个基点，不能笼统写成“利率全部高于旧基线”。企业资金成本还受信用利差、重定价日和对冲影响，不应把国债变动直接平移到所有公司的加权平均资本成本。<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&amp;type=daily_treasury_yield_curve">财政部9月名义表</a>、<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&amp;type=daily_treasury_real_yield_curve">9月实际表</a></p>
+<p><img alt="国债利率接至十月二十六日：通胀加速与长端回落并存" src="../13_全景版配图/V1.6.1_利率观察_20261027.svg" /></p>
+<p>10月7日公布的9月15—16日FOMC纪要显示，当时多数与会者认为年内再加息可能合适，同时强调以后各次决策依赖新增资料。它记录的是9月会议判断，先于10月2日新就业报告，不能读成10月已经决定加息。纪要还描述会议时公司债发行活跃、AI大云厂利差较前次会议略收窄，这反对“当时融资已全面封闭”，但不能冒充10月27日单名信用现值。<a href="https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20260916.pdf">FOMC纪要，第5、9页</a></p>
+<p>10月14日褐皮书另提供了项目端的双向观察：数据中心建设仍拉动部分地区制造、运输与建设，受访者同时反映技术工短缺、成本上涨，以及地方暂停措施造成个别项目取消或延期。这份资料截至10月5日，属于定性联系人信息，不是全行业利用率或本版独立查证过的地方政策清单；它要求对具体项目的投产时间和成本做压力测试，而不足以确认需求或融资全面崩塌。<a href="https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20261014.pdf">Fed褐皮书，印刷页18—19、25—26、46</a></p>
+<p>9月30日BEA发布的8月PCE价格指数同比3.4%、环比0.3%，核心同比3.0%、环比0.2%；同一修订版本中7月两项环比均为0.1%，不能写成“全面降温”。本次年度修订追溯至2021年1月，原稿保留的7月旧初值不能直接与8月新版相减来证明通胀回落，也不能由单月数据推定后续降息。<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026">BEA 8月个人收入与支出</a></p>
+<p>信用端还要区分公开交易与许可受限的市场序列。本公开版不复载ICE BofA期权调整利差的精确点位；CoreWeave的SEC文件确认9月22日已完成4.2B可转债，比“已定价、等待交割”更进一步。扣初始购买人折扣后的所得约4.137B，再扣0.5662B capped call交易成本，余约3.5708B，尚未扣其他发行费用。新增融资缓冲近期流动性，却不是客户付费或经营利润，2.875%的现金票息也不是包含股权期权和交易成本的综合融资成本。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm">CoreWeave完成发行8-K</a>、<a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2">FRED许可说明</a></p>
+<p>SoftBank已于10月1日执行对OpenAI本轮第三笔10B出资，补核后的本轮30B全部完成，是融资尚可接续的直接证据，却不是客户经营付费。它与CoreWeave9月已完成融资一道，仍不支持融资窗口全面关闭；就业转弱和高利率值得提高警惕，但多主体信用、订单与现金同步恶化尚缺充分证据，本轮不新增C“宏观共振”或严格信用触发。<a href="https://group.softbank/en/news/press/20261001">SoftBank执行公告</a></p>
+<p>反方证据必须保留在正文：如果未来两个季度，投入与折旧的增速趋缓、客户持续付费、同口径现金创造改善，原先对资本回收的谨慎判断就应下调。不能把盈利强解释为“泡沫继续加码”、盈利弱解释为“泡沫证实”，让同一个假说对任何结果都成立。</p>
+<h3 id="h-0153">8.3 情景定义与既有分数的使用边界</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>研究含义</th>
+<th>应出现的观察</th>
+<th>与其他情景的区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 渐进幻灭</td>
+<td>回报低于乐观定价，投资调整与估值消化分阶段发生</td>
+<td>增速回落、盈利预测或倍数下修，未必出现系统违约</td>
+<td>不是软着陆的同义词</td>
+</tr>
+<tr>
+<td>B 技术颠覆</td>
+<td>架构或成本变化重新分配产业利润</td>
+<td>相同任务更低成本、客户迁移、供应商定价变化</td>
+<td>可利好应用、利空部分硬件；不全是看空</td>
+</tr>
+<tr>
+<td>C 宏观共振</td>
+<td>经营压力叠加融资或宏观收缩</td>
+<td>多类信用、融资与订单同步恶化</td>
+<td>不能仅靠一次股价回撤确认</td>
+</tr>
+<tr>
+<td>D 软着陆</td>
+<td>收入与效率吸收前期投入，资本开支有序调整</td>
+<td>回收改善、客户续用、融资无需恶化</td>
+<td>不需要所有股票上涨</td>
+</tr>
+</tbody>
+</table>
+<p>V1.4保留的78/100与A45/B22/C10/D23，是研究者既有评分与情景分配，不是统计模型估出的概率。本次正文纠偏没有重新完成权重校准，不能给换版虚构新的分数；它们作为既有研究假设留档，不再放在每篇分项报告封面上充当本篇结论。由于情景并非天然互斥，B还有双向影响，A+B+C=77%也不能被称为“崩盘概率77%”。</p>
+<p>六维看板、情景权重和固定事件记分承担不同任务。前者是检查框架，情景用于讨论可能路径，固定记分用于复核事前条件；三者不能未经建模就互相换算，更不能由“两个灯亮”直接给出交易动作。</p>
+<h3 id="h-0154">8.4 原判断怎样结算，怎样纠错</h3>
+<p>六条E判断仍按原事件和原阈值登记，原件不倒改。本轮修正了光模块判断的待核原因：两家公司正式半年报已经披露，缺的是原预告事件与对应价格窗口的完整证据，不是缺半年报。既有记录为五条按原阈值成立、一条部分验证；这个汇总是历史规则的结果，不是六个独立概率样本，更不是研究者长期胜率。</p>
+<p>T-V14-03的事前条件是NVIDIA数据中心收入同比低于25%，本期财报核查应按这一条件结算，不应改成早期正文另写的50%。信用事件确认、私募轮次定价和经营增速也应分别使用自己的事件ID。已经发生的信用事件被用于建立规则时，只能是基准状态，不能包装成规则建立后的预测命中。</p>
+<h3 id="h-0155">8.5 还缺哪些能够推翻本报告的证据</h3>
+<p>目前最关键的缺口，是终端客户为AI持续支付多少钱、单位任务成本下降后谁保留利润，以及多年资本承诺怎样与可获得的经营现金对上。公开分部披露不足时，应保留缺口；不能拿整个云或广告收入填满，也不能把缺披露自动判定成亏损。</p>
+<p>台积电10月15日Q3业绩已经发布，不能继续把该日期留作未来验证节点；美元收入增长与毛利率环比回落应同时进入后续判断，合并利润仍不替下游客户证明资本回收。下一轮应接续实际订单、交付和现金，而不是把后续指引提前算作兑现。Anthropic则要继续核申请生效、定价、交割与净到账，不能因10月26日提交申请便结算成已完成融资，更不能据此倒改历史IPO预期或E窗口。<a href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm">台积电Q3公告</a>、<a href="https://www.anthropic.com/news/s1-sec">Anthropic公开申请</a></p>
+<p>后续继续核对CoreWeave短约续接与资金消耗、Oracle预付款和未起租租赁上表、Broadcom XPV租赁付款及条件性票据状态。模型价格下降和推理效率提高，应先进入成功任务成本与旧资产租价，再验证客户用量能否抵消价格压力；不能直接折算成全行业收入或毛利变化。每项只改变对应模型输入，不把事件数量折成概率。</p>
+<h2 id="h-0156" class="revision-start">本版逐项修订记录</h2>
+<p>以下将V1.6.1新变更置于各篇记录前部，随后保留此前版本的带日期修订；每条对应正文纠错或证据更新。</p>
+<h3 id="h-0157">利润真实性拆解：逐项修订</h3>
+<p>V1.6.1（10月27日），1.1及1.2.3：Meta当前表更新为Q3，保留Q2现金桥作有日期的比较，区分法律和解费用、经营现金、建设付款与全年指引，新增现金桥配图。</p>
+<p>V1.6.1（10月27日），1.1、1.2.10：台积电由月报与未来日程更新为Q3正式实绩，新增季度收入图及现金桥；ASML同时列经营利润、Mistral投资重估和订单预付款对现金的影响，不把未来指引与客户意向算作当期收入。</p>
+<p>V1.6.1（10月27日），1.2.4—1.2.5、1.2.9、1.2.11：补入光模块10月23日经营公告、韩系存储后续日程及德明利正式三季报；江波龙仍列业绩预告，未取得的新季报或现金细项保持缺失。</p>
+<p>V1.6.1（10月27日），1.1及1.2.1：并入既有V1.6会计标签更正，Amazon其他收益净额53.415与全部非营业税前净额53.396分列，避免混称。</p>
+<p>V1.5.1（10月9日），1.2.8：加入Applied Digital租金、装修与费用回收三分表及配图，区别GAAP/调整后收入范围和期后75MW交付；不把全部托管收入当经常租金。</p>
+<p>V1.5.1（10月9日），1.2.9：新增三星Q3预披露，仅按韩元合并初步估计记录，不认作HBM独立利润或现金回本。</p>
+<p>V1.5.1（10月1日），1.2.7：美光由未来节点转为正式业绩，新增季度与全年现金桥及配图；区别14周季度、公司调整后FCF与本报告简单现金桥，客户押金不重复扣除。</p>
+<p>V1.5.1（10月1日），1.3.2：加入NVIDIA新增回购授权，明确授权未必执行，不冒充产业现金流入。原有公司的财季和历史更正保留。</p>
+<p>V1.5.1（9月24日），1.6：以CoreWeave实际完成可转债说明融资现金与经营回收的区别；原公司财报期间和数据不变，不冒充新季度结果。</p>
+<ol>
+<li>
+<p>将1.1—1.3旧Q1快照改为各公司最新可得季报；不再以前置模块覆盖仍旧的正文。</p>
+</li>
+<li>
+<p>删除真实性星级与“非现金即虚假”判断，增加税前/税后、营业/投资、公司non-GAAP/研究调整的区分。</p>
+</li>
+<li>
+<p>用Amazon Q2实际披露结算重估问题，撤回固定股比线性外推后三季；补入Microsoft、NVIDIA也有投资收益，统一标准。</p>
+</li>
+<li>
+<p>逐行重算五家公司FCF，修正Amazon租赁本金口径及“CapEx大于FCF”的重复扣减推理；单季和TTM不混排成总量。</p>
+</li>
+<li>
+<p>增加两家光模块半年报利润—现金对比与图表，明确未审计、合并范围差异和非FCFF口径。</p>
+</li>
+<li>
+<p>用NVIDIA最新直接客户、应收集中度及DSO替换匿名客户实名估算，收入与回款分开判断。</p>
+</li>
+<li>
+<p>历史六案例保留机制与对照，撤销平均跌幅、物理定律、必然崩盘及不准确的南海无贸易、Cisco永不回本表述。</p>
+</li>
+<li>
+<p>补齐1.6现金桥检查表，重写1.7反方条件和1.8盲点；未经校准的情景计数和概率变化不沿用。</p>
+</li>
+<li>
+<p>V1.5.1：恢复台积电7月合并营收作为公司经营旁证，标清8月10日披露与9月10日下一事件；不将整体营收推成AI分部增长，不重复计入原E判断。</p>
+</li>
+<li>
+<p>V1.5.1（9月15日证据更新）：台积电改用已披露的8月合并营收；Oracle FY27Q1新增收入—经营现金—客户预付款—资本开支—自由现金流—ATM股权融资的同周期资金桥，并把RPO与未起租租赁承诺分开。新数据削弱近期需求断崖判断，但不证明资本已经回收。</p>
+</li>
+<li>
+<p>V1.5.1：新增1.2.5，将Lumentum非现金债务清偿损失与营业利润、全年现金分开；补Coherent季度毛利与全年现金、营运资金及股权融资，负资金差不直接推为危机。</p>
+</li>
+<li>
+<p>V1.5.1：新增1.2.6，逐项还原Dell经营现金、FCF及调整后FCF，核对HPE分部和现金扣项、Marvell产能预付款；明确不同统计期不加总，收入与订单不证明客户回本。</p>
+</li>
+</ol>
+<h3 id="h-0158">循环投资网络：逐项修订</h3>
+<p>V1.6.1（10月27日），2.2、2.4.2、2.6.6—2.7及2.9.1：以Anthropic公开S-1更新递表、合同最低额、可取消上限及设备租赁条件，保留6月采购承诺总口径且拒绝重复加总；补Oracle实际工程付款、待批供电许可和Meta新股类安排，分别区分已支付、未来条件与尚未融资。</p>
+<p>V1.5.1（10月9日），2.2：补核SoftBank10月1日已执行第三笔出资，区别当笔、本轮、累计额及其融资来源；不重复加总。</p>
+<p>V1.5.1（10月9日），2.4.1—2.4.2：新增印度分期建设计划，补读Jupiter洪水公司声明；计划、公司回应与独立验收分别列示，Broadcom媒体金额未升级为新提款。</p>
+<p>V1.5.1（10月1日），2.4.4：分列美光SCA、金融承诺、RPO、押金现金及合同负债，不重复加总，不把融资押金当收入。</p>
+<p>V1.5.1（10月1日），2.4.5：加入Akamai—Anthropic七年合同、建设计划和权证条件；签约日与公开日分开，前置资本开支不与采购安排重复相加。</p>
+<p>V1.5.1（9月24日），2.4.1：补短约租价、可转债实际发行、所得扣项与现金票息计算，并新增融资现金桥图；明确短约、既有贷款和本次可转债为不同观察对象，不作收入或融资重复加总。</p>
+<ol>
+<li>
+<p>撤下6100亿及后续异质总额，交易改按五类法律性质与执行状态登记，不再用增量新闻做网络总额。</p>
+</li>
+<li>
+<p>校正NVIDIA对CoreWeave 2现金投资日期至1/23成交、1/26公告，撤销7月救援因果及重复敞口。</p>
+</li>
+<li>
+<p>更新Amazon对OpenAI、Anthropic实际支付、未用融资上限和算力合同，股权、服务采购与未提款额度分开。</p>
+</li>
+<li>
+<p>纳入NVIDIA 105担保的生效、范围、递减及选项边界，删除未确认媒体巨额担保作为当前事实。</p>
+</li>
+<li>
+<p>纳入CoreWeave DDTL 5.5实际提款、贷款与客户合同期限差；不同贷款追索性质分开。</p>
+</li>
+<li>
+<p>核实AMD两份权证截至6/27尚未归属，撤销目标股价乘股数的现金融资误读及GW直接换算收入。</p>
+</li>
+<li>
+<p>Anthropic H轮改引官网，确认融资含以前承诺15；run-rate与已实现收入分离，停止持仓收益线性外推。</p>
+</li>
+<li>
+<p>Alphabet6月初方案改为Q2执行表，ATM截至6/30零发行及用途单列；8月代理扩容和25债券条款不冒充执行到账。</p>
+</li>
+<li>
+<p>加入Meta El Paso项目租赁与残值担保，撤回“持股低即风险完全出表”；相关金额和单位逐项核对。</p>
+</li>
+<li>
+<p>删除未经证明的IPO确定日历、乘数、67%供应商融资比例、CDS因果时钟和“融资第二发即顶部”；历史机制保留，缺证说明放回相应章节。</p>
+</li>
+</ol>
+<p><strong>本篇V1.5.1变更记录</strong></p>
+<ol>
+<li>
+<p><strong>融资状态补核。</strong> 2.2与2.5.3补入8/10谅解备忘录，按8/26定期报告区分长期动员目标、独立承销、可能提供的有限残值支持及尚未核得的最终协议和到账；不由平台目标上调循环融资总额。来源见对应正文的联合公告及10-Q。</p>
+</li>
+<li>
+<p><strong>项目去重。</strong> 2.5.3将105担保绑定至PORTS具体站点，明确其不能当作六家融资平台的通用担保，也不与平台目标求和。来源见对应正文的10-Q与附件10.1；旧V1.5记录保留，本轮仅补相关正文。</p>
+</li>
+<li>
+<p><strong>9月15日证据更新。</strong> Oracle FY27Q1从未来日历改为已实现数据，RPO、客户预付款、资本开支、ATM增发与未起租租赁承诺分列；Broadcom AI XPV补入五年Backstop、最大潜在责任、条件性可转票据和采购承诺的状态边界。两组资料均显示需求与融资可继续扩张，同时把长期履约和残值风险向供应商及资本伙伴延伸；不新增循环总额或崩盘触发。</p>
+</li>
+</ol>
+<h3 id="h-0159">AI变现与编程TAM：逐项修订</h3>
+<p>V1.6.1（10月27日），3.2—3.3、3.9—3.10：将Meta广告与现金更新至已披露Q3，其他云厂保留原财季；新增Anthropic公开S-1中的实际收入、单季经营转盈、半年经营亏损及现金桥，区分非现金金融工具计量与烧钱，撤回“尚无报表可看”的过时状态而不外推全年盈利。</p>
+<p>V1.5.1（10月9日），3.2.2：补入OpenAI视觉广告及测量计划；美国测试、合作方案与已实现广告收入分开。</p>
+<p>V1.5.1（10月9日），3.7.1：Sonnet缓存价由历史0.20接至0.10美元，新增Haiku按请求分档价目和0.20/1.00美元账单；不把总用量门槛、厂商效果或缓存降幅当作全行业同质量降价。</p>
+<p>V1.5.1（10月1日），3.7.1：补Sonnet 5.5与GPT-6.1 Sol价目和固定用量账单；明确任务消耗改善、缓存费下降与标准token牌价不同。新增Microsoft长任务按量收费安排，未将推出计划当成已实现收入或毛利。</p>
+<p>V1.5.1（9月24日），3.7.1：新增Sol、Luna及Opus 5.5标准价目和固定token账单算例，区分牌价、厂商任务成本声明及实际单位经济；不从降价直接推利润或需求变化。</p>
+<ol>
+<li>
+<p><strong>章节相关性。</strong> 删除沿用全景版的财报、融资、市场指数和IPO前置更新页；仅将与云收费、广告、订阅、编程及资本回收有关的证据写入对应章节。</p>
+</li>
+<li>
+<p><strong>收入口径。</strong> 3.1—3.2将“云+广告7500亿美元AI变现”改为分业务、分统计期和分证据的分类表；纠正Azure与智能云部门、年化与全年收入混淆。</p>
+</li>
+<li>
+<p><strong>新增变现。</strong> 3.2、3.3更新ChatGPT Ads8月31日公司披露，区分1B运行率、累计收入和盈利。</p>
+</li>
+<li>
+<p><strong>企业订阅。</strong> 3.3、3.5更新Microsoft付费席位和Salesforce8月ARR，单列Agentforce产品范围变化，不将所有增长当作同口径自然增长。</p>
+</li>
+<li>
+<p><strong>私营公司数据。</strong> 3.3—3.5保留公司公开披露的确切日期；独立复审补入Anthropic5月28日已披露的47B运行率，替换仅停留4月30B的旧锚。更晚媒体估算未获得正式文件者不冒充当前一手事实，删除无依据的统一盈利状态标签。</p>
+</li>
+<li>
+<p><strong>编程TAM。</strong> 3.4纠正人口出处和十倍单位错误，完整重算价格—渗透率表；保留历史专业人口基数，补充新的总人口线索但不混用。</p>
+</li>
+<li>
+<p><strong>商业模式与估值。</strong> 3.4写入GitHub按量计费事实，增加内含额度抵销和非开发者季节付费情景；撤回“估值大于年度TAM即不合理”的推论。</p>
+</li>
+<li>
+<p><strong>生产力证据。</strong> 3.4加入METR原实验与2026年后续限制，撤回无条件效率提升5—10倍，并保留新工具可能改善的反证。</p>
+</li>
+<li>
+<p><strong>资本回收。</strong> 3.6保留三层结构，撤回未取得原始模型的总量作为当前输入；纠正线性达峰、收入比与IRR混用，改为逐期FCFF与资产批次核验。</p>
+</li>
+<li>
+<p><strong>API模型。</strong> 3.7用9月实际费率与离散增长式替换“价格归零/死亡螺旋”定论；精确修正悲观情景为-10.75%，以固定账单展示缓存降价的边界。</p>
+</li>
+<li>
+<p><strong>单位经济。</strong> 3.8增加可复算但明确假设的应用毛利与客户ROI桥；撤回没有抵销表支持的55%/10%产业利润分配。</p>
+</li>
+<li>
+<p><strong>结论与反证。</strong> 3.9—3.10撤回唯一编程市场、必然收入下降与跨口径回收阈值，改为收费扩张已确认、资本回收待逐项证实；保留双向改变判断的条件。</p>
+</li>
+</ol>
+<p>详细核验网址、修改前缺陷和计算验收见《V1.5_变现正文修订证据》。本篇仅为个人研究，不构成投资建议。</p>
+<p><strong>本篇V1.5.1修订记录</strong></p>
+<ol>
+<li><strong>费率有效期。</strong> 仅在3.7.1补入Google推广价到期与后续拟适用价格的区别，避免将限期报价外推为长期单位成本。事实来源为对应正文的9/2官方发布及脚注；未加入无关财报前言，未改动旧V1.5修订记录。</li>
+</ol>
+<h3 id="h-0160">AGI与国际格局：逐项修订</h3>
+<p>V1.6.1（10月27日）：同步原339页V1.6中已经完成的Arena来源与BIS法律状态勘误；宣布不执行、启动撤销和正式废止分别表述。本篇技术测试保留原观察日，未声称全部政策或排行榜截至今日重核。</p>
+<p>V1.5.1（10月9日），5.7：新增AMD预发布硬件测试的工作负载、每用户速度和测试日期边界；34倍只属于特定门槛，未转成量产、成本或收益结论。</p>
+<p>V1.5.1（10月1日），5.7：加入9月28—29日模型迭代，Rubin由单纯预览证据接续至有限生产使用；列明指定客户、SWE-2、GB200和每GPU口径。修正旧文“提高若干倍”的歧义为“达到基准的若干倍”；V100仍服役不等于租金或项目回报已获证明。</p>
+<p>V1.5.1（9月24日），4.2与5.7：加入9月22日模型发布和MLPerf Inference v6.1的Rubin预览结果，保留厂商声明、基准条件与量产部署之间的边界；不据此更新统一AGI年份或已实现利润。</p>
+<ol>
+<li>
+<p><strong>主题回归</strong>：取消旧分项报告前置的大厂财报、融资与股价总览，直接从9月模型能力及其经济含义展开；保留原第四、第五部分全部专题主线。</p>
+</li>
+<li>
+<p><strong>能力证据更新</strong>：加入9月1日 Anthropic、9月3日 OpenAI 的官方发布和评测限制；撤下未核R2信息及不具可比性的跨基准饱和曲线。</p>
+</li>
+<li>
+<p><strong>时间表纠正</strong>：撤回未经同口径核验的名人年份、预测市场快照和算力倍数到AGI年份映射，以定义、验收条件和复查证据替代。</p>
+</li>
+<li>
+<p><strong>估值纠正</strong>：撤回AGI占估值40—60%和延期通常折损40—55%的结论，补入明确假设的三年折现计算，区分受影响现金流与整家公司价值。</p>
+</li>
+<li>
+<p><strong>国际比较纠正</strong>：删除Elo百分比作为能力差距，保留模型、训练硬件、推理部署及产业兑现的分层框架。</p>
+</li>
+<li>
+<p><strong>主权项目纠正</strong>：逐项标注Stargate、HUMAIN、InvestAI、IndiaAI的公告日期和规划/运行边界，不重复加总，不把采购计划写成投运事实。</p>
+</li>
+<li>
+<p><strong>就业更新</strong>：纳入Stanford2026年8月修订的19%相对就业差异，并保留22—25岁、比较组、样本与非因果限制；将Anthropic使用数据和全国就业统计分开。</p>
+</li>
+<li>
+<p><strong>能源更新</strong>：采用IEA2026版2025年485TWh及2030年950TWh预测，拆开年份、地区和全部数据中心/AI子集；撤销未经核验的核电总量和能源必然受益判断。</p>
+</li>
+<li>
+<p><strong>政策更新</strong>：修正AI Diffusion时间线，补BIS2026年1月逐案审查、NVIDIA8月披露的许可到收入边界，以及欧盟8月透明度要求；政策情景不再赋主观概率。</p>
+</li>
+<li>
+<p><strong>修订边界</strong>：新源不改变历史冻结PDF和V1.4，未声称模型已获独立复测、未证明AGI实现、未完成项目逐站验收，也未构成全报告审核通过。原4.10反证小节在本版顺排为4.6，目录随实际正文重建。</p>
+</li>
+</ol>
+<p><strong>本篇V1.5.1修订记录</strong></p>
+<ol>
+<li>
+<p><strong>部署差异。</strong> 第四部分开篇与4.3补Google9/2发布，区分基础智能、网络安全防护和用户可访问范围，不新增跨设置排行榜。来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google发布原文</a>。</p>
+</li>
+<li>
+<p><strong>研发进度。</strong> 4.4补特定训练暂停、恢复及仍暂缓的边界，将安全工程纳入进度约束；不把原事件归给Astra，也不外推AGI延期。来源：<a href="https://openai.com/index/path-to-astra/">OpenAI9/1说明</a>。</p>
+</li>
+<li>
+<p><strong>生态交易。</strong> 5.7补Hugging Face收购的签约、披露和预计交割阶段，以及开放选择承诺，竞争影响按待验证判断处理。来源：<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm">SEC交易文件</a>、<a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/">公司生态说明</a>。</p>
+</li>
+<li>
+<p><strong>境外总部规则。</strong> 5.8补5/31BIS对既有许可要求的澄清，同时保留例外与存量运行限定，避免把规则宽松或收紧都推成全面结论。来源：<a href="https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf">BIS指引</a>。本轮保留上述V1.5修订记录，仅更新与本篇主题相关的正文。</p>
+</li>
+</ol>
+<h3 id="h-0161">中国投资者传导：逐项修订</h3>
+<p>V1.6.1（10月27日），导语、6.2：新增光模块10月23日经营公告及德明利正式三季报、江波龙业绩预告，订单、需求指引、激励目标、季度损益和累计现金分栏解释；H1财务表保留期间，不补造Q3回款。</p>
+<p>V1.6.1（10月27日），6.7：台积电、ASML、Meta、CPI与PPI改为已公布，8月PPI初值保留历史标签；补入SK海力士、Vertiv、Microsoft、三星和Amazon未来电话会，FOMC继续待公布；更新台积电季度图，不倒改原E事件窗口。</p>
+<p>V1.5.1（10月9日），导语与6.7：结转台积电9月营收，加入Q2/Q3月报合计及配图；明确单月环降与季度增长并存，更新CPI、PPI和FOMC北京时间日历，不倒改原E窗口。</p>
+<p>V1.5.1（10月1日），6.7：美光从未来日程更新为正式业绩，加入PCE年度修订；下一轮日历改列10月8日营收、10月15日台积电电话会。美光现金不直接外推中国供应商盈利，原E事件窗口不改。</p>
+<p>V1.5.1（9月24日），6.7：FOMC改为已公布结果，加入CoreWeave合同与融资、维谛资格计划及美光下一次电话会；新消息不越过中国公司自身订单、份额和回款环节直接推盈利。</p>
+<p>6.1与6.1.1：用条件和项目现金约束取代固定崩盘日期，删除错用的情景标签和概率；原6.1.5顺排为6.1.1。</p>
+<p>6.2：直接写入两家光模块2026半年报及现金流分化，替换“业绩待披露”；原E判断2仍部分验证。</p>
+<p>6.3—6.5：补足行业到公司收入、现金和估值的传导，加入可复算倍数敏感性表。</p>
+<p>6.6：删除“持仓保护港股通额度”以及无同日样本的QDII普遍溢价断言。</p>
+<p>6.7—6.9：更新官方事件日历，撤出未重新核实的处罚数字，保留政策与经营的归因边界。</p>
+<p>V1.5.1，6.1、6.3与6.8：删除独立版本未必收录的第三、第五、第八部分指引，将情景区别、软件项目毛利与政策传导过程直接写在本篇，开头改为中国公司的当前研究问题。</p>
+<p>V1.5.1，6.2：加入两家2026H1经营现金减现金购建的原值算式、舍入说明和适用边界；未完成的净利润至经营现金调节、维护与扩张支出拆分继续列为缺口，不虚构明细。原E判断2及价格窗口文字保持不变。</p>
+<p>V1.5.1，来源复核：中际旭创原件本轮重新读取；新易盛原链接本次访问失败，沿用9月8日上一轮原件核验记录的精确元数，未声称本次重新打开成功。</p>
+<p>V1.5.1（9月15日证据更新）：6.7将台积电、Oracle、PPI与CPI由未来日历改为已实现值，FOMC继续标为待公布；新增数据只更新需求与折现率背景，不替中国公司的产品、份额、回款和估值模型作结论。</p>
+<h3 id="h-0162">公司分化与估值：逐项修订</h3>
+<p>V1.6.1（10月27日），7.4：折现观察接至财政部10月26日，十年名义与实际收益率较10月8日分别下降22、21个基点；保留WACC、信用利差与存量固定票息的区别，不重写维谛既有财季或补造当前目标价。</p>
+<p>V1.5.1（10月9日），7.4：折现观察接至财政部10月8日，十年期5.22%、较9月底小幅回落；不改维谛既有财季、条件算例或非目标价边界。</p>
+<p>V1.5.1（10月1日），7.4：更新有观察日的市场折现基准，明确与公司WACC和存量票息的区别；维谛原财季、条件算例和非目标价边界保持不变。</p>
+<p>V1.5.1（9月24日），7.3.1：新增维谛参与DSX Ready的产品资格事实，明确其不等于订单、交付或盈利指引；沿用已公布财报及条件估值演示，未补造新目标价。</p>
+<p>7.1：撤销“破而立死”等确定性结局标签和未经模型支撑的个股跌幅，按商业模式重建研究分组。</p>
+<p>7.2：把经营、现金、资本承诺和估值分栏；纠正AWS经营与投资重估的因果混淆。</p>
+<p>7.3—7.4：补足企业价值到股权价值的估值桥，明确EBITDA和自由现金流差异。</p>
+<p>7.5—7.6：删除未经指数权重计算的整体回撤推断，补齐历史类比与公司排序的反证条件。</p>
+<p>V1.5.1补充：开头改为当前公司研究问题，补入7.3.1—7.3.3维谛正式财报、半年现金与全年指引桥、递延收入和库存现金解释，以及明确假设的EPS条件价格；不把非GAAP自由现金流当FCFF，不把公司指引或未校准倍数当目标价。</p>
+<p>V1.5.1复审：7.4在原位写清企业价值到每股价值的条件式，取消必须先读第六部分的文字转引，方便专题选编独立阅读。</p>
+<p>V1.5.1（9月15日证据更新）：7.1将Broadcom纳入计算平台与芯片组。AI XPV的租赁Backstop和条件性票据说明，芯片供应商研究不仅要预测收入和毛利，也要把客户融资、或有义务和残值放入股权价值桥；本轮不据这些承诺补造目标价。</p>
+<h3 id="h-0163">风险与综合结论：逐项修订</h3>
+<p>V1.6.1（10月27日），8.1—8.2：新增台积电已发布Q3及新台币口径现金桥、Meta含融资租赁本金的FCF复算及Anthropic未生效的公开S-1；供应商经营、单名现金缺口与拟融资分别判断，不据此宣布全面崩盘或资本回收完成。</p>
+<p>V1.6.1（10月27日），8.2：接入9月CPI/PPI及8月PPI修订，明确全国就业暂无新一期；利率接至财政部10月26日，长端回落与通胀加速并列，FOMC保持北京时间10月29日待公布。</p>
+<p>V1.6.1（10月27日），8.2、8.5：加入褐皮书定性建设证据及其限制，结转台积电10月15日节点，保留Anthropic后续生效与交割待核；历史78分、情景权重、E事件窗口及阈值均不改变。</p>
+<p>V1.5.1（10月9日），8.1—8.2：加入台积电季度月报汇总、Applied Digital租金与建设现金、SoftBank已执行出资；综合判断由“长端继续抬升”接续为“高位小幅回落，就业转弱，需求与交付仍兑现”，不新增系统性触发。</p>
+<p>V1.5.1（10月9日），8.2：用9月就业及7—8月新修订替换当前宏观输入；区分10月8日财政部观察、只到10月7日的H.15及记录9月会议的FOMC纪要。</p>
+<p>V1.5.1（10月9日），8.5：结转台积电9月营收节点，保留10月15日季报为未来验证；E原窗口、历史权重与触发阈值不倒改。</p>
+<p>V1.5.1（10月1日），8.1—8.2：新增美光强经营现金与Akamai先建设后回款的双向证据；H.15接至9月29日并更新图表，PCE保留同比、环比与修订版本边界。合并结论不再只强调融资接续，明确承认存储端现金改善。</p>
+<p>V1.5.1（10月1日），8.5：美光正式值与下一季指引分开；下一轮观察转向台积电营收与Q3电话会。没有重估历史分数、改写E判断或宣布系统性触发。</p>
+<p>V1.5.1（9月24日），8.1—8.2：补入CoreWeave短约与已完成可转债；FOMC待公布改为加息实际值，政策区间、预测中位数和市场收益率分别列示，新增利率观察图。结论调整为需求与融资仍可接续、资金门槛抬高，但不新增系统性危机触发，不重新包装78分和情景权重。</p>
+<p>V1.5.1（9月24日），8.5：用已确认的美光电话会替换过期日历，增加短约续接、模型定价与现金回收的复查条件。</p>
+<p>风险教育：删除带有具体期限与止损安排的工具建议，保留一般风险原理及SEC出处。</p>
+<p>8.1—8.2：替换旧六灯快照；撤销跨周期、跨口径“6倍脱节”的确定性结论，采用已公布就业修订和有日期的信用观察。</p>
+<p>8.3：统一情景名称；把78分及既有权重限定为未重新校准的研究假设，撤销“77%就是崩盘概率”的表述。</p>
+<p>8.4—8.5：更正E判断2待核原因、固定触发阈值和基准事件的时间纪律；说明真正可能证伪报告的证据。</p>
+<p>V1.5.1，8.1—8.2：将NVIDIA回款、Alphabet建设现金、GitHub计费和CoreWeave期限差四项既有核验证据接入当前判断、复查窗口及正反模型动作；不同公司、期间和业务边界分别列明，不将观察矩阵换成概率。</p>
+<p>V1.5.1，8.1与8.5：现金回收方法和下轮日历直接写在本篇，删除独立风险版本未必收录的第三、第六部分指引；保留8.3既有评分边界及8.4原判断原文，不修改E冻结规则。</p>
+<p>V1.5.1（9月15日证据更新）：台积电、Oracle和Broadcom分别补入需求、资金桥与风险转移证据；PPI、CPI、国债收益率及融资定价、签约和到账状态更新至各自最新可核日期。宏观腿升为偏紧观察，但公开证据不能确认融资全面关闭；许可受限的分层信用精确值不在公开版复载。故78/100、A45/B22/C10/D23、严格1/3与广义2/3均不变。</p></main></body></html>

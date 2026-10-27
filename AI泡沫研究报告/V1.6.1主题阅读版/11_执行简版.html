@@ -1,0 +1,71 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫 · 研究执行简版 V1.6.1</title><style>@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("../11_源码_python生成脚本/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:18mm 17mm 19mm;@top-left{content:"大队长 · AI周期与泡沫 · 研究执行简版";font-family:Noto;font-size:7pt;color:#687888}@top-right{content:"V1.6.1 · 正文修订 · 2026-10-27";font-family:Noto;font-size:7pt;color:#687888}@bottom-left{content:"个人研究 · 公开资料 · 不构成投资建议";font-family:Noto;font-size:7pt;color:#687888}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#687888}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{font-family:Noto,sans-serif;font-size:10pt;line-height:1.7;color:#263643;margin:0}
+.cover{page:cover;height:296mm;padding:34mm 25mm;position:relative;break-after:page;background:#fbfdff}
+.cover .line{width:52mm;height:3mm;background:#86b8d5;margin-bottom:14mm}.brand{font-size:10pt;color:#637b8e;letter-spacing:1px}
+.cover .title{font-size:29pt;line-height:1.5;color:#28516e;margin:25mm 0 12mm;font-weight:700}
+.cover .subtitle{font-size:13pt;line-height:1.9;max-width:150mm;color:#526878}.cover .date{margin-top:23mm;font-size:11pt;color:#506f85}
+.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;padding-top:5mm;border-top:1px solid #d8e7ef;font-size:9pt;color:#647b8e}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;border-bottom:.4pt dotted #bfd2df;padding:3pt 0;color:#365a72;text-decoration:none;font-size:9pt}
+.toc .l3{padding-left:12pt;font-weight:400}.toc .l2{font-weight:700;margin-top:3pt}.toc a:after{content:target-counter(attr(href url),page);float:right;color:#315e7c}
+h1,h2,h3,h4{line-height:1.45;break-after:avoid;color:#315e7c}h1{font-size:21pt}h2{font-size:16pt;border-bottom:1.2pt solid #95bbd3;padding-bottom:5pt;margin:18pt 0 10pt}h3{font-size:12pt;margin:15pt 0 7pt}h4{font-size:10.8pt;margin:12pt 0 6pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:7pt 0;orphans:3;widows:3}a{color:#315e7c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #8ab8d4;background:#f2f7fb;padding:6pt 10pt;margin:8pt 0;color:#536776}
+table{border-collapse:collapse;width:100%;margin:9pt 0 13pt;font-size:8.3pt;table-layout:auto}thead{display:table-header-group}tr{break-inside:avoid}th{background:#dcecf6;color:#244b66;font-weight:700;text-align:left}th,td{border:.5pt solid #c7d9e4;padding:5pt 6pt;vertical-align:top;line-height:1.55;overflow-wrap:normal;word-break:normal;hyphens:none}td:first-child{min-width:17mm}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:8pt 0}li{margin:6pt 0}img{display:block;max-width:100%;max-height:210mm;object-fit:contain;margin:12pt auto}figure{break-inside:avoid}code{font-family:Noto;font-size:.95em;background:#edf3f7;padding:1pt 3pt}hr{border:0;border-top:.5pt solid #cadbe5;margin:14pt 0}
+@media screen{body{max-width:960px;margin:0 auto;padding:20px;background:white}.cover{height:auto;min-height:75vh;padding:40px 28px}.cover .foot{position:static;margin-top:45px}.front,.toc,main{padding:10px 12px}.toc a:after{content:none}table{display:block;overflow-x:auto}} .keep-together,.tariff-table{break-inside:avoid} .revision-start{break-before:page}  .front,.toc{break-after:auto}.front{font-size:8.8pt}.front h2,.toc h1{font-size:12pt;margin:12pt 0 5pt}.toc a{display:inline-block;border:0;margin:0 12pt 3pt 0;font-size:8.5pt}.toc a:after{content:none}.toc p{display:none} </style></head><body><header><p class="brand">大队长 · V1.6.1_20261027 · 2026-10-27</p><h1>AI周期与泡沫 · 研究执行简版</h1><p>执行的是核验与模型更新，不是交易指令。</p></header><section class="front"><h2>免责声明与阅读边界</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构观点，不构成个性化投资建议、收益保证或交易指令。技术和商业判断可能错误，信息也可能随后修订。</p>
+<p>V1.6.1沿用V1.5.1主题正文并同步V1.6完整校注勘误，增量资料检索截止2026年10月27日；各项财务、统计、行情与政策数据以正文明确的期间或观察日为准，不能全部理解为该日现值。公司指引、研究假设和已实现结果分开阅读；缺失的原始证据不以推测填补。</p>
+<p>本版按主题重编，不沿用旧版分页；旧版与历史档案保留不改。历史评分和预测记录只用于追溯，未完成统计校准的数字不属于经过验证的崩盘概率。审计条目总数不等于本轮全部事实复核通过。</p>
+<h2>本版修订说明</h2>
+<ol>
+<li>本篇按目标读者重新组织结论和展开；更新写进相应论点，不以前置全景财报替代原正文。</li>
+</ol></section><section class="toc"><h1>目录</h1><p>目录及页码依据本版正文生成；PDF内可点击跳转。</p><a class="l2" href="#h-0000">研究执行清单：一项事件对应一次模型变更</a><a class="l3" href="#h-0001">一、更新之前先锁定旧判断</a><a class="l3" href="#h-0002">二、按证据种类进入对应正文</a><a class="l3" href="#h-0003">三、已完成与仍缺证据</a><a class="l3" href="#h-0004">四、近期核验日历</a><a class="l3" href="#h-0005">五、提交一次更新的最小闭环</a></section><main><h2 id="h-0000">研究执行清单：一项事件对应一次模型变更</h2>
+<p>本篇“执行”指资料核验、预测结算和研究模型更新，不表示减仓、做空或购买衍生品。没有资产负债、适当性和当期价格信息，不能从本表推出个人交易安排。</p>
+<h3 id="h-0001">一、更新之前先锁定旧判断</h3>
+<p>记录旧判断原文、形成日期、事件窗口和阈值。新财报公布后，先按原规则判断成立、部分成立、不成立或证据不足，再另写新的研究判断；不能修改阈值让历史预测看起来更准确。</p>
+<h3 id="h-0002">二、按证据种类进入对应正文</h3>
+<table>
+<thead>
+<tr>
+<th>证据变化</th>
+<th>更新位置</th>
+<th>验收要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司财报与会计附注</td>
+<td>利润、现金回收、循环投资</td>
+<td>原始币种、财季、金额、会计边界均明确</td>
+</tr>
+<tr>
+<td>新收费、计费或客户指标</td>
+<td>变现与市场规模</td>
+<td>已确认收入、ARR、run-rate、合同额分别列示</td>
+</tr>
+<tr>
+<td>能力评测与出口规则</td>
+<td>AGI与国际格局</td>
+<td>公司披露与独立验证、生效规则与讨论稿分开</td>
+</tr>
+<tr>
+<td>中国供应商经营</td>
+<td>中国传导与公司模型</td>
+<td>产品、份额、量价、回款及估值相互连通</td>
+</tr>
+<tr>
+<td>宏观统计修订</td>
+<td>综合风险判断</td>
+<td>用新修订替代当前输入，保留旧初值历史记录</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h-0003">三、已完成与仍缺证据</h3>
+<p>两家光模块公司2026半年报已经披露，正式业绩不再待核；原判断中的预告事件和双公司价格窗口证据仍未完整，两者分别记录。公开信息不能拆出的纯AI收入、客户融资依赖比例和完整供应链去重总量，也继续保留缺失，不以估计填成事实。</p>
+<h3 id="h-0004">四、近期核验日历</h3>
+<p>截至10月27日，台积电、ASML、Meta季度结果和9月CPI/PPI均已公布。下一轮北京时间：10月28日08:00海力士电话会、23:00维谛电话会；10月29日02:00 FOMC决议、02:30发布会，04:30 Alphabet电话会（原公告经分发渠道核对），05:30微软电话会，09:00三星完整业绩电话会；10月30日05:00亚马逊电话会。电话会不等于新闻稿精确发布时间，完整来源和取证限制见中国传导章6.7，不提前填财报结果。<a href="https://www.federalreserve.gov/newsevents/2026-october.htm">美联储日历</a>、<a href="https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/">海力士</a>、<a href="https://investors.vertiv.com/news/news-details/2026/Vertiv-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Conference-Call/">维谛</a></p>
+<h3 id="h-0005">五、提交一次更新的最小闭环</h3>
+<p>写明新事实与来源，复算衍生数字，解释改变了哪项模型输入，再列相反证据和未解决问题。最后检查本篇变更记录、正文、图表、目录和PDF是否一致；只更新卷首而保留矛盾正文，不算完成。</p>
+<p><strong>V1.6.1本篇修订（10月27日）。</strong> 对应正文同步本轮季度财务、融资披露、现金与宏观输入；已发生事件结转，未来电话会不预填结果。原评分、情景权重与E窗口未重校准，旧版修订记录在10月9日存档中保留。</p></main></body></html>

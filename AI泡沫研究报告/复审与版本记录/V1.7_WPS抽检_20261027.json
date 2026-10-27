@@ -1,0 +1,17 @@
+{
+  "version": "V1.7",
+  "checked_at": "2026-10-27T16:26:07+08:00",
+  "status": "PASS_NATIVE_SAMPLE",
+  "application": "WPS Office for Mac",
+  "method": "Closed the old 121-page preview, reopened the current local PDF through Finder, checked AX page count and actual screenshots.",
+  "pdf": "V1.7现行正文版/13_超全景版.pdf",
+  "pdf_sha256": "572e1a242e4b2040c39554d294bcd49fac3ec95c35c4b9ac24c46df0eeed1d7d",
+  "pages": 134,
+  "pages_visually_inspected": [1, 104, 122],
+  "observations": [
+    "Cover shows the user-confirmed email and pale blue 大队长出品 watermark.",
+    "Body and reference-index page footers show the same email without visible clipping or overlap.",
+    "Reference index begins on page 122; current native viewer shows 134 total pages."
+  ],
+  "limits": "Sampled native rendering only; not an all-page human review or renewed external fact audit. No mailto link was activated and no email was sent."
+}

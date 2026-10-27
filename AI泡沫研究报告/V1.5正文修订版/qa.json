@@ -1,0 +1,239 @@
+{
+  "status": "PASS_STRUCTURAL",
+  "checked_at_utc": "2026-09-15T01:49:09.881779+00:00",
+  "manifest_sha256": "708d61b8ffa71b3cd7269b6b88908e3918fcb396d388a83d73690b5bc2d3185f",
+  "qa_script_sha256": "4465381f0fb232e3a8a112af850d1858cb016ff46cad7ad3a028bf26ff61a676",
+  "render_dir": "/private/tmp/ai-report-v15-qa-privacy-refresh",
+  "global_errors": [],
+  "limitations": [
+    "Structural tests do not independently verify all facts.",
+    "Rendered images require human/agent visual inspection.",
+    "No external publication or Git push."
+  ],
+  "reports": [
+    {
+      "slug": "01_主报告",
+      "pages": 51,
+      "headings_checked": 149,
+      "internal_links": 166,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        6,
+        26,
+        51
+      ]
+    },
+    {
+      "slug": "02_事实审计表",
+      "pages": 17,
+      "headings_checked": 7,
+      "internal_links": 14,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        4,
+        9,
+        17
+      ]
+    },
+    {
+      "slug": "03_利润真实性拆解",
+      "pages": 12,
+      "headings_checked": 30,
+      "internal_links": 24,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        4,
+        7,
+        12
+      ]
+    },
+    {
+      "slug": "04_循环投资网络",
+      "pages": 12,
+      "headings_checked": 38,
+      "internal_links": 28,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        4,
+        7,
+        12
+      ]
+    },
+    {
+      "slug": "05_AI变现与编程TAM",
+      "pages": 14,
+      "headings_checked": 35,
+      "internal_links": 28,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        4,
+        8,
+        14
+      ]
+    },
+    {
+      "slug": "06_AGI与国际格局",
+      "pages": 13,
+      "headings_checked": 19,
+      "internal_links": 38,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        4,
+        7,
+        13
+      ]
+    },
+    {
+      "slug": "07_机构简版",
+      "pages": 2,
+      "headings_checked": 6,
+      "internal_links": 6,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "slug": "08_公开精简版",
+      "pages": 38,
+      "headings_checked": 97,
+      "internal_links": 110,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        5,
+        20,
+        38
+      ]
+    },
+    {
+      "slug": "09_雪球公开版",
+      "pages": 10,
+      "headings_checked": 28,
+      "internal_links": 50,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        4,
+        6,
+        10
+      ]
+    },
+    {
+      "slug": "10_摘要版",
+      "pages": 2,
+      "headings_checked": 7,
+      "internal_links": 7,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "slug": "11_执行简版",
+      "pages": 2,
+      "headings_checked": 6,
+      "internal_links": 6,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "slug": "12_全景版",
+      "pages": 68,
+      "headings_checked": 210,
+      "internal_links": 234,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        7,
+        35,
+        68
+      ]
+    },
+    {
+      "slug": "13_超全景版",
+      "pages": 82,
+      "headings_checked": 216,
+      "internal_links": 246,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        7,
+        42,
+        82
+      ]
+    },
+    {
+      "slug": "14_完整合集",
+      "pages": 69,
+      "headings_checked": 216,
+      "internal_links": 246,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        7,
+        35,
+        69
+      ]
+    },
+    {
+      "slug": "15_延迟情景版",
+      "pages": 27,
+      "headings_checked": 95,
+      "internal_links": 92,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        5,
+        14,
+        27
+      ]
+    },
+    {
+      "slug": "16_崩盘剧本",
+      "pages": 7,
+      "headings_checked": 15,
+      "internal_links": 30,
+      "errors": [],
+      "rendered_pages": [
+        1,
+        2,
+        4,
+        7
+      ]
+    },
+    {
+      "slug": "17_发布引流稿",
+      "pages": 1,
+      "headings_checked": 1,
+      "internal_links": 1,
+      "errors": [],
+      "rendered_pages": [
+        1
+      ]
+    }
+  ]
+}

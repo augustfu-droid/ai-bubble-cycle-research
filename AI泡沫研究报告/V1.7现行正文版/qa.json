@@ -1,0 +1,407 @@
+{
+  "version": "V1.7",
+  "status": "PASS_LOCAL_STRUCTURE",
+  "scope": "structural checks and machine arithmetic; separate human visual and independent review required",
+  "reports": [
+    {
+      "slug": "01_主报告",
+      "pages": 93,
+      "pdf_sha256": "0a9b0856d27a144005ff60932e41a559a7a652814713a91ec5f7093565edc115",
+      "reference_count": 177,
+      "watermark_pages_checked": 93,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 163,
+      "internal_pdf_links": 158,
+      "unique_toc_destinations_checked": 79,
+      "toc_page_numbers_checked": 79,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "02_事实审计表",
+      "pages": 9,
+      "pdf_sha256": "9694d1a051f47acfd5d26b19522185f8901014c8dbbc1128ba6127732d641e14",
+      "reference_count": 30,
+      "watermark_pages_checked": 9,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 6,
+      "internal_pdf_links": 12,
+      "unique_toc_destinations_checked": 6,
+      "toc_page_numbers_checked": 6,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "03_利润真实性拆解",
+      "pages": 25,
+      "pdf_sha256": "04b596cf040efd528b96faac8738bd24f886252dfd4093fff5271582d1a8acec",
+      "reference_count": 53,
+      "watermark_pages_checked": 25,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 37,
+      "internal_pdf_links": 22,
+      "unique_toc_destinations_checked": 11,
+      "toc_page_numbers_checked": 11,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "04_循环投资网络",
+      "pages": 21,
+      "pdf_sha256": "79a2e744184738fd280a66ede0e40d4bcf8fee7507490a59494b9e68cb4763c9",
+      "reference_count": 40,
+      "watermark_pages_checked": 21,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 40,
+      "internal_pdf_links": 26,
+      "unique_toc_destinations_checked": 13,
+      "toc_page_numbers_checked": 13,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "05_AI变现与编程TAM",
+      "pages": 20,
+      "pdf_sha256": "9067f98eb1e385dc5ed17c2cc72af13c3f7be3152c7abce12477f3f262eec2c2",
+      "reference_count": 35,
+      "watermark_pages_checked": 20,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 36,
+      "internal_pdf_links": 26,
+      "unique_toc_destinations_checked": 13,
+      "toc_page_numbers_checked": 13,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "06_AGI与国际格局",
+      "pages": 20,
+      "pdf_sha256": "fd20213ed4584d2d58ace3dddf076a8394c4c352cf22dc208d6db92dee1868f9",
+      "reference_count": 48,
+      "watermark_pages_checked": 20,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 19,
+      "internal_pdf_links": 38,
+      "unique_toc_destinations_checked": 19,
+      "toc_page_numbers_checked": 19,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "07_机构简版",
+      "pages": 3,
+      "pdf_sha256": "c438d0e494cefb371e4eac55e428525315fe57be52e33b57f1054add5c7a4bc4",
+      "reference_count": 4,
+      "watermark_pages_checked": 3,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 4,
+      "internal_pdf_links": 8,
+      "unique_toc_destinations_checked": 4,
+      "toc_page_numbers_checked": 4,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "08_公开精简版",
+      "pages": 64,
+      "pdf_sha256": "946550e424d1b0476d58a6c5b9e6b7bfe7d94ec0f06ca415d26a6ff9978aeca8",
+      "reference_count": 130,
+      "watermark_pages_checked": 64,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 105,
+      "internal_pdf_links": 104,
+      "unique_toc_destinations_checked": 52,
+      "toc_page_numbers_checked": 52,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "09_雪球公开版",
+      "pages": 16,
+      "pdf_sha256": "1a97806adfcad964f2d12c4a4a1b716f0d52dec2f1f587e9fe6770fc236eee1e",
+      "reference_count": 23,
+      "watermark_pages_checked": 16,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 26,
+      "internal_pdf_links": 38,
+      "unique_toc_destinations_checked": 19,
+      "toc_page_numbers_checked": 19,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "10_摘要版",
+      "pages": 2,
+      "pdf_sha256": "b64cd2caf53c4b97742cd0111b3cb34ab3aa6d8ec75f1bcb7d6273a6bc003579",
+      "reference_count": 6,
+      "watermark_pages_checked": 2,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 2,
+      "internal_pdf_links": 4,
+      "unique_toc_destinations_checked": 2,
+      "toc_page_numbers_checked": 2,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "11_执行简版",
+      "pages": 2,
+      "pdf_sha256": "d1f6a1830fd715d4b96d16d4056ebd12cb4d38874dd79eb13758554d0694324d",
+      "reference_count": 0,
+      "watermark_pages_checked": 2,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 2,
+      "internal_pdf_links": 4,
+      "unique_toc_destinations_checked": 2,
+      "toc_page_numbers_checked": 2,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "12_全景版",
+      "pages": 125,
+      "pdf_sha256": "51b0d1ec9babbe7bd2e22d7751520fc4b03d5739b430fd0df70fa37680ec513c",
+      "reference_count": 196,
+      "watermark_pages_checked": 125,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 240,
+      "internal_pdf_links": 258,
+      "unique_toc_destinations_checked": 129,
+      "toc_page_numbers_checked": 129,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "13_超全景版",
+      "pages": 134,
+      "pdf_sha256": "572e1a242e4b2040c39554d294bcd49fac3ec95c35c4b9ac24c46df0eeed1d7d",
+      "reference_count": 212,
+      "watermark_pages_checked": 134,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 257,
+      "internal_pdf_links": 282,
+      "unique_toc_destinations_checked": 141,
+      "toc_page_numbers_checked": 141,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "14_完整合集",
+      "pages": 117,
+      "pdf_sha256": "67fab5870455fee28930ccf11b3a2ee87be3764a30d1c5075a8fce368400eb0a",
+      "reference_count": 197,
+      "watermark_pages_checked": 117,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 224,
+      "internal_pdf_links": 226,
+      "unique_toc_destinations_checked": 113,
+      "toc_page_numbers_checked": 113,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "15_延迟情景版",
+      "pages": 43,
+      "pdf_sha256": "be4e72b004bfe09958830d9cfd3eeec76b0c3d3b56e7cbe68c39009d5a25609c",
+      "reference_count": 61,
+      "watermark_pages_checked": 43,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 99,
+      "internal_pdf_links": 94,
+      "unique_toc_destinations_checked": 47,
+      "toc_page_numbers_checked": 47,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "16_崩盘剧本",
+      "pages": 17,
+      "pdf_sha256": "28436289a27af5fcc601846451159c6467936df5d27d3f43fde75cfa24ae9e23",
+      "reference_count": 30,
+      "watermark_pages_checked": 17,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 17,
+      "internal_pdf_links": 32,
+      "unique_toc_destinations_checked": 16,
+      "toc_page_numbers_checked": 16,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "17_发布引流稿",
+      "pages": 1,
+      "pdf_sha256": "5cf559768441abb87c57b18034d7842a3b04d5e4b76b50fa4ed4ebf992c036c2",
+      "reference_count": 0,
+      "watermark_pages_checked": 1,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 2,
+      "internal_pdf_links": 4,
+      "unique_toc_destinations_checked": 2,
+      "toc_page_numbers_checked": 2,
+      "errors": [],
+      "status": "PASS"
+    }
+  ],
+  "global_errors": [],
+  "arithmetic": [
+    {
+      "name": "Meta Q3 FCF",
+      "result": "-2.120",
+      "expected": "-2.120",
+      "pass": true
+    },
+    {
+      "name": "TSMC NTD million cash bridge",
+      "result": "476570",
+      "expected": "476570",
+      "pass": true
+    },
+    {
+      "name": "ASML EUR million FCF",
+      "result": "11350.4",
+      "expected": "11350.4",
+      "pass": true
+    },
+    {
+      "name": "Anthropic H1 revenue",
+      "result": "16.286",
+      "expected": "16.286",
+      "pass": true
+    },
+    {
+      "name": "Anthropic H1 operating income",
+      "result": "-0.693",
+      "expected": "-0.693",
+      "pass": true
+    },
+    {
+      "name": "Anthropic H1 revenue types",
+      "result": "16.286",
+      "expected": "16.286",
+      "pass": true
+    },
+    {
+      "name": "2Y rate change bp",
+      "result": "-7.00",
+      "expected": "-7",
+      "pass": true
+    },
+    {
+      "name": "10Y nominal rate change bp",
+      "result": "-22.00",
+      "expected": "-22",
+      "pass": true
+    },
+    {
+      "name": "10Y real rate change bp",
+      "result": "-21.00",
+      "expected": "-21",
+      "pass": true
+    },
+    {
+      "name": "2Y-10Y slope bp",
+      "result": "32.00",
+      "expected": "32",
+      "pass": true
+    },
+    {
+      "name": "VRT H1 cash bridge",
+      "result": "1578.1",
+      "expected": "1578.1",
+      "pass": true
+    },
+    {
+      "name": "VRT implicit H2 low",
+      "result": "821.9",
+      "expected": "821.9",
+      "pass": true
+    },
+    {
+      "name": "VRT implicit H2 high",
+      "result": "1021.9",
+      "expected": "1021.9",
+      "pass": true
+    },
+    {
+      "name": "VRT EPS x 25",
+      "result": "167.50",
+      "expected": "167.50",
+      "pass": true
+    },
+    {
+      "name": "VRT EPS x 30",
+      "result": "201.00",
+      "expected": "201.00",
+      "pass": true
+    },
+    {
+      "name": "VRT EPS x 35",
+      "result": "234.50",
+      "expected": "234.50",
+      "pass": true
+    },
+    {
+      "name": "VRT GAAP EPS x 30",
+      "result": "176.10",
+      "expected": "176.10",
+      "pass": true
+    },
+    {
+      "name": "EBITDA rise versus multiple contraction",
+      "result": "0.90",
+      "expected": "0.90",
+      "pass": true
+    },
+    {
+      "name": "EPS and PE shock",
+      "result": "-0.4000",
+      "expected": "-0.40",
+      "pass": true
+    },
+    {
+      "name": "Index weighted shock",
+      "result": "-0.1900",
+      "expected": "-0.19",
+      "pass": true
+    },
+    {
+      "name": "Project NPV base",
+      "result": "4.13",
+      "expected": "4.13",
+      "pass": true
+    },
+    {
+      "name": "Project NPV revenue delay",
+      "result": "-5.33",
+      "expected": "-5.33",
+      "pass": true
+    },
+    {
+      "name": "Project NPV all delayed",
+      "result": "3.76",
+      "expected": "3.76",
+      "pass": true
+    },
+    {
+      "name": "Project NPV cheaper equipment",
+      "result": "12.85",
+      "expected": "12.85",
+      "pass": true
+    },
+    {
+      "name": "QDII premium multiplication",
+      "result": "-63.46",
+      "expected": "-63.46",
+      "pass": true
+    },
+    {
+      "name": "Daily inverse two-day return",
+      "result": "-5.45",
+      "expected": "-5.45",
+      "pass": true
+    }
+  ],
+  "historical_files_unchanged": 386,
+  "historical_files_checked": 386,
+  "native_wps": "NOT_VERIFIED_IN_THIS_SCRIPT"
+}

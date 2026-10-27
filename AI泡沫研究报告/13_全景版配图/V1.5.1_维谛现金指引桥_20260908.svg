@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+<title id="title">维谛2026年调整后自由现金流：半年已实现与全年指引</title>
+<desc id="desc">金额为百万美元。全年公司指引2400至2600；减去上半年1578.1，下半年隐含821.9至1021.9。隐含值是算术差额，不是新增预测。</desc>
+<rect width="1200" height="480" fill="#ffffff"/>
+<g font-family="Noto Sans SC, sans-serif" fill="#294759">
+<text x="45" y="48" font-size="27" font-weight="700">先扣除已实现部分，再理解剩余指引</text>
+<text x="45" y="86" font-size="19" fill="#647b8e">维谛 · 2026年调整后自由现金流 · 百万美元 · 指引发布于2026-07-29</text>
+<rect x="45" y="125" width="1110" height="205" rx="8" fill="#f5f9fc" stroke="#c7d9e4"/>
+<text x="70" y="165" font-size="22">全年指引中点 2500.0</text>
+<rect x="70" y="195" width="656.49" height="67" fill="#78aaca"/>
+<rect x="726.49" y="195" width="383.51" height="67" fill="#d4e5ef"/>
+<text x="90" y="235" font-size="22">H1已实现 1578.1</text>
+<text x="750" y="235" font-size="22">H2隐含 921.9</text>
+<text x="70" y="302" font-size="20">全年范围 2400—2600 → H2算术差额 821.9—1021.9</text>
+<text x="45" y="375" font-size="21">全年指引 − 已实现半年 = 剩余半年隐含额</text>
+<text x="45" y="413" font-size="19" fill="#647b8e">Q2的925.3不能直接乘四；半年现金含营运资本变化，非正常化FCFF。</text>
+<text x="45" y="449" font-size="17" fill="#647b8e">来源：维谛Q2业绩公告、2026Q2 10-Q；作者按同口径算术拆分，非额外盈利预测。</text>
+</g></svg>
