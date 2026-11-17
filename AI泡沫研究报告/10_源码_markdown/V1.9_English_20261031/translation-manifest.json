@@ -1,0 +1,191 @@
+{
+  "source_version": "V1.9",
+  "cutoff": "2026-10-31 Asia/Shanghai",
+  "translation_scope": "Full report, 13 chapters, appendices A-F, overview and postscript; faithful translation, no research refresh",
+  "chinese_pdf": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9现行正文版\\13_超全景版.pdf",
+  "chinese_pdf_sha256": "7ec82a94c77021e4b4277664317f07396b1be0a0b3e8a89e4df00f74c9120462",
+  "chinese_md_sha256": "118f8d5c26301c7c5bc1d87459a29ef8807802f22e5f43777df012f247b2c1cd",
+  "chinese_publication_manifest_sha256": "c3f0611cdd35cb6b3ac29b8ea70d37710277ec86a1dfa31ec8b866cba69684bc",
+  "units": [
+    {
+      "order": 0,
+      "key": "short:institution",
+      "file": "00_short_institution.md",
+      "group": "a",
+      "source_sha256": "d140c1c472ca787d31cdc1f06209aeac7bebc8bf43785ff6f885973f196868f4",
+      "source_lines": 57,
+      "han_chars": 2408
+    },
+    {
+      "order": 1,
+      "key": "profit",
+      "file": "01_profit.md",
+      "group": "a",
+      "source_sha256": "08a015c0ff85733ffedc9a4b933fac5c053991176b04d83f3eb0c3dcb6c7fa26",
+      "source_lines": 374,
+      "han_chars": 13109
+    },
+    {
+      "order": 2,
+      "key": "circular",
+      "file": "02_circular.md",
+      "group": "a",
+      "source_sha256": "08fab4b9aee2164f901c34ea54faaee561de4e7232a174ceb8975ed3e76413fc",
+      "source_lines": 345,
+      "han_chars": 12885
+    },
+    {
+      "order": 3,
+      "key": "monetization",
+      "file": "03_monetization.md",
+      "group": "a",
+      "source_sha256": "fa3d19bfbd6229ba8416f865a07b0d3f25cb4d5f75fa8aa30bb444da5cb0ae24",
+      "source_lines": 406,
+      "han_chars": 16055
+    },
+    {
+      "order": 4,
+      "key": "video",
+      "file": "04_video.md",
+      "group": "b",
+      "source_sha256": "adc184224828eb47d649ec7cd0d334d3b7312189097a59df579221bc5a839813",
+      "source_lines": 430,
+      "han_chars": 19378
+    },
+    {
+      "order": 5,
+      "key": "coding",
+      "file": "05_coding.md",
+      "group": "b",
+      "source_sha256": "413f99c44a59842dc6529c7a91774908f642dd42da55a2c8faa85e77586e22a9",
+      "source_lines": 377,
+      "han_chars": 18930
+    },
+    {
+      "order": 6,
+      "key": "applications",
+      "file": "06_applications.md",
+      "group": "b",
+      "source_sha256": "693392c1c70dc35a062bf5376e29829b9d0e36b0d4529f557106e5cad26190c9",
+      "source_lines": 163,
+      "han_chars": 8736
+    },
+    {
+      "order": 7,
+      "key": "agi",
+      "file": "07_agi.md",
+      "group": "c",
+      "source_sha256": "73c46918c6726a656a7354dc66031e089f313879d1fa8a1ea2e73c3ed25d9433",
+      "source_lines": 358,
+      "han_chars": 16191
+    },
+    {
+      "order": 8,
+      "key": "china",
+      "file": "08_china.md",
+      "group": "c",
+      "source_sha256": "59abc9b656ffb49ac7140a5b487f33eb88a8c30fd35efb60d57b4c35ee286917",
+      "source_lines": 140,
+      "han_chars": 4582
+    },
+    {
+      "order": 9,
+      "key": "valuation",
+      "file": "09_valuation.md",
+      "group": "c",
+      "source_sha256": "3f14abfe973d468dedf48dd95f69a47751113347beebdb6cdedd1b4d91b4ea53",
+      "source_lines": 92,
+      "han_chars": 3205
+    },
+    {
+      "order": 10,
+      "key": "conclusion",
+      "file": "10_conclusion.md",
+      "group": "c",
+      "source_sha256": "2405208d230510d92be560ef3e72fa1152954084dbbc35fd592bf925566991da",
+      "source_lines": 149,
+      "han_chars": 7737
+    },
+    {
+      "order": 11,
+      "key": "crash",
+      "file": "11_crash.md",
+      "group": "c",
+      "source_sha256": "9e5358b6fb47d4c23b1bc7bf744f4de6296b360081a9b4c0c2049a13ff001546",
+      "source_lines": 106,
+      "han_chars": 4853
+    },
+    {
+      "order": 12,
+      "key": "delay",
+      "file": "12_delay.md",
+      "group": "c",
+      "source_sha256": "2a4101ada72951cc82a4abed9f2657e3bfe3a03a4b315f330681a8d891d4af1a",
+      "source_lines": 91,
+      "han_chars": 3680
+    },
+    {
+      "order": 13,
+      "key": "framework",
+      "file": "13_framework.md",
+      "group": "a",
+      "source_sha256": "045e15112d6763b5db7310d1f8411c79120a18d9ad158535a669738cc2b35fb5",
+      "source_lines": 184,
+      "han_chars": 6233
+    },
+    {
+      "order": 14,
+      "key": "crossborder",
+      "file": "14_crossborder.md",
+      "group": "c",
+      "source_sha256": "9925d6b759d4a053721c1813587b55294be37ce90e74208749269aea051999d9",
+      "source_lines": 94,
+      "han_chars": 3977
+    },
+    {
+      "order": 15,
+      "key": "shale",
+      "file": "15_shale.md",
+      "group": "c",
+      "source_sha256": "8781e16d7ff7bdb694b93e3997072eab55ce58ad10c54342e3653fc25e9f7524",
+      "source_lines": 122,
+      "han_chars": 4311
+    },
+    {
+      "order": 16,
+      "key": "alphabet",
+      "file": "16_alphabet.md",
+      "group": "c",
+      "source_sha256": "fae1b1cea22c579c2afdae00e5844f244e6da86c98e2b64491cef48389045f2c",
+      "source_lines": 104,
+      "han_chars": 3643
+    },
+    {
+      "order": 17,
+      "key": "audit",
+      "file": "17_audit.md",
+      "group": "b",
+      "source_sha256": "077bcfdf6ff6fbf7f7b71d74337e13f815a0758b6641b5e72586c09db404be7f",
+      "source_lines": 101,
+      "han_chars": 4468
+    },
+    {
+      "order": 18,
+      "key": "fusion",
+      "file": "18_fusion.md",
+      "group": "c",
+      "source_sha256": "b22183477e8cf1f8b04a76aad0199e131a9b1f0ea89626b778b9e6f4c92ba7e1",
+      "source_lines": 99,
+      "han_chars": 3395
+    },
+    {
+      "order": 19,
+      "key": "postscript",
+      "file": "19_postscript.md",
+      "group": "c",
+      "source_sha256": "ef005bb0617789da2e6ef7b9a5a0664b4a68b5e820169f382ae783e45039ee3f",
+      "source_lines": 13,
+      "han_chars": 828
+    }
+  ]
+}

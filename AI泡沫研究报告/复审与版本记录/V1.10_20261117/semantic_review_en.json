@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "file_sha256": {
+    "author_view_en.md": "b9ae39d91d0c3b663e7c6f5ebc6086b8e08314137171c3a923beaf1574e3a5d3",
+    "brief_en.md": "7dabab62901ce583f71d5a0f280e2b74b3f6b117ff184a921ed5598fff398fae",
+    "event_chapter_en.md": "942e7931dab16adc19a142959a2bddac5c5746eca8b77902eb41e472c4595fba",
+    "body_updates_en.json": "2294b99ad39aaaa0d9f3c450ec19da328636a377607538d52b310d67ac2c4b76"
+  }
+}

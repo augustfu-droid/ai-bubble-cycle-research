@@ -1,0 +1,72 @@
+{
+  "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx": {
+    "title": "Meta Platforms: Q3 2026 results and non-GAAP reconciliations",
+    "note": "2026-10-21. The text also cites the Class C matter in the same announcement; it is not another independent item of evidence."
+  },
+  "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx": {
+    "title": "Meta Platforms: Q2 2026 earnings release",
+    "note": "Historical comparison baseline, not a new disclosure for the current quarter."
+  },
+  "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm": {
+    "title": "Anthropic PBC: public Form S-1 registration statement",
+    "note": "2026-10-26. Includes unaudited interim financial statements. A filing is not the effectiveness, pricing or closing of an offering."
+  },
+  "https://www.anthropic.com/news/s1-sec": {
+    "title": "Anthropic: company announcement of its public S-1 filing",
+    "note": "2026-10-26. Offering status follows the original announcement and filing."
+  },
+  "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf": {
+    "title": "TSMC: Q3 2026 management report",
+    "note": "2026-10-15. Quarterly operating data."
+  },
+  "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf": {
+    "title": "TSMC: Q3 2026 financial statements",
+    "note": "See p. 4 of the original for the cash-flow check. Financial statements are in TWD million."
+  },
+  "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf": {
+    "title": "TSMC: Q3 2026 earnings-call transcript, hosted by the company",
+    "note": "Q4 revenue and full-year capital-budget guidance appear on pp. 3-4. Guidance is not an actual result."
+  },
+  "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm": {
+    "title": "ASML: Q3 2026 US GAAP financial statements",
+    "note": "Quarter ended 2026-09-27. A company filing hosted by the SEC does not imply SEC endorsement of this report's conclusions."
+  },
+  "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026": {
+    "title": "ASML: Q3 2026 earnings release"
+  },
+  "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm": {
+    "title": "Coherent: fiscal Q4 2026 earnings release",
+    "note": "Disclosed on 2026-08-12; company fiscal quarter."
+  },
+  "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results": {
+    "title": "Marvell: fiscal Q2 2027 earnings release",
+    "note": "Quarter ended 2026-08-01."
+  },
+  "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf": {
+    "title": "Micron: fiscal Q4 2026 earnings presentation",
+    "note": "The cash reconciliation in the report cites pp. 43 and 49."
+  },
+  "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf": {
+    "title": "Micron: fiscal Q4 2026 prepared management remarks",
+    "note": "Relevant passages in the report cite pp. 8-9."
+  },
+  "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial": {
+    "title": "Broadcom: fiscal Q3 2026 financial results"
+  },
+  "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Date-of-Third-Quarter-2026-Financial-Results-Conference-Call-2026-8tpGZsLS6v/default.aspx": {
+    "title": "Alphabet: announcement of the Q3 2026 earnings-call date, original-site locator",
+    "note": "Access to the original site was blocked in this research round. Verification used the distributed company release identified in the text; this report does not claim to have obtained the original-site text in this round."
+  },
+  "https://www.harvey.ai/newsroom": {
+    "title": "Harvey: company newsroom index",
+    "note": "A dynamic index, not an announcement published on a particular date."
+  },
+  "https://www.alpha-sense.com/press/alphasense-surpasses-500m-in-arr/": {
+    "title": "AlphaSense: company announcement that ARR exceeded USD 500 million",
+    "note": "The text uses the October 2025 disclosure basis. ARR is not revenue recognized in the same period."
+  },
+  "https://elevenlabs.io/blog/500m-arr-and-new-investors": {
+    "title": "ElevenLabs: USD 500 million ARR and new-investor announcement",
+    "note": "Announced 2026-05-05; the page later showed an 8/31 update. The data used in the report still refers to the first four months."
+  }
+}

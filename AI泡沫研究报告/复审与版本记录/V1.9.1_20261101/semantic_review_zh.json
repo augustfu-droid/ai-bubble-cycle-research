@@ -1,0 +1,119 @@
+{
+  "review_version": "V1.9.1_20261101",
+  "review_date": "2026-11-01",
+  "verdict": "pass",
+  "scope": "中文作者观点、独立简版及声明映射的语义、金额、样本边界与预测可证伪性复审；不修改两份稿件，不重做外部事实检索。",
+  "reviewed_files": [
+    {"file": "10_源码_markdown/V1.9.1_观点与简版_20261101/author_view_zh.md", "sha256": "736e45095ec09768c72c1de83a082c23687676459eb52d4ceda6ff6c6b84fbd6"},
+    {"file": "10_源码_markdown/V1.9.1_观点与简版_20261101/brief_zh.md", "sha256": "e6ed11212790108f29318114fbad6ed4cd090f778d71fe6689c2479e75ba2a53"},
+    {"file": "10_源码_markdown/V1.9.1_观点与简版_20261101/claim_map.json", "sha256": "84317070cf3869ffac81ae8cd5d63b237cc3dd0b61431365f03246887221b5d3"}
+  ],
+  "summary": "修订后通过。两文首句直接给出2027年上半年至2028年上半年的主观基准风险窗口，紧接四行情景矩阵；延迟即放大、现金回收不足与GPU折旧影响利润三条主线明确。边界说明没有替代作者立场，也没有把局部资金缺口扩写为全部公司亏损或必然崩盘。",
+  "open_findings": [],
+  "resolved_findings": [
+    {
+      "id": "R01",
+      "severity": "medium",
+      "category": "cash_flow_double_counting",
+      "location": {"file": "brief_zh.md", "final_line": 36, "initial_line": 23},
+      "original_problem": "原文要求经营现金再覆盖建设、必要运营和到期付款，存在对已经计入经营现金的运营付款再扣一次的歧义。",
+      "replacement_recommended": "客户回款先覆盖必要运营、形成经营现金，再检验其能否覆盖建设及未计入经营现金的到期付款。",
+      "source_locations": [
+        {"file": "V1.9_现行正文_20261031/08_风险与综合结论.md", "line": 14, "reason": "分别处理项目现金、已包含营运资本的报表经营现金及重建自由现金流。"},
+        {"file": "V1.9_现行正文_20261031/01_利润真实性拆解.md", "line": 81, "reason": "租赁本金与已进入经营现金的利息必须分开，不能重复扣。"}
+      ],
+      "resolution": "作者已采用替换口径，复核通过。",
+      "status": "resolved"
+    },
+    {
+      "id": "R02",
+      "severity": "medium",
+      "category": "sample_scope",
+      "location": {"file": "brief_zh.md", "final_line": 64, "initial_line": 51},
+      "original_problem": "Chen–Stratton结果原写整体就业，可能被读为全企业员工或全行业就业；详细专题的实际对象为样本企业工程师，主要指标为月活跃工程师。",
+      "replacement_recommended": "未检测到样本企业工程师就业的显著变化。",
+      "source_locations": [
+        {"file": "V1.9_现行正文_20261031/19_AI编程市场预测复盘.md", "line": 159, "reason": "研究结果明确为工程师就业未检测到显著变化。"},
+        {"file": "V1.9_现行正文_20261031/19_AI编程市场预测复盘.md", "line": 163, "reason": "月活跃工程师与成熟企业样本的指标边界。"}
+      ],
+      "resolution": "已限定样本企业工程师，同时保留观察性研究和未检出不等于排除减员。",
+      "status": "resolved"
+    },
+    {
+      "id": "R03",
+      "severity": "low",
+      "category": "business_mechanism_wording",
+      "location": {"file": "author_view_zh.md", "final_line": 26, "initial_line": 13},
+      "original_problem": "Seedance可以通过外部采购创造价值的主语不清，容易误读为字节采购其他服务，而非客户购买Seedance。",
+      "replacement_recommended": "Seedance可以通过外部客户购买其模型服务，也可以通过字节内部内容与广告效率创造价值。",
+      "source_locations": [
+        {"file": "V1.9_现行正文_20261031/18_AI视频短剧中美市场.md", "line": 414, "reason": "区分字节外部模型销售与内部内容、广告效率。"}
+      ],
+      "resolution": "已明确付款方与服务方向。",
+      "status": "resolved"
+    },
+    {
+      "id": "R04",
+      "severity": "medium",
+      "category": "current_diagnosis_vs_future_forecast",
+      "locations": [
+        {"file": "author_view_zh.md", "line": 18},
+        {"file": "author_view_zh.md", "line": 36},
+        {"file": "brief_zh.md", "line": 20},
+        {"file": "brief_zh.md", "line": 88}
+      ],
+      "original_problem": "新增未来破裂基准后，原有基准仍是分化及要把判断改为行业性收缩的措辞，容易形成两个相互冲突的未来基准。",
+      "replacement_recommended": "把公司分化明确标为当前状态；将行业性收缩信号写为确认预测正在兑现的证据，而非另行改变未来基准。",
+      "source_locations": [
+        {"file": "V1.9_现行正文_20261031/08_风险与综合结论.md", "line": 44, "reason": "截至10月31日的当前状态判断，不能当成新增未来时间预测。"},
+        {"file": "V1.9.1_观点与简版_20261101/author_view_zh.md", "line": 5, "reason": "本次新增的作者未来预测。"}
+      ],
+      "resolution": "已分别表述当前状态与未来预测；首页基准未被弱化。",
+      "status": "resolved"
+    }
+  ],
+  "acceptance_checks": {
+    "clear_author_position": {"status": "pass", "evidence": "两文第5行给出主要时间窗口，第9—14行前置情景矩阵，第18行重申自4月的延迟即放大主线。"},
+    "cash_vs_profit": {"status": "pass", "evidence": "author_view第24行、brief第38—40行区分折旧费用与设备现金支出；brief第36行已排除运营现金重复扣除。"},
+    "group_vs_ai_cash": {"status": "pass", "evidence": "微软季度为正、Alphabet单季负而TTM正、Amazon TTM负均正确；两文保留集团与AI项目之间的归因缺口，不做行业混加。"},
+    "no_universal_loss_or_collapse_claim": {"status": "pass", "evidence": "没有将真实需求否定、全部公司亏损、全行业AI专属缺口可精算、所有GPU三年报废或必然崩盘写成事实。"},
+    "historical_attribution": {"status": "pass", "evidence": "4月立场以作者第一人称回顾及claim_map的author_recollection登记，未伪称已找到4月原稿或预测命中；编程硬上限明确V1.5已撤回。"},
+    "forecast_status_and_falsifiability": {"status": "pass", "evidence": "预测登记日为2026-11-01，证据截止2026-10-31；未恢复旧概率、跌幅或前提。2028-06-30未出现基准链条即记未兑现，延后格不能自动算基准命中，消化格允许没有全面破裂。"},
+    "new_fact_control": {"status": "pass", "evidence": "新增的是明确标记的作者预测，不是新增11月经营事实；数值、产品及样本事实可回到既有研究。"}
+  },
+  "forecast_review": {
+    "base_window": "2027H1—2028H1",
+    "early_window": "2026-11—2027Q1",
+    "delayed_window": "2028H2—2029H1",
+    "digestion_observation_window": "2027—2029",
+    "base_settlement_date": "2028-06-30",
+    "interpretation": "这些时间是本次重新登记的作者主观判断；旧稿窗口只提供历史追溯，现有14/15章提供条件机制，并未统计识别这些日期。四情景可重叠但不组成概率分布。",
+    "remaining_limit": "通过表示预测被清楚表达且能承认未兑现，不表示时间窗口已得到实证校准或预测将会实现。"
+  },
+  "mechanical_verification": {
+    "claim_count": 41,
+    "output_location_count": 64,
+    "evidence_anchor_count": 87,
+    "output_fragment_mismatches": 0,
+    "source_anchor_mismatches": 0,
+    "source_excerpt_not_found": 0,
+    "arithmetic_checks_passed": 9,
+    "arithmetic_checks": [
+      "580−393.67＝186.33亿美元",
+      "186.33−10＝176.33亿美元",
+      "422.90−513.55＝−90.65亿美元",
+      "1683−2106.57＝−423.57亿美元",
+      "3650万×30美元×12＝131.4亿美元",
+      "24万−4万＝20万美元产能净值",
+      "18万−4万＝14万美元条件净收益",
+      "12万−9万＝3万元产能净值",
+      "900×220−90000＝108000元条件净收益"
+    ]
+  },
+  "publication_mapping_checked": {"01": 1, "18": 4, "19": 5, "20": 6, "08": 11, "14": 12, "15": 13},
+  "integration_note_for_parent": "合卷版本说明应明确：前言新增作者主观时间预测；保留的发布第12/13章仍为机制压力测试、不含日期识别模型。此项由合卷主代理处理，本复审未修改既有正文。",
+  "review_limits": [
+    "本次核验以指定既有V1.9及历史来源为基线，不是对全部外部财报和论文重新取证。",
+    "未审查尚未生成的中英文合卷分页、表格渲染或翻译；最终交付应另行完成这些检查。"
+  ]
+}

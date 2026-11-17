@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "review_version": "V1.9.2_20261101",
+  "review_date": "2026-11-01",
+  "review_type": "独立中文PDF视觉复审",
+  "method": "PyMuPDF/fitz以2×矩阵渲染为1191×1684 PNG；全部列示页均调用tools.view_image实际观看。文字提取只用于定位页码，不作为视觉PASS依据。",
+  "reports": [
+    {
+      "key": "full_zh",
+      "status": "PASS",
+      "pdf": "V1.9.2_配套发布_20261101/AI周期与泡沫研究_详细版_V1.9.2_20261101.pdf",
+      "pdf_sha256": "7fb4c29ea0b64cb54aeea36dd2bcd143c9577e2a54e46809894f3c897c8295ce",
+      "total_pages": 212,
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        67,
+        68,
+        69
+      ],
+      "page_observations": [
+        {
+          "page": 1,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_001.png",
+          "png_sha256": "77de29f261ca8a4853f83e8197c934529f87adf3c96fabb6383c1d8e0a9a4cd1",
+          "observation": "封面标题、副题、作者、版本、编辑和资料日期清晰，水印不妨碍阅读，页内留白正常。"
+        },
+        {
+          "page": 2,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_002.png",
+          "png_sha256": "74f3ea51c6f2104bf5d1841d52ab727b57a87fe6f0ad21963e5f4f44dad46eaa",
+          "observation": "作者观点标题及基准窗口突出；时间四路径表完整处于本页，三列表头、四行和结算规则均可读。新矩阵定义在页末完整结束，未被截断。"
+        },
+        {
+          "page": 3,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_003.png",
+          "png_sha256": "295e3ae7d5f62c2e4c551ce54b29e60c5ba7b5bfaa025835d71d6b81a88226bb",
+          "observation": "技术进展×付费回收矩阵完整移至页首，表头及四格未拆页；首列宽度足够，两种技术状态均正常横向呈现。后续说明及核心观点一至四完整，未挤入页脚。"
+        },
+        {
+          "page": 4,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_004.png",
+          "png_sha256": "81e354a88fa8554ecc122a9f6389926ab46f5f7e2371f50dd8ef306477e3b26f",
+          "observation": "核心观点五至九及改判结语排版连续；粗体与常规字重有区分，无重叠、截字或缺字。"
+        },
+        {
+          "page": 5,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_005.png",
+          "png_sha256": "60e385c7474deda3929f9cf761d24b2cfad0d4dc1f816f09de533a0e495c639a",
+          "observation": "版本和阅读说明及免责声明独立成页；说明13章、附篇A至F、时间预测与机制压力测试的边界，文本无缺行。"
+        },
+        {
+          "page": 6,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_006.png",
+          "png_sha256": "958df0c7c87f78832257c3b72d2f1ca370ce725f3f787c0ced6838ad89b0d690",
+          "observation": "目录首页：作者观点、研究总览、第一至第二章及子项缩进与右侧页码清楚。"
+        },
+        {
+          "page": 7,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_007.png",
+          "png_sha256": "9ebfde6a9785780db0717b5b10e51ffd792254c4d63ee62b9cfb3128613321e0",
+          "observation": "目录连续：第三章至第四章标题及子项，长标题未侵入右侧页码，无断字叠印。"
+        },
+        {
+          "page": 8,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_008.png",
+          "png_sha256": "181ed36145cf8d0a9a87907415d524e1a1f8a20e4bd785a9c48d70c9f626622b",
+          "observation": "目录连续：第四章后段、第五章与第六章，编号及层级清楚。"
+        },
+        {
+          "page": 9,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_009.png",
+          "png_sha256": "6375efa72f9300ffc120063dc918c42cd9871892c92e61a239a59925d1e68e94",
+          "observation": "目录连续：第六章后段、第七至第九章，标题及页码对齐。"
+        },
+        {
+          "page": 10,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_010.png",
+          "png_sha256": "6131d87dfb9f47bda1dfed71ff32bcba2fe2ecc8aba945e5c9f11642c10ff999",
+          "observation": "目录连续：第十、第十一、第十二、第十三章，正文连续编号1至13，未混回旧专题编号。"
+        },
+        {
+          "page": 11,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_011.png",
+          "png_sha256": "4ba6b4493027718eecb5e0825210dcb21895a3741c5d86fac0653ec5a82a4b65",
+          "observation": "目录连续：第十三章后段与附篇A至D，层级缩进和页码正常。"
+        },
+        {
+          "page": 12,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_012.png",
+          "png_sha256": "df092a532356f903c9f49174a7f7b42709a0d7178e63f705e611e172ec09decc",
+          "observation": "目录末页：附篇D续项、E、F、研究结语和参考资料索引清楚，未出现孤立截断条目。"
+        },
+        {
+          "page": 13,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_013.png",
+          "png_sha256": "d7d84cdc152a39c5b6fd22e79acf73a8aac9bcff952d9423248710bd0695eff4",
+          "observation": "研究总览第一页完整；经营和现金四列表格可读，说明及下一小节有正常留白，页尾不碰页脚。"
+        },
+        {
+          "page": 67,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_067.png",
+          "png_sha256": "21ff4c2666c4c7ae92581d9667c053cb71d8cb21f3650ac900c33ab76382d225",
+          "observation": "第三章尾段的3.8.2、3.8.3与3.9连续；核验表在完整行边界跨页，当前页四列及表头清楚。"
+        },
+        {
+          "page": 68,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_068.png",
+          "png_sha256": "5371c071ec717e1fc670635f138f5628f6dd71e9413fb66e0f1350503c46e1d8",
+          "observation": "承接3.9表格时重复表头，行内容完整；3.10后接第四章标题与两段开篇，章标题未孤立在页底。"
+        },
+        {
+          "page": 69,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/full/page_069.png",
+          "png_sha256": "a0a6df0b4c20e7b25ce863fca6781c6ef2e1f21d36f255405eff5ffc04f95ac9",
+          "observation": "第四章4.1与4.2标题、两张表格和正文正常，表头清楚，无与上一章错号或拥挤。"
+        }
+      ]
+    },
+    {
+      "key": "brief_zh",
+      "status": "PASS",
+      "pdf": "V1.9.2_配套发布_20261101/AI周期与泡沫研究_简版_V1.9.2_20261101.pdf",
+      "pdf_sha256": "f58db22e05f4a4b1a6ce38d68d147de7128a172d7941e6a7c3691f2c68085ef1",
+      "total_pages": 6,
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "page_observations": [
+        {
+          "page": 1,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/brief/page_001.png",
+          "png_sha256": "47178cd685216325a50e73ee5c847aca70c0ed71c40ef4c836f6e2202d55f457",
+          "observation": "标题、元信息、基准窗口、时间四路径及结算规则清楚；第一张表完整在同页，表头和首列换行正常。"
+        },
+        {
+          "page": 2,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/brief/page_002.png",
+          "png_sha256": "c09fe2f2c8caaa686c50b7ff7380de81e0d63af2089fe2280f43d54d21dde76f",
+          "observation": "核心观点及技术矩阵定义完整；第二张矩阵整体在本页，首列宽度足够，表头两行而状态标签正常横排，四格均完整无跨页；表后机制说明及分化观点可读。"
+        },
+        {
+          "page": 3,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/brief/page_003.png",
+          "png_sha256": "294255097673657dc7f58ffb147e5a52fcf1b7db9189c390f578ee64cdf8ca8f",
+          "observation": "中国、能源观点接续正常；第1节三家现金桥、引用和回收解释清楚，页尾未截断或与页脚相碰。"
+        },
+        {
+          "page": 4,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/brief/page_004.png",
+          "png_sha256": "25d3c6868f837dd692209d14ae3e5804e29090982142f51530f61074ff69022a",
+          "observation": "GPU两段与第2节短剧、三个厂商项目符号及结语完整；长公司名与数字无重叠或出界。"
+        },
+        {
+          "page": 5,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/brief/page_005.png",
+          "png_sha256": "8484cf53317277659b73abc4e9b564a58e94a9288c48303af402d49dad292214",
+          "observation": "第3节编程及算例完整，第4节标题后保留两段案例，无孤立标题或夹入空白页。"
+        },
+        {
+          "page": 6,
+          "status": "PASS",
+          "method": "实际tools.view_image查看fitz渲染PNG",
+          "png": "V1.9.2_配套发布_20261101/visual_independent_zh/brief/page_006.png",
+          "png_sha256": "f0aebc8b926530ea4b58b161f41cb35725110f90ab202888b782a866e85bb3a1",
+          "observation": "第4节续文、第5节投资判断及末尾编辑说明完整；页脚6/6与正文分离，结束自然，无多余空白页。"
+        }
+      ]
+    }
+  ],
+  "open_findings": [],
+  "checks": {
+    "new_author_view_and_both_matrices": "PASS：详细版2—4页，简版1—3页；两份各自的两张矩阵都完整可读。",
+    "second_matrix_first_column": "PASS：详细版3页、简版2页；首列有足够宽度，技术状态标签未挤成逐字竖排，未与相邻列重叠。",
+    "table_pagination": "PASS：新增两矩阵均整表保留在单页；抽检第三章表格67—68页按行跨页并重复表头。",
+    "toc_and_numbering": "PASS：详细版6—12页全部目录已逐页视觉查看，章号连续1—13、附篇A—F，页码列无遮挡。",
+    "third_to_fourth_chapter": "PASS：详细版67—69页已实际查看，3.10接第四章后有正文，4.1和4.2正常。",
+    "brief_all_pages": "PASS：简版6页全部实际查看，没有缺字、表格截断、重叠、超边界或多余空白页。"
+  },
+  "review_limits": [
+    "详细版为指定范围抽检：实际查看16页，未宣称逐页审完全部212页。",
+    "简版全部6页已实际查看。",
+    "本次仅视觉验收，不重做语义研究，也不覆盖英文PDF。",
+    "若PDF字节变化，须重新评估本记录的哈希绑定及受影响页面。"
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "review_version": "V1.9.2",
+  "reviewed_at_utc": "2026-11-01T14:04:31.093721+00:00",
+  "status": "translation_checks_passed_for_final_recorded_hashes",
+  "scope": "Faithful English translation of the Chinese author-view and brief texts only. No new research, no changes to Chinese sources or previous versions.",
+  "pairs": [
+    {
+      "source": "AI泡沫研究报告\\10_源码_markdown\\V1.9.2_核心观点_20261101\\author_view_zh.md",
+      "target": "AI泡沫研究报告\\10_源码_markdown\\V1.9.2_核心观点_20261101\\author_view_en.md",
+      "source_sha256": "f8138afd63cfabdd3767c5d30a36c1968a5e7f18ca716711a057166d09578daf",
+      "target_sha256": "a853b0d0d3c14ebaa3883859b9ec2ab34d2fa181131de24fdf4f1913df7663a5",
+      "english_word_count_excluding_link_destinations": 2150,
+      "checks": {
+        "source_links": 0,
+        "target_links": 0,
+        "urls_and_order_preserved": true,
+        "source_heading_count": 3,
+        "target_heading_count": 3,
+        "heading_count_preserved": true,
+        "source_table_row_count": 10,
+        "target_table_row_count": 10,
+        "table_row_count_preserved": true,
+        "unicode_dash_count": 0,
+        "first_person_april_recollection_preserved": true,
+        "forecast_boundary_preserved": true,
+        "current_state_distinguished_from_future_baseline": true,
+        "economic_state_matrix_distinguished_from_timing_paths": true,
+        "legacy_cash_and_financing_do_not_establish_new_asset_payback": true,
+        "nine_core_judgments_in_sequence": true,
+        "upper_right_cell_requires_old_asset_net_cash_cover_planned_investment_and_payments": true,
+        "source_final_hash_confirmed_by_chinese_author": true,
+        "final_company_itself_retains_cash_wording_synchronized": true
+      },
+      "source_urls_in_order": [],
+      "target_urls_in_order": []
+    },
+    {
+      "source": "AI泡沫研究报告\\10_源码_markdown\\V1.9.2_核心观点_20261101\\brief_zh.md",
+      "target": "AI泡沫研究报告\\10_源码_markdown\\V1.9.2_核心观点_20261101\\brief_en.md",
+      "source_sha256": "57cf5fbd242967436645d9dd616c0a97026c86b61c9a8ac9916c65c98207dc06",
+      "target_sha256": "773d43cb1a3f587db067e23b540589f1ad0619456ae8d20332e85aaee990c0c4",
+      "english_word_count_excluding_link_destinations": 4097,
+      "checks": {
+        "source_links": 12,
+        "target_links": 12,
+        "urls_and_order_preserved": true,
+        "source_heading_count": 7,
+        "target_heading_count": 7,
+        "heading_count_preserved": true,
+        "source_table_row_count": 10,
+        "target_table_row_count": 10,
+        "table_row_count_preserved": true,
+        "unicode_dash_count": 0,
+        "first_person_april_recollection_preserved": true,
+        "forecast_boundary_preserved": true,
+        "current_state_distinguished_from_future_baseline": true,
+        "economic_state_matrix_distinguished_from_timing_paths": true,
+        "legacy_cash_and_financing_do_not_establish_new_asset_payback": true,
+        "previously_reviewed_evidence_body_reused_exactly": true,
+        "previously_reviewed_opening_reused_exactly": true,
+        "upper_right_cell_requires_old_asset_net_cash_cover_planned_investment_and_payments": true,
+        "source_final_hash_confirmed_by_chinese_author": true,
+        "final_company_itself_retains_cash_wording_synchronized": true
+      },
+      "source_urls_in_order": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+        "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+        "https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf",
+        "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf",
+        "https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji",
+        "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+        "https://fion.ac/jellyfish.pdf",
+        "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+        "https://www.alpha-sense.com/press/alphasense-named-the-only-leader-in-market-and-competitive-intelligence-platforms/",
+        "https://www.sec.gov/Archives/edgar/data/1562088/000162828026053603/duol-20260630.htm",
+        "https://blog.character.ai/an-update-on-character-ai/"
+      ],
+      "target_urls_in_order": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+        "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+        "https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf",
+        "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf",
+        "https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji",
+        "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+        "https://fion.ac/jellyfish.pdf",
+        "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+        "https://www.alpha-sense.com/press/alphasense-named-the-only-leader-in-market-and-competitive-intelligence-platforms/",
+        "https://www.sec.gov/Archives/edgar/data/1562088/000162828026053603/duol-20260630.htm",
+        "https://blog.character.ai/an-update-on-character-ai/"
+      ]
+    }
+  ],
+  "numeric_review": {
+    "unit_rules": [
+      "1 亿元人民币 = RMB 100 million; 1 亿美元 = USD 100 million.",
+      "1 万元 = RMB 10,000; 1 万美元 = USD 10,000.",
+      "Periods and signs remain distinct; quarterly segment profit is not substituted for group or AI-project cash."
+    ],
+    "conversion_checks": [
+      {
+        "source": "580亿美元",
+        "translation": "USD 58 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "393.67亿美元",
+        "translation": "USD 39.367 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "186.33亿美元",
+        "translation": "USD 18.633 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "10亿美元",
+        "translation": "USD 1 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "176.33亿美元",
+        "translation": "USD 17.633 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "307.09亿美元",
+        "translation": "USD 30.709 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "111.21亿美元",
+        "translation": "USD 11.121 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "422.90亿美元",
+        "translation": "USD 42.290 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "513.55亿美元",
+        "translation": "USD 51.355 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "负90.65亿美元",
+        "translation": "negative USD 9.065 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "197.47亿美元",
+        "translation": "USD 19.747 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "459.84亿美元",
+        "translation": "USD 45.984 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "177.73亿美元",
+        "translation": "USD 17.773 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "1683亿美元",
+        "translation": "USD 168.3 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2106.57亿美元",
+        "translation": "USD 210.657 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "负423.57亿美元",
+        "translation": "negative USD 42.357 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2.22629亿元",
+        "translation": "RMB 222.629 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2532.6万元",
+        "translation": "RMB 25.326 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "1.16573亿美元",
+        "translation": "USD 116.573 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2081.3万美元",
+        "translation": "USD 20.813 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2.96870亿美元",
+        "translation": "USD 296.870 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "8.5亿元",
+        "translation": "RMB 850 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "131.4亿美元",
+        "translation": "USD 13.14 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "24万美元",
+        "translation": "USD 240,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "4万美元",
+        "translation": "USD 40,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "20万美元",
+        "translation": "USD 200,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "18万美元",
+        "translation": "USD 180,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "14万美元",
+        "translation": "USD 140,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "12万元",
+        "translation": "RMB 120,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "9万元",
+        "translation": "RMB 90,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "3万元",
+        "translation": "RMB 30,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "19.8万元",
+        "translation": "RMB 198,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "10.8万元",
+        "translation": "RMB 108,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "7亿美元",
+        "translation": "USD 700 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "7863万美元",
+        "translation": "USD 78.63 million",
+        "present_in_source_and_target": true
+      }
+    ],
+    "additional_checks": [
+      "The historical coding calculation is 36.5 million x USD 30 x 12 = USD 13.14 billion. The original unit error remains explicitly described as USD 13.1 billion versus $131B.",
+      "US and China team figures remain author assumptions, with capacity values separated from avoided payments and risk budgets separated from cash already paid.",
+      "The 19% employment gap remains relative to a comparison trajectory, not a layoff rate or identified net causal effect; the Chen-Stratton result is limited to engineer employment at the sampled firms."
+    ]
+  },
+  "terminology_review": {
+    "延迟即放大": "delay amplifies risk",
+    "短剧": "microdramas",
+    "海螺": "Hailuo",
+    "可灵": "Kling",
+    "经营现金": "operating cash",
+    "现金购建": "cash asset purchases/construction",
+    "融资租赁本金": "finance-lease principal",
+    "产能净值": "net capacity value",
+    "采用率": "acceptance rates in the context of usable video output",
+    "回收跟上": "Recovery keeps pace",
+    "回收落后": "Recovery lags",
+    "硬付款": "firm payments / firm payment commitments",
+    "投资批次": "investment cohort",
+    "经济寿命": "economic life",
+    "会计使用寿命": "accounting useful life",
+    "重估": "revaluation",
+    "主权资本": "sovereign capital"
+  },
+  "semantic_review": [
+    "Nine author judgments are translated in sequence, including operating profit versus revaluation, capital circulation, recovery and depreciation, AGI/efficiency, differentiated companies, applications/coding, international competition/China, power/sovereign funding, and technology/operating/investment success.",
+    "All four timing paths and revision conditions are retained, including H1 2027-H1 2028, November 2026-Q1 2027, H2 2028-H1 2029, observation in 2027-2029, and the June 30, 2028 non-fulfillment rule.",
+    "The four economic-state cells and the four timing paths remain distinct perspectives. They are not summed into probabilities, mapped one-to-one to years, or used to predetermine company winners.",
+    "The recovery axis uses the same business, investment cohort and observation period; ongoing net customer collections must cover planned recovery and firm payments without double counting. Legacy cash and financing provide a buffer but do not move an entity into the left-hand column.",
+    "Technology slowing does not erase existing capabilities. Secured financing in the lower-right cell can reduce liquidity risk, but operating recovery must catch up before moving left.",
+    "Operating profit, investment revaluation, upstream revenue, ultimate customer cash, financing, project payback and group cash remain distinct; revaluation gains/losses are adjusted symmetrically and pretax/after-tax amounts are not mixed.",
+    "GPU depreciation is not a second current-period equipment payment or a second full deduction from free cash flow. Economic lives, accounting useful lives and impairment remain distinct.",
+    "Technological progress may reduce older assets' earnings, while better utilization may extend revenue-earning lives. Relative resilience is not a guaranteed winner or a buy instruction.",
+    "The prior sixth-point translation ambiguity about whose suppliers retain cash has not been reintroduced. New point 9 states that the companies can create benefits for customers and retain cash themselves, at a purchase price that makes sense.",
+    "V1.5 remains the version that withdrew the hard coding-market ceiling; the unit error and absence of proof that deduplicated actual revenue exceeds the old calculation remain explicit.",
+    "The brief retains every paragraph of the reviewed V1.9.1 opening and evidence body. Only the new core-judgment section, four-cell matrix and its explanatory paragraphs are inserted.",
+    "The author's first-person April recollection remains an author statement rather than an independently verified historical fact. Current observed divergence remains distinct from the future baseline forecast.",
+    "Final upper-right-cell wording synchronized: lower prices must expand usage and older equipment net cash must cover investment and payments as planned before shifting toward absorption. Positive contribution cash alone is not sufficient.",
+    "Final Chinese clarification synchronized in author point 9 and the brief evidence transition: the company being researched must itself retain cash, avoiding the prior supplier-reference ambiguity."
+  ],
+  "differences_from_prior_version": [
+    "Author view is newly translated from the expanded Chinese nine-judgment version; the existing timing table and forecast boundary use previously reviewed terminology.",
+    "Brief Chinese opening and Chapters 1-5 were verified unchanged before exact reuse of their reviewed English; the new core-judgment and matrix section is fully translated.",
+    "No research facts, source links, dates, probabilities, target prices or monetary values are added. English monetary units preserve the prior verified conversions.",
+    "Markdown heading and table counts match the new Chinese sources. ASCII hyphens are used instead of Unicode dashes."
+  ],
+  "limitations": [
+    "This is translation QA, not fresh verification of filings, research findings, subjective forecasts or the author's historical April statement.",
+    "Final Chinese hashes were confirmed by the Chinese author. An independent English semantic review is tracked separately; this file does not claim to be that independent review.",
+    "Hashes identify the bytes checked. Any subsequent change to a source or target requires this record to be regenerated."
+  ],
+  "final_source_confirmation": {
+    "confirmed_by": "core_views_expansion, Chinese author",
+    "source_hashes": {
+      "author_view": "f8138afd63cfabdd3767c5d30a36c1968a5e7f18ca716711a057166d09578daf",
+      "brief": "57cf5fbd242967436645d9dd616c0a97026c86b61c9a8ac9916c65c98207dc06"
+    },
+    "scope": "Chinese author confirmed sources locked after independent Chinese content and claim-map review. This record concerns translation QA; independent English semantic review is separate."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_SAMPLED_VISUAL",
+  "pdf": "AI泡沫研究报告/V1.9现行正文版/19_AI编程市场预测复盘.pdf",
+  "pdf_sha256": "3ae7fa61a56ca5c17c68ec400f9500b93a21bdb427e00271e4ab93e3a1044f8b",
+  "pages_reviewed": [
+    1,
+    3,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    26
+  ],
+  "issues": [],
+  "scope": "仅对最终26页PDF的13个PNG样本进行人工视觉检查，检查中文缺字、截断、重叠、工资/成本长表跨页、⅓符号、公式及引用URL布局；不包含全页人工检查或事实复审。",
+  "reviewer_model": "gpt-6-luna",
+  "reasoning": "low"
+}

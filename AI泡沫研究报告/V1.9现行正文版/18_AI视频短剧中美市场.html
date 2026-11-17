@@ -1,0 +1,1101 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI视频短剧：中美市场与视频模型 V1.9</title><style>@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI视频短剧：中美市场与视频模型";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.9 · 2026-10-31";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page;font-size:9.5pt;line-height:1.7}.front h2{font-size:14pt;margin:12pt 0 8pt}.front p{margin:6pt 0}.front li{margin:5pt 0}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><section class="cover"><div class="line"></div><p class="brand">大队长出品 · AI产业周期研究</p><h1>AI视频短剧：中美市场与视频模型</h1><p class="subtitle">时长说法、Seedance与海螺、可灵及产业价值分配</p><p class="edition">V1.9 · 现行正文<br>2026年10月31日</p><p class="foot">资料按各自报告期使用 · 事实与假设分列<br>个人研究 · 不构成投资建议<br>联系邮箱：<a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p></section><section class="front"><h2>免责声明</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。</p>
+<p>资料核验截至2026年10月31日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。</p>
+<p>这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。</p>
+<h2>本次更新</h2>
+<ol>
+<li>
+<p>深化短剧对Seedance、MiniMax/海螺、可灵等模型厂商的用量、收入与利润影响，追溯“时长超过电影”的口径；重复播放不直接等于重复生成。</p>
+</li>
+<li>
+<p>在V1.8已交付正文上深化两项专题，原版本及其验收文件完整保留；当前判断、机制推断与条件算例分开。</p>
+</li>
+<li>
+<p>目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。</p>
+</li>
+</ol></section><nav class="toc"><h1>目录</h1><p>本册章节采用完整报告统一编号，目录页码按本册正文生成。本册按专题选编，收录第四章，章号沿用完整报告；跳号表示未收录其余章节，阅读顺序依本册主题安排。跨章引用指向完整报告相应章节。</p><a class="l2" href="#h-0000">第四章：AI视频短剧——从观看需求到模型利润与算力回收</a><a class="l3" href="#h-0001">4.1 先把三种生意分开</a><a class="l3" href="#h-0002">4.2 “时长超过电影”，应当怎样理解</a><a class="l3" href="#h-0003">4.3 市场确实在扩张，但没有一个数字可以叫作“中美AI短剧总盘子”</a><a class="l3" href="#h-0004">4.4 中国：免费分发与内容工业化，开始出现可以查账的样本</a><a class="l3" href="#h-0005">4.5 美国：付费意愿的新证据，更接近用户，也更容易被过度解读</a><a class="l3" href="#h-0006">4.6 视频模型已进入生产，但不是把文本大模型换一个名字</a><a class="l3" href="#h-0007">4.7 真实价格：消费者会员、API刊例和企业净价是三层账</a><a class="l3" href="#h-0008">4.8 MiniMax：视频已是商业化支柱，集团却正在变成另一种收入结构</a><a class="l3" href="#h-0009">4.9 可灵与字节：同样做视频，获利路径并不相同</a><a class="l3" href="#h-0010">4.10 具名生产链：模型究竟进入了正片还是宣传材料</a><a class="l3" href="#h-0011">4.11 从IP到现金：五个环节，五次价值分配</a><a class="l3" href="#h-0012">4.12 一部120分钟短剧，究竟给模型商带来多少钱</a><a class="l3" href="#h-0013">4.13 三组纯假设算例：降本如何被返工、获客和账期重新分配</a><a class="l3" href="#h-0014">4.14 AI带来的机会，先在完整流程里找</a><a class="l3" href="#h-0015">4.15 护城河不是“会用模型”，而是别人复制后仍然留下什么</a><a class="l3" href="#h-0016">4.16 平台与上市公司敞口：先核归属，再谈价值</a><a class="l3" href="#h-0017">4.17 版权和监管进入成本表，而不是附录里的免责声明</a><a class="l3" href="#h-0018">4.18 最强反方：内容更便宜，可能让赚取利润更难</a><a class="l3" href="#h-0019">4.19 降价、效率与需求弹性，哪一个决定上游受益</a><a class="l3" href="#h-0020">4.20 对AI泡沫论文：应当上调哪一部分，又怎样推翻判断</a><a class="l2" href="#h-0021">参考资料索引</a></nav><main><h2 id="h-0000">第四章：AI视频短剧——从观看需求到模型利润与算力回收</h2>
+<p>资料截至2026年10月31日北京时间。研究对象为中美短剧消费、AI生产流程，以及Seedance、MiniMax/海螺、可灵等视频与多模态模型的价值捕获；本节不对相关证券定价。本文把“有人观看并付费”“AI进入生产”“模型取得外部收入”“模型及算力资本获得足够回报”拆成可以连续验证的经营链。</p>
+<p>本轮最重要的更新，是视频模型已经有真实商业收入和具名正片工作流，不能再只把它当演示。短剧能为模型提供持续的专业生产订单，也能让成本下降后的长尾题材变得可拍。但成片可以反复播放，观看时长不直接等于生成算力；模型质量提高既可能带来新客户，也会减少每部作品的废片收费。要判断Seedance、海螺和可灵是否受益，必须把产品、采购、净收费、推理、训练和发行回款连起来。</p>
+<h3 id="h-0001">4.1 先把三种生意分开</h3>
+<p>本专题所说的短剧，是以连续故事吸引观众反复观看的短篇幅剧集；研究重点是移动端竖屏剧，同时包括采用类似分发与变现方式的AI漫剧。它不包括所有AI广告片、单条创意短视频，也不把传统长篇动画都归入短剧。中国现行《微短剧发展管理办法》的法定定义还包括单集少于二十分钟等条件，明显宽于海外应用常见的一两分钟竖屏剧，跨国统计不能直接换算。<a href="https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html">国家广电总局《微短剧发展管理办法》</a></p>
+<table>
+<thead>
+<tr>
+<th>制作类型</th>
+<th>核心生产方式</th>
+<th>AI可能改变什么</th>
+<th>应避免的统计错误</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统真人短剧</td>
+<td>演员、场景、摄影和人工后期为主体</td>
+<td>可以先作为比较基准</td>
+<td>把其全部收入计入AI生成市场</td>
+</tr>
+<tr>
+<td>AI辅助真人短剧</td>
+<td>真人拍摄为主体，AI参与剧本、预演、配音、字幕、特效或广告素材</td>
+<td>缩短部分流程，增加测试版本，改善本地化效率</td>
+<td>因为用了一个AI工具，就把整部剧认定为AI主生成</td>
+</tr>
+<tr>
+<td>AI主生成短剧</td>
+<td>大部分关键画面由模型生成，人工负责故事、角色设定、取舍、剪辑和审核</td>
+<td>降低部分场景、演员及视效约束，扩大可试验题材</td>
+<td>把模型输出秒数当成可售成片秒数，或把“主生成”等同无人制作</td>
+</tr>
+</tbody>
+</table>
+<p>AI主生成还要分动漫化、动态漫与仿真人。动漫化作品可以采用风格化动作与剪辑；仿真人作品需要观众接受角色表情、动作和镜头连续性。两者的观感、返工原因和版权资产不同，不能用一部低运动量动态漫的成本，推算所有仿真人短剧的成本。这是生产机制判断，不是两种类型的行业成本排名。</p>
+<p>真正的生意可以浓缩为一句话：<strong>观众为下一段故事付费，或者把注意力交给广告；企业必须以足够低的完整成本，持续找到愿意回来的人。</strong>模型能降低内容供给成本，却不会自动增加一个人的时间、娱乐预算和复购意愿。</p>
+<h3 id="h-0002">4.2 “时长超过电影”，应当怎样理解</h3>
+<p>这句话抓住了一个真实变化：短剧已经能占用相当长的注意力，不再只是零散几分钟。但它混合了作品片长、应用使用、观众观看与行业收入四种不同指标。此次向原件追溯，最接近的中文说法，是把红果用户一天的应用使用时间，比作完整看一部电影；不是一项覆盖影院、电视、电脑和手机的电影观看调查。</p>
+<table>
+<thead>
+<tr>
+<th>原始证据</th>
+<th>正确的时间与分母</th>
+<th>可以成立的结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QuestMobile，2026年2月红果免费短剧</td>
+<td>图中“月人均单日使用时长”125.0分钟；并非每次连续使用125分钟</td>
+<td>使用强度高；125分钟与某部120分钟电影可作长度比喻，不能认定这群人实际看短剧超过看电影</td>
+</tr>
+<tr>
+<td>中国网络视听协会《中国微短剧行业发展白皮书（2025）》主要发现</td>
+<td>2025年8月微短剧App图上值120.5分钟，1月95.7分钟；不是1—8月平均</td>
+<td>原文根据长视频历史趋势推测“或已超过长视频应用”，没有同期全端电影对照</td>
+</tr>
+<tr>
+<td>Omdia，2025年第四季度美国移动App</td>
+<td>ReelShort每用户每日35.7分钟，Netflix24.8、Prime Video26.9、Disney+23.0分钟</td>
+<td>指定短剧App在手机上的人均使用强度超过这些流媒体App；不是总观看量超过，也不是全部电影被替代</td>
+</tr>
+<tr>
+<td>一部短剧的总长度</td>
+<td>例如假设80集×1.5分钟＝120分钟</td>
+<td>单集短、整部很长可以同时成立；不能把120分钟总片长当作每名观众均已观看120分钟</td>
+</tr>
+</tbody>
+</table>
+<p>原件：<a href="https://www.questmobile.com.cn/research/report/2041710682848727041/">QuestMobile报告及原图</a>、<a href="https://www.cnsa.cn/module/download/downfile.jsp?classid=0&amp;filename=d2617fc1d3d742248c26765b0230b970.pdf">协会PDF，印刷第8页</a>、<a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia正式发布</a>。公开稿没有提供足以重建全部分母的用户面板；不将月活人数乘日均时间再乘自然日，伪造行业总分钟。</p>
+<p>这不是削弱需求证据。它改变的是判断的准确位置：连续故事已经在手机上建立强消费习惯，某些AI作品也能让付费观众看很久；下一步应研究更新频率、复购和回款。还有一个更直接影响上游估值的区别：<strong>预制成片被播放一百万次，不需要视频模型再生成一百万遍。</strong>观看增长增加的带宽、存储、推荐与广告计算，另属分发成本。只有新增作品、新镜头、新版本、独立广告素材，以及实时个性化生成，才直接增加相应的视频生成任务。后者须有独立产品和调用证据，不能从今天的预制短剧观看时间中预设。</p>
+<h3 id="h-0003">4.3 市场确实在扩张，但没有一个数字可以叫作“中美AI短剧总盘子”</h3>
+<p>下表保留能够回读的原始口径。“估计”表示统计机构估算，“预测”表示未来或全年判断，“公司披露”表示经营主体提供的数据；它们都不自动等于独立审计结果。</p>
+<table>
+<thead>
+<tr>
+<th>来源与观察期</th>
+<th>可引用的结果</th>
+<th>能说明什么</th>
+<th>不能说明什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensor Tower，2026年第一季度，全球短剧应用</td>
+<td>下载超过8.5亿次，同比约+140%；应用内购收入估计约7.5亿美元，同比约+20%</td>
+<td>独立应用的获取用户与内购活动继续增长</td>
+<td>不是AI专属；不是美国全年；下载不是去重付费人数，内购不等于企业净现金</td>
+</tr>
+<tr>
+<td>Omdia，2026年2月发布</td>
+<td>预测2026年全球微短剧收入140亿美元，中国以外30亿美元，其中美国15亿美元</td>
+<td>美国是值得单独研究的海外收入市场</td>
+<td>全年预测不是全年实绩；包含不同制作方式，不能全部分给AI</td>
+</tr>
+<tr>
+<td>QuestMobile，2026年2月国内用户观察</td>
+<td>短剧行业月活用户约7.18亿，红果免费短剧月活约3.04亿</td>
+<td>国内短剧已有庞大消费场景，平台分发值得重视</td>
+<td>用户规模不是收入；不能当AI用户规模，也不能把各平台月活简单相加</td>
+</tr>
+<tr>
+<td>兑吧，2026年上半年</td>
+<td>公司单列AI短剧业务收入2.22629亿元人民币</td>
+<td>已出现AI短剧商业收入的正式财务披露</td>
+<td>不代表中国全市场，也不代表纯模型生成收入或独立分部净利润</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://sensortower.com/blog/state-of-short-drama-apps-2026-report">Sensor Tower 2026短剧应用报告</a>、<a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia 2026年预测</a>、<a href="https://www.questmobile.com.cn/research/report/2041710682848727041/">QuestMobile原始报告</a>、<a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧2026中期报告，第4、30页</a>。兑吧数字为公司未经审核中期披露；媒体转述不是另一份独立财务验证。</p>
+<p>这些数字不能相加。应用内购与行业总体收入的覆盖范围不同，市场预测与收入实绩不同，用户规模与货币规模更不同。尤其不能用“全球短剧市场×一个未经验证的AI渗透率”得出精确的美国AI短剧收入，再给模型公司分配份额。</p>
+<p>Sensor Tower的下载增速快于内购增速，是一个需要解释的信号，不是盈利崩溃的证据。可能原因包括免费模式扩大、新增用户所在地区变化，以及新用户尚未成熟。其原文还显示，当季下载增长集中在东南亚、拉美和印度；因此全球下载爆发不能被写成美国高付费用户同步爆发。反过来，季度内购仍然增长，也不应被忽略。<a href="https://sensortower.com/blog/state-of-short-drama-apps-2026-report">Sensor Tower报告及方法说明</a></p>
+<p>本轮没有将媒体转述的“国内短剧加漫剧1210亿元”“AI短剧400亿元”等预测纳入核心市场规模计算。一些材料把内容收入、广告交易、制作服务和模型服务分别列为市场，但这些钱可能沿同一条价值链流动。即使某个预测最终准确，制作方付给模型商的钱，也不能再与终端内容收入相加，冒充新增消费者需求。当前证据不足以给中美AI主生成短剧各自一个可靠的总收入、利润率和市场份额。</p>
+<h3 id="h-0004">4.4 中国：免费分发与内容工业化，开始出现可以查账的样本</h3>
+<p>中国市场至少有三条不同路径：独立短剧应用通过广告或付费变现；短视频平台与小程序承接内容和交易；制作方把成片、版权或承制服务卖给平台。AI进入每条路径后的收益分配并不相同。</p>
+<p>在免费模式里，观众未必直接付钱，广告主才是主要付款方。平台掌握推荐、广告展示、结算规则与用户关系，制作方可能取得保底、分成或固定承制费。制作成本下降可以增加平台可选择的内容，也可能降低平台向制作方支付的价格。对一家依靠单个平台分账的工作室而言，更大的观看量未必对应更强的议价权。</p>
+<p>点众在2026年4月的中国网络视听大会上公布AIGC共创计划，包含国内外剧本、成片和承制方的不同保底与分成方案。这说明采购和发行正在围绕AI内容建立产品化合作方式。那些金额属于招募方案和评级上限，不能当每个团队都能拿到的报价，更不能当已支付收入或行业均价。本专题不把“最高保底”“最高分成”代入盈利测算。<a href="https://www.vidchina.cn/show/201">中国网络视听大会对点众共创计划的原始报道</a></p>
+<p>兑吧提供了更直接的收入证据。其2026年中期报告单列AI短剧收入2.22629亿元，占集团收入约51.2%；集团同期仍有2532.6万元亏损。报告只设一个可报告经营分部，不能从集团损益倒推出AI短剧的独立净利率。10月14日的港交所公告进一步称，根据未经审核管理账目的初步评估，预期AI短剧业务在7、8、9月连续单月录得纯利，但没有披露利润金额，并明确未经核数师审核或审阅。这是积极的经营信号，其证明强度仍低于经核验、可连续比较的分部利润和现金流。<a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧中期报告</a>、<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400004_c.pdf">兑吧10月14日正式公告</a></p>
+<p>中文在线则说明，生产降本与上市公司盈利不能合并判断。其上半年短剧及IP衍生品业务收入为4.11260亿元，但该类别包含不同内容与衍生业务，不是AI收入。10月26日披露的三季报把营业成本下降的重要原因归于部分海外短剧转为AI制作，同时披露前三季度集团收入8.32732亿元、归母净亏损1.32051亿元，经营现金净流入4279.60万元。AI应用、成本下降、整体亏损可以同时存在。<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线2026半年报，第22页</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线2026三季报，第2—4页</a></p>
+<p>还有一项容易被正面叙事漏掉的现金变化：中文在线上半年经营现金净流入1.26802亿元，前三季度累计仅4279.60万元，二者相减，第三季度单季经营现金净流出约8400.57万元。这是集团口径的算术结果，不能全部归因于AI短剧；但它足以否定“上半年转正，所以此后可以稳定自我造血”的直线外推。同期收入下降、旧业务调整、回款与付款时点，都需要继续拆解。<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">半年报现金流量表</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">三季报现金流量表</a></p>
+<p>这两家公司应并列看：一个出现明确命名的AI业务收入和初步月度盈利信号，另一个说明AI降本没有立即消除集团亏损及现金波动。选择其中一个证明全行业成功或失败，都会放大样本偏差。</p>
+<h3 id="h-0005">4.5 美国：付费意愿的新证据，更接近用户，也更容易被过度解读</h3>
+<p>美国市场的核心问题不是能否制作英文短剧，而是能否用可承担的成本取得付费用户，并让其在第一部剧之后继续消费。ReelShort、DramaBox等产品的全球表现不能直接当美国收入；美国受众也不能与这些产品的经营主体注册地、出资方国籍混为一谈。中国企业开发面向美国的产品，仍然需要美国市场层面的用户、价格与回款证据。</p>
+<p>HOLYWATER与Owl &amp; Co在2026年7月发布的报告摘要，是本轮最值得新增、也最需要克制使用的材料。其AI剧应用My Muse的付费转化率为23.6%，真人剧应用My Drama为23.9%；摘要同时引用对2737名My Drama用户的调查。该数据来自运营商自身产品，公开发布稿没有提供足以复现比较的完整用户分母、各国构成、获客来源、价格和观测窗口。本轮访问了55页报告入口，但未取得可逐页检查的完整正文，因此只使用能在正式发布稿核对的结果。<a href="https://www.holywater.tech/report">HOLYWATER报告入口</a>、<a href="https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html">HOLYWATER与Owl &amp; Co正式发布稿</a></p>
+<p>23.6%与23.9%相差0.3个百分点，不能据此宣布AI和真人“统计等效”。愿意进入AI应用的人，可能本来就更接受这种表现方式；两款应用也可能有不同的免费入口、付费墙、流量定向和内容类型。2737名某应用用户不能代表全体美国观众，更不能拿这份问卷样本量，替代两款应用转化率各自的样本量。这里最稳妥的结论是：运营商观察到了某些AI内容用户的实际付费行为；“观众不会为AI剧付钱”已经不是一个可以不加检验地采用的前提。</p>
+<p>同一发布稿称，My Muse旗舰作品的付费订阅者中，约九成在累计观看100分钟后仍在观看。这个条件是“旗舰作品＋已经付费的观众＋特定累计时长”，不是所有下载者的完播率，更不是全站90%留存。观看某一部剧、次日回访、第二部剧转化、三个月续订，分别回答不同的问题。对资本回收最关键的，往往是后两项及其对应的净收入，而非某个最好的观看节点。<a href="https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html">HOLYWATER正式发布稿</a></p>
+<p>Google Cloud客户案例补充了制作机制：HOLYWATER用角色与场景设定、分镜、图像和视频生成组织流程，公司称制作速度约为传统竖屏视频生产的8倍，My Muse采用新流程后的ARR约为此前的10倍。案例没有给出绝对收入基数、可比投入与完整利润表，且是供应商发布的客户成功材料，不是对运营商结果的独立审计。它支持“已有团队把模型装进持续生产流程”的判断，不能证明收入变化由模型单独造成，也不能把ARR当已经确认的年度收入或现金。<a href="https://cloud.google.com/customers/holywater">Google Cloud的HOLYWATER案例</a></p>
+<p>10月29日，HOLYWATER研发负责人在书面访谈中谈到大量广告素材测试，以及先观察首日广告回报，再结合长期价值和留存决定是否继续获客。这项访谈的价值是解释工作方式；其成本、回本周期及盈利表述仍是受访者单源，不能给全行业套用。尤其不能因首日投放回报改善，就假定所有未来续费已经到账。<a href="https://www.streaming-radar.com/p/interview-with-illia-berestovskyi-holywater-tech">Streaming Radar对HOLYWATER的访谈</a></p>
+<p>中国与美国的差别因此不是“一个免费、一个付费”的绝对划分。两边都有混合模式。现阶段更值得比较的是：谁掌握用户关系、谁承担试错和投流、广告或订阅净收益怎样结算，以及内容能否在本地语境中获得第二次消费。中国团队的制作经验是可迁移能力，美国用户的付费行为仍须重新验证。</p>
+<h3 id="h-0006">4.6 视频模型已进入生产，但不是把文本大模型换一个名字</h3>
+<p>短剧生产同时需要多种模型。语言模型负责改编、剧本、分镜说明和任务编排；图像模型建立人物、服装和场景参考；视频模型处理运动、镜头和时序；语音、音乐及口型工具负责声音和本地化。它们可以逐渐融合，也可以分别采购。因而“MiniMax的Token增长”“豆包用户增长”和“视频付费生成秒数”不是同一个指标，更不能把文本Token与视频Token按数量直接相加比较算力。</p>
+<p>截至2026年10月31日，主流供给已经迭代到下面这些可具名核验的版本。表中是产品能力边界，不是质量排名；同品牌不同入口的权限、模型发布时间、分辨率和计费未必同步。</p>
+<table>
+<thead>
+<tr>
+<th>厂商、模型与可核验入口</th>
+<th>本次核对的单次生成边界</th>
+<th>对短剧制作的具体含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字节Seedance：Seedance 2.5；国内即梦、火山方舟；海外Dreamina、BytePlus ModelArk</td>
+<td>火山资源页列4—30秒；官方模型页强调参考控制与编辑。2.0、Fast、Mini仍在API价目表中</td>
+<td>一个长镜头可以少拆几段，困难镜头与低成本草稿可以分配不同版本；不能由30秒上限推出整部120分钟连续生成</td>
+</tr>
+<tr>
+<td>MiniMax：H3于7月31日发布，8月3日开放权重；海螺与MiniMax Design、Open Platform API</td>
+<td>H3为4—15秒；开放模型基础输出768p，托管再生成可到2K；有原生立体声音频。海螺2.3/2.3 Fast仍有旧版API</td>
+<td>模型层、创作工作台和API是不同收费入口；开放权重给自部署与定制留出路径，托管高分辨率和工作流仍可收费</td>
+</tr>
+<tr>
+<td>快手可灵：Kling 4.0于10月15日上线，10月17日官方公告</td>
+<td>单次原生最长30秒，最多15项参考素材与10张关键帧；延长功能与原生单次生成不同</td>
+<td>价值在复杂动作及关键镜头可控性。发布稿当时称企业API将开放，不能把消费端上线日当作所有企业入口可用日</td>
+</tr>
+<tr>
+<td>Google：Veo 3.1企业模型；Google Cloud企业入口、Flow等创作入口分别核验</td>
+<td>企业模型文档列4、6或8秒，参考图模式有8秒限制；Gemini API的Veo 3.1 Preview已于10月22日关闭</td>
+<td>HOLYWATER案例使用Veo不意味着当前仍能调用旧Preview端点；企业GA模型与旧开发者预览价不能混为一体</td>
+</tr>
+<tr>
+<td>Runway：Gen-4.5；Runway创作产品和Runway Dev</td>
+<td>官方创作帮助页列2—10秒、基础720p，文本/图像输入</td>
+<td>其开发平台还销售其他厂商模型；使用Runway工作台不等于画面一定由Runway自研模型生成</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://seed.bytedance.com/en/models">Seed官方模型页</a>、<a href="https://www.volcengine.com/activity/seedance25">火山Seedance 2.5资源页</a>、<a href="https://www.minimax.io/blog/minimax-h3">MiniMax H3发布</a>、<a href="https://www.minimax.io/news/minimax-h3-open-source">H3开放权重说明</a>、<a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kelingaixinyidaimoxingklin1g-40zhengshishangxian/">可灵4.0正式公告</a>、<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate">Veo企业模型规格</a>、<a href="https://ai.google.dev/gemini-api/docs/video">Google旧Preview关闭通知</a>、<a href="https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5">Runway Gen-4.5规格</a>。</p>
+<p>技术进步应当落到三个生产结果：一是同一人物跨镜头不变脸、不换服装、不丢关系；二是导演能要求某个动作在某一时刻发生，而不只是挑选偶然好看的输出；三是能只修改错误部分，不必把已经合格的镜头全部重做。单次时长延长可能减少接缝，却也可能让一个局部错误毁掉更长一段输出。创作者最终买的是“按时通过验收的镜头”，不是参数表中最长的一段视频。</p>
+<p>这也解释了为什么短剧是比创意短片更严格的生产测试。一条独立奇观视频只须在数秒内吸引注意；连续剧需要观众认识同一个人、记住前因并相信后果。片段视觉质量、跨场景一致性和整部剧可看性是三种能力。平台榜单检验第三种，API验收与返工记录才能检验前两种怎样转化为成本。</p>
+<h3 id="h-0007">4.7 真实价格：消费者会员、API刊例和企业净价是三层账</h3>
+<p>以下是2026年10月31日回读到的公开价格快照，均保留原币种。它们不是同质量测评，也没有把人民币换成美元后排“性价比冠军”。同一秒的分辨率、声音、参考素材、生成模式及可用率不同，最后能交付的价值就不同。</p>
+<table>
+<thead>
+<tr>
+<th>入口与具体规格</th>
+<th>公开收费单位与示例</th>
+<th>采购时必须保留的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>火山方舟Seedance 2.5，480p/720p，无输入视频</td>
+<td>70元/百万视频Token；官方5秒16:9示例：480p为3.36元，720p为7.56元</td>
+<td>有输入视频时单价42元/百万，但输入时长也计入Token且存在最低用量；不能看到单价较低就认定编辑更便宜</td>
+</tr>
+<tr>
+<td>火山方舟Seedance 2.0，720p无输入视频</td>
+<td>官方5秒示例：标准4.97元、Fast4.00元、Mini2.48元</td>
+<td>版本并存体现质量/速度/价格分层；生成失败不收费，不等于成功输出但导演弃用也退款</td>
+</tr>
+<tr>
+<td>海外BytePlus Seedance 2.5</td>
+<td>首页列无输入视频10.7美元/百万Token、有输入视频6.4美元/百万Token</td>
+<td>国际入口另有资源包、区域和抵扣规则；不能直接套中国即梦会员价格</td>
+</tr>
+<tr>
+<td>MiniMax H3官方API</td>
+<td>768p输出0.08美元/秒、2K输出0.13美元/秒；相应输入视频也按秒收费</td>
+<td>首5张输入图免费，超额另计；再生成到2K是另一个收费任务；本表按直接托管生成，不把本地算力视作免费</td>
+</tr>
+<tr>
+<td>MiniMax海螺2.3旧版官方API</td>
+<td>768p、6秒每条0.28美元；10秒每条0.56美元</td>
+<td>按条、分档计费，不是严格线性秒价。现行视频包支持海螺，明确暂不支持H3</td>
+</tr>
+<tr>
+<td>可灵官方开发平台／独立渠道</td>
+<td>官方采购入口可确认，本次未取得可完整回读的4.0直销价表；Cloudflare自己的Kling 4.0价为720p每秒0.157美元</td>
+<td>后者是Cloudflare销售价，不是快手净到手价，也不能填补快手直销价格缺口</td>
+</tr>
+<tr>
+<td>Runway Dev自研Gen-4.5／Gen-4 Turbo</td>
+<td>每秒12／5积分，开发者积分每个0.01美元，即0.12／0.05美元/秒</td>
+<td>创作端月费与Explore模式另计；聚合平台转售其他模型的收费不是Runway自研模型收入</td>
+</tr>
+<tr>
+<td>Google企业Veo 3.1</td>
+<td>官方Cloud价格表列720p/1080p带音频0.40美元/计费count，不带音频0.20美元/count</td>
+<td>本次表格渲染使用count而非明确秒，故不将其代入秒价算例；应以采购SKU和账单单位落实。已关闭的Gemini Preview旧秒价不作为现行采购依据</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://docs.volcengine.com/docs/ark/model-pricing?lang=zh">火山模型价表及秒价示例</a>、<a href="https://www.byteplus.com/en/">BytePlus官网刊例</a>、<a href="https://platform.minimax.io/docs/pricing/overview">MiniMax官方价表</a>、<a href="https://kling.ai/dev/pricing">可灵官方采购入口</a>、<a href="https://developers.cloudflare.com/ai/models/klingai/kling-v4/">Cloudflare自营渠道价</a>、<a href="https://docs.dev.runwayml.com/guides/pricing/">Runway Dev价格</a>、<a href="https://cloud.google.com/model-garden/pricing">Google Cloud现行价格表</a>。Google单位暂不具备本轮可重复确认条件，宁可保留该一行的限定，也不把第三方报价补成厂商事实。</p>
+<p>价格还要经过套餐利用率检验。MiniMax旧海螺资源包列示5%—20%折扣，但有效期一个月、到期余量清零。即使某包相对单买名义便宜20%，若只用完60%的付费容量，有效单位成本相对单买仍为0.8÷0.6＝1.333倍。若用户用的是H3，则旧海螺包的折扣根本不适用。火山Seedance 2.5活动页的200元/月、500元/三个月、1000元/三个月等购买额，也不是“这些钱无限生成”；抵扣范围、期限和比例须看订单规则。该活动注明截至10月31日，不能把当日促销外推为长期价格。<a href="https://platform.minimax.io/docs/pricing/overview">MiniMax资源包条件</a>、<a href="https://www.volcengine.com/activity/seedance25">火山资源包活动</a>、<a href="https://docs.volcengine.com/docs/acitvity-rule/seedance-25?lang=zh">活动规则</a></p>
+<p>因此，制作方要分别记四个数：对外显示的刊例价、含税及渠道后的支付额、实际用掉的有效额度、通过验收的可用成片。模型商则要记收入确认后的净收入、代理商分成、免费推理和退款成本。企业大单的真实折扣未披露时，不把“联系销售”自行翻译成七折或五折。消费者会员提供的编辑、素材、排队优先级等权益，也不能全部分摊成某一模型的收入。</p>
+<h3 id="h-0008">4.8 MiniMax：视频已是商业化支柱，集团却正在变成另一种收入结构</h3>
+<p>MiniMax是这里最能看清上下游联系的样本，因为它同时披露过海螺产品收入、开放平台收入及模型成本。先看最硬的一点：2025年前九个月，海螺AI产品收入1746.4万美元，占集团32.6%；2024年为234.7万美元、7.7%。这说明视频产品早已不是零收入实验。但海螺收入包含各种创作者需求，不能说其中三分之一来自短剧；视频API还可能计在开放平台，海螺产品收入也不能当作全公司视频收入的完整上限。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">MiniMax招股书，印刷第6、416页</a></p>
+<table>
+<thead>
+<tr>
+<th>指标，百万美元</th>
+<th style="text-align: right;">2024全年</th>
+<th style="text-align: right;">2025全年</th>
+<th style="text-align: right;">2026上半年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>集团收入</td>
+<td style="text-align: right;">30.523</td>
+<td style="text-align: right;">79.038</td>
+<td style="text-align: right;">116.573</td>
+</tr>
+<tr>
+<td>AI原生产品收入</td>
+<td style="text-align: right;">21.805</td>
+<td style="text-align: right;">53.075</td>
+<td style="text-align: right;">42.644</td>
+</tr>
+<tr>
+<td>开放平台及其他AI企业服务收入</td>
+<td style="text-align: right;">8.718</td>
+<td style="text-align: right;">25.963</td>
+<td style="text-align: right;">73.929</td>
+</tr>
+<tr>
+<td>集团毛利</td>
+<td style="text-align: right;">3.738</td>
+<td style="text-align: right;">20.079</td>
+<td style="text-align: right;">20.813</td>
+</tr>
+<tr>
+<td>集团毛利率</td>
+<td style="text-align: right;">12.2%</td>
+<td style="text-align: right;">25.4%</td>
+<td style="text-align: right;">17.9%</td>
+</tr>
+<tr>
+<td>研发开支</td>
+<td style="text-align: right;">188.979</td>
+<td style="text-align: right;">252.771</td>
+<td style="text-align: right;">296.870</td>
+</tr>
+<tr>
+<td>经调整净亏损，非IFRS</td>
+<td style="text-align: right;">244.243</td>
+<td style="text-align: right;">250.856</td>
+<td style="text-align: right;">293.031</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0302/2026030202838_c.pdf">2025年度经审计业绩及2024比较数</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">2026中期未经审计业绩</a>。中期收入、毛利及研发与<a href="https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160">公司原始经营发布</a>一致；两者是同一公司口径，不伪装为两次独立审计。半年度不能与全年直接计算同比；2026上半年毛利率同比比较数为2025上半年的12.1%。</p>
+<p>这里有三项实质判断。</p>
+<p>第一，不能继续用2025年海螺占比来代表今天的MiniMax。2026上半年开放平台及企业服务已占收入63.4%，原生产品36.6%；增量可以来自语言、编程、语音、视频和套餐。财报未给H3、海螺、短剧各自的收入和毛利，H3又在7月末才发布，不能用它解释1—6月收入。公司披露7月Token消费较1月增长20倍，证明总体调用扩张；它没有提供按模态拆分，也不是20倍视频收入或20倍物理GPU需求。</p>
+<p>第二，毛利改善与集团自我造血是两件事。2026上半年毛利2081.3万美元，仅相当于同期研发开支的约7.0%，研发又不包括所有销售、行政开支。同比毛利率上升有积极含义，却还不足以覆盖维持前沿模型竞争的投入。2025全年25.4%与2026上半年17.9%的差别，也提醒投资者不要把早期某个毛利率当成稳态。不能在未取得分部成本时，把下降归咎于视频或归功于语言模型。</p>
+<p>第三，收入增长仍显著依赖全球商业化与融资。2025年中国内地以外收入占73.0%，2026上半年为60.8%。6月末公司所称现金余额13.228亿美元是包含金融资产、定期存款等的广义口径，现金及等价物为9.309亿美元；披露明言上半年资金需求主要由融资现金满足。现金余额上升不能代替经营现金转正，亦不能用余额除当期亏损就给出精确生存期。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">中期业绩地域与资金说明，第5、8页</a></p>
+<p>招股书把训练相关云费用列入研发，把商业推理云费用主要列入销售成本；2025年前九个月推理云成本占销售成本92.7%。同一时期原生产品整体毛利率4.7%，开放平台及企业服务69.4%，但两者包含不同产品、用户与合同，后者也不是海螺API毛利。渠道迁移可能改变收费和成本结构，必须在同口径分解后判断是否改善，而不能把历史高毛利企业业务比例机械乘到2026年的收入上。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">招股书，印刷第418—419页</a></p>
+<p>短剧对MiniMax的真正战略意义，是给视频、语音、图像与编排提供可反复采购的专业场景，并把“偶尔生成好玩内容”推进到生产预算。如果这些客户能持续回款、重复买服务，收入质量会比靠免费额度吸引注册更强。H3开放权重又令结论多了一层：专业团队可以把基础生成搬到自有算力，再购买托管的上下文处理或2K再生成。模型采用扩大，不必等比例扩大MiniMax的托管收入；商业授权、服务可靠性和高价值工作流，反而成为必须检验的收费点。</p>
+<h3 id="h-0009">4.9 可灵与字节：同样做视频，获利路径并不相同</h3>
+<p>快手提供了比“模型热度”更直接的收入数据：可灵2026年第一季度收入超过6.5亿元，第二季度超过8.5亿元，合计上半年超过15亿元。它证明视频工具已经能形成有分量的外部付费业务。第二季度可灵收入相当于集团355亿元收入的至少约2.4%，仍不能把整个集团增长或利润变化归给可灵；公司没有在这份业绩中单列可灵完整毛利、研发分摊、现金流和短剧客户占比。<a href="https://ir.kuaishou.com/node/11461/pdf">快手2026Q1正式业绩</a>、<a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手2026Q2正式业绩</a></p>
+<p>可灵的外部创作者订阅和企业API，与快手内部广告、内容生态是两条相关但不同的获利路径。前者直接收取工具费，后者可能降低创意生产成本、增加可投放素材或改善营销转化。后一种收益应当用客户净广告回报、快手增量广告毛利验证，不能把生成素材数直接算作API收入。快手集团第二季度毛利率51.6%，也不是可灵毛利率；内部训练、外部API和原有流量业务的费用归属需要另拆。</p>
+<p>字节的结构更复杂：Seedance是模型能力，即梦/Dreamina是创作产品，火山方舟/BytePlus是对外模型与云入口，红果/抖音等则是内容发行或广告场景。优势可能来自把内容生产、模型分发、广告测试和消费反馈接起来；但本轮未取得可独立拆分的Seedance收入、毛利和训练开支，不能把字节集团收入、红果全部广告或即梦所有会员费当成Seedance收入。</p>
+<table>
+<thead>
+<tr>
+<th>商业路径</th>
+<th>应计在哪里</th>
+<th>最关键的验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工作室向火山、MiniMax或可灵购买API</td>
+<td>模型服务商的外部收入，扣合同折扣与适当代理分成</td>
+<td>付费留存、净价、可用率、推理成本和收款</td>
+</tr>
+<tr>
+<td>集团内容团队调用内部模型</td>
+<td>集团内部成本分配；合并层面不是新增外部收入</td>
+<td>内容净回款是否提高，或同质量制作总成本是否下降</td>
+</tr>
+<tr>
+<td>外部创作工作台转售多家模型</td>
+<td>工作台与底层模型商各自按合同确认，合并行业时消除重复</td>
+<td>谁掌握客户与路由、底层模型实际净收入份额</td>
+</tr>
+<tr>
+<td>开放权重由工作室或第三方云自部署</td>
+<td>算力支出归云或硬件服务；模型商收入取决于授权及增值服务</td>
+<td>是否需要付费许可、是否买官方服务、托管优势能否抵住迁移</td>
+</tr>
+<tr>
+<td>同一成片在红果、YouTube或付费App反复播放</td>
+<td>内容和分发收入；另有推荐、广告、带宽成本</td>
+<td>观看与广告/订阅净收入，而非重复视频生成秒数</td>
+</tr>
+</tbody>
+</table>
+<p>因此，大平台可能接受模型单独利润率不高，却在广告、云服务或内容采购上受益；独立模型公司更需要把模型服务收费本身做成可持续生意。这是收入结构差别，不是预先断言谁一定获胜。对字节最值得核验的是内部效率是否变成集团新增现金；对MiniMax是付费模型服务能否覆盖推理并逐步承担研发；对快手则是可灵独立收入增长是否形成额外利润，同时没有被集团其他投入吃掉。</p>
+<p>平台归属也不是采购合同。红果播出的作品可能由外部承制商制作，承制商可以按镜头选不同模型；可灵进入Runway等外部入口，又能服务快手生态以外的客户。把“红果增长＝Seedance独占”“AI短剧增长＝海螺份额上升”当作事实，会跳过最关键的供应商选择与净收费证据。</p>
+<h3 id="h-0010">4.10 具名生产链：模型究竟进入了正片还是宣传材料</h3>
+<table>
+<thead>
+<tr>
+<th>可核验主体与材料</th>
+<th>模型/工具实际位置</th>
+<th>证据强度与财务含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HOLYWATER/My Muse，Google Cloud客户案例</td>
+<td>Gemini建立人物、服装与地点设定；Imagen/Nano Banana生成分镜参考；Veo生成最终视频；BigQuery分析产品数据</td>
+<td>是进入正片生产的具名流程，不只是概念图。供应商与客户共同自报，未公布订单金额、单位利润或随机对照</td>
+</tr>
+<tr>
+<td>中文在线，2026半年报及9月董事会通过的发行预案</td>
+<td>自有FlareFlash与AI-Native平台管理资产和项目，明确接入Seedance 2.5、可灵等外部模型</td>
+<td>公司披露支持“自有垂直流程＋多供应商生成”；接入不等于排他采购，募投计划也不等于已发生采购支出</td>
+</tr>
+<tr>
+<td>海螺官方产品账号，2025年4月22日《白咒》发布</td>
+<td>宣布创作者老杨AI作品在优酷上线，并可由会员观看全集</td>
+<td>支持海螺作品已进入收费分发；没有披露模型净收、制作方分账和项目利润，不外推为普遍回本</td>
+</tr>
+<tr>
+<td>快手2026Q2经营原稿</td>
+<td>披露《纸手机》《神·笔》等可灵参与创作作品，以及生成广告作品</td>
+<td>能区分正片创作与广告用途；奖项、入围不替代采购额与连续客户留存</td>
+</tr>
+<tr>
+<td>易点天下Cyberklick，2026半年报</td>
+<td>创意流程接入Seedance 2.5、可灵V3等，覆盖脚本分镜、批量图片视频、多语言多平台适配和效果反馈</td>
+<td>是营销素材的具名多模型流程；不能把这些素材算作短剧正片产量</td>
+</tr>
+<tr>
+<td>腾讯云媒体处理短剧翻译方案</td>
+<td>识别、翻译字幕，生成目标语言配音及修改画面文字等</td>
+<td>是已发布能力说明；该文未给可逐剧核验的具名采购额，不能据此宣布某头部App采用其全套服务</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://cloud.google.com/customers/holywater">HOLYWATER客户案例</a>、<a href="https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-26/a3484b7e-ddfa-4a68-aade-95433fe1ca76.PDF">中文在线2026半年报，制作平台说明</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-01/1225590018.PDF">中文在线发行预案</a>、<a href="https://www.bilibili.com/video/BV1dg5RzNEQk/">MiniMax产品账号《白咒》发布</a>、<a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手Q2业务原稿</a>、<a href="https://disc.static.szse.cn/disc/disk03/finalpage/2026-08-21/aa454b34-a199-4368-9c36-44750a64695e.PDF">易点天下半年报</a>、<a href="https://staticintl.cloudcachetci.com/doc/pdf/product/pdf/tencent-cloud_1041_40335_en.pdf">腾讯云短剧翻译产品原文</a>。海螺发布页本轮检索可读、直接页返回访问限制，未进一步核对完整片尾制作名单，故不写“每一帧均由海螺生成”。</p>
+<p>从这些样本可以得出比“AI能降本”更具体的判断。正片生产需要少量跨作品可复用资产和大量受剧本约束的镜头，价值偏向一致性、局部编辑和交付稳定性；营销生产需要大量不同开场、长度和人群版本，价值偏向便宜试错、快速淘汰及效果回传。本地化又有至少三条路径：只翻译字幕，重新配音但保留画面，以及修改口型或重拍当地版本。第一条可能主要消耗文字模型，第二条增加语音，第三条才明显增加视频生成；“新增十种语言”并不自动意味着原片视频重新生成十遍。</p>
+<p>真正值得模型厂商争取的是被生产系统设为稳定供应商。一部剧也许只有一次生成，但工作室每月有新剧、旧剧新语种和持续广告迭代，形成经常性采购。反面则是采购系统一旦支持多模型路由，需求会从“忠于某品牌”变成“这一类镜头由哪家最便宜地通过验收”。这会把一部分定价权交给掌握剧本、资产、验收记录和发行结果的工作流经营者。</p>
+<p>这里不能把证据缺口只留作一句警告。采购调查应取得五项对应资料：剧名及版本清单；含模型版本的任务日志；通过验收的镜头与付费输出对应关系；发票和实际折扣；发行净回款及权利合同。它们能回答：是正片需求在增长，还是营销废片在增长；是客户扩大生产，还是补贴在维持用量；是模型更强带来溢价，还是工作台把底层供应商商品化。</p>
+<h3 id="h-0011">4.11 从IP到现金：五个环节，五次价值分配</h3>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>实际交付与付款</th>
+<th>可能留下价值的能力</th>
+<th>最容易漏掉的成本或约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP与选题</td>
+<td>小说、原创剧本、改编权、角色或品牌授权</td>
+<td>可持续产出的故事源；授权链完整；理解哪些读者会变成观众</td>
+<td>改编地域、期限、语言、续集与衍生权；失败选题；作者分成</td>
+</tr>
+<tr>
+<td>生成与制作</td>
+<td>分镜、关键画面、视频、配音、剪辑、审片</td>
+<td>稳定完片、角色资产复用、可追踪的人机工作流</td>
+<td>多次生成、废片、人工修复、音画连续性、失败项目分摊</td>
+</tr>
+<tr>
+<td>本地化</td>
+<td>翻译、配音、口型、字幕、情节与文化调整</td>
+<td>对本地情绪和叙事节奏的理解；稳定交付</td>
+<td>直译造成的转化损失；声音和肖像授权；多版本审核</td>
+</tr>
+<tr>
+<td>分发与获客</td>
+<td>自有应用、平台、广告素材和投流</td>
+<td>能重复找到付费或广告价值高的用户；跨剧推荐</td>
+<td>广告竞价、素材疲劳、渠道集中、自然流量机会成本</td>
+</tr>
+<tr>
+<td>结算与复购</td>
+<td>付费、广告或授权对账及到账</td>
+<td>退款后净收入、透明分账、复购与现金周转</td>
+<td>支付与渠道费用、退款、拒付、税费、账期、保底回收条款</td>
+</tr>
+</tbody>
+</table>
+<p>同一家公司可能横跨几个环节，但产业收入不能因此重复计算。消费者付款100元，平台留下部分再付给版权方和制作方，制作方再付模型API费用；这不是消费者创造了三次100元需求。研究公司价值时可以逐层看收入，研究终端市场和AI资本回收时必须消除内部交易。</p>
+<p>不同变现方式也必须分别建账：</p>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>基本收入逻辑</th>
+<th>最有用的经营指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>按集、按剧解锁</td>
+<td>用户为继续观看付费，可能通过代币消耗确认收入</td>
+<td>去重付费率、实付客单价、未消费余额、退款与跨剧复购</td>
+</tr>
+<tr>
+<td>订阅</td>
+<td>用户按周、月或年取得观看权益</td>
+<td>实际续费率、取消率、净收入留存、服务期与现金预收差异</td>
+</tr>
+<tr>
+<td>广告</td>
+<td>广告主为有效展示或约定效果付费</td>
+<td>有效广告展示、填充率、净eCPM、内容方分账比例、无效流量扣款</td>
+</tr>
+<tr>
+<td>授权与承制</td>
+<td>平台、发行商或品牌为权利或成品付款</td>
+<td>可执行合同、验收、保底是否可回收、收入确认与到账进度</td>
+</tr>
+<tr>
+<td>模型订阅与API</td>
+<td>制作团队为生成能力付款</td>
+<td>净付费客户留存、可用成片成本、推理贡献毛利、免费额度与补贴依赖</td>
+</tr>
+</tbody>
+</table>
+<p>其中eCPM是每千次有效广告展示带来的收入，不是每千次视频播放的收入；净eCPM还必须写明已扣哪些费用。代币充值也不必等于当期已提供服务的收入。中文在线的会计政策把预收会员费和储值先列为合同负债，随后按服务提供或代币消耗等条件确认，这正说明用户支付、会计收入与可自由支配利润是三件事。<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线2026半年报收入确认政策，第140页</a></p>
+<h3 id="h-0012">4.12 一部120分钟短剧，究竟给模型商带来多少钱</h3>
+<p>先从可审计的量开始。设一部交付成片为T秒，AI画面占比a，已有镜头可复用比例r，则正片需要新生成并采用的秒数为T×a×(1−r)。再加独立广告素材A、真正重生成画面的本地化L，得到新增采用秒数S。以q表示“最终采用的新增秒数÷全部成功生成输出秒数”，则成功生成量G＝S/q；q的分母已经包含导演弃片和反复尝试，不能再乘一次所谓平均重试倍数。系统失败、审核拒绝等无收费且无输出任务另记，不与成功生成的废片混淆。</p>
+<p>若有免费额度或补贴，净付费比例为b；实际收入单价为p，模型方视频收入R＝G×b×p。输入视频、超额参考图、语音、图像、上下文处理、高清再生成应按各自SKU另加；转售渠道收走的部分不能继续算作底层模型厂商净收入。该公式是经营分解，不是假定每个厂商都按秒确认收入。</p>
+<p>以下完整算例只借用H3官方768p每秒0.08美元的公开输出价；产量、AI占比、采用率、免费量及成本全部为假设，不是海螺真实用户数据，也不是某部剧预算。</p>
+<table>
+<thead>
+<tr>
+<th>从成片到收费</th>
+<th>算式</th>
+<th style="text-align: right;">结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整部交付</td>
+<td>120分钟×60</td>
+<td style="text-align: right;">7200秒</td>
+</tr>
+<tr>
+<td>AI画面80%，其中25%直接复用已有镜头</td>
+<td>7200×80%×75%</td>
+<td style="text-align: right;">4320秒新增正片</td>
+</tr>
+<tr>
+<td>独立广告素材</td>
+<td>48条×15秒，均为新画面</td>
+<td style="text-align: right;">720秒</td>
+</tr>
+<tr>
+<td>两种本地化，各重生成480秒画面</td>
+<td>2×480</td>
+<td style="text-align: right;">960秒</td>
+</tr>
+<tr>
+<td>本项目新增采用量S</td>
+<td>4320＋720＋960</td>
+<td style="text-align: right;">6000秒</td>
+</tr>
+<tr>
+<td>采用率q＝25%</td>
+<td>6000÷25%</td>
+<td style="text-align: right;">24000秒成功生成输出</td>
+</tr>
+<tr>
+<td>其中10%由免费额度承担，90%收费</td>
+<td>24000×90%</td>
+<td style="text-align: right;">21600秒收费量</td>
+</tr>
+<tr>
+<td>不含输入视频及其他增值项的模型收入</td>
+<td>21600×0.08美元</td>
+<td style="text-align: right;"><strong>1728美元</strong></td>
+</tr>
+</tbody>
+</table>
+<p>若每个成功任务固定6秒，24000秒相当于4000个成功任务，平均每采用一秒对应四秒输出。这里的采用量不含重复拼接，广告和本地化没有与正片重计；系统失败任务的额外算力仍可能由厂商承担。若新增画面实际需要许多参考视频或二次高清输出，1728美元只是限定规格下的输出费用，应把这些计费项逐项加入。<a href="https://platform.minimax.io/docs/pricing/overview">H3官方输出及附加项价格</a></p>
+<p>价格与采用率的敏感性，固定S＝6000秒、b＝90%，单位美元：</p>
+<table>
+<thead>
+<tr>
+<th>成功输出采用率</th>
+<th style="text-align: right;">净单价0.04美元/秒</th>
+<th style="text-align: right;">0.08美元/秒</th>
+<th style="text-align: right;">0.12美元/秒</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15%</td>
+<td style="text-align: right;">1440</td>
+<td style="text-align: right;">2880</td>
+<td style="text-align: right;">4320</td>
+</tr>
+<tr>
+<td>25%</td>
+<td style="text-align: right;">864</td>
+<td style="text-align: right;">1728</td>
+<td style="text-align: right;">2592</td>
+</tr>
+<tr>
+<td>40%</td>
+<td style="text-align: right;">540</td>
+<td style="text-align: right;">1080</td>
+<td style="text-align: right;">1620</td>
+</tr>
+</tbody>
+</table>
+<p>这张表有一个常被忽略的方向：<strong>在同样的成片需求下，模型质量提高、废片减少，会减少供应商按输出秒收费的收入。</strong>它同时提高客户回报、增强留存、释放更多预算去拍新作品；要判断模型商净受益，必须再看新需求增长能否超过每部费用下降。困难镜头若由更贵但更准的模型完成，也可能比便宜模型反复失败更省钱，因此不能只用刊例秒价决定采购。</p>
+<p>数量扩大怎样传导也可以直接复算。若所有订单都与基准相同、没有新增大单折扣，1000部、1万部、10万部项目分别对应172.8万、1728万、1.728亿美元视频输出收入。这是条件比例尺，不是行业产量预测。它说明要支撑大型模型公司的研发，必须有持续、庞大的净付费生产池，或在高价值任务上取得更高收费；“短剧终端市场有几十亿美元”本身没有给模型商这么多钱。</p>
+<p>还要拆出推理成本。设每秒成功生成视频消耗g个GPU秒，设备小时成本h，实际利用率u；若g只计有效忙碌时间，则算力费用为G×g×h÷(3600×u)，再加输入处理、存储、审核、调度及失败任务成本。若实际测量的g已经包括闲置分摊，则不得再除一次u。本轮没有取得这些厂商按同一规格披露的真实g，因而不填“每条视频耗几张卡几秒”的猜测。</p>
+<p>更可操作的做法，是反推允许成本。基准收入1728美元、成功输出24000秒，含免费任务的每秒有效收入只有0.072美元；要达到50%的推理贡献毛利率，总可归属推理成本最多864美元，即每秒0.036美元。假设全包推理成本分别为每秒0.02、0.04、0.06美元，则成本为480、960、1440美元，贡献分别1248、768、288美元，对应72.2%、44.4%、16.7%。这三个成本纯用于敏感性，不是任何公司的真实毛利；也尚未扣研发、销售和总部费用。</p>
+<p>因此，对模型商应问的不是“这部剧赚了多少钱”，而是“这部剧及其失败项目合计给我多少净收费，我为全部免费与付费任务付了多少推理成本，这种客户能否重复留下”。对工作室则恰好反过来：模型费越少、成片越好越有利。上游和下游可以一起增长，但利益并非始终同向。</p>
+<h3 id="h-0013">4.13 三组纯假设算例：降本如何被返工、获客和账期重新分配</h3>
+<p>以下全部数字都是用于解释机制的假设，不是报价、行业均值、任何公司的内部数据或市场预测。人民币和美元各自计算，不作汇率换算。各算例以项目贡献或成本为结果，均不等于上市公司净利润。</p>
+<p><strong>算例一：模型生成费减半，完整制作成本只下降7.5%。</strong></p>
+<p>假设交付60分钟可用成片，即3600秒；模型按实际生成秒计费，每秒假设0.50元；可用率定义为最终采用秒数除以全部付费生成秒数。生成可用率20%时，需要付费生成18000秒，模型费用9000元。除此之外，人力25000元、后期及本地化10000元、版权和合规6000元、未上线项目分摊10000元，完整成本合计60000元。</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th style="text-align: right;">付费生成秒数</th>
+<th style="text-align: right;">生成费用</th>
+<th style="text-align: right;">完整制作成本</th>
+<th style="text-align: right;">每分钟可用成片成本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可用率20%</td>
+<td style="text-align: right;">18000</td>
+<td style="text-align: right;">9000元</td>
+<td style="text-align: right;">60000元</td>
+<td style="text-align: right;">1000元</td>
+</tr>
+<tr>
+<td>可用率40%，其他成本不变</td>
+<td style="text-align: right;">9000</td>
+<td style="text-align: right;">4500元</td>
+<td style="text-align: right;">55500元</td>
+<td style="text-align: right;">925元</td>
+</tr>
+</tbody>
+</table>
+<p>可用率翻倍后，模型费下降50%，完整成本下降4500÷60000＝7.5%。提高生成质量仍然有价值，但如果同时需要更多人工挑片、修复和版本维护，收益还会变化。宣传中的“单秒价格”既没有包含废片，也没有包含未成为爆款甚至未上线的作品。投资者真正需要的生产指标是：在相同交付标准下，每分钟验收成片的总成本，以及整个项目池每元成本最终产生多少净回款。</p>
+<p><strong>算例二：中国广告分账项目，播放热度很高仍可能亏损。</strong></p>
+<p>假设一个内容项目池累计获得1亿次广告展示机会，填充率80%，实际有效广告展示为8000万次；每千次有效展示收入12元，内容方取得40%。这里的1亿不是视频播放次数，不能从某剧“破亿播放”直接代入。</p>
+<p>内容方分账收入＝100000000÷1000×80%×12×40%＝384000元。假设成片制作120000元，失败作品及返工40000元，内容方获客100000元，发行、人工运营及其他项目支出60000元，合计320000元，则项目贡献为64000元，尚未扣总部固定费用、融资成本与所得税。</p>
+<p>若其他条件不变，eCPM由12元降到9元，内容方收入变成288000元，项目贡献转为−32000元。盈亏平衡需要eCPM达到10元，或在原来12元条件下取得约8333.33万次广告展示机会。若制作节省了20000元，但同期广告价格、有效流量或分账条件恶化，节省未必留得住。</p>
+<p>这里还隐含一个合同问题：平台展示的分账比例，是对广告总收入、扣除渠道费后的净收入，还是扣除投流与保底回收后的余额计算？四成乘以不同分母，可以得到完全不同的到账金额。必须先核合同，再讨论“高分成”。</p>
+<p><strong>算例三：面向美国的付费应用，几毛钱获客差异足以改变结果。</strong></p>
+<p>假设同一批100000名新用户均由付费渠道获取，每名新用户成本1.50美元，合计150000美元。90天内4%用户付费，即4000名；每名付费用户在这90天累计支付60美元；退款5%，支付及渠道综合费用假设为退款后收入的20%。分配给该用户群的内容成本20000美元，包含失败作品，服务和运营成本10000美元。</p>
+<p>90天净收＝100000×4%×60×95%×80%＝182400美元。项目贡献＝182400−150000−20000−10000＝2400美元。按新用户定义的获客成本是1.50美元，按付费用户定义则是37.50美元；二者不能都简称CAC而不说明分母。60美元也不是订阅月价，而是已观察90天窗口中的累计付款假设。</p>
+<table>
+<thead>
+<tr>
+<th>90天付费率</th>
+<th style="text-align: right;">每名新用户获客成本1.00美元</th>
+<th style="text-align: right;">1.50美元</th>
+<th style="text-align: right;">2.00美元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3%</td>
+<td style="text-align: right;">+6800美元</td>
+<td style="text-align: right;">−43200美元</td>
+<td style="text-align: right;">−93200美元</td>
+</tr>
+<tr>
+<td>4%</td>
+<td style="text-align: right;">+52400美元</td>
+<td style="text-align: right;">+2400美元</td>
+<td style="text-align: right;">−47600美元</td>
+</tr>
+<tr>
+<td>5%</td>
+<td style="text-align: right;">+98000美元</td>
+<td style="text-align: right;">+48000美元</td>
+<td style="text-align: right;">−2000美元</td>
+</tr>
+</tbody>
+</table>
+<p>表中只改变付费率和获客成本，其余假设固定。基准方案盈亏平衡的付费率约3.947%；或者在4%付费率下，90天付费用户累计支付至少约59.21美元。由4%提高到5%的付费转化，在此例中的影响大于把20000美元内容成本再砍一半。这并非认定所有公司投流最重要，而是要求先检查真实成本结构，再决定技术改进的财务权重。</p>
+<p>如果开支先发生、收入分期到账，最终贡献为正仍需要营运资金。假设上述180000美元项目支出在第30天前已付清，同时只收到上述净收的35%，到账63840美元，尚未回收的项目支出为116160美元。实际最大资金缺口须按每天付款与回款重建，不能由一个“LTV/CAC大于1”代替。90天以后的续费，在验证之前只能列为额外情景，不能提前记作现金收益。</p>
+<h3 id="h-0014">4.14 AI带来的机会，先在完整流程里找</h3>
+<p>第一种机会是更便宜、更快的题材测试。AI可能降低制作样片和题材测试的投入，帮助决定是否继续；其增量价值须与传统样片、分镜及广告测试流程比较，不能假定过去只能整部拍完才获得反馈。它的价值是减少错误资本投入，而不只是让正确项目更便宜。但是，测试版受众可能不同于最终真人版受众，广告点击率也可能与正片付款率相反。只有测试信号能够稳定预测最终净回款，这个流程才具有经济价值。</p>
+<p>第二种机会是过去成本过高的场景与风格。奇幻、科幻、历史想象和动漫化叙事，可以尝试用生成画面替代部分高成本资产。但“更容易拍”只解决供给限制，消费者是否喜欢、是否愿意买、平台是否愿意给流量仍需分别验证。新的类别可能扩大市场，也可能只是把原有小说、游戏和短视频的时间迁移过来。</p>
+<p>第三种机会是本地化与广告素材的快速试验。同一IP可以产生多种语言、开场和投放创意，缩短寻找合适用户的周期。但翻译准确不等于情绪准确，口型一致不等于表演可信；低成本产生一万条素材也不等于一万次有效学习。真正有用的系统能把“广告承诺吸引了谁”“正片满足了谁”“谁在退款后继续付费”连起来，并防止只优化点击而损伤留存。</p>
+<p>第四种机会是给外部客户提供可靠制作与工具。承制商若收取有验收标准、付款节点的合同款，可能比自营付费应用更少承担投流风险；代价是客户会压价，项目收入未必重复。模型商可能获得跨工作室需求，代价则是替代模型、降价和客户多模型采购。两种商业模式都需要自己的利润表，不能因为站在“卖铲子”的位置就默认高回报。</p>
+<p>这些改善还可能产生训练反馈，但“有数据”并不等于“模型商取得可训练数据”。一个专业流程通常产生提示词、参考资产、失败原因、人工修改、采用与否、最终播放和付费记录。前五类能帮助学习可控性及编辑偏好；后两类能帮助选题与发行，却夹杂题材、价格、投流和推荐的影响。点击高的镜头可能承诺了正片没有的内容，直接把点击率作画面奖励可能损害留存。</p>
+<p>应区分四种权利：持有文件的权利、为完成订单处理文件的权利、把文件用于模型训练的权利，以及把训练成果提供给竞争者的权利。版权方允许改编不当然允许训练，创作者在工作台上传素材也不当然同意供应商长期留存。Google Cloud现行服务条款明确，未经客户事先许可或指示，不用客户数据训练或微调AI/ML模型；这就直接否定“所有云端生产数据必然回流训练”的推断。<a href="https://cloud.google.com/terms/service-terms">Google Cloud服务专用条款</a></p>
+<p>若客户保留训练权，工作流公司可能积累更强的专有验收数据；基础模型商则须用授权合作、产品反馈计划或独立数据建设改善能力。如果模型商同时拥有创作入口、基础模型和授权数据，反馈更短，但仍须证明相同题材以外也能提高采用率，且收益高于整理、授权和训练成本。真正的数据优势是同等预算下，下一批作品更容易合格并回款，不是仓库里又多了几百万条低质量生成片段。</p>
+<h3 id="h-0015">4.15 护城河不是“会用模型”，而是别人复制后仍然留下什么</h3>
+<table>
+<thead>
+<tr>
+<th>候选优势</th>
+<th>形成持续优势的条件</th>
+<th>可以推翻判断的观察</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP及角色资产</td>
+<td>授权清晰，跨剧、续季和跨媒介复购形成持续回款</td>
+<td>版权库很大但改编成功率和实际回款低；权利到期即失去作品</td>
+</tr>
+<tr>
+<td>人机生产流程</td>
+<td>同等质量下稳定缩短交期，减少返工，资产复用不牺牲差异性</td>
+<td>竞争对手用同一模型很快追平；人力与失败成本抵消生成降价</td>
+</tr>
+<tr>
+<td>用户与推荐关系</td>
+<td>第一部剧后持续观看其他剧，自然回访降低后续获客支出</td>
+<td>每一部新剧仍需重新买用户；停止投流后收入快速消失</td>
+</tr>
+<tr>
+<td>数据与投放能力</td>
+<td>能区分广告、故事与受众问题，跨题材仍有可复现改善</td>
+<td>只在少数爆款或短期流量红利期有效；扩量后回报恶化</td>
+</tr>
+<tr>
+<td>版权、合规与交付信誉</td>
+<td>让平台少承担下架、侵权和交付风险，形成重复采购</td>
+<td>成本不能转化为订单、价格或留存优势；单一客户随时换供应商</td>
+</tr>
+</tbody>
+</table>
+<p>这些是检验条件，不是已经确认的公司护城河评分。模型生成能力普及，可能削弱单纯制作技巧的差异；大型平台的渠道优势，也可能被更专业的内容品牌或新的分发入口挑战。生产端更分散与利润向渠道集中可以同时发生，不能根据工作室数量增加就断言利润更分散。</p>
+<p>最有希望积累价值的，是IP、内容判断、生产资产、用户反馈和结算数据能相互改进的经营系统。判断它是否存在，应看跨作品和跨季度表现，而不是公司画出的流程图。还要观察管理层是否在内容供给突然增加时继续扩大低回报投放，是否把补贴当持久优势，以及是否愿意停止不能回款的项目。</p>
+<p>模型层也有自己的壁垒，不能因为工作流重要就忽略基础能力。复杂多人互动、运动规律、参考素材精确遵循和稳定音画同步若显著领先，可以减少难镜头的返工，让客户愿意付溢价；推理工程和调度若降低同等质量成本，可以让模型商在相同售价下保留更多利润。前者用盲测与真实验收率检验，后者用同规格成本、等待时间和峰值可靠性检验，不能靠精选样片或总注册数替代。</p>
+<p>但工作流一旦掌握资产格式、提示模板、评测和账单路由，切换模型的难度会下降。Runway Dev已明确提供Model Router，并按路由实际选中的模型收费；中文在线、Cyberklick的披露也展示多模型接入。聚合入口能集中需求并压低采购价，基础模型因此既可能获得更多分发，也可能失去用户关系与定价权。<a href="https://docs.dev.runwayml.com/guides/pricing/">Runway开发者计费说明</a></p>
+<p>H3又把竞争扩大到托管与开放权重之间。MiniMax在8月3日正式发布开放权重，但其Community License有适用地域及商业规模等条件，并不是任意企业、任意地域无条件使用。官方许可申请入口列美国、欧盟、英国、韩国等需另行申请的地区；商业产品与服务年收入超过2000万美元也须事先书面授权。研究面向美国的短剧业务，不能把可下载权重直接当作已经取得美国发行及商业使用许可。<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE">H3许可原文</a>、<a href="https://platform.minimax.io/h3-license">官方额外许可申请入口</a></p>
+<p>开放权重会给托管价格施加约束，却不会让专业生产的全部成本归零。工作室需要承担部署、兼容、峰值容量、失败恢复、维护与权利管理；官方托管若能稳定交付更好结果，仍可收费。相反，规模大的客户若能把基础生成留在低成本自有算力，仅对少数镜头购买官方高端服务，模型采用量与模型厂商收入就会脱钩。哪条路径更强，应看真实迁移率、客户净收入留存及授权收入，而不是先给“开源”贴利多或利空标签。</p>
+<h3 id="h-0016">4.16 平台与上市公司敞口：先核归属，再谈价值</h3>
+<p>下表是研究路径，不是股票推荐，也不是所有参与者的完整名单。本轮没有进行这些证券的当前价格和估值核查，不给目标价、买入区间或仓位。</p>
+<table>
+<thead>
+<tr>
+<th>平台或能力</th>
+<th>可核验的经营与资本关系</th>
+<th>研究时应保留的边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>红果、抖音等国内分发场景</td>
+<td>可在QuestMobile等原始研究中观察用户与渠道表现</td>
+<td>平台用户、真人剧和漫剧不能都计入AI；未取得可独立验证的AI分部财务</td>
+</tr>
+<tr>
+<td>河马剧场、DramaBox</td>
+<td>点众在官方行业大会发布材料中将两者列为自有渠道</td>
+<td>不据未经核实的参股传闻，把其收入映射给某家上市公司</td>
+</tr>
+<tr>
+<td>ReelShort、Crazy Maple Studio（CMS）</td>
+<td>ReelShort由CMS运营；中文在线半年报列CMS为参股企业，间接持股49.24%，权益法核算</td>
+<td>不是中文在线全资并表产品；49.24%不是收入并表比例，更不是现金分红比例</td>
+</tr>
+<tr>
+<td>FlareFlow</td>
+<td>中文在线披露的自身出海短剧平台</td>
+<td>与ReelShort区分；全球经营不等于美国经营，AI与真人收入尚不能完整拆开</td>
+</tr>
+<tr>
+<td>My Drama、My Muse</td>
+<td>HOLYWATER分别经营真人与AI相关内容应用；FOX Entertainment已宣布股权投资</td>
+<td>FOX公告未披露投资比例和足以拆算的财务；不能把HOLYWATER全部业绩归于FOX</td>
+</tr>
+<tr>
+<td>兑吧（01753.HK）AI短剧业务</td>
+<td>有单列业务收入及后续初步经营公告</td>
+<td>公司自身收入是可观察敞口；仍缺连续、独立可比的AI业务净利润与现金流</td>
+</tr>
+<tr>
+<td>快手（01024.HK）可灵</td>
+<td>快手2026Q2官方披露可灵收入超过8.5亿元人民币</td>
+<td>包含多类视频生成需求，不是短剧专属；更不是AI短剧制作方利润</td>
+</tr>
+<tr>
+<td>Alphabet／Google Cloud相关模型与云服务</td>
+<td>有HOLYWATER客户案例，显示工具进入生产流程</td>
+<td>案例不能证明可归属的短剧收入规模、模型利润或新增资本回报</td>
+</tr>
+</tbody>
+</table>
+<p>归属及业务来源：<a href="https://crazymaplestudios.com/statement">CMS官方声明</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线半年报，第6、15、157页</a>、<a href="https://www.vidchina.cn/show/201">点众大会发布材料</a>、<a href="https://www.foxcorporation.com/news/business/2025/fox-entertainment-deepens-creative-content-portfolio-and-audience-reach-with-strategic-investment-in-vertical-video-technology-platform-holywater/">FOX股权投资公告</a>、<a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手2026Q2业绩</a>、<a href="https://cloud.google.com/customers/holywater">Google Cloud客户案例</a>。</p>
+<p>CMS还有一个重要时间口径：中文在线三季报说明，本期CMS股权投资收益仅含2026年1—3月数据，不含4—9月。不能因为披露文件标题写着“三季度报告”，就把其中CMS数值视作完整前三季度经营结果。媒体常见的49.16%是较早口径，本专题采用已回读半年报中的49.24%，并保留对应披露日期。<a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线2026三季报，第4页</a></p>
+<p>对中国投资者而言，“海外应用排名上升→参股公司收入上升→上市公司投资收益上升→现金分红增加→当前股价仍便宜”是一条很长的链。每一步都有独立条件：真实经营利润、权益法调整、治理权、分红决策及购买价格。只识别出某个热门应用的股东，还没有完成投资研究。</p>
+<h3 id="h-0017">4.17 版权和监管进入成本表，而不是附录里的免责声明</h3>
+<p>中国2026年9月1日起施行的正式办法，按投资额度与题材分类管理，第一、二类存在不同审核许可要求，第三类由符合条件的播出单位进行播前审核并标注编号；AI生成、制作的微短剧还须按规定在每集明显位置添加提示标识。该办法正文没有直接给出可普遍套用的固定金额门槛，因此这里不把历史“30万元、100万元”等旧分类数字移植成新办法现行界限。<a href="https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html">国家广电总局正式办法，第五、十七、三十四条</a></p>
+<p>经济含义是：低制作成本不意味着可以跳过审核、权利清理和版本管理。生成后需要修改的人物、台词与情节，可能牵动多个镜头；版本越多，追踪授权、标识和投放素材的工作越多。合规能力如果减少返工和下架，可能形成交付优势；但不能预先给它一个没有合同和订单支持的估值溢价。</p>
+<p>美国版权局2025年1月29日发布的Part 2报告区分人类创作与纯AI生成材料：使用AI辅助不当然排除保护，人类原创表达、具有创意的选择编排和修改可获相应保护；纯AI生成材料或人类控制不足的表达则不同。其提示词判断针对当时一般可得技术，认为提示词本身不足以提供对输出表达的充分控制，具体作者性仍须逐案判断。这是现有版权框架的分析，不是2026年新增法律；不能简化成“AI视频都没有版权”，也不能认为只要付了模型费就取得完整排他权。<a href="https://www.copyright.gov/ai/">美国版权局AI报告页面</a>、<a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">Part 2结论</a></p>
+<p>因此，制作方应区分原著改编权、剧本著作权、最终画面中人类创作部分、声音和肖像授权、音乐与素材许可。模型服务允许商业使用，不能替代这整套权利链。是否拥有成片版权，也不同于使用他人材料是否侵权。对投资研究最实际的问题，是一部成功作品能否合法续作、授权和维权，以及合同是否把相关责任留给资本实力不足的工作室。</p>
+<h3 id="h-0018">4.18 最强反方：内容更便宜，可能让赚取利润更难</h3>
+<p>反方不需要否认模型能力。它可以承认AI视频会显著增加、有人愿意看、个别企业会赚钱，然后提出更严厉的资本回报问题：当所有人都能用同一批模型迅速生产时，供给扩张可能快于观众时间和支付预算，制作端的成本红利被内容价格下降与广告竞价吃掉；平台得到更多选择，模型客户频繁切换，工作室持续为下一部剧重新投流。</p>
+<p>在这个路径里，消费者福利与产业生产率都可能提高，而内容制作商、应用投资者乃至部分模型供应商的回报并不好。爆款可以真实，亏损也可以真实；新增收入可以来自另一种娱乐消费的迁移，而非足够大的全新增量。仅凭“AI内容终端有收入”，还无法解决是谁保留利润、需要投入多少资本的问题。</p>
+<table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>损害如何发生</th>
+<th>应观察的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供给过剩</td>
+<td>同质作品增加，单部收入及平台采购价下降</td>
+<td>同质量作品的净回款下降，扩产后失败作品占比提高</td>
+</tr>
+<tr>
+<td>投流吞噬降本</td>
+<td>竞争者共同提高竞价，素材疲劳加快</td>
+<td>同一用户群净收入不变而获客成本上升，扩量后的回收期延长</td>
+</tr>
+<tr>
+<td>只有首部剧有效</td>
+<td>用户被单个情节吸引，但不接受平台其他内容</td>
+<td>第二部剧付费率低、自然回访弱、长期净收入低于早期预测</td>
+</tr>
+<tr>
+<td>平台集中与账期</td>
+<td>单一客户改变采购、分成或结算规则</td>
+<td>应收增长快于收入、到账延迟、需加大保底和投流垫款</td>
+</tr>
+<tr>
+<td>质量与权利问题</td>
+<td>下架、索赔、返工或无法再次授权</td>
+<td>验收失败率提高、版权凭证缺失、退款与投诉抬升</td>
+</tr>
+<tr>
+<td>模型需求虚胖</td>
+<td>免费额度或补贴维持用量，提价即流失</td>
+<td>生成量增长但净付费留存弱，客户利润无法支持持续采购</td>
+</tr>
+</tbody>
+</table>
+<p>目前没有足够的统一样本，为这些失败路径赋予可靠概率，本报告不填貌似精确的百分比。最容易犯的研究错误，是把头部运营商主动公布的最佳作品和最快增长阶段，当成新进入者通常能够实现的结果。相反，也不能把目前缺少行业统计，写成全行业不可能盈利。</p>
+<h3 id="h-0019">4.19 降价、效率与需求弹性，哪一个决定上游受益</h3>
+<p>视频需求增长至少有三个不同结果：成片数量增长、模型收入增长、物理算力增长。它们不是同一条曲线。采用率提高会减少废片，推理优化会减少每秒GPU时间，价格下降会减少每秒收入；新题材、新客户和新语种又会增加需要制作的秒数。短剧对上游的净影响，是这些变化相乘后的结果。</p>
+<p>用4.12基准继续算，不增加任何厂商真实成本假设：原采用率25%，收费单价0.08美元，免费比例10%，假设全包推理成本0.04美元/生成秒。现在售价减半为0.04美元、采用率翻倍至50%、每生成秒成本降低40%至0.024美元。设新增采用成片秒数扩大为原来的k倍。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">新旧比值</th>
+<th style="text-align: right;">超过原水平所需的k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>成功生成输出秒数</td>
+<td style="text-align: right;">k÷2</td>
+<td style="text-align: right;">大于2</td>
+</tr>
+<tr>
+<td>模型输出收入</td>
+<td style="text-align: right;">k÷4</td>
+<td style="text-align: right;">大于4</td>
+</tr>
+<tr>
+<td>物理有效计算量，另假设每秒计算消耗降40%</td>
+<td style="text-align: right;">0.3k</td>
+<td style="text-align: right;">大于3.33</td>
+</tr>
+<tr>
+<td>推理贡献，沿用该算例成本与免费比例</td>
+<td style="text-align: right;">0.1875k</td>
+<td style="text-align: right;">大于5.33</td>
+</tr>
+</tbody>
+</table>
+<p>推理贡献的推导是：原每生成秒净收入0.08×90%＝0.072美元，扣0.04后贡献0.032美元；新每生成秒收入0.036美元，扣0.024后为0.012美元。新输出量是原来的k/2，贡献比值便是(k/2)×(0.012/0.032)＝0.1875k。这些阈值由假设得出，不是行业规律的固定倍数；若成本下降得更快、免费额度减少或收入包括工作流订阅，结果就不同。</p>
+<p>这个例子揭示了一个强的正面路径：技术改进把原来不能赚钱的题材、语种和客户变为可行，使可验收产量增加超过这些门槛，收入、利润和算力都能同时增长。短剧的高更新频率、营销版本和IP长尾为这种扩张提供了场景。它也揭示一个强的反面路径：生产效率很好，行业出片翻倍，但因为废片更少和价格更低，模型收入反而下降。不能用“杰文斯悖论”四个字代替需求弹性的实测。</p>
+<p>算力还要区分峰值和总量。预制短剧的离线任务允许排队和批量处理，可能把夜间闲置资源用起来；热点发布、客户赶交付又会形成峰值。现有集群利用率提高，首先可以带来云厂商现金回收，不一定立即要求同比例购买新GPU。只有持续付费需求超出现有有效容量，新增服务器、供电和网络才有相应的扩产基础。平均GPU利用率、按任务排队时间、真实付费容量合同，比单个爆款的观看分钟更接近基础设施投资决策。</p>
+<p>推理与训练同样不能相加后再重复记账。模型商付给云的推理费，是模型商成本、云商收入；若云已把设备折旧放进收费中，研究产业整体时再把同一笔完整服务器成本当作当期模型成本，会重复扣除。训练支出则是在未来收入前预付的研发赌注，需要多类客户共同承担。短剧能贡献一部分需求，并不天然负有替整个通用模型的全部研发和云商全行业资本开支回本的责任。</p>
+<p>最后还须看反事实：没有AI视频，这笔预算原本会去真人拍摄、动画外包、素材库影像，还是根本不会花？替代旧制作预算，也能形成模型商新收入，但不是全社会消费同额增加；过去拍不起的题材成功商业化，才更接近新增终端需求。两者都可能有投资价值，估算产业净增量时必须分开。</p>
+<h3 id="h-0020">4.20 对AI泡沫论文：应当上调哪一部分，又怎样推翻判断</h3>
+<p>这一轮证据已经足以做出实质修正：视频不应继续被写成只有演示、没有付费的外围用途。海螺的产品收入、可灵的季度收入、兑吧的AI短剧收入，以及HOLYWATER和中文在线的具名生产流程，共同说明消费者内容需求能够穿过制作流程，形成模型服务采购。四种证据来自不同交易层级，不能相加，但其商业链条已经不只是想象。</p>
+<p>对模型厂商，短剧的价值是把生成能力接入反复更新的内容工厂：一部作品可以触发正片、广告、本地化和续季；一个专业客户可以长期购买视频、语音、图像及编排，而不必让每名观众都直接订阅模型。相比免费创意试用，这种预算由回款约束，既更苛刻，也更有机会形成持续需求。可控镜头、稳定交付和更高采用率确实可能建立模型竞争优势，不能只用“会商品化”把它们抹平。</p>
+<p>但模型厂商之间的利益分配已经需要分别研究。MiniMax在C端海螺、企业API与开放权重授权之间选择怎样收费；字节在外部模型销售与内部内容、广告效率之间分配价值；快手要把可灵独立商业化与集团生态收益分别核算。多模型路由、软件工作台与自部署让客户有更多选择，也可能把利润留在掌握内容资产和发行回款的一侧。不能因短剧行业增长，就把所有视频模型、所有GPU和所有相关股票同时上调估值。</p>
+<table>
+<thead>
+<tr>
+<th>后续可观察结果</th>
+<th>会增强什么判断</th>
+<th>若出现相反结果，应怎样更新</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同一批专业客户跨两个以上回收周期继续净付费，减少补贴仍留存</td>
+<td>真实生产需求开始成为经常性采购</td>
+<td>生成量增、付费客户和实收不增：降低收入质量判断</td>
+</tr>
+<tr>
+<td>相同验收标准下，成片总成本下降，同时客户项目池净回款提高</td>
+<td>技术生产率穿透到应用经营</td>
+<td>只见单秒变便宜，获客与返工吞掉节省：不把降价等同利润增长</td>
+</tr>
+<tr>
+<td>模型净价下降慢于同规格完整推理成本，贡献持续改善</td>
+<td>基础模型能保留部分效率红利</td>
+<td>免费量、代理分成与重试成本使实收毛利恶化：下调价值捕获</td>
+</tr>
+<tr>
+<td>明确拆出视频、语音、文本，以及外部客户和内部调用</td>
+<td>能把商业增长可靠归因到产品与模态</td>
+<td>只报总Token、累计生成和集团收入：维持分部归因缺口</td>
+</tr>
+<tr>
+<td>工作流升级提高跨题材采用率，且具备可用于训练的授权</td>
+<td>数据和技术可能形成可重复优势</td>
+<td>反馈只改善某一爆款，权利不允许训练：不赋予无依据数据溢价</td>
+</tr>
+<tr>
+<td>持续付费负载超过有效现有容量，新增容量合同带来回收</td>
+<td>部分新增算力资本开支获得需求支撑</td>
+<td>主要由免费试用、内部补贴或低峰闲置消化：不能外推相同扩产强度</td>
+</tr>
+<tr>
+<td>运营商第二部剧消费、退款后留存和项目池现金改善</td>
+<td>消费习惯转化为更稳定的内容生意</td>
+<td>每部重新高价买用户，现金回收延后：上游持续采购也会受损</td>
+</tr>
+</tbody>
+</table>
+<p>这几项并非为了把结论无限推迟。当前可以承认的积极结论，是短剧正在成为视频与多模态模型的真实商业场景，正片生产和营销生产都已出现具名采用，部分厂商已披露明确收入规模。当前仍不能越过的财务事实，是短剧终端收入只会分配一部分给模型，模型毛利还须承担研发与获客；MiniMax的实际费用表已经展示了这段距离，快手和字节尚缺能单独复算的完整视频利润表。</p>
+<p>因此，对AI泡沫主论文的修改应当具体到三处：进一步提高视频需求在主论文中的权重，不再只以演示与潜在市场描述；在应用生产率中加入内容工业化、营销测试与本地化；把视频上游回报改为净价、采用率、客户规模、推理成本和训练投入的联立检验。这是本轮分析的深化，不表示旧稿从未承认非编程场景已有收入。它削弱“AI没有真实需求”的论据，却强化了本报告更有用的问题：<strong>真实需求最终归谁、留下多少现金、值得预先投入多少资本。</strong>本专题没有完成相关证券的当前估值与资本结构研究，不生成赢家排名、目标价或买入价。</p>
+<p>新增原件、价格快照、财务勾稽和算式见《V1.9_视频模型与短剧深研取证_20261031》；时长原图、传播链及口径见《V1.9_短剧时长说法核验_20261031》。V1.8已经核验的公司归属、项目单位经济与监管证据予以保留；同源转载、公司自报和供应商成功案例继续按其实际证明强度使用。</p>
+<section class="references">
+
+<h2 id="h-0021">参考资料索引</h2>
+<p>本册按URL去重收录48项参考资料，保留正文中的就近链接，下面按首次引用顺序集中列出完整网址，便于打印后追溯。名称采用已核对的公司、报告期与文档类型或正文来源简称，并非一律为官方原标题；资料的期间、核验程度和访问限制以对应段落为准，不表示全部旧引文都在本轮重新取得原件。</p>
+<ol>
+<li>
+<p><a href="https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html">国家广电总局正式办法，第五、十七、三十四条</a> · www.nrta.gov.cn</p>
+<p><span class="ref-url">https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html</span></p>
+</li>
+<li>
+<p><a href="https://www.questmobile.com.cn/research/report/2041710682848727041/">QuestMobile报告及原图</a> · www.questmobile.com.cn</p>
+<p><span class="ref-url">https://www.questmobile.com.cn/research/report/2041710682848727041/</span></p>
+</li>
+<li>
+<p><a href="https://www.cnsa.cn/module/download/downfile.jsp?classid=0&amp;filename=d2617fc1d3d742248c26765b0230b970.pdf">协会PDF，印刷第8页</a> · www.cnsa.cn</p>
+<p><span class="ref-url">https://www.cnsa.cn/module/download/downfile.jsp?classid=0&amp;filename=d2617fc1d3d742248c26765b0230b970.pdf</span></p>
+</li>
+<li>
+<p><a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia 2026年预测</a> · omdia.tech.informa.com</p>
+<p><span class="ref-url">https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia</span></p>
+</li>
+<li>
+<p><a href="https://sensortower.com/blog/state-of-short-drama-apps-2026-report">Sensor Tower 2026短剧应用报告</a> · sensortower.com</p>
+<p><span class="ref-url">https://sensortower.com/blog/state-of-short-drama-apps-2026-report</span></p>
+</li>
+<li>
+<p><a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧2026中期报告，第4、30页</a> · yun.duiba.com.cn</p>
+<p><span class="ref-url">https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf</span></p>
+</li>
+<li>
+<p><a href="https://www.vidchina.cn/show/201">中国网络视听大会对点众共创计划的原始报道</a> · www.vidchina.cn</p>
+<p><span class="ref-url">https://www.vidchina.cn/show/201</span></p>
+</li>
+<li>
+<p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400004_c.pdf">兑吧10月14日正式公告</a> · www.hkexnews.hk</p>
+<p><span class="ref-url">https://www.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400004_c.pdf</span></p>
+</li>
+<li>
+<p><a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线2026半年报收入确认政策，第140页</a> · static.cninfo.com.cn</p>
+<p><span class="ref-url">https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF</span></p>
+</li>
+<li>
+<p><a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线2026三季报，第2—4页</a> · static.cninfo.com.cn</p>
+<p><span class="ref-url">https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF</span></p>
+</li>
+<li>
+<p><a href="https://www.holywater.tech/report">HOLYWATER报告入口</a> · www.holywater.tech</p>
+<p><span class="ref-url">https://www.holywater.tech/report</span></p>
+</li>
+<li>
+<p><a href="https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html">HOLYWATER与Owl &amp; Co正式发布稿</a> · www.globenewswire.com  新闻分发或转载平台，不能视为新增独立经营证据。</p>
+<p><span class="ref-url">https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html</span></p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/customers/holywater">Google Cloud的HOLYWATER案例</a> · cloud.google.com</p>
+<p><span class="ref-url">https://cloud.google.com/customers/holywater</span></p>
+</li>
+<li>
+<p><a href="https://www.streaming-radar.com/p/interview-with-illia-berestovskyi-holywater-tech">Streaming Radar对HOLYWATER的访谈</a> · www.streaming-radar.com</p>
+<p><span class="ref-url">https://www.streaming-radar.com/p/interview-with-illia-berestovskyi-holywater-tech</span></p>
+</li>
+<li>
+<p><a href="https://seed.bytedance.com/en/models">Seed官方模型页</a> · seed.bytedance.com</p>
+<p><span class="ref-url">https://seed.bytedance.com/en/models</span></p>
+</li>
+<li>
+<p><a href="https://www.volcengine.com/activity/seedance25">火山Seedance 2.5资源页</a> · www.volcengine.com</p>
+<p><span class="ref-url">https://www.volcengine.com/activity/seedance25</span></p>
+</li>
+<li>
+<p><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H3发布</a> · www.minimax.io</p>
+<p><span class="ref-url">https://www.minimax.io/blog/minimax-h3</span></p>
+</li>
+<li>
+<p><a href="https://www.minimax.io/news/minimax-h3-open-source">H3开放权重说明</a> · www.minimax.io</p>
+<p><span class="ref-url">https://www.minimax.io/news/minimax-h3-open-source</span></p>
+</li>
+<li>
+<p><a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kelingaixinyidaimoxingklin1g-40zhengshishangxian/">可灵4.0正式公告</a> · ir.kuaishou.com</p>
+<p><span class="ref-url">https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kelingaixinyidaimoxingklin1g-40zhengshishangxian/</span></p>
+</li>
+<li>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate">Veo企业模型规格</a> · docs.cloud.google.com</p>
+<p><span class="ref-url">https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate</span></p>
+</li>
+<li>
+<p><a href="https://ai.google.dev/gemini-api/docs/video">Google旧Preview关闭通知</a> · ai.google.dev</p>
+<p><span class="ref-url">https://ai.google.dev/gemini-api/docs/video</span></p>
+</li>
+<li>
+<p><a href="https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5">Runway Gen-4.5规格</a> · help.runwayml.com</p>
+<p><span class="ref-url">https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5</span></p>
+</li>
+<li>
+<p><a href="https://docs.volcengine.com/docs/ark/model-pricing?lang=zh">火山模型价表及秒价示例</a> · docs.volcengine.com</p>
+<p><span class="ref-url">https://docs.volcengine.com/docs/ark/model-pricing?lang=zh</span></p>
+</li>
+<li>
+<p><a href="https://www.byteplus.com/en/">BytePlus官网刊例</a> · www.byteplus.com</p>
+<p><span class="ref-url">https://www.byteplus.com/en/</span></p>
+</li>
+<li>
+<p><a href="https://platform.minimax.io/docs/pricing/overview">MiniMax资源包条件</a> · platform.minimax.io</p>
+<p><span class="ref-url">https://platform.minimax.io/docs/pricing/overview</span></p>
+</li>
+<li>
+<p><a href="https://kling.ai/dev/pricing">可灵官方采购入口</a> · kling.ai</p>
+<p><span class="ref-url">https://kling.ai/dev/pricing</span></p>
+</li>
+<li>
+<p><a href="https://developers.cloudflare.com/ai/models/klingai/kling-v4/">Cloudflare自营渠道价</a> · developers.cloudflare.com</p>
+<p><span class="ref-url">https://developers.cloudflare.com/ai/models/klingai/kling-v4/</span></p>
+</li>
+<li>
+<p><a href="https://docs.dev.runwayml.com/guides/pricing/">Runway开发者计费说明</a> · docs.dev.runwayml.com</p>
+<p><span class="ref-url">https://docs.dev.runwayml.com/guides/pricing/</span></p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/model-garden/pricing">Google Cloud现行价格表</a> · cloud.google.com</p>
+<p><span class="ref-url">https://cloud.google.com/model-garden/pricing</span></p>
+</li>
+<li>
+<p><a href="https://docs.volcengine.com/docs/acitvity-rule/seedance-25?lang=zh">活动规则</a> · docs.volcengine.com</p>
+<p><span class="ref-url">https://docs.volcengine.com/docs/acitvity-rule/seedance-25?lang=zh</span></p>
+</li>
+<li>
+<p><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf">MiniMax招股书，印刷第6、416页</a> · www1.hkexnews.hk</p>
+<p><span class="ref-url">https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100025.pdf</span></p>
+</li>
+<li>
+<p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0302/2026030202838_c.pdf">2025年度经审计业绩及2024比较数</a> · www.hkexnews.hk</p>
+<p><span class="ref-url">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0302/2026030202838_c.pdf</span></p>
+</li>
+<li>
+<p><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">中期业绩地域与资金说明，第5、8页</a> · www1.hkexnews.hk</p>
+<p><span class="ref-url">https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf</span></p>
+</li>
+<li>
+<p><a href="https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160">公司原始经营发布</a> · www.minimax.io</p>
+<p><span class="ref-url">https://www.minimax.io/news/minimax-announces-first-half-2026-financial-results-1787744160</span></p>
+</li>
+<li>
+<p><a href="https://ir.kuaishou.com/node/11461/pdf">快手2026Q1正式业绩</a> · ir.kuaishou.com</p>
+<p><span class="ref-url">https://ir.kuaishou.com/node/11461/pdf</span></p>
+</li>
+<li>
+<p><a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手2026Q2正式业绩</a> · ir.kuaishou.com</p>
+<p><span class="ref-url">https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji</span></p>
+</li>
+<li>
+<p><a href="https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-26/a3484b7e-ddfa-4a68-aade-95433fe1ca76.PDF">中文在线2026半年报，制作平台说明</a> · disc.static.szse.cn</p>
+<p><span class="ref-url">https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-26/a3484b7e-ddfa-4a68-aade-95433fe1ca76.PDF</span></p>
+</li>
+<li>
+<p><a href="https://static.cninfo.com.cn/finalpage/2026-10-01/1225590018.PDF">中文在线发行预案</a> · static.cninfo.com.cn</p>
+<p><span class="ref-url">https://static.cninfo.com.cn/finalpage/2026-10-01/1225590018.PDF</span></p>
+</li>
+<li>
+<p><a href="https://www.bilibili.com/video/BV1dg5RzNEQk/">MiniMax产品账号《白咒》发布</a> · www.bilibili.com</p>
+<p><span class="ref-url">https://www.bilibili.com/video/BV1dg5RzNEQk/</span></p>
+</li>
+<li>
+<p><a href="https://disc.static.szse.cn/disc/disk03/finalpage/2026-08-21/aa454b34-a199-4368-9c36-44750a64695e.PDF">易点天下半年报</a> · disc.static.szse.cn</p>
+<p><span class="ref-url">https://disc.static.szse.cn/disc/disk03/finalpage/2026-08-21/aa454b34-a199-4368-9c36-44750a64695e.PDF</span></p>
+</li>
+<li>
+<p><a href="https://staticintl.cloudcachetci.com/doc/pdf/product/pdf/tencent-cloud_1041_40335_en.pdf">腾讯云短剧翻译产品原文</a> · staticintl.cloudcachetci.com</p>
+<p><span class="ref-url">https://staticintl.cloudcachetci.com/doc/pdf/product/pdf/tencent-cloud_1041_40335_en.pdf</span></p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/terms/service-terms">Google Cloud服务专用条款</a> · cloud.google.com</p>
+<p><span class="ref-url">https://cloud.google.com/terms/service-terms</span></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE">H3许可原文</a> · huggingface.co</p>
+<p><span class="ref-url">https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE</span></p>
+</li>
+<li>
+<p><a href="https://platform.minimax.io/h3-license">官方额外许可申请入口</a> · platform.minimax.io</p>
+<p><span class="ref-url">https://platform.minimax.io/h3-license</span></p>
+</li>
+<li>
+<p><a href="https://crazymaplestudios.com/statement">CMS官方声明</a> · crazymaplestudios.com</p>
+<p><span class="ref-url">https://crazymaplestudios.com/statement</span></p>
+</li>
+<li>
+<p><a href="https://www.foxcorporation.com/news/business/2025/fox-entertainment-deepens-creative-content-portfolio-and-audience-reach-with-strategic-investment-in-vertical-video-technology-platform-holywater/">FOX股权投资公告</a> · www.foxcorporation.com</p>
+<p><span class="ref-url">https://www.foxcorporation.com/news/business/2025/fox-entertainment-deepens-creative-content-portfolio-and-audience-reach-with-strategic-investment-in-vertical-video-technology-platform-holywater/</span></p>
+</li>
+<li>
+<p><a href="https://www.copyright.gov/ai/">美国版权局AI报告页面</a> · www.copyright.gov</p>
+<p><span class="ref-url">https://www.copyright.gov/ai/</span></p>
+</li>
+<li>
+<p><a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">Part 2结论</a> · www.copyright.gov</p>
+<p><span class="ref-url">https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf</span></p>
+</li>
+</ol></section></main></body></html>

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_VISUAL_REVIEW",
+  "pdf": "20_AI应用商业化全景.pdf",
+  "pdf_sha256": "e0f1fa32b576e09a2c4f44bc5330a852edad3bac325cb3e08f846704e5fee82e",
+  "pages_reviewed": [
+    7,
+    10
+  ],
+  "pages_confirmed_unchanged": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14
+  ],
+  "issues": [],
+  "method": "最终更新轮复核：使用 C:\\Python314\\python.exe 的 PyMuPDF (fitz) 按既定渲染参数重新渲染14页，并以逐页PNG SHA-256与此前已逐页目视审查的渲染图比较；仅第7、10页像素变化，实际通过 view_image 复核这两页。其余12页PNG哈希一致，确认像素不变并沿用先前逐页目视结果。检查中文字体、表格换页、裁切/重叠、异常空白、页眉页脚及淡水印。未使用原生WPS验证。"
+}

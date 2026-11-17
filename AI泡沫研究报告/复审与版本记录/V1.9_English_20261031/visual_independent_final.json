@@ -1,0 +1,28 @@
+{
+  "pdf_sha256": "1bdf84bde7eda951f9a8e876160c418b367e438b9b341360496728e8d2e27345",
+  "pages_reviewed": [4, 5, 6, 7, 8, 9, 10, 15, 17, 20, 21, 23, 26, 27, 38, 44, 58, 80, 96, 97, 109, 126, 127, 128, 129, 131, 132, 136, 149, 158, 172, 180, 184, 186, 198, 205, 211, 219, 225, 232, 238, 246],
+  "reviewer": "gpt-6-astra xhigh",
+  "status": "PASS_SAMPLED_VISUAL",
+  "issues": [],
+  "scope": {
+    "method": "Actually displayed and visually inspected all 42 specified qa_visual/page_NNN.png images with tools.view_image; this is a sampled visual review, not a claim of visually reviewing all 272 PDF pages.",
+    "coverage": [
+      "Contents pages 4–10: Chapters 1–13, Appendices A–F, long wrapped entries, and the separate right-aligned page-number column.",
+      "All eight unique English charts on pages 17, 20, 21, 23, 26, 27, 44, and 184; the repeated TSMC chart on page 180 was also inspected.",
+      "Long tables and formulas on pages 96–97, 126–129, and 131–132; sampled chapter and appendix openings; headers, footers, font/glyph rendering, wrapping, and page boundaries."
+    ],
+    "result": "No material overlap, cropping, missing glyphs, unreadable body text, or inappropriate word splitting observed in the inspected pages. Table headers repeat cleanly across pages 128–129, and long titles and page-number columns remain distinct.",
+    "limits": "Visual layout review only. This review did not re-research factual claims, audit translation fidelity, recalculate financial assumptions, or independently exercise PDF link destinations. Pages 1, 2, 3, 254, and 272 were outside this reviewer's assigned 42-page sample.",
+    "identity_check": "Recomputed the actual PDF SHA-256 and confirmed equality with manifest.json outputs.pdf.sha256 and qa.json pdf_sha256."
+  },
+  "prior_findings_resolution": [
+    {
+      "finding": "Allegedly missing manifest hash",
+      "resolution": "Not reproduced. manifest.json contains the nested field outputs.pdf.sha256; it is not a separate file named outputs.pdf.sha256. Its value matches the actual PDF and qa.json."
+    },
+    {
+      "finding": "Pages 128–129: Chinese business- / systems team header wrapping",
+      "resolution": "Normal wrapping at the existing hyphen in business-systems. The complete two-line header stays within its cell, remains legible, and repeats consistently on the next page. It does not impair interpretation and is not a material readability or layout defect."
+    }
+  ]
+}

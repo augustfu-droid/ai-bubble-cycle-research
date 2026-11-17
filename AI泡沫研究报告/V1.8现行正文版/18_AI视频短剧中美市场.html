@@ -1,0 +1,514 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI视频短剧：中美市场研究 V1.8</title><style>@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI视频短剧：中美市场研究";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.8 · 2026-10-31";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><section class="cover"><div class="line"></div><p class="brand">大队长出品 · AI产业周期研究</p><h1>AI视频短剧：中美市场研究</h1><p class="subtitle">付费需求、制作成本、获客与现金回收</p><p class="edition">V1.8 · 现行正文<br>2026年10月31日</p><p class="foot">资料按各自报告期使用 · 事实与假设分列<br>个人研究 · 不构成投资建议<br>联系邮箱：<a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p></section><section class="front"><h2>免责声明</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。</p>
+<p>资料核验截至2026年10月31日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。</p>
+<p>这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。</p>
+<h2>本次更新</h2>
+<ol>
+<li>
+<p>新增AI视频短剧中美市场专题，区分整体短剧与AI生成子集，核对获客、制作、分成及版权边界；预测和公司样本不外推为行业已实现利润。</p>
+</li>
+<li>
+<p>在V1.7现行正文上更新证据，保留原研究主题；旧版独立归档，本册不叠加旧页与重复校注。</p>
+</li>
+<li>
+<p>目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。</p>
+</li>
+</ol></section><nav class="toc"><h1>目录</h1><p>本册统一目录，页码由当前正文生成；各篇采用全景统一章节标识，便于交叉核对。</p><a class="l2" href="#h-0000">专题三：AI视频短剧——中美市场与资本回收</a><a class="l3" href="#h-0001">18.1 先把三种生意分开</a><a class="l3" href="#h-0002">18.2 市场确实在扩张，但没有一个数字可以叫作“中美AI短剧总盘子”</a><a class="l3" href="#h-0003">18.3 中国：免费分发与内容工业化，开始出现可以查账的样本</a><a class="l3" href="#h-0004">18.4 美国：付费意愿的新证据，更接近用户，也更容易被过度解读</a><a class="l3" href="#h-0005">18.5 从IP到现金：五个环节，五次价值分配</a><a class="l3" href="#h-0006">18.6 三组纯假设算例：降本如何被返工、获客和账期重新分配</a><a class="l3" href="#h-0007">18.7 AI带来的机会，先在完整流程里找</a><a class="l3" href="#h-0008">18.8 护城河不是“会用模型”，而是别人复制后仍然留下什么</a><a class="l3" href="#h-0009">18.9 平台与上市公司敞口：先核归属，再谈价值</a><a class="l3" href="#h-0010">18.10 版权和监管进入成本表，而不是附录里的免责声明</a><a class="l3" href="#h-0011">18.11 最强反方：内容更便宜，可能让赚取利润更难</a><a class="l3" href="#h-0012">18.12 对AI泡沫论文，究竟改了哪几条</a><a class="l2" href="#h-0013">参考资料索引</a></nav><main><h2 id="h-0000">专题三：AI视频短剧——中美市场与资本回收</h2>
+<p>资料截至2026年10月31日北京时间。本专题把“短剧已有观众付费”“AI已参与制作”“AI主生成作品能够赚钱”“上游AI资本可以获得足够回报”分为四个需要分别证明的命题。它们之间存在联系，却不能互相替代。</p>
+<p>2026年出现了值得提高研究权重的新证据：中国已有上市公司单列AI短剧收入，美国市场相关运营商开始披露AI剧与真人剧的付费行为比较。AI视频因此应从单纯的技术展示，进入本报告的商业化观察名单。但目前更适合研究的对象，是可持续的内容生产与发行系统；一条爆款、一个播放榜单或一项模型提速，都还不能独立回答资本回收问题。</p>
+<h3 id="h-0001">18.1 先把三种生意分开</h3>
+<p>本专题所说的短剧，是以连续故事吸引观众反复观看的短篇幅剧集；研究重点是移动端竖屏剧，同时包括采用类似分发与变现方式的AI漫剧。它不包括所有AI广告片、单条创意短视频，也不把传统长篇动画都归入短剧。中国现行《微短剧发展管理办法》的法定定义还包括单集少于二十分钟等条件，明显宽于海外应用常见的一两分钟竖屏剧，跨国统计不能直接换算。<a href="https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html">国家广电总局《微短剧发展管理办法》</a></p>
+<table>
+<thead>
+<tr>
+<th>制作类型</th>
+<th>核心生产方式</th>
+<th>AI可能改变什么</th>
+<th>应避免的统计错误</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统真人短剧</td>
+<td>演员、场景、摄影和人工后期为主体</td>
+<td>可以先作为比较基准</td>
+<td>把其全部收入计入AI生成市场</td>
+</tr>
+<tr>
+<td>AI辅助真人短剧</td>
+<td>真人拍摄为主体，AI参与剧本、预演、配音、字幕、特效或广告素材</td>
+<td>缩短部分流程，增加测试版本，改善本地化效率</td>
+<td>因为用了一个AI工具，就把整部剧认定为AI主生成</td>
+</tr>
+<tr>
+<td>AI主生成短剧</td>
+<td>大部分关键画面由模型生成，人工负责故事、角色设定、取舍、剪辑和审核</td>
+<td>降低部分场景、演员及视效约束，扩大可试验题材</td>
+<td>把模型输出秒数当成可售成片秒数，或把“主生成”等同无人制作</td>
+</tr>
+</tbody>
+</table>
+<p>AI主生成还要分动漫化、动态漫与仿真人。动漫化作品可以采用风格化动作与剪辑；仿真人作品需要观众接受角色表情、动作和镜头连续性。两者的观感、返工原因和版权资产不同，不能用一部低运动量动态漫的成本，推算所有仿真人短剧的成本。这是生产机制判断，不是两种类型的行业成本排名。</p>
+<p>真正的生意可以浓缩为一句话：<strong>观众为下一段故事付费，或者把注意力交给广告；企业必须以足够低的完整成本，持续找到愿意回来的人。</strong>模型能降低内容供给成本，却不会自动增加一个人的时间、娱乐预算和复购意愿。</p>
+<h3 id="h-0002">18.2 市场确实在扩张，但没有一个数字可以叫作“中美AI短剧总盘子”</h3>
+<p>下表保留能够回读的原始口径。“估计”表示统计机构估算，“预测”表示未来或全年判断，“公司披露”表示经营主体提供的数据；它们都不自动等于独立审计结果。</p>
+<table>
+<thead>
+<tr>
+<th>来源与观察期</th>
+<th>可引用的结果</th>
+<th>能说明什么</th>
+<th>不能说明什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensor Tower，2026年第一季度，全球短剧应用</td>
+<td>下载超过8.5亿次，同比约+140%；应用内购收入估计约7.5亿美元，同比约+20%</td>
+<td>独立应用的获取用户与内购活动继续增长</td>
+<td>不是AI专属；不是美国全年；下载不是去重付费人数，内购不等于企业净现金</td>
+</tr>
+<tr>
+<td>Omdia，2026年2月发布</td>
+<td>预测2026年全球微短剧收入140亿美元，中国以外30亿美元，其中美国15亿美元</td>
+<td>美国是值得单独研究的海外收入市场</td>
+<td>全年预测不是全年实绩；包含不同制作方式，不能全部分给AI</td>
+</tr>
+<tr>
+<td>QuestMobile，2026年2月国内用户观察</td>
+<td>短剧行业月活用户约7.18亿，红果免费短剧月活约3.04亿</td>
+<td>国内短剧已有庞大消费场景，平台分发值得重视</td>
+<td>用户规模不是收入；不能当AI用户规模，也不能把各平台月活简单相加</td>
+</tr>
+<tr>
+<td>兑吧，2026年上半年</td>
+<td>公司单列AI短剧业务收入2.22629亿元人民币</td>
+<td>已出现AI短剧商业收入的正式财务披露</td>
+<td>不代表中国全市场，也不代表纯模型生成收入或独立分部净利润</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://sensortower.com/blog/state-of-short-drama-apps-2026-report">Sensor Tower 2026短剧应用报告</a>、<a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia 2026年预测</a>、<a href="https://www.questmobile.com.cn/research/report/2041710682848727041/">QuestMobile原始报告</a>、<a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧2026中期报告，第4、30页</a>。兑吧数字为公司未经审核中期披露；媒体转述不是另一份独立财务验证。</p>
+<p>这些数字不能相加。应用内购与行业总体收入的覆盖范围不同，市场预测与收入实绩不同，用户规模与货币规模更不同。尤其不能用“全球短剧市场×一个未经验证的AI渗透率”得出精确的美国AI短剧收入，再给模型公司分配份额。</p>
+<p>Sensor Tower的下载增速快于内购增速，是一个需要解释的信号，不是盈利崩溃的证据。可能原因包括免费模式扩大、新增用户所在地区变化，以及新用户尚未成熟。其原文还显示，当季下载增长集中在东南亚、拉美和印度；因此全球下载爆发不能被写成美国高付费用户同步爆发。反过来，季度内购仍然增长，也不应被忽略。<a href="https://sensortower.com/blog/state-of-short-drama-apps-2026-report">Sensor Tower报告及方法说明</a></p>
+<p>本轮没有将媒体转述的“国内短剧加漫剧1210亿元”“AI短剧400亿元”等预测纳入核心市场规模计算。一些材料把内容收入、广告交易、制作服务和模型服务分别列为市场，但这些钱可能沿同一条价值链流动。即使某个预测最终准确，制作方付给模型商的钱，也不能再与终端内容收入相加，冒充新增消费者需求。当前证据不足以给中美AI主生成短剧各自一个可靠的总收入、利润率和市场份额。</p>
+<h3 id="h-0003">18.3 中国：免费分发与内容工业化，开始出现可以查账的样本</h3>
+<p>中国市场至少有三条不同路径：独立短剧应用通过广告或付费变现；短视频平台与小程序承接内容和交易；制作方把成片、版权或承制服务卖给平台。AI进入每条路径后的收益分配并不相同。</p>
+<p>在免费模式里，观众未必直接付钱，广告主才是主要付款方。平台掌握推荐、广告展示、结算规则与用户关系，制作方可能取得保底、分成或固定承制费。制作成本下降可以增加平台可选择的内容，也可能降低平台向制作方支付的价格。对一家依靠单个平台分账的工作室而言，更大的观看量未必对应更强的议价权。</p>
+<p>点众在2026年4月的中国网络视听大会上公布AIGC共创计划，包含国内外剧本、成片和承制方的不同保底与分成方案。这说明采购和发行正在围绕AI内容建立产品化合作方式。那些金额属于招募方案和评级上限，不能当每个团队都能拿到的报价，更不能当已支付收入或行业均价。本专题不把“最高保底”“最高分成”代入盈利测算。<a href="https://www.vidchina.cn/show/201">中国网络视听大会对点众共创计划的原始报道</a></p>
+<p>兑吧提供了更直接的收入证据。其2026年中期报告单列AI短剧收入2.22629亿元，占集团收入约51.2%；集团同期仍有2532.6万元亏损。报告只设一个可报告经营分部，不能从集团损益倒推出AI短剧的独立净利率。10月14日的港交所公告进一步称，根据未经审核管理账目的初步评估，预期AI短剧业务在7、8、9月连续单月录得纯利，但没有披露利润金额，并明确未经核数师审核或审阅。这是积极的经营信号，其证明强度仍低于经核验、可连续比较的分部利润和现金流。<a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧中期报告</a>、<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400004_c.pdf">兑吧10月14日正式公告</a></p>
+<p>中文在线则说明，生产降本与上市公司盈利不能合并判断。其上半年短剧及IP衍生品业务收入为4.11260亿元，但该类别包含不同内容与衍生业务，不是AI收入。10月26日披露的三季报把营业成本下降的重要原因归于部分海外短剧转为AI制作，同时披露前三季度集团收入8.32732亿元、归母净亏损1.32051亿元，经营现金净流入4279.60万元。AI应用、成本下降、整体亏损可以同时存在。<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线2026半年报，第22页</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线2026三季报，第2—4页</a></p>
+<p>还有一项容易被正面叙事漏掉的现金变化：中文在线上半年经营现金净流入1.26802亿元，前三季度累计仅4279.60万元，二者相减，第三季度单季经营现金净流出约8400.57万元。这是集团口径的算术结果，不能全部归因于AI短剧；但它足以否定“上半年转正，所以此后可以稳定自我造血”的直线外推。同期收入下降、旧业务调整、回款与付款时点，都需要继续拆解。<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">半年报现金流量表</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">三季报现金流量表</a></p>
+<p>这两家公司应并列看：一个出现明确命名的AI业务收入和初步月度盈利信号，另一个说明AI降本没有立即消除集团亏损及现金波动。选择其中一个证明全行业成功或失败，都会放大样本偏差。</p>
+<h3 id="h-0004">18.4 美国：付费意愿的新证据，更接近用户，也更容易被过度解读</h3>
+<p>美国市场的核心问题不是能否制作英文短剧，而是能否用可承担的成本取得付费用户，并让其在第一部剧之后继续消费。ReelShort、DramaBox等产品的全球表现不能直接当美国收入；美国受众也不能与这些产品的经营主体注册地、出资方国籍混为一谈。中国企业开发面向美国的产品，仍然需要美国市场层面的用户、价格与回款证据。</p>
+<p>HOLYWATER与Owl &amp; Co在2026年7月发布的报告摘要，是本轮最值得新增、也最需要克制使用的材料。其AI剧应用My Muse的付费转化率为23.6%，真人剧应用My Drama为23.9%；摘要同时引用对2737名My Drama用户的调查。该数据来自运营商自身产品，公开发布稿没有提供足以复现比较的完整用户分母、各国构成、获客来源、价格和观测窗口。本轮访问了55页报告入口，但未取得可逐页检查的完整正文，因此只使用能在正式发布稿核对的结果。<a href="https://www.holywater.tech/report">HOLYWATER报告入口</a>、<a href="https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html">HOLYWATER与Owl &amp; Co正式发布稿</a></p>
+<p>23.6%与23.9%相差0.3个百分点，不能据此宣布AI和真人“统计等效”。愿意进入AI应用的人，可能本来就更接受这种表现方式；两款应用也可能有不同的免费入口、付费墙、流量定向和内容类型。2737名某应用用户不能代表全体美国观众，更不能拿这份问卷样本量，替代两款应用转化率各自的样本量。这里最稳妥的结论是：运营商观察到了某些AI内容用户的实际付费行为；“观众不会为AI剧付钱”已经不是一个可以不加检验地采用的前提。</p>
+<p>同一发布稿称，My Muse旗舰作品的付费订阅者中，约九成在累计观看100分钟后仍在观看。这个条件是“旗舰作品＋已经付费的观众＋特定累计时长”，不是所有下载者的完播率，更不是全站90%留存。观看某一部剧、次日回访、第二部剧转化、三个月续订，分别回答不同的问题。对资本回收最关键的，往往是后两项及其对应的净收入，而非某个最好的观看节点。<a href="https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html">HOLYWATER正式发布稿</a></p>
+<p>Google Cloud客户案例补充了制作机制：HOLYWATER用角色与场景设定、分镜、图像和视频生成组织流程，公司称制作速度约为传统竖屏视频生产的8倍，My Muse采用新流程后的ARR约为此前的10倍。案例没有给出绝对收入基数、可比投入与完整利润表，且是供应商发布的客户成功材料，不是对运营商结果的独立审计。它支持“已有团队把模型装进持续生产流程”的判断，不能证明收入变化由模型单独造成，也不能把ARR当已经确认的年度收入或现金。<a href="https://cloud.google.com/customers/holywater">Google Cloud的HOLYWATER案例</a></p>
+<p>10月29日，HOLYWATER研发负责人在书面访谈中谈到大量广告素材测试，以及先观察首日广告回报，再结合长期价值和留存决定是否继续获客。这项访谈的价值是解释工作方式；其成本、回本周期及盈利表述仍是受访者单源，不能给全行业套用。尤其不能因首日投放回报改善，就假定所有未来续费已经到账。<a href="https://www.streaming-radar.com/p/interview-with-illia-berestovskyi-holywater-tech">Streaming Radar对HOLYWATER的访谈</a></p>
+<p>中国与美国的差别因此不是“一个免费、一个付费”的绝对划分。两边都有混合模式。现阶段更值得比较的是：谁掌握用户关系、谁承担试错和投流、广告或订阅净收益怎样结算，以及内容能否在本地语境中获得第二次消费。中国团队的制作经验是可迁移能力，美国用户的付费行为仍须重新验证。</p>
+<h3 id="h-0005">18.5 从IP到现金：五个环节，五次价值分配</h3>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>实际交付与付款</th>
+<th>可能留下价值的能力</th>
+<th>最容易漏掉的成本或约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP与选题</td>
+<td>小说、原创剧本、改编权、角色或品牌授权</td>
+<td>可持续产出的故事源；授权链完整；理解哪些读者会变成观众</td>
+<td>改编地域、期限、语言、续集与衍生权；失败选题；作者分成</td>
+</tr>
+<tr>
+<td>生成与制作</td>
+<td>分镜、关键画面、视频、配音、剪辑、审片</td>
+<td>稳定完片、角色资产复用、可追踪的人机工作流</td>
+<td>多次生成、废片、人工修复、音画连续性、失败项目分摊</td>
+</tr>
+<tr>
+<td>本地化</td>
+<td>翻译、配音、口型、字幕、情节与文化调整</td>
+<td>对本地情绪和叙事节奏的理解；稳定交付</td>
+<td>直译造成的转化损失；声音和肖像授权；多版本审核</td>
+</tr>
+<tr>
+<td>分发与获客</td>
+<td>自有应用、平台、广告素材和投流</td>
+<td>能重复找到付费或广告价值高的用户；跨剧推荐</td>
+<td>广告竞价、素材疲劳、渠道集中、自然流量机会成本</td>
+</tr>
+<tr>
+<td>结算与复购</td>
+<td>付费、广告或授权对账及到账</td>
+<td>退款后净收入、透明分账、复购与现金周转</td>
+<td>支付与渠道费用、退款、拒付、税费、账期、保底回收条款</td>
+</tr>
+</tbody>
+</table>
+<p>同一家公司可能横跨几个环节，但产业收入不能因此重复计算。消费者付款100元，平台留下部分再付给版权方和制作方，制作方再付模型API费用；这不是消费者创造了三次100元需求。研究公司价值时可以逐层看收入，研究终端市场和AI资本回收时必须消除内部交易。</p>
+<p>不同变现方式也必须分别建账：</p>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>基本收入逻辑</th>
+<th>最有用的经营指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>按集、按剧解锁</td>
+<td>用户为继续观看付费，可能通过代币消耗确认收入</td>
+<td>去重付费率、实付客单价、未消费余额、退款与跨剧复购</td>
+</tr>
+<tr>
+<td>订阅</td>
+<td>用户按周、月或年取得观看权益</td>
+<td>实际续费率、取消率、净收入留存、服务期与现金预收差异</td>
+</tr>
+<tr>
+<td>广告</td>
+<td>广告主为有效展示或约定效果付费</td>
+<td>有效广告展示、填充率、净eCPM、内容方分账比例、无效流量扣款</td>
+</tr>
+<tr>
+<td>授权与承制</td>
+<td>平台、发行商或品牌为权利或成品付款</td>
+<td>可执行合同、验收、保底是否可回收、收入确认与到账进度</td>
+</tr>
+<tr>
+<td>模型订阅与API</td>
+<td>制作团队为生成能力付款</td>
+<td>净付费客户留存、可用成片成本、推理贡献毛利、免费额度与补贴依赖</td>
+</tr>
+</tbody>
+</table>
+<p>其中eCPM是每千次有效广告展示带来的收入，不是每千次视频播放的收入；净eCPM还必须写明已扣哪些费用。代币充值也不必等于当期已提供服务的收入。中文在线的会计政策把预收会员费和储值先列为合同负债，随后按服务提供或代币消耗等条件确认，这正说明用户支付、会计收入与可自由支配利润是三件事。<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线2026半年报收入确认政策，第140页</a></p>
+<h3 id="h-0006">18.6 三组纯假设算例：降本如何被返工、获客和账期重新分配</h3>
+<p>以下全部数字都是用于解释机制的假设，不是报价、行业均值、任何公司的内部数据或市场预测。人民币和美元各自计算，不作汇率换算。各算例以项目贡献或成本为结果，均不等于上市公司净利润。</p>
+<p><strong>算例一：模型生成费减半，完整制作成本只下降7.5%。</strong></p>
+<p>假设交付60分钟可用成片，即3600秒；模型按实际生成秒计费，每秒假设0.50元；可用率定义为最终采用秒数除以全部付费生成秒数。生成可用率20%时，需要付费生成18000秒，模型费用9000元。除此之外，人力25000元、后期及本地化10000元、版权和合规6000元、未上线项目分摊10000元，完整成本合计60000元。</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th style="text-align: right;">付费生成秒数</th>
+<th style="text-align: right;">生成费用</th>
+<th style="text-align: right;">完整制作成本</th>
+<th style="text-align: right;">每分钟可用成片成本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可用率20%</td>
+<td style="text-align: right;">18000</td>
+<td style="text-align: right;">9000元</td>
+<td style="text-align: right;">60000元</td>
+<td style="text-align: right;">1000元</td>
+</tr>
+<tr>
+<td>可用率40%，其他成本不变</td>
+<td style="text-align: right;">9000</td>
+<td style="text-align: right;">4500元</td>
+<td style="text-align: right;">55500元</td>
+<td style="text-align: right;">925元</td>
+</tr>
+</tbody>
+</table>
+<p>可用率翻倍后，模型费下降50%，完整成本下降4500÷60000＝7.5%。提高生成质量仍然有价值，但如果同时需要更多人工挑片、修复和版本维护，收益还会变化。宣传中的“单秒价格”既没有包含废片，也没有包含未成为爆款甚至未上线的作品。投资者真正需要的生产指标是：在相同交付标准下，每分钟验收成片的总成本，以及整个项目池每元成本最终产生多少净回款。</p>
+<p><strong>算例二：中国广告分账项目，播放热度很高仍可能亏损。</strong></p>
+<p>假设一个内容项目池累计获得1亿次广告展示机会，填充率80%，实际有效广告展示为8000万次；每千次有效展示收入12元，内容方取得40%。这里的1亿不是视频播放次数，不能从某剧“破亿播放”直接代入。</p>
+<p>内容方分账收入＝100000000÷1000×80%×12×40%＝384000元。假设成片制作120000元，失败作品及返工40000元，内容方获客100000元，发行、人工运营及其他项目支出60000元，合计320000元，则项目贡献为64000元，尚未扣总部固定费用、融资成本与所得税。</p>
+<p>若其他条件不变，eCPM由12元降到9元，内容方收入变成288000元，项目贡献转为−32000元。盈亏平衡需要eCPM达到10元，或在原来12元条件下取得约8333.33万次广告展示机会。若制作节省了20000元，但同期广告价格、有效流量或分账条件恶化，节省未必留得住。</p>
+<p>这里还隐含一个合同问题：平台展示的分账比例，是对广告总收入、扣除渠道费后的净收入，还是扣除投流与保底回收后的余额计算？四成乘以不同分母，可以得到完全不同的到账金额。必须先核合同，再讨论“高分成”。</p>
+<p><strong>算例三：面向美国的付费应用，几毛钱获客差异足以改变结果。</strong></p>
+<p>假设同一批100000名新用户均由付费渠道获取，每名新用户成本1.50美元，合计150000美元。90天内4%用户付费，即4000名；每名付费用户在这90天累计支付60美元；退款5%，支付及渠道综合费用假设为退款后收入的20%。分配给该用户群的内容成本20000美元，包含失败作品，服务和运营成本10000美元。</p>
+<p>90天净收＝100000×4%×60×95%×80%＝182400美元。项目贡献＝182400−150000−20000−10000＝2400美元。按新用户定义的获客成本是1.50美元，按付费用户定义则是37.50美元；二者不能都简称CAC而不说明分母。60美元也不是订阅月价，而是已观察90天窗口中的累计付款假设。</p>
+<table>
+<thead>
+<tr>
+<th>90天付费率</th>
+<th style="text-align: right;">每名新用户获客成本1.00美元</th>
+<th style="text-align: right;">1.50美元</th>
+<th style="text-align: right;">2.00美元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3%</td>
+<td style="text-align: right;">+6800美元</td>
+<td style="text-align: right;">−43200美元</td>
+<td style="text-align: right;">−93200美元</td>
+</tr>
+<tr>
+<td>4%</td>
+<td style="text-align: right;">+52400美元</td>
+<td style="text-align: right;">+2400美元</td>
+<td style="text-align: right;">−47600美元</td>
+</tr>
+<tr>
+<td>5%</td>
+<td style="text-align: right;">+98000美元</td>
+<td style="text-align: right;">+48000美元</td>
+<td style="text-align: right;">−2000美元</td>
+</tr>
+</tbody>
+</table>
+<p>表中只改变付费率和获客成本，其余假设固定。基准方案盈亏平衡的付费率约3.947%；或者在4%付费率下，90天付费用户累计支付至少约59.21美元。由4%提高到5%的付费转化，在此例中的影响大于把20000美元内容成本再砍一半。这并非认定所有公司投流最重要，而是要求先检查真实成本结构，再决定技术改进的财务权重。</p>
+<p>如果开支先发生、收入分期到账，最终贡献为正仍需要营运资金。假设上述180000美元项目支出在第30天前已付清，同时只收到上述净收的35%，到账63840美元，尚未回收的项目支出为116160美元。实际最大资金缺口须按每天付款与回款重建，不能由一个“LTV/CAC大于1”代替。90天以后的续费，在验证之前只能列为额外情景，不能提前记作现金收益。</p>
+<h3 id="h-0007">18.7 AI带来的机会，先在完整流程里找</h3>
+<p>第一种机会是更便宜、更快的题材测试。AI可能降低制作样片和题材测试的投入，帮助决定是否继续；其增量价值须与传统样片、分镜及广告测试流程比较，不能假定过去只能整部拍完才获得反馈。它的价值是减少错误资本投入，而不只是让正确项目更便宜。但是，测试版受众可能不同于最终真人版受众，广告点击率也可能与正片付款率相反。只有测试信号能够稳定预测最终净回款，这个流程才具有经济价值。</p>
+<p>第二种机会是过去成本过高的场景与风格。奇幻、科幻、历史想象和动漫化叙事，可以尝试用生成画面替代部分高成本资产。但“更容易拍”只解决供给限制，消费者是否喜欢、是否愿意买、平台是否愿意给流量仍需分别验证。新的类别可能扩大市场，也可能只是把原有小说、游戏和短视频的时间迁移过来。</p>
+<p>第三种机会是本地化与广告素材的快速试验。同一IP可以产生多种语言、开场和投放创意，缩短寻找合适用户的周期。但翻译准确不等于情绪准确，口型一致不等于表演可信；低成本产生一万条素材也不等于一万次有效学习。真正有用的系统能把“广告承诺吸引了谁”“正片满足了谁”“谁在退款后继续付费”连起来，并防止只优化点击而损伤留存。</p>
+<p>第四种机会是给外部客户提供可靠制作与工具。承制商若收取有验收标准、付款节点的合同款，可能比自营付费应用更少承担投流风险；代价是客户会压价，项目收入未必重复。模型商可能获得跨工作室需求，代价则是替代模型、降价和客户多模型采购。两种商业模式都需要自己的利润表，不能因为站在“卖铲子”的位置就默认高回报。</p>
+<h3 id="h-0008">18.8 护城河不是“会用模型”，而是别人复制后仍然留下什么</h3>
+<table>
+<thead>
+<tr>
+<th>候选优势</th>
+<th>形成持续优势的条件</th>
+<th>可以推翻判断的观察</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP及角色资产</td>
+<td>授权清晰，跨剧、续季和跨媒介复购形成持续回款</td>
+<td>版权库很大但改编成功率和实际回款低；权利到期即失去作品</td>
+</tr>
+<tr>
+<td>人机生产流程</td>
+<td>同等质量下稳定缩短交期，减少返工，资产复用不牺牲差异性</td>
+<td>竞争对手用同一模型很快追平；人力与失败成本抵消生成降价</td>
+</tr>
+<tr>
+<td>用户与推荐关系</td>
+<td>第一部剧后持续观看其他剧，自然回访降低后续获客支出</td>
+<td>每一部新剧仍需重新买用户；停止投流后收入快速消失</td>
+</tr>
+<tr>
+<td>数据与投放能力</td>
+<td>能区分广告、故事与受众问题，跨题材仍有可复现改善</td>
+<td>只在少数爆款或短期流量红利期有效；扩量后回报恶化</td>
+</tr>
+<tr>
+<td>版权、合规与交付信誉</td>
+<td>让平台少承担下架、侵权和交付风险，形成重复采购</td>
+<td>成本不能转化为订单、价格或留存优势；单一客户随时换供应商</td>
+</tr>
+</tbody>
+</table>
+<p>这些是检验条件，不是已经确认的公司护城河评分。模型生成能力普及，可能削弱单纯制作技巧的差异；大型平台的渠道优势，也可能被更专业的内容品牌或新的分发入口挑战。生产端更分散与利润向渠道集中可以同时发生，不能根据工作室数量增加就断言利润更分散。</p>
+<p>最有希望积累价值的，是IP、内容判断、生产资产、用户反馈和结算数据能相互改进的经营系统。判断它是否存在，应看跨作品和跨季度表现，而不是公司画出的流程图。还要观察管理层是否在内容供给突然增加时继续扩大低回报投放，是否把补贴当持久优势，以及是否愿意停止不能回款的项目。</p>
+<h3 id="h-0009">18.9 平台与上市公司敞口：先核归属，再谈价值</h3>
+<p>下表是研究路径，不是股票推荐，也不是所有参与者的完整名单。本轮没有进行这些证券的当前价格和估值核查，不给目标价、买入区间或仓位。</p>
+<table>
+<thead>
+<tr>
+<th>平台或能力</th>
+<th>可核验的经营与资本关系</th>
+<th>研究时应保留的边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>红果、抖音等国内分发场景</td>
+<td>可在QuestMobile等原始研究中观察用户与渠道表现</td>
+<td>平台用户、真人剧和漫剧不能都计入AI；未取得可独立验证的AI分部财务</td>
+</tr>
+<tr>
+<td>河马剧场、DramaBox</td>
+<td>点众在官方行业大会发布材料中将两者列为自有渠道</td>
+<td>不据未经核实的参股传闻，把其收入映射给某家上市公司</td>
+</tr>
+<tr>
+<td>ReelShort、Crazy Maple Studio（CMS）</td>
+<td>ReelShort由CMS运营；中文在线半年报列CMS为参股企业，间接持股49.24%，权益法核算</td>
+<td>不是中文在线全资并表产品；49.24%不是收入并表比例，更不是现金分红比例</td>
+</tr>
+<tr>
+<td>FlareFlow</td>
+<td>中文在线披露的自身出海短剧平台</td>
+<td>与ReelShort区分；全球经营不等于美国经营，AI与真人收入尚不能完整拆开</td>
+</tr>
+<tr>
+<td>My Drama、My Muse</td>
+<td>HOLYWATER分别经营真人与AI相关内容应用；FOX Entertainment已宣布股权投资</td>
+<td>FOX公告未披露投资比例和足以拆算的财务；不能把HOLYWATER全部业绩归于FOX</td>
+</tr>
+<tr>
+<td>兑吧（01753.HK）AI短剧业务</td>
+<td>有单列业务收入及后续初步经营公告</td>
+<td>公司自身收入是可观察敞口；仍缺连续、独立可比的AI业务净利润与现金流</td>
+</tr>
+<tr>
+<td>快手（01024.HK）可灵</td>
+<td>快手2026Q2官方披露可灵收入超过8.5亿元人民币</td>
+<td>包含多类视频生成需求，不是短剧专属；更不是AI短剧制作方利润</td>
+</tr>
+<tr>
+<td>Alphabet／Google Cloud相关模型与云服务</td>
+<td>有HOLYWATER客户案例，显示工具进入生产流程</td>
+<td>案例不能证明可归属的短剧收入规模、模型利润或新增资本回报</td>
+</tr>
+</tbody>
+</table>
+<p>归属及业务来源：<a href="https://crazymaplestudios.com/statement">CMS官方声明</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线半年报，第6、15、157页</a>、<a href="https://www.vidchina.cn/show/201">点众大会发布材料</a>、<a href="https://www.foxcorporation.com/news/business/2025/fox-entertainment-deepens-creative-content-portfolio-and-audience-reach-with-strategic-investment-in-vertical-video-technology-platform-holywater/">FOX股权投资公告</a>、<a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手2026Q2业绩</a>、<a href="https://cloud.google.com/customers/holywater">Google Cloud客户案例</a>。</p>
+<p>CMS还有一个重要时间口径：中文在线三季报说明，本期CMS股权投资收益仅含2026年1—3月数据，不含4—9月。不能因为披露文件标题写着“三季度报告”，就把其中CMS数值视作完整前三季度经营结果。媒体常见的49.16%是较早口径，本专题采用已回读半年报中的49.24%，并保留对应披露日期。<a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线2026三季报，第4页</a></p>
+<p>对中国投资者而言，“海外应用排名上升→参股公司收入上升→上市公司投资收益上升→现金分红增加→当前股价仍便宜”是一条很长的链。每一步都有独立条件：真实经营利润、权益法调整、治理权、分红决策及购买价格。只识别出某个热门应用的股东，还没有完成投资研究。</p>
+<h3 id="h-0010">18.10 版权和监管进入成本表，而不是附录里的免责声明</h3>
+<p>中国2026年9月1日起施行的正式办法，按投资额度与题材分类管理，第一、二类存在不同审核许可要求，第三类由符合条件的播出单位进行播前审核并标注编号；AI生成、制作的微短剧还须按规定在每集明显位置添加提示标识。该办法正文没有直接给出可普遍套用的固定金额门槛，因此这里不把历史“30万元、100万元”等旧分类数字移植成新办法现行界限。<a href="https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html">国家广电总局正式办法，第五、十七、三十四条</a></p>
+<p>经济含义是：低制作成本不意味着可以跳过审核、权利清理和版本管理。生成后需要修改的人物、台词与情节，可能牵动多个镜头；版本越多，追踪授权、标识和投放素材的工作越多。合规能力如果减少返工和下架，可能形成交付优势；但不能预先给它一个没有合同和订单支持的估值溢价。</p>
+<p>美国版权局2025年1月29日发布的Part 2报告区分人类创作与纯AI生成材料：使用AI辅助不当然排除保护，人类原创表达、具有创意的选择编排和修改可获相应保护；纯AI生成材料或人类控制不足的表达则不同。其提示词判断针对当时一般可得技术，认为提示词本身不足以提供对输出表达的充分控制，具体作者性仍须逐案判断。这是现有版权框架的分析，不是2026年新增法律；不能简化成“AI视频都没有版权”，也不能认为只要付了模型费就取得完整排他权。<a href="https://www.copyright.gov/ai/">美国版权局AI报告页面</a>、<a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">Part 2结论</a></p>
+<p>因此，制作方应区分原著改编权、剧本著作权、最终画面中人类创作部分、声音和肖像授权、音乐与素材许可。模型服务允许商业使用，不能替代这整套权利链。是否拥有成片版权，也不同于使用他人材料是否侵权。对投资研究最实际的问题，是一部成功作品能否合法续作、授权和维权，以及合同是否把相关责任留给资本实力不足的工作室。</p>
+<h3 id="h-0011">18.11 最强反方：内容更便宜，可能让赚取利润更难</h3>
+<p>反方不需要否认模型能力。它可以承认AI视频会显著增加、有人愿意看、个别企业会赚钱，然后提出更严厉的资本回报问题：当所有人都能用同一批模型迅速生产时，供给扩张可能快于观众时间和支付预算，制作端的成本红利被内容价格下降与广告竞价吃掉；平台得到更多选择，模型客户频繁切换，工作室持续为下一部剧重新投流。</p>
+<p>在这个路径里，消费者福利与产业生产率都可能提高，而内容制作商、应用投资者乃至部分模型供应商的回报并不好。爆款可以真实，亏损也可以真实；新增收入可以来自另一种娱乐消费的迁移，而非足够大的全新增量。仅凭“AI内容终端有收入”，还无法解决是谁保留利润、需要投入多少资本的问题。</p>
+<table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>损害如何发生</th>
+<th>应观察的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供给过剩</td>
+<td>同质作品增加，单部收入及平台采购价下降</td>
+<td>同质量作品的净回款下降，扩产后失败作品占比提高</td>
+</tr>
+<tr>
+<td>投流吞噬降本</td>
+<td>竞争者共同提高竞价，素材疲劳加快</td>
+<td>同一用户群净收入不变而获客成本上升，扩量后的回收期延长</td>
+</tr>
+<tr>
+<td>只有首部剧有效</td>
+<td>用户被单个情节吸引，但不接受平台其他内容</td>
+<td>第二部剧付费率低、自然回访弱、长期净收入低于早期预测</td>
+</tr>
+<tr>
+<td>平台集中与账期</td>
+<td>单一客户改变采购、分成或结算规则</td>
+<td>应收增长快于收入、到账延迟、需加大保底和投流垫款</td>
+</tr>
+<tr>
+<td>质量与权利问题</td>
+<td>下架、索赔、返工或无法再次授权</td>
+<td>验收失败率提高、版权凭证缺失、退款与投诉抬升</td>
+</tr>
+<tr>
+<td>模型需求虚胖</td>
+<td>免费额度或补贴维持用量，提价即流失</td>
+<td>生成量增长但净付费留存弱，客户利润无法支持持续采购</td>
+</tr>
+</tbody>
+</table>
+<p>目前没有足够的统一样本，为这些失败路径赋予可靠概率，本报告不填貌似精确的百分比。最容易犯的研究错误，是把头部运营商主动公布的最佳作品和最快增长阶段，当成新进入者通常能够实现的结果。相反，也不能把目前缺少行业统计，写成全行业不可能盈利。</p>
+<h3 id="h-0012">18.12 对AI泡沫论文，究竟改了哪几条</h3>
+<p>第一，AI视频短剧提高了“非编程领域存在真实消费者需求”的证据强度。兑吧的业务收入披露，以及HOLYWATER的付费观察，都应进入报告；继续把视频概括为只有演示、没有商业消费，会低估现状。这里承认的是具体业务与样本，不是整个市场已经被完整计量。</p>
+<p>第二，AI价值可以先通过降本、题材测试、本地化和广告素材效率体现，不必等待AI主生成完全替代真人。传统真人、AI辅助与AI主生成可以并存。产业转型若呈混合结构，模型需求与内容收入仍可能增长，替代率不是唯一应观察的变量。</p>
+<p>第三，应用端有价值，使“全部AI投资必然落空”的判断更难成立，却没有证明任意价格、任意资本开支都合理。终端付款还须经过平台、渠道、IP、制作、模型与云服务的分配，模型及基础设施只得到其中一部分；其收入还要扣推理成本、研发、折旧与融资等支出。视频计算密集意味着可能产生算力需求，也意味着经营者可能积极减少无效生成。不能只计算需求上升，不计算效率改善与价格竞争。</p>
+<p>第四，这个行业反而更适合检验“使用增长与投资回报脱节”的核心风险。它可以同时出现：消费者看得更多，模型生成得更多，内容更便宜，但工作室利润更薄、应用回款更慢。中文在线的集团现金波动与兑吧初步盈利信号并列，正好提醒研究者用多维数据更新，而不是寻找单一胜负证据。</p>
+<p>下一轮应优先补齐五项材料：至少两个完整回收周期的获客用户群数据；包含失败作品的项目池成本与回款；AI与真人在相近流量、价格和题材下的比较；按退款、渠道和税费调整后的结算；模型服务在减少补贴后仍能保持的付费留存与贡献毛利。这些不是人为设定的行业门槛，而是把“有人看”连接到“资本赚到钱”所需的证据。</p>
+<p>因此，本轮将AI视频短剧提升为重点商业化观察专题，并保留三层不同置信度：对产业活动和部分真实收入，证据较强；对若干运营商的可持续盈利，证据仍有限；对中美AI短剧行业利润池及其足以支撑多少上游资本开支，当前不能判定。<strong>值得更新的是商业化证据，不能随之自动上调的是所有相关资产的估值。</strong></p>
+<p>本专题的关键财务数据、旧股权口径纠错、模型算式及未采用材料，另见《V1.8_AI视频短剧取证_20261031》。公司自报、供应商案例和同源转载均未包装成独立交叉验证。</p>
+<section class="references">
+
+<h2 id="h-0013">参考资料索引</h2>
+<p>本册按URL去重收录18项参考资料，保留正文中的就近链接，下面按首次引用顺序集中列出完整网址，便于打印后追溯。名称采用已核对的公司、报告期与文档类型或正文来源简称，并非一律为官方原标题；资料的期间、核验程度和访问限制以对应段落为准，不表示全部旧引文都在本轮重新取得原件。</p>
+<ol>
+<li>
+<p><a href="https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html">国家广电总局正式办法，第五、十七、三十四条</a> · www.nrta.gov.cn</p>
+<p><span class="ref-url">https://www.nrta.gov.cn/art/2026/7/31/art_1588_73827.html</span></p>
+</li>
+<li>
+<p><a href="https://sensortower.com/blog/state-of-short-drama-apps-2026-report">Sensor Tower 2026短剧应用报告</a> · sensortower.com</p>
+<p><span class="ref-url">https://sensortower.com/blog/state-of-short-drama-apps-2026-report</span></p>
+</li>
+<li>
+<p><a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia 2026年预测</a> · omdia.tech.informa.com</p>
+<p><span class="ref-url">https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia</span></p>
+</li>
+<li>
+<p><a href="https://www.questmobile.com.cn/research/report/2041710682848727041/">QuestMobile原始报告</a> · www.questmobile.com.cn</p>
+<p><span class="ref-url">https://www.questmobile.com.cn/research/report/2041710682848727041/</span></p>
+</li>
+<li>
+<p><a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧2026中期报告，第4、30页</a> · yun.duiba.com.cn</p>
+<p><span class="ref-url">https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf</span></p>
+</li>
+<li>
+<p><a href="https://www.vidchina.cn/show/201">中国网络视听大会对点众共创计划的原始报道</a> · www.vidchina.cn</p>
+<p><span class="ref-url">https://www.vidchina.cn/show/201</span></p>
+</li>
+<li>
+<p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400004_c.pdf">兑吧10月14日正式公告</a> · www.hkexnews.hk</p>
+<p><span class="ref-url">https://www.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400004_c.pdf</span></p>
+</li>
+<li>
+<p><a href="https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF">中文在线2026半年报收入确认政策，第140页</a> · static.cninfo.com.cn</p>
+<p><span class="ref-url">https://static.cninfo.com.cn/finalpage/2026-08-26/1225504423.PDF</span></p>
+</li>
+<li>
+<p><a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线2026三季报，第2—4页</a> · static.cninfo.com.cn</p>
+<p><span class="ref-url">https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF</span></p>
+</li>
+<li>
+<p><a href="https://www.holywater.tech/report">HOLYWATER报告入口</a> · www.holywater.tech</p>
+<p><span class="ref-url">https://www.holywater.tech/report</span></p>
+</li>
+<li>
+<p><a href="https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html">HOLYWATER与Owl &amp; Co正式发布稿</a> · www.globenewswire.com  新闻分发或转载平台，不能视为新增独立经营证据。</p>
+<p><span class="ref-url">https://www.globenewswire.com/fr/news-release/2026/07/23/3332522/0/en/holywater-tech-and-owl-co-publish-first-industry-report-on-the-vertical-series-audience.html</span></p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/customers/holywater">Google Cloud的HOLYWATER案例</a> · cloud.google.com</p>
+<p><span class="ref-url">https://cloud.google.com/customers/holywater</span></p>
+</li>
+<li>
+<p><a href="https://www.streaming-radar.com/p/interview-with-illia-berestovskyi-holywater-tech">Streaming Radar对HOLYWATER的访谈</a> · www.streaming-radar.com</p>
+<p><span class="ref-url">https://www.streaming-radar.com/p/interview-with-illia-berestovskyi-holywater-tech</span></p>
+</li>
+<li>
+<p><a href="https://crazymaplestudios.com/statement">CMS官方声明</a> · crazymaplestudios.com</p>
+<p><span class="ref-url">https://crazymaplestudios.com/statement</span></p>
+</li>
+<li>
+<p><a href="https://www.foxcorporation.com/news/business/2025/fox-entertainment-deepens-creative-content-portfolio-and-audience-reach-with-strategic-investment-in-vertical-video-technology-platform-holywater/">FOX股权投资公告</a> · www.foxcorporation.com</p>
+<p><span class="ref-url">https://www.foxcorporation.com/news/business/2025/fox-entertainment-deepens-creative-content-portfolio-and-audience-reach-with-strategic-investment-in-vertical-video-technology-platform-holywater/</span></p>
+</li>
+<li>
+<p><a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手2026Q2业绩</a> · ir.kuaishou.com</p>
+<p><span class="ref-url">https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji</span></p>
+</li>
+<li>
+<p><a href="https://www.copyright.gov/ai/">美国版权局AI报告页面</a> · www.copyright.gov</p>
+<p><span class="ref-url">https://www.copyright.gov/ai/</span></p>
+</li>
+<li>
+<p><a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">Part 2结论</a> · www.copyright.gov</p>
+<p><span class="ref-url">https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf</span></p>
+</li>
+</ol></section></main></body></html>

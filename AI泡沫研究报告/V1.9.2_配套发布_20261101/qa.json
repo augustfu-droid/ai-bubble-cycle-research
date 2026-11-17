@@ -1,0 +1,282 @@
+{
+  "status": "PASS_STRUCTURE",
+  "scope": "Artifact hashes, unchanged prior research bodies, chapter order, references, all-page text bounds, PDF navigation, and rendered samples. Independent semantic and actual visual review required.",
+  "prior_artifacts_unchanged": 251,
+  "allowed_navigation_edits": [
+    "AI泡沫研究报告/README.md",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "validator_sha256": "7f2384e3af1181ab7ba9067953bdc87467e5766ba51a0082509b597cd33ca6c6",
+  "reports": [
+    {
+      "key": "full_zh",
+      "pages": 212,
+      "pdf_sha256": "7fb4c29ea0b64cb54aeea36dd2bcd143c9577e2a54e46809894f3c897c8295ce",
+      "full_body_unchanged": true,
+      "references": 342,
+      "bookmarks_checked": 316,
+      "contents_destinations_checked": 195,
+      "visual_samples": [
+        {
+          "page": 1,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_001.png"
+        },
+        {
+          "page": 2,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_002.png"
+        },
+        {
+          "page": 3,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_003.png"
+        },
+        {
+          "page": 4,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_004.png"
+        },
+        {
+          "page": 5,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_005.png"
+        },
+        {
+          "page": 6,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_006.png"
+        },
+        {
+          "page": 7,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_007.png"
+        },
+        {
+          "page": 8,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_008.png"
+        },
+        {
+          "page": 9,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_009.png"
+        },
+        {
+          "page": 10,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_010.png"
+        },
+        {
+          "page": 11,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_011.png"
+        },
+        {
+          "page": 12,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_012.png"
+        },
+        {
+          "page": 13,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_013.png"
+        },
+        {
+          "page": 50,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_050.png"
+        },
+        {
+          "page": 68,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_068.png"
+        },
+        {
+          "page": 89,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_089.png"
+        },
+        {
+          "page": 158,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_158.png"
+        },
+        {
+          "page": 193,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_193.png"
+        },
+        {
+          "page": 212,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_zh\\page_212.png"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "brief_zh",
+      "pages": 6,
+      "pdf_sha256": "f58db22e05f4a4b1a6ce38d68d147de7128a172d7941e6a7c3691f2c68085ef1",
+      "full_body_unchanged": false,
+      "references": 12,
+      "bookmarks_checked": 6,
+      "contents_destinations_checked": 0,
+      "visual_samples": [
+        {
+          "page": 1,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_zh\\page_001.png"
+        },
+        {
+          "page": 2,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_zh\\page_002.png"
+        },
+        {
+          "page": 3,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_zh\\page_003.png"
+        },
+        {
+          "page": 4,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_zh\\page_004.png"
+        },
+        {
+          "page": 5,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_zh\\page_005.png"
+        },
+        {
+          "page": 6,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_zh\\page_006.png"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "full_en",
+      "pages": 276,
+      "pdf_sha256": "590a00877d940ac3b90e834776492dddd196a2757fc2c0a193d080631628f46e",
+      "full_body_unchanged": true,
+      "references": 342,
+      "bookmarks_checked": 316,
+      "contents_destinations_checked": 195,
+      "visual_samples": [
+        {
+          "page": 1,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_001.png"
+        },
+        {
+          "page": 2,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_002.png"
+        },
+        {
+          "page": 3,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_003.png"
+        },
+        {
+          "page": 4,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_004.png"
+        },
+        {
+          "page": 5,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_005.png"
+        },
+        {
+          "page": 6,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_006.png"
+        },
+        {
+          "page": 7,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_007.png"
+        },
+        {
+          "page": 8,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_008.png"
+        },
+        {
+          "page": 9,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_009.png"
+        },
+        {
+          "page": 10,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_010.png"
+        },
+        {
+          "page": 11,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_011.png"
+        },
+        {
+          "page": 12,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_012.png"
+        },
+        {
+          "page": 13,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_013.png"
+        },
+        {
+          "page": 14,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_014.png"
+        },
+        {
+          "page": 15,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_015.png"
+        },
+        {
+          "page": 62,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_062.png"
+        },
+        {
+          "page": 84,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_084.png"
+        },
+        {
+          "page": 113,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_113.png"
+        },
+        {
+          "page": 209,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_209.png"
+        },
+        {
+          "page": 258,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_258.png"
+        },
+        {
+          "page": 276,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\full_en\\page_276.png"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "brief_en",
+      "pages": 9,
+      "pdf_sha256": "10beca8e374b602326ba622fe7db939e859ad06a2485493db2fadf7ee8d5124c",
+      "full_body_unchanged": false,
+      "references": 12,
+      "bookmarks_checked": 6,
+      "contents_destinations_checked": 0,
+      "visual_samples": [
+        {
+          "page": 1,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_001.png"
+        },
+        {
+          "page": 2,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_002.png"
+        },
+        {
+          "page": 3,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_003.png"
+        },
+        {
+          "page": 4,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_004.png"
+        },
+        {
+          "page": 5,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_005.png"
+        },
+        {
+          "page": 6,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_006.png"
+        },
+        {
+          "page": 7,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_007.png"
+        },
+        {
+          "page": 8,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_008.png"
+        },
+        {
+          "page": 9,
+          "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.2_配套发布_20261101\\qa_visual\\brief_en\\page_009.png"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "errors": []
+}

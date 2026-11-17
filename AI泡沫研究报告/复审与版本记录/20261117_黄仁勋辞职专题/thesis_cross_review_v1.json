@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_thesis_cross_review",
+  "review_date": "2026-11-17",
+  "source_file": "C:/Users/付强/Documents/ChatGPT/AI预测/AI泡沫研究报告/专题更新_20261117/黄仁勋辞职_AI融资与泡沫判断_20261117.md",
+  "source_sha256": "3FA6E40D8A79001EDACBEA7103F21187273BB48F2C88C4DA3758CC22AD4E4D06",
+  "outcome": "revision_requested",
+  "findings_count": 5,
+  "findings": [
+    {
+      "id": "R1",
+      "priority": 2,
+      "line_start": 13,
+      "line_end": 13,
+      "title": "避免把未决调查写成已确认的管理层失当",
+      "quote": "也不能由管理层失当直接推导财报造假",
+      "problem": "前半句虽说指控未决，后半句却把‘管理层失当’作为既成前提。证据稿E1/E2确认的是独立调查及律师任命，E3并未说明调查结论；现有文字会在否定财报造假的同时暗示另一项不当行为已经查实。",
+      "requested_revision": "改为‘未决指控或人事变更不能直接证明财报造假’，如保留调查背景，补一句已启动独立调查并引用11月8日或11月10日董事会声明。",
+      "evidence": [
+        "event_evidence.md：E1—E3",
+        "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board"
+      ]
+    },
+    {
+      "id": "R2",
+      "priority": 2,
+      "line_start": 38,
+      "line_end": 38,
+      "title": "现金差额应同时披露已经取得的融资缓冲",
+      "quote": "两项相减为负179.20亿美元。这是扩建后的现金缺口",
+      "problem": "所列经营现金与购建支出及计算正确，但同期间已披露的213.46亿美元净融资现金被省略。专题正在判断融资连续性，仅给建设资金需求而不给实际筹资，会让读者误将179.20亿美元理解为截至研究日尚未填补的支付缺口；‘不等于无法偿债’未完整呈现已经发生的缓冲。",
+      "requested_revision": "补充‘同期净融资现金流入213.46亿美元，已提供资金缓冲；这不代表经营回本，也不能把上述两项差值当成尚未补足的到期支付缺口’。避免把融资现金与经营现金合并后改称AI项目盈利。",
+      "evidence": [
+        "financing_evidence.md：第三节",
+        "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx"
+      ]
+    },
+    {
+      "id": "R3",
+      "priority": 2,
+      "line_start": 40,
+      "line_end": 40,
+      "title": "分开项目回收与当期建设资金覆盖，防止重复计算",
+      "quote": "能否覆盖建设、计划回收和未重复计入的到期付款",
+      "problem": "‘建设’与‘计划回收’并列为同一批次净回款要覆盖的独立项目，可能把同一初始投入既作为建设支出、又作为须额外偿付的计划回收额计算。到期付款的去重限定没有明确覆盖前两项，弱化了原论文同批次、同口径不重复核算的约束。",
+      "requested_revision": "改为‘先检验同一批次客户净回款能否按计划收回投入；另用资金覆盖表核对新增建设与尚未计入的到期硬付款，不重复计算同一笔设备款’或等义短句。",
+      "evidence": [
+        "V1.9.2 author_view_zh.md：四格定义、核心判断三",
+        "V1.9 15_延迟与消化情景.md：第四节",
+        "financing_evidence.md：第五、六节"
+      ]
+    },
+    {
+      "id": "R4",
+      "priority": 2,
+      "line_start": 54,
+      "line_end": 54,
+      "title": "将监管生效状态写成明确的尚未生效",
+      "quote": "截至本研究日仍是未刊登文本，不能写成已全面生效",
+      "problem": "‘未全面生效’保留了部分条款已生效的歧义。证据稿R3给出的更精确结论是预公示文本把正式刊登日列为生效日，而11月17日尚未刊登。正文应直接陈述已核状态，不能只以‘未刊登’笼统推断所有规则的生效原则。",
+      "requested_revision": "写明‘预公示文本规定按正式刊登日生效，计划11月19日刊登；截至研究日尚未生效，仍须核对正式版本及许可、例外和过渡条款’。",
+      "evidence": [
+        "event_evidence.md：R3",
+        "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors"
+      ]
+    },
+    {
+      "id": "R5",
+      "priority": 3,
+      "line_start": 69,
+      "line_end": 69,
+      "title": "移除本轮将重写完整报告的承诺",
+      "quote": "我会给完整报告补入一个明确的新判断",
+      "problem": "本轮交付是独立事件分析，末尾也明确既有正文与四份PDF保留原时点。现在的将来式承诺与后续‘原第二章增加’等操作式措辞，容易让读者期待本轮还会重建完整报告。",
+      "requested_revision": "改为‘对完整报告应新增的判断是’，并将后半段写为‘若后续修订，可在……’或仅说明该判断对应原报告哪些章节。",
+      "evidence": [
+        "本轮交付范围与草稿第77行"
+      ]
+    }
+  ],
+  "scope": "对照现行作者观点、简版、第2/14/15机制正文及两份专题证据稿；定向复核CoreWeave官方Q3公告的经营利润、现金购建与净融资数。未做全部网页重新普查，未修改受审正文，未写测试。",
+  "limitations": "审稿结论仅绑定所列SHA；其他代理的证据核验不冒充本审稿人逐一直接打开全部原件。修订后应重新读取源稿并登记新SHA。"
+}

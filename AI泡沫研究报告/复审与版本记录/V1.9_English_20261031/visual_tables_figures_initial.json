@@ -1,0 +1,12 @@
+{
+  "pdf_sha256": "1bdf84bde7eda951f9a8e876160c418b367e438b9b341360496728e8d2e27345",
+  "pages_reviewed": [17, 20, 21, 23, 26, 27, 44, 184, 96, 97, 126, 127, 128, 129, 131, 132],
+  "reviewer": "gpt-6-luna low",
+  "status": "FAIL",
+  "issues": [
+    {"page": 128, "problem": "The repeated Chinese business-systems team column header is awkwardly split at the hyphen across two lines; it appears again on page 129."},
+    {"page": 129, "problem": "Continued table header repeats the awkward split 'Chinese business- / systems team'."},
+    {"problem": "manifest.json has no populated outputs.pdf.sha256 value; actual PDF hash matches qa.json pdf_sha256."}
+  ],
+  "scope": "Sampled visual inspection of 16 pages from the 272-page report; eight unique English charts and video-economics/coding-ROI tables. Not a full-document visual inspection."
+}

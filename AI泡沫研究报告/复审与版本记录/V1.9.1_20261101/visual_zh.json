@@ -1,0 +1,437 @@
+{
+  "version": "V1.9.1_20261101",
+  "reviewed_at_local": "2026-11-01T21:47:09.069329+08:00",
+  "verdict": "pass",
+  "scope": "仅对所列实际查看页面的视觉验收；详细版并非211页逐页视觉全检，简版5页已全检。",
+  "method": {
+    "renderer": "PyMuPDF / fitz",
+    "render_matrix": [
+      2,
+      2
+    ],
+    "approx_dpi": 144,
+    "actual_visual_tool": "tools.view_image",
+    "pdf_modified": false,
+    "source_modified": false
+  },
+  "documents": [
+    {
+      "kind": "full",
+      "pdf": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\AI周期与泡沫研究_详细版_20261101.pdf",
+      "page_count": 211,
+      "sha256": "69f8525c8b4f3c6ee8d3d29847a33070a4c5134f74bb19bec01c1bba0af353c0",
+      "all_pages_visually_reviewed": false,
+      "reviewed_page_count": 16,
+      "pages": [
+        {
+          "pdf_page_1_based": 1,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_001.png",
+          "png_sha256": "bfd83e6b7be97cee7d1562e727768122f984fd8215daa72830047cb7ac328510",
+          "result": "pass",
+          "observation": "封面标题、版本、日期、作者及邮箱清晰；无裁切，淡色水印未遮挡主要信息。"
+        },
+        {
+          "pdf_page_1_based": 2,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_002.png",
+          "png_sha256": "d7c61e465b6717be898d5cf176cc5075d9649bfa98fd86ddb6ca692a9dcf80b6",
+          "result": "pass",
+          "observation": "首个阅读页含完整四行情景矩阵、基准窗口及未兑现结算说明；表格各行同页完整，文字与水印可区分。"
+        },
+        {
+          "pdf_page_1_based": 3,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_003.png",
+          "png_sha256": "43713dc426462faa21d17a3404cd3672de70fea9926d1de8491abdf31b888927",
+          "result": "pass",
+          "observation": "全部前言后半连续；GPU折旧、应用观点和末尾改判段可读，无截字或页脚重叠。"
+        },
+        {
+          "pdf_page_1_based": 4,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_004.png",
+          "png_sha256": "3ac3319b8102e8820654b2a545d1190adb269a60157079cb6ecba3cbdf6c77a4",
+          "result": "pass",
+          "observation": "版本说明及免责声明完整；新增预测与保留第12、13章机制研究的范围说明可读。"
+        },
+        {
+          "pdf_page_1_based": 5,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_005.png",
+          "png_sha256": "60c39d73c9c1b2eb7b41e8b252ba1a547b018a8cec7cec3ec050e3e3ef18b276",
+          "result": "pass",
+          "observation": "目录起页；作者观点、研究总览、第1章、第2章排序与缩进清晰，目标页码右对齐。"
+        },
+        {
+          "pdf_page_1_based": 6,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_006.png",
+          "png_sha256": "1d98c21ba3b6dcf3d015fbeb6db452ee23ed896a81bd41dae471540e0b8cd45f",
+          "result": "pass",
+          "observation": "目录续页；第2章末、第3章、第4章连续，3.10与第4章均列67页，未混用旧18章号。"
+        },
+        {
+          "pdf_page_1_based": 7,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_007.png",
+          "png_sha256": "4bfbf129493b2f580385337d4dfbb04368950096f582f77d8ed86276dfda1348",
+          "result": "pass",
+          "observation": "目录续页；第4章末、第5章和第6章连续，长标题完整，页码不压标题。"
+        },
+        {
+          "pdf_page_1_based": 8,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_008.png",
+          "png_sha256": "7073bdd00fcbe59dd8e372c0b146ab47d04819af6d93c4b963338917c3736ca0",
+          "result": "pass",
+          "observation": "目录续页；第6章末、第7、8、9章顺序连续，行间无重叠。"
+        },
+        {
+          "pdf_page_1_based": 9,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_009.png",
+          "png_sha256": "ea4482066d9f0b2bdafaaad1610e075a61ff62b23a8fe1f748951c2f4c9e0072",
+          "result": "pass",
+          "observation": "目录续页；第9章末、第10、11、12、13章顺序连续；页号列清楚。"
+        },
+        {
+          "pdf_page_1_based": 10,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_010.png",
+          "png_sha256": "99c817a058ea70664a6cb777b3a3de9400331097f4b2d977ea0286bad6931d82",
+          "result": "pass",
+          "observation": "目录续页；第13章末及附篇A至D连续，附篇标题与子项层级明确。"
+        },
+        {
+          "pdf_page_1_based": 11,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_011.png",
+          "png_sha256": "d7d90a203251cbef9a7e1b794c0cd17ac3df42d92a0bd898f469b8cbce7b4e5a",
+          "result": "pass",
+          "observation": "目录末页；附篇E、F、结语与参考资料索引齐全，无多余截断条目。"
+        },
+        {
+          "pdf_page_1_based": 12,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_012.png",
+          "png_sha256": "7cc936dac5cf9e29fb7a51fe5074630e8b55e6fa85e0985fd2d4b4a5ed8bbee7",
+          "result": "pass",
+          "observation": "研究总览第一正文页；经营和现金对照表完整可读，页眉页脚与正文分离。"
+        },
+        {
+          "pdf_page_1_based": 66,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_066.png",
+          "png_sha256": "573352e6ddd5ec8e4248a0832970ea399d8af16831065e81b07047ca2e564b32",
+          "result": "pass",
+          "observation": "第3章末附近；3.9表格在完整行边界分页，底部行未裁切。"
+        },
+        {
+          "pdf_page_1_based": 67,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_067.png",
+          "png_sha256": "1b609f13ae4e85b22465f9242c6d2d3d8a2ae84967a608222d9704175aac274b",
+          "result": "pass",
+          "observation": "跨页表格重复表头；3.10结尾后接第4章标题及足够正文，章节转换清楚，无标题孤挂。"
+        },
+        {
+          "pdf_page_1_based": 68,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_068.png",
+          "png_sha256": "ab430e08e1a0436e5df44d002f2edcadd69e0125d14f47ad796d9f2fb28534f6",
+          "result": "pass",
+          "observation": "第4章开篇及两张表可读；4.2表格在完整行边界跨页。"
+        },
+        {
+          "pdf_page_1_based": 69,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\full\\page_069.png",
+          "png_sha256": "22f28ca8335e6b68466900fba7e33bbad0c7d71e10ffe30f6e2dd0cbc91885a6",
+          "result": "pass",
+          "observation": "4.2续表重复表头，剩余行完整；4.3市场表及来源完整，文字无相互遮挡。"
+        }
+      ]
+    },
+    {
+      "kind": "brief",
+      "pdf": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\AI周期与泡沫研究_简版_20261101.pdf",
+      "page_count": 5,
+      "sha256": "a24e08785bb0d1a2295608e59e04c91d2092fae8f3369c7977b89eccdc9973f2",
+      "all_pages_visually_reviewed": true,
+      "reviewed_page_count": 5,
+      "pages": [
+        {
+          "pdf_page_1_based": 1,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\brief\\page_001.png",
+          "png_sha256": "f74d55eecba8ac71dd9f8f595b7831643c36b6dddcfd3c061a24b5ef2167dd66",
+          "result": "pass",
+          "observation": "首页含标题、基准预测、完整四行情景矩阵、结算条款及现金/折旧主线；矩阵未跨页、无截断。"
+        },
+        {
+          "pdf_page_1_based": 2,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\brief\\page_002.png",
+          "png_sha256": "5ce7856dd55b46034d47e4cfd3a84d5d7fe3332c80d8cfd7e846f1ed0be50657",
+          "result": "pass",
+          "observation": "第1节和第2节开头可读；第2节标题后有完整引入段，页脚未压正文。"
+        },
+        {
+          "pdf_page_1_based": 3,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\brief\\page_003.png",
+          "png_sha256": "172dc4a743fb7a2427f2e0097ec910cc8752d10ab75e5660aa6ee4af0f2739b9",
+          "result": "pass",
+          "observation": "三家视频厂商列表及编程段落完整；粗体、链接和正文可区分，底部段落未截断。"
+        },
+        {
+          "pdf_page_1_based": 4,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\brief\\page_004.png",
+          "png_sha256": "f6e1e62bd1c515362eae83eb452ef753f6affe01acab687ed068a21ed82f9c0d",
+          "result": "pass",
+          "observation": "团队算例、其他应用及第5节开头排版连续；标题后有正文，未出现重叠。"
+        },
+        {
+          "pdf_page_1_based": 5,
+          "actually_viewed": true,
+          "inspection_tool": "tools.view_image",
+          "png": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_zh\\brief\\page_005.png",
+          "png_sha256": "c194162baf414e7eb23d49d1af8acc4c26b3549f9fbca3bc8d486311926bdb34",
+          "result": "pass",
+          "observation": "结尾改判与投资边界、编辑说明完整；留白属末页收尾，无遗漏或裁切。"
+        }
+      ]
+    }
+  ],
+  "actual_total_pages_viewed": 21,
+  "findings": [],
+  "key_checks": {
+    "first_reading_page_has_complete_matrix": {
+      "full_pdf_page": 2,
+      "brief_pdf_page": 1,
+      "result": "pass"
+    },
+    "all_new_preface_version_pages": {
+      "full_pdf_pages": [
+        2,
+        3,
+        4
+      ],
+      "result": "pass"
+    },
+    "all_toc_pages_and_first_overview_page": {
+      "full_pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "result": "pass"
+    },
+    "chapter_3_to_4_transition": {
+      "full_pdf_pages": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "result": "pass"
+    },
+    "table_clipping_or_overlap": "none_observed",
+    "unreadable_chinese_glyphs": "none_observed",
+    "watermark_header_footer": "水印位于内容背景且对比度低，未妨碍中文阅读；页眉、页脚没有压住正文。",
+    "chapter_numbering": "目录第1—13章连续，附篇A—F连续；第3章末到第4章的实页转换与目录一致。"
+  },
+  "supplementary_text_checks": {
+    "purpose": "辅助核对目录列出的章/附篇目标页，不替代实际图片检查。",
+    "major_toc_entries_checked": 19,
+    "matches": 19,
+    "entries": [
+      {
+        "title": "第一章：哪些是真金白银，哪些是估值游戏？",
+        "toc_pdf_page": 5,
+        "target_pdf_page": 14,
+        "target_title_matches": true
+      },
+      {
+        "title": "第二章：资本循环网络——出资、采购、融资与担保怎样相互连接",
+        "toc_pdf_page": 5,
+        "target_pdf_page": 33,
+        "target_title_matches": true
+      },
+      {
+        "title": "第三章：AI靠什么赚钱——变现版图与编程TAM",
+        "toc_pdf_page": 6,
+        "target_pdf_page": 49,
+        "target_title_matches": true
+      },
+      {
+        "title": "第四章：AI视频短剧——从观看需求到模型利润与算力回收",
+        "toc_pdf_page": 6,
+        "target_pdf_page": 67,
+        "target_title_matches": true
+      },
+      {
+        "title": "第五章：AI编程——人力替代、客户成本与市场重估",
+        "toc_pdf_page": 7,
+        "target_pdf_page": 88,
+        "target_title_matches": true
+      },
+      {
+        "title": "第六章：AI应用——从采用到现金回收",
+        "toc_pdf_page": 7,
+        "target_pdf_page": 107,
+        "target_title_matches": true
+      },
+      {
+        "title": "第七章：AGI何时到来？",
+        "toc_pdf_page": 8,
+        "target_pdf_page": 116,
+        "target_title_matches": true
+      },
+      {
+        "title": "第八章：AI如何颠覆国际格局？",
+        "toc_pdf_page": 8,
+        "target_pdf_page": 122,
+        "target_title_matches": true
+      },
+      {
+        "title": "第九章：对中国投资者的核心启示",
+        "toc_pdf_page": 8,
+        "target_pdf_page": 133,
+        "target_title_matches": true
+      },
+      {
+        "title": "第十章：公司分化——经营韧性不等于估值安全",
+        "toc_pdf_page": 9,
+        "target_pdf_page": 139,
+        "target_title_matches": true
+      },
+      {
+        "title": "第十一章：把经营、资本回收与金融条件分别判断",
+        "toc_pdf_page": 9,
+        "target_pdf_page": 144,
+        "target_title_matches": true
+      },
+      {
+        "title": "第十二章：风险传导剧本——从经营偏离到资产重定价",
+        "toc_pdf_page": 9,
+        "target_pdf_page": 152,
+        "target_title_matches": true
+      },
+      {
+        "title": "第十三章：延迟与消化——多出来的时间究竟改变了什么",
+        "toc_pdf_page": 9,
+        "target_pdf_page": 157,
+        "target_title_matches": true
+      },
+      {
+        "title": "附篇A：研究框架与方法论",
+        "toc_pdf_page": 10,
+        "target_pdf_page": 161,
+        "target_title_matches": true
+      },
+      {
+        "title": "附篇B：跨境渠道与工具边界",
+        "toc_pdf_page": 10,
+        "target_pdf_page": 168,
+        "target_title_matches": true
+      },
+      {
+        "title": "附篇C：页岩油周期类比——技术扩散、资本约束与回报分化",
+        "toc_pdf_page": 10,
+        "target_pdf_page": 172,
+        "target_title_matches": true
+      },
+      {
+        "title": "附篇D：Alphabet融资案例——从计划额度到每股价值",
+        "toc_pdf_page": 10,
+        "target_pdf_page": 177,
+        "target_title_matches": true
+      },
+      {
+        "title": "附篇E：事实核对与证据边界",
+        "toc_pdf_page": 11,
+        "target_pdf_page": 181,
+        "target_title_matches": true
+      },
+      {
+        "title": "附篇F：聚变能源能改变什么，不能替代什么",
+        "toc_pdf_page": 11,
+        "target_pdf_page": 187,
+        "target_title_matches": true
+      }
+    ]
+  },
+  "summary": "指定范围实际渲染并查看后通过。时间矩阵完整，目录和章节连续，已看页面没有表格截断、文字重叠、乱码或水印/页眉页脚遮挡。",
+  "limitations": [
+    "结论绑定记录的PDF SHA256；若PDF重建，须重新检查受影响页。",
+    "未将未实际看过的详细版其余195页标为视觉通过。"
+  ],
+  "status": "PASS",
+  "reports": [
+    {
+      "key": "full_zh",
+      "pdf_sha256": "69f8525c8b4f3c6ee8d3d29847a33070a4c5134f74bb19bec01c1bba0af353c0",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        66,
+        67,
+        68,
+        69
+      ],
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "key": "brief_zh",
+      "pdf_sha256": "a24e08785bb0d1a2295608e59e04c91d2092fae8f3369c7977b89eccdc9973f2",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "status": "PASS",
+      "findings": []
+    }
+  ]
+}

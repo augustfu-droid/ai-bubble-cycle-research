@@ -1,0 +1,48 @@
+{
+  "scope": "Before/after all-page text and raster hashes at 0.6x. Eight author sources unchanged.",
+  "source_hashes_unchanged": true,
+  "reports": [
+    {
+      "key": "full_zh",
+      "pages": 222,
+      "old_pdf_sha256": "d8126440e41bfae4bf95ba3f31f96b9fc9c745ea61586c0400714b36c0897d56",
+      "pdf_sha256": "d542f569a24ab736bf7c9b8e211d233d686a2ee5377d5f9e1317844f16492224",
+      "text_changed_pages": [
+        6
+      ],
+      "render_changed_pages": [
+        6
+      ]
+    },
+    {
+      "key": "brief_zh",
+      "pages": 7,
+      "old_pdf_sha256": "d634029f0d43af836a88e6b05839d624d74d3a64f3f9b2b706a82596b8c497d1",
+      "pdf_sha256": "d634029f0d43af836a88e6b05839d624d74d3a64f3f9b2b706a82596b8c497d1",
+      "text_changed_pages": [],
+      "render_changed_pages": []
+    },
+    {
+      "key": "full_en",
+      "pages": 290,
+      "old_pdf_sha256": "744049f5b52db36c1dabbfc18e904e366bd83b9eeded26a354fb0558aa649c39",
+      "pdf_sha256": "116c8d0977953f97b5876e2ac52c684507e2af8729b1ec3f643311fbe3775704",
+      "text_changed_pages": [
+        8,
+        222
+      ],
+      "render_changed_pages": [
+        8,
+        222
+      ]
+    },
+    {
+      "key": "brief_en",
+      "pages": 11,
+      "old_pdf_sha256": "3ccf437f4f73d729e638a373dd3dd64770c8e1b8f751a2310f6209232850607a",
+      "pdf_sha256": "3ccf437f4f73d729e638a373dd3dd64770c8e1b8f751a2310f6209232850607a",
+      "text_changed_pages": [],
+      "render_changed_pages": []
+    }
+  ]
+}

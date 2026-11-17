@@ -1,0 +1,484 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI编程：旧预测复盘与市场重估 V1.8</title><style>@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI编程：旧预测复盘与市场重估";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.8 · 2026-10-31";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><section class="cover"><div class="line"></div><p class="brand">大队长出品 · AI产业周期研究</p><h1>AI编程：旧预测复盘与市场重估</h1><p class="subtitle">原文、验证期、收费模式与市场边界</p><p class="edition">V1.8 · 现行正文<br>2026年10月31日</p><p class="foot">资料按各自报告期使用 · 事实与假设分列<br>个人研究 · 不构成投资建议<br>联系邮箱：<a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p></section><section class="front"><h2>免责声明</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。</p>
+<p>资料核验截至2026年10月31日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。</p>
+<p>这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。</p>
+<h2>本次更新</h2>
+<ol>
+<li>
+<p>按原版本复盘AI编程市场预估，区分预测、条件敏感性和单位错误；按实际收费、额外用量、任务与用户去重重建市场边界。</p>
+</li>
+<li>
+<p>在V1.7现行正文上更新证据，保留原研究主题；旧版独立归档，本册不叠加旧页与重复校注。</p>
+</li>
+<li>
+<p>目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。</p>
+</li>
+</ol></section><nav class="toc"><h1>目录</h1><p>本册统一目录，页码由当前正文生成；各篇采用全景统一章节标识，便于交叉核对。</p><a class="l2" href="#h-0000">专题四：AI编程——旧预测复盘与市场重估</a><a class="l3" href="#h-0001">19.1 先恢复原稿，不能事后替换预测对象</a><a class="l3" href="#h-0002">19.2 人数分母：职业人口、账户、活跃和付费不能互换</a><a class="l3" href="#h-0003">19.3 截至观察日，五类产品究竟披露了什么</a><a class="l3" href="#h-0004">19.4 逐条裁决：哪些成立，哪些必须撤回</a><a class="l3" href="#h-0005">19.5 重估先定边界：每一美元终端支出只记一次</a><a class="l3" href="#h-0006">19.6 一套可以逐季更新的市场模型</a><a class="l3" href="#h-0007">19.7 为什么整个软件劳动成本不能直接当TAM</a><a class="l3" href="#h-0008">19.8 生产力：把真实任务、基准测试与客户故事分开</a><a class="l3" href="#h-0009">19.9 任务经济：便宜token不等于便宜的合格交付</a><a class="l3" href="#h-0010">19.10 投资含义：扩大的市场不保证同一家拿到利润</a><a class="l2" href="#h-0011">参考资料索引</a></nav><main><h2 id="h-0000">专题四：AI编程——旧预测复盘与市场重估</h2>
+<p>本篇口径截至2026年10月31日（北京时间），历史原稿冻结，按当时写下的数字与条件复盘。B为十亿美元，1B＝10亿美元。公司年化收入、ARR、财报收入、付费人数和活跃用户分别列示；本篇没有可核验的全行业2026年收入总数，也不把条件算例包装成新的市场预测。未上市产品的关键经营数字多为运营商自报，未取得独立客户账单或产品审计，均按单源处理。</p>
+<p>早期报告真正需要修正的是“市场上限”的定义。3650万专业开发者每月付20美元，全年确实得到8.76B；每月30美元得到13.14B。但这只回答一组人数和价格条件下的席位收入。到本次观察日，席位内额度、额外推理、长任务、代码审查、非专业人员和多功能套餐已经共同决定账单，旧式单一席位模型明显不够。另一方面，公开资料仍不能证明去重后的纯编程收入已经超过13.14B，更不能由活跃用户暴增推算出同幅度付费增长。</p>
+<p>这两句话可以同时成立：<strong>我们早期把可收费范围看窄了；我们尚不能把这种结构性低估换算成一个已实现的全市场金额。</strong> V1.5已经开始纠正，本篇补齐原稿证据、最新商业边界及今后如何检验。</p>
+<h3 id="h-0001">19.1 先恢复原稿，不能事后替换预测对象</h3>
+<p>本次在Git历史找到V1.0提交快照中的原始分册和主报告。提交为<code>8caf2c1</code>，时间是2026年6月12日17:06:53 UTC，即北京时间6月13日01:06:53；所附PDF页脚仍写“V0.8.2·2026/06/03”，分册正文标注研究数据截至2026年5月。因此，下表称“V1.0提交快照原分册”，不把提交日期说成所有内容的首次写作日期。页码为PDF物理页，原文件路径、完整提交与对象校验值见独立取证记录。</p>
+<table>
+<thead>
+<tr>
+<th>版本与位置</th>
+<th>原文实际说了什么</th>
+<th>当时假设与验证期</th>
+<th>本次如何处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0提交快照原分册，p21</td>
+<td>“全球专业开发者3650万人”；20美元月费对应“88亿/年”，30—40美元对应“131—175亿/年”</td>
+<td>100%专业开发者、每人一个固定价格产品；没有目标年份</td>
+<td>保留为条件算术，不计算预测命中率</td>
+</tr>
+<tr>
+<td>同分册p21—22</td>
+<td>p21同时列100美元以上月费“438亿/年”，p22却称40美元月费、175亿美元为“绝对上限”</td>
+<td>高价使用情景已在自己的假设集合里；上限缺乏一致定义</td>
+<td>撤回绝对上限，错误并非等到2026年10月才出现</td>
+</tr>
+<tr>
+<td>同分册p21—22</td>
+<td>2026年市场“已增长至约128亿”；主要工具付费收入14.4—19.5亿美元，再称加企业和API后“接近120—130亿/年”</td>
+<td>当期规模估计；未给完整企业/API桥接、去重方法或统一收入期间</td>
+<td>无法审计，不把它当已经验证的行业实绩</td>
+</tr>
+<tr>
+<td>同分册p24、主报告p52—53</td>
+<td>“真实TAM（按传统开发者席位逻辑）约为88—175亿美元/年”；公民开发者“可能&gt;300亿”</td>
+<td>一边限定席位，一边扩展用户；大市场没有明确期限和付费假设</td>
+<td>限定条件下的席位范围仍可算；扩展方向有证据，金额不可检验</td>
+</tr>
+<tr>
+<td>V1.0快照主报告p48、p53、p68；V1.4正文对应段</td>
+<td>同时出现“$131B”“$50—80B上限”和“131亿美元”</td>
+<td>单位与市场边界不一致，没有可共同验证的单一预测</td>
+<td>$131B为十倍量纲错误；另外两种数字不能事后任选其一充当正确预测</td>
+</tr>
+<tr>
+<td>V1.4合成源3.4及摘要，滚动核验截至2026年8月9日</td>
+<td>仍用100%渗透、30美元月费131亿美元论证“远不足以支撑Cursor的500亿美元估值”</td>
+<td>旧席位算式、谈判估值；没有利润率、份额、增长或折现桥</td>
+<td>保留历史错误记录；不能把全年销售流量直接同股权价值存量比较</td>
+</tr>
+<tr>
+<td>V1.5第3篇，2026年9月8日10:00；V1.7第3篇，10月27日</td>
+<td>明写“机械敏感性，不是市场预测”，撤回绝对上限；引入额外按量、非专业用户、毛利与生产力限制</td>
+<td>3650万仅作历史基数；没有承诺某年达到表中任何一格</td>
+<td>本轮延续并细化，不把条件情景误记成失败或成功的预测</td>
+</tr>
+</tbody>
+</table>
+<p>原分册还在同一页把3650万×30×12写成约110亿美元；正确值是131.4亿美元。V1.5已统一纠正。它也曾把Cursor的2B年化收入和“2026年0.6B营收预测”放在同一论证中，未说明不同统计时间或口径，不能据此复原可靠市销率。旧版本中没有找到一个边界、期限、指标均明确的“我们预测2027年AI编程收入只有10B”。本篇不会替原稿创造一个更容易检验的命题。</p>
+<p>这一复盘暴露的主要问题不是乘法本身，而是把条件算例、第三方行业预测、运营商年化指标与作者判断混在一起。首页写“上限”，正文承认上限之外的用户和支出，不能算作有约束力的预测；后来只保留扩展情景，也不能声称早已准确预见市场。</p>
+<h3 id="h-0002">19.2 人数分母：职业人口、账户、活跃和付费不能互换</h3>
+<p>3650万来自SlashData对2025年初的专业开发者估算，同期开发者总数约4720万，原主报告归因GitHub有误。当前SlashData人口页面显示4840万，但明确标注更新期为2025年第三季度；2026Q1文章再次引用，并不使其变为2026Q1新调查，更不是2026年10月的职业开发者人数。本次未取得同口径更新的专业开发者分项，继续使用3650万只能是复盘旧算式。<a href="https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there">SlashData原人口研究</a>、<a href="https://www.slashdata.co/research/developer-population">人口口径页</a>。</p>
+<p>市场模型至少有四种不同分母：职业人员存量、使用过工具的账户、某周/月活跃人员、实际付费的人月。一个人可以同时用Copilot、Cursor和Claude Code；一个企业账户可以给多人分配额度；一名非技术人员可能只在做网站的一个月付费。把所有产品用户相加会重复计算人，把所有职业人员乘全年费用又会夸大留存月数。反过来，一个人让多个代理执行任务，支出可超过一个低价席位，不能假设“一个人只能买20美元”。</p>
+<p>正确处理不是在旧分母上任意加人：职业与非职业用户按同一期间分别计量；跨产品去重人数，保留其真实总支出；免费用户和促销额度单列；工作流从编程扩展到幻灯片、研究或销售时，再拆分用途。若无法分拆，报告整包业务与编程业务两个区间，不能全部归给编程。</p>
+<h3 id="h-0003">19.3 截至观察日，五类产品究竟披露了什么</h3>
+<p>下表是一张证据表，不是可相加的市场份额表。每行保留数据原始日期；“未取得”表示本轮证据边界，不表示公司绝无更多非公开数据。</p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>可核验的商业与使用证据</th>
+<th>收费与买单方</th>
+<th>本轮仍不能核验的关键项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Copilot</td>
+<td>7月29日微软电话会称收入环比增长超过60%；10月28日称GitHub代理功能credit消耗自按量计费推出后超过翻倍</td>
+<td>个人与企业开发预算；订阅内含额度加追加用量，代码审查还可能消耗Actions分钟</td>
+<td>最新产品收入绝对额、独立毛利、同口径付费人数；credit消耗不能直接等于新增现金收入</td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td>2025年11月13日公司披露年化收入超过1B，2.3B融资、29.3B投后估值；2026年8月14日官方宣布已被SpaceX收购</td>
+<td>开发者、企业与更广泛套餐购买者；当前价目包含编程、Grok及其他功能，第三方模型另收费</td>
+<td>收购价格与完整条款、10月独立收入和现金流、当前套餐可归属编程的收入比例</td>
+</tr>
+<tr>
+<td>Claude Code</td>
+<td>2月12日公司披露run-rate超过2.5B，企业使用占Code收入过半；10月26日公开S-1提供第三季度Enterprise重度使用者支出分布</td>
+<td>个人订阅、企业订阅/按量、直接API或云渠道；重度用户支出尾部较长</td>
+<td>最新独立Code财报收入、付费人数、产品毛利；Anthropic合并收入不能全部归Code</td>
+</tr>
+<tr>
+<td>Codex</td>
+<td>6月2日官方披露超过500万周活，约20%为知识工作者；10月29日官方调整Work与Codex套餐额度</td>
+<td>ChatGPT个人/企业套餐与追加用量等；同一套餐服务多种工作</td>
+<td>最新可比的独立编程付费人数、收入、毛利；活跃不等于付费，套餐收入不能全部归Codex</td>
+</tr>
+<tr>
+<td>Replit</td>
+<td>3月11日公司披露0.4B融资、9B估值，目标2026年末达到1B收入运行率；按工作复杂度消耗额度的模式已公开</td>
+<td>个人、非技术团队与企业；Agent、托管、存储等可共用credit</td>
+<td>截至10月实际达到的同口径收入、纯编程占比、复购留存及独立毛利；年末目标尚未到期</td>
+</tr>
+</tbody>
+</table>
+<p>GitHub的反向证据最直接：4月27日公告说明6月1日起用AI Credits取代按请求次数计费，订阅内额度可以追加购买，旧年付合同有过渡。7月电话会随后报告收入增长，并明确新计费模式改善当季后段毛利。这证明重度任务能够形成新增收费，也说明过去的低价套餐可能承担了不足以覆盖的推理成本。它没有披露可供本篇计算的产品毛利率。10月电话会另称代理生成PR数量在半年内变为约6倍，代理发起超过三分之一的GitHub PR；创建PR不等于合入生产代码，整个GitHub也不等于Copilot付费人群。M365的3000万付费席位、广义Copilot客户增长和GitHub Advanced Security收入都不移入编程人数或收入。<a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub计费公告</a>、<a href="https://www.microsoft.com/en-us/Investor/events/fy-2026/earnings-fy-2026-q4">微软7月电话会</a>、<a href="https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1">微软10月电话会</a>。</p>
+<p>Cursor的变化要求停止把它仅作为“独立IDE公司”的旧估值案例。收购完成是官方已确认事实，但该公告未披露对价；不能用早先谈判传闻填空。其官网转引2026年3月媒体有关2B年化收入的报道，仍是媒体口径，不能因为链接出现在官网就升级为经审计收入。10月31日价目快照列出8、30、100、200美元月档位，同时包含Grok聊天、图像视频及部分社交权益，第三方模型使用另计。这个快照支持多档与按量收费已存在，却削弱“全套餐金额＝纯编程ARPU”的假设。<a href="https://cursor.com/blog/series-d">Cursor融资原稿</a>、<a href="https://cursor.com/blog/joining-spacex">收购完成公告</a>、<a href="https://cursor.com/pricing">当前价目</a>。</p>
+<p>Claude Code的2.5B是2月的运行率下限，不能平移成10月当前值，也不能把全年收入写成2.5B。更新的S-1说明：第三季度未使用Code的Claude Enterprise用户月均支出不足75美元，而使用Code的前5%重度用户约为前一群体均值的20倍。由于基准是“不足75”，不能精确写成1500美元；由于只选前5%，不能推广成全部Code用户平均花费。它是重度使用分布的证据，不是Code导致20倍支出的因果试验，也未给出Code整体收入桥。<a href="https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation">2月公司公告</a>、<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">公开S-1，印刷页195—196</a>。</p>
+<p>本轮还核到10月27日Anthropic政府合作公告：约500个政府组织使用Claude，扩围协议提供40%折扣，并无最低消费承诺。组织使用、折扣估计节约额和采购框架都不能列为已签收入。此例也提醒，公开标价不是实际ARPU，企业客户数量不能直接乘个人套餐价。<a href="https://www.anthropic.com/news/expanding-partnership-gsa">政府合作公告</a>。</p>
+<p>Codex的官方6月数据证明用户用途已越过软件开发。社区另转引8月“2000万活跃用户”、10月“Work与Codex合计4000万”的说法，但本轮未能回读原始社交公告及完整统计定义，不把它们升级为本表的可比付费人数。即便以后核实，也不能把合计口径当独立编程人数。最新10月29日的额度扩充说明产品供给在变，无法仅据套餐标价反推收入或每任务毛利。<a href="https://openai.com/index/codex-for-knowledge-work/">6月官方公告</a>、<a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">10月官方更新记录</a>。</p>
+<p>Replit的1B是公司3月给出的年末目标，10月31日尚未到期；“85%的财富500强有用户”也不是85%签了企业付费合同。当前账单文档明确Agent与云托管、存储、数据库共用额度，部分第三方API按供应商公开价消耗额度。于是，Replit整家公司收入既不能全部叫AI编程收入，也不能在算过Replit终端账单后，再把其向模型商的采购加一遍。<a href="https://replit.com/blog/replit-raises-400-million-dollars">融资及目标原稿</a>、<a href="https://docs.replit.com/billing/ai-billing">Agent账单文档</a>。</p>
+<p>这些公开指标足以说明商业模式扩展，仍不足以拼出可靠的行业规模。把Cursor的某月年化数、Code的2月运行率、GitHub的增长率及Replit的未来目标相加，既没有共同日期，也没有共同会计口径，更没有排除模型采购和套餐交叉。它产生的是一个很具体的假数字。</p>
+<h3 id="h-0004">19.4 逐条裁决：哪些成立，哪些必须撤回</h3>
+<table>
+<thead>
+<tr>
+<th>历史命题</th>
+<th>截至10月31日裁决</th>
+<th>依据与剩余边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3650万人×20/30美元×12＝约88/131亿美元</td>
+<td>已支持，仅指算术</td>
+<td>精确值8.76/13.14B；人数是2025年初估算，100%付费和全年留存不是实绩</td>
+</tr>
+<tr>
+<td>每名专业开发者一个20—40美元席位约束全部市场</td>
+<td>被反证，指约束前提失效</td>
+<td>额外按量、多档套餐、任务与非专业用户均有产品证据；不是宣称行业收入已超过17.52B</td>
+</tr>
+<tr>
+<td>2026年行业已达到12—13B</td>
+<td>不可检验</td>
+<td>旧稿没有完整来源、统一期间及去重桥；本轮未取得可替换的全行业财报统计</td>
+</tr>
+<tr>
+<td>非专业人员将扩展编程工具市场</td>
+<td>部分成立</td>
+<td>Codex用途扩展和Replit产品购买路径支持方向；不自动验证“&gt;30B”金额和长期留存</td>
+</tr>
+<tr>
+<td>公民开发者&gt;30B、另一个50—80B上限</td>
+<td>不可检验</td>
+<td>缺乏明确验证时间、转化率、用途分配与收入定义；不因方向正确而宣布数字命中</td>
+</tr>
+<tr>
+<td>股权估值大于一年TAM，因此估值不能成立</td>
+<td>被反证，指论证无效</td>
+<td>缺少份额、利润、资本需求、增长和折现；撤回推理并不证明任何具体交易价格合理</td>
+</tr>
+<tr>
+<td>API降价必然导致收入下降</td>
+<td>被反证，指无条件命题</td>
+<td>收入由实际价格、量与产品组合共同决定；固定降价假设下的条件乘法仍成立</td>
+</tr>
+<tr>
+<td>AI普遍令开发效率提高5—10倍</td>
+<td>不可检验，撤回普遍量化断言</td>
+<td>原稿未定义任务、质量、复核和时间；正负实验及长任务成果均不支持普遍套用该倍数</td>
+</tr>
+<tr>
+<td>V1.5/V1.7敏感性表中的某一格将成为市场收入</td>
+<td>不属于原稿预测，不能评分</td>
+<td>原文明确排除这种解释；本轮不事后给它补目标年</td>
+</tr>
+<tr>
+<td>旧稿2027年应用ARR相对AI资本开支的验证窗口；Replit年末1B目标</td>
+<td>未到期，且分别处理</td>
+<td>前者不是纯编程预测且需先重定口径，后者是公司目标；均不以10月数据提前结算</td>
+</tr>
+</tbody>
+</table>
+<p>这里的“被反证”有两类：固定席位唯一收费的经验前提已被现实打破；存量估值与一年流量直接比较则是逻辑错误，本来就不能推出结论。它们都不同于“已证明全行业收入超过旧值”。我们撤回无效论证，同时保留对高估值、低留存和推理成本的怀疑。</p>
+<h3 id="h-0005">19.5 重估先定边界：每一美元终端支出只记一次</h3>
+<p>本篇将待测市场定义为：某一自然年最终客户为代码生成、修改、测试、审查和软件工程代理服务支付、可归属该用途的净金额，扣除折扣、退款和间接税。它包括职业与非职业客户，也包括企业不按人头采购的任务合同；不包括普通云托管、广告、非编程知识工作，也不包括供应链内部的同一笔转付。此定义衡量终端支出，不等同任何一家公司的会计收入；需要另做总额/净额确认、预收和收入递延的桥。</p>
+<p>一笔100美元终端账单，假设应用商付给模型商30美元，再付其他运行成本10美元；模型商在30美元中付给云商18美元。100、30、18可以分别构成不同公司的收入，但终端编程需求仍是100，而不是148美元。应用商剩60美元也还不是净利润，仍要支付支持、安全、销售、研发等。模型商收到的30美元既可能直接来自客户，也可能来自其他编程工具，判断是否重复必须看交易路径，不是看公司名字。</p>
+<p>相反，同一个企业分别买30美元工具和额外20美元直接API，且后者不在前者账单中，终端支出应记50美元；去重人数不等于删除真实多工具消费。对套餐内含额度，应记录套餐中可归属编程的收入一次，额度消耗用于解释成本与使用强度；只有追加付费超过已计套餐、且不属于另一个已计渠道时，才加到新增用量收入。将内含credits消耗按标价再相加，会把一次付款变成两次销售。</p>
+<p>因此，市场应保留三张互相对账的表：最终付款人的支出表，应用—模型—云的交易表，上市或私有公司各自的利润现金表。终端需求增长回答用户是否买单，供应链收入回答价值在哪里确认，利润现金回答投资者能否得到回报，三个问题不能靠一个TAM数字代替。</p>
+<h3 id="h-0006">19.6 一套可以逐季更新的市场模型</h3>
+<p>以下明确以<strong>2027自然年</strong>为条件测算窗口，参数在2026年10月31日登记，尚未用行业实测数据校准，不是2027年预测区间。年度终端支出模型为：</p>
+<p><code>R＝专业付费人月×月均可归属编程的净订阅支出＋专业用户额外净按量支出＋非专业付费人月×对应净支出＋未被前项覆盖的任务合同支出。</code></p>
+<p>模型中“专业人数”是跨产品去重的人，月均订阅支出则是该人所有产品的合计；不能把去重人数配上单个厂商均价。“额外按量”排除内含额度和已计套餐；非专业与专业人月互斥，年中身份变化按月份归类。任务合同按不重复的工作量及净单价计算，企业信用池只能放一个位置。退款、渠道净额和套餐编程归属比例均应保留原始数据，无法取得时留区间。</p>
+<table>
+<thead>
+<tr>
+<th>参数/金额</th>
+<th style="text-align: right;">条件算例A</th>
+<th style="text-align: right;">条件算例B</th>
+<th>未来应取得的校准证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全年持续付费专业人员</td>
+<td style="text-align: right;">800万人</td>
+<td style="text-align: right;">1200万人</td>
+<td>去重付费人月；此处假定每人12个月</td>
+</tr>
+<tr>
+<td>人均月净编程订阅支出</td>
+<td style="text-align: right;">25美元</td>
+<td style="text-align: right;">40美元</td>
+<td>多工具合计、扣折扣及非编程分摊</td>
+</tr>
+<tr>
+<td>专业人员年额外净用量</td>
+<td style="text-align: right;">150美元</td>
+<td style="text-align: right;">400美元</td>
+<td>套餐外追加、可归属编程的实收，不是标价token量</td>
+</tr>
+<tr>
+<td>专业订阅收入</td>
+<td style="text-align: right;">2.40B</td>
+<td style="text-align: right;">5.76B</td>
+<td>人数×12×月支出</td>
+</tr>
+<tr>
+<td>专业追加用量</td>
+<td style="text-align: right;">1.20B</td>
+<td style="text-align: right;">4.80B</td>
+<td>人数×年额外支出</td>
+</tr>
+<tr>
+<td>非专业付费人、年付费月、月支出</td>
+<td style="text-align: right;">400万×3×20美元</td>
+<td style="text-align: right;">800万×4×25美元</td>
+<td>不能把注册用户视为全年订阅</td>
+</tr>
+<tr>
+<td>非专业收入</td>
+<td style="text-align: right;">0.24B</td>
+<td style="text-align: right;">0.80B</td>
+<td>上述三项相乘</td>
+</tr>
+<tr>
+<td>不重叠任务合同</td>
+<td style="text-align: right;">50万任务×200美元</td>
+<td style="text-align: right;">100万任务×300美元</td>
+<td>最终客户新增付款，排除人月内已经覆盖的任务</td>
+</tr>
+<tr>
+<td>任务合同收入</td>
+<td style="text-align: right;">0.10B</td>
+<td style="text-align: right;">0.30B</td>
+<td>单价与合同验收口径一致</td>
+</tr>
+<tr>
+<td>合计终端支出</td>
+<td style="text-align: right;">3.94B</td>
+<td style="text-align: right;">11.66B</td>
+<td>四个不重叠收入项相加</td>
+</tr>
+</tbody>
+</table>
+<p>全部输入都是假设，不代表行业实际人数、平均收费或主观概率。B只用1200万持续付费专业人员就可超过旧20美元、100%渗透对应的8.76B，原因是每人真实支出与计费单位改变，而非数学凭空创造用户。它仍低于13.14B；不能据此得出“旧上限已经被实际收入击穿”。A与B也不是悲观/乐观置信区间，区间外结果完全可能。</p>
+<p>V1.5已有另一个条件例：1000万付费者×30美元×12，加每人100美元额外用量，再加100万非专业用户×2个月×20美元，合计4.64B。它展示的是拆项方法，不能拿今天新闻中的活跃用户替换其中一个参数，其余参数不变，就宣布历史预测被验证。</p>
+<p>实际更新时，每季度先填“实收净额、已确认收入、递延、付费人月、超额用量、退款、编程归属比例”七栏，再给出缺项对总量的影响。若公司只披露ARR，保留某日的ARR栏；若只给增长率，保留增长率栏。不以同比增速反推未知绝对额，也不把季末运行率乘一年当全年收入。少数大型产品的公开数据可以构成观察样本，却不是行业普查；未披露企业采购和中国工具也不能凭零披露按零收入处理。</p>
+<h3 id="h-0007">19.7 为什么整个软件劳动成本不能直接当TAM</h3>
+<p>代码生产只是软件价值的一部分。企业还要判断做什么、取得数据权限、设计架构、处理遗留系统、验收、部署、应对事故并承担责任。工具帮助完成某段工作，不意味着客户会把全部工资预算交给工具商；省下的时间可能变成更快交付，也可能变成排队等待业务决策。若没有减少现金支出或创造新增收入，节省工时并不自动等于当期利润。</p>
+<p>从劳动价值池走到可收费收入，至少需要一座桥：</p>
+<p><code>可支付的新增工具预算≤相关劳动成本×可处理任务比例×真实净节省比例×节省可兑现比例×供应商可捕获份额。</code></p>
+<p>每一项都应按客户类型测量，不能默认为100%。真实净节省已扣复核、返工、集成和失败成本；可兑现比例区分产能释放与预算节省；供应商份额反映客户保留的收益、替代方案和竞争。新需求可另列，但同样要有付款人、购买频率与留存，不能用“人人都能编程”替代。</p>
+<p>同样，旧稿所谓5000亿美元以上软件开发价值池，并不全是可以转为编程代理销售的预算；本篇未将其重新核定为当前市场统计。上游模型的收入也可能服务广告、研究、客服或图像，不能因为模型擅长代码就全部列入编程。基础模型能力提升可把利润移到上游，也可因开源、内部模型、路由和价格竞争把价值留给客户。<strong>能力的适用范围、客户创造的价值和供应商确认的收入，是三种不同的边界。</strong></p>
+<p>对估值，应先问能拿到哪一种利润。使用量快速增长但单位推理支出更快增长，收入可以好看而贡献利润恶化；提高套餐额度也可能是效率改善或竞争让利，缺少成本数据无法区分。前沿模型商、IDE入口、部署平台、安全审查产品各有不同资本需求，不能统一套用传统低边际成本软件倍数。</p>
+<h3 id="h-0008">19.8 生产力：把真实任务、基准测试与客户故事分开</h3>
+<p>支持AI价值的证据并不少。发表于2026年2月27日《Management Science》的三项企业现场随机实验，覆盖Microsoft、Accenture及一家匿名财富100强的4867名开发者；合并估计完成任务数提高26.08%，标准误10.3个百分点，经验较少者采用与收益较高。研究有企业参与及微软研究人员，不是完全独立于厂商的样本；单项噪声、任务定义与采用差异限制外推。任务数增加不能直接换算为26.08%工资节省，更不能直接等于2026年最新代理的回报。<a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2025.00535">研究原文</a>。</p>
+<p>反向证据同样保留。METR早2025年实验让16名熟悉自己开源仓库的开发者处理246项真实任务，AI条件下完成时间增加19%，置信区间约+2%至+39%。这支持“某些熟悉代码库的工作，解释与核查可能抵消生成收益”，不支持“所有开发者都被拖慢”。2026年2月后续说明承认选择偏差：不愿无AI工作的人员退出、更低报酬改变招募、并行代理使计时困难，无法可靠估计当前加速幅度。不能把新原始点估计当作旧结论已被精确推翻，也不能冻结旧模型结果否定更新后的工具。<a href="https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf">METR原始研究</a>、<a href="https://metr.org/blog/2026-02-24-uplift-update/">2026年后续说明</a>。</p>
+<p>2026年3月METR维护者评审又提供质量边界：4名维护者、3个仓库评审296个AI PR，涉及95个SWE-bench任务；约半数通过测试的AI提交仍不会直接合入。样本使用2024—2025年的模型、单次提交且无维护者反馈，不是2026年最新模型的总体合入率。它说明测试通过漏掉了可维护性、代码风格和意图等验收条件，不能把其比例直接塞进全市场失败率。<a href="https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/">维护者评审研究</a>。</p>
+<p>更长任务上，Epoch与METR共同开发的MirrorCode在4月报告，Claude Opus 4.6可在无原源码、可执行目标及明确测试的条件下重建约1.6万行的gotree工具。研究者估计人类需2—17周，但没有完成同任务的人类长期基线，因此不能宣称已测得多少倍提效。任务有精确可检查规格，不代表普通需求不清的企业项目；同一研究也记录更大任务未完成。这是能力边界向外扩展的正面证据，与质量和经济性仍需逐任务核验并不矛盾。<a href="https://epoch.ai/publications/mirrorcode-preliminary-results">MirrorCode研究</a>。</p>
+<p>厂商案例可提供实施线索，证据等级更低。Anthropic10月政府公告中的34名开发者试点，以四周后自报节省时间为主要指标；没有随机对照、失败项目分布及完整采购费用，不能从中推出公共部门的平均现金ROI。微软PR生成增速和Codex用户活跃同样属于活动指标。本篇既不拿一个失败故事证明行业无效，也不拿一个成功案例外推全部软件劳动。</p>
+<h3 id="h-0009">19.9 任务经济：便宜token不等于便宜的合格交付</h3>
+<p>采购方真正比较的是：相同验收标准下，AI辅助的全部成本是否低于原流程，以及更快完成是否具有经济价值。下例以一次最终可接受交付为单位，所有输入均为作者条件假设；失败后由人工补救至同等交付，不能只计成功尝试而删除失败尝试。</p>
+<table>
+<thead>
+<tr>
+<th>每项合格交付的成本</th>
+<th style="text-align: right;">条件A</th>
+<th style="text-align: right;">条件B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无AI基线：4小时×60美元</td>
+<td style="text-align: right;">240美元</td>
+<td style="text-align: right;">240美元</td>
+</tr>
+<tr>
+<td>模型/工具增量费用，含本轮自动重试</td>
+<td style="text-align: right;">12美元</td>
+<td style="text-align: right;">12美元</td>
+</tr>
+<tr>
+<td>人工提示、检查及整合</td>
+<td style="text-align: right;">1.2小时×60＝72美元</td>
+<td style="text-align: right;">3小时×60＝180美元</td>
+</tr>
+<tr>
+<td>检查后仍需额外人工补救的期望成本</td>
+<td style="text-align: right;">20%×2小时×60＝24美元</td>
+<td style="text-align: right;">40%×4小时×60＝96美元</td>
+</tr>
+<tr>
+<td>其他运行与治理增量成本</td>
+<td style="text-align: right;">8美元</td>
+<td style="text-align: right;">8美元</td>
+</tr>
+<tr>
+<td>AI辅助总成本</td>
+<td style="text-align: right;">116美元</td>
+<td style="text-align: right;">296美元</td>
+</tr>
+<tr>
+<td>相对无AI流程的净节省</td>
+<td style="text-align: right;">124美元</td>
+<td style="text-align: right;">−56美元</td>
+</tr>
+</tbody>
+</table>
+<p>检查工时不含表中额外补救，12美元已包括自动重试，避免重复计算。还未量化的事故尾部损失必须另估，不应默认不存在。A展示可形成付费空间的任务，B展示低token价也会亏经济账的任务；两者都不是行业平均失败率，也不是对某产品的实测评判。</p>
+<p>由A得到的124美元不是供应商可以全部收走的提价空间。客户承担切换、学习、预算和输出责任，还可以换模型或自己部署。工具商若为了提高成功率使用更多推理，客户可能更满意，但工具商毛利未必更高。最值得跟踪的指标是每项被接受交付的净收费、全成本、返工次数与续约，代码行数和token数只能解释这些指标的变化。</p>
+<p>同理，旧API算式在条件内成立：若同口径实际单价每月降15%、销量增10%，收入倍率为0.85×1.10＝0.935，即下降6.5%；销量需增17.647%才打平。但原稿并未证明这种价格跌幅会永久持续，也不能用不同代模型、缓存价和标准价拼成同一产品的降价轨迹。任务更难、上下文更长、并行代理更多，都会改变“量”；效率提高又可能降低每任务token。应同时测每合格任务收入和成本，而非凭单个token标价判断死亡螺旋。</p>
+<h3 id="h-0010">19.10 投资含义：扩大的市场不保证同一家拿到利润</h3>
+<p>早期遗漏的不是一个更大的漂亮数字，而是不同购买路径的经济性。专业开发团队可从现有研发预算购买可反复使用的工具；非技术用户通常按项目需求购买，留存和支持负担不同；企业自动化合同可能有更大预算，却要跨过权限、验收和责任边界。三者不应共用一个转化率或ARPU。</p>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>可能收取的价值</th>
+<th>最强反方解释</th>
+<th>应要求的下一条证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工作流入口与IDE</td>
+<td>上下文、集成、协作与分发带来的持续付费</td>
+<td>用户多工具并用，基础模型或平台套餐压低独立收费</td>
+<td>去重付费人月、退款/留存、推理成本后的贡献利润</td>
+</tr>
+<tr>
+<td>前沿模型与直接代理</td>
+<td>困难任务完成率、重度用量与企业部署</td>
+<td>训练与推理成本高；工具客户转用自研、开源或更便宜路由</td>
+<td>编程用途收入桥、渠道去重、按任务毛利和现金回收</td>
+</tr>
+<tr>
+<td>应用搭建与托管</td>
+<td>从想法到部署的完整交付</td>
+<td>一次性项目多，后续托管收入被误称AI编程，支持成本上升</td>
+<td>Agent与托管拆分、付费月数、成功上线率与后续留存</td>
+</tr>
+<tr>
+<td>审查、安全与治理</td>
+<td>企业愿为可接受、可追责的交付买单</td>
+<td>只是原有安全软件改名，新增成本未获预算</td>
+<td>增量合同、实际事故/返工变化、独立收益归因</td>
+</tr>
+</tbody>
+</table>
+<p>对空仓研究者，目前不宜按不透明的私有公司估值、全年TAM或增长传闻给出精确买入价。可以优先研究已有可审计现金流的上市承载主体，再检验编程对集团收入和利润究竟是否重大；买母公司并不等于取得纯编程敞口。对已有相关敞口者，不能仅因本篇撤回旧上限就上调估值，也不能用旧13.14B算式直接下达卖出指令，应回到可得份额、净利润、再投资需求与支付价格。</p>
+<p>下一轮复盘登记三个观察窗口：2026年末检验Replit公司目标是否给出同口径实绩，届时未披露仍标未能验证；未来两次主要厂商财报/正式经营披露检验付费增长能否伴随单位经济改善；2027年自然年结束后，只有在终端支付与产品归属数据足够时才对19.6模型校准。不得把单项收入增长率达到某阈值解释为整个AI资本开支已获回报。</p>
+<p><strong>本次结论是有边界的修正：固定低价席位覆盖全部AI编程需求的假设应撤回，按量与新用户扩大收费范围已有证据；行业真实规模、持续利润与股权回报仍需分别验证。</strong> 对这一结构判断的置信度高于对全市场收入的置信度，更高于对任何私有公司当前估值合理性的判断。原件位置、公式复算、来源缺口和互审结果另见《V1.8_AI编程复盘取证_20261031》及对应交叉评审记录。</p>
+<section class="references">
+
+<h2 id="h-0011">参考资料索引</h2>
+<p>本册按URL去重收录20项参考资料，保留正文中的就近链接，下面按首次引用顺序集中列出完整网址，便于打印后追溯。名称采用已核对的公司、报告期与文档类型或正文来源简称，并非一律为官方原标题；资料的期间、核验程度和访问限制以对应段落为准，不表示全部旧引文都在本轮重新取得原件。</p>
+<ol>
+<li>
+<p><a href="https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there">SlashData原人口研究</a> · www.slashdata.co</p>
+<p><span class="ref-url">https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there</span></p>
+</li>
+<li>
+<p><a href="https://www.slashdata.co/research/developer-population">人口口径页</a> · www.slashdata.co</p>
+<p><span class="ref-url">https://www.slashdata.co/research/developer-population</span></p>
+</li>
+<li>
+<p><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub计费公告</a> · github.blog</p>
+<p><span class="ref-url">https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</span></p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/en-us/Investor/events/fy-2026/earnings-fy-2026-q4">微软7月电话会</a> · www.microsoft.com</p>
+<p><span class="ref-url">https://www.microsoft.com/en-us/Investor/events/fy-2026/earnings-fy-2026-q4</span></p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1">微软10月电话会</a> · www.microsoft.com</p>
+<p><span class="ref-url">https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1</span></p>
+</li>
+<li>
+<p><a href="https://cursor.com/blog/series-d">Cursor融资原稿</a> · cursor.com</p>
+<p><span class="ref-url">https://cursor.com/blog/series-d</span></p>
+</li>
+<li>
+<p><a href="https://cursor.com/blog/joining-spacex">收购完成公告</a> · cursor.com</p>
+<p><span class="ref-url">https://cursor.com/blog/joining-spacex</span></p>
+</li>
+<li>
+<p><a href="https://cursor.com/pricing">当前价目</a> · cursor.com</p>
+<p><span class="ref-url">https://cursor.com/pricing</span></p>
+</li>
+<li>
+<p><a href="https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation">2月公司公告</a> · www.anthropic.com</p>
+<p><span class="ref-url">https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation</span></p>
+</li>
+<li>
+<p><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic PBC：公开Form S-1注册声明</a> · www.sec.gov  2026-10-26；含未经审计中期财务。申请文件不等于发行生效、定价或交割。</p>
+<p><span class="ref-url">https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm</span></p>
+</li>
+<li>
+<p><a href="https://www.anthropic.com/news/expanding-partnership-gsa">政府合作公告</a> · www.anthropic.com</p>
+<p><span class="ref-url">https://www.anthropic.com/news/expanding-partnership-gsa</span></p>
+</li>
+<li>
+<p><a href="https://openai.com/index/codex-for-knowledge-work/">6月官方公告</a> · openai.com</p>
+<p><span class="ref-url">https://openai.com/index/codex-for-knowledge-work/</span></p>
+</li>
+<li>
+<p><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">10月官方更新记录</a> · help.openai.com</p>
+<p><span class="ref-url">https://help.openai.com/en/articles/6825453-chatgpt-release-notes</span></p>
+</li>
+<li>
+<p><a href="https://replit.com/blog/replit-raises-400-million-dollars">融资及目标原稿</a> · replit.com</p>
+<p><span class="ref-url">https://replit.com/blog/replit-raises-400-million-dollars</span></p>
+</li>
+<li>
+<p><a href="https://docs.replit.com/billing/ai-billing">Agent账单文档</a> · docs.replit.com</p>
+<p><span class="ref-url">https://docs.replit.com/billing/ai-billing</span></p>
+</li>
+<li>
+<p><a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2025.00535">研究原文</a> · pubsonline.informs.org</p>
+<p><span class="ref-url">https://pubsonline.informs.org/doi/10.1287/mnsc.2025.00535</span></p>
+</li>
+<li>
+<p><a href="https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf">METR原始研究</a> · metr.org</p>
+<p><span class="ref-url">https://metr.org/Early_2025_AI_Experienced_OS_Devs_Study-paper.pdf</span></p>
+</li>
+<li>
+<p><a href="https://metr.org/blog/2026-02-24-uplift-update/">2026年后续说明</a> · metr.org</p>
+<p><span class="ref-url">https://metr.org/blog/2026-02-24-uplift-update/</span></p>
+</li>
+<li>
+<p><a href="https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/">维护者评审研究</a> · metr.org</p>
+<p><span class="ref-url">https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/</span></p>
+</li>
+<li>
+<p><a href="https://epoch.ai/publications/mirrorcode-preliminary-results">MirrorCode研究</a> · epoch.ai</p>
+<p><span class="ref-url">https://epoch.ai/publications/mirrorcode-preliminary-results</span></p>
+</li>
+</ol></section></main></body></html>

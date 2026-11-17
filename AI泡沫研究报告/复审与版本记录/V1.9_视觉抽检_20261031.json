@@ -1,0 +1,94 @@
+{
+  "version": "V1.9",
+  "revision": "chapter numbering correction 2026-10-31",
+  "status": "PASS_SAMPLED_VISUAL",
+  "sampled_pages": 28,
+  "pdf_count": 5,
+  "scope": "编号修订后，对最终5份PDF实际目视抽检28页：主代理12页，独立gpt-6-luna low代理16页。覆盖大完整报告全部目录页、第三章到第四章过渡及后续主章、主报告前置信息、短剧和编程专题、延迟选编的全景章号说明。仅为抽样版面检查，不是全页人工审读，也未进行原生WPS验证。",
+  "pdf_sha256": {
+    "01_主报告.pdf": "d1531925e5caadf7b88e4b260f65886b6fc73f2c29e638cee48ef803161571fd",
+    "18_AI视频短剧中美市场.pdf": "351150825315c271f661df8f2bf30f7f47f09b9ece0a87af9a41e9f1a04f7a8d",
+    "19_AI编程市场预测复盘.pdf": "c21ba5f24f8f3c71ceb3b2cf28857bca51ea77d4597a1dc2f06650c5d359f5df",
+    "15_延迟情景版.pdf": "6e1524714b1b6d82f711a8e438dff537dbc3547569f565fe045695ed5dff61b8",
+    "13_超全景版.pdf": "7ec82a94c77021e4b4277664317f07396b1be0a0b3e8a89e4df00f74c9120462"
+  },
+  "reviews": [
+    {
+      "pdf": "01_主报告.pdf",
+      "pdf_sha256": "d1531925e5caadf7b88e4b260f65886b6fc73f2c29e638cee48ef803161571fd",
+      "pages_reviewed": [
+        2,
+        3,
+        63
+      ],
+      "reviewer": "primary agent",
+      "status": "PASS_SAMPLED_VISUAL",
+      "issues": []
+    },
+    {
+      "pdf": "18_AI视频短剧中美市场.pdf",
+      "pdf_sha256": "351150825315c271f661df8f2bf30f7f47f09b9ece0a87af9a41e9f1a04f7a8d",
+      "pages_reviewed": [
+        2,
+        3,
+        4
+      ],
+      "reviewer": "primary agent",
+      "status": "PASS_SAMPLED_VISUAL",
+      "issues": []
+    },
+    {
+      "pdf": "19_AI编程市场预测复盘.pdf",
+      "pdf_sha256": "c21ba5f24f8f3c71ceb3b2cf28857bca51ea77d4597a1dc2f06650c5d359f5df",
+      "pages_reviewed": [
+        2,
+        3,
+        4
+      ],
+      "reviewer": "primary agent",
+      "status": "PASS_SAMPLED_VISUAL",
+      "issues": []
+    },
+    {
+      "pdf": "15_延迟情景版.pdf",
+      "pdf_sha256": "6e1524714b1b6d82f711a8e438dff537dbc3547569f565fe045695ed5dff61b8",
+      "pages_reviewed": [
+        2,
+        3,
+        5
+      ],
+      "reviewer": "primary agent",
+      "status": "PASS_SAMPLED_VISUAL",
+      "issues": []
+    },
+    {
+      "pdf": "13_超全景版.pdf",
+      "pdf_sha256": "7ec82a94c77021e4b4277664317f07396b1be0a0b3e8a89e4df00f74c9120462",
+      "pages_reviewed": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        64,
+        65,
+        86,
+        105,
+        114,
+        120,
+        150,
+        155
+      ],
+      "reviewer": "gpt-6-luna low",
+      "status": "PASS_SAMPLED_VISUAL",
+      "issues": [],
+      "scope": "抽样目视审查16页：覆盖完整目录（页2–9）、第三章至第四章过渡（页64–65）及后续章节样本（页86、105、114、120、150、155）；非全页人工审查。检查章节编号次序、长标题、目录页码对齐，以及缺字、裁切、重叠和异常空白。",
+      "record": "V1.9_编号修订视觉审查_完整报告_20261031.json"
+    }
+  ],
+  "issues": [],
+  "prior_review": "研究深化阶段7份PDF、61页的旧哈希视觉记录另存V1.9_编号修订前视觉抽检_20261031.json，不作为当前PDF通过证明。"
+}

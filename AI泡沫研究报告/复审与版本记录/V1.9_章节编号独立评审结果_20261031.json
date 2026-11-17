@@ -1,0 +1,421 @@
+{
+  "status": "PASS",
+  "artifacts_checked": true,
+  "baseline_sha256": "d0b0122e947b56289dedabe76c260a9bab7c7a84c6964771db56b2a9363c6738",
+  "frozen_file_count": 21,
+  "builder_sha256": "136cfe75e7f7e573098e35e11eb04baed9c2b70e23c662cc0fd944cb130e7421",
+  "numbering_sha256": "ce51bd661fa46813d1513b9036e47cabbf9db5765012f233cd861306f2a0fc4f",
+  "reviewer_script_sha256": "fa2f5737b7616b99ce0a4306adc0cb01df7a7035d1177b3be537f9e2212b50f3",
+  "source_checks": [
+    {
+      "key": "short:institution",
+      "changed_lines": 4,
+      "source_line_count": 57,
+      "output_line_count": 57,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "profit",
+      "changed_lines": 3,
+      "source_line_count": 374,
+      "output_line_count": 374,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "circular",
+      "changed_lines": 2,
+      "source_line_count": 345,
+      "output_line_count": 345,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "monetization",
+      "changed_lines": 17,
+      "source_line_count": 406,
+      "output_line_count": 406,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "video",
+      "changed_lines": 22,
+      "source_line_count": 430,
+      "output_line_count": 430,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "coding",
+      "changed_lines": 17,
+      "source_line_count": 377,
+      "output_line_count": 377,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "applications",
+      "changed_lines": 15,
+      "source_line_count": 163,
+      "output_line_count": 163,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "agi",
+      "changed_lines": 36,
+      "source_line_count": 358,
+      "output_line_count": 358,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "china",
+      "changed_lines": 11,
+      "source_line_count": 140,
+      "output_line_count": 140,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "valuation",
+      "changed_lines": 10,
+      "source_line_count": 92,
+      "output_line_count": 92,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "conclusion",
+      "changed_lines": 13,
+      "source_line_count": 149,
+      "output_line_count": 149,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "audit",
+      "changed_lines": 11,
+      "source_line_count": 101,
+      "output_line_count": 101,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "short:public",
+      "changed_lines": 1,
+      "source_line_count": 9,
+      "output_line_count": 9,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "short:snowball",
+      "changed_lines": 2,
+      "source_line_count": 9,
+      "output_line_count": 9,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "short:summary",
+      "changed_lines": 2,
+      "source_line_count": 15,
+      "output_line_count": 15,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "short:execution",
+      "changed_lines": 0,
+      "source_line_count": 15,
+      "output_line_count": 15,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "crash",
+      "changed_lines": 9,
+      "source_line_count": 106,
+      "output_line_count": 106,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "delay",
+      "changed_lines": 9,
+      "source_line_count": 91,
+      "output_line_count": 91,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "framework",
+      "changed_lines": 0,
+      "source_line_count": 184,
+      "output_line_count": 184,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "shale",
+      "changed_lines": 0,
+      "source_line_count": 122,
+      "output_line_count": 122,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "alphabet",
+      "changed_lines": 0,
+      "source_line_count": 104,
+      "output_line_count": 104,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "fusion",
+      "changed_lines": 0,
+      "source_line_count": 99,
+      "output_line_count": 99,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "crossborder",
+      "changed_lines": 0,
+      "source_line_count": 94,
+      "output_line_count": 94,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "postscript",
+      "changed_lines": 0,
+      "source_line_count": 13,
+      "output_line_count": 13,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    },
+    {
+      "key": "short:intro",
+      "changed_lines": 1,
+      "source_line_count": 7,
+      "output_line_count": 7,
+      "exact_expected_match": true,
+      "url_image_destinations_preserved": true
+    }
+  ],
+  "editions": [
+    {
+      "slug": "01_主报告",
+      "chapter_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "02_事实审计表",
+      "chapter_order": [],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "03_利润真实性拆解",
+      "chapter_order": [
+        1
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "04_循环投资网络",
+      "chapter_order": [
+        2
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "05_AI变现与编程TAM",
+      "chapter_order": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "06_AGI与国际格局",
+      "chapter_order": [
+        7,
+        8
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "07_机构简版",
+      "chapter_order": [],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "08_公开精简版",
+      "chapter_order": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "09_雪球公开版",
+      "chapter_order": [
+        10,
+        9
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "10_摘要版",
+      "chapter_order": [],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "11_执行简版",
+      "chapter_order": [],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "12_全景版",
+      "chapter_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "13_超全景版",
+      "chapter_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "14_完整合集",
+      "chapter_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "15_延迟情景版",
+      "chapter_order": [
+        13,
+        2
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "16_崩盘剧本",
+      "chapter_order": [
+        12,
+        11
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "17_发布引流稿",
+      "chapter_order": [],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "18_AI视频短剧中美市场",
+      "chapter_order": [
+        4
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "19_AI编程市场预测复盘",
+      "chapter_order": [
+        5
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    },
+    {
+      "slug": "20_AI应用商业化全景",
+      "chapter_order": [
+        6
+      ],
+      "body_exact_match": true,
+      "emitted_markdown_exact_match": true
+    }
+  ],
+  "problems": [],
+  "scope": "Independent expected source transformations, exact text equality, frozen sources, links, literals, global chapter order, appendix order and selection boundaries. No market fact re-verification."
+}

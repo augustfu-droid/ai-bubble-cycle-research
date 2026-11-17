@@ -1,0 +1,162 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫 · 机构简版 V1.8</title><style>@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI周期与泡沫 · 机构简版";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.8 · 2026-10-31";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+ .front{font-size:8.8pt}.front,.toc,.references{break-after:auto;break-before:auto}.front h2,.toc h1{font-size:12pt;margin:13pt 0 6pt}.toc a{font-size:8.6pt}.toc p{display:none}</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><header><p class="brand">大队长出品 · V1.8 · 2026-10-31<br>联系邮箱：<a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p><h1>AI周期与泡沫 · 机构简版</h1><p>当前判断与公司研究入口</p></header><section class="front"><h2>免责声明</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。</p>
+<p>资料核验截至2026年10月31日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。</p>
+<p>这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。</p>
+<h2>本次更新</h2>
+<ol>
+<li>
+<p>在V1.7现行正文上更新证据，保留原研究主题；旧版独立归档，本册不叠加旧页与重复校注。</p>
+</li>
+<li>
+<p>目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。</p>
+</li>
+</ol></section><nav class="toc"><h1>目录</h1><p>本册统一目录，页码由当前正文生成；各篇采用全景统一章节标识，便于交叉核对。</p><a class="l2" href="#h-0000">研究总览：增长仍在，现金回收的分化扩大</a><a class="l3" href="#h-0001">新财报改变了什么</a><a class="l3" href="#h-0002">新应用为何需要单独研究</a><a class="l3" href="#h-0003">编程复盘与其他应用怎样改变判断</a><a class="l3" href="#h-0004">金融条件与后续核验</a><a class="l2" href="#h-0005">参考资料索引</a></nav><main><h2 id="h-0000">研究总览：增长仍在，现金回收的分化扩大</h2>
+<p>资料核验截至2026年10月31日（北京时间），市场利率观察截至美国10月30日。V1.8把已公布财报和宏观结果放回模型，新增中美AI视频短剧、AI编程旧预测复盘和其他应用商业化三个专题，并更新模型、能源、许可与国际约束。统计期、公告日与取证日分别保留；尚未披露或未取得的项目不因版本日期改变而补成现值。</p>
+<p>当前证据支持三个层次的判断：云服务与部分供应链的经营增长仍在兑现；若干公司的建设支出持续超过同期经营现金；新应用正在扩大AI可收费的任务范围，但并未证明所有新增基础设施都能获得足够回报。因此，本版提高对现金覆盖和新增硬付款的关注，同时保留需求扩展、项目交付和单位成本下降的反方证据，不确认全行业融资与需求已经同时崩塌。</p>
+<h3 id="h-0001">新财报改变了什么</h3>
+<p>下表除中国公司行另用人民币亿元外，单位为十亿美元。不同币种和期间不相加，也不据此给公司排名。</p>
+<table>
+<thead>
+<tr>
+<th>对象与期间</th>
+<th>已披露经营信号</th>
+<th>现金回收信号</th>
+<th>对判断的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft FY27Q1，截至9月30日</td>
+<td>收入92.279、营业利润45.915；新分部与Azure口径须使用重述比较数</td>
+<td>经营现金58.000减现金购建39.367为18.633；再扣融资租赁本金1.000为17.633</td>
+<td>仍有现金缓冲；不能把租赁新增额再重复扣成现金支出</td>
+</tr>
+<tr>
+<td>Alphabet 2026Q3</td>
+<td>Cloud收入30.709、营业利润11.121；股权证券税前损失8.664另列</td>
+<td>当季42.290−51.355＝−9.065；TTM仍为+19.747</td>
+<td>单季建设缺口扩大与滚动年度正现金并存；非现金重估不等于主业倒退</td>
+</tr>
+<tr>
+<td>Amazon 2026Q3及截至9月30日TTM</td>
+<td>AWS收入45.984、营业利润17.773</td>
+<td>TTM经营现金168.300减净现金购建210.657＝−42.357</td>
+<td>云增长没有同步变成集团自由现金；缺口不等于当日到期债务</td>
+</tr>
+<tr>
+<td>中国光模块，2026前三季度</td>
+<td>中际旭创与新易盛均有经营增长，需分别核客户与产品</td>
+<td>中际旭创经营现金80.0844亿元，新易盛14.6443亿元；各自再扣建设后的简单现金桥仍为负</td>
+<td>同一产业标签下回款方向不同；中际单Q3改善不能替新易盛作证</td>
+</tr>
+</tbody>
+</table>
+<p>原始依据：<a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast">Microsoft FY27Q1</a>、<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf">Alphabet Q3业绩</a>、<a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx">Amazon Q3业绩</a>。租赁本金、中国公司原件及逐项现金公式见利润与中国传导章节。公司公告的转载只能核对摘录，不能当成另一套独立账簿。</p>
+<h3 id="h-0002">新应用为何需要单独研究</h3>
+<p>AI视频短剧值得进入商业化框架，因为观众可以按内容或订阅付费，广告主也可以为观看注意力付款，收入来源比笼统的“模型能力提升”更容易追踪。但真人短剧大盘、AI辅助制作、主要由AI生成的短剧、模型工具收入，是四个不同口径。新增专题比较中国与美国的分发、付费、获客、IP和版权，并用条件算例检验：制作更便宜以后，节约额由谁获得，是否又被投流、返工和竞争降价消耗。市场预测、平台自报和行业已实现收入分开，不用短剧总收入替代AI收入。</p>
+<p>新增证据已不止播放量：兑吧2026H1单列AI短剧收入2.22629亿元人民币，但集团同期仍亏损2532.6万元，不能倒推出AI业务独立净利率。中文在线披露部分海外短剧转为AI制作带来降本，其累计与单季现金方向却不同。这使研究更重视已发生的收费，也更需要保留失败作品、获客和回款周期的完整账本。具体财期、原件及算式见专题三。<a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧中期报告</a>、<a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线三季报</a></p>
+<h3 id="h-0003">编程复盘与其他应用怎样改变判断</h3>
+<p>编程旧预估不能统一判成“预测正确”。3650万专业开发者×30美元×12得到13.14B，是条件算术；把固定低价席位覆盖全部收入，已被按量收费、多档套餐和非专业用途打破。早期原稿自身还存在高价情景与“绝对上限”矛盾、$131B量纲错误；V1.5已撤回硬上限，本轮用历史原件补齐逐项裁决。公开产品指标仍不足以证明去重后的纯编程市场已超过13.14B，不能以修正模型冒充新市场实绩。依据及未来验证窗口见专题四。</p>
+<p>其他应用延续旧报告十四领域框架，补齐正反两面经营证据：AlphaSense Q2公司ARR超过0.7B；Duolingo完整产品有正现金，不能全归AI功能；Character.ai进入法院监督出售程序，当时服务继续运行。阿里模型与应用混合分部、Tempus与自动驾驶也必须分清收入、非经营收益和经营亏损。新增专题五不加总这些异质指标，而是逐项检验付款方、完整成本与回收。<a href="https://www.alpha-sense.com/press/alphasense-named-the-only-leader-in-market-and-competitive-intelligence-platforms/">AlphaSense原始披露</a>、<a href="https://blog.character.ai/an-update-on-character-ai/">Character.ai官方状态</a>。</p>
+<h3 id="h-0004">金融条件与后续核验</h3>
+<p>10月28日美联储维持政策利率3.75%—4.00%；10月30日十年期国债名义与实际收益率为4.94%和2.60%，较10月26日均下降6基点。9月PCE价格同比+3.6%、核心+3.1%仍要求关注通胀。政策利率不变与国债回落可以同时发生，企业信用成本又可能不同，不能从一个宏观变量直接推导新的崩盘概率。<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">Fed决议</a>、<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026">BEA 9月收入与支出</a>、<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_yield_curve">财政部名义曲线</a>、<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_real_yield_curve">实际曲线</a>。</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>需要进入模型的证据</th>
+<th>会使判断改变的反证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求能否持续</td>
+<td>付费留存、客户预算、净收费与回款</td>
+<td>补贴退出后仍有稳定复购和现金贡献</td>
+</tr>
+<tr>
+<td>增长能否覆盖投资</td>
+<td>同期间经营现金、现金建设、租赁本金及未来硬付款</td>
+<td>投入放缓而收入和利润持续增长</td>
+</tr>
+<tr>
+<td>新应用能否形成利润</td>
+<td>编程、短剧和其他应用的完整成本、获客、退款及结算</td>
+<td>可重复的低获客成本、高留存与正现金，而非单一案例</td>
+</tr>
+<tr>
+<td>融资风险是否扩散</td>
+<td>已到账资金、提款条件、抵押余量和到期付款</td>
+<td>融资落实且对借新还旧的依赖下降</td>
+</tr>
+<tr>
+<td>股价是否具有安全边际</td>
+<td>可持续盈利、净债务、稀释及有日期的市场价格</td>
+<td>盈利兑现和估值要求相匹配，而非只看行业增长</td>
+</tr>
+</tbody>
+</table>
+<section class="references">
+
+<h2 id="h-0005">参考资料索引</h2>
+<p>本册按URL去重收录11项参考资料，保留正文中的就近链接，下面按首次引用顺序集中列出完整网址，便于打印后追溯。名称采用已核对的公司、报告期与文档类型或正文来源简称，并非一律为官方原标题；资料的期间、核验程度和访问限制以对应段落为准，不表示全部旧引文都在本轮重新取得原件。</p>
+<ol>
+<li>
+<p><a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast">Microsoft FY27Q1</a> · www.microsoft.com</p>
+<p><span class="ref-url">https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast</span></p>
+</li>
+<li>
+<p><a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf">Alphabet Q3业绩</a> · s206.q4cdn.com</p>
+<p><span class="ref-url">https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf</span></p>
+</li>
+<li>
+<p><a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx">Amazon Q3业绩</a> · ir.aboutamazon.com</p>
+<p><span class="ref-url">https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx</span></p>
+</li>
+<li>
+<p><a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧中期报告</a> · yun.duiba.com.cn</p>
+<p><span class="ref-url">https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf</span></p>
+</li>
+<li>
+<p><a href="https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF">中文在线三季报</a> · static.cninfo.com.cn</p>
+<p><span class="ref-url">https://static.cninfo.com.cn/finalpage/2026-10-26/1225620142.PDF</span></p>
+</li>
+<li>
+<p><a href="https://www.alpha-sense.com/press/alphasense-named-the-only-leader-in-market-and-competitive-intelligence-platforms/">AlphaSense原始披露</a> · www.alpha-sense.com</p>
+<p><span class="ref-url">https://www.alpha-sense.com/press/alphasense-named-the-only-leader-in-market-and-competitive-intelligence-platforms/</span></p>
+</li>
+<li>
+<p><a href="https://blog.character.ai/an-update-on-character-ai/">Character.ai官方状态</a> · blog.character.ai</p>
+<p><span class="ref-url">https://blog.character.ai/an-update-on-character-ai/</span></p>
+</li>
+<li>
+<p><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">Fed决议</a> · www.federalreserve.gov</p>
+<p><span class="ref-url">https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm</span></p>
+</li>
+<li>
+<p><a href="https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026">BEA 9月收入与支出</a> · www.bea.gov</p>
+<p><span class="ref-url">https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026</span></p>
+</li>
+<li>
+<p><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_yield_curve">财政部名义曲线</a> · home.treasury.gov</p>
+<p><span class="ref-url">https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_yield_curve</span></p>
+</li>
+<li>
+<p><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_real_yield_curve">实际曲线</a> · home.treasury.gov</p>
+<p><span class="ref-url">https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&amp;type=daily_treasury_real_yield_curve</span></p>
+</li>
+</ol></section></main></body></html>

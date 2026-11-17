@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "status": "ALIGNED",
+  "date": "2026-11-17",
+  "scope": "Translator alignment record for four finalized Chinese/English source pairs; not an independent semantic approval.",
+  "source_lock_confirmed_by": [
+    "/root/huang_event_verify",
+    "/root/bubble_event_review"
+  ],
+  "files": [
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\author_view_zh.md",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\author_view_en.md",
+      "source_sha256": "10b07e7527d235343fbc4bf91285be1022900ae847d23b3351d5758c1918885f",
+      "translation_sha256": "b9ae39d91d0c3b663e7c6f5ebc6086b8e08314137171c3a923beaf1574e3a5d3",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 2,
+      "untranslated_chinese_characters": 0
+    },
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\brief_zh.md",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\brief_en.md",
+      "source_sha256": "9b188d86c46479a019eaae2d98bb1b88d7cc409525867d152f95a8d98c126633",
+      "translation_sha256": "7dabab62901ce583f71d5a0f280e2b74b3f6b117ff184a921ed5598fff398fae",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 16,
+      "untranslated_chinese_characters": 0
+    },
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\event_chapter_zh.md",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\event_chapter_en.md",
+      "source_sha256": "b14943fcc8f99d0328ef3db4fbdda15d7a0bf989b1d912cfe4db982c0ef6e362",
+      "translation_sha256": "942e7931dab16adc19a142959a2bddac5c5746eca8b77902eb41e472c4595fba",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 33,
+      "untranslated_chinese_characters": 0
+    },
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\body_updates_zh.json",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\body_updates_en.json",
+      "source_sha256": "776f22b0eba546242ea45708e28baab2b13fdaf776a33a0e9f47e20b92815e8b",
+      "translation_sha256": "2294b99ad39aaaa0d9f3c450ec19da328636a377607538d52b310d67ac2c4b76",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 11,
+      "untranslated_chinese_characters": 0
+    }
+  ],
+  "checks": [
+    {
+      "check": "author_view_en.md technology/cash-recovery matrix unchanged from V1.9.2",
+      "verified": true
+    },
+    {
+      "check": "brief_en.md technology/cash-recovery matrix unchanged from V1.9.2",
+      "verified": true
+    },
+    {
+      "check": "Nine author judgments and concluding falsification conditions retained verbatim from baseline English",
+      "verified": true
+    },
+    {
+      "check": "Single Chapter 14 heading, nine 14.x subsections; JSON has exactly six updates for chapters 1,2,8,10,12,13",
+      "verified": true
+    },
+    {
+      "check": "Original October 31 research cutoff separated from November 17 governance, financing and regulatory increment; no implied refresh of all applications",
+      "verified": true
+    },
+    {
+      "check": "Subjective H1 2027–H1 2028 main window, earlier November 2026–Q1 2027 credit shock path, delayed and absorption scenarios, and June 30, 2028 unfulfilled-forecast accountability retained",
+      "verified": true
+    },
+    {
+      "check": "Financial status remains distinct: invested USD 2B equity, conditional USD 6.3B capacity order, USD 105B phased contingent guarantee, over USD 500B third-party capital target; no aggregation or assumption of cash received",
+      "verified": true
+    },
+    {
+      "check": "Own-R&D cloud commitments USD 29B remain distinct from USD 36B customer support; seven-row timing table retained without aggregation",
+      "verified": true
+    },
+    {
+      "check": "CoreWeave USD 5.638B operating inflow less USD 23.558B cash asset spending gives -USD 17.920B, alongside USD 21.346B financing already received; construction difference is not negative operating cash or an unfilled gap",
+      "verified": true
+    },
+    {
+      "check": "Liquidity USD 9.837B includes USD 5.653B available credit; USD 2.282B restricted cash and approximately USD 9B projected prepayments remain separate; USD 1.9B reclassification is not actual cancellation/refund",
+      "verified": true
+    },
+    {
+      "check": "Q3 periods ending September 30 precede November resignation; announced BIS rule not yet effective on November 17 and publication scheduled November 19; no blanket generative-API ban inferred",
+      "verified": true
+    },
+    {
+      "check": "M0 is first full settlement month; M0–M72 means 73 periods; M40/M46 mean periods 41/47, M12/M24 period-end 13/25; first principal index equals drawdown index plus 13",
+      "verified": true
+    },
+    {
+      "check": "USD 7.85M funding need limited to first 25 periods; full 73-period stressed minimum -USD 20.53M; negative balances require supplementary funding before path execution",
+      "verified": true
+    },
+    {
+      "check": "Simple payback is pretax, undiscounted project cash excluding financing, interest and principal; financing-inclusive cash balance is not a shareholder distribution; depreciation not deducted twice",
+      "verified": true
+    },
+    {
+      "check": "Slowdown depends on negotiated payment deferral, reduced preparation costs and no penalties; drawdown-delay example needs USD 35.90M bridge and excludes unknown bridge costs; replacement equity leaves project recovery unchanged",
+      "verified": true
+    },
+    {
+      "check": "Company statements, hypotheses, inference and counterevidence retained; no NVIDIA FY27Q3 results used before November 18 Beijing release",
+      "verified": true
+    }
+  ],
+  "baseline_english_reused": [
+    "V1.9.2_核心观点_20261101/author_view_en.md",
+    "V1.9.2_核心观点_20261101/brief_en.md"
+  ],
+  "unit_convention": "Amounts stated in Chinese yi dollars are converted at 10 yi = USD 1 billion, with smaller amounts rendered in USD millions; hypothetical project figures are USD millions.",
+  "heading_note": "Per parent clarification, JSON headings retain November 17 dates but have no Markdown heading markers or chapter-number prefixes.",
+  "independent_semantic_review": {
+    "performed_by_translator": false,
+    "reviewer": "/root/nvidia_financing_impact",
+    "status": "PASS",
+    "status_source": "semantic_review_en.json",
+    "review_notes": "semantic_review_en.md",
+    "review_sha256_matches_translations": true
+  },
+  "unresolved_translator_findings": [],
+  "reviewer_requested_revisions": [
+    {
+      "reviewer": "/root/nvidia_financing_impact",
+      "location": "event_chapter_en.md section 14.3 indirect customer paragraph",
+      "resolution": "Clarified that the AI research company buys cloud services through NVIDIA customers; replaced named customers with direct customers to avoid implying publicly named identities.",
+      "status": "confirmed_closed_by_independent_reviewer"
+    }
+  ]
+}

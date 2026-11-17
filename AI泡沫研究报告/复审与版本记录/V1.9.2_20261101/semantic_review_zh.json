@@ -1,0 +1,116 @@
+{
+  "review_version": "V1.9.2_20261101",
+  "review_date": "2026-11-01",
+  "verdict": "pass",
+  "scope": "独立复审中文作者观点、简版、观点恢复清单及声明映射；核对旧作者论点与现行V1.9证据、两张矩阵、会计和现金边界及预测可证伪性。不直接修改稿件，不开展新外部事实检索。",
+  "reviewed_files": [
+    {"file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md", "sha256": "f8138afd63cfabdd3767c5d30a36c1968a5e7f18ca716711a057166d09578daf"},
+    {"file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md", "sha256": "57cf5fbd242967436645d9dd616c0a97026c86b61c9a8ac9916c65c98207dc06"},
+    {"file": "10_源码_markdown/V1.9.2_核心观点_20261101/claim_map.json", "sha256": "3947f3ee1fd6ee5cd6c20595643ac85ea72e942be88c577fdd963d8f45468ebf"},
+    {"file": "10_源码_markdown/V1.9.2_核心观点_20261101/view_inventory.md", "sha256": "3f00e5de05d66b891dfeffbcfbac84b6257f9dbdd3433b0443fb7e0d10d8ce59"}
+  ],
+  "summary": "修订后通过。报告最前保留明确破裂时间判断，并恢复利润质量、资本循环、现金与折旧、技术双向影响、公司分化、应用商业化、中国传导、政策能源与长期股东回报九项观点。新技术进展×付费回收矩阵与原四条时间路径能够共存，未将条件检验写成没有立场，也未恢复旧概率、统一跌幅或无依据公司胜负次序。",
+  "open_findings": [],
+  "resolved_findings": [
+    {
+      "id": "R01",
+      "severity": "medium",
+      "category": "matrix_axis_overlap_and_cash_boundary",
+      "locations": [
+        {"file": "author_view_zh.md", "line": 22},
+        {"file": "author_view_zh.md", "line": 24},
+        {"file": "author_view_zh.md", "line": 27},
+        {"file": "brief_zh.md", "line": 30},
+        {"file": "brief_zh.md", "line": 32},
+        {"file": "brief_zh.md", "line": 35}
+      ],
+      "original_problem": "初稿以回收改善、净现金更接近覆盖完整投入对照仍需新融资或补贴，二者可以同时成立；左列既有现金能够支持还可能把传统业务补贴混成新AI项目回收。右下格融资覆盖缺口的反证没有充分区分流动性与经营回收。",
+      "replacement_recommended": "同一业务、投资批次和观察期内，按持续客户净回款能否按计划覆盖投入回收及不重复计入的到期硬付款，区分回收跟上和回收落后。传统业务现金、融资及延期只作为缓冲；进入回收跟上格须有经营回收证据。技术放缓不等于既有能力消失。",
+      "source_locations": [
+        {"file": "V1.9_现行正文_20261031/01_利润真实性拆解.md", "line": 9, "reason": "区分收入、经营利润、回款和建设付款，并检验经济寿命内的投入回收。"},
+        {"file": "V1.9_现行正文_20261031/15_延迟与消化情景.md", "line": 50, "reason": "项目回报模型与偿债表同时存在，流动性改善不替代投资回报。"},
+        {"file": "V1.9_现行正文_20261031/04_AGI与国际格局.md", "line": 9, "reason": "能力、部署和收益归属不能压成一条轴。"}
+      ],
+      "resolution": "两文采用回收跟上/回收落后，固定主体、批次和期间，明确客户净现金、非重复硬付款与融资缓冲边界；右下格明确仅降低流动性风险，转入左格仍须经营回收跟上。技术放缓的定义也已补足。",
+      "status": "resolved"
+    },
+    {
+      "id": "R02",
+      "severity": "medium",
+      "category": "positive_cash_vs_full_investment_recovery",
+      "locations": [
+        {"file": "author_view_zh.md", "line": 26},
+        {"file": "brief_zh.md", "line": 34},
+        {"file": "claim_map.json", "claim_id": "C12"}
+      ],
+      "original_problem": "右上格原反证只要求低价扩大用量、带来净现金且老设备仍赚到钱，随后便转向消化判断；正贡献现金可能仍不足以收回高价投入，弱于表前回收定义。",
+      "replacement_recommended": "若低价扩大用量，老设备净现金也能按计划覆盖投入与付款，我会转向消化判断。",
+      "source_locations": [
+        {"file": "V1.9_现行正文_20261031/01_利润真实性拆解.md", "line": 64, "reason": "经营现金为正不等于设备全生命周期已经回本。"},
+        {"file": "V1.9_现行正文_20261031/15_延迟与消化情景.md", "line": 33, "reason": "用量、有效收费与单位成本共同决定效率能否消化投资。"},
+        {"file": "V1.9_现行正文_20261031/04_AGI与国际格局.md", "line": 274, "reason": "旧设备仍在使用不等于其投资已经回本。"}
+      ],
+      "resolution": "两文矩阵及C12映射同步采用按计划覆盖投入与付款的完整反证；未以仍可运行或正贡献现金替代回收。",
+      "status": "resolved"
+    }
+  ],
+  "acceptance_checks": {
+    "clear_author_position": {"status": "pass", "evidence": "两文第5行直接给出2027H1—2028H1主要窗口；作者稿第31—51行恢复九项明确论点，简版第24—46行前置对应判断。第18行保留延迟即放大的作者立场和生效条件。"},
+    "historical_restoration_without_reviving_retracted_claims": {"status": "pass", "evidence": "对照旧稿573—609、2716—2728行及相关公司分化、国际和能源段落，恢复的是机制。观点清单明确撤回6100亿美元混合总额、67%、2.8倍、旧概率与75%看空、统一AGI年份、统一暴跌/放大倍数、程序员AI因果裁员率及失效政策前提。"},
+    "profit_and_cash_quality": {"status": "pass", "evidence": "真实经营、股权重估和现金回收分开；重估涨跌对称、税前税后不混减；股权/授信/采购/担保不混加，上游收入不替终端回收作证。"},
+    "depreciation_and_asset_life": {"status": "pass", "evidence": "折旧进入利润但不是再次设备付款；设备可运行不等于原租价和原投资可收回，新芯片出现不等于旧卡归零；简版按批次核租金、利用率、维护、经济寿命与残值。"},
+    "technical_progress_and_value_capture": {"status": "pass", "evidence": "明确技术可扩大收费任务，也可压低旧硬件与模型收费；应用客户受益与旧资产股东受损可以同时发生，效率改善也允许延长旧资产回收寿命。没有恢复统一AGI到达日期。"},
+    "business_model_differentiation": {"status": "pass", "evidence": "平台成熟现金、芯片/设备供应商客户暴露、重资产云的起租与债务、独立模型研发推理和应用分发交付分别讨论；相对缓冲不是公司固定风险或股价排序。"},
+    "china_policy_energy_and_long_term_returns": {"status": "pass", "evidence": "中国传导沿产品、份额、价格、交付与回款，政策收紧和放松都有分化；能源与主权资金改变等待条件但不取消义务；技术、经营与股东投资回报分开。"},
+    "two_dimensional_matrix": {"status": "pass", "evidence": "技术轴为新增验收能力，回收轴按业务/批次/期间衡量客户现金；四格均有承压主体、相对缓冲或受益主体及反证。未把技术放缓写成零能力，也未把融资到账或收入增长写成项目已回本。"},
+    "matrix_and_timeline_coexistence": {"status": "pass", "evidence": "作者稿第29行、简版第37行明确经济状态与时间节奏的区别，允许跨格迁移，不将一格对应一年，也不相加成概率。"},
+    "current_diagnosis_vs_future_forecast": {"status": "pass", "evidence": "当前公司分化、局部回收压力与未来基准破裂窗口区分；多主体收缩证据用于结算未来预测，未另设相反未来基准。"},
+    "forecast_falsifiability": {"status": "pass", "evidence": "2028-06-30基准链条未出现须记未兑现，不自动顺延；消化情景可以没有全面破裂。四条时间路径与V1.9.1一致。"},
+    "brief_preserves_existing_evidence_boundaries": {"status": "pass", "evidence": "集团与纯AI现金、视频与短剧收入、ARR与现金、组织样本与全行业就业、产能价值与可撤现金支出均保留边界；V1.5撤回编程硬上限未冒充本次首次纠错。"},
+    "inventory_and_mapping": {"status": "pass", "evidence": "清单区分历史作者观点、现行证据与本次编辑综合；claim_map将回忆、预测、机制判断、披露事实、研究与条件算例分开。九个核心判断及四格都有现行依据和输出位置。"}
+  },
+  "forecast_review": {
+    "base_window": "2027H1—2028H1",
+    "early_window": "2026-11—2027Q1",
+    "delayed_window": "2028H2—2029H1",
+    "digestion_observation_window": "2027—2029",
+    "base_settlement_date": "2028-06-30",
+    "interpretation": "2026-11-01重新登记的作者主观预测；现行14/15章支持条件机制，不提供日期统计识别。四条路径不构成互斥概率分布。",
+    "remaining_limit": "通过表示作者立场、机制和未兑现结算均表达清楚，不表示时间窗口已经实证校准或预测必然实现。"
+  },
+  "mechanical_verification": {
+    "claim_count": 55,
+    "output_location_count": 83,
+    "evidence_anchor_count": 161,
+    "author_history_range_count": 26,
+    "source_sha256_count": 21,
+    "output_sha256_count": 2,
+    "output_fragment_mismatches": 0,
+    "source_anchor_mismatches": 0,
+    "source_excerpt_not_found": 0,
+    "author_history_excerpt_mismatches": 0,
+    "source_hash_mismatches": 0,
+    "output_hash_mismatches": 0,
+    "matrix_two_chinese_versions_exact_match": true,
+    "arithmetic_checks_passed": 9,
+    "arithmetic_checks": [
+      "580−393.67＝186.33亿美元",
+      "186.33−10＝176.33亿美元",
+      "422.90−513.55＝−90.65亿美元",
+      "1683−2106.57＝−423.57亿美元",
+      "3650万×30美元×12＝131.4亿美元",
+      "24万−4万＝20万美元产能净值",
+      "18万−4万＝14万美元条件净收益",
+      "12万−9万＝3万元产能净值",
+      "900×220−90000＝108000元条件净收益"
+    ]
+  },
+  "final_mapping_recheck": "主笔最后以具体来源替换C05、C06、C11宽泛首匹配，去除空字段并去重证据；观点清单纠正中国传导源码行号。已逐项复读替换来源并重跑全部定位、摘录和哈希验证，161个最终来源锚点零错配；中文正文与已审版本完全一致。",
+  "publication_mapping_checked": {"01": 1, "02": 2, "03": 3, "18": 4, "19": 5, "20": 6, "04_AGI": 7, "04_国际": 8, "06": 9, "07": 10, "08": 11, "14": 12, "15": 13},
+  "integration_note_for_parent": "合卷及英文须使用本复审绑定的最终中文。尤其同步矩阵回收跟上/落后定义、右上完整回收反证和右下仅降低流动性风险的限定。合卷版本说明区分前言主观时间预测与保留正文机制压力测试。任何实质改文或映射改动后须重新核验哈希。",
+  "review_limits": [
+    "本次以指定旧稿、现行V1.9源码和V1.9.1映射为依据，没有重新联网核验财报、论文或政策。",
+    "中文语义PASS不覆盖英文翻译、合卷分页、表格可读性或最终PDF版式；这些仍需相应验收。",
+    "4月以来的连续作者立场按用户自述登记，不宣称发现4月原稿或核实历史量化预测命中。"
+  ]
+}

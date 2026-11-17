@@ -1,0 +1,433 @@
+{
+  "version": "V1.9 English",
+  "status": "PASS_LOCAL_DELIVERY",
+  "scope": "Full faithful English translation; no research refresh or remote publication",
+  "pdf_pages": 272,
+  "source_chinese_pages": 209,
+  "chapters": 13,
+  "appendices": 6,
+  "figures": 8,
+  "unique_reference_urls": 342,
+  "translation_lines": 3805,
+  "approximate_english_words": 102654,
+  "prose_corrections": 23,
+  "closed_review_items": 24,
+  "review_records": [
+    {
+      "group": "a",
+      "path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\复审与版本记录\\V1.9_English_20261031\\review_group_a.json",
+      "sha256": "14025122c75c253256772402672d42e71b0f716b983410aece01ab1ecb7cefc5"
+    },
+    {
+      "group": "b",
+      "path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\复审与版本记录\\V1.9_English_20261031\\review_group_b.json",
+      "sha256": "ca51efda806c14d15d26f9b6347eacfcf43c835f66e095ffd82dfed1c7adde25"
+    },
+    {
+      "group": "c",
+      "path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\复审与版本记录\\V1.9_English_20261031\\review_group_c.json",
+      "sha256": "cb04f7488fabaee30e82d6266283232931a1b0a16bf3c22d0debcc463e5e7400"
+    }
+  ],
+  "visual_sample_pages": 47,
+  "chinese_publication_files_unchanged": 126,
+  "git_branch": "codex/update-20261031",
+  "remote_push_performed": false,
+  "files": [
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/front_matter.md",
+      "bytes": 4558,
+      "sha256": "c69a275badcac6bf60e484153e5a6616caba85898464b5311fbf0db99ebd0b9c"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/00_short_institution.md",
+      "bytes": 14246,
+      "sha256": "9b270faf46451c973064cf404fdbb6bfff9c1dbfae0a0a600c7bdc656bd93759"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/01_profit.md",
+      "bytes": 71212,
+      "sha256": "80a2e93b795a542bfbcbe75e53ab5ec2b12aa0bde77db62863beb2287d2a22a3"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/02_circular.md",
+      "bytes": 65087,
+      "sha256": "20556a1f7c3e1474f48870097a29de716b06e582599d59fc2344ca9f0a35b5ce"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/03_monetization.md",
+      "bytes": 74472,
+      "sha256": "b5dbd9ca50ba2b959f64dd59999ee99fd45bef8ccde4550916c79f413c8d1b5c"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/04_video.md",
+      "bytes": 99075,
+      "sha256": "ac562ff075701c9a55369f006c143d00e5da5b3c70f0b7354f965bf8b50d2235"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/05_coding.md",
+      "bytes": 90696,
+      "sha256": "fe108a118f8066a866bce5005625f6d37390590a4c28c020825d7c70f5e98229"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/06_applications.md",
+      "bytes": 42044,
+      "sha256": "f87359ab086d14b979fdf1d9c98b3add9b5f21d7bc2b56305204ec14da5cc5bf"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/07_agi.md",
+      "bytes": 83218,
+      "sha256": "5a402a7c3d35a4dc87bd762d6f5c1cbd3608f7640a45612e4240c8aa49b2b98b"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/08_china.md",
+      "bytes": 24484,
+      "sha256": "9752bbc26b20cb559085b005f49fc382dd387dbe8dbed83c2b5780b1ba5b2ec4"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/09_valuation.md",
+      "bytes": 16621,
+      "sha256": "aec9b569deb4ee9e4709477e57cfcc95b33f3c9d013f0ef9f2071201ed573ec6"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/10_conclusion.md",
+      "bytes": 42981,
+      "sha256": "777857ae654bcaddaa97320e417799df63c06063effe25c92cf6a2a9a613cb7f"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/11_crash.md",
+      "bytes": 22884,
+      "sha256": "17812dcaa1c197ac94d7d9b13bd0f6759f27560b30af8ffadb439bdf6b55c73e"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/12_delay.md",
+      "bytes": 17185,
+      "sha256": "685a8ec1437288a95b58648a28a24d81c657d482c8c4a5f72ec2b0ce13c9eabf"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/13_framework.md",
+      "bytes": 25322,
+      "sha256": "82b9893b28acb76c51bd786dced538efda13f23dc8d49792da799baa03ab373a"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/14_crossborder.md",
+      "bytes": 19990,
+      "sha256": "dd0d5231ecc7d5e96c7cbb1148102cc841e023681679e9d0caa339f9f4a43355"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/15_shale.md",
+      "bytes": 20619,
+      "sha256": "f0e9926ddd53437ace6fceb25bacf810c5a2f67f4b90789aa366c5d387c39fbb"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/16_alphabet.md",
+      "bytes": 19876,
+      "sha256": "94762ef3d40a6dd7acb300211bc86842a322d9abf73f5094a0c2127af4ccb699"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/17_audit.md",
+      "bytes": 27854,
+      "sha256": "7febdb76735036bf5fba7dffd298865803e46024673a203c45059178a15828b0"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/18_fusion.md",
+      "bytes": 18079,
+      "sha256": "60905233ac174d7da4c9dbf84c7e0b711a5977fbb28e860d3eef471629d392e0"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/19_postscript.md",
+      "bytes": 3498,
+      "sha256": "e0fca671841de1d3f52be333ca296f2522e0a58d50d817f2776705d687f01945"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/reference_labels.json",
+      "bytes": 5016,
+      "sha256": "7e5986f322a3a506ba634f48835b8e36c6dd83997179594087c2c4e05e9ec8aa"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation-manifest.json",
+      "bytes": 5841,
+      "sha256": "2c08b4529606d543cb831367ef14867660dfe10b2396f0ed1073a37f2339328d"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/00_short_institution.md",
+      "bytes": 10605,
+      "sha256": "d140c1c472ca787d31cdc1f06209aeac7bebc8bf43785ff6f885973f196868f4"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/01_profit.md",
+      "bytes": 56699,
+      "sha256": "08a015c0ff85733ffedc9a4b933fac5c053991176b04d83f3eb0c3dcb6c7fa26"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/02_circular.md",
+      "bytes": 54242,
+      "sha256": "08fab4b9aee2164f901c34ea54faaee561de4e7232a174ceb8975ed3e76413fc"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/03_monetization.md",
+      "bytes": 66918,
+      "sha256": "fa3d19bfbd6229ba8416f865a07b0d3f25cb4d5f75fa8aa30bb444da5cb0ae24"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/04_video.md",
+      "bytes": 75632,
+      "sha256": "adc184224828eb47d649ec7cd0d334d3b7312189097a59df579221bc5a839813"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/05_coding.md",
+      "bytes": 70953,
+      "sha256": "413f99c44a59842dc6529c7a91774908f642dd42da55a2c8faa85e77586e22a9"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/06_applications.md",
+      "bytes": 33725,
+      "sha256": "693392c1c70dc35a062bf5376e29829b9d0e36b0d4529f557106e5cad26190c9"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/07_agi.md",
+      "bytes": 67539,
+      "sha256": "73c46918c6726a656a7354dc66031e089f313879d1fa8a1ea2e73c3ed25d9433"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/08_china.md",
+      "bytes": 18913,
+      "sha256": "59abc9b656ffb49ac7140a5b487f33eb88a8c30fd35efb60d57b4c35ee286917"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/09_valuation.md",
+      "bytes": 12554,
+      "sha256": "3f14abfe973d468dedf48dd95f69a47751113347beebdb6cdedd1b4d91b4ea53"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/10_conclusion.md",
+      "bytes": 33368,
+      "sha256": "2405208d230510d92be560ef3e72fa1152954084dbbc35fd592bf925566991da"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/11_crash.md",
+      "bytes": 17962,
+      "sha256": "9e5358b6fb47d4c23b1bc7bf744f4de6296b360081a9b4c0c2049a13ff001546"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/12_delay.md",
+      "bytes": 13450,
+      "sha256": "2a4101ada72951cc82a4abed9f2657e3bfe3a03a4b315f330681a8d891d4af1a"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/13_framework.md",
+      "bytes": 22679,
+      "sha256": "045e15112d6763b5db7310d1f8411c79120a18d9ad158535a669738cc2b35fb5"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/14_crossborder.md",
+      "bytes": 15299,
+      "sha256": "9925d6b759d4a053721c1813587b55294be37ce90e74208749269aea051999d9"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/15_shale.md",
+      "bytes": 15747,
+      "sha256": "8781e16d7ff7bdb694b93e3997072eab55ce58ad10c54342e3653fc25e9f7524"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/16_alphabet.md",
+      "bytes": 14854,
+      "sha256": "fae1b1cea22c579c2afdae00e5844f244e6da86c98e2b64491cef48389045f2c"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/17_audit.md",
+      "bytes": 21322,
+      "sha256": "077bcfdf6ff6fbf7f7b71d74337e13f815a0758b6641b5e72586c09db404be7f"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/18_fusion.md",
+      "bytes": 12920,
+      "sha256": "b22183477e8cf1f8b04a76aad0199e131a9b1f0ea89626b778b9e6f4c92ba7e1"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/19_postscript.md",
+      "bytes": 2733,
+      "sha256": "ef005bb0617789da2e6ef7b9a5a0664b4a68b5e820169f382ae783e45039ee3f"
+    },
+    {
+      "path": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/TRANSLATION_RULES.md",
+      "bytes": 5863,
+      "sha256": "00167ec56c325a9741a06f59292ec3b7959b9b8f6c687f58cb4e5439f4b8f7fb"
+    },
+    {
+      "path": "AI泡沫研究报告/11_源码_python生成脚本/assets_v19_english.py",
+      "bytes": 16455,
+      "sha256": "ff5e61e87029ebd1502043b5dcf4029aa063b6a878e3da84d0deedd96e2c49f4"
+    },
+    {
+      "path": "AI泡沫研究报告/11_源码_python生成脚本/build_v19_english.py",
+      "bytes": 12487,
+      "sha256": "2c2d389f24e1af8d2f25d3364309c233621c5b159595bc6c4e62f400c7a2a493"
+    },
+    {
+      "path": "AI泡沫研究报告/11_源码_python生成脚本/finalize_v19_english.py",
+      "bytes": 9628,
+      "sha256": "5187fffb25b4c5e35b2be9a78504ea23b6fffb78d90b85f7e4806e8f64a9e5ed"
+    },
+    {
+      "path": "AI泡沫研究报告/11_源码_python生成脚本/qa_v19_english.py",
+      "bytes": 9938,
+      "sha256": "efe2f957403717b7ba4d15732ce9e2d43652a1a7d24899fd1b9388423c6b8a27"
+    },
+    {
+      "path": "AI泡沫研究报告/11_源码_python生成脚本/README_v19_english.md",
+      "bytes": 2187,
+      "sha256": "0407100107daa9952d302e032155b9f1148cff4212d19df257ede06e9bd1fed5"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.html",
+      "bytes": 995510,
+      "sha256": "280556a5d8bca2d5f1aa12afe76ce592c275b382acc9ea16e38092f4c8a81cad"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.md",
+      "bytes": 898020,
+      "sha256": "c27bd74a2ddf5ad1a995c1228c3837b86cef5c00c7654f47c28b4981edf1c7e5"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.pdf",
+      "bytes": 8578066,
+      "sha256": "1bdf84bde7eda951f9a8e876160c418b367e438b9b341360496728e8d2e27345"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/asset-provenance.json",
+      "bytes": 18826,
+      "sha256": "b3f21fcc3e1190fbd7e513ce90f986ae6fe003ebfe59f0c78293d0a073a75cbc"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_01_optical_modules.svg",
+      "bytes": 18319,
+      "sha256": "1a405ff8300206f735ee4c9f5bc38ee2a472d7d6956635fa05c872c7ecc11127"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_02_apld_revenue.svg",
+      "bytes": 20603,
+      "sha256": "25d9660278ab057886cb3635d17b2f53c604d81b0bb2e1852883d16a0f9387d6"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_03_coreweave_financing.svg",
+      "bytes": 19647,
+      "sha256": "a718f5ec429275257edeee44d709b011644a7a47f896939af597f2543584de55"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_04_oracle_cash.svg",
+      "bytes": 3594,
+      "sha256": "d4514bd001baa04d5b1804c42cd7e80235857114f442a34cdc6e987232338a05"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_05_vertiv_guidance.svg",
+      "bytes": 2842,
+      "sha256": "8eccc7c56f033120689144e4e9837e406701285e455172afc05f527fe5b777b2"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_06_micron_cash.svg",
+      "bytes": 20982,
+      "sha256": "d7cc240dae767be5cbe429cc85ff2ce803793faa087ee1ff98983401977910ab"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_07_meta_cash.svg",
+      "bytes": 3763,
+      "sha256": "18c5caea64aca9d50ed6e46c294ec64fa9781eda622d8d1936ff9f5d46abd985"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/assets/figure_08_tsmc_quarters.svg",
+      "bytes": 3793,
+      "sha256": "347e023439b3458b717ca0e3d20753757b7c88b2fe50cf35a941aa9a829240a2"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/index.html",
+      "bytes": 1034,
+      "sha256": "1bb1beb3e0355e5ddd0a29db9d33ee80b9c496aa5b8c75b1906b7f583b8056d7"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/manifest.json",
+      "bytes": 50083,
+      "sha256": "876c256bc463ae3a067be65c690dabd36c78014d8fcd600cbe9d725586f12c6a"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/qa.json",
+      "bytes": 13168,
+      "sha256": "fa2bcdbf7e0c93a11c5a5aeb984cb02e7918f3495e9eefdc5256da09aefd6f51"
+    },
+    {
+      "path": "AI泡沫研究报告/V1.9_English_Full_Report/README.md",
+      "bytes": 864,
+      "sha256": "def20a6923d11acb580570fed9c1db2349df288251639b955874389d3171ae47"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/review_group_a.json",
+      "bytes": 389297,
+      "sha256": "14025122c75c253256772402672d42e71b0f716b983410aece01ab1ecb7cefc5"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/review_group_a.md",
+      "bytes": 1377,
+      "sha256": "754a835f65f8d58a3d320260646dc4c7b8b6a9083b52e37a7c317e6ef853b8a0"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/review_group_b.json",
+      "bytes": 35918,
+      "sha256": "ca51efda806c14d15d26f9b6347eacfcf43c835f66e095ffd82dfed1c7adde25"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/review_group_c.json",
+      "bytes": 157249,
+      "sha256": "cb04f7488fabaee30e82d6266283232931a1b0a16bf3c22d0debcc463e5e7400"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation-acceptance.md",
+      "bytes": 3804,
+      "sha256": "14391d2d6bf11ba5f87b9cd13005d734a3af7e1481f5914f62dcb2d5a70c4fee"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation-structure-check.json",
+      "bytes": 336285,
+      "sha256": "88d836512ce10a8021a38732845357e8e2ee4363b984750895ea3ad78601c00a"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_corrections.json",
+      "bytes": 51325,
+      "sha256": "cd763f0fd3535cd6fb879ae999736b7b9f16e0e4b96816f91dfed53b313d029b"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_group_a.json",
+      "bytes": 340780,
+      "sha256": "c55b68a492bf64f4e30e74be679e03e6a7bca92eb320356066bee6889df77230"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_group_b.json",
+      "bytes": 350350,
+      "sha256": "679c5edda117e2110cc6b36637fa02ef6a1d9426e8a95c504009f972222e4bca"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_group_c.json",
+      "bytes": 388187,
+      "sha256": "d97dd1d9e85a95f877d7548e1c0f4c151f0273ffb3c38978d85bf00a0384f4b2"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/visual-review.json",
+      "bytes": 5645,
+      "sha256": "8af2b4a5d42d6daf828161ee0fc172d05e1140b70aaf4b01a68d0e13dd3f24c6"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/visual_independent_final.json",
+      "bytes": 2474,
+      "sha256": "e2bfc32b7382a9ed34f5d471358ae273aa356ccc1f664b6ded8bf42e46dc5f81"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/visual_primary.json",
+      "bytes": 509,
+      "sha256": "40080ed0abf74c8eff306058dad8a2690736eb0a12bbebbb80508f520a14fa32"
+    },
+    {
+      "path": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/visual_tables_figures_initial.json",
+      "bytes": 845,
+      "sha256": "85514104edccc0a914c24d4d7a78a6adf13ec9cbbc864690758fa079db50fe51"
+    }
+  ]
+}

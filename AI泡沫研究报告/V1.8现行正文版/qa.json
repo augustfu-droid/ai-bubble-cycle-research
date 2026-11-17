@@ -1,0 +1,1028 @@
+{
+  "version": "V1.8",
+  "status": "PASS_LOCAL_STRUCTURE",
+  "scope": "structural checks and machine arithmetic; separate visual and independent review required",
+  "reports": [
+    {
+      "slug": "01_主报告",
+      "pages": 140,
+      "pdf_sha256": "c4848b9ba05416deb6d4b84183e86709efa86febddb9a931cfc1e5e9aefab9b3",
+      "reference_count": 262,
+      "watermark_pages_checked": 140,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 203,
+      "internal_pdf_links": 234,
+      "unique_toc_destinations_checked": 117,
+      "toc_page_numbers_checked": 117,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "02_事实审计表",
+      "pages": 10,
+      "pdf_sha256": "c804e7abf672c48cc53e80ca17f0790e33ee43284964f45177dc822bccb56f48",
+      "reference_count": 22,
+      "watermark_pages_checked": 10,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 6,
+      "internal_pdf_links": 12,
+      "unique_toc_destinations_checked": 6,
+      "toc_page_numbers_checked": 6,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "03_利润真实性拆解",
+      "pages": 26,
+      "pdf_sha256": "e1f327b973b0e9ac5431fb2b7c22691c7200725548ac0cdee08bcc846fb99db6",
+      "reference_count": 63,
+      "watermark_pages_checked": 26,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 38,
+      "internal_pdf_links": 22,
+      "unique_toc_destinations_checked": 11,
+      "toc_page_numbers_checked": 11,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "04_循环投资网络",
+      "pages": 22,
+      "pdf_sha256": "3c920579c40880ac37f6203fad38d9ec54c26158bae1bb589d19e4c0de6172b1",
+      "reference_count": 43,
+      "watermark_pages_checked": 22,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 40,
+      "internal_pdf_links": 26,
+      "unique_toc_destinations_checked": 13,
+      "toc_page_numbers_checked": 13,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "05_AI变现与编程TAM",
+      "pages": 54,
+      "pdf_sha256": "513fec9bff4ed0310e8fc2d4467d52dfeaaf21c3c9344dffb44141ec46dce5af",
+      "reference_count": 92,
+      "watermark_pages_checked": 54,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 73,
+      "internal_pdf_links": 98,
+      "unique_toc_destinations_checked": 49,
+      "toc_page_numbers_checked": 49,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "06_AGI与国际格局",
+      "pages": 26,
+      "pdf_sha256": "e3afed714756a7f99453f51a26894439ef73fbe4b7bc502bc11fca066c6126c3",
+      "reference_count": 74,
+      "watermark_pages_checked": 26,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 19,
+      "internal_pdf_links": 38,
+      "unique_toc_destinations_checked": 19,
+      "toc_page_numbers_checked": 19,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "07_机构简版",
+      "pages": 4,
+      "pdf_sha256": "f3f86772d0adf74dbf6618d0c731b5a1da046d16b9e21e7138a6e53b030f400d",
+      "reference_count": 11,
+      "watermark_pages_checked": 4,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 6,
+      "internal_pdf_links": 12,
+      "unique_toc_destinations_checked": 6,
+      "toc_page_numbers_checked": 6,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "08_公开精简版",
+      "pages": 87,
+      "pdf_sha256": "0a256dc9cd8c7e2461d8d469970ad44af5ce480a2d7dcd5b3be11f0931648d66",
+      "reference_count": 204,
+      "watermark_pages_checked": 87,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 120,
+      "internal_pdf_links": 130,
+      "unique_toc_destinations_checked": 65,
+      "toc_page_numbers_checked": 65,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "09_雪球公开版",
+      "pages": 17,
+      "pdf_sha256": "850a37211f5f57748ebe4008beae9b06fdf0320edf5231bbe9cc034d15cddc4e",
+      "reference_count": 24,
+      "watermark_pages_checked": 17,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 26,
+      "internal_pdf_links": 38,
+      "unique_toc_destinations_checked": 19,
+      "toc_page_numbers_checked": 19,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "10_摘要版",
+      "pages": 2,
+      "pdf_sha256": "e9621ae78941c24e17164fc6081ef10da7970c9909189bd018e0724c4dc6d4bd",
+      "reference_count": 5,
+      "watermark_pages_checked": 2,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 2,
+      "internal_pdf_links": 4,
+      "unique_toc_destinations_checked": 2,
+      "toc_page_numbers_checked": 2,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "11_执行简版",
+      "pages": 2,
+      "pdf_sha256": "9a249dea98bed8f0c45820f5c98ad57de2af8707117e8c616ed383da14f43174",
+      "reference_count": 0,
+      "watermark_pages_checked": 2,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 2,
+      "internal_pdf_links": 4,
+      "unique_toc_destinations_checked": 2,
+      "toc_page_numbers_checked": 2,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "12_全景版",
+      "pages": 170,
+      "pdf_sha256": "6f56d76736e6fe00f62a6d55ab94feb87d49a42d1b9825ec9a2f395b80dc3f45",
+      "reference_count": 281,
+      "watermark_pages_checked": 170,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 280,
+      "internal_pdf_links": 334,
+      "unique_toc_destinations_checked": 167,
+      "toc_page_numbers_checked": 167,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "13_超全景版",
+      "pages": 182,
+      "pdf_sha256": "8bc77b2e4abe384ba3905a0b3d628ccbe18d17305859709313f9a61d754d329c",
+      "reference_count": 297,
+      "watermark_pages_checked": 182,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 297,
+      "internal_pdf_links": 358,
+      "unique_toc_destinations_checked": 179,
+      "toc_page_numbers_checked": 179,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "14_完整合集",
+      "pages": 164,
+      "pdf_sha256": "172675d9d0b03c1815cf938d00770166422e6401996f235a5fc6214d3c322b3d",
+      "reference_count": 282,
+      "watermark_pages_checked": 164,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 262,
+      "internal_pdf_links": 298,
+      "unique_toc_destinations_checked": 149,
+      "toc_page_numbers_checked": 149,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "15_延迟情景版",
+      "pages": 44,
+      "pdf_sha256": "0365dae431af60b32daa3108062bb48ff6df0ac9bacba851d31126411bf49bc9",
+      "reference_count": 64,
+      "watermark_pages_checked": 44,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 99,
+      "internal_pdf_links": 94,
+      "unique_toc_destinations_checked": 47,
+      "toc_page_numbers_checked": 47,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "16_崩盘剧本",
+      "pages": 19,
+      "pdf_sha256": "ab5ef71c463bb69f4a05b21b2f5629c0ceccb46538264c3038ab7078d8a9a8c4",
+      "reference_count": 45,
+      "watermark_pages_checked": 19,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 17,
+      "internal_pdf_links": 32,
+      "unique_toc_destinations_checked": 16,
+      "toc_page_numbers_checked": 16,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "17_发布引流稿",
+      "pages": 1,
+      "pdf_sha256": "28110f0de633e2dc6f3bc541ec670e743c2110206789148a08c361025955b08e",
+      "reference_count": 0,
+      "watermark_pages_checked": 1,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 2,
+      "internal_pdf_links": 4,
+      "unique_toc_destinations_checked": 2,
+      "toc_page_numbers_checked": 2,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "18_AI视频短剧中美市场",
+      "pages": 15,
+      "pdf_sha256": "187e73552aedf4ea8bf071f48ed448790e50487997cea514d366ad0da4a44a9a",
+      "reference_count": 18,
+      "watermark_pages_checked": 15,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 14,
+      "internal_pdf_links": 28,
+      "unique_toc_destinations_checked": 14,
+      "toc_page_numbers_checked": 14,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "19_AI编程市场预测复盘",
+      "pages": 14,
+      "pdf_sha256": "c8e28274f805cae0956475b50507a0c302e29ea1a9bf7b9c8b6f6fed47a29bd3",
+      "reference_count": 20,
+      "watermark_pages_checked": 14,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 12,
+      "internal_pdf_links": 24,
+      "unique_toc_destinations_checked": 12,
+      "toc_page_numbers_checked": 12,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "slug": "20_AI应用商业化全景",
+      "pages": 14,
+      "pdf_sha256": "e0f1fa32b576e09a2c4f44bc5330a852edad3bac325cb3e08f846704e5fee82e",
+      "reference_count": 25,
+      "watermark_pages_checked": 14,
+      "contact_status": "confirmed_by_user",
+      "bookmarks_checked": 13,
+      "internal_pdf_links": 26,
+      "unique_toc_destinations_checked": 13,
+      "toc_page_numbers_checked": 13,
+      "errors": [],
+      "status": "PASS"
+    }
+  ],
+  "global_errors": [],
+  "arithmetic": [
+    {
+      "name": "MSFT FY27Q1 cash bridge USD B",
+      "result": "18.633",
+      "expected": "18.633",
+      "pass": true
+    },
+    {
+      "name": "MSFT FY27Q1 after finance lease principal USD B",
+      "result": "17.633",
+      "expected": "17.633",
+      "pass": true
+    },
+    {
+      "name": "GOOG 2026Q3 FCF USD B",
+      "result": "-9.065",
+      "expected": "-9.065",
+      "pass": true
+    },
+    {
+      "name": "GOOG 2026Q3 TTM FCF USD B",
+      "result": "19.747",
+      "expected": "19.747",
+      "pass": true
+    },
+    {
+      "name": "GOOG 2026 9M FCF USD B",
+      "result": "-4.804",
+      "expected": "-4.804",
+      "pass": true
+    },
+    {
+      "name": "GOOG Q3 simple equity-loss EPS exclusion USD",
+      "result": "2.67",
+      "expected": "2.67",
+      "pass": true
+    },
+    {
+      "name": "AMZN Q3 net cash PP&E USD B",
+      "result": "75.878",
+      "expected": "75.878",
+      "pass": true
+    },
+    {
+      "name": "AMZN 2026Q3 FCF USD B",
+      "result": "-33.456",
+      "expected": "-33.456",
+      "pass": true
+    },
+    {
+      "name": "AMZN September TTM FCF USD B",
+      "result": "-42.357",
+      "expected": "-42.357",
+      "pass": true
+    },
+    {
+      "name": "AMZN September vs June TTM change USD B",
+      "result": "-34.753",
+      "expected": "-34.753",
+      "pass": true
+    },
+    {
+      "name": "ZJXC 2026 9M cash bridge CNY 100M",
+      "result": "-11.5243",
+      "expected": "-11.5243",
+      "pass": true
+    },
+    {
+      "name": "Eoptolink 2026 9M cash bridge CNY 100M",
+      "result": "-3.4159",
+      "expected": "-3.4159",
+      "pass": true
+    },
+    {
+      "name": "TFC 2026 9M cash bridge CNY 100M",
+      "result": "9.7083",
+      "expected": "9.7083",
+      "pass": true
+    },
+    {
+      "name": "VRT 2026 9M adjusted FCF USD M",
+      "result": "2230.3",
+      "expected": "2230.3",
+      "pass": true
+    },
+    {
+      "name": "VRT implied Q4 FCF low USD M",
+      "result": "369.7",
+      "expected": "369.7",
+      "pass": true
+    },
+    {
+      "name": "VRT implied Q4 FCF high USD M",
+      "result": "569.7",
+      "expected": "569.7",
+      "pass": true
+    },
+    {
+      "name": "VRT implied Q4 revenue midpoint USD M",
+      "result": "4413.4",
+      "expected": "4413.4",
+      "pass": true
+    },
+    {
+      "name": "VRT conditional EPS x25, NOT target",
+      "result": "178.75",
+      "expected": "178.75",
+      "pass": true
+    },
+    {
+      "name": "VRT conditional EPS x30, NOT target",
+      "result": "214.50",
+      "expected": "214.50",
+      "pass": true
+    },
+    {
+      "name": "VRT conditional EPS x35, NOT target",
+      "result": "250.25",
+      "expected": "250.25",
+      "pass": true
+    },
+    {
+      "name": "VRT conditional GAAP EPS x30, NOT target",
+      "result": "188.70",
+      "expected": "188.70",
+      "pass": true
+    },
+    {
+      "name": "US 2Y Oct30 vs Oct26 bp",
+      "result": "-12.00",
+      "expected": "-12",
+      "pass": true
+    },
+    {
+      "name": "US 10Y nominal Oct30 vs Oct26 bp",
+      "result": "-6.00",
+      "expected": "-6",
+      "pass": true
+    },
+    {
+      "name": "US 10Y real Oct30 vs Oct26 bp",
+      "result": "-6.00",
+      "expected": "-6",
+      "pass": true
+    },
+    {
+      "name": "US 2Y-10Y slope Oct30 bp",
+      "result": "38.00",
+      "expected": "38",
+      "pass": true
+    },
+    {
+      "name": "Samsung Q3 presentation cash bridge KRW T",
+      "result": "71.7",
+      "expected": "71.7",
+      "pass": true
+    },
+    {
+      "name": "SK hynix Q3 presentation cash bridge KRW T",
+      "result": "42.111",
+      "expected": "42.111",
+      "pass": true
+    },
+    {
+      "name": "SK hynix Q3 after reported lease liability repayment KRW T",
+      "result": "41.975",
+      "expected": "41.975",
+      "pass": true
+    },
+    {
+      "name": "Intel Q3 simple cash bridge after finance lease USD B",
+      "result": "0.744",
+      "expected": "0.744",
+      "pass": true
+    },
+    {
+      "name": "Intel Q3 adjusted FCF incl government and partner USD B",
+      "result": "1.639",
+      "expected": "1.639",
+      "pass": true
+    },
+    {
+      "name": "Retained Meta Q3 FCF USD B",
+      "result": "-2.120",
+      "expected": "-2.120",
+      "pass": true
+    },
+    {
+      "name": "Retained TSMC Q3 cash bridge NTD M",
+      "result": "476570",
+      "expected": "476570",
+      "pass": true
+    },
+    {
+      "name": "Retained ASML Q3 FCF EUR M",
+      "result": "11350.4",
+      "expected": "11350.4",
+      "pass": true
+    },
+    {
+      "name": "Retained Anthropic H1 revenue USD B",
+      "result": "16.286",
+      "expected": "16.286",
+      "pass": true
+    },
+    {
+      "name": "Retained Anthropic H1 operating income USD B",
+      "result": "-0.693",
+      "expected": "-0.693",
+      "pass": true
+    },
+    {
+      "name": "Illustrative EPS and PE price shock",
+      "result": "-0.400",
+      "expected": "-0.4",
+      "pass": true
+    },
+    {
+      "name": "Illustrative weighted index return",
+      "result": "-0.19",
+      "expected": "-0.19",
+      "pass": true
+    },
+    {
+      "name": "Illustrative project NPV base",
+      "result": "4.13",
+      "expected": "4.13",
+      "pass": true
+    },
+    {
+      "name": "Illustrative project NPV receipts delayed",
+      "result": "-5.33",
+      "expected": "-5.33",
+      "pass": true
+    },
+    {
+      "name": "Illustrative project NPV all delayed",
+      "result": "3.76",
+      "expected": "3.76",
+      "pass": true
+    },
+    {
+      "name": "Illustrative project NPV cheaper assets",
+      "result": "12.85",
+      "expected": "12.85",
+      "pass": true
+    },
+    {
+      "name": "Illustrative unit contribution with efficiency",
+      "result": "45.50",
+      "expected": "45.5",
+      "pass": true
+    },
+    {
+      "name": "Illustrative unit contribution weaker efficiency",
+      "result": "32.50",
+      "expected": "32.5",
+      "pass": true
+    },
+    {
+      "name": "Illustrative electricity price halving gross margin",
+      "result": "0.46",
+      "expected": "0.46",
+      "pass": true
+    },
+    {
+      "name": "Illustrative fusion cost NPV, not project valuation",
+      "result": "12.74",
+      "expected": "12.74",
+      "pass": true
+    },
+    {
+      "name": "Illustrative QDII premium effect percent",
+      "result": "-63.46",
+      "expected": "-63.46",
+      "pass": true
+    },
+    {
+      "name": "Illustrative daily inverse two days percent",
+      "result": "-5.45",
+      "expected": "-5.45",
+      "pass": true
+    },
+    {
+      "name": "Duiba H1 AI drama revenue share percent",
+      "result": "51.2",
+      "expected": "51.2",
+      "pass": true
+    },
+    {
+      "name": "Chinese Online derived Q3 CFO CNY",
+      "result": "-84005684.57",
+      "expected": "-84005684.57",
+      "pass": true
+    },
+    {
+      "name": "Illustrative video generated seconds at 20% yield",
+      "result": "1.800E+4",
+      "expected": "18000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative video total cost at 20% yield CNY",
+      "result": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative video generated seconds at 40% yield",
+      "result": "9.00E+3",
+      "expected": "9000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative video total cost at 40% yield CNY",
+      "result": "55500",
+      "expected": "55500",
+      "pass": true
+    },
+    {
+      "name": "Illustrative video finished minute cost CNY",
+      "result": "925",
+      "expected": "925",
+      "pass": true
+    },
+    {
+      "name": "Illustrative video total cost saving percent",
+      "result": "7.500",
+      "expected": "7.5",
+      "pass": true
+    },
+    {
+      "name": "Illustrative China IAA base receipts CNY",
+      "result": "384000.00",
+      "expected": "384000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative China IAA base contribution CNY",
+      "result": "64000",
+      "expected": "64000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative China IAA weaker eCPM receipts CNY",
+      "result": "288000.00",
+      "expected": "288000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative China IAA weaker eCPM contribution CNY",
+      "result": "-32000",
+      "expected": "-32000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative China IAA break-even eCPM CNY",
+      "result": "1E+1",
+      "expected": "10",
+      "pass": true
+    },
+    {
+      "name": "Illustrative China IAA break-even ad opportunities",
+      "result": "83333333.33",
+      "expected": "83333333.33",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d net receipts USD",
+      "result": "182400.00000",
+      "expected": "182400",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution USD",
+      "result": "2400",
+      "expected": "2400",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US CAC per paying customer USD",
+      "result": "37.5",
+      "expected": "37.5",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US break-even payer percent",
+      "result": "3.947",
+      "expected": "3.947",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US break-even payer receipts USD",
+      "result": "59.21",
+      "expected": "59.21",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US day30 receipts USD",
+      "result": "63840.00",
+      "expected": "63840",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US day30 funding gap if all costs paid USD",
+      "result": "116160.00",
+      "expected": "116160",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=10 share=0.25 USD B",
+      "result": "1.09500000000",
+      "expected": "1.0950",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=10 share=0.5 USD B",
+      "result": "2.1900000000",
+      "expected": "2.190",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=10 share=1 USD B",
+      "result": "4.380000000",
+      "expected": "4.38",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=20 share=0.25 USD B",
+      "result": "2.19000000000",
+      "expected": "2.1900",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=20 share=0.5 USD B",
+      "result": "4.3800000000",
+      "expected": "4.380",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=20 share=1 USD B",
+      "result": "8.760000000",
+      "expected": "8.76",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=30 share=0.25 USD B",
+      "result": "3.28500000000",
+      "expected": "3.2850",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=30 share=0.5 USD B",
+      "result": "6.5700000000",
+      "expected": "6.570",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=30 share=1 USD B",
+      "result": "13.140000000",
+      "expected": "13.14",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=40 share=0.25 USD B",
+      "result": "4.38000000000",
+      "expected": "4.3800",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=40 share=0.5 USD B",
+      "result": "8.7600000000",
+      "expected": "8.760",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=40 share=1 USD B",
+      "result": "17.520000000",
+      "expected": "17.52",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=100 share=0.25 USD B",
+      "result": "10.95000000000",
+      "expected": "10.950",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=100 share=0.5 USD B",
+      "result": "21.9000000000",
+      "expected": "21.90",
+      "pass": true
+    },
+    {
+      "name": "Historical coding seats month=100 share=1 USD B",
+      "result": "43.800000000",
+      "expected": "43.8",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 A professional subscription USD B",
+      "result": "2.400000000",
+      "expected": "2.4",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 A additional usage USD B",
+      "result": "1.200000000",
+      "expected": "1.2",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 A nonprofessional USD B",
+      "result": "0.240000000",
+      "expected": "0.24",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 A tasks USD B",
+      "result": "0.100000000",
+      "expected": "0.1",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 A total USD B",
+      "result": "3.94",
+      "expected": "3.94",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 B professional subscription USD B",
+      "result": "5.760000000",
+      "expected": "5.76",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 B additional usage USD B",
+      "result": "4.800000000",
+      "expected": "4.8",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 B nonprofessional USD B",
+      "result": "0.800000000",
+      "expected": "0.8",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 B tasks USD B",
+      "result": "0.300000000",
+      "expected": "0.3",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding 2027 B total USD B",
+      "result": "11.66",
+      "expected": "11.66",
+      "pass": true
+    },
+    {
+      "name": "Retained hypothetical coding V1.5 USD B",
+      "result": "4.64",
+      "expected": "4.64",
+      "pass": true
+    },
+    {
+      "name": "Illustrative accepted coding task baseline USD",
+      "result": "240",
+      "expected": "240",
+      "pass": true
+    },
+    {
+      "name": "Illustrative accepted coding task A USD",
+      "result": "116.0",
+      "expected": "116",
+      "pass": true
+    },
+    {
+      "name": "Illustrative accepted coding task B USD",
+      "result": "296.0",
+      "expected": "296",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding task A saving USD",
+      "result": "124",
+      "expected": "124",
+      "pass": true
+    },
+    {
+      "name": "Illustrative coding task B saving USD",
+      "result": "-56",
+      "expected": "-56",
+      "pass": true
+    },
+    {
+      "name": "Illustrative API price-volume revenue percent",
+      "result": "-6.500",
+      "expected": "-6.5",
+      "pass": true
+    },
+    {
+      "name": "Illustrative API break-even volume percent",
+      "result": "17.647",
+      "expected": "17.647",
+      "pass": true
+    },
+    {
+      "name": "Duolingo Q2 company FCF USD thousands",
+      "result": "78630",
+      "expected": "78630",
+      "pass": true
+    },
+    {
+      "name": "Illustrative office gross hours saved",
+      "result": "48000",
+      "expected": "48000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative office gross time value USD",
+      "result": "2400000",
+      "expected": "2400000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative office realizable cash benefit USD",
+      "result": "600000.00",
+      "expected": "600000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative office full incremental costs USD",
+      "result": "630000",
+      "expected": "630000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative office net cash benefit USD",
+      "result": "-30000",
+      "expected": "-30000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative office break-even cash conversion percent",
+      "result": "26.2500",
+      "expected": "26.25",
+      "pass": true
+    },
+    {
+      "name": "Illustrative office higher cash conversion net benefit USD",
+      "result": "570000.0",
+      "expected": "570000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative delayed 3y cash at 8 percent, PV fraction percent",
+      "result": "79.4",
+      "expected": "79.4",
+      "pass": true
+    },
+    {
+      "name": "Illustrative delayed 3y cash at 10 percent, PV fraction percent",
+      "result": "75.1",
+      "expected": "75.1",
+      "pass": true
+    },
+    {
+      "name": "Illustrative delayed 3y cash at 12 percent, PV fraction percent",
+      "result": "71.2",
+      "expected": "71.2",
+      "pass": true
+    },
+    {
+      "name": "Illustrative 40 percent business share delayed 3y at 10 percent, value loss percent",
+      "result": "9.95",
+      "expected": "9.95",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.03, CAC=1",
+      "result": "6800.00000",
+      "expected": "6800",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.03, CAC=1.5",
+      "result": "-43200.00000",
+      "expected": "-43200",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.03, CAC=2",
+      "result": "-93200.00000",
+      "expected": "-93200",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.04, CAC=1",
+      "result": "52400.00000",
+      "expected": "52400",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.04, CAC=1.5",
+      "result": "2400.00000",
+      "expected": "2400",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.04, CAC=2",
+      "result": "-47600.00000",
+      "expected": "-47600",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.05, CAC=1",
+      "result": "98000.00000",
+      "expected": "98000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.05, CAC=1.5",
+      "result": "48000.00000",
+      "expected": "48000",
+      "pass": true
+    },
+    {
+      "name": "Illustrative US 90d contribution payer=0.05, CAC=2",
+      "result": "-2000.00000",
+      "expected": "-2000",
+      "pass": true
+    }
+  ],
+  "historical_files_unchanged": 513,
+  "historical_files_checked": 513,
+  "native_wps": "NOT_VERIFIED_IN_THIS_SCRIPT",
+  "historical_base_commit": "103966335d888e88f620cd01f5231be727010b49",
+  "validator_sha256": "50036bedd27f32577aac45a3bc3505803cc75b085a07490cb3b8ed88c9237c0d",
+  "validation_reuse_note": "All 20 page/structure checks passed before the sole legacy history-list failure. Reused only after rechecking every output/source/asset/identity/builder hash and navigation; replaced pre-V1.7 untracked-preview list with Git-blob-verified clone baseline, then checked all historical working-tree hashes."
+}

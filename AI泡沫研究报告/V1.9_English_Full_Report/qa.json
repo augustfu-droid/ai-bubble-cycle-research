@@ -1,0 +1,351 @@
+{
+  "status": "PASS_ARTIFACT_STRUCTURE",
+  "scope": "Machine artifact, page, link, chapter, source-protection and provenance checks. Separate semantic and actual visual reviews are required.",
+  "pdf_sha256": "1bdf84bde7eda951f9a8e876160c418b367e438b9b341360496728e8d2e27345",
+  "pages": 272,
+  "reference_count": 342,
+  "chapters": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "appendices": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "bookmarks_checked": 313,
+  "toc_destinations_checked": 192,
+  "toc_page_numbers_checked": 310,
+  "internal_pdf_links": 384,
+  "figures": {
+    "Optical modules: half-year": 23,
+    "APLD: revenue growth": 27,
+    "CoreWeave: USD 4.2B": 44,
+    "Oracle FY27Q1: read growth": 21,
+    "Subtract the realized half": 184,
+    "Micron: strong realized cash": 26,
+    "Meta: positive operating cash": 20,
+    "TSMC: quarterly revenue rises": 17
+  },
+  "figure_placements_checked": 10,
+  "unique_figures_checked": 8,
+  "chinese_publication_files_unchanged": 126,
+  "validator_sha256": "efe2f957403717b7ba4d15732ce9e2d43652a1a7d24899fd1b9388423c6b8a27",
+  "errors": [],
+  "visual_samples": [
+    {
+      "page": 1,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_001.png",
+      "reasons": []
+    },
+    {
+      "page": 2,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_002.png",
+      "reasons": []
+    },
+    {
+      "page": 3,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_003.png",
+      "reasons": []
+    },
+    {
+      "page": 4,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_004.png",
+      "reasons": []
+    },
+    {
+      "page": 5,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_005.png",
+      "reasons": []
+    },
+    {
+      "page": 6,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_006.png",
+      "reasons": []
+    },
+    {
+      "page": 7,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_007.png",
+      "reasons": []
+    },
+    {
+      "page": 8,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_008.png",
+      "reasons": []
+    },
+    {
+      "page": 9,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_009.png",
+      "reasons": []
+    },
+    {
+      "page": 10,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_010.png",
+      "reasons": []
+    },
+    {
+      "page": 15,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_015.png",
+      "reasons": [
+        "Chapter 1: What Is Real Money, and What Is a Valuation Game?"
+      ]
+    },
+    {
+      "page": 17,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_017.png",
+      "reasons": [
+        "Translated figure: TSMC: quarterly revenue rises"
+      ]
+    },
+    {
+      "page": 20,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_020.png",
+      "reasons": [
+        "Translated figure: Meta: positive operating cash"
+      ]
+    },
+    {
+      "page": 21,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_021.png",
+      "reasons": [
+        "Translated figure: Oracle FY27Q1: read growth"
+      ]
+    },
+    {
+      "page": 23,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_023.png",
+      "reasons": [
+        "Translated figure: Optical modules: half-year"
+      ]
+    },
+    {
+      "page": 26,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_026.png",
+      "reasons": [
+        "Translated figure: Micron: strong realized cash"
+      ]
+    },
+    {
+      "page": 27,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_027.png",
+      "reasons": [
+        "Translated figure: APLD: revenue growth"
+      ]
+    },
+    {
+      "page": 38,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_038.png",
+      "reasons": [
+        "Chapter 2: The Capital Circulation Network - How Investment, Procurement, Financing and Guarantees Connect"
+      ]
+    },
+    {
+      "page": 44,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_044.png",
+      "reasons": [
+        "Translated figure: CoreWeave: USD 4.2B"
+      ]
+    },
+    {
+      "page": 58,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_058.png",
+      "reasons": [
+        "Chapter 3: How AI Makes Money - The Monetization Landscape and Coding TAM",
+        "Chapter Map and Chain of Reasoning"
+      ]
+    },
+    {
+      "page": 80,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_080.png",
+      "reasons": [
+        "Chapter 4: AI Video Microdramas - From Viewing Demand to Model Profits and Compute Capital Recovery"
+      ]
+    },
+    {
+      "page": 96,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_096.png",
+      "reasons": [
+        "4.12 How Much Does a 120-Minute Microdrama Actually Generate for a Model Vendor?"
+      ]
+    },
+    {
+      "page": 97,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_097.png",
+      "reasons": []
+    },
+    {
+      "page": 109,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_109.png",
+      "reasons": [
+        "Chapter 5: AI Coding - Labor Displacement, Customer Costs, and Market Reassessment"
+      ]
+    },
+    {
+      "page": 126,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_126.png",
+      "reasons": [
+        "5.11 The Customer ROI Bridge: From a Minute Saved to a Dollar Actually Not Paid"
+      ]
+    },
+    {
+      "page": 127,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_127.png",
+      "reasons": []
+    },
+    {
+      "page": 128,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_128.png",
+      "reasons": [
+        "5.12 Complete Accounts for Two Small Teams: Similar Coding Capability, Opposite Cash Outcomes"
+      ]
+    },
+    {
+      "page": 129,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_129.png",
+      "reasons": []
+    },
+    {
+      "page": 131,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_131.png",
+      "reasons": [
+        "5.13 How Much Demand Will Return? Prices, Output, and Jobs Need a Joint Model"
+      ]
+    },
+    {
+      "page": 132,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_132.png",
+      "reasons": []
+    },
+    {
+      "page": 136,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_136.png",
+      "reasons": [
+        "Chapter 6: AI Applications - From Adoption to Cash Recovery"
+      ]
+    },
+    {
+      "page": 149,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_149.png",
+      "reasons": [
+        "Chapter 7: When Will AGI Arrive?"
+      ]
+    },
+    {
+      "page": 158,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_158.png",
+      "reasons": [
+        "Chapter 8: How Will AI Reshape the International Order?"
+      ]
+    },
+    {
+      "page": 172,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_172.png",
+      "reasons": [
+        "Chapter 9: Core Implications for Chinese Investors"
+      ]
+    },
+    {
+      "page": 180,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_180.png",
+      "reasons": [
+        "Chapter 10: Company Divergence - Operating Resilience Does Not Mean Valuation Safety"
+      ]
+    },
+    {
+      "page": 184,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_184.png",
+      "reasons": [
+        "Translated figure: Subtract the realized half"
+      ]
+    },
+    {
+      "page": 186,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_186.png",
+      "reasons": [
+        "Chapter 11: Judge Operations, Capital Recovery and Financial Conditions Separately"
+      ]
+    },
+    {
+      "page": 198,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_198.png",
+      "reasons": [
+        "Chapter 12: Risk-Transmission Scenarios - From Operating Deviations to Asset Repricing"
+      ]
+    },
+    {
+      "page": 205,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_205.png",
+      "reasons": [
+        "Chapter 13: Delay and Absorption - What Does the Extra Time Actually Change?"
+      ]
+    },
+    {
+      "page": 211,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_211.png",
+      "reasons": [
+        "Appendix A: Research Framework and Methodology"
+      ]
+    },
+    {
+      "page": 219,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_219.png",
+      "reasons": [
+        "Appendix B: Cross-Border Channels and Instrument Boundaries"
+      ]
+    },
+    {
+      "page": 225,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_225.png",
+      "reasons": [
+        "Appendix C: The Shale-Oil Cycle Analogy - Technology Diffusion, Capital Constraints and Divergent Returns"
+      ]
+    },
+    {
+      "page": 232,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_232.png",
+      "reasons": [
+        "Appendix D: Alphabet's Financing Case - From Planned Capacity to Per-Share Value"
+      ]
+    },
+    {
+      "page": 238,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_238.png",
+      "reasons": [
+        "Appendix E: Fact Checks and Evidence Boundaries"
+      ]
+    },
+    {
+      "page": 246,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_246.png",
+      "reasons": [
+        "Appendix F: What Fusion Energy Can Change, and What It Cannot Replace"
+      ]
+    },
+    {
+      "page": 254,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_254.png",
+      "reasons": [
+        "Reference index"
+      ]
+    },
+    {
+      "page": 272,
+      "image": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\qa_visual\\page_272.png",
+      "reasons": []
+    }
+  ]
+}

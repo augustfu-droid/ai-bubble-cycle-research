@@ -1,0 +1,395 @@
+{
+  "manifests": [
+    "V1.8-publication-files.json",
+    "V1.9-publication-files.json",
+    "V1.9-English-publication-files.json",
+    "V1.9.1-publication-files.json",
+    "V1.9.2-publication-files.json"
+  ],
+  "manifest_union_file_count": 426,
+  "manifest_missing_files": [],
+  "local_link_missing_count": 0,
+  "missing_local_import_count": 0,
+  "missing_local_imports": [],
+  "finalize_v110_py_compile": "PASS",
+  "build_v110_imported_names": [],
+  "build_v110_missing_names": [],
+  "link_resolution_note": "Paths normalized and percent-decoded; existence accepted in publication union, tracked files, or local filesystem.",
+  "manifest_files_plus_manifest_files_count": 431,
+  "source_template_asset_links": [
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/02_circular.md",
+      "link": "assets/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/08_china.md",
+      "link": "assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/08_china.md",
+      "link": "assets/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.6.1_台积电季度_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/09_valuation.md",
+      "link": "assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/08_china.md",
+      "link": "assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/08_china.md",
+      "link": "assets/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.6.1_台积电季度_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/01_profit.md",
+      "link": "assets/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.6.1_台积电季度_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/01_profit.md",
+      "link": "assets/V1.6.1_Meta现金桥_20261027.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.6.1_Meta现金桥_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/01_profit.md",
+      "link": "assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/01_profit.md",
+      "link": "assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/01_profit.md",
+      "link": "assets/V1.5.1_美光现金桥_20261001.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.5.1_美光现金桥_20261001.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/01_profit.md",
+      "link": "assets/V1.5.1_APLD收入构成_20261009.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.5.1_APLD收入构成_20261009.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/09_valuation.md",
+      "link": "assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/02_circular.md",
+      "link": "assets/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/parts/assets/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/01_profit.md",
+      "link": "assets/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.6.1_台积电季度_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/01_profit.md",
+      "link": "assets/V1.6.1_Meta现金桥_20261027.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.6.1_Meta现金桥_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/01_profit.md",
+      "link": "assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/01_profit.md",
+      "link": "assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/01_profit.md",
+      "link": "assets/V1.5.1_美光现金桥_20261001.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.5.1_美光现金桥_20261001.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/01_profit.md",
+      "link": "assets/V1.5.1_APLD收入构成_20261009.svg",
+      "resolved": "AI泡沫研究报告/10_源码_markdown/V1.9_English_20261031/translation_inputs/assets/V1.5.1_APLD收入构成_20261009.svg",
+      "category": "missing_dependency"
+    }
+  ],
+  "true_missing_local_links": [
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_group_c.json",
+      "link": "assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_group_c.json",
+      "link": "assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.6.1_Meta现金桥_20261027.svg",
+      "resolved": "13_全景版配图/V1.6.1_Meta现金桥_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "resolved": "13_全景版配图/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_美光现金桥_20261001.svg",
+      "resolved": "13_全景版配图/V1.5.1_美光现金桥_20261001.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_APLD收入构成_20261009.svg",
+      "resolved": "13_全景版配图/V1.5.1_APLD收入构成_20261009.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "resolved": "13_全景版配图/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "category": "missing_dependency"
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "13_全景版配图/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "missing_dependency"
+    }
+  ],
+  "build_v110_required_names": [
+    "ROOT",
+    "REPO",
+    "SRC",
+    "OUT",
+    "REVIEW",
+    "VERSION",
+    "EDIT_DATE",
+    "CUTOFF",
+    "sha",
+    "write_json"
+  ],
+  "build_v110_import_error": null,
+  "build_v19_current_dependency": {
+    "in_manifest_union": true,
+    "tracked": false,
+    "exists_locally": true
+  },
+  "raw_scanner_findings_count": 12,
+  "unresolved_published_output_dependencies_count": 0,
+  "root_review": "The 12 remaining scanner hits are inside historical JSON snapshots/review notes, not navigable publication outputs. Every named SVG exists in the publication union. Do not rewrite frozen historical records to satisfy a path resolver using the wrong base directory.",
+  "embedded_historical_references": [
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_group_c.json",
+      "link": "assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.5.1_维谛现金指引桥_20260908.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/translation_group_c.json",
+      "link": "assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "AI泡沫研究报告/复审与版本记录/V1.9_English_20261031/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.5.1_维谛现金指引桥_20260908.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.6.1_台积电季度_20261027.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.6.1_台积电季度_20261027.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.6.1_台积电季度_20261027.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.6.1_台积电季度_20261027.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.6.1_Meta现金桥_20261027.svg",
+      "resolved": "13_全景版配图/V1.6.1_Meta现金桥_20261027.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.6.1_Meta现金桥_20261027.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.6.1_Meta现金桥_20261027.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.6.1_Meta现金桥_20261027.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.6.1_Meta现金桥_20261027.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "resolved": "13_全景版配图/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.4_光模块半年报利润与现金_20260908.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_美光现金桥_20261001.svg",
+      "resolved": "13_全景版配图/V1.5.1_美光现金桥_20261001.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.5.1_美光现金桥_20261001.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.5.1_美光现金桥_20261001.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.5.1_美光现金桥_20261001.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.5.1_美光现金桥_20261001.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_APLD收入构成_20261009.svg",
+      "resolved": "13_全景版配图/V1.5.1_APLD收入构成_20261009.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.5.1_APLD收入构成_20261009.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.5.1_APLD收入构成_20261009.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.5.1_APLD收入构成_20261009.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.5.1_APLD收入构成_20261009.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "resolved": "13_全景版配图/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.5.1_CoreWeave融资现金桥_20260924.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.5.1_CoreWeave融资现金桥_20260924.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "resolved": "13_全景版配图/V1.4_光模块半年报利润与现金_20260908.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.4_光模块半年报利润与现金_20260908.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.4_光模块半年报利润与现金_20260908.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "resolved": "13_全景版配图/V1.6.1_台积电季度_20261027.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.6.1_台积电季度_20261027.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.6.1_台积电季度_20261027.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.6.1_台积电季度_20261027.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.6.1_台积电季度_20261027.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    },
+    {
+      "source": "AI泡沫研究报告/复审与版本记录/V1.9_章节编号独立评审基线_20261031.json",
+      "link": "../../13_全景版配图/V1.5.1_维谛现金指引桥_20260908.svg",
+      "resolved": "13_全景版配图/V1.5.1_维谛现金指引桥_20260908.svg",
+      "category": "embedded_historical_text_not_relative_to_json",
+      "available_published_asset_paths": [
+        "AI泡沫研究报告/V1.8现行正文版/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9.1_配套发布_20261101/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9.2_配套发布_20261101/assets/V1.5.1_维谛现金指引桥_20260908.svg",
+        "AI泡沫研究报告/V1.9现行正文版/assets/V1.5.1_维谛现金指引桥_20260908.svg"
+      ],
+      "interpretation": "This is a quoted snapshot or review note. Its relative target is interpreted by the original report build, not against the review JSON directory; the immutable historical record is retained."
+    }
+  ],
+  "local_link_missing": []
+}

@@ -1,0 +1,345 @@
+{
+  "status": "PASS",
+  "review_date": "2026-11-01",
+  "reviewer": "core_views_expansion; independent English semantic reviewer, not English drafter",
+  "scope": "Full Chinese–English semantic comparison of the final locked V1.9.2 author view and brief; based on existing verified Chinese sources, without new research.",
+  "file_sha256": {
+    "author_view_zh.md": "f8138afd63cfabdd3767c5d30a36c1968a5e7f18ca716711a057166d09578daf",
+    "author_view_en.md": "a853b0d0d3c14ebaa3883859b9ec2ab34d2fa181131de24fdf4f1913df7663a5",
+    "brief_zh.md": "57cf5fbd242967436645d9dd616c0a97026c86b61c9a8ac9916c65c98207dc06",
+    "brief_en.md": "773d43cb1a3f587db067e23b540589f1ad0619456ae8d20332e85aaee990c0c4"
+  },
+  "findings": [],
+  "resolution": {
+    "unresolved_findings": 0,
+    "clarification_resolved_before_final_lock": "The draft brief transition could leave the cash-retaining company ambiguous. The translator aligned both investor sentences to the final Chinese: companies create customer benefits and retain cash themselves. Final files rechecked.",
+    "checks": [
+      {
+        "area": "Forecast versus present diagnosis",
+        "status": "PASS",
+        "resolution": "Both languages distinguish localized current divergence from the subjective future broad-burst forecast; single-price declines do not count as realization."
+      },
+      {
+        "area": "Time matrix and settlement",
+        "status": "PASS",
+        "resolution": "Baseline H1 2027–H1 2028, early November 2026–Q1 2027, delayed H2 2028–H1 2029, absorption 2027–2029 and June 30, 2028 failed-window settlement all preserved. No reinstated probabilities or decline percentages."
+      },
+      {
+        "area": "Economic-state matrix axes",
+        "status": "PASS",
+        "resolution": "Same business, investment cohort and observation period preserved. Recovery follows customer operating cash and planned recovery/firm payments without double counting; additional financing or legacy cash is explicitly only a buffer. Slower progress does not remove existing capabilities."
+      },
+      {
+        "area": "Economic-state matrix four cells",
+        "status": "PASS",
+        "resolution": "Every cell preserves relative pressure, buffer or benefit and change-of-view evidence. Upper-right specifically requires old-equipment net cash to cover planned investment and payments, not merely a positive cash contribution. Lower-right financing relief reduces liquidity risk only; operating recovery is required to move left."
+      },
+      {
+        "area": "Matrix relation to timing",
+        "status": "PASS",
+        "resolution": "Economic states versus timing paths, cross-cell migration, no one-cell/one-year correspondence and no additive probabilities preserved."
+      },
+      {
+        "area": "Nine author judgments",
+        "status": "PASS",
+        "resolution": "All nine judgments retained in order: profit/revaluation; capital circulation; cash-payment and depreciation mismatch; two-sided AGI/efficiency; company differentiation; application potential and coding correction; China/international transmission; power/sovereign/policy conditions; technology/operation/investment separation."
+      },
+      {
+        "area": "Profit, revaluation and depreciation",
+        "status": "PASS",
+        "resolution": "Real operating profit acknowledged; positive and negative revaluation adjusted symmetrically; pretax/after-tax distinction and no repeated depreciation/cash-capex deduction preserved."
+      },
+      {
+        "area": "Whose cash is retained",
+        "status": "PASS",
+        "resolution": "Final English author paragraph 9 and brief transition explicitly state that the researched company itself creates customer benefits and retains cash; no ambiguity assigning cash to its upstream supplier."
+      },
+      {
+        "area": "Old-asset economics and value capture",
+        "status": "PASS",
+        "resolution": "Technology can benefit users/applications while old-asset owners suffer; efficiency can also prolong old-asset earnings. Technical usefulness and positive asset cash do not automatically establish full payback or investor returns."
+      },
+      {
+        "area": "Application evidence and limitations",
+        "status": "PASS",
+        "resolution": "Seedance internal/external attribution, MiniMax multimodal/group R&D boundary, Kling revenue versus standalone profit, V1.5 prior correction, noncausal labor research, capacity value versus cash savings, risk-budget limits and Character.ai continuing-service/sale status all retained."
+      },
+      {
+        "area": "Currencies and scale",
+        "status": "PASS",
+        "resolution": "36 independently checked Chinese 亿/万 to English billion/million/thousand conversions agree exactly; negative signs, lower bounds, group/segment and quarter/TTM scopes retained."
+      },
+      {
+        "area": "Noncurrency quantities",
+        "status": "PASS",
+        "resolution": "36.5 million developers; USD 30/month × 12; 655 firms; age 22–25; 19% relative employment trajectory difference; 2,400 and 900 hours; 10- and 8-person examples; RMB 220/hour and 63.4% revenue share preserved."
+      },
+      {
+        "area": "URLs and navigation",
+        "status": "PASS",
+        "resolution": "All 12 brief URLs match Chinese in exact order. No author-view URLs added; chapter references and appendices preserve published mapping."
+      },
+      {
+        "area": "Coverage and editing boundary",
+        "status": "PASS",
+        "resolution": "Full paragraph-by-paragraph comparison performed for both files, including opening, both matrices, nine author paragraphs, all brief evidence sections and closing conditions. No new research, source edits or new substantive claims introduced by the English rendering."
+      }
+    ]
+  },
+  "amount_conversion_checks": [
+    {
+      "item": "Microsoft OCF",
+      "zh_base_units": "58000000000",
+      "en_base_units": "58000000000",
+      "english_fragment": "USD 58 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Microsoft purchases",
+      "zh_base_units": "39367000000.00",
+      "en_base_units": "39367000000.000",
+      "english_fragment": "USD 39.367 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Microsoft surplus before lease",
+      "zh_base_units": "18633000000.00",
+      "en_base_units": "18633000000.000",
+      "english_fragment": "USD 18.633 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Microsoft lease principal",
+      "zh_base_units": "1000000000",
+      "en_base_units": "1000000000",
+      "english_fragment": "USD 1 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Microsoft surplus after lease",
+      "zh_base_units": "17633000000.00",
+      "en_base_units": "17633000000.000",
+      "english_fragment": "USD 17.633 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Alphabet Cloud revenue",
+      "zh_base_units": "30709000000.00",
+      "en_base_units": "30709000000.000",
+      "english_fragment": "USD 30.709 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Alphabet Cloud operating profit",
+      "zh_base_units": "11121000000.00",
+      "en_base_units": "11121000000.000",
+      "english_fragment": "USD 11.121 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Alphabet OCF",
+      "zh_base_units": "42290000000.00",
+      "en_base_units": "42290000000.000",
+      "english_fragment": "USD 42.290 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Alphabet purchases",
+      "zh_base_units": "51355000000.00",
+      "en_base_units": "51355000000.000",
+      "english_fragment": "USD 51.355 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Alphabet negative quarterly bridge",
+      "zh_base_units": "9065000000.00",
+      "en_base_units": "9065000000.000",
+      "english_fragment": "negative USD 9.065 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Alphabet positive TTM bridge",
+      "zh_base_units": "19747000000.00",
+      "en_base_units": "19747000000.000",
+      "english_fragment": "positive at USD 19.747 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "AWS revenue",
+      "zh_base_units": "45984000000.00",
+      "en_base_units": "45984000000.000",
+      "english_fragment": "USD 45.984 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "AWS operating profit",
+      "zh_base_units": "17773000000.00",
+      "en_base_units": "17773000000.000",
+      "english_fragment": "USD 17.773 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Amazon TTM OCF",
+      "zh_base_units": "168300000000",
+      "en_base_units": "168300000000.0",
+      "english_fragment": "USD 168.3 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Amazon TTM purchases",
+      "zh_base_units": "210657000000.00",
+      "en_base_units": "210657000000.000",
+      "english_fragment": "USD 210.657 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Amazon negative TTM FCF",
+      "zh_base_units": "42357000000.00",
+      "en_base_units": "42357000000.000",
+      "english_fragment": "negative USD 42.357 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Duiba AI revenue",
+      "zh_base_units": "222629000.00000",
+      "en_base_units": "222629000.000",
+      "english_fragment": "RMB 222.629 million",
+      "status": "PASS"
+    },
+    {
+      "item": "Duiba group loss",
+      "zh_base_units": "25326000.0",
+      "en_base_units": "25326000.000",
+      "english_fragment": "loss of RMB 25.326 million",
+      "status": "PASS"
+    },
+    {
+      "item": "MiniMax revenue",
+      "zh_base_units": "116573000.00000",
+      "en_base_units": "116573000.000",
+      "english_fragment": "USD 116.573 million",
+      "status": "PASS"
+    },
+    {
+      "item": "MiniMax gross profit",
+      "zh_base_units": "20813000.0",
+      "en_base_units": "20813000.000",
+      "english_fragment": "USD 20.813 million",
+      "status": "PASS"
+    },
+    {
+      "item": "MiniMax R&D",
+      "zh_base_units": "296870000.00000",
+      "en_base_units": "296870000.000",
+      "english_fragment": "USD 296.870 million",
+      "status": "PASS"
+    },
+    {
+      "item": "Kling revenue lower bound",
+      "zh_base_units": "850000000.0",
+      "en_base_units": "850000000",
+      "english_fragment": "exceeded RMB 850 million",
+      "status": "PASS"
+    },
+    {
+      "item": "Original conditional coding calculation",
+      "zh_base_units": "13140000000.0",
+      "en_base_units": "13140000000.00",
+      "english_fragment": "USD 13.14 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "Historical unit-error comparison",
+      "zh_base_units": "13100000000",
+      "en_base_units": "13100000000.0",
+      "english_fragment": "USD 13.1 billion",
+      "status": "PASS"
+    },
+    {
+      "item": "US internal cost value",
+      "zh_base_units": "240000",
+      "en_base_units": "240000",
+      "english_fragment": "USD 240,000",
+      "status": "PASS"
+    },
+    {
+      "item": "US tools service and risk budget",
+      "zh_base_units": "40000",
+      "en_base_units": "40000",
+      "english_fragment": "USD 40,000",
+      "status": "PASS"
+    },
+    {
+      "item": "US net capacity value",
+      "zh_base_units": "200000",
+      "en_base_units": "200000",
+      "english_fragment": "USD 200,000",
+      "status": "PASS"
+    },
+    {
+      "item": "US avoided hire",
+      "zh_base_units": "180000",
+      "en_base_units": "180000",
+      "english_fragment": "USD 180,000",
+      "status": "PASS"
+    },
+    {
+      "item": "US realized scenario net benefit",
+      "zh_base_units": "140000",
+      "en_base_units": "140000",
+      "english_fragment": "USD 140,000",
+      "status": "PASS"
+    },
+    {
+      "item": "China internal cost value",
+      "zh_base_units": "120000",
+      "en_base_units": "120000",
+      "english_fragment": "RMB 120,000",
+      "status": "PASS"
+    },
+    {
+      "item": "China tools service and risk budget",
+      "zh_base_units": "90000",
+      "en_base_units": "90000",
+      "english_fragment": "RMB 90,000",
+      "status": "PASS"
+    },
+    {
+      "item": "China net capacity value",
+      "zh_base_units": "30000",
+      "en_base_units": "30000",
+      "english_fragment": "RMB 30,000",
+      "status": "PASS"
+    },
+    {
+      "item": "China avoided outsourcing",
+      "zh_base_units": "198000.0",
+      "en_base_units": "198000",
+      "english_fragment": "RMB 198,000",
+      "status": "PASS"
+    },
+    {
+      "item": "China alternative-use net benefit",
+      "zh_base_units": "108000.0",
+      "en_base_units": "108000",
+      "english_fragment": "RMB 108,000",
+      "status": "PASS"
+    },
+    {
+      "item": "AlphaSense ARR lower bound",
+      "zh_base_units": "700000000",
+      "en_base_units": "700000000",
+      "english_fragment": "above USD 700 million",
+      "status": "PASS"
+    },
+    {
+      "item": "Duolingo FCF",
+      "zh_base_units": "78630000",
+      "en_base_units": "78630000.00",
+      "english_fragment": "USD 78.63 million",
+      "status": "PASS"
+    }
+  ],
+  "brief_url_count": 12,
+  "file_modifications": "No reviewed source files changed; only this review JSON written."
+}

@@ -1,0 +1,1221 @@
+{
+  "group": "b",
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-31T06:25:06.833507+00:00",
+  "files": [
+    {
+      "file": "04_video.md",
+      "source_sha256": "adc184224828eb47d649ec7cd0d334d3b7312189097a59df579221bc5a839813",
+      "english_sha256": "ac562ff075701c9a55369f006c143d00e5da5b3c70f0b7354f965bf8b50d2235",
+      "lines_reviewed": 430,
+      "full_source_and_translation_read": true
+    },
+    {
+      "file": "05_coding.md",
+      "source_sha256": "413f99c44a59842dc6529c7a91774908f642dd42da55a2c8faa85e77586e22a9",
+      "english_sha256": "fe108a118f8066a866bce5005625f6d37390590a4c28c020825d7c70f5e98229",
+      "lines_reviewed": 377,
+      "full_source_and_translation_read": true
+    },
+    {
+      "file": "06_applications.md",
+      "source_sha256": "693392c1c70dc35a062bf5376e29829b9d0e36b0d4529f557106e5cad26190c9",
+      "english_sha256": "f87359ab086d14b979fdf1d9c98b3add9b5f21d7bc2b56305204ec14da5cc5bf",
+      "lines_reviewed": 163,
+      "full_source_and_translation_read": true
+    },
+    {
+      "file": "17_audit.md",
+      "source_sha256": "077bcfdf6ff6fbf7f7b71d74337e13f815a0758b6641b5e72586c09db404be7f",
+      "english_sha256": "7febdb76735036bf5fba7dffd298865803e46024673a203c45059178a15828b0",
+      "lines_reviewed": 101,
+      "full_source_and_translation_read": true
+    }
+  ],
+  "issues": [
+    {
+      "id": "B01",
+      "file": "04_video.md",
+      "line": 98,
+      "old_english": "Google Cloud enterprise access and creative entry points such as Flow checked separately",
+      "new_english": "Google Cloud enterprise access and creative entry points such as Flow must be checked separately",
+      "why": "Preserves a requirement for separate checks rather than asserting completed verification.",
+      "status": "CLOSED",
+      "closure": "Parent applied correction; reviewer reread current complete line against Chinese source and checked current file hash."
+    },
+    {
+      "id": "B02",
+      "file": "05_coding.md",
+      "line": 363,
+      "old_english": "work shifts to uncounted employees or other departments",
+      "new_english": "work shifts to employees whose labor is not charged to the project or to other departments",
+      "why": "Preserves the cost-allocation boundary of unbilled labor rather than changing it to headcount coverage.",
+      "status": "CLOSED",
+      "closure": "Parent applied correction; reviewer reread current complete line against Chinese source and checked current file hash."
+    },
+    {
+      "id": "B03",
+      "file": "06_applications.md",
+      "line": 120,
+      "old_english": "Free credits can encourage exploration but are not institutions' actual paid revenue",
+      "new_english": "Free credits can encourage exploration but cannot be counted as revenue actually paid by participating institutions",
+      "why": "Clarifies institutions as payers, not the recipients of revenue.",
+      "status": "CLOSED",
+      "closure": "Parent applied correction; reviewer reread current complete line against Chinese source and checked current file hash."
+    },
+    {
+      "id": "B04",
+      "file": "17_audit.md",
+      "line": 35,
+      "old_english": "excluding all other investing and financing uses",
+      "new_english": "without deducting all other investing and financing uses",
+      "why": "Not deducting all is narrower than excluding every other use.",
+      "status": "CLOSED",
+      "closure": "Parent applied correction; reviewer reread current complete line against Chinese source and checked current file hash."
+    },
+    {
+      "id": "B05",
+      "file": "17_audit.md",
+      "line": 41,
+      "old_english": "Gemini 4 Argon has opened API access, with launch-promotion footnotes ending it on 30 November",
+      "new_english": "Gemini 4 Argon has opened API access; the launch-promotion footnotes specify that the promotion ends on 30 November",
+      "why": "The promotion ends, not API access.",
+      "status": "CLOSED",
+      "closure": "Parent applied correction; reviewer reread current complete line against Chinese source and checked current file hash."
+    },
+    {
+      "id": "B06",
+      "file": "17_audit.md",
+      "line": 45,
+      "old_english": "Product release, consumer availability, and enterprise API availability are checked separately.",
+      "new_english": "Product release, consumer availability, and enterprise API availability must be checked separately.",
+      "why": "Preserves separate verification requirement without adding completed-verification status.",
+      "status": "CLOSED",
+      "closure": "Parent applied correction; reviewer reread current complete line against Chinese source and checked current file hash."
+    }
+  ],
+  "numeric_review": {
+    "status": "PASS",
+    "translation_ledger_rows_reviewed": 178,
+    "structure_inventory_rows_reviewed": 94,
+    "structure_inventory_by_file": {
+      "04_video.md": 19,
+      "05_coding.md": 31,
+      "06_applications.md": 28,
+      "17_audit.md": 16
+    },
+    "explicit_chinese_unit_occurrences_independently_matched": 197,
+    "independent_arithmetic_checks": 155,
+    "arithmetic_results": [
+      {
+        "check": "04:30 example running time",
+        "calculated": 120.0,
+        "expected": 120.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:124 package utilization",
+        "calculated": 1.3333333333333335,
+        "expected": 1.333,
+        "tolerance": 0.0005,
+        "pass": true
+      },
+      {
+        "check": "04:148 gross profit / R&D %",
+        "calculated": 7.010812813689493,
+        "expected": 7.0,
+        "tolerance": 0.05,
+        "pass": true
+      },
+      {
+        "check": "04:158 Kling group revenue share %",
+        "calculated": 2.3943661971830985,
+        "expected": 2.4,
+        "tolerance": 0.05,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 running seconds",
+        "calculated": 7200.0,
+        "expected": 7200.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 new main seconds",
+        "calculated": 4320.0,
+        "expected": 4320.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 ads",
+        "calculated": 720.0,
+        "expected": 720.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 localized",
+        "calculated": 960.0,
+        "expected": 960.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 new accepted",
+        "calculated": 6000.0,
+        "expected": 6000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 output",
+        "calculated": 24000.0,
+        "expected": 24000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 paid",
+        "calculated": 21600.0,
+        "expected": 21600.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 revenue",
+        "calculated": 1728.0,
+        "expected": 1728.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:229-238 six-second tasks",
+        "calculated": 4000.0,
+        "expected": 4000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.15 p=0.04",
+        "calculated": 1440.0,
+        "expected": 1440.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.15 p=0.08",
+        "calculated": 2880.0,
+        "expected": 2880.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.15 p=0.12",
+        "calculated": 4320.0,
+        "expected": 4320.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.25 p=0.04",
+        "calculated": 864.0,
+        "expected": 864.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.25 p=0.08",
+        "calculated": 1728.0,
+        "expected": 1728.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.25 p=0.12",
+        "calculated": 2592.0,
+        "expected": 2592.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.4 p=0.04",
+        "calculated": 540.0,
+        "expected": 540.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.4 p=0.08",
+        "calculated": 1080.0,
+        "expected": 1080.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:244-246 q=0.4 p=0.12",
+        "calculated": 1620.0,
+        "expected": 1620.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:250 scale 1000",
+        "calculated": 1728000.0,
+        "expected": 1728000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:250 scale 10000",
+        "calculated": 17280000.0,
+        "expected": 17280000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:250 scale 100000",
+        "calculated": 172800000.0,
+        "expected": 172800000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 effective unit revenue",
+        "calculated": 0.072,
+        "expected": 0.072,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 allowed total cost",
+        "calculated": 864.0,
+        "expected": 864.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 allowed unit cost",
+        "calculated": 0.036,
+        "expected": 0.036,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 inference cost 0.02",
+        "calculated": 480.0,
+        "expected": 480.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 contribution 0.02",
+        "calculated": 1248.0,
+        "expected": 1248.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 margin 0.02",
+        "calculated": 72.22222222222221,
+        "expected": 72.2,
+        "tolerance": 0.05,
+        "pass": true
+      },
+      {
+        "check": "04:254 inference cost 0.04",
+        "calculated": 960.0,
+        "expected": 960.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 contribution 0.04",
+        "calculated": 768.0,
+        "expected": 768.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 margin 0.04",
+        "calculated": 44.44444444444444,
+        "expected": 44.4,
+        "tolerance": 0.05,
+        "pass": true
+      },
+      {
+        "check": "04:254 inference cost 0.06",
+        "calculated": 1440.0,
+        "expected": 1440.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 contribution 0.06",
+        "calculated": 288.0,
+        "expected": 288.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:254 margin 0.06",
+        "calculated": 16.666666666666664,
+        "expected": 16.7,
+        "tolerance": 0.05,
+        "pass": true
+      },
+      {
+        "check": "04:264 original total cost",
+        "calculated": 60000.0,
+        "expected": 60000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:268 paid seconds",
+        "calculated": 18000.0,
+        "expected": 18000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:269 paid seconds",
+        "calculated": 9000.0,
+        "expected": 9000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:269 complete cost",
+        "calculated": 55500.0,
+        "expected": 55500.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:269 per minute",
+        "calculated": 925.0,
+        "expected": 925.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:271 saving %",
+        "calculated": 7.5,
+        "expected": 7.5,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:277 advertising revenue",
+        "calculated": 384000.0,
+        "expected": 384000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:277 project contribution",
+        "calculated": 64000.0,
+        "expected": 64000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:279 adverse ad revenue",
+        "calculated": 288000.0,
+        "expected": 288000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:279 loss",
+        "calculated": -32000.0,
+        "expected": -32000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:279 breakeven eCPM",
+        "calculated": 10.0,
+        "expected": 10.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:279 break-even opportunities millions",
+        "calculated": 83.33333333333331,
+        "expected": 83.3333,
+        "tolerance": 5e-05,
+        "pass": true
+      },
+      {
+        "check": "04:287 net receipts",
+        "calculated": 182400.0,
+        "expected": 182400.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:287 contribution",
+        "calculated": 2400.0,
+        "expected": 2400.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:287 payer CAC",
+        "calculated": 37.5,
+        "expected": 37.5,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.03 CAC=1",
+        "calculated": 6800.0,
+        "expected": 6800.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.03 CAC=1.5",
+        "calculated": -43200.0,
+        "expected": -43200.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.03 CAC=2",
+        "calculated": -93200.0,
+        "expected": -93200.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.04 CAC=1",
+        "calculated": 52400.0,
+        "expected": 52400.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.04 CAC=1.5",
+        "calculated": 2400.0,
+        "expected": 2400.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.04 CAC=2",
+        "calculated": -47600.0,
+        "expected": -47600.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.05 CAC=1",
+        "calculated": 98000.0,
+        "expected": 98000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.05 CAC=1.5",
+        "calculated": 48000.0,
+        "expected": 48000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:291-293 conversion=0.05 CAC=2",
+        "calculated": -2000.0,
+        "expected": -2000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:295 conversion threshold %",
+        "calculated": 3.9473684210526314,
+        "expected": 3.947,
+        "tolerance": 0.0005,
+        "pass": true
+      },
+      {
+        "check": "04:295 payer spending threshold",
+        "calculated": 59.21052631578947,
+        "expected": 59.21,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "04:297 receipts by day 30",
+        "calculated": 63839.99999999999,
+        "expected": 63840.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:297 unrecovered spending",
+        "calculated": 116160.0,
+        "expected": 116160.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:393 output ratio coefficient",
+        "calculated": 0.5,
+        "expected": 0.5,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:394 revenue ratio coefficient",
+        "calculated": 0.25,
+        "expected": 0.25,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:395 compute ratio",
+        "calculated": 0.3,
+        "expected": 0.3,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "04:398 contribution ratio",
+        "calculated": 0.1875,
+        "expected": 0.1875,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:old seat TAM USD B monthly 20",
+        "calculated": 8.76,
+        "expected": 8.76,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:old seat TAM USD B monthly 30",
+        "calculated": 13.14,
+        "expected": 13.14,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:old seat TAM USD B monthly 40",
+        "calculated": 17.52,
+        "expected": 17.52,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:old seat TAM USD B monthly 100",
+        "calculated": 43.8,
+        "expected": 43.8,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:107 A terminal spend B",
+        "calculated": 3.94,
+        "expected": 3.94,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:107 B terminal spend B",
+        "calculated": 11.66,
+        "expected": 11.66,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:111 prior conditional total B",
+        "calculated": 4.64,
+        "expected": 4.64,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:150 fixed-output time reduction %",
+        "calculated": 20.68527918781725,
+        "expected": 20.685,
+        "tolerance": 0.0005,
+        "pass": true
+      },
+      {
+        "check": "05:208 employer benefit markup %",
+        "calculated": 42.87020109689214,
+        "expected": 42.87,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 US G",
+        "calculated": 4320.0,
+        "expected": 4320.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 US S",
+        "calculated": 2400.0,
+        "expected": 2400.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 US labor value",
+        "calculated": 240000.0,
+        "expected": 240000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 US net capacity",
+        "calculated": 200000.0,
+        "expected": 200000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 US year1 S",
+        "calculated": 1500.0,
+        "expected": 1500.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 US year1 net capacity",
+        "calculated": 90000.0,
+        "expected": 90000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 US net 0.4",
+        "calculated": 1536.0,
+        "expected": 1536.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 US value 0.4",
+        "calculated": 113600.0,
+        "expected": 113600.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 US net 0.5",
+        "calculated": 2400.0,
+        "expected": 2400.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 US value 0.5",
+        "calculated": 200000.0,
+        "expected": 200000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 US net 0.6",
+        "calculated": 3264.0,
+        "expected": 3264.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 US value 0.6",
+        "calculated": 286400.0,
+        "expected": 286400.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:303 US g threshold 1",
+        "calculated": 26.851851851851855,
+        "expected": 26.85,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:303 US g threshold 0.5",
+        "calculated": 31.48148148148148,
+        "expected": 31.48,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:305 US realization %",
+        "calculated": 16.666666666666664,
+        "expected": 16.67,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:307 US fixed headcount %",
+        "calculated": 15.384615384615374,
+        "expected": 15.38,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:307 US fixed budget %",
+        "calculated": 12.82051282051282,
+        "expected": 12.82,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 CN G",
+        "calculated": 2700.0,
+        "expected": 2700.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 CN S",
+        "calculated": 900.0,
+        "expected": 900.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 CN labor value",
+        "calculated": 120000.00000000001,
+        "expected": 120000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 CN net capacity",
+        "calculated": 30000.000000000015,
+        "expected": 30000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 CN year1 S",
+        "calculated": 360.0,
+        "expected": 360.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:263-279 CN year1 net capacity",
+        "calculated": -72000.0,
+        "expected": -72000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 CN net 0.4",
+        "calculated": 360.0,
+        "expected": 360.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 CN value 0.4",
+        "calculated": -42000.0,
+        "expected": -42000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 CN net 0.5",
+        "calculated": 900.0,
+        "expected": 900.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 CN value 0.5",
+        "calculated": 30000.000000000015,
+        "expected": 30000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 CN net 0.6",
+        "calculated": 1440.0,
+        "expected": 1440.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:299-301 CN value 0.6",
+        "calculated": 102000.0,
+        "expected": 102000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:303 CN g threshold 1",
+        "calculated": 45.83333333333333,
+        "expected": 45.83,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:303 CN g threshold 0.5",
+        "calculated": 58.333333333333336,
+        "expected": 58.33,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:305 CN realization %",
+        "calculated": 74.99999999999999,
+        "expected": 75.0,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:307 CN fixed headcount %",
+        "calculated": 6.666666666666665,
+        "expected": 6.67,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:307 CN fixed budget %",
+        "calculated": 1.6666666666666607,
+        "expected": 1.67,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:285 US avoided hire",
+        "calculated": 140000.0,
+        "expected": 140000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:285 first-year delayed hire",
+        "calculated": 30000.0,
+        "expected": 30000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:287 first-year layoff cash",
+        "calculated": 95000.0,
+        "expected": 95000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:291 CN outsourcing avoided",
+        "calculated": 198000.0,
+        "expected": 198000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:291 CN net cash",
+        "calculated": 108000.0,
+        "expected": 108000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:293 first-year outsourced saving",
+        "calculated": 79200.0,
+        "expected": 79200.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:293 first-year cash",
+        "calculated": -40800.0,
+        "expected": -40800.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:315 demand threshold %",
+        "calculated": 25.0,
+        "expected": 25.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:315 lower output labor",
+        "calculated": 0.8800000000000001,
+        "expected": 0.88,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:315 higher output labor",
+        "calculated": 1.1199999999999999,
+        "expected": 1.12,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:317 elasticity threshold",
+        "calculated": 2.117904889901081,
+        "expected": 2.12,
+        "tolerance": 0.005,
+        "pass": true
+      },
+      {
+        "check": "05:344 client benefit",
+        "calculated": 60.0,
+        "expected": 60.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:344 provider contribution",
+        "calculated": 7.0,
+        "expected": 7.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:344 provider loss",
+        "calculated": -3.0,
+        "expected": -3.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:346 provider margin improvement RMB",
+        "calculated": 100000.0,
+        "expected": 100000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:346 provider margin decline RMB",
+        "calculated": -50000.0,
+        "expected": -50000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:348 monthly revenue factor",
+        "calculated": 0.935,
+        "expected": 0.935,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "05:348 volume breakeven %",
+        "calculated": 17.647058823529417,
+        "expected": 17.647,
+        "tolerance": 0.0005,
+        "pass": true
+      },
+      {
+        "check": "06:64 time value",
+        "calculated": 2400000.0,
+        "expected": 2400000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "06:64 costs",
+        "calculated": 630000.0,
+        "expected": 630000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "06:64 cash loss",
+        "calculated": -30000.0,
+        "expected": -30000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "06:64 realization %",
+        "calculated": 26.25,
+        "expected": 26.25,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "06:64 cash upside",
+        "calculated": 570000.0,
+        "expected": 570000.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "06:98/17:39 Duolingo FCF USD M",
+        "calculated": 78.63000000000001,
+        "expected": 78.63,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Microsoft",
+        "calculated": 17.633000000000003,
+        "expected": 17.633,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Alphabet Q3",
+        "calculated": -9.064999999999998,
+        "expected": -9.065,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Alphabet TTM",
+        "calculated": 19.746999999999986,
+        "expected": 19.747,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Amazon Q3",
+        "calculated": -33.456,
+        "expected": -33.456,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Amazon TTM",
+        "calculated": -42.357,
+        "expected": -42.357,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Samsung KRW T",
+        "calculated": 71.69999999999999,
+        "expected": 71.7,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash SK hynix KRW T",
+        "calculated": 42.111,
+        "expected": 42.111,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash SK after lease",
+        "calculated": 41.974999999999994,
+        "expected": 41.975,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Intel",
+        "calculated": 0.7439999999999996,
+        "expected": 0.744,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Intel adjusted",
+        "calculated": 1.639,
+        "expected": 1.639,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Meta",
+        "calculated": -2.1199999999999988,
+        "expected": -2.12,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Vertiv low",
+        "calculated": 369.6999999999998,
+        "expected": 369.7,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17 cash Vertiv high",
+        "calculated": 569.6999999999998,
+        "expected": 569.7,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17:95-97 normalized RMB 100M Innolight",
+        "calculated": -11.5243137,
+        "expected": -11.5243,
+        "tolerance": 5e-05,
+        "pass": true
+      },
+      {
+        "check": "17:95-97 normalized RMB 100M Eoptolink",
+        "calculated": -3.4158739024,
+        "expected": -3.4159,
+        "tolerance": 5e-05,
+        "pass": true
+      },
+      {
+        "check": "17:95-97 normalized RMB 100M TFC",
+        "calculated": 9.7083346685,
+        "expected": 9.7083,
+        "tolerance": 5e-05,
+        "pass": true
+      },
+      {
+        "check": "17:27 two-year yield basis-point change",
+        "calculated": -12.00000000000001,
+        "expected": -12.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17:99 ten-year nominal change",
+        "calculated": -5.999999999999961,
+        "expected": -6.0,
+        "tolerance": 1e-08,
+        "pass": true
+      },
+      {
+        "check": "17:99 ten-year real change",
+        "calculated": -6.000000000000005,
+        "expected": -6.0,
+        "tolerance": 1e-08,
+        "pass": true
+      }
+    ],
+    "formula_and_table_scope": "All formulas/examples and every table cell read against source; every monetary conversion, date, percentage and qualitative arithmetic restriction reviewed. Independent computations cover full video generation chain, all sensitivity grids, three video project models, legacy TAM and new conditional TAM, team ROI and cash paths, labor elasticity, application ROI, and Appendix E cash bridges.",
+    "normalization_note": "Appendix E lines 95-97 divide raw RMB amounts by 100 million and label the resulting coefficients as × RMB 100 million. This is mathematically faithful and explicitly identifies the original scaled monetary unit; results agree at source rounding.",
+    "ledger_limitation": "Author arithmetic explanations were cross-checked against source and English; they were not accepted as semantic proof. Signs, shared trailing units, Chinese 七折/五折 discount inversion, historical errors, numeric sequence changes, month words and clock-format zeros were checked separately."
+  },
+  "source_issues_retained": [
+    {
+      "file": "04_video.md",
+      "line": 67,
+      "status": "SOURCE_LIMITATION_RETAINED",
+      "note": "Displayed RMB 126.802M minus RMB 42.7960M equals RMB 84.0060M, whereas the Chinese paragraph says approximately RMB 84.0057M. Translation preserves that exact source value. Appendix E line 31 separately preserves approximately RMB 84.006M. No silent factual correction."
+    }
+  ],
+  "scope": "Independent complete Chinese-to-English semantic review of all 1071 aligned source/output lines in the four assigned files. Preserved claim strength, evidence attribution and source access status, hypothetical vs observed figures, causal vs descriptive statements, negative evidence vs proof of nonexistence, viewing vs running time, video demand vs revenue/profit/compute, license geography and permission status, prices vs receipts, ARR vs recognized revenue vs cash, tasks vs jobs vs avoided hiring vs savings, and RCT/quasi-experimental uncertainty. No new market research, delegation, prose editing, or PDF authoring. Parent made all prose changes.",
+  "limitations": [
+    "This is translation acceptance against frozen Chinese V1.9 inputs, not independent validation of market facts, legal conclusions or external sources.",
+    "Original factual ambiguities, hypothetical rounding and explicitly documented historical mistakes remain part of the translated source.",
+    "Acceptance applies only to the recorded English/source hashes; subsequent prose edits require review of their affected lines."
+  ],
+  "final_checks": {
+    "line_counts_equal": true,
+    "blank_line_positions_equal": true,
+    "link_destination_sequences_identical": true,
+    "all_found_translation_issues_closed": true,
+    "current_hashes_rechecked": true
+  }
+}

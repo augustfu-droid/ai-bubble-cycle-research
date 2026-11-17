@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫 · 摘要 V1.9</title><style>@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI周期与泡沫 · 摘要";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.9 · 2026-10-31";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page;font-size:9.5pt;line-height:1.7}.front h2{font-size:14pt;margin:12pt 0 8pt}.front p{margin:6pt 0}.front li{margin:5pt 0}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+ .front{font-size:8.8pt}.front,.toc,.references{break-after:auto;break-before:auto}.front h2,.toc h1{font-size:12pt;margin:13pt 0 6pt}.toc a{font-size:8.6pt}.toc p{font-size:8.6pt;line-height:1.6}</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><header><p class="brand">大队长出品 · V1.9 · 2026-10-31<br>联系邮箱：<a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p><h1>AI周期与泡沫 · 摘要</h1><p>最重要的判断、证据和未知</p></header><section class="front"><h2>免责声明</h2>
+<p>本报告为“大队长”基于公开资料形成的个人研究，不代表任何任职机构，不构成个性化投资建议、收益保证或交易指令。研究判断可能错误，公开信息可能随后修订。</p>
+<p>资料核验截至2026年10月31日（北京时间），各财务、市场、技术与政策数据使用正文注明的报告期或观察日，并非全部是同日现值。公司指引、条件算例和已实现结果分开；没有证据的输入留空，未完成校准的情景不提供精确概率。</p>
+<p>这是按现行判断重新组织的正文，不是历史原页加滚动校注。旧稿独立存档；原预测条件不倒改。段落中的核验范围以具体来源为准，不等于对全部历史事实重新审计。</p>
+<h2>本次更新</h2>
+<ol>
+<li>
+<p>在V1.8已交付正文上深化两项专题，原版本及其验收文件完整保留；当前判断、机制推断与条件算例分开。</p>
+</li>
+<li>
+<p>目录、书签和页码全部由本册正文重建；变更一条一段，集中列出参考资料，保留淡蓝色图表并加“大队长出品”水印。</p>
+</li>
+</ol></section><nav class="toc"><h1>目录</h1><p>本册章节采用完整报告统一编号，目录页码按本册正文生成。本册为导读或附篇，正文中的章号指向完整报告相应章节；附篇沿用A—F标识。</p><a class="l2" href="#h-0000">摘要：商业化扩展，现金回收仍须分公司核算</a><a class="l2" href="#h-0001">参考资料索引</a></nav><main><h2 id="h-0000">摘要：商业化扩展，现金回收仍须分公司核算</h2>
+<p>截至2026年10月31日，三家云厂的新财报强化了经营与现金分开判断的必要。Microsoft FY27Q1经营现金扣现金购建为+18.633B美元；Alphabet Q3同口径为−9.065B、TTM仍为+19.747B；Amazon截至9月30日TTM公司口径FCF为−42.357B。期间和定义不同，不加总、不年化。云收入仍有增长，现金建设压力也更具体。</p>
+<p>本版深化AI短剧对视频模型的需求与利润影响。内容观看、模型生成与发行获客是不同环节；新增成片、失败重试、素材测试和本地化共同影响生成账单，重复播放不会自动重复生成。市场时长比较必须保留每集/整部、手机/全端以及用户分母，具体证据见第四章。</p>
+<p>短剧对上游的积极意义，是形成持续的正片、营销和本地化采购。MiniMax上半年集团毛利2081.3万美元、研发2.96870亿美元，说明付费增长与研发回本仍有距离；集团多模态收入不全属于海螺。红果125分钟是特定App用户使用指标；美国ReelShort35.7分钟高于Netflix24.8分钟是手机口径，不能扩展成全端电影观看被取代。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">MiniMax业绩</a>、<a href="https://www.questmobile.com.cn/research/report/2041710682848727041/">QuestMobile</a>、<a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia</a></p>
+<p>AI编程旧稿的条件算术保留，固定低价席位上限及量纲错误明确纠正；V1.5已启动这一修正，本轮不冒称首次发现。人力影响更可能先表现为少招人、离职不补和减少标准化外包，而非所有岗位同步消失。组织研究显示生成与交付增幅不同，劳动研究提示年轻高暴露职业招聘承压；均不能直接给出全国程序员裁撤率。<a href="https://fion.ac/jellyfish.pdf">企业研究</a>、<a href="https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf">劳动研究</a></p>
+<p>预算模型更具体地解释“省多少钱”：作者假设的美国10人团队稳态净释放2400小时，但全员留任、无新增收益时反而增加4万美元支出及风险预算；真实避免一名全年18万美元招聘才有14万美元净收益。中国8人例净释放900小时，若能取消同量、每小时220元外包，扣9万元后净收益10.8万元；若没有可撤支出，就没有这笔现金收益。两例均非行业均值，首年过渡和质量约束见第五章。其余应用沿用V1.8已核办公、客服、知识服务、陪伴、教育、医疗及实体案例，不加总成未经去重的全市场收入。</p>
+<p>10月28日美联储维持3.75%—4.00%，10月30日十年名义/实际国债收益率4.94%/2.60%；9月PCE同比+3.6%、核心+3.1%。国债缓和与企业信用压力可能并存。当前没有充分证据确认AI全行业需求和融资同时崩塌，也没有经过校准的新崩盘百分比。</p>
+<p>主要依据：<a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast">Microsoft财报</a>、<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf">Alphabet财报</a>、<a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx">Amazon财报</a>、<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">Fed决议</a>、<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026">BEA PCE</a>。完整来源及边界见主报告与三个新增专题，本摘要不替代正文证据。</p>
+<section class="references">
+
+<h2 id="h-0001">参考资料索引</h2>
+<p>本册按URL去重收录10项参考资料，保留正文中的就近链接，下面按首次引用顺序集中列出完整网址，便于打印后追溯。名称采用已核对的公司、报告期与文档类型或正文来源简称，并非一律为官方原标题；资料的期间、核验程度和访问限制以对应段落为准，不表示全部旧引文都在本轮重新取得原件。</p>
+<ol>
+<li>
+<p><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">MiniMax业绩</a> · www1.hkexnews.hk</p>
+<p><span class="ref-url">https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf</span></p>
+</li>
+<li>
+<p><a href="https://www.questmobile.com.cn/research/report/2041710682848727041/">QuestMobile</a> · www.questmobile.com.cn</p>
+<p><span class="ref-url">https://www.questmobile.com.cn/research/report/2041710682848727041/</span></p>
+</li>
+<li>
+<p><a href="https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia">Omdia</a> · omdia.tech.informa.com</p>
+<p><span class="ref-url">https://omdia.tech.informa.com/pr/2026/feb/microdramas-overtake-streamers-on-mobile-engagement-says-omdia</span></p>
+</li>
+<li>
+<p><a href="https://fion.ac/jellyfish.pdf">企业研究</a> · fion.ac</p>
+<p><span class="ref-url">https://fion.ac/jellyfish.pdf</span></p>
+</li>
+<li>
+<p><a href="https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf">劳动研究</a> · digitaleconomy.stanford.edu</p>
+<p><span class="ref-url">https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf</span></p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast">Microsoft财报</a> · www.microsoft.com</p>
+<p><span class="ref-url">https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast</span></p>
+</li>
+<li>
+<p><a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf">Alphabet财报</a> · s206.q4cdn.com</p>
+<p><span class="ref-url">https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf</span></p>
+</li>
+<li>
+<p><a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx">Amazon财报</a> · ir.aboutamazon.com</p>
+<p><span class="ref-url">https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx</span></p>
+</li>
+<li>
+<p><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">Fed决议</a> · www.federalreserve.gov</p>
+<p><span class="ref-url">https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm</span></p>
+</li>
+<li>
+<p><a href="https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026">BEA PCE</a> · www.bea.gov</p>
+<p><span class="ref-url">https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026</span></p>
+</li>
+</ol></section></main></body></html>

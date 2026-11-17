@@ -1,0 +1,2869 @@
+{
+  "schema_version": "V1.10-zh-claims-1",
+  "language": "zh-CN",
+  "baseline_cutoff": "2026-10-31",
+  "original_window_registered": "2026-11-01",
+  "event_finance_policy_cutoff": "2026-11-17 Asia/Shanghai",
+  "scope": "Chinese four source files only; not a full financial audit of legacy report. Legacy application sources retain old cutoff. Inline source/section maps locate references, and do not label every analysis sentence a verified fact. Hypotheses and predictions remain distinct from reported data.",
+  "hash_algorithm": "SHA-256 file bytes; paragraphs UTF-8 normalized LF",
+  "output_files": [
+    {
+      "path": "author_view_zh.md",
+      "sha256": "10b07e7527d235343fbc4bf91285be1022900ae847d23b3351d5758c1918885f",
+      "han_characters": 3568
+    },
+    {
+      "path": "brief_zh.md",
+      "sha256": "9b188d86c46479a019eaae2d98bb1b88d7cc409525867d152f95a8d98c126633",
+      "han_characters": 6508
+    },
+    {
+      "path": "event_chapter_zh.md",
+      "sha256": "b14943fcc8f99d0328ef3db4fbdda15d7a0bf989b1d912cfe4db982c0ef6e362",
+      "han_characters": 6169
+    },
+    {
+      "path": "body_updates_zh.json",
+      "sha256": "776f22b0eba546242ea45708e28baab2b13fdaf776a33a0e9f47e20b92815e8b",
+      "han_characters": 1271
+    }
+  ],
+  "evidence_dependencies": [
+    {
+      "path": "复审与版本记录/V1.10_20261117/governance_technology_policy_deep.md",
+      "sha256": "e86834cf44136dec0cf09ca81dc8ffcdde195716b4ea85617a82e697daace902"
+    },
+    {
+      "path": "复审与版本记录/V1.10_20261117/finance_deep.md",
+      "sha256": "91350677bd5576ad9eeea7de1770ffdc16375f3f9afb9a566149caf5741f766e"
+    },
+    {
+      "path": "复审与版本记录/V1.10_20261117/calculations.json",
+      "sha256": "00f18ff686e05f590fcf97b5ee3127413f454a1f1df38386eba596367569ce69"
+    },
+    {
+      "path": "10_源码_markdown/V1.9.2_核心观点_20261101/claim_map.json",
+      "sha256": "3947f3ee1fd6ee5cd6c20595643ac85ea72e942be88c577fdd963d8f45468ebf"
+    }
+  ],
+  "baseline_files": [
+    {
+      "path": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md",
+      "sha256": "f8138afd63cfabdd3767c5d30a36c1968a5e7f18ca716711a057166d09578daf"
+    },
+    {
+      "path": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md",
+      "sha256": "57cf5fbd242967436645d9dd616c0a97026c86b61c9a8ac9916c65c98207dc06"
+    }
+  ],
+  "validation": {
+    "nine_core_views_exactly_preserved": true,
+    "two_matrices_exactly_preserved": true,
+    "original_brief_urls_retained": true,
+    "single_event_chapter_heading": true,
+    "nine_event_subsections": true,
+    "six_body_chapters": true,
+    "body_fields": true,
+    "all_body_lengths_150_to_400": true,
+    "event_length_6000_to_9000": true,
+    "brief_below_7500": true,
+    "cash_balance_and_payback_corrections": true,
+    "gap_full_horizon_present": true,
+    "brief_and_ch1_financing_buffer": true,
+    "calculation_hash_current": true
+  },
+  "model_time_axis": "M0=firstfullperiod, M12=end13, M24=end25, M40=41, M46=47, M72=73; separate72montharbitrarydepreciation. Negativecash paths require funding; 7.85Mfirst25periods notfullhorizon need.",
+  "source_catalog": [
+    {
+      "id": "S001",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "labels": [
+        "人事8-K",
+        "SEC人事8-K"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S002",
+      "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+      "labels": [
+        "公报预公示",
+        "预公示状态"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "government"
+    },
+    {
+      "id": "S003",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+      "labels": [
+        "Microsoft财报"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S004",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+      "labels": [
+        "Alphabet财报"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S005",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "labels": [
+        "Amazon财报"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S006",
+      "url": "https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf",
+      "labels": [
+        "兑吧中期报告"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S007",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf",
+      "labels": [
+        "MiniMax中期业绩"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S008",
+      "url": "https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji",
+      "labels": [
+        "快手Q2业绩"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S009",
+      "url": "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+      "labels": [
+        "GitHub计费说明"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S010",
+      "url": "https://fion.ac/jellyfish.pdf",
+      "labels": [
+        "企业组织研究"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S011",
+      "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+      "labels": [
+        "Stanford劳动研究"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S012",
+      "url": "https://www.alpha-sense.com/press/alphasense-named-the-only-leader-in-market-and-competitive-intelligence-platforms/",
+      "labels": [
+        "AlphaSense原始披露"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S013",
+      "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026053603/duol-20260630.htm",
+      "labels": [
+        "Duolingo Q2财报"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S014",
+      "url": "https://blog.character.ai/an-update-on-character-ai/",
+      "labels": [
+        "Character.ai官方公告"
+      ],
+      "scope": "legacy_2026-10-31_not_fully_rechecked",
+      "source_class": "legacy_source"
+    },
+    {
+      "id": "S015",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "labels": [
+        "CoreWeave Q3 10-Q",
+        "Q3 10-Q",
+        "Q3 10-Q，现金流、Note 10及Liquidity",
+        "Q3 10-Q，Notes 2、10"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S016",
+      "url": "https://www.streetinsider.com/Reuters/Analysis-Nvidias%2BAI%2Bfinancing%2Bmachine%2Bmay%2Bsurvive%2BHuang,%2Bbut%2Bwith%2Bless%2Brisk%2Bappetite/27347181.html",
+      "labels": [
+        "Reuters",
+        "Reuters，11月16日"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "secondary_media"
+    },
+    {
+      "id": "S017",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "labels": [
+        "交接公告",
+        "财报时间公告",
+        "NVIDIA披露时间"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S018",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "labels": [
+        "董事会声明"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S019",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board",
+      "labels": [
+        "独立董事声明"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S020",
+      "url": "https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/",
+      "labels": [
+        "Rubin平台技术说明",
+        "Rubin平台说明"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S021",
+      "url": "https://nvidianews.nvidia.com/bios/debora-shoquist",
+      "labels": [
+        "运营负责人简介"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S022",
+      "url": "https://nvidianews.nvidia.com/bios/chris-a-malachowsky",
+      "labels": [
+        "技术高管简介"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S023",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm",
+      "labels": [
+        "销售交接8-K"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S024",
+      "url": "https://nvidianews.nvidia.com/bios/nick-parker",
+      "labels": [
+        "Parker简介"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+      "labels": [
+        "2026年proxy，董事独立性及领导结构"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/crwv-20260123.htm",
+      "labels": [
+        "股权8-K"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S027",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm",
+      "labels": [
+        "容量订单8-K"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S028",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+      "labels": [
+        "建设担保8-K"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S029",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+      "labels": [
+        "融资平台公告"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S030",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000114036125036118/ny20053122x6_ex10-31.htm",
+      "labels": [
+        "CoreWeave／NVIDIA服务协议"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S031",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "labels": [
+        "FY27Q2 10-Q，间接客户说明",
+        "Q2 10-Q，Notes 7、10",
+        "Q2 10-Q，地域与客户分类",
+        "Q2 10-Q",
+        "地域收入说明",
+        "NVIDIA Q2合同披露"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S032",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm",
+      "labels": [
+        "FY27Q2 CFO说明，两张承诺表",
+        "CFO说明",
+        "\n  {\n    \"chapter\": 1,\n    \"heading\": \"11月17日更新：利润、回款与建设资金继续分账\",\n    \"markdown\": \"**11月17日更新。** 英伟达FY27Q2自由现金流为213.41亿美元，但DSO从45天升至60天；公司解释为部分投资级客户大型跨季度合同延长账期，不能仅据此判定逾期。CoreWeave新Q3显示前三季度经营现金56.38亿美元、现金购建235.58亿美元，差额负179.20亿美元：同期净融资现金213.46亿美元已提供缓冲，不能把上述差额写成未获填补的资金短缺，也不证明经营回本。这些期间早于黄仁勋离任，不能归因于人事事件。供应商赚钱也不替客户证明回本；后续要检验期后回款、账龄、实际提款与建设付款。第十四章14.4—14.5节列明完整口径。[NVIDIA CFO说明"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "SEC_filing"
+    },
+    {
+      "id": "S033",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027/",
+      "labels": [
+        "NVIDIA Q2现金流表",
+        "Q2现金流表"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S034",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "labels": [
+        "Q3公告"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S035",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx",
+      "labels": [
+        "贷款公告"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S036",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Continues-to-Contract-New-Compute-Capacity-at-Higher-Prices/default.aspx",
+      "labels": [
+        "短约公告"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "issuer_primary"
+    },
+    {
+      "id": "S037",
+      "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+      "labels": [
+        "BIS公告"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "government"
+    },
+    {
+      "id": "S038",
+      "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+      "labels": [
+        "预公示规则，§742.6、§744.24"
+      ],
+      "scope": "event_finance_policy_rechecked_2026-11-17",
+      "source_class": "government"
+    }
+  ],
+  "new_claims": [
+    {
+      "id": "E01",
+      "kind": "verified_event",
+      "file": "event_chapter_zh.md",
+      "line": 9,
+      "paragraph_id": "event_chapter_zh_P005",
+      "excerpt": "SEC确认，董事会于美国当地11月11日",
+      "source_ids": [
+        "S001",
+        "S017"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "11/11 immediate resignation; 11/12 public announcement. Kress interimCEO/CFO; Jones chair. Operations continuity is company expectation."
+    },
+    {
+      "id": "E02",
+      "kind": "verified_process",
+      "file": "event_chapter_zh.md",
+      "line": 11,
+      "paragraph_id": "event_chapter_zh_P006",
+      "excerpt": "独立调查已在11月8日启动",
+      "source_ids": [
+        "S018",
+        "S019"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "11/8 investigation, 11/10 counsel; neither legal adjudication nor financial fraud established."
+    },
+    {
+      "id": "E03",
+      "kind": "author_inference",
+      "file": "event_chapter_zh.md",
+      "line": 17,
+      "paragraph_id": "event_chapter_zh_P009",
+      "excerpt": "我认为黄仁勋最难替代的部分",
+      "source_ids": [],
+      "calculation_locator": null,
+      "interpretation_limit": "Qualitative strategy/customer/supply/financing coordination; no personal share of revenue inferred."
+    },
+    {
+      "id": "E04",
+      "kind": "technical_fact_and_inference",
+      "file": "event_chapter_zh.md",
+      "line": 19,
+      "paragraph_id": "event_chapter_zh_P010",
+      "excerpt": "CUDA代码、软件库、GPU与CPU架构",
+      "source_ids": [
+        "S020"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Institutional system and software continuity; no guarantee of delivery or independent vendor speed claim."
+    },
+    {
+      "id": "E05",
+      "kind": "verified_roles",
+      "file": "event_chapter_zh.md",
+      "line": 21,
+      "paragraph_id": "event_chapter_zh_P011",
+      "excerpt": "组织连续性有具体承接者",
+      "source_ids": [
+        "S021",
+        "S022",
+        "S023",
+        "S024"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Published current roles; sales succession disclosed July, Parker joined August, not November departure."
+    },
+    {
+      "id": "E06",
+      "kind": "verified_governance",
+      "file": "event_chapter_zh.md",
+      "line": 25,
+      "paragraph_id": "event_chapter_zh_P013",
+      "excerpt": "治理变化也要从真实基线出发",
+      "source_ids": [
+        "S025",
+        "S001"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Independent directors and Lead Director predated new chair; Jones since1993, not proof of new fully independent governance."
+    },
+    {
+      "id": "E07",
+      "kind": "author_counterargument",
+      "file": "event_chapter_zh.md",
+      "line": 27,
+      "paragraph_id": "event_chapter_zh_P014",
+      "excerpt": "Kress兼任CEO与CFO可能",
+      "source_ids": [
+        "S001"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Capital discipline/R&D/workload effects conditional, not announced policy."
+    },
+    {
+      "id": "F01",
+      "kind": "verified_contract_status",
+      "file": "event_chapter_zh.md",
+      "line": 35,
+      "paragraph_id": "event_chapter_zh_P017",
+      "excerpt": "| CoreWeave股权 |",
+      "source_ids": [
+        "S026"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "USD2B cash settled1/23, announced1/26; historical investment."
+    },
+    {
+      "id": "F02",
+      "kind": "verified_contract_status",
+      "file": "event_chapter_zh.md",
+      "line": 36,
+      "paragraph_id": "event_chapter_zh_P017",
+      "excerpt": "| CoreWeave未售容量采购 |",
+      "source_ids": [
+        "S027"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "USD6.3B initial order throughApril2032, conditional capacity; not current balance or unconditional all-revenue guarantee."
+    },
+    {
+      "id": "F03",
+      "kind": "verified_contract_status",
+      "file": "event_chapter_zh.md",
+      "line": 37,
+      "paragraph_id": "event_chapter_zh_P017",
+      "excerpt": "| SB Energy／OpenAI建设担保 |",
+      "source_ids": [
+        "S028"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "USD105B cumulative cap,4.25GW, phased firstexpectedFY2029; not next-quarter cash requirement."
+    },
+    {
+      "id": "F04",
+      "kind": "verified_contract_status",
+      "file": "event_chapter_zh.md",
+      "line": 38,
+      "paragraph_id": "event_chapter_zh_P017",
+      "excerpt": "| 六家金融机构融资平台 |",
+      "source_ids": [
+        "S029"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "OverUSD500B long-term third-party capital target underMOU, not funded cash or blanket guarantee."
+    },
+    {
+      "id": "F05",
+      "kind": "bounded_negative_evidence",
+      "file": "event_chapter_zh.md",
+      "line": 42,
+      "paragraph_id": "event_chapter_zh_P019",
+      "excerpt": "CEO离任本身不等于公司合同解除",
+      "source_ids": [
+        "S030"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "No observed automatic termination on resignation; redactions prevent proving no key-person clause anywhere."
+    },
+    {
+      "id": "F06",
+      "kind": "disclosure_and_inference",
+      "file": "event_chapter_zh.md",
+      "line": 44,
+      "paragraph_id": "event_chapter_zh_P020",
+      "excerpt": "而且名义客户多",
+      "source_ids": [
+        "S031"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Anonymous indirect AIcompany not named or assigned share; concentration/double-count risk is inference."
+    },
+    {
+      "id": "F07",
+      "kind": "verified_aggregated_schedule",
+      "file": "event_chapter_zh.md",
+      "line": 52,
+      "paragraph_id": "event_chapter_zh_P023",
+      "excerpt": "| 产品供给与产能 |",
+      "source_ids": [
+        "S032",
+        "S031"
+      ],
+      "calculation_locator": "nvidia_commitment_schedule",
+      "interpretation_limit": "USDbillions at7/26; FY30+ aggregates3buckets; ownuse vs support separate; zero rounded; no financing total."
+    },
+    {
+      "id": "F08",
+      "kind": "verified_cash_and_DSO",
+      "file": "event_chapter_zh.md",
+      "line": 64,
+      "paragraph_id": "event_chapter_zh_P026",
+      "excerpt": "英伟达截至7月26日的FY27Q2经营现金",
+      "source_ids": [
+        "S033",
+        "S032"
+      ],
+      "calculation_locator": "reported_financial_calculations",
+      "interpretation_limit": "OCF24077M,FCF21341M,A/Rcashabsorption22346M,DSO45→60; extended terms not delinquency proof."
+    },
+    {
+      "id": "F09",
+      "kind": "verified_cash_classification",
+      "file": "event_chapter_zh.md",
+      "line": 66,
+      "paragraph_id": "event_chapter_zh_P027",
+      "excerpt": "公司FCF还没有扣掉全部股权投资",
+      "source_ids": [
+        "S033"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Equitycash15822M,repurchases/dividends25779M,netdebt24896M separate from operatingFCF."
+    },
+    {
+      "id": "F10",
+      "kind": "verified_cash_calculation",
+      "file": "event_chapter_zh.md",
+      "line": 72,
+      "paragraph_id": "event_chapter_zh_P030",
+      "excerpt": "11月10日发布的Q3是相对于",
+      "source_ids": [
+        "S034",
+        "S015"
+      ],
+      "calculation_locator": "reported_financial_calculations",
+      "interpretation_limit": "9M5638−23558=−17920M;Q31975−9441=−7466M; cash purchases not guidance or depreciation."
+    },
+    {
+      "id": "F11",
+      "kind": "verified_results",
+      "file": "event_chapter_zh.md",
+      "line": 74,
+      "paragraph_id": "event_chapter_zh_P031",
+      "excerpt": "同季收入36.61亿美元",
+      "source_ids": [
+        "S015"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Q3revenue3661M,GAAPop207M,netinterest846M,netloss709M; period9/30beforeevent; expense not cash payment to deductagain."
+    },
+    {
+      "id": "F12",
+      "kind": "verified_liquidity_bridge",
+      "file": "event_chapter_zh.md",
+      "line": 76,
+      "paragraph_id": "event_chapter_zh_P032",
+      "excerpt": "9月30日流动性须分开看",
+      "source_ids": [
+        "S015"
+      ],
+      "calculation_locator": "reported_financial_calculations",
+      "interpretation_limit": "4122+62+5653=9837M includes conditional undrawn capacity; restricted2282M separate; historicalfinancing21346M not double added; next3month9000M expected not received."
+    },
+    {
+      "id": "F13",
+      "kind": "verified_contract_classification",
+      "file": "event_chapter_zh.md",
+      "line": 78,
+      "paragraph_id": "event_chapter_zh_P033",
+      "excerpt": "更有解释力的是条件变化",
+      "source_ids": [
+        "S015"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Beginningdeferredrev1900M reclassified due cancelability, not actual cancel/refund;9/30covenantcompliance retained."
+    },
+    {
+      "id": "F14",
+      "kind": "verified_term_comparison",
+      "file": "event_chapter_zh.md",
+      "line": 80,
+      "paragraph_id": "event_chapter_zh_P034",
+      "excerpt": "贷款与客户期限也没有天然一致",
+      "source_ids": [
+        "S035",
+        "S036"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Fiveyearloan vs average3yearcustomer term, not each contract; separate3–6monthleases not merged."
+    },
+    {
+      "id": "H01",
+      "kind": "hypothetical_assumptions",
+      "file": "event_chapter_zh.md",
+      "line": 84,
+      "paragraph_id": "event_chapter_zh_P036",
+      "excerpt": "以下全部是作者分析演示",
+      "source_ids": [],
+      "calculation_locator": "hypothetical_project",
+      "interpretation_limit": "All invented monthly project inputs; no issuer calibration or bubble timing forecast."
+    },
+    {
+      "id": "H02",
+      "kind": "hypothetical_definitions",
+      "file": "event_chapter_zh.md",
+      "line": 86,
+      "paragraph_id": "event_chapter_zh_P037",
+      "excerpt": "第1期实缴股权45",
+      "source_ids": [],
+      "calculation_locator": "hypothetical_project",
+      "interpretation_limit": "M0=firstfullperiod. Interestafterdrawbeforeprincipal. Paybackpre-tax/undiscounted/excludesfinancing, notNPV/shareholderreturn. Cashbalance not distributions."
+    },
+    {
+      "id": "H03",
+      "kind": "hypothetical_output_table",
+      "file": "event_chapter_zh.md",
+      "line": 90,
+      "paragraph_id": "event_chapter_zh_P039",
+      "excerpt": "| 纯假设情形 |",
+      "source_ids": [],
+      "calculation_locator": "hypothetical_project",
+      "interpretation_limit": "First25periodmaxgap; balancesend13/end25; payback41/47;73notrecovered. Loan-delay path needs temporary funding first; bridgecost omitted."
+    },
+    {
+      "id": "H04",
+      "kind": "hypothetical_scope_limit",
+      "file": "event_chapter_zh.md",
+      "line": 99,
+      "paragraph_id": "event_chapter_zh_P040",
+      "excerpt": "表中的最大额外资金需求只观察",
+      "source_ids": [],
+      "calculation_locator": "hypothetical_project",
+      "interpretation_limit": "7.85M first25periodneed vs minimum−20.53M whole73periods withoutrescue; negativecash path not executable."
+    },
+    {
+      "id": "H05",
+      "kind": "hypothetical_counterargument",
+      "file": "event_chapter_zh.md",
+      "line": 105,
+      "paragraph_id": "event_chapter_zh_P043",
+      "excerpt": "降速反证行则要求对手方",
+      "source_ids": [],
+      "calculation_locator": "hypothetical_project",
+      "interpretation_limit": "Counterparties must agree capex/draw/repayment timing and cost reduction without fees; no unilateral contractual rights."
+    },
+    {
+      "id": "H06",
+      "kind": "hypothetical_equity_substitution",
+      "file": "event_chapter_zh.md",
+      "line": 107,
+      "paragraph_id": "event_chapter_zh_P044",
+      "excerpt": "替代股权也只能解决部分问题",
+      "source_ids": [],
+      "calculation_locator": "hypothetical_project",
+      "interpretation_limit": "Actual60equity replacesloan; cash improved not project operating payback; dilution and investorreturn not modeled."
+    },
+    {
+      "id": "H07",
+      "kind": "hypothetical_accounting",
+      "file": "event_chapter_zh.md",
+      "line": 109,
+      "paragraph_id": "event_chapter_zh_P045",
+      "excerpt": "再单独假设原始设备100按72个月",
+      "source_ids": [],
+      "calculation_locator": "hypothetical_project",
+      "interpretation_limit": "72monthdepreciation arbitrary vs73periodcashhorizon; no GPUlife claim or double cashdeduction; EBIT maintenanceassetdep omitted."
+    },
+    {
+      "id": "P01",
+      "kind": "verified_rule_status",
+      "file": "event_chapter_zh.md",
+      "line": 113,
+      "paragraph_id": "event_chapter_zh_P047",
+      "excerpt": "BIS于11月16日宣布",
+      "source_ids": [
+        "S037",
+        "S002"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "11/16announcement, planned11/19publication/effectiveonpublication; not effective atcutoff."
+    },
+    {
+      "id": "P02",
+      "kind": "verified_rule_scope",
+      "file": "event_chapter_zh.md",
+      "line": 115,
+      "paragraph_id": "event_chapter_zh_P048",
+      "excerpt": "对经营最有解释力的是两层审查",
+      "source_ids": [
+        "S038"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Controlleditems five destinations plus remoteenduser qualification; thresholds, knowledge, exceptions, transitions retained in evidence."
+    },
+    {
+      "id": "P03",
+      "kind": "rule_boundary",
+      "file": "event_chapter_zh.md",
+      "line": 117,
+      "paragraph_id": "event_chapter_zh_P049",
+      "excerpt": "推荐系统例外不覆盖某些生成式用途",
+      "source_ids": [
+        "S038"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "Not universalChinaAPI/video/codingban; endapplication use distinct from controlled compute access."
+    },
+    {
+      "id": "P04",
+      "kind": "verified_geographic_classification",
+      "file": "event_chapter_zh.md",
+      "line": 119,
+      "paragraph_id": "event_chapter_zh_P050",
+      "excerpt": "英伟达地域收入按直接客户总部归类",
+      "source_ids": [
+        "S031"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "DirectcustomerHQ differs endusers/delivery; no indirectriskpercentage inferred."
+    },
+    {
+      "id": "P05",
+      "kind": "author_transmission",
+      "file": "event_chapter_zh.md",
+      "line": 121,
+      "paragraph_id": "event_chapter_zh_P051",
+      "excerpt": "我的现金传导推断是",
+      "source_ids": [],
+      "calculation_locator": null,
+      "interpretation_limit": "Conditional permission/customer delay→acceptance/rent/draw→cash mismatch; separatepolicyfrompersonnelevent."
+    },
+    {
+      "id": "C01",
+      "kind": "differentiated_inference",
+      "file": "event_chapter_zh.md",
+      "line": 127,
+      "paragraph_id": "event_chapter_zh_P053",
+      "excerpt": "| NVIDIA | 新增支持审批",
+      "source_ids": [],
+      "calculation_locator": null,
+      "interpretation_limit": "Sector-specific observable transmission; no invented marketshares, targets or inevitable replacement."
+    },
+    {
+      "id": "C02",
+      "kind": "secondary_counterevidence",
+      "file": "event_chapter_zh.md",
+      "line": 134,
+      "paragraph_id": "event_chapter_zh_P054",
+      "excerpt": "我也必须认真对待“不发生融资崩塌”的证据",
+      "source_ids": [
+        "S016"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "11/16ongoingtalks notactual500Bfunding; no establishedshutdown."
+    },
+    {
+      "id": "C03",
+      "kind": "falsifiable_counterargument",
+      "file": "event_chapter_zh.md",
+      "line": 136,
+      "paragraph_id": "event_chapter_zh_P055",
+      "excerpt": "更强的反方是一条完整路径",
+      "source_ids": [],
+      "calculation_locator": null,
+      "interpretation_limit": "Stable succession/delivery,paidcapital,growingusage andlowerweakcommitments would disconfirm collapsemechanism."
+    },
+    {
+      "id": "M01",
+      "kind": "verified_schedule",
+      "file": "event_chapter_zh.md",
+      "line": 142,
+      "paragraph_id": "event_chapter_zh_P058",
+      "excerpt": "第一层是已经排期的披露",
+      "source_ids": [
+        "S017"
+      ],
+      "calculation_locator": null,
+      "interpretation_limit": "PST11/17approx13:20=BJT11/18approx05:20;call06:00; no unreleasedearningsused."
+    },
+    {
+      "id": "M02",
+      "kind": "monitoring_framework",
+      "file": "event_chapter_zh.md",
+      "line": 144,
+      "paragraph_id": "event_chapter_zh_P059",
+      "excerpt": "第二层是规则落地及逐项目履约",
+      "source_ids": [],
+      "calculation_locator": null,
+      "interpretation_limit": "Observationstages anddisconfirmingcustomers/paymentshifts; notnewfailurepredictiondates."
+    },
+    {
+      "id": "M03",
+      "kind": "preserved_author_prediction",
+      "file": "event_chapter_zh.md",
+      "line": 148,
+      "paragraph_id": "event_chapter_zh_P061",
+      "excerpt": "更长期则按产品和续租节点检验",
+      "source_ids": [],
+      "calculation_locator": null,
+      "interpretation_limit": "2027H1–2028H1originalmainwindow/2028-06-30accountability preserved; stockdrop notpredictionhit."
+    },
+    {
+      "id": "B01",
+      "kind": "verified_financing_balance",
+      "file": "brief_zh.md",
+      "line": 116,
+      "paragraph_id": "brief_zh_P053",
+      "excerpt": "供应商赚钱与客户扩建缺口可以同时存在",
+      "source_ids": [
+        "S015"
+      ],
+      "calculation_locator": "reported_financial_calculations",
+      "interpretation_limit": "Brief explicitly pairs construction cash difference with historical21346M financing buffer; not unfilled shortfall."
+    }
+  ],
+  "event_sections": [
+    {
+      "section": "14.1",
+      "heading": "我的判断：增加提前检验的理由，尚未改变主窗口",
+      "start_line": 5,
+      "source_ids": [
+        "S001",
+        "S017",
+        "S018",
+        "S019"
+      ],
+      "sha256_utf8": "dc5f955c40e1e7f7ca7af72684c890980072ed24d562af835f2ca16bf4025f34"
+    },
+    {
+      "section": "14.2",
+      "heading": "失去的是重要协调者，技术与组织仍须分别估计",
+      "start_line": 15,
+      "source_ids": [
+        "S020",
+        "S021",
+        "S022",
+        "S023",
+        "S024",
+        "S025"
+      ],
+      "sha256_utf8": "2337ee90811561cc6c1f921b3c13786e03095c87bfd794b900f26756a7687675"
+    },
+    {
+      "section": "14.3",
+      "heading": "先分五种资金关系，再谈融资链会不会断",
+      "start_line": 29,
+      "source_ids": [
+        "S026",
+        "S027",
+        "S028",
+        "S029",
+        "S030",
+        "S031"
+      ],
+      "sha256_utf8": "0eeeb335b39b519ce65c3dc4afdb1bcbb641e4a307cf54a13a0d8069dbca50ab"
+    },
+    {
+      "section": "14.4",
+      "heading": "付款的先后顺序，比最大金额更能解释压力",
+      "start_line": 46,
+      "source_ids": [
+        "S032",
+        "S031",
+        "S033"
+      ],
+      "sha256_utf8": "ee68dcb30b0efb3329b0a46fc6b1bf3f217867f2b992f7b5535a918176c72171"
+    },
+    {
+      "section": "14.5",
+      "heading": "CoreWeave新财报：真实增长与外部资金需求并存",
+      "start_line": 70,
+      "source_ids": [
+        "S034",
+        "S015",
+        "S035",
+        "S036"
+      ],
+      "sha256_utf8": "b9a97908626c7292c300de2b60743310cb1eac9849f4f4d367af996c737be1f8"
+    },
+    {
+      "section": "14.6",
+      "heading": "一个纯假设项目：延期何时放大，降速何时有用",
+      "start_line": 82,
+      "source_ids": [],
+      "sha256_utf8": "9419cff881abf3cd802f82c245ce37e817ca4349b9064ec330fb20a69bf5f8e4"
+    },
+    {
+      "section": "14.7",
+      "heading": "同期监管：审查的是具体设备、用户和用途",
+      "start_line": 111,
+      "source_ids": [
+        "S037",
+        "S002",
+        "S038",
+        "S031"
+      ],
+      "sha256_utf8": "519d013a2fbfc96a7bd50196481491cdd3c374a88b7546545ff880db33f489aa"
+    },
+    {
+      "section": "14.8",
+      "heading": "哪些环节先承压，哪些反方证据必须保留",
+      "start_line": 123,
+      "source_ids": [
+        "S016"
+      ],
+      "sha256_utf8": "32cd65a3034eca24983da2bfc537b815c24d7e5bf06af8fa2165c5f5a9d87a77"
+    },
+    {
+      "section": "14.9",
+      "heading": "用什么证据更新，而不是用事件替预测结算",
+      "start_line": 140,
+      "source_ids": [
+        "S017"
+      ],
+      "sha256_utf8": "684a5c56b29ba30fd6f5d7866052a96e1bab3766e9c3e1e70c01319cb1ae6594"
+    }
+  ],
+  "paragraph_map": [
+    {
+      "id": "author_view_zh_P001",
+      "file": "author_view_zh.md",
+      "start_line": 1,
+      "end_line": 1,
+      "sha256_utf8": "514154758c2012b92e212c614003263ebe52a95e177e8f5839473446012586db",
+      "excerpt": "# 作者观点：技术会改变世界，资本仍要逐笔收回",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 1,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P002",
+      "file": "author_view_zh.md",
+      "start_line": 3,
+      "end_line": 3,
+      "sha256_utf8": "df9d76ef20af75452c4747b98ca96a53642235d87160fa32240a658f5d753b9d",
+      "excerpt": "原研究基线：2026年10月31日（北京时间）｜原时间判断登记：11月1日｜本次事件更新：2026年11月17日",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "author_view_zh_P003",
+      "file": "author_view_zh.md",
+      "start_line": 5,
+      "end_line": 5,
+      "sha256_utf8": "c10fee5d455ccec5dbc363528075a97a3ff33d19125197ddf9d7292bbf17ccc2",
+      "excerpt": "**我把这一轮AI资本泡沫较大范围破裂的主要风险窗口放在2027年上半年至2028年上半年。** 这里的“破裂”，是多家主体的估值持续重定价，并得到投资、融资与",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 5,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P004",
+      "file": "author_view_zh.md",
+      "start_line": 7,
+      "end_line": 7,
+      "sha256_utf8": "74189c0737878871916ed51de568fe59b10d6d48078136cb2229335d9d813fd3",
+      "excerpt": "这是依据截至2026年10月31日证据、于11月1日重新登记的作者主观预测，不是数据模型精确推算的日期，不附未经校准的概率或跌幅。",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 7,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P005",
+      "file": "author_view_zh.md",
+      "start_line": 9,
+      "end_line": 14,
+      "sha256_utf8": "5eebbf28bd08f964635bfedd1a614c6c7cb53517749b9ec7a7b3dd371b9a295b",
+      "excerpt": "| 情景与可能时间 | 我预判的触发与传导 | 什么会使我改判 |\n|---|---|---|\n| **基准：2027年上半年—2028年上半年** | 回款持",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 9,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P006",
+      "file": "author_view_zh.md",
+      "start_line": 16,
+      "end_line": 16,
+      "sha256_utf8": "bb94044d10a7eedf831454adba026288dedac4861cd1dca28dd5ed2fc3d4c5ec",
+      "excerpt": "这四条是可能路径，不能相加成概率。**到2028年6月30日，若基准所述的多主体重定价与资金、经营传导未出现，我会把该窗口记为未兑现，不能自动延期并算预测正确。",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 16,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P007",
+      "file": "author_view_zh.md",
+      "start_line": 18,
+      "end_line": 18,
+      "sha256_utf8": "c28b03f9366f015afe55f217d038244fae2f828272e8473a15f43ebdb7d76963",
+      "excerpt": "**从4月开始，我一直强调“延迟即放大”。** 我现在仍以此作为核心风险判断，但它有条件：商业回款追不上持续投入，企业又继续增加设备、租赁和融资承诺。当前证据支",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 18,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P008",
+      "file": "author_view_zh.md",
+      "start_line": 20,
+      "end_line": 20,
+      "sha256_utf8": "2c58f96f5170e202a8278c1453279526f5264b3bfaddab8d955999ad2f40f8eb",
+      "excerpt": "## 我怎样看不同情况",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 20,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P009",
+      "file": "author_view_zh.md",
+      "start_line": 22,
+      "end_line": 22,
+      "sha256_utf8": "d106a9dfce52cb44974a68a205b1ec8ac4910d2445f6708f0becd693502a7fca",
+      "excerpt": "我不把技术进步和资本回收放在同一条轴上。四格按同一业务、投资批次和观察期判断：“回收跟上”指持续客户净回款能按计划覆盖投入回收及未重复计入的到期硬付款；“回收落",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 22,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P010",
+      "file": "author_view_zh.md",
+      "start_line": 24,
+      "end_line": 27,
+      "sha256_utf8": "6031765e953d91aba0b6a6df282b950c215a9723bbf9abe0469ed03e11d6f59b",
+      "excerpt": "| 技术进展／付费回收 | 回收跟上，客户现金支持 | 回收落后，需额外资金 |\n|---|---|---|\n| **技术持续突破** | 新任务扩大收费，已有",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 24,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P011",
+      "file": "author_view_zh.md",
+      "start_line": 29,
+      "end_line": 29,
+      "sha256_utf8": "6fb038a82ebb063cf616603f3b2b897d8f3df25ee1a92ed026720e6785c90d9e",
+      "excerpt": "四格描述经济状态，首页四条路径描述时间节奏；主体可以跨格迁移，不能一格对应一个年份，也不相加成概率或预定公司胜负。**最值得警惕的一格，是技术明显进步，买入旧资",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 29,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P012",
+      "file": "author_view_zh.md",
+      "start_line": 31,
+      "end_line": 31,
+      "sha256_utf8": "f511df6b0148310309a223620b950dfa9b9253725ed9991f102df41c3873fffa",
+      "excerpt": "## 我保留的九个核心判断",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 31,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P013",
+      "file": "author_view_zh.md",
+      "start_line": 33,
+      "end_line": 33,
+      "sha256_utf8": "04d5c73c448d7741478e4d6d2f0be7799d40790ba182cb37e8508f04cb88cecc",
+      "excerpt": "**一、我承认真实经营利润，也不让投资重估替经营作证。** 云、芯片、广告和应用已出现可核收入、利润与现金。“利润全是假的”解释不了这些事实。但包含股权重估的净",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 33,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P014",
+      "file": "author_view_zh.md",
+      "start_line": 35,
+      "end_line": 35,
+      "sha256_utf8": "721e83878f96fd19e36576b805161ede1c4e664104ba2fa67d35022098884e66",
+      "excerpt": "**二、我认为资本循环最重要的问题，是最后由谁付钱。** 云商投资模型公司，模型公司购买算力，设备商又提供投资或信用支持，可以促成真实交付，不能因此把收入说成造",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 35,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P015",
+      "file": "author_view_zh.md",
+      "start_line": 37,
+      "end_line": 37,
+      "sha256_utf8": "d8c72fd3a6b9f73050d7b72171aaacf9ff346938c69ec690185bc7fef7823ecf",
+      "excerpt": "**三、我更担心回收速度与硬付款的错配，GPU折旧会让压力进入利润。** 微软最新财季仍有建设后的现金结余，Alphabet单季有缺口但滚动年度为正，Amazo",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 37,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P016",
+      "file": "author_view_zh.md",
+      "start_line": 39,
+      "end_line": 39,
+      "sha256_utf8": "c54afbf54d49f6b5d1b7889710de7c633e684824541aef531e4bf4412ac098e2",
+      "excerpt": "**四、我不把AGI或效率突破简单视为泡沫的解药。** 能力跃升可以创造新任务、新需求与收入，也可能让同一结果少用昂贵模型和硬件，压低旧设备租价与模型收费。应用",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 39,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P017",
+      "file": "author_view_zh.md",
+      "start_line": 41,
+      "end_line": 41,
+      "sha256_utf8": "43e258348872df65a2586efa4a366106326c338d075804432ba272fe58dea43e",
+      "excerpt": "**五、我坚持公司分化，不再给“七巨头”写同一结局。** 有广告、软件和成熟云现金的平台，通常比依赖单一客户与再融资的建设项目更有等待能力；但平台也会背上采购、",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 41,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P018",
+      "file": "author_view_zh.md",
+      "start_line": 43,
+      "end_line": 43,
+      "sha256_utf8": "b0a5b53adbf74f2ad227d3d5cd5f10bd39849089a97fef73e7575bd8b3fedc12",
+      "excerpt": "**六、我上调应用潜力，尤其是短剧与编程，但不把市场扩大等同于所有厂商受益。** 短剧的正片、投流和本地化能形成重复采购；Seedance的外部收费与字节内部效",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 43,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P019",
+      "file": "author_view_zh.md",
+      "start_line": 45,
+      "end_line": 45,
+      "sha256_utf8": "ee72d59bf12cb848eb5a75c288cef5fac490f0f2b3f6e8fc417ffc98953c73d4",
+      "excerpt": "这里有一项明确纠错：把专业开发者人数乘固定低价月费，当作整个编程市场的硬上限，是错误的。**V1.5已经撤回这一上限。** 按量收费、长任务和非专业用途扩大收费",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 45,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P020",
+      "file": "author_view_zh.md",
+      "start_line": 47,
+      "end_line": 47,
+      "sha256_utf8": "e5bc0d79d524448c51243faef5e743e7a8e17ce76c34501f66597763b2dc7155",
+      "excerpt": "**七、我认为国际竞争必须分层看，中国机会也必须穿过公司报表。** 模型能力接近，不代表训练硬件、工程生态、能源与资本条件相同；部分芯片受限，也不意味着中国AI",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 47,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P021",
+      "file": "author_view_zh.md",
+      "start_line": 49,
+      "end_line": 49,
+      "sha256_utf8": "e15bfd4cad8793fedc4768f76dd91a0621061728ae76d7139001ab2b5e769e99",
+      "excerpt": "**八、我承认电力、主权资本与政策能够延长周期，但不把它们视为无条件兜底。** 电力瓶颈可能保护已接电产能，也可能拖长在建项目占款；主权或长期资金可能让有价值项",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 49,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P022",
+      "file": "author_view_zh.md",
+      "start_line": 51,
+      "end_line": 51,
+      "sha256_utf8": "fa07c888fa8df355df6fd812cec860f333044e2c21841932f26772d1152c0223",
+      "excerpt": "**九、我把技术成功、经营成功和投资成功分开。** 铁路、互联网与页岩油留给我的启发，是社会可以获得更便宜的基础服务，原来的出资人却未必赚到钱；它们不能给这一轮",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 51,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P023",
+      "file": "author_view_zh.md",
+      "start_line": 53,
+      "end_line": 53,
+      "sha256_utf8": "fe246363f5dbeff7d99deb2e23173a355e707e40122c262588a0ed1cef850108",
+      "excerpt": "什么会使我改判？补贴退出后仍能续费，完整交付成本下降，老设备继续贡献现金，建设放缓时经营现金仍增长，我就应承认时间在帮助消化投入。多家可比主体同时出现回款转弱、",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 53,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/author_view_zh.md"
+    },
+    {
+      "id": "author_view_zh_P024",
+      "file": "author_view_zh.md",
+      "start_line": 55,
+      "end_line": 55,
+      "sha256_utf8": "4d2708459feb28bd88bf649f59462a323bf5bd3d5cb6e7ead2cac466357c3e0c",
+      "excerpt": "## 11月17日更新：治理变化使融资连续性需要更早检验",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "author_view_zh_P025",
+      "file": "author_view_zh.md",
+      "start_line": 57,
+      "end_line": 57,
+      "sha256_utf8": "628a936be17559b1f2a88fd90e3f3df4c021f07c63e3ae211fb73f70339cb2ac",
+      "excerpt": "**黄仁勋离任增加了AI资本周期提前调整的触发因素，但我暂不改变首页主窗口，不把股票下跌算作预测命中。** 我提高“2026年11月至2027年一季度提前信用冲",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "author_view_zh_P026",
+      "file": "author_view_zh.md",
+      "start_line": 59,
+      "end_line": 59,
+      "sha256_utf8": "380e39d4d6f064bddaf067e2fe68b9b31eed9a00998e4fd4263b2732cfec2b9e",
+      "excerpt": "SEC确认黄仁勋11月11日辞去总裁、CEO和董事，11月12日公告；Kress兼任临时CEO/CFO。公司表态产品与客户承诺继续，实际交付仍待验证。已有CUD",
+      "inline_source_ids": [
+        "S001"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "author_view_zh_P027",
+      "file": "author_view_zh.md",
+      "start_line": 61,
+      "end_line": 61,
+      "sha256_utf8": "50bc70ad34a2ff2cd64ffd12853f68d974fdb02c190a532d38034f9491404534",
+      "excerpt": "第十四章把英伟达自用建设、客户支持与或有担保分开，也加入CoreWeave新Q3和纯假设现金算例。供应商经营现金强、客户扩建需要融资，可以同时为真；可用授信不是",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "author_view_zh_P028",
+      "file": "author_view_zh.md",
+      "start_line": 63,
+      "end_line": 63,
+      "sha256_utf8": "e04059ea13b7a45d92d1e5937d13fe9741afe373485fcc32fed9cf23c231ced2",
+      "excerpt": "同期BIS远程算力规则已宣布、计划11月19日刊登，截至本研究日尚未生效。它应通过具体设备、客户资格、用途及合同条件分析，不能写成所有生成式API或短剧、编程应",
+      "inline_source_ids": [
+        "S002"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "author_view_zh_P029",
+      "file": "author_view_zh.md",
+      "start_line": 65,
+      "end_line": 65,
+      "sha256_utf8": "ec99e342231043ea7657be6cb4b1ee38ef50ba46149cd25df370f0945738ab0c",
+      "excerpt": "我的新增判断是：**关键融资节点的治理变化，可能让回收压力更早接受检验；是否发展为行业收缩，要看新增资金、合同履行和客户净回款能否继续衔接。** 融资持续而净硬",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "author_view_zh_P030",
+      "file": "author_view_zh.md",
+      "start_line": 67,
+      "end_line": 67,
+      "sha256_utf8": "c4bcac49b130213246c299ae3a6b329989f39290102ba782895cb855e27f00ac",
+      "excerpt": "本次更新范围为人事、相关财务与融资及监管专题；短剧、编程和其他应用继续保留原研究时点，不宣称11月17日全部重新核验。",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P001",
+      "file": "brief_zh.md",
+      "start_line": 1,
+      "end_line": 1,
+      "sha256_utf8": "27b6f0979424fc2acb4b984aeed1d359cab51815510c2717f17754303eb63811",
+      "excerpt": "# AI泡沫研究报告·简版",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 1,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P002",
+      "file": "brief_zh.md",
+      "start_line": 3,
+      "end_line": 3,
+      "sha256_utf8": "eba7d1086d6d3c504a4b405e9c6ef4394809a69f63379ef0a7d7120ba1d2b09b",
+      "excerpt": "原研究基线：2026年10月31日（北京时间）｜原时间判断登记：11月1日｜人事、融资及监管专题更新：2026年11月17日",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P003",
+      "file": "brief_zh.md",
+      "start_line": 5,
+      "end_line": 5,
+      "sha256_utf8": "4afcc0d4d044a8e1f817dbf22510a882be08d0d568d6444f535d51c2493aa750",
+      "excerpt": "**我把这一轮AI资本泡沫较大范围破裂的主要风险窗口放在2027年上半年至2028年上半年。** “破裂”在这里指多家主体估值持续重定价，并得到投资、融资与资产",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 5,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P004",
+      "file": "brief_zh.md",
+      "start_line": 7,
+      "end_line": 7,
+      "sha256_utf8": "d325d2e3fcbefddb3aa49edf7278d6eba612d87585f59ba5eefcf23342c5aae1",
+      "excerpt": "以下是依据截至2026年10月31日证据、于11月1日重新登记的作者主观预测，不是模型精确推算的日期，不恢复旧版概率与跌幅：",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 7,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P005",
+      "file": "brief_zh.md",
+      "start_line": 9,
+      "end_line": 14,
+      "sha256_utf8": "d83d696eb20b52a0f2c799f5584e9549739bd0695bc02d94dee92f5520124057",
+      "excerpt": "| 情景与可能时间 | 触发与传导 | 改判条件 |\n|---|---|---|\n| **基准：2027年上半年—2028年上半年** | 回款落后于投入，投产",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 9,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P006",
+      "file": "brief_zh.md",
+      "start_line": 16,
+      "end_line": 16,
+      "sha256_utf8": "279c6b91bcbef22f6b28ba6d190a369a321f5bbb168826cd1f1837a892d1f465",
+      "excerpt": "**到2028年6月30日，若基准所述的多主体重定价与资金、经营传导未出现，应记为该窗口未兑现；不能自动顺延到下一格并声称预测正确。** 四种路径不互斥，不相加",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 16,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P007",
+      "file": "brief_zh.md",
+      "start_line": 18,
+      "end_line": 18,
+      "sha256_utf8": "2d4538158bde2661f5fb5657a1ec9f8ae270c1b2b88f675c956b87c0ca0af436",
+      "excerpt": "**从4月开始，我一直强调“延迟即放大”。我的核心判断仍是：如果AI商业化回款追不上持续投入，而企业继续锁定下一批设备、租赁和融资义务，周期延续就可能累积更大的",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 18,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P008",
+      "file": "brief_zh.md",
+      "start_line": 20,
+      "end_line": 20,
+      "sha256_utf8": "f158e78712ba4dd247d29149e6c1da0515139a602abc1aefd40be290d3934127",
+      "excerpt": "我同时承认AI有真实用途，商业化范围正在扩大。当前证据已经显示部分集团建设现金不足，却不能据此断言所有AI公司亏损、所有项目无法回本。我对当前状态的判断是公司分",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 20,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P009",
+      "file": "brief_zh.md",
+      "start_line": 22,
+      "end_line": 22,
+      "sha256_utf8": "60630cbb9e2120d00bb2e08d3fe62c29e0e77f7343f702261af819933eb6f746",
+      "excerpt": "据此，我对投资的态度是选择性参与：先找清楚谁付款、谁保留利润，再看买入价格能否容纳失误。应用进展值得上调研究权重，不能自动给所有模型、算力和相关股票一起上调估值",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P010",
+      "file": "brief_zh.md",
+      "start_line": 24,
+      "end_line": 24,
+      "sha256_utf8": "201a813bfec6d036aea867b20b859632fa6cd1f49dfe6ece507088d46b61e59a",
+      "excerpt": "## 先看我的核心判断，再看商业化证据",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 24,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P011",
+      "file": "brief_zh.md",
+      "start_line": 26,
+      "end_line": 26,
+      "sha256_utf8": "eb8fef24921f9f4c27489a248b360a817f3b4619e427d651a3c6bb93b4527f69",
+      "excerpt": "**真实经营利润、资本循环和回收压力，可以同时存在。** 我不会用包含投资重估的净利润，替持续经营和新资产回收作证；重估上涨与下跌应对称调整，也不能据此把真实的",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 26,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P012",
+      "file": "brief_zh.md",
+      "start_line": 28,
+      "end_line": 28,
+      "sha256_utf8": "fb520993f723b7370097fc5a4b188a2ae690d93d8dc9a57e1d95452994fd0e57",
+      "excerpt": "**我对AGI与效率进步的判断是双向的。** 技术跨越可能创造更多可收费任务，也可能让同一工作少用昂贵模型、减少旧设备的收费价值。应用商和客户可能受益，旧算力与",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 28,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P013",
+      "file": "brief_zh.md",
+      "start_line": 30,
+      "end_line": 30,
+      "sha256_utf8": "d106a9dfce52cb44974a68a205b1ec8ac4910d2445f6708f0becd693502a7fca",
+      "excerpt": "我不把技术进步和资本回收放在同一条轴上。四格按同一业务、投资批次和观察期判断：“回收跟上”指持续客户净回款能按计划覆盖投入回收及未重复计入的到期硬付款；“回收落",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 30,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P014",
+      "file": "brief_zh.md",
+      "start_line": 32,
+      "end_line": 35,
+      "sha256_utf8": "6031765e953d91aba0b6a6df282b950c215a9723bbf9abe0469ed03e11d6f59b",
+      "excerpt": "| 技术进展／付费回收 | 回收跟上，客户现金支持 | 回收落后，需额外资金 |\n|---|---|---|\n| **技术持续突破** | 新任务扩大收费，已有",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 32,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P015",
+      "file": "brief_zh.md",
+      "start_line": 37,
+      "end_line": 37,
+      "sha256_utf8": "6fb038a82ebb063cf616603f3b2b897d8f3df25ee1a92ed026720e6785c90d9e",
+      "excerpt": "四格描述经济状态，首页四条路径描述时间节奏；主体可以跨格迁移，不能一格对应一个年份，也不相加成概率或预定公司胜负。**最值得警惕的一格，是技术明显进步，买入旧资",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 37,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P016",
+      "file": "brief_zh.md",
+      "start_line": 40,
+      "end_line": 40,
+      "sha256_utf8": "28f467da1a9e8a6fbf39ddae8e3f43b5a79f9de5ad3a0e1954c8af3a5486e1bd",
+      "excerpt": "**我坚持分化，不给平台、模型、重资产云和应用商预判同一结局。** 有广告、软件或成熟云现金的平台较能等待，仍要承担新建设与融资成本；独立模型商须覆盖研发和推理",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 40,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P017",
+      "file": "brief_zh.md",
+      "start_line": 42,
+      "end_line": 42,
+      "sha256_utf8": "9efab3a2305bf43c19e479a75d26a63b0c407342678d37db6e576fe4d7fc88a1",
+      "excerpt": "**中国机会要沿产品与现金传导，不能由国产替代标签直接得出。** 模型能力接近不代表训练硬件、工程生态与能源条件相同；芯片受限也不等于中国AI需求消失。海外Ca",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 42,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P018",
+      "file": "brief_zh.md",
+      "start_line": 44,
+      "end_line": 44,
+      "sha256_utf8": "1f700fca086ca6fc69e1596e55af1cb8a67cda35819bfd019c4eb23afad01f8a",
+      "excerpt": "**电力、主权资本和政策改变的是等待条件，不是取消账单。** 已接电产能可能因新供给延后受益，在建项目却可能累积占款；长期资金能帮助跨过建设期，也能延续低回报扩",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 44,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P019",
+      "file": "brief_zh.md",
+      "start_line": 46,
+      "end_line": 46,
+      "sha256_utf8": "940acefc9c2507cfaeafc9a891e181f27300e61b4794163559e0f2ae202735c7",
+      "excerpt": "以下证据展开这些判断：我上调短剧、编程和其他应用的潜力，仍要求公司为客户创造收益、自身留住现金，买入价格也要合理。",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 46,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P020",
+      "file": "brief_zh.md",
+      "start_line": 48,
+      "end_line": 48,
+      "sha256_utf8": "08a08e607246ac6d14f2893ee1efd612541a093386de8f66ff3eda0f83a5414f",
+      "excerpt": "## 1. 为什么我仍强调“延迟即放大”",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 48,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P021",
+      "file": "brief_zh.md",
+      "start_line": 50,
+      "end_line": 50,
+      "sha256_utf8": "f45b6f6c8259d02576715f8c89f9aadb259f8469b94dc63df6d0a12543f5d13d",
+      "excerpt": "三家云厂给出了最直观的对照。Microsoft截至9月30日的FY27Q1，经营现金580亿美元，扣现金购建393.67亿美元后结余186.33亿美元；再扣融资",
+      "inline_source_ids": [
+        "S003"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 50,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P022",
+      "file": "brief_zh.md",
+      "start_line": 52,
+      "end_line": 52,
+      "sha256_utf8": "b0bd04ed9ccc3a57202d75e918d18671df25b628d65f757b8f9d35a021b07ef6",
+      "excerpt": "Alphabet 2026Q3云业务收入307.09亿美元、营业利润111.21亿美元；集团当季经营现金422.90亿美元，现金购建513.55亿美元，两者之差",
+      "inline_source_ids": [
+        "S004"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 52,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P023",
+      "file": "brief_zh.md",
+      "start_line": 54,
+      "end_line": 54,
+      "sha256_utf8": "3834caeb0edfe4f6e509272225d77c74e845bcdf480eae0224c5ce0eb0a8bd43",
+      "excerpt": "Amazon 2026Q3的AWS收入459.84亿美元、营业利润177.73亿美元；截至9月30日的滚动十二个月，集团经营现金1683亿美元减净现金购建210",
+      "inline_source_ids": [
+        "S005"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 54,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P024",
+      "file": "brief_zh.md",
+      "start_line": 56,
+      "end_line": 56,
+      "sha256_utf8": "125dc0dbcbe54c98e667fce994ee5dd8014a3595556ca119062a0abf2f24f705",
+      "excerpt": "这些期间与定义不能混加，云分部利润也不等于集团AI项目回报。它们共同说明：需求增长是真的，建设占用现金也是真的。供应链的出货、利润与部分正现金证据，同样应被承认",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 56,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P025",
+      "file": "brief_zh.md",
+      "start_line": 58,
+      "end_line": 58,
+      "sha256_utf8": "7ec3dc10b2f29009ea65068dcca6d4bc4f9d5deb5c32fea393e498ded9d9a64c",
+      "excerpt": "我的判断是，资本投入正在要求更具体的回收解释。建设先付钱、资产多年使用，单季负现金不足以判定投资失败；但合同、租赁和债务付款不会因为远期市场很大就消失。若投入一",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 58,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P026",
+      "file": "brief_zh.md",
+      "start_line": 60,
+      "end_line": 60,
+      "sha256_utf8": "6ed657faa9ba84ce003e1fe62f652eb69e0459ba329407e967a161bc24bd9580",
+      "excerpt": "“现在AI收入覆盖不了现金流”是我对回收压力的概括，更严格的检验是：客户回款先覆盖必要运营、形成经营现金，再检验其能否覆盖建设及未计入经营现金的到期付款。收入不",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 60,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P027",
+      "file": "brief_zh.md",
+      "start_line": 62,
+      "end_line": 62,
+      "sha256_utf8": "877672302c96393a72b5bd50a3c33804f083862b6900e5474d3acda510fe5cad",
+      "excerpt": "GPU折旧则检验利润是否承受得住资产成本。设备达到可使用状态后开始分摊成本；投产资产增加、租价下降或利用率不足，都可能令折旧压力更突出。旧设备仍能运行，不等于仍",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 62,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P028",
+      "file": "brief_zh.md",
+      "start_line": 64,
+      "end_line": 64,
+      "sha256_utf8": "42c7f3daa9752677262718be6a4370b38855a21dca84a0f58017bb9c43d1bbee",
+      "excerpt": "折旧是会计费用，不是当期再付一次设备款；自由现金流已经扣除现金购建，不能又把折旧完整扣一遍。会计使用寿命调整改变以后费用分摊，减值则须另查触发证据，不能先定所有",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 64,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P029",
+      "file": "brief_zh.md",
+      "start_line": 66,
+      "end_line": 66,
+      "sha256_utf8": "91b027b66567c2de89ac1fbf3a1dbfca7da3c34b0ac5e6327421f41d270036c1",
+      "excerpt": "## 2. 短剧使视频模型更接近生产预算，利润归属仍待竞争决定",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 66,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P030",
+      "file": "brief_zh.md",
+      "start_line": 68,
+      "end_line": 68,
+      "sha256_utf8": "08641a10d60fe11d11fd84e06e013c3f1912b0b2b9781115e552d967272bf573",
+      "excerpt": "我提高短剧的权重，原因是已有付费与采购，而不只是观众愿意看新奇视频。兑吧2026上半年单列AI短剧收入2.22629亿元，但集团同期仍亏损2532.6万元：前者",
+      "inline_source_ids": [
+        "S006"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 68,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P031",
+      "file": "brief_zh.md",
+      "start_line": 70,
+      "end_line": 70,
+      "sha256_utf8": "3da76195198b333fbf55ef0d1a47b37836eaa52342e1973c38d57ad56ac25319",
+      "excerpt": "中美两地都存在付费与广告混合模式，中国的免费分发、内容采购，美国的付费应用和跨境获客，各自有不同的结算与竞争条件。真人短剧大盘、AI辅助制作、主要由AI生成的作",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 70,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P032",
+      "file": "brief_zh.md",
+      "start_line": 72,
+      "end_line": 72,
+      "sha256_utf8": "bb073e038bb26b8464f5b4fcd97fbc384a2537633e6c4ac9907ed0aba2519433",
+      "excerpt": "短剧更有意义的上游需求，是工作室持续制作新剧、投流素材、续季与本地化版本。客户买的不是无限多视频，而是能按时验收、能够发行的镜头。更高采用率和更少返工有利于制作",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 72,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P033",
+      "file": "brief_zh.md",
+      "start_line": 74,
+      "end_line": 74,
+      "sha256_utf8": "5600236c061f02e525f74f7817866c8101792b261c9b7cdbb859b6e4a4839930",
+      "excerpt": "三类厂商的获利路径也不同：",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 74,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P034",
+      "file": "brief_zh.md",
+      "start_line": 76,
+      "end_line": 78,
+      "sha256_utf8": "c104b929c472e3eba9a370068d292b661c7a96d8f05e3954c4fee946456b45f4",
+      "excerpt": "- **Seedance：** 外部模型服务可能直接收费，字节内部内容和广告业务也可能获得效率收益。但内部调用不是集团新增外部收入；红果增长不等于Seedanc",
+      "inline_source_ids": [
+        "S007",
+        "S008"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 76,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P035",
+      "file": "brief_zh.md",
+      "start_line": 80,
+      "end_line": 80,
+      "sha256_utf8": "df7949ea362e80c8059496a24b2b7a3264b62dbcc43ba6fb2de7827bba30b205",
+      "excerpt": "我更看重能反复交付、掌握授权IP和用户回款的经营能力，而非“会用某个模型”。单秒生成便宜以后，节省可能被投流竞价、失败作品、返工与平台分成吃掉；采购入口接入多家",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 80,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P036",
+      "file": "brief_zh.md",
+      "start_line": 82,
+      "end_line": 82,
+      "sha256_utf8": "6c616e735236a8c7748967c624b6b62ad9a396103c472e4b6f36ecd9ced2dd0c",
+      "excerpt": "## 3. 编程需要改写市场模型，也需要改写省钱算法",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 82,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P037",
+      "file": "brief_zh.md",
+      "start_line": 84,
+      "end_line": 84,
+      "sha256_utf8": "1578f14ea90df9d981defd23b0abcb8b4e129072b4a7bba72499dc3cf245c3f3",
+      "excerpt": "早期研究把3650万专业开发者乘30美元月费、再乘12个月，得到131.4亿美元。这是成立的条件算术，**把它写成整个市场的硬上限则是错误的。V1.5已撤回硬上",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 84,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P038",
+      "file": "brief_zh.md",
+      "start_line": 86,
+      "end_line": 86,
+      "sha256_utf8": "2073e5acb6b18bdfdabdcda985cae24562f0a093cd173aaeb76e217a06b8659f",
+      "excerpt": "按量收费、长任务、代码审查和非专业用途，使一个人的预算不再只是一份低价席位。GitHub Copilot在2026年6月转向按量计费，是这一变化的实际产品证据。",
+      "inline_source_ids": [
+        "S009"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 86,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P039",
+      "file": "brief_zh.md",
+      "start_line": 88,
+      "end_line": 88,
+      "sha256_utf8": "ee44070ae5e40beb690c0f8e6a11407d069b037caa40ab8da3e6f36c63bc157c",
+      "excerpt": "我认为人力影响会先落在招聘、离职不补和标准化外包上。企业未裁员，不代表原计划新增岗位没有减少；代码增长，也不代表团队可以同比例少付工资。655家企业的Chen–",
+      "inline_source_ids": [
+        "S010"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 88,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P040",
+      "file": "brief_zh.md",
+      "start_line": 90,
+      "end_line": 90,
+      "sha256_utf8": "0d544b0a70b554339ae412ce9d8443ed42e6a29a6a0a66a9c6a8780ef7ee28ac",
+      "excerpt": "Stanford利用ADP数据的研究则发现，22—25岁高AI暴露职业就业，相对低暴露同龄人的路径落后19%，主要分化与招聘减少有关。它不是“程序员被裁19%”",
+      "inline_source_ids": [
+        "S011"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 90,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P041",
+      "file": "brief_zh.md",
+      "start_line": 92,
+      "end_line": 92,
+      "sha256_utf8": "7b8276c6ed30d222be21b96d0f16c491a4d9a2a0833e94702e61a87ce37c1e43",
+      "excerpt": "详细报告用两套作者假设展示预算差别，均非公司实测或行业均值，且要求同等质量交付：美国10人团队稳态净释放2400小时，按内部成本价值24万美元；扣工具、服务与风",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 92,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P042",
+      "file": "brief_zh.md",
+      "start_line": 94,
+      "end_line": 94,
+      "sha256_utf8": "a226f1e0c1c55de1b0b285ae068d5863708ddcbb3721e786f7097e7679fd78d7",
+      "excerpt": "中国8人算例稳态净释放900小时，内部成本价值12万元，扣9万元后产能净值3万元。若确有可取消的900小时外包、每小时220元，且内部能完成同等工作，则避免付款",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 94,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P043",
+      "file": "brief_zh.md",
+      "start_line": 96,
+      "end_line": 96,
+      "sha256_utf8": "f62cb2ccfe7cb07d06bb066b72004bad9b2bc5a65bd5664152e3585d0a9c9985",
+      "excerpt": "这里4万美元、9万元都含风险预算，并非全部已经付现；首年还有培训、接入与并行验证，不能直接套稳态收益。工资较低的团队不是不能受益，而是更需要控制复核和工具费用，",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 96,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P044",
+      "file": "brief_zh.md",
+      "start_line": 98,
+      "end_line": 98,
+      "sha256_utf8": "7534e8655d8b89714b02f12a2d0431ff409de72e853b59a1ae1c8c6e4ce3c850",
+      "excerpt": "## 4. 其他应用使我更重视既有付款关系",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 98,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P045",
+      "file": "brief_zh.md",
+      "start_line": 100,
+      "end_line": 100,
+      "sha256_utf8": "609a15dc545b82b1265cfc616e295dff8b367edb3642f8bf9b7ffb24c8734530",
+      "excerpt": "AI商业化不只发生在编程和视频。AlphaSense披露2026Q2公司ARR超过7亿美元，支持知识工作流已形成付费规模；这是公司自报的年度化经常性指标，包含内",
+      "inline_source_ids": [
+        "S012"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 100,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P046",
+      "file": "brief_zh.md",
+      "start_line": 102,
+      "end_line": 102,
+      "sha256_utf8": "a124855056c051cdb3ac808600d6a128ef0cda6a86d135d31e85f671819872ba",
+      "excerpt": "Duolingo 2026Q2按公司口径产生7863万美元自由现金流，证明包含AI功能的教育产品可以有正现金，却不能把全部课程收入或利润归给AI。[Duolin",
+      "inline_source_ids": [
+        "S013"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 102,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P047",
+      "file": "brief_zh.md",
+      "start_line": 104,
+      "end_line": 104,
+      "sha256_utf8": "e697c273fe396a84a9aa4086cc85306bd7f44ab842fd4e522a16e5b28945ea26",
+      "excerpt": "相反，Character.ai在已有订阅与广告收入的情况下，于10月进入法院监督出售程序；当时服务继续运行，不能写成已停服或已完成出售。这说明用户价值、收费能力",
+      "inline_source_ids": [
+        "S014"
+      ],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 104,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P048",
+      "file": "brief_zh.md",
+      "start_line": 106,
+      "end_line": 106,
+      "sha256_utf8": "5f58419d556d9db1709ec5884b7c165639138d6ea54cf4bbad2bf5ca9acba107",
+      "excerpt": "我的研究优先级因此偏向清楚的付款方、验收标准和续费关系。办公、客服应看问题是否真正解决；知识服务应看授权与核验成本；医疗文书不能用记录处理量替代临床结果；自动驾",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 106,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P049",
+      "file": "brief_zh.md",
+      "start_line": 108,
+      "end_line": 108,
+      "sha256_utf8": "43d0e9d703f3809b66d1a28b3964e1d6ce2c1f967e66241c9050282b203b10fc",
+      "excerpt": "## 5. 11月17日更新：黄仁勋离任怎样影响融资与回收",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P050",
+      "file": "brief_zh.md",
+      "start_line": 110,
+      "end_line": 110,
+      "sha256_utf8": "6cb3eb1bcfa95b2b14db28a71b0bf62f3d7a9a232ade81ca17dfd79a7746bf23",
+      "excerpt": "**我的主窗口仍是2027年上半年至2028年上半年。** 这次事件提高了提前信用冲击路径的监测优先级，还没有证明停融或行业破裂。SEC确认董事会11月11日接",
+      "inline_source_ids": [
+        "S001"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P051",
+      "file": "brief_zh.md",
+      "start_line": 112,
+      "end_line": 112,
+      "sha256_utf8": "dd8fc465c85ae08cb565f99fa2285def763428f79f4551f76fd965053ac58d67",
+      "excerpt": "黄仁勋的重要性在于长期技术取舍，以及把客户、供应链、金融机构和政策条件协调起来。已有CUDA、系统与研发组织不会随离任当天消失，尚未签约、尚未交割的增量项目却可",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P052",
+      "file": "brief_zh.md",
+      "start_line": 114,
+      "end_line": 114,
+      "sha256_utf8": "e8566a22ce306dbc72417101f7e593ea8d6b9bc3d11c975618d70d9eb5f3aec1",
+      "excerpt": "融资关系必须分账：CoreWeave股权已投资20亿美元；未售容量订单初始价值63亿美元，按服务条件执行；SB Energy／OpenAI担保累计上限1050亿",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P053",
+      "file": "brief_zh.md",
+      "start_line": 116,
+      "end_line": 116,
+      "sha256_utf8": "dac3bc916356a714623029cd6f6c4a91feef6e972eb5fcdfd92ca77b1dca8039",
+      "excerpt": "供应商赚钱与客户扩建缺口可以同时存在。CoreWeave前三季度经营现金56.38亿美元，现金购建设备等235.58亿美元，两项相减为负179.20亿美元；不是",
+      "inline_source_ids": [
+        "S015"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P054",
+      "file": "brief_zh.md",
+      "start_line": 118,
+      "end_line": 118,
+      "sha256_utf8": "e37a85edecbccd2e5f31515c127860780b384893dda307689e33551b3a1ba8b9",
+      "excerpt": "第十四章的纯假设项目展示两面：验收晚、已付设备占款和利息继续，会压低现金；若同时降价、利用率下降，回收更差。但若真实协商付款与提款后移，主动降速可以降低资金压力",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P055",
+      "file": "brief_zh.md",
+      "start_line": 120,
+      "end_line": 120,
+      "sha256_utf8": "e5abd4cc728f5219f8024aa5ecb0865fd383e434f1d5d6128a335379fb9c133f",
+      "excerpt": "BIS于11月16日宣布远程算力规则，计划11月19日刊登，截至研究日尚未生效。设备目的地与最终算力用户需要分别审查，许可证、例外和过渡不能省略。它不是所有面向",
+      "inline_source_ids": [
+        "S002"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P056",
+      "file": "brief_zh.md",
+      "start_line": 122,
+      "end_line": 122,
+      "sha256_utf8": "17f03f9864d270f0edcce22d3a341835a6af7d354525f622e994dc45f9d63123",
+      "excerpt": "我因此看两条路径：审批、许可和交付延迟，而固定付款继续，压力可能跨企业扩散；继任稳定、资金实际出资、低回报扩建减少，则可能有序消化。11月16日已有合作金融机构",
+      "inline_source_ids": [
+        "S016"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P057",
+      "file": "brief_zh.md",
+      "start_line": 124,
+      "end_line": 124,
+      "sha256_utf8": "d01ea39f2b3cdeb26de6be3e0240827eddfdfdb902c75ed1efb7b3f8b46119a4",
+      "excerpt": "下一步查正式继任与财报披露、项目验收及提款、后续季度回款与净硬义务。英伟达FY27Q3要到北京时间11月18日约05:20发布，本简版不提前使用结果。只有多主体",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P058",
+      "file": "brief_zh.md",
+      "start_line": 126,
+      "end_line": 126,
+      "sha256_utf8": "a39b1eb48a614b9a721842e4f7ddcaed2bb21987ba7524a186b0be47d58a0f7e",
+      "excerpt": "## 6. 投资上，我等待什么，什么会让我改判",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "brief_zh_P059",
+      "file": "brief_zh.md",
+      "start_line": 128,
+      "end_line": 128,
+      "sha256_utf8": "0ec428ae53d7302c1b14b2efcc3f75f0e7d0f48bf458480e6f89dd7a516877e9",
+      "excerpt": "对尚未持有者，我不会因为编程上限撤回、短剧需求增强就追认高估值。更值得优先研究的公司，应同时回答：客户收益能否兑现，供应商扣除完整成本后能否留住现金，资本投入能",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 110,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P060",
+      "file": "brief_zh.md",
+      "start_line": 130,
+      "end_line": 130,
+      "sha256_utf8": "93e8376c76bd3a8d8ea6881fcc7942cf3e417de774e243097cea8a8bac057ef3",
+      "excerpt": "目前仍是分化，尤其需要警惕回款落后而硬付款继续累积的公司。若补贴退出后持续复购、同等质量交付成本下降、老设备继续贡献现金，且建设放缓后经营现金仍增长，我会承认时",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 112,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "brief_zh_P061",
+      "file": "brief_zh.md",
+      "start_line": 132,
+      "end_line": 132,
+      "sha256_utf8": "f02a7c21c420a4631f7060afd2766c04347d6ad78ea6518087ae2f96ef093b12",
+      "excerpt": "这套判断也有最容易犯错的两面：低估工具进步，会把今天的交付摩擦误当成永久上限；高估兑现速度，会把节省工时、用户增长和模型调用误当成股东现金。**我愿意因前者上调",
+      "inline_source_ids": [],
+      "origin": "preserved_baseline",
+      "baseline_start_line": 114,
+      "baseline_file": "10_源码_markdown/V1.9.2_核心观点_20261101/brief_zh.md"
+    },
+    {
+      "id": "event_chapter_zh_P001",
+      "file": "event_chapter_zh.md",
+      "start_line": 1,
+      "end_line": 1,
+      "sha256_utf8": "1e7ad2fa12db41afc95d1f1983ee2d9f00ec5987b91055dab06905b2101e5222",
+      "excerpt": "## 第十四章：黄仁勋离任、AI融资与资本回收",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P002",
+      "file": "event_chapter_zh.md",
+      "start_line": 3,
+      "end_line": 3,
+      "sha256_utf8": "6f915fdb2da3d2cdae1b1715e4359467578eada945d0b14554f7310cee9e7588",
+      "excerpt": "本章为2026年11月17日事件更新。第一至十三章及应用研究的原始基线为10月31日；本章重新核验人事、相关财务与融资、监管资料，不表示短剧、编程等旧数据已在1",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P003",
+      "file": "event_chapter_zh.md",
+      "start_line": 5,
+      "end_line": 5,
+      "sha256_utf8": "db2e159282cf4279865a6a5da4cd78b234399321402f2ca73e47fd1f0e77471a",
+      "excerpt": "### 14.1 我的判断：增加提前检验的理由，尚未改变主窗口",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P004",
+      "file": "event_chapter_zh.md",
+      "start_line": 7,
+      "end_line": 7,
+      "sha256_utf8": "49aa2cbec5aa11807f08d8f5fbef462aa7e941dad90dae83fe04589585f9d528",
+      "excerpt": "**我仍把较大范围AI资本泡沫破裂的主要风险窗口放在2027年上半年至2028年上半年。黄仁勋离任增加了提前暴露回收压力的触发因素，却还不足以把这个主观窗口直接",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P005",
+      "file": "event_chapter_zh.md",
+      "start_line": 9,
+      "end_line": 9,
+      "sha256_utf8": "b25bdbd861067ce702143f29c77bf29328387d291bfef1311e5d5ecd59c182c6",
+      "excerpt": "SEC确认，董事会于美国当地11月11日接受黄仁勋辞去总裁、CEO和董事职务，即刻生效；11月12日才公告。Colette Kress继续担任CFO并兼任临时C",
+      "inline_source_ids": [
+        "S001",
+        "S017"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P006",
+      "file": "event_chapter_zh.md",
+      "start_line": 11,
+      "end_line": 11,
+      "sha256_utf8": "42e65433e5538f08b91dfd0904951da39add75fbf1ef3fd09157ee96ff135151",
+      "excerpt": "独立调查已在11月8日启动，11月10日宣布聘请外部律师。调查存在不等于指控已获司法认定；即使后续确认管理层存在失当，也不能由此直接推导财报造假。本章只分析治理",
+      "inline_source_ids": [
+        "S018",
+        "S019"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P007",
+      "file": "event_chapter_zh.md",
+      "start_line": 13,
+      "end_line": 13,
+      "sha256_utf8": "a6960d084eead8f68ab02375b97092379be660617618d4985ce9135d9b7f7682",
+      "excerpt": "事件的经济意义在于英伟达的双重身份：它提供计算平台，也通过股权、采购支持和担保参与下游扩建。一个技术供应商换CEO，与一个同时协调大项目融资的供应商换CEO，影",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P008",
+      "file": "event_chapter_zh.md",
+      "start_line": 15,
+      "end_line": 15,
+      "sha256_utf8": "008e1e10010c3538d27600baf08f5aa03c541830513ac8448b04527367b22749",
+      "excerpt": "### 14.2 失去的是重要协调者，技术与组织仍须分别估计",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P009",
+      "file": "event_chapter_zh.md",
+      "start_line": 17,
+      "end_line": 17,
+      "sha256_utf8": "eb86864bb7d5f07ea84d59778d68239f19697d8b0f3ed5dc16766fe3756cc701",
+      "excerpt": "我认为黄仁勋最难替代的部分，是把长期技术取舍、客户需求、供应链和资本承担放在同一套决策中。下一代平台往往需要芯片、网络、软件、机房条件共同到位；大客户还需要相信",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P010",
+      "file": "event_chapter_zh.md",
+      "start_line": 19,
+      "end_line": 19,
+      "sha256_utf8": "3d6776ae4194c5593341513b77ec3041685e0125625a5a324851a3e358fb3c5b",
+      "excerpt": "但它不能换算成一个未经验证的“个人贡献收入比例”。CUDA代码、软件库、GPU与CPU架构、网络、测试流程和客户部署都属于组织资产。Rubin技术说明描述的是系",
+      "inline_source_ids": [
+        "S020"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P011",
+      "file": "event_chapter_zh.md",
+      "start_line": 21,
+      "end_line": 21,
+      "sha256_utf8": "c750e459a88af88db20e7348288ce456b658f0bf223fa8ea0eec58f22c2ea00f",
+      "excerpt": "组织连续性有具体承接者。公司官网仍列Debora Shoquist负责制造、代工、供应商、物流与质量，Chris Malachowsky仍为执行团队成员及高级技",
+      "inline_source_ids": [
+        "S021",
+        "S022",
+        "S023",
+        "S024"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P012",
+      "file": "event_chapter_zh.md",
+      "start_line": 23,
+      "end_line": 23,
+      "sha256_utf8": "0b393433efac5b908a3a648d083e3b6fdbf27ab1276e2bb0b4ae189ffdb4e413",
+      "excerpt": "这同时留下风险与缓冲：销售领导刚完成交接，CEO又离任，跨团队配合需要重新验证；新销售负责人又拥有大型科技企业的客户与渠道经验，可能加强制度化管理。真正的验收标",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P013",
+      "file": "event_chapter_zh.md",
+      "start_line": 25,
+      "end_line": 25,
+      "sha256_utf8": "c4817424fd7c6fa32420dd769c3295b33da36c13247f7222e75f024b33ae82ca",
+      "excerpt": "治理变化也要从真实基线出发。5月proxy已经将除黄仁勋外的董事认定为Nasdaq独立董事，并设置独立Lead Director Stephen Neal。Jo",
+      "inline_source_ids": [
+        "S025"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P014",
+      "file": "event_chapter_zh.md",
+      "start_line": 27,
+      "end_line": 27,
+      "sha256_utf8": "acc37dbc08168e72ffde932d713314af28b156e7f351036340008c981c43015a",
+      "excerpt": "Kress兼任CEO与CFO可能提高资本审查权重，也增加职责负荷。她的财务背景不能证明研发必然收缩；资本纪律更强也未必是坏事。减少低回报的新承诺，可能压低短期增",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P015",
+      "file": "event_chapter_zh.md",
+      "start_line": 29,
+      "end_line": 29,
+      "sha256_utf8": "86210b16fccd96d3a70fe8814d30a80b959a62a67449689157e0d07ec15e621d",
+      "excerpt": "### 14.3 先分五种资金关系，再谈融资链会不会断",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P016",
+      "file": "event_chapter_zh.md",
+      "start_line": 31,
+      "end_line": 31,
+      "sha256_utf8": "4bdbaf7e87fcae8305d8abb21b1e8a6a01c92019f38cece9b9d8df9e803c4d0d",
+      "excerpt": "**股权、采购、担保、未付款承诺和第三方资本目标不是同一本账。** 它们可能围绕同一项目出现，但承担的损失顺位、支付条件和期限不同。把标题金额相加，会把同一经济",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P017",
+      "file": "event_chapter_zh.md",
+      "start_line": 33,
+      "end_line": 38,
+      "sha256_utf8": "8a00c9df98582a7bbc77f1bc609c97033ff9ccb35de35c6b6853b97830f3ef84",
+      "excerpt": "| 安排 | 已核金额与合同状态 | 这次事件主要检验什么 |\n|---|---|---|\n| CoreWeave股权 | 2026年1月23日完成20亿美元现",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P018",
+      "file": "event_chapter_zh.md",
+      "start_line": 40,
+      "end_line": 40,
+      "sha256_utf8": "a7f552975640f0d771ee39235c27ad263b6123bb3353c8faf384527391f82508",
+      "excerpt": "来源：[股权8-K](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/cr",
+      "inline_source_ids": [
+        "S026",
+        "S027",
+        "S028",
+        "S029"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P019",
+      "file": "event_chapter_zh.md",
+      "start_line": 42,
+      "end_line": 42,
+      "sha256_utf8": "39ce76572de5e6910aec401e5ea7742dad115f6513fd854611a9936ff4527bdf",
+      "excerpt": "CEO离任本身不等于公司合同解除。应看各笔协议的触发、终止、交付和违约条件。本轮已核公开披露未提供“黄仁勋离任即自动解除”的证据，但部分协议存在删节，不能反向保",
+      "inline_source_ids": [
+        "S030"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P020",
+      "file": "event_chapter_zh.md",
+      "start_line": 44,
+      "end_line": 44,
+      "sha256_utf8": "60e7c288ae8faded0da65a0293f07aa4934025373b045787d043f7f555b97a05",
+      "excerpt": "而且名义客户多，不一定意味着最终需求分散。英伟达Q2披露，某家未具名AI研究部署公司通过客户采购云服务，贡献了有意义的收入。这里没有公司名字或可量化份额；它提醒",
+      "inline_source_ids": [
+        "S031"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P021",
+      "file": "event_chapter_zh.md",
+      "start_line": 46,
+      "end_line": 46,
+      "sha256_utf8": "bb1a062b43a0c52b2ebbad931e499175252265e1aa76aa62a4e6c637e2d751aa",
+      "excerpt": "### 14.4 付款的先后顺序，比最大金额更能解释压力",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P022",
+      "file": "event_chapter_zh.md",
+      "start_line": 48,
+      "end_line": 48,
+      "sha256_utf8": "e68f5c281f75edb7a5b5391077ae7ed2677643a5a9c76e964b9bc45dbd87a2da",
+      "excerpt": "以下按7月26日披露分类，单位为十亿美元，1单位等于10亿美元。FY27余下不是2027自然年；“—”是表中取整为零。表格用于看用途与时序，不生成一个“生态融资",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P023",
+      "file": "event_chapter_zh.md",
+      "start_line": 50,
+      "end_line": 58,
+      "sha256_utf8": "88e2f47a7e8944de7ba051f8bad12a5828114d64ce55cac5e508c3fcf552c6b9",
+      "excerpt": "| 承诺用途 | FY27余下 | FY28 | FY29 | FY30及以后 | 合计 |\n|---|---:|---:|---:|---:|---:|\n| ",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P024",
+      "file": "event_chapter_zh.md",
+      "start_line": 60,
+      "end_line": 60,
+      "sha256_utf8": "926a7253ed81a2cc79f36afe25f5b9a58ed67b353e1e08b6230454fa00fc63f4",
+      "excerpt": "来源：[FY27Q2 CFO说明，两张承诺表](https://www.sec.gov/Archives/edgar/data/1045810/00010458",
+      "inline_source_ids": [
+        "S032",
+        "S031"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P025",
+      "file": "event_chapter_zh.md",
+      "start_line": 62,
+      "end_line": 62,
+      "sha256_utf8": "ee0a8488137f9094d4aeda938e2c6348b91c9c587e8eeb4d53bd01961fbae38b",
+      "excerpt": "我对时序的理解是：眼前先检验供应付款、应收与股权承诺兑现；后续才是更多客户云支持和租赁进入付款期；SB Energy又有更远的分期生效安排。担保上限能够影响今天",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P026",
+      "file": "event_chapter_zh.md",
+      "start_line": 64,
+      "end_line": 64,
+      "sha256_utf8": "a7b428a4431071b3849f8e5fc15827ebf70fe5be7aeee64e2ea981b028a18cdb",
+      "excerpt": "英伟达截至7月26日的FY27Q2经营现金为240.77亿美元，公司口径自由现金流213.41亿美元，仍有很强现金创造。与此同时，应收变化当季吸收223.46亿",
+      "inline_source_ids": [
+        "S033",
+        "S032"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P027",
+      "file": "event_chapter_zh.md",
+      "start_line": 66,
+      "end_line": 66,
+      "sha256_utf8": "09b9248db58d7d926d0fb050f21d43547db2e12ec3bcb81f83cbed7bc057b390",
+      "excerpt": "公司FCF还没有扣掉全部股权投资和股东分配。同季购买股权证券现金158.22亿美元，回购及股息257.79亿美元，发行债务净收248.96亿美元。这不等于公司需",
+      "inline_source_ids": [
+        "S033"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P028",
+      "file": "event_chapter_zh.md",
+      "start_line": 68,
+      "end_line": 68,
+      "sha256_utf8": "388807fba228b5244d3f0aa60e899113a00091a8afccb3e9e8adb26caa7ffb5f",
+      "excerpt": "销售后的联系因而变长了：延长账期使供应商等待现金，股权使它承担客户估值，承购使它承担部分容量消化，担保使它可能在特定条件下承担付款或租赁。风险不是同一美元无限循",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P029",
+      "file": "event_chapter_zh.md",
+      "start_line": 70,
+      "end_line": 70,
+      "sha256_utf8": "10eefa815f841a07c66fe61af8e01fa4d5876c871f0da158d0f75ec7f1ccf588",
+      "excerpt": "### 14.5 CoreWeave新财报：真实增长与外部资金需求并存",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P030",
+      "file": "event_chapter_zh.md",
+      "start_line": 72,
+      "end_line": 72,
+      "sha256_utf8": "792cf55a64f46a9dab2a33e52efca1a322a47e7f6d193b6f6d72796e23fcb6cf",
+      "excerpt": "11月10日发布的Q3是相对于10月31日基线的新证据。CoreWeave前三季度经营现金流入56.38亿美元，现金购建固定资产及资本化内部软件235.58亿美",
+      "inline_source_ids": [
+        "S034",
+        "S015"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P031",
+      "file": "event_chapter_zh.md",
+      "start_line": 74,
+      "end_line": 74,
+      "sha256_utf8": "7306cd5a343f624e9e7722e8f37aa926a63194b339a7cf660afd826a391e6e10",
+      "excerpt": "同季收入36.61亿美元、GAAP营业利润2.07亿美元，但净利息费用8.46亿美元、净亏损7.09亿美元。它证明客户需求与经营改善可以真实存在，同时尚未覆盖融",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P032",
+      "file": "event_chapter_zh.md",
+      "start_line": 76,
+      "end_line": 76,
+      "sha256_utf8": "e1ec3e0e95371b71b320b27a02245337b91d5e1eaa6745e8bc984dffc8ce3d2a",
+      "excerpt": "9月30日流动性须分开看：现金及等价物41.22亿美元、有价证券0.62亿美元、现有授信可用额56.53亿美元，合计98.37亿美元。后者包括有条件提款的额度，",
+      "inline_source_ids": [
+        "S015"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P033",
+      "file": "event_chapter_zh.md",
+      "start_line": 78,
+      "end_line": 78,
+      "sha256_utf8": "780b6c9fbf1392e99dd394a644e4e1a68351071b1bc5024f7d0b648a48a5347d",
+      "excerpt": "更有解释力的是条件变化：Q3有19亿美元期初递延收入，因相关合同变成可取消而转至客户负债。**这不等于客户已经取消或退款已经发生，却使“预付就永久锁定资金”的假",
+      "inline_source_ids": [
+        "S015"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P034",
+      "file": "event_chapter_zh.md",
+      "start_line": 80,
+      "end_line": 80,
+      "sha256_utf8": "638de1fbaadf83f513760cf38aca696ba41a1dee2990e3916e5aa736ce8189db",
+      "excerpt": "贷款与客户期限也没有天然一致。8月DDTL 5.5公告为约五年贷款，底层客户合同平均约三年。贷款人愿意承担一定续租风险，扩大了融资能力；客户合同届满后的租价、续",
+      "inline_source_ids": [
+        "S035",
+        "S036"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P035",
+      "file": "event_chapter_zh.md",
+      "start_line": 82,
+      "end_line": 82,
+      "sha256_utf8": "5f985f10112dcc7728f50871d0d1ab96a4cdbb48cfa1a96cbe577fc081734abb",
+      "excerpt": "### 14.6 一个纯假设项目：延期何时放大，降速何时有用",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P036",
+      "file": "event_chapter_zh.md",
+      "start_line": 84,
+      "end_line": 84,
+      "sha256_utf8": "67cac561076893219f406f44622191752a530420c4081c865ea1de3ece57790b",
+      "excerpt": "以下全部是作者分析演示，不是NVIDIA、CoreWeave或真实项目预测。单位改为百万美元，每期一个完整结算月，第1期标作M0，并计整月费用与利息。假设项目初",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P037",
+      "file": "event_chapter_zh.md",
+      "start_line": 86,
+      "end_line": 86,
+      "sha256_utf8": "92b10e5208743d07f9bb1f4d25370070799159eaade39c030c034c9e9cb52ad5",
+      "excerpt": "第1期实缴股权45、实际贷款60；年息10%，利息按当月月初提款后、当期还本前的本金计。首次还本索引为提款索引加13，基准即第14期（M13），以后每期还本金1",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P038",
+      "file": "event_chapter_zh.md",
+      "start_line": 88,
+      "end_line": 88,
+      "sha256_utf8": "a37c6d21f1c45644b5e82281a3ad6d1f71fc31590e67b3be96043a5dcfa9bd9f",
+      "excerpt": "> 月末现金＝上月现金＋实缴股权＋实际提款＋客户现金−经营付款−维护CapEx−初始项目付款−现金利息−偿还本金。",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P039",
+      "file": "event_chapter_zh.md",
+      "start_line": 90,
+      "end_line": 97,
+      "sha256_utf8": "5643014e257a3e493467138da56ccfdfa85e728fc5e9224eaa3f4f5864e7f5b6",
+      "excerpt": "| 纯假设情形 | 前25期最大额外资金需求 | 第13期末现金 | 第25期末现金 | 项目简单回收 |\n|---|---:|---:|---:|---|\n|",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P040",
+      "file": "event_chapter_zh.md",
+      "start_line": 99,
+      "end_line": 99,
+      "sha256_utf8": "61d1de183ef432c5630fff2a25526ccb57f1c90bad082bf753aacab658e672b1",
+      "excerpt": "表中的最大额外资金需求只观察第1—25期，即模型M0—M24，取最负月末现金的绝对值，下限为零。压力情景7.85并非整个项目全程的资金需求上限：若维持原路径而不",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P041",
+      "file": "event_chapter_zh.md",
+      "start_line": 101,
+      "end_line": 101,
+      "sha256_utf8": "a49e0ff16cf19411e16f4223166c2e6775fd0d9dfd74bc7bcb7f2567c03d59e1",
+      "excerpt": "验收延期也没有把所有付款锁死：20尾款、正常经营费用及维护投入随验收后移；此前80已付，准备成本与已提款利息仍继续。延后6个月使第13期末现金从22.50降到3",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P042",
+      "file": "event_chapter_zh.md",
+      "start_line": 103,
+      "end_line": 103,
+      "sha256_utf8": "f86db48ec0534077f771ee65c386519c75f1626a16c29d5c39cf8baae60f3de3",
+      "excerpt": "价格与利用率才可能进一步伤害回收能力。降价20%、利用率60%时，收入为8×0.8×0.6＝3.84；变动付款降至1.2，扣固定1.5和维护0.2，偿债前仅剩0",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P043",
+      "file": "event_chapter_zh.md",
+      "start_line": 105,
+      "end_line": 105,
+      "sha256_utf8": "3650e0a6448428365b42e7c0eddda691abb832707e3479cc5b11211817b21fa9",
+      "excerpt": "降速反证行则要求对手方真的同意条件改变：40安装款从第2期（M1）移到第8期（M7），贷款到第8期才提，首次还本相应后移，准备成本减至每月0.15，且无改期罚金",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P044",
+      "file": "event_chapter_zh.md",
+      "start_line": 107,
+      "end_line": 107,
+      "sha256_utf8": "7c8fa34449a4611454246c07854aa9e1ed61fbe442bd993dd969663545214ec2",
+      "excerpt": "替代股权也只能解决部分问题。投资人实缴从45提高到105，取消60贷款，流动性和利息负担改善；项目自身仍第41期（M40）回收。新股东要求回报，老股东可能被稀释",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P045",
+      "file": "event_chapter_zh.md",
+      "start_line": 109,
+      "end_line": 109,
+      "sha256_utf8": "153f0be9f906d80abe8cd40b622633bd868459b1af604cc5f6f180d705e7972d",
+      "excerpt": "再单独假设原始设备100按72个月直线折旧、零残值，月折旧约1.389。基准简化EBIT为1.611；降价与低利用率情形约为−0.249。这里只展示原始设备折旧",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P046",
+      "file": "event_chapter_zh.md",
+      "start_line": 111,
+      "end_line": 111,
+      "sha256_utf8": "335d0634b741f5ae1d2534f57c0f62bfc9b37c850ef83f342d186595bee2968d",
+      "excerpt": "### 14.7 同期监管：审查的是具体设备、用户和用途",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P047",
+      "file": "event_chapter_zh.md",
+      "start_line": 113,
+      "end_line": 113,
+      "sha256_utf8": "dc5c63478c6381e2969807ef29bcd9e4067072ebea7f3ed3e8093936af2a344a",
+      "excerpt": "BIS于11月16日宣布远程算力临时最终规则。公报预公示页面显示计划11月19日刊登；截至本章研究日仍未正式刊登，生效触发是正式刊登，不能说11月16日已全面实",
+      "inline_source_ids": [
+        "S037",
+        "S002"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P048",
+      "file": "event_chapter_zh.md",
+      "start_line": 115,
+      "end_line": 115,
+      "sha256_utf8": "7b1cc8b64b2a761919f107990e9372f60111c3a629414d770d6bb150a961216c",
+      "excerpt": "对经营最有解释力的是两层审查。一层是相关受控设备到印尼、马来西亚、新加坡、泰国、巴西等目的地的新增许可及适用排除；另一层是数据中心最终向哪些主体提供何种算力。地",
+      "inline_source_ids": [
+        "S038"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P049",
+      "file": "event_chapter_zh.md",
+      "start_line": 117,
+      "end_line": 117,
+      "sha256_utf8": "fce19a52b9100daf7ebe9482228a7ab3db5089afcb4f035e5a8b79d1fb0ebfa5",
+      "excerpt": "推荐系统例外不覆盖某些生成式用途，**不能由此推导全部面向中国用户的生成式API、短剧或编程应用都被禁止。** 先要判断受控物项、设备或算力供给交易、主体、用途",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P050",
+      "file": "event_chapter_zh.md",
+      "start_line": 119,
+      "end_line": 119,
+      "sha256_utf8": "da1634c258f41d27865471db964d8e86bc4e2e094d51d8e004370f0b351e56ee",
+      "excerpt": "英伟达地域收入按直接客户总部归类，终端客户与收货地可能不同；而监管关注实际设备、机房、最终用户与母公司。中国直接收入占比既不能代表全部间接敞口，海外收入也不能全",
+      "inline_source_ids": [
+        "S031"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P051",
+      "file": "event_chapter_zh.md",
+      "start_line": 121,
+      "end_line": 121,
+      "sha256_utf8": "8cdfc44f20abb3118005f5df818ae4994962d8b87c6b79189fd5cb1f870a355c",
+      "excerpt": "我的现金传导推断是：客户资格或许可延后，可能推迟验收、起租和贷款提款，而设备、电力、租赁及债务付款未必同步后移。若找到合规替代客户，主要损失可能是招租空窗和迁移",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P052",
+      "file": "event_chapter_zh.md",
+      "start_line": 123,
+      "end_line": 123,
+      "sha256_utf8": "7f50b03184f7ceca71acea30037e7f931469afe8293cb78510cb2c74d1613ed0",
+      "excerpt": "### 14.8 哪些环节先承压，哪些反方证据必须保留",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P053",
+      "file": "event_chapter_zh.md",
+      "start_line": 125,
+      "end_line": 132,
+      "sha256_utf8": "f407eae5a40d04229f8c50cd157d58836cabb2b2a72f61510eefb0f233eb5acb",
+      "excerpt": "| 主体 | 我最先检验的变化 | 不应自动推出的结论 |\n|---|---|---|\n| NVIDIA | 新增支持审批、应收兑现、供货与验收、人才和路线图 ",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P054",
+      "file": "event_chapter_zh.md",
+      "start_line": 134,
+      "end_line": 134,
+      "sha256_utf8": "bcbddc2417b91751bd0157f16a5833df93dc9dbe5a70010e0529c8ad47c0688a",
+      "excerpt": "我也必须认真对待“不发生融资崩塌”的证据。11月16日Reuters报道合作金融机构仍讨论项目，部分受访方表示合作继续；同篇也说明平台尚未公告交易。它足以反对“",
+      "inline_source_ids": [
+        "S016"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P055",
+      "file": "event_chapter_zh.md",
+      "start_line": 136,
+      "end_line": 136,
+      "sha256_utf8": "88ea5a943466ba9da1a34e0f74203e9cbcc6c2ae7acc93703275a6ceebe124d7",
+      "excerpt": "更强的反方是一条完整路径：继任明确，技术交付稳定，多方资本实际出资，真实付费继续增长，同时管理层减少低回报新承诺。这样短期订单可能降速，远期损失却下降。不能把融",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P056",
+      "file": "event_chapter_zh.md",
+      "start_line": 138,
+      "end_line": 138,
+      "sha256_utf8": "ec968a2e532757de2feaaa3cffd19c6ed017980a124a141a112d5196f9df6648",
+      "excerpt": "竞争替代也应双向核验。替代芯片存在，不等于客户能在相同时间、成本与质量下迁移；NVIDIA已有部署和工程生态仍有价值。如果替代平台通过验收并降低总成本，就应承认",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P057",
+      "file": "event_chapter_zh.md",
+      "start_line": 140,
+      "end_line": 140,
+      "sha256_utf8": "e76e20a5250e07d12837c2ccdf6f1a561232c15e687a87fe3b1feeb671a71549",
+      "excerpt": "### 14.9 用什么证据更新，而不是用事件替预测结算",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P058",
+      "file": "event_chapter_zh.md",
+      "start_line": 142,
+      "end_line": 142,
+      "sha256_utf8": "d3305e7a8118a7d743ba4a4f2a323416b1cdb79811efa0f9dbfd2d7cb957fb94",
+      "excerpt": "第一层是已经排期的披露。FY27Q3财报原定美西11月17日约13:20，即北京时间11月18日约05:20，电话会06:00。本章不引用尚未发布的结果；接下来",
+      "inline_source_ids": [
+        "S017"
+      ],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P059",
+      "file": "event_chapter_zh.md",
+      "start_line": 144,
+      "end_line": 144,
+      "sha256_utf8": "75c6e00cc369517e297e185d9220241a056a4b72e16542928e0bd5a13a607d0f",
+      "excerpt": "第二层是规则落地及逐项目履约：核最终公报、实际许可、客户替换、验收及提款条件。如果付款能够同步推后，或者合规客户及时承接，应降低压力判断；只有营业现金推迟而硬付",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P060",
+      "file": "event_chapter_zh.md",
+      "start_line": 146,
+      "end_line": 146,
+      "sha256_utf8": "2dd38362fbd94bad06b97ffe4a2c52eecee970b15f2b04c810df505fcb7df332",
+      "excerpt": "第三层是事件后的连续财报和合同。至少要看到多个主体的回款、续租价格、授信、实际出资或订单共同恶化，且有可追踪传导，才更接近行业调整。单独DSO增加、一次股价下跌",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P061",
+      "file": "event_chapter_zh.md",
+      "start_line": 148,
+      "end_line": 148,
+      "sha256_utf8": "924f92492c5ef2a196a80c4a37470e4bbc8fd771a9de6d8bf9c11f821b386c19",
+      "excerpt": "更长期则按产品和续租节点检验：技术团队能否持续兑现，客户是否真正迁移，老资产是否按计划回收。上述是复核层级，不是新增一套必然破裂日期。我的主窗口和2028年6月",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    },
+    {
+      "id": "event_chapter_zh_P062",
+      "file": "event_chapter_zh.md",
+      "start_line": 150,
+      "end_line": 150,
+      "sha256_utf8": "ac44e53332d162077b6be78869c1765c16b5f7d97ea52b266f4230ec59d99924",
+      "excerpt": "**这次更新让我更重视关键融资节点的治理，但没有推翻九项核心判断：AI可以产生真实价值，应用市场可以扩大，供应商也可以赚钱；最终仍须逐主体、逐合同、逐批资产，检",
+      "inline_source_ids": [],
+      "origin": "new_or_revised_2026-11-17"
+    }
+  ],
+  "body_update_map": [
+    {
+      "chapter": 1,
+      "heading": "11月17日更新：利润、回款与建设资金继续分账",
+      "markdown_sha256": "72b326a8f339067f3d6c7ef113928a0cd029c2e6d2f472dcb57ab6264c0938f9",
+      "han_characters": 189,
+      "inline_source_ids": [
+        "S032",
+        "S015"
+      ]
+    },
+    {
+      "chapter": 2,
+      "heading": "11月17日更新：治理变化先检验新增支持",
+      "markdown_sha256": "dd911ca54fba25b13400d87e096ad2e9a884d70ece08a7f14e06e2ad5c68bc30",
+      "han_characters": 196,
+      "inline_source_ids": [
+        "S001",
+        "S031"
+      ]
+    },
+    {
+      "chapter": 8,
+      "heading": "11月17日更新：地域与最终用途分开审查",
+      "markdown_sha256": "7f00c7e67a79925e13bfa6f55d3db2c772ff1de35461023a8347b0dd45a43856",
+      "han_characters": 196,
+      "inline_source_ids": [
+        "S002",
+        "S031"
+      ]
+    },
+    {
+      "chapter": 10,
+      "heading": "11月17日更新：关键人物风险不抹平公司分化",
+      "markdown_sha256": "6ea1187d1f78dd1f32de7af7b2f522e34d9bf6ed68acbff39707b33525fdd3c8",
+      "han_characters": 194,
+      "inline_source_ids": [
+        "S017",
+        "S020"
+      ]
+    },
+    {
+      "chapter": 12,
+      "heading": "11月17日更新：提前信用冲击需要履约证据",
+      "markdown_sha256": "1870c0463916dc3fb5405adaf9383473f363d2dc07950e422d364da74c82b6eb",
+      "han_characters": 185,
+      "inline_source_ids": [
+        "S015",
+        "S017"
+      ]
+    },
+    {
+      "chapter": 13,
+      "heading": "11月17日更新：延期放大与主动降速需要不同条件",
+      "markdown_sha256": "33dadad990406ea06e1d1b2030ba84f6b3730ff696458efc00cd3886b4ec1f09",
+      "han_characters": 212,
+      "inline_source_ids": [
+        "S031"
+      ]
+    }
+  ]
+}

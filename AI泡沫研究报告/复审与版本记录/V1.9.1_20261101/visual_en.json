@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-11-01T13:49:00.138698+00:00",
+  "reviewer_role": "英文非主笔的独立视觉复审者",
+  "scope": "实际PDF视觉抽检：英文详细版指定18页，英文简版全部7页；辅以目录链接、书签、页脚和修正句的结构核验。未修改源或PDF，未重做底层事实研究。",
+  "reports": [
+    {
+      "key": "full_en",
+      "status": "PASS",
+      "pdf_path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\AI_Cycles_and_Bubble_Full_Report_EN_2026-11-01.pdf",
+      "pdf_sha256": "a54948ca458387841c1f7d0857f5d8f73eacc4da9e73b3d923c551693a3573eb",
+      "page_count": 274,
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        81,
+        82,
+        110,
+        111,
+        274
+      ],
+      "all_pages_visually_reviewed": false,
+      "rendering": {
+        "engine": "PyMuPDF/fitz",
+        "scale": 1.45,
+        "png_directory": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_en\\full",
+        "actual_image_inspection": "全部列出的PNG已通过tools.view_image打开并逐页目视检查，非仅文字抽取。"
+      },
+      "page_findings": [
+        {
+          "page": 1,
+          "status": "PASS",
+          "finding": "封面标题、作者版本、截止日和主张完整，未见遮挡。"
+        },
+        {
+          "page": 2,
+          "status": "PASS",
+          "finding": "首个阅读页直接给出主风险窗口和完整四行情景矩阵；表内字号可读，无行列截断；到期结算条款在本页可见。"
+        },
+        {
+          "page": 3,
+          "status": "PASS",
+          "finding": "六项判断接续阅读正常；GPU折旧和Seedance段清晰；底部自然跨页无字行遮挡。"
+        },
+        {
+          "page": 4,
+          "status": "PASS",
+          "finding": "修正句that can retain cash from supplying those customers与share prices已实际显示，版本纠错和改判条件完整。"
+        },
+        {
+          "page": 5,
+          "status": "PASS",
+          "finding": "版本说明及免责声明完整，新增预测与保留正文的范围区分可读。"
+        },
+        {
+          "page": 6,
+          "status": "PASS",
+          "finding": "目录开始，作者前言2页、总览13页、Chapter 1/2编号与页码可读。"
+        },
+        {
+          "page": 7,
+          "status": "PASS",
+          "finding": "Chapter 3/4目录顺序和82页过渡目标正确，无长标题挤出页边。"
+        },
+        {
+          "page": 8,
+          "status": "PASS",
+          "finding": "Chapter 5/6目录顺序，长标题自然换行，页码111/138对齐。"
+        },
+        {
+          "page": 9,
+          "status": "PASS",
+          "finding": "Chapter 6至9目录连续，无文字或页码截断。"
+        },
+        {
+          "page": 10,
+          "status": "PASS",
+          "finding": "Chapter 9至12目录连续，含188/200页目标。"
+        },
+        {
+          "page": 11,
+          "status": "PASS",
+          "finding": "Chapter 13与附录A-C目录连续，长标题换行清晰。"
+        },
+        {
+          "page": 12,
+          "status": "PASS",
+          "finding": "附录D-F、Research Closing与Reference index目录收尾完整。"
+        },
+        {
+          "page": 13,
+          "status": "PASS",
+          "finding": "Research Overview第一页与目录13页一致，财务表头与本页三行清晰，表在行边界继续。"
+        },
+        {
+          "page": 81,
+          "status": "PASS",
+          "finding": "Chapter 3核验表清晰，跨页处无截行。"
+        },
+        {
+          "page": 82,
+          "status": "PASS",
+          "finding": "续表重复表头，Chapter 3结语接Chapter 4标题及开篇，章节衔接连续。"
+        },
+        {
+          "page": 110,
+          "status": "PASS",
+          "finding": "Chapter 4总结表各列和行边界清晰，无截断。"
+        },
+        {
+          "page": 111,
+          "status": "PASS",
+          "finding": "Chapter 4结尾接Chapter 5标题与开篇，页码和标题对应目录。"
+        },
+        {
+          "page": 274,
+          "status": "PASS",
+          "finding": "最终参考条目340-342及完整URL自然换行，页脚274/274；无意外空白尾页。"
+        }
+      ],
+      "supplementary_checks": {
+        "bookmarks_count": 318,
+        "all_bookmark_targets_in_bounds": true,
+        "bookmark_targets_nondecreasing": true,
+        "page_number_footers_continuous": true,
+        "contents_links_checked": 386,
+        "visible_contents_page_number_links_checked": 193,
+        "contents_page_numbers_match_link_destinations": true,
+        "corrected_supplier_sentence_visible_on_page": 4,
+        "corrected_supplier_phrase_present": true,
+        "old_supplier_phrase_absent": true
+      },
+      "issues": []
+    },
+    {
+      "key": "brief_en",
+      "status": "PASS",
+      "pdf_path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\AI_Cycles_and_Bubble_Brief_EN_2026-11-01.pdf",
+      "pdf_sha256": "7bd201e67e3b542db8f6b7bc3275cd394c07d1797d68a058deda22b40fa42bfc",
+      "page_count": 7,
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "all_pages_visually_reviewed": true,
+      "rendering": {
+        "engine": "PyMuPDF/fitz",
+        "scale": 1.45,
+        "png_directory": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9.1_配套发布_20261101\\visual_independent_en\\brief",
+        "actual_image_inspection": "全部列出的PNG已通过tools.view_image打开并逐页目视检查，非仅文字抽取。"
+      },
+      "page_findings": [
+        {
+          "page": 1,
+          "status": "PASS",
+          "finding": "首个阅读页完整显示主风险窗口及四行情景矩阵；表内字号可读，结算规则同页；作者主张在底部自然跨页。"
+        },
+        {
+          "page": 2,
+          "status": "PASS",
+          "finding": "承接作者主张；当前状态、投资立场和三家集团现金数值完整，未见遮挡。"
+        },
+        {
+          "page": 3,
+          "status": "PASS",
+          "finding": "现金先运营后建设、GPU折旧及短剧章节标题完整清晰。"
+        },
+        {
+          "page": 4,
+          "status": "PASS",
+          "finding": "Seedance、MiniMax、Kling三条商业路径及金额完整，列表未挤出页边。"
+        },
+        {
+          "page": 5,
+          "status": "PASS",
+          "finding": "编程历史纠错、就业研究及两组中美算例清晰，数字和金额无丢失。"
+        },
+        {
+          "page": 6,
+          "status": "PASS",
+          "finding": "风险预算限制、其他应用与投资含义接续正常，标题未孤立。"
+        },
+        {
+          "page": 7,
+          "status": "PASS",
+          "finding": "投资判断收尾、预测确认条件和编辑说明完整；页脚7/7，无空白尾页。"
+        }
+      ],
+      "supplementary_checks": {
+        "bookmarks_count": 6,
+        "all_bookmark_targets_in_bounds": true,
+        "bookmark_targets_nondecreasing": true,
+        "page_number_footers_continuous": true,
+        "contents_links_checked": 0,
+        "visible_contents_page_number_links_checked": 0,
+        "contents_page_numbers_match_link_destinations": true
+      },
+      "issues": []
+    }
+  ],
+  "limitations": "详细版其余256页未在本次独立复审中逐页看图；此PASS仅覆盖列明页面与所列结构检查，适用于记录的PDF SHA256。"
+}

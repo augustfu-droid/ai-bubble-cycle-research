@@ -1,0 +1,269 @@
+{
+  "review_version": "V1.9.1",
+  "reviewed_at_utc": "2026-11-01T13:42:32.545079+00:00",
+  "status": "translation_checks_passed_for_recorded_hashes",
+  "scope": "Faithful English translation of the final Chinese author-view and brief texts only; no new research, no changes to Chinese sources or prior English parts.",
+  "pairs": [
+    {
+      "source": "AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\author_view_zh.md",
+      "target": "AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\author_view_en.md",
+      "source_sha256": "736e45095ec09768c72c1de83a082c23687676459eb52d4ceda6ff6c6b84fbd6",
+      "target_sha256": "55946ad29ebfaf2ee2cc3fd089f515b16233cbc967a09fe849d4ce77644efb42",
+      "english_word_count_excluding_link_destinations": 1397,
+      "checks": {
+        "source_links": 0,
+        "target_links": 0,
+        "urls_and_order_preserved": true,
+        "source_heading_count": 1,
+        "target_heading_count": 1,
+        "heading_count_preserved": true,
+        "source_table_row_count": 6,
+        "target_table_row_count": 6,
+        "table_row_count_preserved": true,
+        "unicode_dash_count": 0,
+        "first_person_april_recollection_preserved": true,
+        "forecast_boundary_preserved": true,
+        "current_state_distinguished_from_future_baseline": true
+      }
+    },
+    {
+      "source": "AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\brief_zh.md",
+      "target": "AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\brief_en.md",
+      "source_sha256": "e6ed11212790108f29318114fbad6ed4cd090f778d71fe6689c2479e75ba2a53",
+      "target_sha256": "638e8e6ba89eea415719951f3143deeb5bb3bca2e53b99caf31f456d27fa6a27",
+      "english_word_count_excluding_link_destinations": 3049,
+      "checks": {
+        "source_links": 12,
+        "target_links": 12,
+        "urls_and_order_preserved": true,
+        "source_heading_count": 6,
+        "target_heading_count": 6,
+        "heading_count_preserved": true,
+        "source_table_row_count": 6,
+        "target_table_row_count": 6,
+        "table_row_count_preserved": true,
+        "unicode_dash_count": 0,
+        "first_person_april_recollection_preserved": true,
+        "forecast_boundary_preserved": true,
+        "current_state_distinguished_from_future_baseline": true
+      }
+    }
+  ],
+  "numeric_review": {
+    "unit_rules": [
+      "1 亿元人民币 = RMB 100 million; 1 亿美元 = USD 100 million.",
+      "1 万元 = RMB 10,000; 1 万美元 = USD 10,000.",
+      "Periods and signs remain distinct; quarterly segment profit is not substituted for group or AI-project cash."
+    ],
+    "conversion_checks": [
+      {
+        "source": "580亿美元",
+        "translation": "USD 58 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "393.67亿美元",
+        "translation": "USD 39.367 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "186.33亿美元",
+        "translation": "USD 18.633 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "10亿美元",
+        "translation": "USD 1 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "176.33亿美元",
+        "translation": "USD 17.633 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "307.09亿美元",
+        "translation": "USD 30.709 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "111.21亿美元",
+        "translation": "USD 11.121 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "422.90亿美元",
+        "translation": "USD 42.290 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "513.55亿美元",
+        "translation": "USD 51.355 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "负90.65亿美元",
+        "translation": "negative USD 9.065 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "197.47亿美元",
+        "translation": "USD 19.747 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "459.84亿美元",
+        "translation": "USD 45.984 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "177.73亿美元",
+        "translation": "USD 17.773 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "1683亿美元",
+        "translation": "USD 168.3 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2106.57亿美元",
+        "translation": "USD 210.657 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "负423.57亿美元",
+        "translation": "negative USD 42.357 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2.22629亿元",
+        "translation": "RMB 222.629 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2532.6万元",
+        "translation": "RMB 25.326 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "1.16573亿美元",
+        "translation": "USD 116.573 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2081.3万美元",
+        "translation": "USD 20.813 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "2.96870亿美元",
+        "translation": "USD 296.870 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "8.5亿元",
+        "translation": "RMB 850 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "131.4亿美元",
+        "translation": "USD 13.14 billion",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "24万美元",
+        "translation": "USD 240,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "4万美元",
+        "translation": "USD 40,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "20万美元",
+        "translation": "USD 200,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "18万美元",
+        "translation": "USD 180,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "14万美元",
+        "translation": "USD 140,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "12万元",
+        "translation": "RMB 120,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "9万元",
+        "translation": "RMB 90,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "3万元",
+        "translation": "RMB 30,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "19.8万元",
+        "translation": "RMB 198,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "10.8万元",
+        "translation": "RMB 108,000",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "7亿美元",
+        "translation": "USD 700 million",
+        "present_in_source_and_target": true
+      },
+      {
+        "source": "7863万美元",
+        "translation": "USD 78.63 million",
+        "present_in_source_and_target": true
+      }
+    ],
+    "additional_checks": [
+      "The historical coding calculation is 36.5 million x USD 30 x 12 = USD 13.14 billion. The original unit error remains explicitly described as USD 13.1 billion versus $131B.",
+      "US and China team figures remain author assumptions, with capacity values separated from avoided payments and risk budgets separated from cash already paid.",
+      "The 19% employment gap remains relative to a comparison trajectory, not a layoff rate or identified net causal effect; the Chen-Stratton result is limited to engineer employment at the sampled firms."
+    ]
+  },
+  "terminology_review": {
+    "延迟即放大": "delay amplifies risk",
+    "短剧": "microdramas",
+    "海螺": "Hailuo",
+    "可灵": "Kling",
+    "经营现金": "operating cash",
+    "现金购建": "cash asset purchases/construction",
+    "融资租赁本金": "finance-lease principal",
+    "产能净值": "net capacity value",
+    "采用率": "acceptance rates in the context of usable video output"
+  },
+  "semantic_review": [
+    "The risk window is presented first as a subjective author forecast registered afresh on November 1, 2026 using evidence through October 31, not as a data-model date or independently calibrated probability.",
+    "All four scenario windows, their triggers, their revision conditions and the June 30, 2028 non-fulfillment rule are retained. The brief expressly states that the paths are not mutually exclusive and cannot be summed into probabilities.",
+    "The author's first-person recollection of advocating the thesis since April is retained without claiming external verification of an April original.",
+    "Delay amplifies risk only under the stated mismatch between continuing investment/firm obligations and cash collections; time may also help investment absorption.",
+    "Revenue, operating cash, group cash, AI-project cash, cash payments and financing obligations remain distinct. Necessary operations are covered before operating cash is tested against construction and payments not already included.",
+    "GPU depreciation affects profit and is not an additional equipment payment in the same period; no second deduction from free cash flow is introduced. Useful-life changes and impairment remain separate.",
+    "Task hours saved are not treated as payroll savings. Retained staff without new receipts may increase spending through tool costs.",
+    "All original source URLs and their sequence are preserved. Monetary values were converted rather than merely relabeled.",
+    "Existing V1.5 withdrawal of the coding-market ceiling remains a prior correction, not a new discovery.",
+    "Final source revision synchronized: present company divergence and localized pressure are separated from the future baseline risk window. Later multi-entity deterioration is evidence that the forecast contraction is materializing, not a newly adopted future forecast."
+  ],
+  "limitations": [
+    "This is translation QA, not fresh verification of external filings, research findings or the author's historical April claim.",
+    "The newly registered timing scenarios are the Chinese author's subjective forecasts; translation does not validate their calibration or likelihood.",
+    "Hashes identify the source and target bytes reviewed. Any subsequent edit requires updating this record."
+  ]
+}

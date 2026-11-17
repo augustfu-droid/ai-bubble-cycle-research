@@ -1,0 +1,14 @@
+{
+  "pdf_sha256": "1bdf84bde7eda951f9a8e876160c418b367e438b9b341360496728e8d2e27345",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    254,
+    272
+  ],
+  "reviewer": "primary agent",
+  "status": "PASS_SAMPLED_VISUAL",
+  "issues": [],
+  "scope": "Actual visual inspection of the final cover, front matter, update page and first/last bibliography pages. Separately inspected pages128-129 to assess a previous reviewer's table-wrap concern; final independent visual review resolves that finding."
+}

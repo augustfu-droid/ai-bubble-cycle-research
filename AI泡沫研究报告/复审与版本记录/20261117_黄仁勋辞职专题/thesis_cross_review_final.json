@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_thesis_cross_review_final",
+  "review_date": "2026-11-17",
+  "source_file": "C:/Users/付强/Documents/ChatGPT/AI预测/AI泡沫研究报告/专题更新_20261117/黄仁勋辞职_AI融资与泡沫判断_20261117.md",
+  "source_sha256": "4A952E00B525E420F0F0BD8783DCB9C76FDF5D69772162A30D6149B0F8C365E7",
+  "previous_source_sha256": "3FA6E40D8A79001EDACBEA7103F21187273BB48F2C88C4DA3758CC22AD4E4D06",
+  "previous_review_files": [
+    "thesis_cross_review_v1.json",
+    "thesis_cross_review_v1.md"
+  ],
+  "outcome": "pass",
+  "unresolved_findings": [],
+  "new_findings": [],
+  "closures": [
+    {
+      "id": "R1",
+      "original_priority": 2,
+      "status": "closed",
+      "line": 13,
+      "resolution": "改为独立调查、未决指控与人事变更，补充董事会11月8日声明；不再预设管理层失当已经认定。"
+    },
+    {
+      "id": "R2",
+      "original_priority": 2,
+      "status": "closed",
+      "line": 38,
+      "resolution": "补入同期213.46亿美元净融资现金，明确179.20亿美元两项差额不是未获弥补的支付短缺；融资缓冲与经营回本保持分离。"
+    },
+    {
+      "id": "R3",
+      "original_priority": 2,
+      "status": "closed",
+      "line": 40,
+      "resolution": "拆成资金覆盖账与项目回收账，明确同一建设成本不能再次以计划回收名义加扣。"
+    },
+    {
+      "id": "R4",
+      "original_priority": 2,
+      "status": "closed",
+      "line": 54,
+      "resolution": "明确预公示文本按正式刊登日生效、计划11月19日刊登，研究日尚未刊登生效，并保留许可、例外及过渡条款。"
+    },
+    {
+      "id": "R5",
+      "original_priority": 3,
+      "status": "closed",
+      "line": 69,
+      "resolution": "改为‘对完整报告应新增的判断’，第77行仍说明本专题独立新增、既有正文和四份PDF保留原时点；不再承诺本轮重建。"
+    }
+  ],
+  "additional_checks": [
+    {
+      "lines": [
+        26
+      ],
+      "result": "pass",
+      "detail": "63亿美元明确为历史初始订单价值，非当前未付款余额；2032年4月13日明确为合同持续日期，未暗示近期展期。"
+    },
+    {
+      "lines": [
+        27
+      ],
+      "result": "pass",
+      "detail": "首批担保预计FY2029与2028年起对应，仍保留服务就绪、起租及分期生效条件，没有写成当期全额付款。"
+    },
+    {
+      "lines": [
+        34
+      ],
+      "result": "pass",
+      "detail": "公开MSA存在删节，未发现关键人解除证据没有扩展成所有合同绝无此条款。"
+    },
+    {
+      "lines": [
+        38
+      ],
+      "result": "pass",
+      "detail": "最终将‘真实需求增长’改为‘云服务收入增长’，并明确上游收入不能代替终端客户回收验证。"
+    },
+    {
+      "lines": [
+        71
+      ],
+      "result": "pass",
+      "detail": "NVIDIA财报发布时间保留约数，北京时间11月18日约05:20，未引用未来财报。"
+    },
+    {
+      "lines": [
+        5,
+        48,
+        63,
+        64,
+        65,
+        67,
+        73
+      ],
+      "result": "pass",
+      "detail": "原主观窗口、提前路径和2028年6月30日结算日保持；没有新增伪概率，四格不以融资到账替代经营回收；延后放大仍附条件并保留消化反证。"
+    },
+    {
+      "lines": [
+        17,
+        40,
+        50,
+        52,
+        54,
+        56,
+        69
+      ],
+      "result": "pass",
+      "detail": "技术价值、供应商与客户GPU账本、监管并行归因和应用市场边界保持分离；未恢复旧TAM硬上限或统一GPU寿命，也未用辞职认定财务造假。"
+    }
+  ],
+  "review_scope": "读取修订全文，并在最后一次‘云服务收入增长’措辞更新后定向读取修改段落和重新计算SHA。以两份已归档证据稿及初审所核CoreWeave官方公告为依据，未重新展开全部网页研究。",
+  "limitations": "通过表示本篇事件研究的证据边界、口径和初审问题已完成复核，不表示原泡沫预测已经被验证。原件仍有未公开/删节合同、平台实际成交与后续经营数据缺口，正文已保留。",
+  "source_modified_by_reviewer": false,
+  "initial_review_preserved": true
+}

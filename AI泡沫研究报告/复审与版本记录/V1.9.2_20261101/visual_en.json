@@ -1,0 +1,446 @@
+{
+  "status": "PASS",
+  "review_date": "2026-11-01",
+  "reports": [
+    {
+      "key": "full_en",
+      "pdf_sha256": "590a00877d940ac3b90e834776492dddd196a2757fc2c0a193d080631628f46e",
+      "pdf_file": "AI泡沫研究报告/V1.9.2_配套发布_20261101/AI_Cycles_and_Bubble_Full_Report_EN_V1.9.2_2026-11-01.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        61,
+        62,
+        83,
+        84,
+        112,
+        113,
+        276
+      ],
+      "page_records": [
+        {
+          "page": 1,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Cover hierarchy, version, research cutoff, editor date and footer clean; no clipping.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_001.png",
+          "png_sha256": "29bf11638a6198adbcb1ea936563638e6160835e92444252ae60f5949fb14fae",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 2,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Opening time window and complete four-path timing table fit on the first author-view page. Settlement date and failure rule visible. Final paragraph continues normally.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_002.png",
+          "png_sha256": "23c74371533ca499070b0c7a3948d29dfe312431f3deca111cb2eb9c3f13fec7",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 3,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Final rerender actually reinspected after first-column widening. Breakthroughs is now one intact word. Both row labels, column headings, all four cells and following prose remain clear, complete and within page margins; matrix stays on one page.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_003.png",
+          "png_sha256": "c39a7a16728a7b1be107e5f0f9ec3ff7096ef153ad69d58816ee63042866857d",
+          "final_review_method": "Actual tools.view_image inspection of final corrected PNG."
+        },
+        {
+          "page": 4,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Core judgments 1–4 complete, in order, no missing text or orphan heading.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_004.png",
+          "png_sha256": "9c70445260f2dbbe65605938be8b813c8b6786da71bbbb57bed9c0aecbc3a277",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 5,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Judgments 5–7 and correction complete. Judgment 8 begins with heading and several lines; ordinary continuation to next page.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_005.png",
+          "png_sha256": "e401f085846893d64600c0a1528d55cc5d783f31583c0d671e1e52aa0eb19654",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 6,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Judgment 8 continues clearly; judgment 9 and final revision conditions complete. No missing/isolated heading.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_006.png",
+          "png_sha256": "5ba3a5207c833bcc96df88b6636a2880e3f73ec42fb47d2111a123b174351a5c",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 7,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Version/readership note and disclaimer complete and readable.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_007.png",
+          "png_sha256": "a3d37f9cfaf5603855d8c9e49eaca2e0815c12d9eb3df0904efa3d4a8b0fd6c5",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 8,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Contents start readable; author view=2, mechanism matrix=3, nine judgments=4, research overview=15.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_008.png",
+          "png_sha256": "8392af2c8a0584593d038b16be31e27078138503b6d42580251201a965b900a1",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 9,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Contents continuation readable; Chapter 3=62 and Chapter 4=84 clearly listed.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_009.png",
+          "png_sha256": "32b92aa75b58ca335d09a5eae2dcd72e215b42524e80fdd711edcf8a287ac1b8",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 10,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Contents continuation readable; Chapter 5=113 clearly listed; long labels wrap cleanly.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_010.png",
+          "png_sha256": "9d3ba32e7d45ac2a263deb97e7f0bcb3a77792fbe80289db67d3f81ab41447ff",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 11,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Contents continuation readable; chapter and subsection alignment consistent.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_011.png",
+          "png_sha256": "43a4f7ff8f8eafd86755ded8d08af756d207d2ad4880d286f1ecd1cdb9cb3021",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 12,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Contents continuation readable; chapter 9–12 page numbers align.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_012.png",
+          "png_sha256": "4ef0c3dd0414dc9d1e87324951bd3e12fc90623542eba360f85d2de0fd79a097",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 13,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Contents continuation readable; chapter 13 and Appendices A–C.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_013.png",
+          "png_sha256": "517d9018c5cb6ada6d2398aa6ee6c24c2e87628c06336ccea4fefaf5c116b9eb",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 14,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Contents ends cleanly with Appendices D–F, closing and reference index.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_014.png",
+          "png_sha256": "cb9ada0c6f47b601afe398d383cf53c65424fd973a54133978d46b64cacde5fb",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 15,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Research Overview starts on displayed page 15 as listed; earnings table rows readable and intact.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_015.png",
+          "png_sha256": "060a895be77a56987a3a8ef6041ce6ba3c20c0868521e1167d4253307748b760",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 16,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Research Overview table continues with repeated header; Chinese company row and following text clean.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_016.png",
+          "png_sha256": "7bae1cea0b0ec818c6b95e4d91a1dd49d3e7af670ad718e4271ef7e384e48659",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 61,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "End of Chapter 2 continuation readable, footer 61/276 correct.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_061.png",
+          "png_sha256": "6d01e1e6cd536352ee9087752f33a32f8a67aa05195836614a4ad8d0ca7d23d3",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 62,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Chapter 3 begins on actual/displayed page 62 as contents states; chapter heading has sufficient body, table readable.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_062.png",
+          "png_sha256": "6076cd04c8242f87ee813edf87ef277ae2038e5e8594a5286f7d48a2316ed61b",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 83,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Chapter 3 end section and table readable; rows stay intact at page boundary.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_083.png",
+          "png_sha256": "ff1ad58c87bd82041b9e79494cfb2f94013b5b7d548d67f7ec37e75427a642ac",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 84,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Table continuation repeats header; Chapter 3 ends and Chapter 4 begins on 84 as contents states, with sufficient body.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_084.png",
+          "png_sha256": "beabd1da73b1e72c5ec2cb47f598fa58543ca45396d41abb477f693f3b9c1351",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 112,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Chapter 4 closing table and prose readable, no clipped rows.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_112.png",
+          "png_sha256": "453e39402ea1bab4480a2db0fdeb44b09f7d91ed23260c39f0e44ef72bc6372e",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 113,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Chapter 4 closing paragraphs transition to Chapter 5 on 113 as contents states; no orphan heading.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_113.png",
+          "png_sha256": "145daaa5f8226d1783307c212bd74c6d13eca7e80694a1ba1f54991f55f2453e",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 276,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Final references 340–342 readable; URLs wrap inside margins; last footer 276/276 correct.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/full/page_276.png",
+          "png_sha256": "edd1d7f4b88449440ca0ef756d34e5d5c4e8c17ddee5af907c1d1fb562601b32",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "key": "brief_en",
+      "pdf_sha256": "10beca8e374b602326ba622fe7db939e859ad06a2485493db2fadf7ee8d5124c",
+      "pdf_file": "AI泡沫研究报告/V1.9.2_配套发布_20261101/AI_Cycles_and_Bubble_Brief_EN_V1.9.2_2026-11-01.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "page_records": [
+        {
+          "page": 1,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Complete timing table and settlement rule on first page; no clipping; final thesis paragraph continues normally.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_001.png",
+          "png_sha256": "e9b627ebf0af7d8f683d1887ef3d5980a16e43aee9ab4317f47ecb13df9208c1",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 2,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Continuation and first core judgments readable; matrix definition paragraph continues normally.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_002.png",
+          "png_sha256": "865cb8483cd95259e983c8721e398e074791d3814e54a2985952e76d522ede3d",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 3,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Final rerender actually reinspected after first-column widening. Breakthroughs is now one intact word. Both row labels, column headings, all four cells and following prose remain clear, complete and within page margins; matrix stays on one page.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_003.png",
+          "png_sha256": "144a79c093d14cf5e6e123c7e5da82120d5d89a4ac127e3f7b902d088366660c",
+          "final_review_method": "Actual tools.view_image inspection of final corrected PNG."
+        },
+        {
+          "page": 4,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "China/policy core judgments and three-cloud cash evidence complete and readable.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_004.png",
+          "png_sha256": "afff608740e4be70a7659959f7801acc6c885800050ba447aac2b67a774626e1",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 5,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Cash/depreciation discussion readable. Video section title retained with several body lines, continuation normal.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_005.png",
+          "png_sha256": "e03eb196112ae43f1bc8054c2e40e59ba55fa85c85d785e30f4c1a37c7ccb767",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 6,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Video discussion and all three vendor bullets readable and complete.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_006.png",
+          "png_sha256": "4bde242c14c0cdd9f9cbc41f7eaace269b8852fe2e04d29749d20714cd05a1dd",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 7,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Coding correction, labor evidence and US cost example readable; no missing numbers or labels.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_007.png",
+          "png_sha256": "7a841a57754ed54aea74c545e69e224f6ef3d9c99422ca96a86fe4a65d836b74",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 8,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "China cost example, risk-budget caveats and other applications readable.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_008.png",
+          "png_sha256": "40b64a774ee23f7a8a399f414d92f912988b73e95fe3bc033d6235c05881874d",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        },
+        {
+          "page": 9,
+          "method": "fitz PNG rendering followed by actual tools.view_image visual inspection",
+          "status": "PASS",
+          "note": "Investment conditions and closing text complete; final footer 9/9 and cutoff note correct.",
+          "png": "AI泡沫研究报告/V1.9.2_配套发布_20261101/visual_independent_en/brief/page_009.png",
+          "png_sha256": "dd285c2b0dbb0f17058197104181dbb2d6f011ccb41b6934f68c37db9adf9bfd",
+          "final_review_method": "Actual initial image inspection retained; final PDF rerender at same scale is PNG-byte-identical."
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "findings": [
+    {
+      "id": "EN-VIS-01",
+      "status": "CLOSED",
+      "severity": "minor_layout_but_required_fix",
+      "reports": [
+        "full_en",
+        "brief_en"
+      ],
+      "pages": [
+        3
+      ],
+      "finding": "The first column of the technical-progress/recovery matrix splits breakthroughs into breakthrough and a standalone s. All text is present but the isolated glyph is an avoidable readability defect in the specifically requested focus area.",
+      "requested_fix": "Widen the first matrix column or adjust the row-label typography so breakthroughs fits as a whole word; verify the other columns and page flow after rendering.",
+      "resolution": "Confirmed visually on both final page-3 images after column widths changed to 20%/40%/40%; no isolated character, missing text, clipping or new page-flow defect."
+    }
+  ],
+  "supplementary_checks": {
+    "contents_number_link_checks": 195,
+    "contents_number_link_mismatches": 0,
+    "note": "Number/link check supplements actual inspection of all contents pages; it is not used as a substitute for visual review."
+  },
+  "limitations": "This is a targeted visual review of the specified full-report pages plus all brief pages, not a visual audit of every one of the 276 full-report pages. Normal paragraph continuation across a page is acceptable when heading and text remain together and nothing is lost.",
+  "resolution": "All requested visual pages passed after EN-VIS-01 repair. Final PDF hashes verified. Total page counts remain 276 and 9. No source or PDF modified by reviewer; only renders and this independent review record written.",
+  "rerender_comparison": {
+    "changed_pages": {
+      "full_en": [
+        3
+      ],
+      "brief_en": [
+        3
+      ]
+    },
+    "pixel_identical_pages": {
+      "full_en": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        61,
+        62,
+        83,
+        84,
+        112,
+        113,
+        276
+      ],
+      "brief_en": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "method": "Re-render each previously reviewed page at the same fitz scale and compare PNG SHA256."
+  },
+  "history": [
+    {
+      "stage": "initial_actual_visual_review",
+      "status": "FAIL",
+      "pdf_sha256": {
+        "full_en": "fc94b20bfe32388d7d32660b1005388f499a90719822fb8263289dab65397824",
+        "brief_en": "3420e25384da0207a6cdeaba96a002bf4396d16e344a855093a8a8c67d885529"
+      },
+      "finding": "EN-VIS-01: breakthroughs split into breakthrough plus isolated s in both page-3 matrix first columns."
+    },
+    {
+      "stage": "layout_repair",
+      "action": "Authoring agent widened English technical-matrix first column from 16% to 20%, with the two result columns at 40% each; source wording unchanged."
+    },
+    {
+      "stage": "final_actual_visual_recheck",
+      "status": "PASS",
+      "pages_reinspected": {
+        "full_en": [
+          3
+        ],
+        "brief_en": [
+          3
+        ]
+      },
+      "evidence": "Both corrected PNGs opened with tools.view_image; breakthroughs is intact, first-column labels and all four result cells are readable, matrix remains on a single page and subsequent text fits. All 32 previously inspected pages rerendered; only these two page-3 images changed, other 30 PNGs are byte-identical."
+    }
+  ],
+  "unresolved_findings": 0
+}

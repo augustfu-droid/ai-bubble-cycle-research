@@ -1,0 +1,1626 @@
+{
+  "version": "V1.9 English",
+  "scope": "Full report, 13 chapters, appendices A-F, overview and postscript; faithful translation, no research refresh",
+  "preview": false,
+  "pages": 272,
+  "source_chinese_pdf_sha256": "7ec82a94c77021e4b4277664317f07396b1be0a0b3e8a89e4df00f74c9120462",
+  "reference_count": 342,
+  "headings": [
+    {
+      "level": 2,
+      "text": "Research Overview: Growth Continues, but Cash Recovery Is Diverging",
+      "anchor": "h-0000"
+    },
+    {
+      "level": 3,
+      "text": "What the New Earnings Reports Change",
+      "anchor": "h-0001"
+    },
+    {
+      "level": 3,
+      "text": "Why New Applications Require Separate Research",
+      "anchor": "h-0002"
+    },
+    {
+      "level": 3,
+      "text": "How the Coding Review and Other Applications Change the Assessment",
+      "anchor": "h-0003"
+    },
+    {
+      "level": 3,
+      "text": "Financial Conditions and Subsequent Verification",
+      "anchor": "h-0004"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 1: What Is Real Money, and What Is a Valuation Game?",
+      "anchor": "h-0005"
+    },
+    {
+      "level": 3,
+      "text": "From Revenue to Cash",
+      "anchor": "h-0006"
+    },
+    {
+      "level": 3,
+      "text": "1.1 The Five Giants: Assess Operating Delivery and Cash Recovery Separately",
+      "anchor": "h-0007"
+    },
+    {
+      "level": 3,
+      "text": "1.2 From Accounting Profit to Cash Available for Use",
+      "anchor": "h-0008"
+    },
+    {
+      "level": 4,
+      "text": "1.2.1 Portfolio Revaluation: Separate It, without Calling “Noncash” “Unreal”",
+      "anchor": "h-0009"
+    },
+    {
+      "level": 4,
+      "text": "1.2.2 Depreciation: The Gap between Accounting Life and Economic Life",
+      "anchor": "h-0010"
+    },
+    {
+      "level": 4,
+      "text": "1.2.3 Free Cash Flow: Standardize the Calculation before Discussing Pressure",
+      "anchor": "h-0011"
+    },
+    {
+      "level": 4,
+      "text": "1.2.4 Rapid Profit Growth without Matching Cash: The Optical-Module Test",
+      "anchor": "h-0012"
+    },
+    {
+      "level": 4,
+      "text": "1.2.5 Overseas Optical Suppliers: Operating Improvement Can Coexist with Financing Losses",
+      "anchor": "h-0013"
+    },
+    {
+      "level": 4,
+      "text": "1.2.6 Systems and Chips: Reconstruct Adjusted Cash Item by Item",
+      "anchor": "h-0014"
+    },
+    {
+      "level": 4,
+      "text": "1.2.7 Micron: Memory Profits Have Become Cash, but End-Customer Payback Remains a Separate Question",
+      "anchor": "h-0015"
+    },
+    {
+      "level": 4,
+      "text": "1.2.8 Data-Center Delivery Starts Billing, but Not All Revenue Is Recurring Rent",
+      "anchor": "h-0016"
+    },
+    {
+      "level": 4,
+      "text": "1.2.9 Samsung and SK hynix: From Preliminary Guidance to Quarterly Cash Evidence",
+      "anchor": "h-0017"
+    },
+    {
+      "level": 4,
+      "text": "1.2.10 TSMC and ASML: Strong Cash Still Requires Separating Revaluation and Prepayments",
+      "anchor": "h-0018"
+    },
+    {
+      "level": 4,
+      "text": "1.2.11 Chinese Memory: Profits and Cash for Inventory Can Move in Opposite Directions",
+      "anchor": "h-0019"
+    },
+    {
+      "level": 4,
+      "text": "1.2.12 Tax Depreciation: Changing Cash Timing, Not Equipment's Physical Life",
+      "anchor": "h-0020"
+    },
+    {
+      "level": 4,
+      "text": "1.2.13 Intel: Separate Server Growth, PC Pressure and Adjusted Cash",
+      "anchor": "h-0021"
+    },
+    {
+      "level": 3,
+      "text": "1.3 Classifying NVIDIA's “Real Customers”",
+      "anchor": "h-0022"
+    },
+    {
+      "level": 4,
+      "text": "1.3.1 First Distinguish Three Types of Customer",
+      "anchor": "h-0023"
+    },
+    {
+      "level": 4,
+      "text": "1.3.2 Collection Timing and Cash Buffers",
+      "anchor": "h-0024"
+    },
+    {
+      "level": 4,
+      "text": "1.3.3 From Equipment Sales to Bearing Some Downstream Risk",
+      "anchor": "h-0025"
+    },
+    {
+      "level": 3,
+      "text": "1.4 Valuation: Is It Expensive Now?",
+      "anchor": "h-0026"
+    },
+    {
+      "level": 3,
+      "text": "1.5 Comparing Six Major Historical Bubbles",
+      "anchor": "h-0027"
+    },
+    {
+      "level": 4,
+      "text": "1.5.1 Comparison Table: Compare Mechanisms, Not Average Drawdowns",
+      "anchor": "h-0028"
+    },
+    {
+      "level": 4,
+      "text": "1.5.2 The South Sea Bubble: Financing Capacity Is Not Business Return",
+      "anchor": "h-0029"
+    },
+    {
+      "level": 4,
+      "text": "1.5.3 Railway Mania: The Right Technology Can Still Have the Wrong Capital Budget",
+      "anchor": "h-0030"
+    },
+    {
+      "level": 4,
+      "text": "1.5.4 1929: Distinguish Valuation Losses from Financing Failure",
+      "anchor": "h-0031"
+    },
+    {
+      "level": 4,
+      "text": "1.5.5 Japan's Bubble: Why Balance-Sheet Repair Slows Investment",
+      "anchor": "h-0032"
+    },
+    {
+      "level": 4,
+      "text": "1.5.6 The Internet: Orders, Inventory and Revenue Can Suddenly Diverge",
+      "anchor": "h-0033"
+    },
+    {
+      "level": 4,
+      "text": "1.5.7 Subprime: Transferring Risk Does Not Eliminate It",
+      "anchor": "h-0034"
+    },
+    {
+      "level": 4,
+      "text": "1.5.8 Broader Comparison: A Current Checklist from Historical Cases",
+      "anchor": "h-0035"
+    },
+    {
+      "level": 4,
+      "text": "1.5.9 Three Adjustment Paths, Not One Crash Timetable",
+      "anchor": "h-0036"
+    },
+    {
+      "level": 4,
+      "text": "1.5.10 AI versus 2000: Buffers and Risks Coexist",
+      "anchor": "h-0037"
+    },
+    {
+      "level": 4,
+      "text": "1.5.11 AI's Resemblance to Railways: Even One Facility Needs Layered Valuation",
+      "anchor": "h-0038"
+    },
+    {
+      "level": 3,
+      "text": "1.6 The Next Earnings Report: Completing the Cash Bridge",
+      "anchor": "h-0039"
+    },
+    {
+      "level": 3,
+      "text": "1.7 Countercase Table - Where This Report Is Most Likely to Be Wrong",
+      "anchor": "h-0040"
+    },
+    {
+      "level": 3,
+      "text": "1.8 Where I May Be Wrong",
+      "anchor": "h-0041"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 2: The Capital Circulation Network - How Investment, Procurement, Financing and Guarantees Connect",
+      "anchor": "h-0042"
+    },
+    {
+      "level": 3,
+      "text": "Who Still Bears Risk after a Sale?",
+      "anchor": "h-0043"
+    },
+    {
+      "level": 3,
+      "text": "2.1 Three Major Networks of Circular Relationships",
+      "anchor": "h-0044"
+    },
+    {
+      "level": 4,
+      "text": "2.1.1 Equity and Commercial Contracts: Two Lines in Opposite Directions",
+      "anchor": "h-0045"
+    },
+    {
+      "level": 4,
+      "text": "2.1.2 Project Financing: Equipment and Contracts Jointly Support Borrowing",
+      "anchor": "h-0046"
+    },
+    {
+      "level": 4,
+      "text": "2.1.3 Guarantees and Offtake: Financing Risk Returns to Suppliers",
+      "anchor": "h-0047"
+    },
+    {
+      "level": 3,
+      "text": "2.2 Key Transactions: Separate Executed and Unexecuted Arrangements",
+      "anchor": "h-0048"
+    },
+    {
+      "level": 3,
+      "text": "2.3 Classifying Transactions: Why Amounts Cannot Simply Be Added",
+      "anchor": "h-0049"
+    },
+    {
+      "level": 4,
+      "text": "2.3.1 Five Types of Obligation Use Different Measurements",
+      "anchor": "h-0050"
+    },
+    {
+      "level": 4,
+      "text": "2.3.2 Following Cash Transactions Does Not Mean Tracing the Same Banknote",
+      "anchor": "h-0051"
+    },
+    {
+      "level": 4,
+      "text": "2.3.3 Minimum Requirements for the Underlying Dataset",
+      "anchor": "h-0052"
+    },
+    {
+      "level": 3,
+      "text": "2.4 Risk Concentrations in Contracts and Financing",
+      "anchor": "h-0053"
+    },
+    {
+      "level": 4,
+      "text": "2.4.1 CoreWeave: Beyond Equity Support, Renewal Risk Enters Debt Structures",
+      "anchor": "h-0054"
+    },
+    {
+      "level": 4,
+      "text": "2.4.2 OpenAI - Oracle - NVIDIA: Revenue Visibility Tied to Construction Credit",
+      "anchor": "h-0055"
+    },
+    {
+      "level": 4,
+      "text": "2.4.3 AMD - OpenAI/Meta: Warrant Incentives Cannot Become Cash at Target Share Prices",
+      "anchor": "h-0056"
+    },
+    {
+      "level": 4,
+      "text": "2.4.4 Micron: Committed Purchases and Customer Deposits Are Not the Same Revenue",
+      "anchor": "h-0057"
+    },
+    {
+      "level": 4,
+      "text": "2.4.5 Akamai and Anthropic: Seven-Year Contract Revenue Follows Construction",
+      "anchor": "h-0058"
+    },
+    {
+      "level": 3,
+      "text": "2.5 Revenue Provenance and Entity-by-Entity Cash Models",
+      "anchor": "h-0059"
+    },
+    {
+      "level": 4,
+      "text": "2.5.1 No Natural One-to-One Relationship Exists among Four Revenue Layers",
+      "anchor": "h-0060"
+    },
+    {
+      "level": 4,
+      "text": "2.5.2 Reconstruct Funding Bridges by Entity",
+      "anchor": "h-0061"
+    },
+    {
+      "level": 4,
+      "text": "2.5.3 NVIDIA's Commitments: Classification Gives Large Numbers Meaning",
+      "anchor": "h-0062"
+    },
+    {
+      "level": 3,
+      "text": "2.6 From Telecom History to Credit and Financing Windows",
+      "anchor": "h-0063"
+    },
+    {
+      "level": 4,
+      "text": "2.6.1 Comparison with the Telecom Equipment Cycle around 2000",
+      "anchor": "h-0064"
+    },
+    {
+      "level": 4,
+      "text": "2.6.2 Credit Markets: Retain Spread Signals without Inventing a Causal Clock",
+      "anchor": "h-0065"
+    },
+    {
+      "level": 4,
+      "text": "2.6.3 IPOs: A Financing Window Is a Variable, Not a Fixed Timetable",
+      "anchor": "h-0066"
+    },
+    {
+      "level": 3,
+      "text": "2.7 Anthropic: Public Filing Finally Separates Financing from Procurement",
+      "anchor": "h-0067"
+    },
+    {
+      "level": 4,
+      "text": "2.7.1 Private Valuation, Annualized Pace and Realized Revenue",
+      "anchor": "h-0068"
+    },
+    {
+      "level": 4,
+      "text": "2.7.2 More Partners Require Separating Supply from Capital Risk",
+      "anchor": "h-0069"
+    },
+    {
+      "level": 4,
+      "text": "2.7.3 Amazon Portfolio Revaluation Updated through Q3: Keep Operations and Investment Separate",
+      "anchor": "h-0070"
+    },
+    {
+      "level": 4,
+      "text": "2.7.4 Commercialization Must Be Tested beyond Nominal Valuation",
+      "anchor": "h-0071"
+    },
+    {
+      "level": 3,
+      "text": "2.8 Alphabet Financing: From Initial Plan to Actual Execution",
+      "anchor": "h-0072"
+    },
+    {
+      "level": 4,
+      "text": "2.8.1 The Initial 80 Plan Was Real; ATM Execution Began in Q3",
+      "anchor": "h-0073"
+    },
+    {
+      "level": 4,
+      "text": "2.8.2 More External Financing Does Not Mean Imminent Cash Failure",
+      "anchor": "h-0074"
+    },
+    {
+      "level": 4,
+      "text": "2.8.3 Berkshire Participation Is Not Sufficient Evidence of Circular Dealing",
+      "anchor": "h-0075"
+    },
+    {
+      "level": 3,
+      "text": "2.9 Overall Event Assessment: Where Risk Moves, Not Just Larger Amounts",
+      "anchor": "h-0076"
+    },
+    {
+      "level": 4,
+      "text": "2.9.1 Meta El Paso: Equity Share Is Not Risk Share",
+      "anchor": "h-0077"
+    },
+    {
+      "level": 4,
+      "text": "2.9.2 Construction, Power and Chips: Different Degrees of Commitment",
+      "anchor": "h-0078"
+    },
+    {
+      "level": 4,
+      "text": "2.9.3 Conclusions with Evidence, and Conclusions Still without It",
+      "anchor": "h-0079"
+    },
+    {
+      "level": 3,
+      "text": "2.10 Where I May Be Wrong",
+      "anchor": "h-0080"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 3: How AI Makes Money - The Monetization Landscape and Coding TAM",
+      "anchor": "h-0081"
+    },
+    {
+      "level": 3,
+      "text": "Chapter Map and Chain of Reasoning",
+      "anchor": "h-0082"
+    },
+    {
+      "level": 3,
+      "text": "3.1 14 Monetization Domains: Identify Payers and Billing Units First",
+      "anchor": "h-0083"
+    },
+    {
+      "level": 3,
+      "text": "3.2 Cloud and Advertising: Mature Billing Channels, Not Entirely AI Revenue",
+      "anchor": "h-0084"
+    },
+    {
+      "level": 4,
+      "text": "3.2.1 Actual Cloud-Segment Revenue and AI-Specific Disclosures",
+      "anchor": "h-0085"
+    },
+    {
+      "level": 4,
+      "text": "3.2.2 Two Forms of AI Advertising Monetization",
+      "anchor": "h-0086"
+    },
+    {
+      "level": 3,
+      "text": "3.3 Models and Enterprise Subscriptions: Public Statements Begin Testing Annualized-Revenue Narratives",
+      "anchor": "h-0087"
+    },
+    {
+      "level": 4,
+      "text": "3.3.1 Distinguish Three Kinds of “Annual Revenue”",
+      "anchor": "h-0088"
+    },
+    {
+      "level": 4,
+      "text": "3.3.2 Why Billing Growth Still Does Not Prove Unit Economics",
+      "anchor": "h-0089"
+    },
+    {
+      "level": 4,
+      "text": "3.3.3 Gross versus Net Cloud-Channel Recognition Does Not Determine Whether Profits Are Real",
+      "anchor": "h-0090"
+    },
+    {
+      "level": 3,
+      "text": "3.4 Coding TAM: Review the Old Forecast before Rebuilding Billing Boundaries",
+      "anchor": "h-0091"
+    },
+    {
+      "level": 4,
+      "text": "3.4.1 Population Base and Actual Billing Boundaries",
+      "anchor": "h-0092"
+    },
+    {
+      "level": 4,
+      "text": "3.4.2 Seat Sensitivity: Population × Penetration × Price",
+      "anchor": "h-0093"
+    },
+    {
+      "level": 4,
+      "text": "3.4.3 Expanded Model: Do Not Count Seats and the Same Usage Twice",
+      "anchor": "h-0094"
+    },
+    {
+      "level": 4,
+      "text": "3.4.4 Current Competitive Evidence and Valuation Methods",
+      "anchor": "h-0095"
+    },
+    {
+      "level": 4,
+      "text": "3.4.5 Productivity: Individual Impressions Cannot Directly Become TAM",
+      "anchor": "h-0096"
+    },
+    {
+      "level": 4,
+      "text": "3.4.6 Expanding Software Demand Can Coexist with Job Displacement",
+      "anchor": "h-0097"
+    },
+    {
+      "level": 4,
+      "text": "3.4.7 From Task Substitution to Team Change: What Lies Between?",
+      "anchor": "h-0098"
+    },
+    {
+      "level": 4,
+      "text": "3.4.8 Hours, Capacity and Cash Belong in Separate Accounts",
+      "anchor": "h-0099"
+    },
+    {
+      "level": 4,
+      "text": "3.4.9 Latest Organizational Evidence and Two Cash Outcomes",
+      "anchor": "h-0100"
+    },
+    {
+      "level": 3,
+      "text": "3.5 Beyond Coding: Find Renewable Demand in Workflows",
+      "anchor": "h-0101"
+    },
+    {
+      "level": 4,
+      "text": "3.5.1 Customer Service and CRM: Outcomes and Changing Measurements",
+      "anchor": "h-0102"
+    },
+    {
+      "level": 4,
+      "text": "3.5.2 Legal and Financial Research: Ability to Pay Comes from Responsibility and Content",
+      "anchor": "h-0103"
+    },
+    {
+      "level": 4,
+      "text": "3.5.3 Audio and Content: Model Subscription Growth alongside Rights Costs",
+      "anchor": "h-0104"
+    },
+    {
+      "level": 4,
+      "text": "3.5.4 Healthcare, Education and the Physical World: Value Takes Longer to Establish",
+      "anchor": "h-0105"
+    },
+    {
+      "level": 4,
+      "text": "3.5.5 Consumer Apps and Chinese Mixed Segments: Revenue Growth Does Not Ensure Continued Operation",
+      "anchor": "h-0106"
+    },
+    {
+      "level": 3,
+      "text": "3.6 Three Layers of Global CapEx and Asset Recovery",
+      "anchor": "h-0107"
+    },
+    {
+      "level": 4,
+      "text": "3.6.1 Endpoint Revenue Cannot Directly Yield Capital-Recovery Rates",
+      "anchor": "h-0108"
+    },
+    {
+      "level": 4,
+      "text": "3.6.2 Use Project or Asset-Cohort Cash Flows Instead",
+      "anchor": "h-0109"
+    },
+    {
+      "level": 3,
+      "text": "3.7 API Pricing and Revenue Equations: Price Cuts, Usage and Cost per Successful Task",
+      "anchor": "h-0110"
+    },
+    {
+      "level": 4,
+      "text": "3.7.1 Disclosed Rates by Product, Observation Date and Context Tier",
+      "anchor": "h-0111"
+    },
+    {
+      "level": 4,
+      "text": "3.7.2 Discrete Growth Must Retain the Cross-Term",
+      "anchor": "h-0112"
+    },
+    {
+      "level": 4,
+      "text": "3.7.3 Recalculating an API Bill",
+      "anchor": "h-0113"
+    },
+    {
+      "level": 3,
+      "text": "3.8 Unit Economics and Customer ROI: Separate Profit, Cash and Value",
+      "anchor": "h-0114"
+    },
+    {
+      "level": 4,
+      "text": "3.8.1 Application Revenue and Gross-Profit Bridge",
+      "anchor": "h-0115"
+    },
+    {
+      "level": 4,
+      "text": "3.8.2 Is Paying Worthwhile for the Customer?",
+      "anchor": "h-0116"
+    },
+    {
+      "level": 4,
+      "text": "3.8.3 From Gross Profit to Capital Returns",
+      "anchor": "h-0117"
+    },
+    {
+      "level": 3,
+      "text": "3.9 Verification Checklist for the Rest of 2026 and 2027",
+      "anchor": "h-0118"
+    },
+    {
+      "level": 3,
+      "text": "3.10 Where I May Be Wrong",
+      "anchor": "h-0119"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 4: AI Video Microdramas - From Viewing Demand to Model Profits and Compute Capital Recovery",
+      "anchor": "h-0120"
+    },
+    {
+      "level": 3,
+      "text": "4.1 First Separate Three Businesses",
+      "anchor": "h-0121"
+    },
+    {
+      "level": 3,
+      "text": "4.2 How to Interpret “Longer Than Films”",
+      "anchor": "h-0122"
+    },
+    {
+      "level": 3,
+      "text": "4.3 The Market Is Expanding, but No Single Figure Represents the “Total China-US AI Microdrama Market”",
+      "anchor": "h-0123"
+    },
+    {
+      "level": 3,
+      "text": "4.4 China: Free Distribution and Industrialized Content Production Are Beginning to Produce Financially Checkable Examples",
+      "anchor": "h-0124"
+    },
+    {
+      "level": 3,
+      "text": "4.5 United States: New Evidence of Willingness to Pay Is Closer to Users - and Easier to Overinterpret",
+      "anchor": "h-0125"
+    },
+    {
+      "level": 3,
+      "text": "4.6 Video Models Have Entered Production, but They Are Not Text Models under Another Name",
+      "anchor": "h-0126"
+    },
+    {
+      "level": 3,
+      "text": "4.7 Actual Pricing: Consumer Memberships, API List Prices, and Enterprise Net Prices Are Three Different Accounts",
+      "anchor": "h-0127"
+    },
+    {
+      "level": 3,
+      "text": "4.8 MiniMax: Video Is Already a Commercial Pillar, but the Group's Revenue Mix Is Changing",
+      "anchor": "h-0128"
+    },
+    {
+      "level": 3,
+      "text": "4.9 Kling and ByteDance: Similar Video Capabilities, Different Paths to Profit",
+      "anchor": "h-0129"
+    },
+    {
+      "level": 3,
+      "text": "4.10 Named Production Chains: Are Models Used in the Finished Production or in Promotional Material?",
+      "anchor": "h-0130"
+    },
+    {
+      "level": 3,
+      "text": "4.11 From IP to Cash: Five Stages, Five Allocations of Value",
+      "anchor": "h-0131"
+    },
+    {
+      "level": 3,
+      "text": "4.12 How Much Does a 120-Minute Microdrama Actually Generate for a Model Vendor?",
+      "anchor": "h-0132"
+    },
+    {
+      "level": 3,
+      "text": "4.13 Three Purely Hypothetical Illustrations: How Rework, Acquisition, and Payment Terms Redistribute Cost Savings",
+      "anchor": "h-0133"
+    },
+    {
+      "level": 3,
+      "text": "4.14 Look for AI Opportunities across the Complete Workflow First",
+      "anchor": "h-0134"
+    },
+    {
+      "level": 3,
+      "text": "4.15 A Moat Is What Remains after Others Copy the Workflow, Not Simply the Ability to Use Models",
+      "anchor": "h-0135"
+    },
+    {
+      "level": 3,
+      "text": "4.16 Platform and Listed-Company Exposure: Verify Ownership before Discussing Value",
+      "anchor": "h-0136"
+    },
+    {
+      "level": 3,
+      "text": "4.17 Copyright and Regulation Belong in the Cost Schedule, Not in an Appendix Disclaimer",
+      "anchor": "h-0137"
+    },
+    {
+      "level": 3,
+      "text": "4.18 The Strongest Counterargument: Cheaper Content May Make Profits Harder to Earn",
+      "anchor": "h-0138"
+    },
+    {
+      "level": 3,
+      "text": "4.19 Price Cuts, Efficiency, and Demand Elasticity: What Determines Upstream Benefits?",
+      "anchor": "h-0139"
+    },
+    {
+      "level": 3,
+      "text": "4.20 Implications for the AI Bubble Thesis: What Should Be Upgraded, and What Would Overturn the Judgment?",
+      "anchor": "h-0140"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 5: AI Coding - Labor Displacement, Customer Costs, and Market Reassessment",
+      "anchor": "h-0141"
+    },
+    {
+      "level": 3,
+      "text": "5.1 Restore the Original Draft First; Do Not Replace the Forecast Target after the Fact",
+      "anchor": "h-0142"
+    },
+    {
+      "level": 3,
+      "text": "5.2 User Denominators: Occupational Populations, Accounts, Active Users, and Payers Are Not Interchangeable",
+      "anchor": "h-0143"
+    },
+    {
+      "level": 3,
+      "text": "5.3 What Have Five Product Categories Actually Disclosed by the Observation Date?",
+      "anchor": "h-0144"
+    },
+    {
+      "level": 3,
+      "text": "5.4 Claim-by-Claim Judgments: What Holds and What Must Be Withdrawn",
+      "anchor": "h-0145"
+    },
+    {
+      "level": 3,
+      "text": "5.5 Set the Boundary before Reassessment: Count Each Dollar of End-Customer Spending Once",
+      "anchor": "h-0146"
+    },
+    {
+      "level": 3,
+      "text": "5.6 A Market Model That Can Be Updated Quarterly",
+      "anchor": "h-0147"
+    },
+    {
+      "level": 3,
+      "text": "5.7 What Does AI Actually Replace? Decompose Work before Discussing Jobs",
+      "anchor": "h-0148"
+    },
+    {
+      "level": 3,
+      "text": "5.8 Experiments and Organizational Data: Capability Gains Are Visible, but Benefits Attenuate through the Workflow",
+      "anchor": "h-0149"
+    },
+    {
+      "level": 3,
+      "text": "5.9 Have Jobs Already Declined? Hiring Entry Points Tell Us More Than Layoff Lists",
+      "anchor": "h-0150"
+    },
+    {
+      "level": 3,
+      "text": "5.10 Chinese and US Cost Denominators: Wages, Full Employment Costs, and Avoidable Expenditure",
+      "anchor": "h-0151"
+    },
+    {
+      "level": 3,
+      "text": "5.11 The Customer ROI Bridge: From a Minute Saved to a Dollar Actually Not Paid",
+      "anchor": "h-0152"
+    },
+    {
+      "level": 3,
+      "text": "5.12 Complete Accounts for Two Small Teams: Similar Coding Capability, Opposite Cash Outcomes",
+      "anchor": "h-0153"
+    },
+    {
+      "level": 3,
+      "text": "5.13 How Much Demand Will Return? Prices, Output, and Jobs Need a Joint Model",
+      "anchor": "h-0154"
+    },
+    {
+      "level": 3,
+      "text": "5.14 Who Captures the Wages Saved? Positive Customer ROI Does Not Guarantee a Good Supplier Business",
+      "anchor": "h-0155"
+    },
+    {
+      "level": 3,
+      "text": "5.15 The Next 12-24 Months: Which Judgments Have Support, and How Would We Know They Are Wrong?",
+      "anchor": "h-0156"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 6: AI Applications - From Adoption to Cash Recovery",
+      "anchor": "h-0157"
+    },
+    {
+      "level": 3,
+      "text": "6.1 Which Judgments Should Change in This Review?",
+      "anchor": "h-0158"
+    },
+    {
+      "level": 3,
+      "text": "6.2 First Separate Five Kinds of Evidence",
+      "anchor": "h-0159"
+    },
+    {
+      "level": 3,
+      "text": "6.3 Application Commercialization Matrix: Who Pays, and How Far Does the Evidence Go?",
+      "anchor": "h-0160"
+    },
+    {
+      "level": 3,
+      "text": "6.4 Case One: Office Software and Enterprise Agents Have Payers, but Suites and Renamed Metrics Require Care",
+      "anchor": "h-0161"
+    },
+    {
+      "level": 3,
+      "text": "6.5 Search Advertising, E-commerce, and Vertical Information: Cash Entry Points and Attribution Problems",
+      "anchor": "h-0162"
+    },
+    {
+      "level": 3,
+      "text": "6.6 Case Two: Character.ai - Revenue Growth Can Coexist with Unsustainable Operations",
+      "anchor": "h-0163"
+    },
+    {
+      "level": 3,
+      "text": "6.7 Case Three: Duolingo - A Paid Product Can Be Profitable while AI Features' Contribution Remains Separate",
+      "anchor": "h-0164"
+    },
+    {
+      "level": 3,
+      "text": "6.8 Case Four: Healthcare - Documentation, Testing, Data Licensing, and Drug Sales Are Different Businesses",
+      "anchor": "h-0165"
+    },
+    {
+      "level": 3,
+      "text": "6.9 Case Five: Autonomous Driving and Industry - Billing and Deployment Exist; Capital Recovery Is a Separate Calculation",
+      "anchor": "h-0166"
+    },
+    {
+      "level": 3,
+      "text": "6.10 Reviewing Earlier Market Estimates: Direction Can Be Right while the Revenue Denominator Is Wrong",
+      "anchor": "h-0167"
+    },
+    {
+      "level": 3,
+      "text": "6.11 Which Opportunities Merit Further Tracking, and What Would Make the Judgments Fail?",
+      "anchor": "h-0168"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 7: When Will AGI Arrive?",
+      "anchor": "h-0169"
+    },
+    {
+      "level": 3,
+      "text": "7.1 How to Read Laboratory Timetables",
+      "anchor": "h-0170"
+    },
+    {
+      "level": 3,
+      "text": "7.2 Scaling: From \"More Compute\" to \"What Does Delivering the Same Result Cost?\"",
+      "anchor": "h-0171"
+    },
+    {
+      "level": 3,
+      "text": "7.3 Defining AGI: Capability, Generality and Autonomy Are Not Interchangeable",
+      "anchor": "h-0172"
+    },
+    {
+      "level": 3,
+      "text": "7.4 How Compute, Electricity and Data Constrain, Rather Than Determine, the Timetable",
+      "anchor": "h-0173"
+    },
+    {
+      "level": 3,
+      "text": "7.5 From Technology Timetable to Valuation: Discount Only Affected Cash Flows",
+      "anchor": "h-0174"
+    },
+    {
+      "level": 3,
+      "text": "7.6 Where I May Be Wrong",
+      "anchor": "h-0175"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 8: How Will AI Reshape the International Order?",
+      "anchor": "h-0176"
+    },
+    {
+      "level": 3,
+      "text": "8.1 The China-US Model Gap: Fix the Measuring Scale Before Discussing Catch-Up",
+      "anchor": "h-0177"
+    },
+    {
+      "level": 3,
+      "text": "8.2 Sovereign AI: Compare Actual Capability, Rather Than Add Announced Amounts",
+      "anchor": "h-0178"
+    },
+    {
+      "level": 3,
+      "text": "8.3 Military and Security: Three Evidence Layers of Procurement Demand, Deployable Capability and Operational Results",
+      "anchor": "h-0179"
+    },
+    {
+      "level": 3,
+      "text": "8.4 Employment Effects: Young Workers, Hiring Changes and Causal Boundaries",
+      "anchor": "h-0180"
+    },
+    {
+      "level": 3,
+      "text": "8.5 The Energy Landscape: Use the IEA 2026 Update and Separate Demand from Investment Returns",
+      "anchor": "h-0181"
+    },
+    {
+      "level": 3,
+      "text": "8.6 From Currency to Institutions: What Gives Countries Bargaining Power?",
+      "anchor": "h-0182"
+    },
+    {
+      "level": 3,
+      "text": "8.7 Models and Hardware: Retain the Two Curves as a Testable Framework",
+      "anchor": "h-0183"
+    },
+    {
+      "level": 3,
+      "text": "8.8 Export Controls: Update Legal and Commercial Facts Without Turning Rumors into Rules",
+      "anchor": "h-0184"
+    },
+    {
+      "level": 3,
+      "text": "8.9 Where I May Be Wrong",
+      "anchor": "h-0185"
+    },
+    {
+      "level": 3,
+      "text": "8.10 Source Index for Technology and International Topics",
+      "anchor": "h-0186"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 9: Core Implications for Chinese Investors",
+      "anchor": "h-0187"
+    },
+    {
+      "level": 3,
+      "text": "9.1 Identify the Cycle Through Operating Conditions",
+      "anchor": "h-0188"
+    },
+    {
+      "level": 4,
+      "text": "9.1.1 If the Investment Cycle Lasts Longer Than Expected",
+      "anchor": "h-0189"
+    },
+    {
+      "level": 3,
+      "text": "9.2 Transmission to A-Shares Requires Item-by-Item Analysis",
+      "anchor": "h-0190"
+    },
+    {
+      "level": 4,
+      "text": "Optical Modules: Calculate Profit Growth and Cash Tied Up Separately",
+      "anchor": "h-0191"
+    },
+    {
+      "level": 4,
+      "text": "Optical Modules: Order Visibility Still Cannot Replace a Cash Flow Statement",
+      "anchor": "h-0192"
+    },
+    {
+      "level": 4,
+      "text": "Memory and Storage: Assess Quarterly Improvement and Cumulative Cash Tied Up Separately",
+      "anchor": "h-0193"
+    },
+    {
+      "level": 3,
+      "text": "9.3 Transmission Through Coding Tools and Software Companies",
+      "anchor": "h-0194"
+    },
+    {
+      "level": 3,
+      "text": "9.4 Customer Concentration and Financing Exposure",
+      "anchor": "h-0195"
+    },
+    {
+      "level": 3,
+      "text": "9.5 How Company Valuation Carries Through the Industry Judgment",
+      "anchor": "h-0196"
+    },
+    {
+      "level": 3,
+      "text": "9.6 Cross-Border Instruments: Channel Rules Cannot Replace Research",
+      "anchor": "h-0197"
+    },
+    {
+      "level": 3,
+      "text": "9.7 What Evidence Is Needed After the Cutoff?",
+      "anchor": "h-0198"
+    },
+    {
+      "level": 3,
+      "text": "9.8 Attributing Policy Shocks",
+      "anchor": "h-0199"
+    },
+    {
+      "level": 3,
+      "text": "9.9 Where This Chapter May Be Wrong",
+      "anchor": "h-0200"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 10: Company Divergence - Operating Resilience Does Not Mean Valuation Safety",
+      "anchor": "h-0201"
+    },
+    {
+      "level": 3,
+      "text": "10.1 Group by Business Model, Without Predetermining Companies' Outcomes",
+      "anchor": "h-0202"
+    },
+    {
+      "level": 3,
+      "text": "10.2 Break the Financial Statements into Five Small Tables",
+      "anchor": "h-0203"
+    },
+    {
+      "level": 3,
+      "text": "10.3 The Bridge from Enterprise Value to Equity Value",
+      "anchor": "h-0204"
+    },
+    {
+      "level": 4,
+      "text": "10.3.1 The Vertiv Case: Establish Actual Results and Company Guidance First",
+      "anchor": "h-0205"
+    },
+    {
+      "level": 4,
+      "text": "10.3.2 Where Cash Is Strong, and How Much Can Recur",
+      "anchor": "h-0206"
+    },
+    {
+      "level": 4,
+      "text": "10.3.3 From an Earnings Anchor to Valuation Inputs, Without Premature Price Targets",
+      "anchor": "h-0207"
+    },
+    {
+      "level": 3,
+      "text": "10.4 Can Growth Offset Multiple Compression?",
+      "anchor": "h-0208"
+    },
+    {
+      "level": 3,
+      "text": "10.5 What Historical Comparisons Can Establish",
+      "anchor": "h-0209"
+    },
+    {
+      "level": 3,
+      "text": "10.6 Evidence That Would Change This Chapter's Conclusion",
+      "anchor": "h-0210"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 11: Judge Operations, Capital Recovery and Financial Conditions Separately",
+      "anchor": "h-0211"
+    },
+    {
+      "level": 3,
+      "text": "11.1 Six Dimensions: Stop Substituting the Number of Red Lights for a Model",
+      "anchor": "h-0212"
+    },
+    {
+      "level": 4,
+      "text": "How Current Evidence Enters the Next Judgment",
+      "anchor": "h-0213"
+    },
+    {
+      "level": 3,
+      "text": "11.2 Current Combined Judgment and Opposing Evidence",
+      "anchor": "h-0214"
+    },
+    {
+      "level": 3,
+      "text": "11.3 Scenario Definitions and Evidence Thresholds",
+      "anchor": "h-0215"
+    },
+    {
+      "level": 3,
+      "text": "11.4 How Judgments Are Scored and Corrected",
+      "anchor": "h-0216"
+    },
+    {
+      "level": 3,
+      "text": "11.5 What Evidence That Could Overturn This Report Is Still Missing?",
+      "anchor": "h-0217"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 12: Risk-Transmission Scenarios - From Operating Deviations to Asset Repricing",
+      "anchor": "h-0218"
+    },
+    {
+      "level": 3,
+      "text": "12.1 Identify the Starting Point Before Combining Different Shocks into One Crisis",
+      "anchor": "h-0219"
+    },
+    {
+      "level": 3,
+      "text": "12.2 Path One: Customer Budgets Weaken First, Without Immediate Deterioration in Financial Statements",
+      "anchor": "h-0220"
+    },
+    {
+      "level": 3,
+      "text": "12.3 Path Two: Demand Keeps Growing While Older Assets Earn Less",
+      "anchor": "h-0221"
+    },
+    {
+      "level": 3,
+      "text": "12.4 Path Three: Refinancing Stops Cushioning the Problem, Turning Operating Stress into Payment Stress",
+      "anchor": "h-0222"
+    },
+    {
+      "level": 3,
+      "text": "12.5 How Risk Passes Through the Three Financial Statements",
+      "anchor": "h-0223"
+    },
+    {
+      "level": 3,
+      "text": "12.6 From Companies to Stocks to Indices: Make the Arithmetic Reconcile",
+      "anchor": "h-0224"
+    },
+    {
+      "level": 3,
+      "text": "12.7 When an Industry Adjustment Becomes Macroeconomic Reinforcement",
+      "anchor": "h-0225"
+    },
+    {
+      "level": 3,
+      "text": "12.8 Leading, Coincident and Lagging: Update on Evidence, Not a Scenario's Timetable",
+      "anchor": "h-0226"
+    },
+    {
+      "level": 2,
+      "text": "Chapter 13: Delay and Absorption - What Does the Extra Time Actually Change?",
+      "anchor": "h-0227"
+    },
+    {
+      "level": 3,
+      "text": "13.1 Four Delays, Four Different Cash Statements",
+      "anchor": "h-0228"
+    },
+    {
+      "level": 3,
+      "text": "13.2 How Delay Amplifies Risk: Time Itself Is Not the Problem",
+      "anchor": "h-0229"
+    },
+    {
+      "level": 3,
+      "text": "13.3 Delay Can Also Help Absorption: Loss-Bearing and Additional Options Are Key",
+      "anchor": "h-0230"
+    },
+    {
+      "level": 3,
+      "text": "13.4 A Reproducible Model of Waiting",
+      "anchor": "h-0231"
+    },
+    {
+      "level": 3,
+      "text": "13.5 How Current Project Evidence Constrains the Delay Narrative",
+      "anchor": "h-0232"
+    },
+    {
+      "level": 3,
+      "text": "13.6 Why Electricity, Policy and Technology Narratives Change the Length of the Wait",
+      "anchor": "h-0233"
+    },
+    {
+      "level": 3,
+      "text": "13.7 Constraints from History, Not \"A Later Burst Must Mean a Bigger Fall\"",
+      "anchor": "h-0234"
+    },
+    {
+      "level": 3,
+      "text": "13.8 Use a Project Table to Judge Absorption Versus Continued Accumulation",
+      "anchor": "h-0235"
+    },
+    {
+      "level": 2,
+      "text": "Appendix A: Research Framework and Methodology",
+      "anchor": "h-0236"
+    },
+    {
+      "level": 3,
+      "text": "A Framework for Studying the AI Industry Cycle: Financing Links, Physical Delivery and Capital Recovery",
+      "anchor": "h-0237"
+    },
+    {
+      "level": 3,
+      "text": "I. Research Methodology",
+      "anchor": "h-0238"
+    },
+    {
+      "level": 4,
+      "text": "Label Evidence Sources Separately from the Nature of Claims",
+      "anchor": "h-0239"
+    },
+    {
+      "level": 4,
+      "text": "Separate Financial Substance before Aggregating Exposure",
+      "anchor": "h-0240"
+    },
+    {
+      "level": 3,
+      "text": "II. Financing Networks: From “Large Numbers” to Cash Dependence and Contingent Obligations",
+      "anchor": "h-0241"
+    },
+    {
+      "level": 4,
+      "text": "Linked Structures Do Not Mean False Transactions",
+      "anchor": "h-0242"
+    },
+    {
+      "level": 4,
+      "text": "Two Verified Cases: Guarantees and Warrants Are Not Cash Investment",
+      "anchor": "h-0243"
+    },
+    {
+      "level": 4,
+      "text": "Three Risk Concentrations",
+      "anchor": "h-0244"
+    },
+    {
+      "level": 4,
+      "text": "What to Retain from Telecom-Equipment Financing Comparisons",
+      "anchor": "h-0245"
+    },
+    {
+      "level": 3,
+      "text": "III. The Physical Supply Chain: Deliverable Capacity Explains Revenue Timing",
+      "anchor": "h-0246"
+    },
+    {
+      "level": 4,
+      "text": "HBM and Packaging: Different Denominators Are Not Interchangeable",
+      "anchor": "h-0247"
+    },
+    {
+      "level": 4,
+      "text": "Power Constraints: Units and Geographic Boundaries",
+      "anchor": "h-0248"
+    },
+    {
+      "level": 4,
+      "text": "Advanced Packaging: From “Industry-Wide Queues” to Technology-Specific Delivery",
+      "anchor": "h-0249"
+    },
+    {
+      "level": 3,
+      "text": "IV. Three-Layer CapEx Analysis and Cash-Recovery Models",
+      "anchor": "h-0250"
+    },
+    {
+      "level": 4,
+      "text": "Three Layers and Deduplication",
+      "anchor": "h-0251"
+    },
+    {
+      "level": 4,
+      "text": "TAM Is Demand Potential, Not Cash Belonging to Investors",
+      "anchor": "h-0252"
+    },
+    {
+      "level": 4,
+      "text": "Returns Must Be Calculated from Periodic Cash Flows",
+      "anchor": "h-0253"
+    },
+    {
+      "level": 4,
+      "text": "Assess Cash Gaps, RPO and Depreciation Separately",
+      "anchor": "h-0254"
+    },
+    {
+      "level": 3,
+      "text": "V. Using the Framework and Recognizing Its Limits",
+      "anchor": "h-0255"
+    },
+    {
+      "level": 4,
+      "text": "Preserve Three Possibilities in One Monitoring Table",
+      "anchor": "h-0256"
+    },
+    {
+      "level": 4,
+      "text": "Scope and Missing Evidence",
+      "anchor": "h-0257"
+    },
+    {
+      "level": 2,
+      "text": "Appendix B: Cross-Border Channels and Instrument Boundaries",
+      "anchor": "h-0258"
+    },
+    {
+      "level": 3,
+      "text": "I. Channels Before Products: Four Arrangements Are Not One Offshore Account",
+      "anchor": "h-0259"
+    },
+    {
+      "level": 4,
+      "text": "Wealth Management Connect: Regional Eligibility, a Closed Loop and a Product Pool All Apply",
+      "anchor": "h-0260"
+    },
+    {
+      "level": 4,
+      "text": "Southbound Stock Connect and QDII: Having a Channel Does Not Mean Having Every Instrument",
+      "anchor": "h-0261"
+    },
+    {
+      "level": 4,
+      "text": "Foreign Exchange, Accounts and Tax Cannot Substitute for One Another",
+      "anchor": "h-0262"
+    },
+    {
+      "level": 3,
+      "text": "II. QDII Prices Contain Two Layers of Risk: NAV Changes and Discount/Premium Changes",
+      "anchor": "h-0263"
+    },
+    {
+      "level": 3,
+      "text": "III. Being Right on Direction Can Still Lose Money: Additional Variables in Five Instrument Types",
+      "anchor": "h-0264"
+    },
+    {
+      "level": 4,
+      "text": "Daily Inverse Does Not Mean Inverse Over the Whole Period",
+      "anchor": "h-0265"
+    },
+    {
+      "level": 4,
+      "text": "Volatility Exposure and Downside Insurance Are Not Synonyms",
+      "anchor": "h-0266"
+    },
+    {
+      "level": 3,
+      "text": "IV. Cross-Asset Buffers Must Be Judged by the Source of the Shock",
+      "anchor": "h-0267"
+    },
+    {
+      "level": 3,
+      "text": "V. A Further Gate Remains Between Research and Implementation",
+      "anchor": "h-0268"
+    },
+    {
+      "level": 2,
+      "text": "Appendix C: The Shale-Oil Cycle Analogy - Technology Diffusion, Capital Constraints and Divergent Returns",
+      "anchor": "h-0269"
+    },
+    {
+      "level": 3,
+      "text": "I. Historical Evidence on Technology Diffusion and Capital Returns",
+      "anchor": "h-0270"
+    },
+    {
+      "level": 4,
+      "text": "What This History Can Answer",
+      "anchor": "h-0271"
+    },
+    {
+      "level": 4,
+      "text": "From Funding Gaps to Consolidation: Several Verifiable Milestones",
+      "anchor": "h-0272"
+    },
+    {
+      "level": 3,
+      "text": "II. Six Comparison Dimensions: Similar Mechanisms Do Not Mean Identical Outcomes",
+      "anchor": "h-0273"
+    },
+    {
+      "level": 3,
+      "text": "III. \"Selling Shovels\" Is Not a Business Model Immune to the Cycle",
+      "anchor": "h-0274"
+    },
+    {
+      "level": 4,
+      "text": "Oilfield Services Themselves Provide a Counterexample",
+      "anchor": "h-0275"
+    },
+    {
+      "level": 4,
+      "text": "NVIDIA and Oilfield Services: Compare Order Dependence, Not Occupational Metaphors",
+      "anchor": "h-0276"
+    },
+    {
+      "level": 3,
+      "text": "IV. Technological Efficiency, Prices and Replacement Speed: Where the Analogy Most Easily Breaks Down",
+      "anchor": "h-0277"
+    },
+    {
+      "level": 4,
+      "text": "Oil Volume and Price Are Not Token Volume and Price",
+      "anchor": "h-0278"
+    },
+    {
+      "level": 4,
+      "text": "Asset Replacement Is Not the Same Kind of \"Decline\"",
+      "anchor": "h-0279"
+    },
+    {
+      "level": 4,
+      "text": "Policy and National Strategy: Changing Constraints Without Guaranteeing Returns",
+      "anchor": "h-0280"
+    },
+    {
+      "level": 3,
+      "text": "V. Three Research Tasks Derived from the Historical Analogy",
+      "anchor": "h-0281"
+    },
+    {
+      "level": 4,
+      "text": "Verify Technological Success, Operating Success and Investment Success Separately",
+      "anchor": "h-0282"
+    },
+    {
+      "level": 4,
+      "text": "Distinguish Three Paths of Stress Transmission",
+      "anchor": "h-0283"
+    },
+    {
+      "level": 4,
+      "text": "Constrain the Analogy with Disconfirming Evidence",
+      "anchor": "h-0284"
+    },
+    {
+      "level": 3,
+      "text": "VI. Who Can Retain the Gains: Four Roles Still Require Transaction-by-Transaction Testing",
+      "anchor": "h-0285"
+    },
+    {
+      "level": 3,
+      "text": "VII. Testing the Opposing Case Must Allow More Than a Later Bubble Collapse",
+      "anchor": "h-0286"
+    },
+    {
+      "level": 2,
+      "text": "Appendix D: Alphabet's Financing Case - From Planned Capacity to Per-Share Value",
+      "anchor": "h-0287"
+    },
+    {
+      "level": 3,
+      "text": "D.1 The USD 80 Billion Plan Exists, but It Is Not USD 80 Billion Received at Once",
+      "anchor": "h-0288"
+    },
+    {
+      "level": 3,
+      "text": "D.2 Ask \"What Is the New Money For?\" and Check \"What Is the Existing Money?\"",
+      "anchor": "h-0289"
+    },
+    {
+      "level": 3,
+      "text": "D.3 For Existing Shareholders, the Real Calculation Is Per-Share Value",
+      "anchor": "h-0290"
+    },
+    {
+      "level": 4,
+      "text": "D.3.1 Common Stock: More Shares Do Not Automatically Mean Value Destruction",
+      "anchor": "h-0291"
+    },
+    {
+      "level": 4,
+      "text": "D.3.2 Mandatory Convertible Preferred Stock: Check Dividends and Conversion Terms First",
+      "anchor": "h-0292"
+    },
+    {
+      "level": 3,
+      "text": "D.4 Evidence Boundaries for External Investor Participation",
+      "anchor": "h-0293"
+    },
+    {
+      "level": 3,
+      "text": "D.5 Historical Comparisons Should Compare Rights, Not Guess the Top",
+      "anchor": "h-0294"
+    },
+    {
+      "level": 3,
+      "text": "D.6 How the Next Financial Report Would Change This Appendix's Conclusion",
+      "anchor": "h-0295"
+    },
+    {
+      "level": 2,
+      "text": "Appendix E: Fact Checks and Evidence Boundaries",
+      "anchor": "h-0296"
+    },
+    {
+      "level": 3,
+      "text": "E.1 Key Facts Currently Used and Areas Deepened in This Review",
+      "anchor": "h-0297"
+    },
+    {
+      "level": 3,
+      "text": "E.2 Retain Dated Baselines without Repackaging Them as New Facts",
+      "anchor": "h-0298"
+    },
+    {
+      "level": 3,
+      "text": "E.3 Claims Excluded from Current Conclusions",
+      "anchor": "h-0299"
+    },
+    {
+      "level": 3,
+      "text": "E.4 Key Recalculations and Remaining Gaps",
+      "anchor": "h-0300"
+    },
+    {
+      "level": 2,
+      "text": "Appendix F: What Fusion Energy Can Change, and What It Cannot Replace",
+      "anchor": "h-0301"
+    },
+    {
+      "level": 3,
+      "text": "F.1 First Separate the Three Clocks",
+      "anchor": "h-0302"
+    },
+    {
+      "level": 3,
+      "text": "F.2 Disclosed Milestones for Two Approaches",
+      "anchor": "h-0303"
+    },
+    {
+      "level": 3,
+      "text": "F.3 How Cheap Electricity Enters a Cost Statement",
+      "anchor": "h-0304"
+    },
+    {
+      "level": 3,
+      "text": "F.4 Who Receives the Profit Matters as Much as Lower Costs",
+      "anchor": "h-0305"
+    },
+    {
+      "level": 3,
+      "text": "F.5 An Energy Breakthrough Does Not Mean AGI Has Been Achieved",
+      "anchor": "h-0306"
+    },
+    {
+      "level": 3,
+      "text": "F.6 Which Links Fusion and Equity Financing Each Change",
+      "anchor": "h-0307"
+    },
+    {
+      "level": 3,
+      "text": "F.7 Why the Year of the Next Bubble Cannot Be Fixed in Advance",
+      "anchor": "h-0308"
+    },
+    {
+      "level": 3,
+      "text": "F.8 Evidence Ledger for Follow-Up",
+      "anchor": "h-0309"
+    },
+    {
+      "level": 3,
+      "text": "F.9 What Would Change the Judgment",
+      "anchor": "h-0310"
+    },
+    {
+      "level": 2,
+      "text": "Research Closing: Let Subsequent Facts Test the Judgment",
+      "anchor": "h-0311"
+    },
+    {
+      "level": 2,
+      "text": "Reference index",
+      "anchor": "h-0312"
+    }
+  ],
+  "source_parts": {
+    "00_short_institution.md": "9b270faf46451c973064cf404fdbb6bfff9c1dbfae0a0a600c7bdc656bd93759",
+    "01_profit.md": "80a2e93b795a542bfbcbe75e53ab5ec2b12aa0bde77db62863beb2287d2a22a3",
+    "02_circular.md": "20556a1f7c3e1474f48870097a29de716b06e582599d59fc2344ca9f0a35b5ce",
+    "03_monetization.md": "b5dbd9ca50ba2b959f64dd59999ee99fd45bef8ccde4550916c79f413c8d1b5c",
+    "04_video.md": "ac562ff075701c9a55369f006c143d00e5da5b3c70f0b7354f965bf8b50d2235",
+    "05_coding.md": "fe108a118f8066a866bce5005625f6d37390590a4c28c020825d7c70f5e98229",
+    "06_applications.md": "f87359ab086d14b979fdf1d9c98b3add9b5f21d7bc2b56305204ec14da5cc5bf",
+    "07_agi.md": "5a402a7c3d35a4dc87bd762d6f5c1cbd3608f7640a45612e4240c8aa49b2b98b",
+    "08_china.md": "9752bbc26b20cb559085b005f49fc382dd387dbe8dbed83c2b5780b1ba5b2ec4",
+    "09_valuation.md": "aec9b569deb4ee9e4709477e57cfcc95b33f3c9d013f0ef9f2071201ed573ec6",
+    "10_conclusion.md": "777857ae654bcaddaa97320e417799df63c06063effe25c92cf6a2a9a613cb7f",
+    "11_crash.md": "17812dcaa1c197ac94d7d9b13bd0f6759f27560b30af8ffadb439bdf6b55c73e",
+    "12_delay.md": "685a8ec1437288a95b58648a28a24d81c657d482c8c4a5f72ec2b0ce13c9eabf",
+    "13_framework.md": "82b9893b28acb76c51bd786dced538efda13f23dc8d49792da799baa03ab373a",
+    "14_crossborder.md": "dd0d5231ecc7d5e96c7cbb1148102cc841e023681679e9d0caa339f9f4a43355",
+    "15_shale.md": "f0e9926ddd53437ace6fceb25bacf810c5a2f67f4b90789aa366c5d387c39fbb",
+    "16_alphabet.md": "94762ef3d40a6dd7acb300211bc86842a322d9abf73f5094a0c2127af4ccb699",
+    "17_audit.md": "7febdb76735036bf5fba7dffd298865803e46024673a203c45059178a15828b0",
+    "18_fusion.md": "60905233ac174d7da4c9dbf84c7e0b711a5977fbb28e860d3eef471629d392e0",
+    "19_postscript.md": "e0fca671841de1d3f52be333ca296f2522e0a58d50d817f2776705d687f01945"
+  },
+  "builder_sha256": "2c2d389f24e1af8d2f25d3364309c233621c5b159595bc6c4e62f400c7a2a493",
+  "shared_builder_sha256": "136cfe75e7f7e573098e35e11eb04baed9c2b70e23c662cc0fd944cb130e7421",
+  "text_protection_sha256": "ce51bd661fa46813d1513b9036e47cabbf9db5765012f233cd861306f2a0fc4f",
+  "front_matter_sha256": "c69a275badcac6bf60e484153e5a6616caba85898464b5311fbf0db99ebd0b9c",
+  "reference_labels_sha256": "7e5986f322a3a506ba634f48835b8e36c6dd83997179594087c2c4e05e9ec8aa",
+  "assets": {
+    "figure_01_optical_modules.svg": "1a405ff8300206f735ee4c9f5bc38ee2a472d7d6956635fa05c872c7ecc11127",
+    "figure_02_apld_revenue.svg": "25d9660278ab057886cb3635d17b2f53c604d81b0bb2e1852883d16a0f9387d6",
+    "figure_03_coreweave_financing.svg": "a718f5ec429275257edeee44d709b011644a7a47f896939af597f2543584de55",
+    "figure_04_oracle_cash.svg": "d4514bd001baa04d5b1804c42cd7e80235857114f442a34cdc6e987232338a05",
+    "figure_05_vertiv_guidance.svg": "8eccc7c56f033120689144e4e9837e406701285e455172afc05f527fe5b777b2",
+    "figure_06_micron_cash.svg": "d7cc240dae767be5cbe429cc85ff2ce803793faa087ee1ff98983401977910ab",
+    "figure_07_meta_cash.svg": "18c5caea64aca9d50ed6e46c294ec64fa9781eda622d8d1936ff9f5d46abd985",
+    "figure_08_tsmc_quarters.svg": "347e023439b3458b717ca0e3d20753757b7c88b2fe50cf35a941aa9a829240a2"
+  },
+  "outputs": {
+    "md": {
+      "path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.md",
+      "sha256": "c27bd74a2ddf5ad1a995c1228c3837b86cef5c00c7654f47c28b4981edf1c7e5"
+    },
+    "html": {
+      "path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.html",
+      "sha256": "280556a5d8bca2d5f1aa12afe76ce592c275b382acc9ea16e38092f4c8a81cad"
+    },
+    "pdf": {
+      "path": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\V1.9_English_Full_Report\\AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.pdf",
+      "sha256": "1bdf84bde7eda951f9a8e876160c418b367e438b9b341360496728e8d2e27345"
+    }
+  }
+}

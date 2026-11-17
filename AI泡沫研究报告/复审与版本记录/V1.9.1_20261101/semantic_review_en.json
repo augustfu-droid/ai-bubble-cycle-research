@@ -1,0 +1,917 @@
+{
+  "review_version": "V1.9.1",
+  "reviewed_at_utc": "2026-11-01T13:43:45.374761+00:00",
+  "reviewer_role": "中文主笔、英文独立审阅者；非英文主笔",
+  "scope": "仅对最终中英文全段语义与英译忠实性进行核对，不重做新事实取证、不浏览外网、不修改四个被审文件。",
+  "status": "PASS",
+  "file_sha256": {
+    "author_view_zh.md": "736e45095ec09768c72c1de83a082c23687676459eb52d4ceda6ff6c6b84fbd6",
+    "author_view_en.md": "88e40ebbb0e57d93bb334ee3ecf8f8bb4d721dada4d790970007422881ba6e95",
+    "brief_zh.md": "e6ed11212790108f29318114fbad6ed4cd090f778d71fe6689c2479e75ba2a53",
+    "brief_en.md": "638e8e6ba89eea415719951f3143deeb5bb3bca2e53b99caf31f456d27fa6a27"
+  },
+  "pairs": [
+    {
+      "source_file": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\author_view_zh.md",
+      "target_file": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\author_view_en.md",
+      "source_sha256": "736e45095ec09768c72c1de83a082c23687676459eb52d4ceda6ff6c6b84fbd6",
+      "target_sha256": "88e40ebbb0e57d93bb334ee3ecf8f8bb4d721dada4d790970007422881ba6e95",
+      "paragraph_blocks_compared": 16,
+      "urls_preserved_in_order": true,
+      "url_count": 0,
+      "block_reviews": [
+        {
+          "block": 1,
+          "source_line_start": 1,
+          "source_line_end": 1,
+          "target_line_start": 1,
+          "target_line_end": 1,
+          "source_opening": "# 作者观点：延迟即放大，除非现金回收追上投入",
+          "target_opening": "# Author's View: Delay Amplifies Risk Unless Cash Recovery Catches Up with Investment",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 2,
+          "source_line_start": 3,
+          "source_line_end": 3,
+          "target_line_start": 3,
+          "target_line_end": 3,
+          "source_opening": "研究资料截止：2026年10月31日（北京时间）｜本次编辑：2026年11月1日",
+          "target_opening": "Research cutoff: October 31, 2026 (Beijing time) | Edited: November 1, 2026",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 3,
+          "source_line_start": 5,
+          "source_line_end": 5,
+          "target_line_start": 5,
+          "target_line_end": 5,
+          "source_opening": "**我把这一轮AI资本泡沫较大范围破裂的主要风险窗口放在2027年上半年至2028年上半年。** 这里的“破裂”，是多家主体的估值持续重定价，并得到投资、融资与资产回收压",
+          "target_opening": "**I see the first half of 2027 through the first half of 2028 as the main risk window for the current AI capital bubble ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 4,
+          "source_line_start": 7,
+          "source_line_end": 7,
+          "target_line_start": 7,
+          "target_line_end": 7,
+          "source_opening": "这是依据截至2026年10月31日证据、于11月1日重新登记的作者主观预测，不是数据模型精确推算的日期，不附未经校准的概率或跌幅。",
+          "target_opening": "This is the author's subjective forecast, registered afresh on November 1 using evidence available through October 31, 2",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 5,
+          "source_line_start": 9,
+          "source_line_end": 14,
+          "target_line_start": 9,
+          "target_line_end": 14,
+          "source_opening": "| 情景与可能时间 | 我预判的触发与传导 | 什么会使我改判 |\n|---|---|---|\n| **基准：2027年上半年—2028年上半年** | 回款持续落后；投",
+          "target_opening": "| Scenario and possible timing | Triggers and transmission I anticipate | What would change my judgment |\n|---|---|---|\n",
+          "result": "PASS",
+          "note": "四行情景逐格对照：时间、触发链和改判条件一致；未增加概率、跌幅或日期精度。"
+        },
+        {
+          "block": 6,
+          "source_line_start": 16,
+          "source_line_end": 16,
+          "target_line_start": 16,
+          "target_line_end": 16,
+          "source_opening": "这四条是可能路径，不能相加成概率。**到2028年6月30日，若基准所述的多主体重定价与资金、经营传导未出现，我会把该窗口记为未兑现，不能自动延期并算预测正确。**",
+          "target_opening": "These are four possible paths, not probabilities that can be added together. **If the baseline's repricing across multip",
+          "result": "PASS",
+          "note": "到期未兑现登记及不得自动顺延计命中均忠实保留。"
+        },
+        {
+          "block": 7,
+          "source_line_start": 18,
+          "source_line_end": 18,
+          "target_line_start": 18,
+          "target_line_end": 18,
+          "source_opening": "**从4月开始，我一直强调“延迟即放大”：当AI商业化回款追不上持续投入，企业却继续增加设备、租赁和融资承诺时，周期延续可能使待回收资本与资金缺口越积越大。** 当前部分",
+          "target_opening": "**Since April, I have consistently argued that \"delay amplifies risk\": when cash receipts from AI commercialization fail",
+          "result": "PASS",
+          "note": "当前分化状态与未来风险窗口区分保留，未退回另一个未来基准。"
+        },
+        {
+          "block": 8,
+          "source_line_start": 20,
+          "source_line_end": 20,
+          "target_line_start": 20,
+          "target_line_end": 20,
+          "source_opening": "**一、我不接受“AI没有真实需求”作为看空理由。** 云服务、供应链、视频工具和企业应用已经出现可核收入，部分公司也有经营利润和现金。短剧与编程尤其值得提高权重：它们让",
+          "target_opening": "**1. I do not accept \"AI has no real demand\" as a reason to be bearish.** Cloud services, supply-chain companies, video ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 9,
+          "source_line_start": 22,
+          "source_line_end": 22,
+          "target_line_start": 22,
+          "target_line_end": 22,
+          "source_opening": "**二、我更担心回收速度，而非收入真实性。** 微软最新财季仍有建设后的现金结余；Alphabet单季出现缺口，但滚动年度仍为正；Amazon滚动年度建设支出超过经营现金",
+          "target_opening": "**2. I am more concerned about the pace of capital recovery than the reality of revenue.** Microsoft still had a cash su",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 10,
+          "source_line_start": 24,
+          "source_line_end": 24,
+          "target_line_start": 24,
+          "target_line_end": 24,
+          "source_opening": "**GPU折旧是这条判断的另一半。** 设备投产后，成本逐步进入利润；若租价、利用率和经济寿命不如预期，收入增长也可能抵不住费用压力。折旧不是当期再次付款，已扣设备现金支",
+          "target_opening": "**GPU depreciation is the other half of this judgment.** Once equipment enters service, its cost is gradually recognized",
+          "result": "PASS",
+          "note": "折旧/投产/经济寿命与会计寿命/现金购建及非重复扣减的语义核对通过。"
+        },
+        {
+          "block": 11,
+          "source_line_start": 26,
+          "source_line_end": 26,
+          "target_line_start": 26,
+          "target_line_end": 26,
+          "source_opening": "**三、我看好短剧扩大视频模型的收费机会，但不认为三家厂商会同比例获益。** Seedance可以通过外部客户购买其模型服务，也可以通过字节内部内容与广告效率创造价值；M",
+          "target_opening": "**3. I expect microdramas to expand video models' opportunities to charge, but I do not expect the three vendors to bene",
+          "result": "PASS",
+          "note": "外部客户付费与字节内部效率分开；MiniMax集团与模态、可灵独立利润限制保留。"
+        },
+        {
+          "block": 12,
+          "source_line_start": 28,
+          "source_line_end": 28,
+          "target_line_start": 28,
+          "target_line_end": 28,
+          "source_opening": "**四、我认为编程会先改变招聘和外包预算，再逐步改变人员存量。** 初级实施、重复测试和标准化外包更容易承压；审查、集成、责任与新需求会限制岗位削减。省下任务工时可以让原",
+          "target_opening": "**4. I expect coding tools to change hiring and outsourcing budgets first, then gradually change existing headcount.** J",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 13,
+          "source_line_start": 30,
+          "source_line_end": 30,
+          "target_line_start": 30,
+          "target_line_end": 30,
+          "source_opening": "**五、我更愿意研究有付款入口和交付优势的应用。** 企业工作流、授权知识、成熟订阅、限定场景的医疗与实体服务，更容易把能力接到既有预算上。但这是研究优先级，不是赢家名单",
+          "target_opening": "**5. I prefer to research applications with established routes to payment and an advantage in delivery.** Enterprise wor",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 14,
+          "source_line_start": 32,
+          "source_line_end": 32,
+          "target_line_start": 32,
+          "target_line_end": 32,
+          "source_opening": "**六、我不会仅因市场变大就提高买入价格。** 对尚未持有者，我优先寻找客户能兑现收益、供应商能留住现金、价格又没有提前透支成功的公司；对已有持仓者，我更关注每股现金、债",
+          "target_opening": "**6. I will not raise the price I am willing to pay merely because the market is growing.** For investors without a posi",
+          "result": "PASS",
+          "note": "EN-01已修正并复检：客户收益、被研究公司自身作为供应方留现、股票价格三项主体一致；其余原段未变。",
+          "initial_result": "NEEDS_CORRECTION"
+        },
+        {
+          "block": 15,
+          "source_line_start": 34,
+          "source_line_end": 34,
+          "target_line_start": 34,
+          "target_line_end": 34,
+          "source_opening": "最重要的预测修正，必须由我明确承担：早期把专业开发者人数乘固定低价月费，当作整个编程市场的硬上限，是错误的。**V1.5已经撤回这一上限，本次是进一步解释和核验，并非首次",
+          "target_opening": "I must explicitly take responsibility for the most important revision to my forecasts: the early approach of multiplying",
+          "result": "PASS",
+          "note": "V1.5已撤回硬上限的版本责任及实际收入尚未证明突破的限制保留。"
+        },
+        {
+          "block": 16,
+          "source_line_start": 36,
+          "source_line_end": 37,
+          "target_line_start": 36,
+          "target_line_end": 37,
+          "source_opening": "什么会使我改判？若补贴减少后客户仍持续付费，完整交付成本下降，老设备仍有现金贡献，且建设放缓时收入与现金继续增长，我会承认时间正在帮助消化投入，减弱“延迟即放大”的判断。",
+          "target_opening": "What would change my judgment? If customers continue paying after subsidies decline, full delivery costs fall, older equ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        }
+      ]
+    },
+    {
+      "source_file": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\brief_zh.md",
+      "target_file": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\brief_en.md",
+      "source_sha256": "e6ed11212790108f29318114fbad6ed4cd090f778d71fe6689c2479e75ba2a53",
+      "target_sha256": "638e8e6ba89eea415719951f3143deeb5bb3bca2e53b99caf31f456d27fa6a27",
+      "paragraph_blocks_compared": 42,
+      "urls_preserved_in_order": true,
+      "url_count": 12,
+      "block_reviews": [
+        {
+          "block": 1,
+          "source_line_start": 1,
+          "source_line_end": 1,
+          "target_line_start": 1,
+          "target_line_end": 1,
+          "source_opening": "# AI泡沫研究报告·简版",
+          "target_opening": "# AI Bubble Research Report: Brief Edition",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 2,
+          "source_line_start": 3,
+          "source_line_end": 3,
+          "target_line_start": 3,
+          "target_line_end": 3,
+          "source_opening": "研究资料截止：2026年10月31日（北京时间）｜本次编辑：2026年11月1日",
+          "target_opening": "Research cutoff: October 31, 2026 (Beijing time) | Edited: November 1, 2026",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 3,
+          "source_line_start": 5,
+          "source_line_end": 5,
+          "target_line_start": 5,
+          "target_line_end": 5,
+          "source_opening": "**我把这一轮AI资本泡沫较大范围破裂的主要风险窗口放在2027年上半年至2028年上半年。** “破裂”在这里指多家主体估值持续重定价，并得到投资、融资与资产回收压力的",
+          "target_opening": "**I see the first half of 2027 through the first half of 2028 as the main risk window for the current AI capital bubble ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 4,
+          "source_line_start": 7,
+          "source_line_end": 7,
+          "target_line_start": 7,
+          "target_line_end": 7,
+          "source_opening": "以下是依据截至2026年10月31日证据、于11月1日重新登记的作者主观预测，不是模型精确推算的日期，不恢复旧版概率与跌幅：",
+          "target_opening": "The following is the author's subjective forecast, registered afresh on November 1 using evidence available through Octo",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 5,
+          "source_line_start": 9,
+          "source_line_end": 14,
+          "target_line_start": 9,
+          "target_line_end": 14,
+          "source_opening": "| 情景与可能时间 | 触发与传导 | 改判条件 |\n|---|---|---|\n| **基准：2027年上半年—2028年上半年** | 回款落后于投入，投产折旧与硬付",
+          "target_opening": "| Scenario and possible timing | Triggers and transmission | Conditions that would change my judgment |\n|---|---|---|\n| ",
+          "result": "PASS",
+          "note": "四行情景逐格对照：时间、触发链和改判条件一致；未增加概率、跌幅或日期精度。"
+        },
+        {
+          "block": 6,
+          "source_line_start": 16,
+          "source_line_end": 16,
+          "target_line_start": 16,
+          "target_line_end": 16,
+          "source_opening": "**到2028年6月30日，若基准所述的多主体重定价与资金、经营传导未出现，应记为该窗口未兑现；不能自动顺延到下一格并声称预测正确。** 四种路径不互斥，不相加成概率；消",
+          "target_opening": "**If the baseline's repricing across multiple entities and transmission through funding and operations have not appeared",
+          "result": "PASS",
+          "note": "到期未兑现登记及不得自动顺延计命中均忠实保留。"
+        },
+        {
+          "block": 7,
+          "source_line_start": 18,
+          "source_line_end": 18,
+          "target_line_start": 18,
+          "target_line_end": 18,
+          "source_opening": "**从4月开始，我一直强调“延迟即放大”。我的核心判断仍是：如果AI商业化回款追不上持续投入，而企业继续锁定下一批设备、租赁和融资义务，周期延续就可能累积更大的资本回收压",
+          "target_opening": "**Since April, I have consistently argued that \"delay amplifies risk.\" My central judgment remains this: if cash receipt",
+          "result": "PASS",
+          "note": "折旧/投产/经济寿命与会计寿命/现金购建及非重复扣减的语义核对通过。"
+        },
+        {
+          "block": 8,
+          "source_line_start": 20,
+          "source_line_end": 20,
+          "target_line_start": 20,
+          "target_line_end": 20,
+          "source_opening": "我同时承认AI有真实用途，商业化范围正在扩大。当前证据已经显示部分集团建设现金不足，却不能据此断言所有AI公司亏损、所有项目无法回本。我对当前状态的判断是公司分化与局部资",
+          "target_opening": "I also acknowledge that AI has real uses and that commercialization is expanding. Current evidence already shows constru",
+          "result": "PASS",
+          "note": "当前分化状态与未来风险窗口区分保留，未退回另一个未来基准。"
+        },
+        {
+          "block": 9,
+          "source_line_start": 22,
+          "source_line_end": 22,
+          "target_line_start": 22,
+          "target_line_end": 22,
+          "source_opening": "据此，我对投资的态度是选择性参与：先找清楚谁付款、谁保留利润，再看买入价格能否容纳失误。应用进展值得上调研究权重，不能自动给所有模型、算力和相关股票一起上调估值。本文沿用",
+          "target_opening": "My investment stance is consequently selective participation: first establish who pays and who retains the profit, then ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 10,
+          "source_line_start": 24,
+          "source_line_end": 24,
+          "target_line_start": 24,
+          "target_line_end": 24,
+          "source_opening": "## 1. 为什么我仍强调“延迟即放大”",
+          "target_opening": "## 1. Why I Still Emphasize \"Delay Amplifies Risk\"",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 11,
+          "source_line_start": 26,
+          "source_line_end": 26,
+          "target_line_start": 26,
+          "target_line_end": 26,
+          "source_opening": "三家云厂给出了最直观的对照。Microsoft截至9月30日的FY27Q1，经营现金580亿美元，扣现金购建393.67亿美元后结余186.33亿美元；再扣融资租赁本金1",
+          "target_opening": "Three cloud providers offer the clearest comparison. In Microsoft's FY27Q1 ended September 30, operating cash was USD 58",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 12,
+          "source_line_start": 28,
+          "source_line_end": 28,
+          "target_line_start": 28,
+          "target_line_end": 28,
+          "source_opening": "Alphabet 2026Q3云业务收入307.09亿美元、营业利润111.21亿美元；集团当季经营现金422.90亿美元，现金购建513.55亿美元，两者之差为负90.",
+          "target_opening": "Alphabet's Cloud business generated revenue of USD 30.709 billion and operating profit of USD 11.121 billion in 2026Q3. ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 13,
+          "source_line_start": 30,
+          "source_line_end": 30,
+          "target_line_start": 30,
+          "target_line_end": 30,
+          "source_opening": "Amazon 2026Q3的AWS收入459.84亿美元、营业利润177.73亿美元；截至9月30日的滚动十二个月，集团经营现金1683亿美元减净现金购建2106.57亿",
+          "target_opening": "Amazon's AWS business generated revenue of USD 45.984 billion and operating profit of USD 17.773 billion in 2026Q3. For ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 14,
+          "source_line_start": 32,
+          "source_line_end": 32,
+          "target_line_start": 32,
+          "target_line_end": 32,
+          "source_opening": "这些期间与定义不能混加，云分部利润也不等于集团AI项目回报。它们共同说明：需求增长是真的，建设占用现金也是真的。供应链的出货、利润与部分正现金证据，同样应被承认；上游赚钱",
+          "target_opening": "These periods and definitions cannot be mixed and added together, and cloud segment profit is not the same as returns on",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 15,
+          "source_line_start": 34,
+          "source_line_end": 34,
+          "target_line_start": 34,
+          "target_line_end": 34,
+          "source_opening": "我的判断是，资本投入正在要求更具体的回收解释。建设先付钱、资产多年使用，单季负现金不足以判定投资失败；但合同、租赁和债务付款不会因为远期市场很大就消失。若投入一直快于可持",
+          "target_opening": "My judgment is that capital investment increasingly requires a concrete explanation of how it will be recovered. Constru",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 16,
+          "source_line_start": 36,
+          "source_line_end": 36,
+          "target_line_start": 36,
+          "target_line_end": 36,
+          "source_opening": "“现在AI收入覆盖不了现金流”是我对回收压力的概括，更严格的检验是：客户回款先覆盖必要运营、形成经营现金，再检验其能否覆盖建设及未计入经营现金的到期付款。收入不是现金，集",
+          "target_opening": "\"Current AI revenue cannot cover cash flow\" is my shorthand for this recovery pressure. The stricter test begins with cu",
+          "result": "PASS",
+          "note": "运营付款先形成OCF，再扣建设和未入OCF到期付款，未重复扣运营；集团/AI项目边界保留。"
+        },
+        {
+          "block": 17,
+          "source_line_start": 38,
+          "source_line_end": 38,
+          "target_line_start": 38,
+          "target_line_end": 38,
+          "source_opening": "GPU折旧则检验利润是否承受得住资产成本。设备达到可使用状态后开始分摊成本；投产资产增加、租价下降或利用率不足，都可能令折旧压力更突出。旧设备仍能运行，不等于仍能按原价格",
+          "target_opening": "GPU depreciation tests whether earnings can bear the cost of the assets. Costs begin to be allocated once equipment is r",
+          "result": "PASS",
+          "note": "折旧/投产/经济寿命与会计寿命/现金购建及非重复扣减的语义核对通过。"
+        },
+        {
+          "block": 18,
+          "source_line_start": 40,
+          "source_line_end": 40,
+          "target_line_start": 40,
+          "target_line_end": 40,
+          "source_opening": "折旧是会计费用，不是当期再付一次设备款；自由现金流已经扣除现金购建，不能又把折旧完整扣一遍。会计使用寿命调整改变以后费用分摊，减值则须另查触发证据，不能先定所有GPU三年",
+          "target_opening": "Depreciation is an accounting expense, not another current-period payment for the equipment. Free cash flow already dedu",
+          "result": "PASS",
+          "note": "折旧/投产/经济寿命与会计寿命/现金购建及非重复扣减的语义核对通过。"
+        },
+        {
+          "block": 19,
+          "source_line_start": 42,
+          "source_line_end": 42,
+          "target_line_start": 42,
+          "target_line_end": 42,
+          "source_opening": "## 2. 短剧使视频模型更接近生产预算，利润归属仍待竞争决定",
+          "target_opening": "## 2. Microdramas Bring Video Models Closer to Production Budgets; Competition Will Still Determine Who Captures Profit",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 20,
+          "source_line_start": 44,
+          "source_line_end": 44,
+          "target_line_start": 44,
+          "target_line_end": 44,
+          "source_opening": "我提高短剧的权重，原因是已有付费与采购，而不只是观众愿意看新奇视频。兑吧2026上半年单列AI短剧收入2.22629亿元，但集团同期仍亏损2532.6万元：前者证明收入已",
+          "target_opening": "I give microdramas greater weight because there is already payment and procurement, not just an audience willing to watc",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 21,
+          "source_line_start": 46,
+          "source_line_end": 46,
+          "target_line_start": 46,
+          "target_line_end": 46,
+          "source_opening": "中美两地都存在付费与广告混合模式，中国的免费分发、内容采购，美国的付费应用和跨境获客，各自有不同的结算与竞争条件。真人短剧大盘、AI辅助制作、主要由AI生成的作品、模型工",
+          "target_opening": "Both China and the United States have models combining audience payments and advertising. Free distribution and content ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 22,
+          "source_line_start": 48,
+          "source_line_end": 48,
+          "target_line_start": 48,
+          "target_line_end": 48,
+          "source_opening": "短剧更有意义的上游需求，是工作室持续制作新剧、投流素材、续季与本地化版本。客户买的不是无限多视频，而是能按时验收、能够发行的镜头。更高采用率和更少返工有利于制作方，却可能",
+          "target_opening": "The more meaningful upstream demand from microdramas is studios' continuing production of new dramas, advertising assets",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 23,
+          "source_line_start": 50,
+          "source_line_end": 50,
+          "target_line_start": 50,
+          "target_line_end": 50,
+          "source_opening": "三类厂商的获利路径也不同：",
+          "target_opening": "The three types of vendors also have different paths to profit:",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 24,
+          "source_line_start": 52,
+          "source_line_end": 54,
+          "target_line_start": 52,
+          "target_line_end": 54,
+          "source_opening": "- **Seedance：** 外部模型服务可能直接收费，字节内部内容和广告业务也可能获得效率收益。但内部调用不是集团新增外部收入；红果增长不等于Seedance独占采购",
+          "target_opening": "- **Seedance:** External model services may generate direct fees, while ByteDance's internal content and advertising bus",
+          "result": "PASS",
+          "note": "外部客户付费与字节内部效率分开；MiniMax集团与模态、可灵独立利润限制保留。"
+        },
+        {
+          "block": 25,
+          "source_line_start": 56,
+          "source_line_end": 56,
+          "target_line_start": 56,
+          "target_line_end": 56,
+          "source_opening": "我更看重能反复交付、掌握授权IP和用户回款的经营能力，而非“会用某个模型”。单秒生成便宜以后，节省可能被投流竞价、失败作品、返工与平台分成吃掉；采购入口接入多家模型后，底",
+          "target_opening": "I place more weight on the operating ability to deliver repeatedly, control licensed IP and collect payments from users ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 26,
+          "source_line_start": 58,
+          "source_line_end": 58,
+          "target_line_start": 58,
+          "target_line_end": 58,
+          "source_opening": "## 3. 编程需要改写市场模型，也需要改写省钱算法",
+          "target_opening": "## 3. Coding Requires a New Market Model and a New Way to Calculate Savings",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 27,
+          "source_line_start": 60,
+          "source_line_end": 60,
+          "target_line_start": 60,
+          "target_line_end": 60,
+          "source_opening": "早期研究把3650万专业开发者乘30美元月费、再乘12个月，得到131.4亿美元。这是成立的条件算术，**把它写成整个市场的硬上限则是错误的。V1.5已撤回硬上限，本次没",
+          "target_opening": "The early research multiplied 36.5 million professional developers by a monthly fee of USD 30 and twelve months, produci",
+          "result": "PASS",
+          "note": "V1.5已撤回硬上限的版本责任及实际收入尚未证明突破的限制保留。"
+        },
+        {
+          "block": 28,
+          "source_line_start": 62,
+          "source_line_end": 62,
+          "target_line_start": 62,
+          "target_line_end": 62,
+          "source_opening": "按量收费、长任务、代码审查和非专业用途，使一个人的预算不再只是一份低价席位。GitHub Copilot在2026年6月转向按量计费，是这一变化的实际产品证据。但多个工具",
+          "target_opening": "Usage-based billing, long tasks, code review and nonprofessional uses mean one person's budget is no longer limited to a",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 29,
+          "source_line_start": 64,
+          "source_line_end": 64,
+          "target_line_start": 64,
+          "target_line_end": 64,
+          "source_opening": "我认为人力影响会先落在招聘、离职不补和标准化外包上。企业未裁员，不代表原计划新增岗位没有减少；代码增长，也不代表团队可以同比例少付工资。655家企业的Chen–Strat",
+          "target_opening": "I expect the labor impact to appear first in hiring, departures that are not replaced and standardized outsourcing. A co",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 30,
+          "source_line_start": 66,
+          "source_line_end": 66,
+          "target_line_start": 66,
+          "target_line_end": 66,
+          "source_opening": "Stanford利用ADP数据的研究则发现，22—25岁高AI暴露职业就业，相对低暴露同龄人的路径落后19%，主要分化与招聘减少有关。它不是“程序员被裁19%”，不是已识",
+          "target_opening": "Stanford's study using ADP data found that employment among workers aged 22-25 in occupations with high AI exposure lagg",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 31,
+          "source_line_start": 68,
+          "source_line_end": 68,
+          "target_line_start": 68,
+          "target_line_end": 68,
+          "source_opening": "详细报告用两套作者假设展示预算差别，均非公司实测或行业均值，且要求同等质量交付：美国10人团队稳态净释放2400小时，按内部成本价值24万美元；扣工具、服务与风险预算4万",
+          "target_opening": "The detailed report uses two sets of author assumptions to illustrate budget differences. Neither is a company measureme",
+          "result": "PASS",
+          "note": "假设算例、稳态/首年、产能/现金、风险预算非已付现均保留；币种单位换算通过。"
+        },
+        {
+          "block": 32,
+          "source_line_start": 70,
+          "source_line_end": 70,
+          "target_line_start": 70,
+          "target_line_end": 70,
+          "source_opening": "中国8人算例稳态净释放900小时，内部成本价值12万元，扣9万元后产能净值3万元。若确有可取消的900小时外包、每小时220元，且内部能完成同等工作，则避免付款19.8万",
+          "target_opening": "In the eight-person China example, a net 900 hours are released in steady state, with an internal cost value of RMB 120,",
+          "result": "PASS",
+          "note": "假设算例、稳态/首年、产能/现金、风险预算非已付现均保留；币种单位换算通过。"
+        },
+        {
+          "block": 33,
+          "source_line_start": 72,
+          "source_line_end": 72,
+          "target_line_start": 72,
+          "target_line_end": 72,
+          "source_opening": "这里4万美元、9万元都含风险预算，并非全部已经付现；首年还有培训、接入与并行验证，不能直接套稳态收益。工资较低的团队不是不能受益，而是更需要控制复核和工具费用，或找到确实",
+          "target_opening": "The USD 40,000 and RMB 90,000 both include risk budgets, so they do not consist entirely of cash already paid. Training,",
+          "result": "PASS",
+          "note": "假设算例、稳态/首年、产能/现金、风险预算非已付现均保留；币种单位换算通过。"
+        },
+        {
+          "block": 34,
+          "source_line_start": 74,
+          "source_line_end": 74,
+          "target_line_start": 74,
+          "target_line_end": 74,
+          "source_opening": "## 4. 其他应用使我更重视既有付款关系",
+          "target_opening": "## 4. Other Applications Increase the Importance I Place on Existing Payment Relationships",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 35,
+          "source_line_start": 76,
+          "source_line_end": 76,
+          "target_line_start": 76,
+          "target_line_end": 76,
+          "source_opening": "AI商业化不只发生在编程和视频。AlphaSense披露2026Q2公司ARR超过7亿美元，支持知识工作流已形成付费规模；这是公司自报的年度化经常性指标，包含内容、检索和",
+          "target_opening": "AI commercialization extends beyond coding and video. AlphaSense disclosed company ARR above USD 700 million in 2026Q2, ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 36,
+          "source_line_start": 78,
+          "source_line_end": 78,
+          "target_line_start": 78,
+          "target_line_end": 78,
+          "source_opening": "Duolingo 2026Q2按公司口径产生7863万美元自由现金流，证明包含AI功能的教育产品可以有正现金，却不能把全部课程收入或利润归给AI。[Duolingo Q2",
+          "target_opening": "Duolingo generated USD 78.63 million in free cash flow under its own definition in 2026Q2. This establishes that an educ",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 37,
+          "source_line_start": 80,
+          "source_line_end": 80,
+          "target_line_start": 80,
+          "target_line_end": 80,
+          "source_opening": "相反，Character.ai在已有订阅与广告收入的情况下，于10月进入法院监督出售程序；当时服务继续运行，不能写成已停服或已完成出售。这说明用户价值、收费能力与股东回报",
+          "target_opening": "In contrast, Character.ai entered a court-supervised sale process in October despite already having subscription and adv",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 38,
+          "source_line_start": 82,
+          "source_line_end": 82,
+          "target_line_start": 82,
+          "target_line_end": 82,
+          "source_opening": "我的研究优先级因此偏向清楚的付款方、验收标准和续费关系。办公、客服应看问题是否真正解决；知识服务应看授权与核验成本；医疗文书不能用记录处理量替代临床结果；自动驾驶有收费服",
+          "target_opening": "My research priorities therefore favor identifiable payers, acceptance criteria and renewal relationships. In office too",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 39,
+          "source_line_start": 84,
+          "source_line_end": 84,
+          "target_line_start": 84,
+          "target_line_end": 84,
+          "source_opening": "## 5. 投资上，我等待什么，什么会让我改判",
+          "target_opening": "## 5. What I Am Waiting for as an Investor, and What Would Change My Judgment",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 40,
+          "source_line_start": 86,
+          "source_line_end": 86,
+          "target_line_start": 86,
+          "target_line_end": 86,
+          "source_opening": "对尚未持有者，我不会因为编程上限撤回、短剧需求增强就追认高估值。更值得优先研究的公司，应同时回答：客户收益能否兑现，供应商扣除完整成本后能否留住现金，资本投入能否收回，买",
+          "target_opening": "For investors without a position, I will not endorse high valuations merely because the coding ceiling has been withdraw",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        },
+        {
+          "block": 41,
+          "source_line_start": 88,
+          "source_line_end": 88,
+          "target_line_start": 88,
+          "target_line_end": 88,
+          "source_opening": "目前仍是分化，尤其需要警惕回款落后而硬付款继续累积的公司。若补贴退出后持续复购、同等质量交付成本下降、老设备继续贡献现金，且建设放缓后经营现金仍增长，我会承认时间正在帮助",
+          "target_opening": "The current state remains one of divergence, requiring particular caution about companies whose collections lag while fi",
+          "result": "PASS",
+          "note": "当前分化状态与未来风险窗口区分保留，未退回另一个未来基准。"
+        },
+        {
+          "block": 42,
+          "source_line_start": 90,
+          "source_line_end": 91,
+          "target_line_start": 90,
+          "target_line_end": 91,
+          "source_opening": "这套判断也有最容易犯错的两面：低估工具进步，会把今天的交付摩擦误当成永久上限；高估兑现速度，会把节省工时、用户增长和模型调用误当成股东现金。**我愿意因前者上调对应用的判",
+          "target_opening": "This framework also has two particular risks of error. Underestimating tool progress could turn today's delivery frictio",
+          "result": "PASS",
+          "note": "整段含义、肯定/否定、第一人称、适用范围和证据限制对照通过。"
+        }
+      ]
+    }
+  ],
+  "numeric_conversion_checks": [
+    {
+      "zh": "580亿美元",
+      "en": "USD 58 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "393.67亿美元",
+      "en": "USD 39.367 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "186.33亿美元",
+      "en": "USD 18.633 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "176.33亿美元",
+      "en": "USD 17.633 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "307.09亿美元",
+      "en": "USD 30.709 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "111.21亿美元",
+      "en": "USD 11.121 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "422.90亿美元",
+      "en": "USD 42.290 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "513.55亿美元",
+      "en": "USD 51.355 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "负90.65亿美元",
+      "en": "negative USD 9.065 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "正197.47亿美元",
+      "en": "positive at USD 19.747 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "459.84亿美元",
+      "en": "USD 45.984 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "177.73亿美元",
+      "en": "USD 17.773 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "1683亿美元",
+      "en": "USD 168.3 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "2106.57亿美元",
+      "en": "USD 210.657 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "负423.57亿美元",
+      "en": "negative USD 42.357 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "2.22629亿元",
+      "en": "RMB 222.629 million",
+      "result": "PASS"
+    },
+    {
+      "zh": "2532.6万元",
+      "en": "RMB 25.326 million",
+      "result": "PASS"
+    },
+    {
+      "zh": "1.16573亿美元",
+      "en": "USD 116.573 million",
+      "result": "PASS"
+    },
+    {
+      "zh": "2081.3万美元",
+      "en": "USD 20.813 million",
+      "result": "PASS"
+    },
+    {
+      "zh": "2.96870亿美元",
+      "en": "USD 296.870 million",
+      "result": "PASS"
+    },
+    {
+      "zh": "8.5亿元",
+      "en": "RMB 850 million",
+      "result": "PASS"
+    },
+    {
+      "zh": "131.4亿美元",
+      "en": "USD 13.14 billion",
+      "result": "PASS"
+    },
+    {
+      "zh": "24万美元",
+      "en": "USD 240,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "4万美元",
+      "en": "USD 40,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "20万美元",
+      "en": "USD 200,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "18万美元",
+      "en": "USD 180,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "14万美元",
+      "en": "USD 140,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "12万元",
+      "en": "RMB 120,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "9万元",
+      "en": "RMB 90,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "3万元",
+      "en": "RMB 30,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "19.8万元",
+      "en": "RMB 198,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "10.8万元",
+      "en": "RMB 108,000",
+      "result": "PASS"
+    },
+    {
+      "zh": "7亿美元",
+      "en": "USD 700 million",
+      "result": "PASS"
+    },
+    {
+      "zh": "7863万美元",
+      "en": "USD 78.63 million",
+      "result": "PASS"
+    }
+  ],
+  "focused_results": {
+    "time_windows": "PASS：H1 2027–H1 2028 / November 2026–Q1 2027 / H2 2028–H1 2029 / 2027–2029均一致。",
+    "settlement_and_falsification": "PASS：2028-06-30到期未兑现不得顺延计命中；消化反证保留。",
+    "current_vs_future": "PASS：现态分化与未来主风险窗口区别保留。",
+    "depreciation_and_ocf": "PASS：非现金折旧、OCF运营已扣、建设不能重复扣、更新设备及减值单列。",
+    "money_units": "PASS：34组金额换算及美元/人民币、季度/TTM/H1均核对。",
+    "seedance_ownership": "PASS：外部采购收入、内部调用效率、红果非排他采购及分部缺口保留。",
+    "employment_and_examples": "PASS：样本企业工程师、19%非因果裁员率、团队算例非行业均值均保留。",
+    "investment_value_capture": "PASS：EN-01已闭环，英文前言第32行明确由被研究公司自身作为供应方留存现金。"
+  },
+  "issues": [
+    {
+      "id": "EN-01",
+      "severity": "P2",
+      "status": "RESOLVED",
+      "file": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\author_view_en.md",
+      "line": 32,
+      "source_file": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.9.1_观点与简版_20261101\\author_view_zh.md",
+      "source_line": 32,
+      "source_excerpt": "我优先寻找客户能兑现收益、供应商能留住现金、价格又没有提前透支成功的公司",
+      "target_excerpt": "I prioritize companies whose customers can realize benefits, whose suppliers can retain cash, and whose prices have not already priced in success.",
+      "problem": "whose suppliers可被理解为被研究公司的上游供应商，改变现金应由被研究公司自身作为供应方保留的价值归属。",
+      "suggested_replacement": "I prioritize companies whose customers can realize benefits, that can retain cash from supplying those customers, and whose share prices have not already priced in success.",
+      "disposition": "主代理已修正，独立审阅者完成局部复检；本审阅未修改四个被审文本。",
+      "initial_status": "OPEN",
+      "closure": {
+        "reviewed_at_utc": "2026-11-01T13:45:09.223375+00:00",
+        "final_target_excerpt": "I prioritize companies whose customers can realize benefits, that can retain cash from supplying those customers, and whose share prices have not already priced in success.",
+        "final_line": 32,
+        "result": "PASS",
+        "verification": "精确修正建议已落实；将该句逆向替换为初稿可复原初审SHA256，确认没有其他英文前言改动。中文两篇与英文简版哈希未变。",
+        "final_file_sha256": "88e40ebbb0e57d93bb334ee3ecf8f8bb4d721dada4d790970007422881ba6e95"
+      }
+    }
+  ],
+  "not_reverified": [
+    "研究底层财务事实与外部来源是否最新",
+    "新增预测时间窗的预测准确性或统计校准",
+    "图文排版与最终PDF渲染"
+  ],
+  "final_statement": "最终四个文本的中英文全段含义与关键限制一致，EN-01修正已复检通过。保留初始NEEDS_REVISION轨迹；最终PASS仅适用于所列最终SHA256，不涵盖PDF排版、底层事实重新取证或预测准确性。",
+  "review_history": [
+    {
+      "status": "NEEDS_REVISION",
+      "reviewed_at_utc": "2026-11-01T13:43:45.374761+00:00",
+      "file_sha256": {
+        "author_view_zh.md": "736e45095ec09768c72c1de83a082c23687676459eb52d4ceda6ff6c6b84fbd6",
+        "author_view_en.md": "55946ad29ebfaf2ee2cc3fd089f515b16233cbc967a09fe849d4ce77644efb42",
+        "brief_zh.md": "e6ed11212790108f29318114fbad6ed4cd090f778d71fe6689c2479e75ba2a53",
+        "brief_en.md": "638e8e6ba89eea415719951f3143deeb5bb3bca2e53b99caf31f456d27fa6a27"
+      },
+      "issue_ids": [
+        "EN-01"
+      ],
+      "summary": "全段核对后，仅英文前言第32行whose suppliers产生收益主体歧义，其余对照通过。"
+    },
+    {
+      "status": "PASS",
+      "reviewed_at_utc": "2026-11-01T13:45:09.223375+00:00",
+      "file_sha256": {
+        "author_view_zh.md": "736e45095ec09768c72c1de83a082c23687676459eb52d4ceda6ff6c6b84fbd6",
+        "author_view_en.md": "88e40ebbb0e57d93bb334ee3ecf8f8bb4d721dada4d790970007422881ba6e95",
+        "brief_zh.md": "e6ed11212790108f29318114fbad6ed4cd090f778d71fe6689c2479e75ba2a53",
+        "brief_en.md": "638e8e6ba89eea415719951f3143deeb5bb3bca2e53b99caf31f456d27fa6a27"
+      },
+      "summary": "按原建议精确替换后局部复检；逆向替换可复原初审英文前言哈希，其余三个文件哈希未变。"
+    }
+  ],
+  "final_reviewed_at_utc": "2026-11-01T13:45:09.223375+00:00"
+}

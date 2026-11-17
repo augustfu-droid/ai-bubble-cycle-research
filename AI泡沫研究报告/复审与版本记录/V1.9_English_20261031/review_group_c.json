@@ -1,0 +1,2833 @@
+{
+  "group": "c",
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-31T06:25:09.850636+00:00",
+  "files": [
+    {
+      "file": "07_agi.md",
+      "source_sha256": "73c46918c6726a656a7354dc66031e089f313879d1fa8a1ea2e73c3ed25d9433",
+      "english_sha256": "5a402a7c3d35a4dc87bd762d6f5c1cbd3608f7640a45612e4240c8aa49b2b98b",
+      "lines_reviewed": 358,
+      "table_lines_reviewed": 51,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "08_china.md",
+      "source_sha256": "59abc9b656ffb49ac7140a5b487f33eb88a8c30fd35efb60d57b4c35ee286917",
+      "english_sha256": "9752bbc26b20cb559085b005f49fc382dd387dbe8dbed83c2b5780b1ba5b2ec4",
+      "lines_reviewed": 140,
+      "table_lines_reviewed": 32,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "09_valuation.md",
+      "source_sha256": "3f14abfe973d468dedf48dd95f69a47751113347beebdb6cdedd1b4d91b4ea53",
+      "english_sha256": "aec9b569deb4ee9e4709477e57cfcc95b33f3c9d013f0ef9f2071201ed573ec6",
+      "lines_reviewed": 92,
+      "table_lines_reviewed": 18,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "10_conclusion.md",
+      "source_sha256": "2405208d230510d92be560ef3e72fa1152954084dbbc35fd592bf925566991da",
+      "english_sha256": "777857ae654bcaddaa97320e417799df63c06063effe25c92cf6a2a9a613cb7f",
+      "lines_reviewed": 149,
+      "table_lines_reviewed": 53,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "11_crash.md",
+      "source_sha256": "9e5358b6fb47d4c23b1bc7bf744f4de6296b360081a9b4c0c2049a13ff001546",
+      "english_sha256": "17812dcaa1c197ac94d7d9b13bd0f6759f27560b30af8ffadb439bdf6b55c73e",
+      "lines_reviewed": 106,
+      "table_lines_reviewed": 22,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "12_delay.md",
+      "source_sha256": "2a4101ada72951cc82a4abed9f2657e3bfe3a03a4b315f330681a8d891d4af1a",
+      "english_sha256": "685a8ec1437288a95b58648a28a24d81c657d482c8c4a5f72ec2b0ce13c9eabf",
+      "lines_reviewed": 91,
+      "table_lines_reviewed": 14,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "14_crossborder.md",
+      "source_sha256": "9925d6b759d4a053721c1813587b55294be37ce90e74208749269aea051999d9",
+      "english_sha256": "dd0d5231ecc7d5e96c7cbb1148102cc841e023681679e9d0caa339f9f4a43355",
+      "lines_reviewed": 94,
+      "table_lines_reviewed": 13,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "15_shale.md",
+      "source_sha256": "8781e16d7ff7bdb694b93e3997072eab55ce58ad10c54342e3653fc25e9f7524",
+      "english_sha256": "f0e9926ddd53437ace6fceb25bacf810c5a2f67f4b90789aa366c5d387c39fbb",
+      "lines_reviewed": 122,
+      "table_lines_reviewed": 15,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "16_alphabet.md",
+      "source_sha256": "fae1b1cea22c579c2afdae00e5844f244e6da86c98e2b64491cef48389045f2c",
+      "english_sha256": "94762ef3d40a6dd7acb300211bc86842a322d9abf73f5094a0c2127af4ccb699",
+      "lines_reviewed": 104,
+      "table_lines_reviewed": 26,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "18_fusion.md",
+      "source_sha256": "b22183477e8cf1f8b04a76aad0199e131a9b1f0ea89626b778b9e6f4c92ba7e1",
+      "english_sha256": "60905233ac174d7da4c9dbf84c7e0b711a5977fbb28e860d3eef471629d392e0",
+      "lines_reviewed": 99,
+      "table_lines_reviewed": 24,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    },
+    {
+      "file": "19_postscript.md",
+      "source_sha256": "ef005bb0617789da2e6ef7b9a5a0664b4a68b5e820169f382ae783e45039ee3f",
+      "english_sha256": "e0fca671841de1d3f52be333ca296f2522e0a58d50d817f2776705d687f01945",
+      "lines_reviewed": 13,
+      "table_lines_reviewed": 0,
+      "status": "PASS",
+      "review_method": "Independent full source-versus-English reading of every line and table, followed by current-file structural and hash checks."
+    }
+  ],
+  "issues": [
+    {
+      "file": "07_agi.md",
+      "line": 292,
+      "old_english": "but Chinese restrictions prevented sale of all licensed products.",
+      "proposed_new_english": "but Chinese restrictions meant the company could not sell all licensed products.",
+      "reason": "Preserve not-all scope; some licensed shipments were completed, not a total ban on all sales.",
+      "status": "CLOSED",
+      "closure": "Parent applied the correction; current full line independently reread against source and verified."
+    },
+    {
+      "file": "09_valuation.md",
+      "line": 48,
+      "old_english": "with initial coverage of storage systems and liquid-cooling equipment.",
+      "proposed_new_english": "with initial coverage of energy-storage systems and liquid-cooling equipment.",
+      "reason": "储能 means energy storage, not generic data storage.",
+      "status": "CLOSED",
+      "closure": "Parent applied the correction; current full line independently reread against source and verified."
+    },
+    {
+      "file": "11_crash.md",
+      "line": 60,
+      "old_english": "Deferred revenue and changed expense-recognition timing",
+      "proposed_new_english": "Delayed revenue recognition and changed expense-recognition timing",
+      "reason": "收入推迟 means timing of revenue recognition; deferred revenue is a distinct liability term that could imply advance payments.",
+      "status": "CLOSED",
+      "closure": "Parent applied the correction; current full line independently reread against source and verified."
+    },
+    {
+      "file": "15_shale.md",
+      "line": 112,
+      "old_english": "providing disconfirming evidence that the supply chain is realizing gains.",
+      "proposed_new_english": "providing evidence that the supply chain is realizing gains, contrary to the pessimistic case.",
+      "reason": "Clarify that strong ASML results challenge the pessimistic thesis rather than disconfirming supply-chain gains.",
+      "status": "CLOSED",
+      "closure": "Parent applied the correction; current full line independently reread against source and verified."
+    }
+  ],
+  "numeric_review": {
+    "status": "PASS",
+    "author_ledger": "translation_group_c.json",
+    "ledger_entries_reviewed": 215,
+    "entries": [
+      {
+        "file": "07_agi.md",
+        "line": 1,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 3,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 5,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 13,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 15,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 29,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 33,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 34,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 40,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 42,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 44,
+        "status": "PASS",
+        "classification": "1.6万 lines × 10,000 = 16,000 lines. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 46,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 50,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 52,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 54,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 66,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 68,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 72,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 76,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 82,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 86,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 92,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 94,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 96,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 98,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 134,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 142,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 150,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 154,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 156,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 158,
+        "status": "PASS",
+        "classification": "5,000万美元 × 10,000 = USD 50,000,000 = USD 50 million; licensing threshold unchanged. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 164,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 166,
+        "status": "PASS",
+        "classification": "50万 GPUs × 10,000 = 500,000 GPUs; retained as the claim the source says must NOT be made. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 168,
+        "status": "PASS",
+        "classification": "2000亿 EUR × 100,000,000 = EUR 200 billion; 200亿 EUR = EUR 20 billion.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 170,
+        "status": "PASS",
+        "classification": "2000亿 USD × 100,000,000 = USD 200 billion; still an expectation, not received proceeds. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 172,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 178,
+        "status": "PASS",
+        "classification": "7.95亿美元 × 100,000,000 = USD 795 million. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 186,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 190,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 194,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 196,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 204,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 206,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 210,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 215,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 219,
+        "status": "PASS",
+        "classification": "10亿美元 × 100,000,000 = USD 1 billion. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 231,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 235,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 243,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 247,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 262,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 268,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 270,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 274,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 278,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 282,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 284,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 286,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 288,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 292,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": false
+      },
+      {
+        "file": "07_agi.md",
+        "line": 316,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 320,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 321,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 322,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 323,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 326,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 328,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 329,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 330,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 331,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 332,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 333,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 338,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 340,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 348,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 350,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 354,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "07_agi.md",
+        "line": 358,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 1,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 3,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 36,
+        "status": "PASS",
+        "classification": "Table unit changed from RMB 亿元 (100 million) to RMB billions. Every monetary table value is divided by 10, without rounding beyond original displayed precision. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 40,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 695.47→69.547; 222.38→22.238; 80.08→8.008. Growth percentages unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 41,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 318.50→31.850; 113.72→11.372; 14.64→1.464. Trailing zero preserves original display precision; growth percentages unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 42,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 47.51→4.751; 20.83→2.083; 14.62→1.462; growth percentages unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 52,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 80.08→8.008; 91.61→9.161; −11.52→−1.152; +62.09→+6.209; +18.50→+1.850. Signs and original rounding retained.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 53,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 14.64→1.464; 18.06→1.806; −3.42→−0.342; −1.52→−0.152; −6.94→−0.694.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 54,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 14.62→1.462; 4.91→0.491; +9.71→+0.971. H1 tokens unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 56,
+        "status": "PASS",
+        "classification": "Original yuan numerators are byte-for-byte numerically retained. Divisors changed from 1亿 = 100,000,000 to 1 billion = 1,000,000,000 so that each result is in the translated table unit of RMB billions rather than 亿元. This unit-only divisor change is logged even though the numeric token remains 1. Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 58,
+        "status": "PASS",
+        "classification": "−30.02亿元 ÷10 = RMB −3.002 billion; +3.53亿元 ÷10 = RMB +0.353 billion.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 62,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 68,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 72,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 116.45→11.645; 27.29→2.729; 87.46→8.746; −136.91→−13.691; 289.86→28.986; 219.28→21.928; −141.91→−14.191. Exact yuan operands unchanged; formula divisor changed from 100,000,000 to 1 billion to return billions. Source rounded display values retained, not silently recomputed to different precision. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 74,
+        "status": "PASS",
+        "classification": "RMB 亿元 to billions, divide by 10: 387.18→38.718; 143.22→14.322; −22.74→−2.274; +8.77→+0.877. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 94,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 106,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 114,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 118,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 119,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 120,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 121,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 122,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 123,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 124,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 126,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "08_china.md",
+        "line": 130,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 1,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 3,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 35,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 39,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 42,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 43,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 46,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 48,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": false
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 54,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 56,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 58,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 60,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 64,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 70,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 78,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "09_valuation.md",
+        "line": 80,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 1,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 18,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 22,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 23,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 24,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 26,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 28,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 29,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 30,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 31,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 32,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 33,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 34,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 35,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 36,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 38,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 44,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 48,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 50,
+        "status": "PASS",
+        "classification": "2.9万人 ×10,000 = 29,000 people; 6.0万人 ×10,000 = 60,000 people. Employment increase and downward revision retain their distinct meanings. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 52,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 54,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 56,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 58,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 62,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 63,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 68,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 70,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 72,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 76,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 77,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 78,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 80,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 82,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 84,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 88,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 90,
+        "status": "PASS",
+        "classification": "2.22629亿元 = RMB 222.629 million; 2532.6万元 = RMB 25.326 million; 8400.57万元 = RMB 84.0057 million. Revenue, loss and approximate Q3 cash outflow remain distinct. Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 92,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 94,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 96,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 98,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 100,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 102,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 115,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 147,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "11_crash.md",
+        "line": 1,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "11_crash.md",
+        "line": 27,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "11_crash.md",
+        "line": 45,
+        "status": "PASS",
+        "classification": "26亿美元 ÷10 = USD 2.6 billion. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "11_crash.md",
+        "line": 49,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "11_crash.md",
+        "line": 51,
+        "status": "PASS",
+        "classification": "42亿美元 ÷10 = USD 4.2 billion. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "11_crash.md",
+        "line": 68,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "11_crash.md",
+        "line": 106,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 1,
+        "status": "PASS",
+        "classification": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 45,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 46,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 47,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 48,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 56,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 58,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "12_delay.md",
+        "line": 60,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 3,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 16,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 20,
+        "status": "PASS",
+        "classification": "人民币300万元 = RMB 3 million; 150万元 = RMB 1.5 million. These remain net-remittance quotas, not portfolio limits. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 22,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. 附件一 is rendered Appendix 1; Chinese ordinal converted to Arabic 1.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 28,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 30,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. 第二、三条 is rendered Articles 2 and 3; Chinese legal article numerals converted to Arabic.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 34,
+        "status": "PASS",
+        "classification": "5万美元 ×10,000 = USD 50,000; annual facilitation quota, not blanket investment permission. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 40,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 74,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "15_shale.md",
+        "line": 21,
+        "status": "PASS",
+        "classification": "210万 barrels/day = 2.10 million barrels/day; approximation and displayed precision retained.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "15_shale.md",
+        "line": 25,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "15_shale.md",
+        "line": 44,
+        "status": "PASS",
+        "classification": "亿美元 to USD billions, divide by 10: 278.10→27.810; 354.75→35.475; 65.10→6.510; 32.73→3.273. Display precision and acquisition comparability qualification retained. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "15_shale.md",
+        "line": 112,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": false
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 3,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 5,
+        "status": "PASS",
+        "classification": "800亿美元 ÷10 = USD 80 billion, in both occurrences; plan ceiling is not immediate proceeds.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 7,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 14,
+        "status": "PASS",
+        "classification": "2900万 shares = 29 million; 1400万 = 14 million; 8600万 = 86 million. Each-class versus total counts preserved.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 18,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 20,
+        "status": "PASS",
+        "classification": "1200万 Class A shares = 12 million; 2400万 Class C = 24 million.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 27,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 51,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 53,
+        "status": "PASS",
+        "classification": "8600万 = 86 million shares; 3600万 = 36 million; 1.22亿 = 122 million; 122.94亿 = 12.294 billion; 123.68亿 = 12.368 billion. Period-end versus diluted weighted-average share counts preserved. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 57,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 75,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 79,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 89,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 95,
+        "status": "PASS",
+        "classification": "Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 104,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 3,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 16,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. Numeric values are identical; order changes only to express the same sentence or table cell naturally in English.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 17,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 19,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 23,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 25,
+        "status": "PASS",
+        "classification": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 27,
+        "status": "PASS",
+        "classification": "3亿美元 ×100,000,000 = USD 300 million in both occurrences. Expected future absorption of energy costs is not current-quarter cash paid. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December.",
+        "english_excerpt_reflects_final_text": true
+      }
+    ],
+    "structure_inventory": "translation-structure-check.json",
+    "structure_inventory_sha256": "efeeac90ccc4a100dd6929f704a77a448d19fcd39e914620d95b92e85e427ea4",
+    "filtered_numeric_difference_count": 41,
+    "filtered_numeric_differences": [
+      {
+        "file": "07_agi.md",
+        "line": 1,
+        "status": "PASS",
+        "explanation": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 44,
+        "status": "PASS",
+        "explanation": "1.6万 lines × 10,000 = 16,000 lines. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 86,
+        "status": "PASS",
+        "explanation": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 158,
+        "status": "PASS",
+        "explanation": "5,000万美元 × 10,000 = USD 50,000,000 = USD 50 million; licensing threshold unchanged. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 166,
+        "status": "PASS",
+        "explanation": "50万 GPUs × 10,000 = 500,000 GPUs; retained as the claim the source says must NOT be made. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 168,
+        "status": "PASS",
+        "explanation": "2000亿 EUR × 100,000,000 = EUR 200 billion; 200亿 EUR = EUR 20 billion."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 170,
+        "status": "PASS",
+        "explanation": "2000亿 USD × 100,000,000 = USD 200 billion; still an expectation, not received proceeds. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 178,
+        "status": "PASS",
+        "explanation": "7.95亿美元 × 100,000,000 = USD 795 million. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 219,
+        "status": "PASS",
+        "explanation": "10亿美元 × 100,000,000 = USD 1 billion. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 322,
+        "status": "PASS",
+        "explanation": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. English repeats October where Chinese shares one month across the listed dates; no added event."
+      },
+      {
+        "file": "07_agi.md",
+        "line": 323,
+        "status": "PASS",
+        "explanation": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. English repeats October where Chinese shares one month across the listed dates; no added event."
+      },
+      {
+        "file": "08_china.md",
+        "line": 40,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 695.47→69.547; 222.38→22.238; 80.08→8.008. Growth percentages unchanged."
+      },
+      {
+        "file": "08_china.md",
+        "line": 41,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 318.50→31.850; 113.72→11.372; 14.64→1.464. Trailing zero preserves original display precision; growth percentages unchanged."
+      },
+      {
+        "file": "08_china.md",
+        "line": 42,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 47.51→4.751; 20.83→2.083; 14.62→1.462; growth percentages unchanged."
+      },
+      {
+        "file": "08_china.md",
+        "line": 52,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 80.08→8.008; 91.61→9.161; −11.52→−1.152; +62.09→+6.209; +18.50→+1.850. Signs and original rounding retained."
+      },
+      {
+        "file": "08_china.md",
+        "line": 53,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 14.64→1.464; 18.06→1.806; −3.42→−0.342; −1.52→−0.152; −6.94→−0.694."
+      },
+      {
+        "file": "08_china.md",
+        "line": 54,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 14.62→1.462; 4.91→0.491; +9.71→+0.971. H1 tokens unchanged."
+      },
+      {
+        "file": "08_china.md",
+        "line": 58,
+        "status": "PASS",
+        "explanation": "−30.02亿元 ÷10 = RMB −3.002 billion; +3.53亿元 ÷10 = RMB +0.353 billion."
+      },
+      {
+        "file": "08_china.md",
+        "line": 72,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 116.45→11.645; 27.29→2.729; 87.46→8.746; −136.91→−13.691; 289.86→28.986; 219.28→21.928; −141.91→−14.191. Exact yuan operands unchanged; formula divisor changed from 100,000,000 to 1 billion to return billions. Source rounded display values retained, not silently recomputed to different precision. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "08_china.md",
+        "line": 74,
+        "status": "PASS",
+        "explanation": "RMB 亿元 to billions, divide by 10: 387.18→38.718; 143.22→14.322; −22.74→−2.274; +8.77→+0.877. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 50,
+        "status": "PASS",
+        "explanation": "2.9万人 ×10,000 = 29,000 people; 6.0万人 ×10,000 = 60,000 people. Employment increase and downward revision retain their distinct meanings. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 90,
+        "status": "PASS",
+        "explanation": "2.22629亿元 = RMB 222.629 million; 2532.6万元 = RMB 25.326 million; 8400.57万元 = RMB 84.0057 million. Revenue, loss and approximate Q3 cash outflow remain distinct. Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 94,
+        "status": "PASS",
+        "explanation": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 96,
+        "status": "PASS",
+        "explanation": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 98,
+        "status": "PASS",
+        "explanation": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 100,
+        "status": "PASS",
+        "explanation": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 102,
+        "status": "PASS",
+        "explanation": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 115,
+        "status": "PASS",
+        "explanation": "Chinese chapter numerals are rendered as Arabic chapter numbers, including cross-references; referents unchanged."
+      },
+      {
+        "file": "11_crash.md",
+        "line": 45,
+        "status": "PASS",
+        "explanation": "26亿美元 ÷10 = USD 2.6 billion. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "11_crash.md",
+        "line": 51,
+        "status": "PASS",
+        "explanation": "42亿美元 ÷10 = USD 4.2 billion. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 20,
+        "status": "PASS",
+        "explanation": "人民币300万元 = RMB 3 million; 150万元 = RMB 1.5 million. These remain net-remittance quotas, not portfolio limits. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 22,
+        "status": "PASS",
+        "explanation": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. 附件一 is rendered Appendix 1; Chinese ordinal converted to Arabic 1."
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 30,
+        "status": "PASS",
+        "explanation": "Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December. 第二、三条 is rendered Articles 2 and 3; Chinese legal article numerals converted to Arabic."
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 34,
+        "status": "PASS",
+        "explanation": "5万美元 ×10,000 = USD 50,000; annual facilitation quota, not blanket investment permission. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "15_shale.md",
+        "line": 21,
+        "status": "PASS",
+        "explanation": "210万 barrels/day = 2.10 million barrels/day; approximation and displayed precision retained."
+      },
+      {
+        "file": "15_shale.md",
+        "line": 44,
+        "status": "PASS",
+        "explanation": "亿美元 to USD billions, divide by 10: 278.10→27.810; 354.75→35.475; 65.10→6.510; 32.73→3.273. Display precision and acquisition comparability qualification retained. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 5,
+        "status": "PASS",
+        "explanation": "800亿美元 ÷10 = USD 80 billion, in both occurrences; plan ceiling is not immediate proceeds."
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 14,
+        "status": "PASS",
+        "explanation": "2900万 shares = 29 million; 1400万 = 14 million; 8600万 = 86 million. Each-class versus total counts preserved."
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 20,
+        "status": "PASS",
+        "explanation": "1200万 Class A shares = 12 million; 2400万 Class C = 24 million."
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 53,
+        "status": "PASS",
+        "explanation": "8600万 = 86 million shares; 3600万 = 36 million; 1.22亿 = 122 million; 122.94亿 = 12.294 billion; 123.68亿 = 12.368 billion. Period-end versus diluted weighted-average share counts preserved. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 27,
+        "status": "PASS",
+        "explanation": "3亿美元 ×100,000,000 = USD 300 million in both occurrences. Expected future absorption of energy costs is not current-quarter cash paid. Chinese numeric calendar dates/month ranges are rendered in English month names or ISO format; day/year order may change. Calendar values and observation/publication distinctions are retained. Month mapping: 1 January, 2 February, 3 March, 4 April, 5 May, 6 June, 7 July, 8 August, 9 September, 10 October, 11 November, 12 December."
+      }
+    ],
+    "independent_quantity_checks": [
+      {
+        "file": "07_agi.md",
+        "line": 44,
+        "source_number": "1.6",
+        "english_number": "16,000",
+        "source_unit_factor": "10000",
+        "english_unit_factor": "1",
+        "result": "PASS"
+      },
+      {
+        "file": "07_agi.md",
+        "line": 158,
+        "source_number": "5,000",
+        "english_number": "50",
+        "source_unit_factor": "10000",
+        "english_unit_factor": "1000000",
+        "result": "PASS"
+      },
+      {
+        "file": "07_agi.md",
+        "line": 166,
+        "source_number": "50",
+        "english_number": "500,000",
+        "source_unit_factor": "10000",
+        "english_unit_factor": "1",
+        "result": "PASS"
+      },
+      {
+        "file": "07_agi.md",
+        "line": 168,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "2000",
+            "english_number": "200"
+          },
+          {
+            "source_number": "200",
+            "english_number": "20"
+          }
+        ],
+        "result": "PASS",
+        "note": "EUR 亿 to billions; policy mobilization targets remain targets"
+      },
+      {
+        "file": "07_agi.md",
+        "line": 170,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "2000",
+            "english_number": "200"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to billions; expected investment not proceeds"
+      },
+      {
+        "file": "07_agi.md",
+        "line": 178,
+        "factor": "100",
+        "values": [
+          {
+            "source_number": "7.95",
+            "english_number": "795"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to millions; contract modification not period revenue"
+      },
+      {
+        "file": "07_agi.md",
+        "line": 219,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "10",
+            "english_number": "1"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to billions; financing not commissioning"
+      },
+      {
+        "file": "08_china.md",
+        "line": 40,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "695.47",
+            "english_number": "69.547"
+          },
+          {
+            "source_number": "222.38",
+            "english_number": "22.238"
+          },
+          {
+            "source_number": "80.08",
+            "english_number": "8.008"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 41,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "318.50",
+            "english_number": "31.850"
+          },
+          {
+            "source_number": "113.72",
+            "english_number": "11.372"
+          },
+          {
+            "source_number": "14.64",
+            "english_number": "1.464"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 42,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "47.51",
+            "english_number": "4.751"
+          },
+          {
+            "source_number": "20.83",
+            "english_number": "2.083"
+          },
+          {
+            "source_number": "14.62",
+            "english_number": "1.462"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 52,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "80.08",
+            "english_number": "8.008"
+          },
+          {
+            "source_number": "91.61",
+            "english_number": "9.161"
+          },
+          {
+            "source_number": "-11.52",
+            "english_number": "-1.152"
+          },
+          {
+            "source_number": "+62.09",
+            "english_number": "+6.209"
+          },
+          {
+            "source_number": "+18.50",
+            "english_number": "+1.850"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 53,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "14.64",
+            "english_number": "1.464"
+          },
+          {
+            "source_number": "18.06",
+            "english_number": "1.806"
+          },
+          {
+            "source_number": "-3.42",
+            "english_number": "-0.342"
+          },
+          {
+            "source_number": "-1.52",
+            "english_number": "-0.152"
+          },
+          {
+            "source_number": "-6.94",
+            "english_number": "-0.694"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 54,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "14.62",
+            "english_number": "1.462"
+          },
+          {
+            "source_number": "4.91",
+            "english_number": "0.491"
+          },
+          {
+            "source_number": "+9.71",
+            "english_number": "+0.971"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 58,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "-30.02",
+            "english_number": "-3.002"
+          },
+          {
+            "source_number": "+3.53",
+            "english_number": "+0.353"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 72,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "116.45",
+            "english_number": "11.645"
+          },
+          {
+            "source_number": "27.29",
+            "english_number": "2.729"
+          },
+          {
+            "source_number": "87.46",
+            "english_number": "8.746"
+          },
+          {
+            "source_number": "-136.91",
+            "english_number": "-13.691"
+          },
+          {
+            "source_number": "289.86",
+            "english_number": "28.986"
+          },
+          {
+            "source_number": "219.28",
+            "english_number": "21.928"
+          },
+          {
+            "source_number": "-141.91",
+            "english_number": "-14.191"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "08_china.md",
+        "line": 74,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "387.18",
+            "english_number": "38.718"
+          },
+          {
+            "source_number": "143.22",
+            "english_number": "14.322"
+          },
+          {
+            "source_number": "-22.74",
+            "english_number": "-2.274"
+          },
+          {
+            "source_number": "+8.77",
+            "english_number": "+0.877"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB billions; signs, source precision and period preserved; percentages unchanged"
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 50,
+        "source_number": "2.9",
+        "english_number": "29,000",
+        "source_unit_factor": "10000",
+        "english_unit_factor": "1",
+        "result": "PASS"
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 50,
+        "source_number": "6.0",
+        "english_number": "60,000",
+        "source_unit_factor": "10000",
+        "english_unit_factor": "1",
+        "result": "PASS"
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 90,
+        "factor": "100",
+        "values": [
+          {
+            "source_number": "2.22629",
+            "english_number": "222.629"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB亿元 to RMB million revenue"
+      },
+      {
+        "file": "10_conclusion.md",
+        "line": 90,
+        "factor": "0.01",
+        "values": [
+          {
+            "source_number": "2532.6",
+            "english_number": "25.326"
+          },
+          {
+            "source_number": "8400.57",
+            "english_number": "84.0057"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB万元 to RMB millions; loss and approximate outflow retain status"
+      },
+      {
+        "file": "11_crash.md",
+        "line": 45,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "26",
+            "english_number": "2.6"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to billions"
+      },
+      {
+        "file": "11_crash.md",
+        "line": 51,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "42",
+            "english_number": "4.2"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to billions"
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 20,
+        "factor": "0.01",
+        "values": [
+          {
+            "source_number": "300",
+            "english_number": "3"
+          },
+          {
+            "source_number": "150",
+            "english_number": "1.5"
+          }
+        ],
+        "result": "PASS",
+        "note": "RMB万元 to millions; individual net-remittance quota"
+      },
+      {
+        "file": "14_crossborder.md",
+        "line": 34,
+        "source_number": "5",
+        "english_number": "50,000",
+        "source_unit_factor": "10000",
+        "english_unit_factor": "1",
+        "result": "PASS"
+      },
+      {
+        "file": "15_shale.md",
+        "line": 21,
+        "factor": "0.01",
+        "values": [
+          {
+            "source_number": "210",
+            "english_number": "2.10"
+          }
+        ],
+        "result": "PASS",
+        "note": "万 barrels/day to million barrels/day; approximate sample output"
+      },
+      {
+        "file": "15_shale.md",
+        "line": 44,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "278.10",
+            "english_number": "27.810"
+          },
+          {
+            "source_number": "354.75",
+            "english_number": "35.475"
+          },
+          {
+            "source_number": "65.10",
+            "english_number": "6.510"
+          },
+          {
+            "source_number": "32.73",
+            "english_number": "3.273"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to billions; organic comparability limitation retained"
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 5,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "800",
+            "english_number": "80"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to billions in both heading occurrences"
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 14,
+        "factor": "0.01",
+        "values": [
+          {
+            "source_number": "2900",
+            "english_number": "29"
+          },
+          {
+            "source_number": "1400",
+            "english_number": "14"
+          },
+          {
+            "source_number": "8600",
+            "english_number": "86"
+          }
+        ],
+        "result": "PASS",
+        "note": "万 shares to million shares; each class vs total preserved"
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 20,
+        "factor": "0.01",
+        "values": [
+          {
+            "source_number": "1200",
+            "english_number": "12"
+          },
+          {
+            "source_number": "2400",
+            "english_number": "24"
+          }
+        ],
+        "result": "PASS",
+        "note": "万 shares to million shares"
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 53,
+        "factor": "0.01",
+        "values": [
+          {
+            "source_number": "8600",
+            "english_number": "86"
+          },
+          {
+            "source_number": "3600",
+            "english_number": "36"
+          }
+        ],
+        "result": "PASS",
+        "note": "万 shares to million shares"
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 53,
+        "factor": "100",
+        "values": [
+          {
+            "source_number": "1.22",
+            "english_number": "122"
+          }
+        ],
+        "result": "PASS",
+        "note": "亿 shares to million shares"
+      },
+      {
+        "file": "16_alphabet.md",
+        "line": 53,
+        "factor": "0.1",
+        "values": [
+          {
+            "source_number": "122.94",
+            "english_number": "12.294"
+          },
+          {
+            "source_number": "123.68",
+            "english_number": "12.368"
+          }
+        ],
+        "result": "PASS",
+        "note": "亿 shares to billion shares; period-end vs diluted weighted average"
+      },
+      {
+        "file": "18_fusion.md",
+        "line": 27,
+        "factor": "100",
+        "values": [
+          {
+            "source_number": "3",
+            "english_number": "300"
+          }
+        ],
+        "result": "PASS",
+        "note": "USD 亿 to millions in both occurrences; conditional future energy-cost absorption"
+      }
+    ],
+    "independent_derived_arithmetic_checks": [
+      {
+        "calculation": "07_agi discount retention at 0.08",
+        "rounded_result": "79.4",
+        "expected": "79.4",
+        "result": "PASS"
+      },
+      {
+        "calculation": "07_agi discount loss at 0.08",
+        "rounded_result": "20.6",
+        "expected": "20.6",
+        "result": "PASS"
+      },
+      {
+        "calculation": "07_agi discount retention at 0.10",
+        "rounded_result": "75.1",
+        "expected": "75.1",
+        "result": "PASS"
+      },
+      {
+        "calculation": "07_agi discount loss at 0.10",
+        "rounded_result": "24.9",
+        "expected": "24.9",
+        "result": "PASS"
+      },
+      {
+        "calculation": "07_agi discount retention at 0.12",
+        "rounded_result": "71.2",
+        "expected": "71.2",
+        "result": "PASS"
+      },
+      {
+        "calculation": "07_agi discount loss at 0.12",
+        "rounded_result": "28.8",
+        "expected": "28.8",
+        "result": "PASS"
+      },
+      {
+        "calculation": "07_agi illustrative EV pure-timing loss",
+        "rounded_result": "9.95",
+        "expected": "9.95",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china Zhongji cumulative bridge",
+        "rounded_result": "-1.152",
+        "expected": "-1.152",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china Eoptolink cumulative bridge",
+        "rounded_result": "-0.342",
+        "expected": "-0.342",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china TFC cumulative bridge",
+        "rounded_result": "0.971",
+        "expected": "0.971",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china Demingli cumulative bridge",
+        "rounded_result": "-14.191",
+        "expected": "-14.191",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (80, 15)",
+        "rounded_result": "10",
+        "expected": "10",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (80, 20)",
+        "rounded_result": "14",
+        "expected": "14",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (80, 25)",
+        "rounded_result": "18",
+        "expected": "18",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (100, 15)",
+        "rounded_result": "13",
+        "expected": "13",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (100, 20)",
+        "rounded_result": "18",
+        "expected": "18",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (100, 25)",
+        "rounded_result": "23",
+        "expected": "23",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (120, 15)",
+        "rounded_result": "16",
+        "expected": "16",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (120, 20)",
+        "rounded_result": "22",
+        "expected": "22",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china EV/equity table (120, 25)",
+        "rounded_result": "28",
+        "expected": "28",
+        "result": "PASS"
+      },
+      {
+        "calculation": "08_china illustrative equity decline",
+        "rounded_result": "-11.1",
+        "expected": "-11.1",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation adjusted FCF",
+        "rounded_result": "2230.3",
+        "expected": "2230.3",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation Q4 FCF lower",
+        "rounded_result": "369.7",
+        "expected": "369.7",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation Q4 FCF upper",
+        "rounded_result": "569.7",
+        "expected": "569.7",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation Q4 revenue",
+        "rounded_result": "4413.4",
+        "expected": "4413.4",
+        "result": "PASS"
+      },
+      {
+        "calculation": "10_conclusion TSMC cash bridge",
+        "rounded_result": "476.570",
+        "expected": "476.570",
+        "result": "PASS"
+      },
+      {
+        "calculation": "10_conclusion Meta FCF",
+        "rounded_result": "-2.120",
+        "expected": "-2.120",
+        "result": "PASS"
+      },
+      {
+        "calculation": "10_conclusion Microsoft cash bridge",
+        "rounded_result": "18.633",
+        "expected": "18.633",
+        "result": "PASS"
+      },
+      {
+        "calculation": "10_conclusion CoreWeave partial net proceeds",
+        "rounded_result": "3.5708",
+        "expected": "3.5708",
+        "result": "PASS"
+      },
+      {
+        "calculation": "11_crash contribution case 1",
+        "rounded_result": "45.5",
+        "expected": "45.5",
+        "result": "PASS"
+      },
+      {
+        "calculation": "11_crash contribution case 2",
+        "rounded_result": "32.5",
+        "expected": "32.5",
+        "result": "PASS"
+      },
+      {
+        "calculation": "11_crash index example",
+        "rounded_result": "-19",
+        "expected": "-19",
+        "result": "PASS"
+      },
+      {
+        "calculation": "14_crossborder price return",
+        "rounded_result": "-63.46",
+        "expected": "-63.46",
+        "result": "PASS"
+      },
+      {
+        "calculation": "14_crossborder inverse daily product",
+        "rounded_result": "94.55",
+        "expected": "94.55",
+        "result": "PASS"
+      },
+      {
+        "calculation": "15_shale price usage revenue 1",
+        "rounded_result": "2",
+        "expected": "2",
+        "result": "PASS"
+      },
+      {
+        "calculation": "15_shale price usage revenue 2",
+        "rounded_result": "-6.5",
+        "expected": "-6.5",
+        "result": "PASS"
+      },
+      {
+        "calculation": "16_alphabet cumulative equity proceeds",
+        "rounded_result": "61.933",
+        "expected": "61.933",
+        "result": "PASS"
+      },
+      {
+        "calculation": "16_alphabet liquid asset total",
+        "rounded_result": "265.098",
+        "expected": "265.098",
+        "result": "PASS"
+      },
+      {
+        "calculation": "16_alphabet common income",
+        "rounded_result": "26.170",
+        "expected": "26.170",
+        "result": "PASS"
+      },
+      {
+        "calculation": "18_fusion incremental NPV",
+        "rounded_result": "12.74",
+        "expected": "12.74",
+        "result": "PASS"
+      },
+      {
+        "calculation": "18_fusion pass-through margin",
+        "rounded_result": "42.6",
+        "expected": "42.6",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation adjusted EPS times 25",
+        "rounded_result": "178.75",
+        "expected": "178.75",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation adjusted EPS times 30",
+        "rounded_result": "214.50",
+        "expected": "214.50",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation adjusted EPS times 35",
+        "rounded_result": "250.25",
+        "expected": "250.25",
+        "result": "PASS"
+      },
+      {
+        "calculation": "09_valuation GAAP EPS times 30",
+        "rounded_result": "188.70",
+        "expected": "188.70",
+        "result": "PASS"
+      },
+      {
+        "calculation": "12_delay original NPV",
+        "rounded_result": "4.13",
+        "expected": "4.13",
+        "result": "PASS"
+      },
+      {
+        "calculation": "12_delay receipts delayed",
+        "rounded_result": "-5.33",
+        "expected": "-5.33",
+        "result": "PASS"
+      },
+      {
+        "calculation": "12_delay NPV decline",
+        "rounded_result": "9.47",
+        "expected": "9.47",
+        "result": "PASS"
+      },
+      {
+        "calculation": "12_delay whole project delayed",
+        "rounded_result": "3.76",
+        "expected": "3.76",
+        "result": "PASS"
+      },
+      {
+        "calculation": "12_delay equipment reduced",
+        "rounded_result": "12.85",
+        "expected": "12.85",
+        "result": "PASS"
+      },
+      {
+        "calculation": "16_alphabet illustrative per-share value",
+        "rounded_result": "99.50",
+        "expected": "99.50",
+        "result": "PASS"
+      },
+      {
+        "calculation": "16_alphabet illustrative per-share value",
+        "rounded_result": "100.50",
+        "expected": "100.50",
+        "result": "PASS"
+      },
+      {
+        "calculation": "18_fusion gross margin at power factor 1",
+        "rounded_result": "40",
+        "expected": "40",
+        "result": "PASS"
+      },
+      {
+        "calculation": "18_fusion gross margin at power factor .75",
+        "rounded_result": "43",
+        "expected": "43",
+        "result": "PASS"
+      },
+      {
+        "calculation": "18_fusion gross margin at power factor .5",
+        "rounded_result": "46",
+        "expected": "46",
+        "result": "PASS"
+      },
+      {
+        "calculation": "18_fusion gross margin at power factor 0",
+        "rounded_result": "52",
+        "expected": "52",
+        "result": "PASS"
+      }
+    ],
+    "formula_unit_equivalence": "08_china.md lines 56 and 72: original yuan numerators preserved; 1亿 denominators consistently changed from 100,000,000 to 1 billion=1,000,000,000 because all results/tables changed from RMB亿元 to RMB billions. Every table monetary entry divided by 10; signs, precision and percentages checked.",
+    "ledger_snapshot_note": "Author ledger English excerpts at 07_agi:292, 09_valuation:48 and 15_shale:112 precede the four semantic clarifications. Source excerpts remain exact. Numeric content is unchanged; this review records current final hashes and verifies all fixes. 11_crash:60 was not a numeric-change ledger entry.",
+    "scanner_note": "Earlier uppercase modal May false-positive at 10_conclusion:122 was inspected and removed by the updated parent checker; the current 41-row filtered inventory contains no unresolved numeric discrepancy.",
+    "rounding_boundary": "Q3 China bridges are faithfully converted from source; source says original H1 yuan figures were used rather than rounded table subtraction. No independent reopening of linked H1 source statements was performed, and no source rounding explanation was silently replaced."
+  },
+  "scope": {
+    "complete_bilingual_reading": true,
+    "files": 11,
+    "lines_including_blank_lines": 1368,
+    "table_lines_including_headers_and_separators": 268,
+    "focus": [
+      "Dates, periods, cutoff versus dated baselines, units and currencies",
+      "Product access, previews, restrictions, project commissioning versus plans",
+      "Financing commitments, signed facilities, executed issuance, net proceeds and fees",
+      "Revenue recognition, cash collection, operating profit and group cash distinctions",
+      "Causal, conditional, counterfactual and uncertainty language",
+      "Legal geography and limited historical verification; no new legal verification",
+      "No calibrated probability, AGI date or target-price conclusion beyond the Chinese source"
+    ],
+    "final_structural_checks": [
+      "Line counts and blank-line alignment",
+      "Markdown heading levels and positions",
+      "Every table row and column delimiter count",
+      "Byte-identical link and image destinations in sequence",
+      "Source and English current SHA-256 verified against latest parent structure inventory",
+      "All four corrections reread against original source after application"
+    ]
+  },
+  "limitations": [
+    "Translation fidelity review only; no new market, financial, product, legal or historical research was performed.",
+    "Source historical inconsistencies, dated baselines, unaudited statements, archived copies, failed fetches and incomplete checks remain source limitations, not independently verified findings.",
+    "The supplied Markdown image destinations were preserved and captions checked; chart image contents and final PDF pagination/layout were outside this assignment.",
+    "PASS applies only to the current file hashes recorded here; subsequent prose or numeric changes require rechecking."
+  ]
+}
