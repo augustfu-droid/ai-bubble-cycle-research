@@ -1,0 +1,147 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="大队长"><title>AI周期与泡沫研究 · 简版</title><style>@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Regular.ttf")}
+@font-face{font-family:Noto;src:url("file:///C:/Users/%E4%BB%98%E5%BC%BA/Documents/ChatGPT/AI%E9%A2%84%E6%B5%8B/AI%E6%B3%A1%E6%B2%AB%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/11_%E6%BA%90%E7%A0%81_python%E7%94%9F%E6%88%90%E8%84%9A%E6%9C%AC/fonts/NotoSansSC-Bold.ttf");font-weight:700}
+@page{size:A4;margin:20mm 18mm 20mm;@top-left{content:"大队长 · AI周期与泡沫研究";font-family:Noto;font-size:7pt;color:#667f90}@top-right{content:"V1.11 · 2026-11-17";font-family:Noto;font-size:7pt;color:#667f90}@bottom-left{content:"大队长出品 · 独立研究";font-family:Noto;font-size:7pt;color:#6b8090}@bottom-center{content:"联系邮箱：fqsx@mail.ustc.edu.cn";font-family:Noto;font-size:6.8pt;color:#6b8090}@bottom-right{content:counter(page)" / "counter(pages);font-family:Noto;font-size:7pt;color:#667f90}}
+@page cover{margin:0;@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}body{margin:0;font-family:Noto,sans-serif;font-size:10.5pt;line-height:1.8;color:#273e4d}
+.watermark{position:fixed;left:0;right:0;top:37%;text-align:center;transform:rotate(-28deg);font-size:57pt;font-weight:700;letter-spacing:5pt;color:#7aa6c0;opacity:.09;z-index:10;pointer-events:none;white-space:nowrap}
+.references{break-before:page}.references p{font-size:9pt}.references ol{font-size:8.8pt;line-height:1.65}.references li{margin:7pt 0;break-inside:avoid}.references li p{margin:3pt 0;font-size:8.8pt}.ref-url{font-size:7.5pt;color:#667f90;overflow-wrap:anywhere;word-break:break-all}.contact{font-size:9pt;color:#607b8e}
+.cover{page:cover;height:296mm;background:#f8fbfd;padding:36mm 25mm;break-after:page;position:relative}.cover .line{width:45mm;height:3mm;background:#91bdd5;margin-bottom:15mm}.brand{color:#64839a;font-size:10pt;letter-spacing:1pt}
+.cover h1{font-size:30pt;line-height:1.5;margin:30mm 0 12mm;color:#315e7c}.subtitle{font-size:13pt;color:#607b8e;line-height:1.9}.cover .edition{margin-top:24mm;font-size:12pt}.cover .foot{position:absolute;bottom:27mm;left:25mm;right:25mm;border-top:1pt solid #c7dce8;padding-top:6mm;font-size:9pt;color:#647f91}
+.front{break-after:page;font-size:9.5pt;line-height:1.7}.front h2{font-size:14pt;margin:12pt 0 8pt}.front p{margin:6pt 0}.front li{margin:5pt 0}.toc{break-after:page}.toc a{display:block;color:#355f7b;text-decoration:none;border-bottom:.4pt dotted #bfd3df;padding:4pt 0;font-size:9.2pt;line-height:1.6;break-inside:avoid}.toc .l2{font-weight:700;margin-top:6pt}.toc .l3{padding-left:12pt}.toc a:after{content:target-counter(attr(href url),page);float:right}
+h1,h2,h3,h4{color:#315e7c;line-height:1.5;break-after:avoid}h1{font-size:22pt}h2{font-size:17pt;border-bottom:1pt solid #9dbed2;padding-bottom:6pt;margin:22pt 0 12pt}h3{font-size:12.5pt;margin:17pt 0 8pt}h4{font-size:11pt;margin:14pt 0 7pt}main h2{bookmark-level:1}main h3{bookmark-level:2}main h4{bookmark-level:3}
+p{margin:8pt 0;orphans:3;widows:3}a{color:#386b8c;text-decoration:none;overflow-wrap:anywhere}blockquote{border-left:3pt solid #a1c5db;background:#f0f7fb;padding:8pt 12pt;margin:12pt 0}table{border-collapse:collapse;width:100%;font-size:8.3pt;line-height:1.65;margin:12pt 0 16pt}thead{display:table-header-group}tr{break-inside:avoid}td,th{border:.5pt solid #c9dce7;padding:6pt 7pt;text-align:left;vertical-align:top}th{background:#e0eef7;color:#315e7c}tr:nth-child(even) td{background:#f7fafc}
+ul,ol{padding-left:1.5em;margin:10pt 0}li{margin:7pt 0}img{display:block;max-width:100%;max-height:215mm;object-fit:contain;margin:14pt auto}code{font-family:Noto;background:#f0f5f8;font-size:.95em}hr{border:0;border-top:.6pt solid #c9dce7;margin:15pt 0}
+@media screen{body{max-width:1100px;margin:auto;padding:22px}.cover{height:auto;min-height:80vh;padding:42px 32px}.cover h1{margin-top:60px}.cover .foot{position:static;margin-top:60px}.toc a:after{content:none}.front,.toc,main{padding:12px}table{display:block;overflow:auto}.watermark{font-size:clamp(28px,5vw,72px)}}
+
+.author-view{break-after:page}.author-view h2{margin-top:10pt}.author-view h3{font-size:11.5pt;margin:11pt 0 5pt}.author-view p{margin:6pt 0}
+.author-view h2{bookmark-level:1}.author-view h3{bookmark-level:2}
+.author-view table:nth-of-type(2),.brief-body table:nth-of-type(2){table-layout:fixed}
+.author-view table:nth-of-type(2) th:first-child,.brief-body table:nth-of-type(2) th:first-child{min-width:0;width:16%}
+.author-view table:nth-of-type(2) th:not(:first-child),.brief-body table:nth-of-type(2) th:not(:first-child){width:42%}
+.edition-note{break-after:page;font-size:9.4pt;line-height:1.65}.edition-note h2{font-size:14pt}.edition-note p{margin:9pt 0}
+.cover .thesis{font-size:16pt;font-weight:700;color:#315e7c;margin-top:15mm;line-height:1.5}
+.cover h1{margin-top:18mm}.cover .edition{margin-top:14mm}
+.toc a{position:relative;padding-right:3.4em}.toc a:after{position:absolute;right:0;bottom:4pt;float:none}
+.brief-header{padding-bottom:8pt;border-bottom:1pt solid #9dbed2;margin-bottom:13pt}.brief-header h1{margin:0 0 8pt;font-size:24pt}.brief-header p{font-size:9pt;color:#607b8e;margin:4pt 0}
+.brief-note{font-size:8.5pt;color:#607b8e;border-top:.6pt solid #c9dce7;padding-top:8pt;margin-top:18pt}
+main h2{font-size:15pt;margin-top:17pt}main h3{font-size:11.6pt;margin-top:13pt}main p{margin:7pt 0}</style></head><body><div class="watermark" aria-hidden="true">大队长出品</div><header class="brief-header"><h1>AI周期与泡沫研究 · 简版</h1><p>大队长 | V1.11 | 2026-11-17 | <a href="mailto:fqsx@mail.ustc.edu.cn">fqsx@mail.ustc.edu.cn</a></p><p>核心观点、时间情景与AI芯片竞争、融资和资本回收</p></header><main class="brief-body"><p>原研究基线：2026年10月31日（北京时间）｜原时间判断登记：11月1日｜人事、融资及监管专题更新：2026年11月17日</p>
+<p><strong>我把这一轮AI资本泡沫较大范围破裂的主要风险窗口放在2027年上半年至2028年上半年。</strong> “破裂”在这里指多家主体估值持续重定价，并得到投资、融资与资产回收压力的共同印证；一次股价下跌不能结算为命中，也不等于AI技术失去价值。</p>
+<p>以下是依据截至2026年10月31日证据、于11月1日重新登记的作者主观预测，不是模型精确推算的日期，不恢复旧版概率与跌幅：</p>
+<table>
+<thead>
+<tr>
+<th>情景与可能时间</th>
+<th>触发与传导</th>
+<th>改判条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>基准：2027年上半年—2028年上半年</strong></td>
+<td>回款落后于投入，投产折旧与硬付款增加，回报下修传到估值和投资</td>
+<td>现金追上投入，旧资产回收保持，压力不再累积</td>
+</tr>
+<tr>
+<td>提前：2026年11月—2027年一季度</td>
+<td>大客户付款或再融资先出问题，采购、抵押和担保使冲击扩散</td>
+<td>融资与付款恢复，风险没有跨主体传导</td>
+</tr>
+<tr>
+<td>延后放大：2028年下半年—2029年上半年</td>
+<td>融资延续扩张，但新增硬义务仍快于回款，待回收资本更大</td>
+<td>建设放缓且缺口收窄，延续开始帮助消化</td>
+</tr>
+<tr>
+<td>消化、避免全面破裂：2027—2029年观察</td>
+<td>持续付费与效率改善吸收前期投入，经营现金改善</td>
+<td>续约、现金或融资再度转弱，投入重新失控</td>
+</tr>
+</tbody>
+</table>
+<p><strong>到2028年6月30日，若基准所述的多主体重定价与资金、经营传导未出现，应记为该窗口未兑现；不能自动顺延到下一格并声称预测正确。</strong> 四种路径不互斥，不相加成概率；消化情景可以意味着没有全面破裂。</p>
+<p><strong>从4月开始，我一直强调“延迟即放大”。我的核心判断仍是：如果AI商业化回款追不上持续投入，而企业继续锁定下一批设备、租赁和融资义务，周期延续就可能累积更大的资本回收压力。GPU陆续投产，折旧又会逐步进入利润。应用收入增长，尚不能自动覆盖这两本账。</strong></p>
+<p>我同时承认AI有真实用途，商业化范围正在扩大。当前证据已经显示部分集团建设现金不足，却不能据此断言所有AI公司亏损、所有项目无法回本。我对当前状态的判断是公司分化与局部资金、利润压力累积，尚未出现全行业需求和融资同步崩塌。</p>
+<p>据此，我对投资的态度是选择性参与：先找清楚谁付款、谁保留利润，再看买入价格能否容纳失误。应用进展值得上调研究权重，不能自动给所有模型、算力和相关股票一起上调估值。本文保留短剧、编程及其他应用的原资料与来源，另以第5节补入11月17日事件研究；不表示所有旧数据均已在该日重新核验，也不设未经校准的崩盘概率。</p>
+<h2 id="h-0000">先看我的核心判断，再看商业化证据</h2>
+<p><strong>真实经营利润、资本循环和回收压力，可以同时存在。</strong> 我不会用包含投资重估的净利润，替持续经营和新资产回收作证；重估上涨与下跌应对称调整，也不能据此把真实的芯片、云与广告利润说成虚假。云商投资模型公司、模型公司买算力、设备商提供信用支持，能够促成真实交付；但上游收到钱，尚不能证明圈外客户的持续付费足够支持整条链。股权、授信、采购和担保须按期限与状态拆开，不能加成一个已到账的规模。客户能靠经营预算续购时，融资可以成为过桥；永远靠下一轮出资支付上一轮承诺时，循环仍有脆弱性。（详细版第1、2章）</p>
+<p><strong>我对AGI与效率进步的判断是双向的。</strong> 技术跨越可能创造更多可收费任务，也可能让同一工作少用昂贵模型、减少旧设备的收费价值。应用商和客户可能受益，旧算力与高成本模型的出资人却未必受益；旧设备也可能因利用率提高而获得更长的收入寿命。我不再用一个统一AGI年份决定所有公司的估值，要看新增现金究竟留给谁。（第7、8章）</p>
+<p>我不把技术进步和资本回收放在同一条轴上。四格按同一业务、投资批次和观察期判断：“回收跟上”指持续客户净回款能按计划覆盖投入回收及未重复计入的到期硬付款；“回收落后”指该经营现金不足，仍需额外资金。技术快慢看新增任务的验收、可靠性与完整交付成本；放缓不等于既有能力消失。传统业务现金和融资只是缓冲，不证明新AI资产回本，也不能据此移入左格。</p>
+<table>
+<thead>
+<tr>
+<th>技术进展／付费回收</th>
+<th>回收跟上，客户现金支持</th>
+<th>回收落后，需额外资金</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>技术持续突破</strong></td>
+<td>新任务扩大收费，已有投入可能被消化。交付与分发较强者有缓冲；跟不上成本下降者仍会受压。若补贴退出后续费、现金毛利转弱，我会下调这一判断。</td>
+<td>应用与客户可能先受益，旧设备、高成本模型及重投入项目反而承压。若低价扩大用量，老设备净现金也能按计划覆盖投入与付款，我会转向消化判断。</td>
+</tr>
+<tr>
+<td><strong>技术进展放缓</strong></td>
+<td>已有成熟付费场景、持续现金者较能等待，依赖下一次能力跨越的高估值项目先受压。若存量客户续费或基本盘现金转弱，缓冲判断失效。</td>
+<td>客户集中、近期付款重、再融资依赖高者更易先出现资金压力；现金充足且能停扩建者相对有缓冲。若付款期限改善、已落实资金覆盖缺口，我会降低流动性风险；转入左格仍须经营回收跟上。</td>
+</tr>
+</tbody>
+</table>
+<p>四格描述经济状态，首页四条路径描述时间节奏；主体可以跨格迁移，不能一格对应一个年份，也不相加成概率或预定公司胜负。<strong>最值得警惕的一格，是技术明显进步，买入旧资产的股东却未必得到新增现金。</strong></p>
+<p><strong>我坚持分化，不给平台、模型、重资产云和应用商预判同一结局。</strong> 有广告、软件或成熟云现金的平台较能等待，仍要承担新建设与融资成本；独立模型商须覆盖研发和推理，重资产云须匹配起租与债务，应用商要守住客户关系和交付利润。客户集中、硬付款多且再融资依赖强的主体更容易先受压。现金和分发能力提供相对缓冲，但不能保证任何买价下的股东回报；上游“卖铲子”也会受客户缩单影响。（第10、12章）</p>
+<p><strong>中国机会要沿产品与现金传导，不能由国产替代标签直接得出。</strong> 模型能力接近不代表训练硬件、工程生态与能源条件相同；芯片受限也不等于中国AI需求消失。海外CapEx须经过产品结构、供应商份额、价格、交付与回款，才进入国内公司的收益。限制收紧可能促进部分替代，也可能伤害上游配套；放松可能惠及用户，却压低本地供应商价格。我不再预设每种政策情景都会带来投资收益。（第8、9章）</p>
+<p><strong>电力、主权资本和政策改变的是等待条件，不是取消账单。</strong> 已接电产能可能因新供给延后受益，在建项目却可能累积占款；长期资金能帮助跨过建设期，也能延续低回报扩张。需要核验实际出资、投运与风险分担，未来能源突破不能提前支付今天的租金和债务。铁路、互联网和页岩油的共同提醒，是技术进步、经营回本与投资收益必须分别验证；历史不能给这一轮固定跌幅、放大倍数或抄底日期。（第13章及附篇C、F）</p>
+<p>以下证据展开这些判断：我上调短剧、编程和其他应用的潜力，仍要求公司为客户创造收益、自身留住现金，买入价格也要合理。</p>
+<h2 id="h-0001">1. 为什么我仍强调“延迟即放大”</h2>
+<p>三家云厂给出了最直观的对照。Microsoft截至9月30日的FY27Q1，经营现金580亿美元，扣现金购建393.67亿美元后结余186.33亿美元；再扣融资租赁本金10亿美元，仍为176.33亿美元。<a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast">Microsoft财报</a></p>
+<p>Alphabet 2026Q3云业务收入307.09亿美元、营业利润111.21亿美元；集团当季经营现金422.90亿美元，现金购建513.55亿美元，两者之差为负90.65亿美元。但滚动十二个月同口径仍为正197.47亿美元。<a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf">Alphabet财报</a></p>
+<p>Amazon 2026Q3的AWS收入459.84亿美元、营业利润177.73亿美元；截至9月30日的滚动十二个月，集团经营现金1683亿美元减净现金购建2106.57亿美元，自由现金流为负423.57亿美元。<a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx">Amazon财报</a></p>
+<p>这些期间与定义不能混加，云分部利润也不等于集团AI项目回报。它们共同说明：需求增长是真的，建设占用现金也是真的。供应链的出货、利润与部分正现金证据，同样应被承认；上游赚钱不能替所有下游项目证明回本。</p>
+<p>我的判断是，资本投入正在要求更具体的回收解释。建设先付钱、资产多年使用，单季负现金不足以判定投资失败；但合同、租赁和债务付款不会因为远期市场很大就消失。若投入一直快于可持续经营现金，新增融资将影响利息、稀释和每股回报。融资尚可获得，也只能说明资金链得到延续，不能代替项目经营回本。</p>
+<p>“现在AI收入覆盖不了现金流”是我对回收压力的概括，更严格的检验是：客户回款先覆盖必要运营、形成经营现金，再检验其能否覆盖建设及未计入经营现金的到期付款。收入不是现金，集团现金也不是AI项目现金。现有财报支持部分集团出现缺口，尚不足以汇总成全行业AI专属缺口。若收入推迟而付款不推迟，或旧项目未收回投资便继续锁定新项目，等待就会放大资本占用；这才是我的机制判断，不能只因市场又涨了一段时间就声称风险必然增加。</p>
+<p>GPU折旧则检验利润是否承受得住资产成本。设备达到可使用状态后开始分摊成本；投产资产增加、租价下降或利用率不足，都可能令折旧压力更突出。旧设备仍能运行，不等于仍能按原价格赚回投资；新芯片出现，也不等于旧设备立即归零。应按设备批次核对租金、有效利用率、维护投入、经济寿命与残值。</p>
+<p>折旧是会计费用，不是当期再付一次设备款；自由现金流已经扣除现金购建，不能又把折旧完整扣一遍。会计使用寿命调整改变以后费用分摊，减值则须另查触发证据，不能先定所有GPU三年报废。延长折旧年限可以暂时改变利润节奏，却不会收回已花掉的资本；经营现金加回折旧，也不免除未来更新设备的支出。</p>
+<h2 id="h-0002">2. 短剧使视频模型更接近生产预算，利润归属仍待竞争决定</h2>
+<p>我提高短剧的权重，原因是已有付费与采购，而不只是观众愿意看新奇视频。兑吧2026上半年单列AI短剧收入2.22629亿元，但集团同期仍亏损2532.6万元：前者证明收入已经发生，后者不能反推短剧分部单独亏损或其净利率。<a href="https://yun.duiba.com.cn/corp/report/content/1/2026%E4%B8%AD%E6%9C%9F%E5%A0%B1%E5%91%8A.3f87c290d81d43e1b87da58f7eaf9818.pdf">兑吧中期报告</a></p>
+<p>中美两地都存在付费与广告混合模式，中国的免费分发、内容采购，美国的付费应用和跨境获客，各自有不同的结算与竞争条件。真人短剧大盘、AI辅助制作、主要由AI生成的作品、模型工具收入必须分开。同一部成片可以反复观看，不能把观看分钟或观众人数乘进视频生成账单；手机应用使用时长也不能直接证明全端电影被替代。</p>
+<p>短剧更有意义的上游需求，是工作室持续制作新剧、投流素材、续季与本地化版本。客户买的不是无限多视频，而是能按时验收、能够发行的镜头。更高采用率和更少返工有利于制作方，却可能减少同量成片的生成采购；新题材和新客户扩张足够快时，总采购又可能增加。究竟哪股力量占优，要看净付费产量、实现价格与完整成本。</p>
+<p>三类厂商的获利路径也不同：</p>
+<ul>
+<li><strong>Seedance：</strong> 外部模型服务可能直接收费，字节内部内容和广告业务也可能获得效率收益。但内部调用不是集团新增外部收入；红果增长不等于Seedance独占采购。本轮未取得足以独立复算其收入、毛利和训练投入的分部披露。</li>
+<li><strong>MiniMax：</strong> 海螺、企业API及开放权重授权，可以从专业生产中取得不同收入。2026上半年集团收入1.16573亿美元、毛利2081.3万美元，研发开支2.96870亿美元，已有毛利远未覆盖当期研发。开放平台与企业服务占收入63.4%，混合多种模态，不能全算视频或短剧收入。开放权重也可能扩大采用，却把部分托管采购转移到客户自己的算力。<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0826/2026082600680.pdf">MiniMax中期业绩</a></li>
+<li><strong>可灵：</strong> 2026Q2收入超过8.5亿元，说明视频工具已有规模收费；但公司未在该披露中单列完整视频利润和短剧收入。可灵外部订阅、API收费，与快手内部广告和内容效率，应分别核算。<a href="https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji">快手Q2业绩</a></li>
+</ul>
+<p>我更看重能反复交付、掌握授权IP和用户回款的经营能力，而非“会用某个模型”。单秒生成便宜以后，节省可能被投流竞价、失败作品、返工与平台分成吃掉；采购入口接入多家模型后，底层供应商也可能失去定价权。短剧拓宽了收费潜力，尚未解决整个产业的利润分配。</p>
+<h2 id="h-0003">3. 编程需要改写市场模型，也需要改写省钱算法</h2>
+<p>早期研究把3650万专业开发者乘30美元月费、再乘12个月，得到131.4亿美元。这是成立的条件算术，<strong>把它写成整个市场的硬上限则是错误的。V1.5已撤回硬上限，本次没有把纠错冒充首次发现。</strong> 原稿还存在高价情景与“绝对上限”矛盾，以及“131亿美元”和“$131B”混用的量纲错误。</p>
+<p>按量收费、长任务、代码审查和非专业用途，使一个人的预算不再只是一份低价席位。GitHub Copilot在2026年6月转向按量计费，是这一变化的实际产品证据。但多个工具的年化收入、活跃人数与集团收入不能直接拼成去重市场总额；本报告仍未证明纯编程实际收入已超过旧算式。<a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">GitHub计费说明</a></p>
+<p>我认为人力影响会先落在招聘、离职不补和标准化外包上。企业未裁员，不代表原计划新增岗位没有减少；代码增长，也不代表团队可以同比例少付工资。655家企业的Chen–Stratton修订研究显示，生成端增长向交付传导时减弱，未检测到样本企业工程师就业的显著变化；这是观察性研究，“未检出”也不能解释成已经排除减员。<a href="https://fion.ac/jellyfish.pdf">企业组织研究</a></p>
+<p>Stanford利用ADP数据的研究则发现，22—25岁高AI暴露职业就业，相对低暴露同龄人的路径落后19%，主要分化与招聘减少有关。它不是“程序员被裁19%”，不是已识别的AI净因果比例，更不能搬成中国人力替代率。<a href="https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf">Stanford劳动研究</a></p>
+<p>详细报告用两套作者假设展示预算差别，均非公司实测或行业均值，且要求同等质量交付：美国10人团队稳态净释放2400小时，按内部成本价值24万美元；扣工具、服务与风险预算4万美元，产能净值20万美元。若全员留任、无新回款、无采购撤回，现金与风险预算反而增加4万美元；只有真实避免一名全年18万美元招聘，且能力覆盖其工作，才得到14万美元净收益。</p>
+<p>中国8人算例稳态净释放900小时，内部成本价值12万元，扣9万元后产能净值3万元。若确有可取消的900小时外包、每小时220元，且内部能完成同等工作，则避免付款19.8万元，扣9万元后净收益10.8万元。不能把产能净值与这笔替代用途收益相加。</p>
+<p>这里4万美元、9万元都含风险预算，并非全部已经付现；首年还有培训、接入与并行验证，不能直接套稳态收益。工资较低的团队不是不能受益，而是更需要控制复核和工具费用，或找到确实可以撤回的支出。客户省下100元，最终只会有一部分变成供应商收入，还要经受竞争分配。</p>
+<h2 id="h-0004">4. 其他应用使我更重视既有付款关系</h2>
+<p>AI商业化不只发生在编程和视频。AlphaSense披露2026Q2公司ARR超过7亿美元，支持知识工作流已形成付费规模；这是公司自报的年度化经常性指标，包含内容、检索和平台价值，不是当季收入或生成式AI增量收入。<a href="https://www.alpha-sense.com/press/alphasense-named-the-only-leader-in-market-and-competitive-intelligence-platforms/">AlphaSense原始披露</a></p>
+<p>Duolingo 2026Q2按公司口径产生7863万美元自由现金流，证明包含AI功能的教育产品可以有正现金，却不能把全部课程收入或利润归给AI。<a href="https://www.sec.gov/Archives/edgar/data/1562088/000162828026053603/duol-20260630.htm">Duolingo Q2财报</a></p>
+<p>相反，Character.ai在已有订阅与广告收入的情况下，于10月进入法院监督出售程序；当时服务继续运行，不能写成已停服或已完成出售。这说明用户价值、收费能力与股东回报可以分离，也不能据此否定所有陪伴产品。<a href="https://blog.character.ai/an-update-on-character-ai/">Character.ai官方公告</a></p>
+<p>我的研究优先级因此偏向清楚的付款方、验收标准和续费关系。办公、客服应看问题是否真正解决；知识服务应看授权与核验成本；医疗文书不能用记录处理量替代临床结果；自动驾驶有收费服务，也仍要承担车辆、维护、远程协助和利用率风险。既有渠道可能留住利润，实施与人工接管也可能让规模增长同步放大成本。没有统一的“AI应用利润率”，更不能把不同层级的收入重复相加。</p>
+<h2 id="h-0005">5. 11月17日更新：黄仁勋离任怎样影响融资与回收</h2>
+<p><strong>我的主窗口仍是2027年上半年至2028年上半年。</strong> 这次事件提高了提前信用冲击路径的监测优先级，还没有证明停融或行业破裂。SEC确认董事会11月11日接受黄仁勋辞去总裁、CEO和董事，11月12日公告；Kress兼任临时CEO/CFO，Jones任董事长。公司表示业务和路线图继续，实际交付仍须检验。<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm">SEC人事8-K</a></p>
+<p>黄仁勋的重要性在于长期技术取舍，以及把客户、供应链、金融机构和政策条件协调起来。已有CUDA、系统与研发组织不会随离任当天消失，尚未签约、尚未交割的增量项目却可能重新审批。新CEO有财务背景，不代表一定削减研发或客户支持；资本纪律改善也可能让短期增长变慢、长期损失减少。</p>
+<p>融资关系必须分账：CoreWeave股权已投资20亿美元；未售容量订单初始价值63亿美元，按服务条件执行；SB Energy／OpenAI担保累计上限1050亿美元，分期生效；六金融机构平台逾5000亿美元是长期第三方资本目标。它们不能相加为已到账资金，存量合同也不因CEO变动自动消失。英伟达自用研发云服务与客户云支持是不同用途。（合同原件与资金状态详见完整报告第14.3—14.4节。）</p>
+<p>供应商赚钱与客户扩建缺口可以同时存在。CoreWeave前三季度经营现金56.38亿美元，现金购建设备等235.58亿美元，两项相减为负179.20亿美元；不是经营现金本身为负。同期净融资现金213.46亿美元已形成缓冲，不能将上述差额视为未获填补的资金短缺，也不代表经营回本。9月末98.37亿美元流动性含56.53亿美元可用授信，不能全称现金。19亿美元期初递延收入因合同变成可取消而转客户负债，也不是已经退款。相关经营期间早于离任，不能归因于这次事件。<a href="https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm">CoreWeave Q3 10-Q</a></p>
+<p>第十四章的纯假设项目展示两面：验收晚、已付设备占款和利息继续，会压低现金；若同时降价、利用率下降，回收更差。但若真实协商付款与提款后移，主动降速可以降低资金压力。替代股权实缴能缓解流动性，却不改变项目自身的经营回收，还可能稀释原股东。出现现金缺口的路径须先补足资金才能执行，不能用负银行存款假装可以无限施工，也不能将折旧再完整扣一次现金。</p>
+<p>BIS于11月16日宣布远程算力规则，计划11月19日刊登，截至研究日尚未生效。设备目的地与最终算力用户需要分别审查，许可证、例外和过渡不能省略。它不是所有面向中国用户的生成式API、短剧或编程应用禁令；中国直接收入占比也不能替代最终用途敞口，地区收入按直接客户总部归类，最终用户和机房位置可能不同。<a href="https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors">公报预公示</a></p>
+<p>我因此看两条路径：审批、许可和交付延迟，而固定付款继续，压力可能跨企业扩散；继任稳定、资金实际出资、低回报扩建减少，则可能有序消化。11月16日已有合作金融机构仍在讨论项目的报道，也必须作为反证，不能只收集支持悲观判断的材料。<a href="https://www.streetinsider.com/Reuters/Analysis-Nvidias%2BAI%2Bfinancing%2Bmachine%2Bmay%2Bsurvive%2BHuang,%2Bbut%2Bwith%2Bless%2Brisk%2Bappetite/27347181.html">Reuters</a></p>
+<p>下一步查正式继任与财报披露、项目验收及提款、后续季度回款与净硬义务。英伟达FY27Q3要到北京时间11月18日约05:20发布，本简版不提前使用结果。只有多主体持续重定价并有资金和资产回收传导，才满足原破裂定义；九项核心判断、两矩阵和2028年6月30日结算责任不变。用途扩大仍值得肯定，资本回收仍须逐笔证明。</p>
+<h2 id="h-0006">6. 投资上，我等待什么，什么会让我改判</h2>
+<p>对尚未持有者，我不会因为编程上限撤回、短剧需求增强就追认高估值。更值得优先研究的公司，应同时回答：客户收益能否兑现，供应商扣除完整成本后能否留住现金，资本投入能否收回，买价是否允许其中一项不如预期。对已有持仓者，应把新增收入、旧业务价格与席位受损、债务和稀释放在同一模型中。中国供应链还须核客户、产品、回款与资本支出，不能用“参与AI”替代每股收益。</p>
+<p>目前仍是分化，尤其需要警惕回款落后而硬付款继续累积的公司。若补贴退出后持续复购、同等质量交付成本下降、老设备继续贡献现金，且建设放缓后经营现金仍增长，我会承认时间正在帮助消化投入，减弱“延迟即放大”的判断。要确认预测中的行业性收缩已经发生，则需多主体同时出现订单或回款恶化、续约降价、融资受限，并有可追踪的传导，而非仅一次股价下跌或一家公司的负现金流。</p>
+<p>这套判断也有最容易犯错的两面：低估工具进步，会把今天的交付摩擦误当成永久上限；高估兑现速度，会把节省工时、用户增长和模型调用误当成股东现金。<strong>我愿意因前者上调对应用的判断，也会因后者坚持对价格和资本回收的要求。</strong> 本简版未重建相关证券同日估值，不提供目标价或统一买卖指令。</p>
+<h2 id="h-0007">7. 竞争补充：AMD、TPU会改变谁承担风险</h2>
+<p><strong>我上调对第二供应源实际能力的判断，但不把英伟达公司风险等同于行业需求风险。</strong> 若客户预算和资金仍在，AMD、TPU及云商自研芯片可以承接部分任务；若共同付款人缩预算，换芯片不会创造新现金。旧版已经提及TPU系统销售、AMD权证与Broadcom票据，本次补足整体机制；十一月十一日前的协议不能归因于黄仁勋离任。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm">客户多供应商安排</a></p>
+<p>替代已有实物依据，也仍有未来计划。AMD首批Helios已有客户运行，Meta公布MI350X推荐训练的生产研究；但这个案例不能推成所有大模型或同功耗成本全面领先。Google Ironwood已GA，十一月十七日产品页上的第八代系列仍是Coming soon。AWS的Trn3已经正式可用；Maia200已有生产负载、Maia300要等2027年。生产、可租和整批部署须分别确认，厂商benchmark不能跨任务横比。<a href="https://arxiv.org/html/2610.22230v1">Meta</a>、<a href="https://cloud.google.com/tpu">TPU产品页</a>、<a href="https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-ec2-trn3-ultraservers/">Trn3</a>、<a href="https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/">Maia</a></p>
+<p>客户真正比较的是相同质量与SLA下的完整任务成本，须计软件迁移、网络、电力和故障重跑。AMD可能拿到份额，也可能只是帮助客户压低英伟达报价；市场总量下降、支持成本上升时，份额升与利润降可以同时发生。TPU内部降本、Cloud收费和系统销售又是不同账目，Alphabet没有单列TPU产品利润，不能用整个云利润代替。<a href="https://docs.vllm.ai/en/latest/getting_started/installation/gpu/">软件迁移要求</a>、<a href="https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/">Alphabet Q3说明</a></p>
+<p>竞争者也不是只收货款。AMD九月末已有对外算力承诺和租赁担保；Alphabet部分外售TPU有回购支持；Broadcom则参与设备残值支持和客户租金融资。合同承诺、未出票额度和违约触发责任，都不是当前现金缺口，也不能与对应设备交易额相加。多种芯片仍可能服务同一模型公司，GW总体协议与其中云项目须去重。技术多元因此不等于最终信用分散。<a href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm">AMD</a>、<a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm">Alphabet</a>、<a href="https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm">Broadcom</a></p>
+<p>对悲观判断最有力的反证，并不是挑战者又公布一个性能数字，而是客户以较低完整成本持续复购，旧设备也找到合适负载，现金能够覆盖付款。若这种证据持续出现，我就应承认竞争提高了行业韧性。反过来，供应商给钱、客户买设备的支持仍在扩大，却没有更多终端净回款，就不能以客户名单增加证明风险下降。外售系统也只是改变资产归谁持有，未必减少全行业待回收投入。<a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm">系统销售及风险承担</a></p>
+<p>我保留两条相反路径：降本扩大付费任务，旧设备利用率与净现金保持，竞争就帮助消化投入；新平台压低旧GPU租价，重复建设与融资义务却继续增加，旧资本回收反而恶化。共同代工、封装、内存、电力与许可也使替代无法瞬间完成。下一步先看实际验收，再看成交价、续费和净回款，最后核提款、硬付款及担保；只有多主体持续恶化并相互传导，才升级行业判断。上述是条件推论，不新增胜率或目标价，原主窗口与2028年6月30日未兑现结算责任保持。<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm">交付与融资条件</a></p><p class="brief-note">编辑：2026-11-17；原研究截至2026-10-31，人事、融资与竞争专题增量截至2026-11-17，不代表全报告重核。与详细版配套阅读。个人研究，不构成投资建议。</p></main></body></html>

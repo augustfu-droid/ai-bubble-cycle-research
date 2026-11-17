@@ -1,0 +1,234 @@
+{
+  "research_cutoff": "2026-11-17 Asia/Shanghai",
+  "scope": "AMD actual delivery, migration economics and credit support; no valuation or stock target",
+  "claims": [
+    {
+      "id": "A01",
+      "date_or_period": "2025-10-14",
+      "claim": "OCI公布MI355X裸金属实例GA；MI300X实例2024年已推出",
+      "status": "可租用产品已宣布GA",
+      "sources": [
+        {
+          "title": "Oracle",
+          "url": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-amd-mi355x"
+        }
+      ],
+      "limitations": "GA不保证任意区域随时有配额；未实测价格、库存或SLA",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A02",
+      "date_or_period": "2026-07-23、11-03",
+      "claim": "AMD称Helios／MI455X已生产；Q3公告称首批机架正在Anthropic、Meta、Microsoft、OpenAI、OCI运行工作负载",
+      "status": "厂商确认生产及早期客户运行",
+      "sources": [
+        {
+          "title": "7月发布",
+          "url": "https://newsroom.amd.com/news/aai-2026-full-stack-compute-agentic-ai/"
+        },
+        {
+          "title": "Q3",
+          "url": "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/"
+        }
+      ],
+      "limitations": "不等于每家已完成GW部署；7月仍称OpenAI从Q4上线、2027加速，不能将首批运行和完整商用验收混为一谈",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A03",
+      "date_or_period": "2026-07-23",
+      "claim": "MI500计划2027年、MI600计划2028年",
+      "status": "路线图",
+      "sources": [
+        {
+          "title": "AMD",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era"
+        }
+      ],
+      "limitations": "不是当前交付能力或已实现性能",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A04",
+      "date_or_period": "2026-10-15",
+      "claim": "Meta公开MI350X推荐模型生产训练研究：10项代表工作负载、8—128 GPU；匹配卡数和batch后吞吐几何均值为B200的101.2%",
+      "status": "客户团队生产案例",
+      "sources": [
+        {
+          "title": "论文原文",
+          "url": "https://arxiv.org/html/2610.22230v1"
+        }
+      ],
+      "limitations": "MI350X功耗上限1000W、B200为750W，均为Meta风冷部署；不是通用LLM、零移植成本、同功耗或同TCO全面胜出",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A05",
+      "date_or_period": "2026-11-17取证",
+      "claim": "vLLM正式文档支持ROCm，并要求配套PyTorch／内核构建；不同ROCm或PyTorch构建可能需源码重编译",
+      "status": "软件支持已存在",
+      "sources": [
+        {
+          "title": "vLLM",
+          "url": "https://docs.vllm.ai/en/latest/getting_started/installation/gpu/"
+        },
+        {
+          "title": "ROCm兼容矩阵",
+          "url": "https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html"
+        }
+      ],
+      "limitations": "文档为滚动版本；框架入口兼容不保证定制算子、量化、分布式通信和生产性能可直接迁移",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A06",
+      "date_or_period": "2025-10-05签署、10-06公告",
+      "claim": "OpenAI协议总体6GW；原8-K确认初始1GW的binding purchase，允许关联方／授权采购方购买",
+      "status": "确定协议中包含初始有约束采购",
+      "sources": [
+        {
+          "title": "8-K含权证",
+          "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-25-230895/0001193125-25-230895.pdf"
+        },
+        {
+          "title": "OpenAI确认",
+          "url": "https://openai.com/index/openai-amd-strategic-partnership/"
+        }
+      ],
+      "limitations": "6GW不是一次到账金额；首1GW也须跟踪交付。权证未归属／不可行权部分在AMD因故终止供货协议或到期时取消；完整供货合同商业细节未公开",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A07",
+      "date_or_period": "2026-02-24",
+      "claim": "Meta确认最多6GW的多年AMD Instinct协议、计划2026H2开始支持首批部署的出货，采用多供应商组合",
+      "status": "客户确认的协议与计划",
+      "sources": [
+        {
+          "title": "Meta",
+          "url": "https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/amp/"
+        }
+      ],
+      "limitations": "不能写6GW已交付，或Meta已全面替换英伟达",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A08",
+      "date_or_period": "2026-09-26期末、11-04披露",
+      "claim": "OpenAI与Meta各最高1.6亿股权证、每股行权价$0.01；期末均未归属或可行权；已确认负债1.2，未确认授予日价值4.5",
+      "status": "客户激励及会计状态",
+      "sources": [
+        {
+          "title": "AMD 10-Q Note14",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+        }
+      ],
+      "limitations": "未独立验证；4.5随合格收入抵减收入，后续公允价值变动另列损益；不等于现金债务、已经稀释或免费订单",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A09",
+      "date_or_period": "同上",
+      "claim": "对外算力最大承诺6.2；拟转让／转租的未起租机房付款13.3；租赁担保最大7.7、债务担保0.75",
+      "status": "承诺／租赁／或有信用支持",
+      "sources": [
+        {
+          "title": "AMD 10-Q Notes8、11",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+        }
+      ],
+      "limitations": "未独立验证；算力承诺随第三方付款减少；租赁担保最长15年、债务担保最长6个月；期末无违约或担保代偿；不相加成当期资金缺口",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A10",
+      "date_or_period": "同上",
+      "claim": "现金及短投15.8、债务本金7.1；自营采购等不可取消承诺48.8另列",
+      "status": "流动性存量及营运承诺",
+      "sources": [
+        {
+          "title": "AMD 10-Q流动性及Note11",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+        }
+      ],
+      "limitations": "未独立验证；各期支付，不能把现金全部视为客户救助预算，不能与A09混为同一种风险",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A11",
+      "date_or_period": "2026Q3截至9-26、11-03披露",
+      "claim": "Data Center收入8.546、同比+97%，包括EPYC与Instinct等",
+      "status": "已确认分部收入",
+      "sources": [
+        {
+          "title": "AMD Q3",
+          "url": "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/"
+        }
+      ],
+      "limitations": "未独立验证；不是GPU收入、纯AI收入或无激励净回报",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A12",
+      "date_or_period": "2026-07-22、11-10",
+      "claim": "Anthropic最高2GW、首1GW计划2027H1；AMD最高股权承诺5.0。11月文件拟并行私募2.5逐美元抵扣原5.0",
+      "status": "双方确认、分期交付和融资安排",
+      "sources": [
+        {
+          "title": "AMD",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus"
+        },
+        {
+          "title": "客户S-1/A",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        }
+      ],
+      "limitations": "私募在该文件中仍为交割条件语态；不能加成7.5或自动认定已到账。首批采购受价格、融资等条件满足／客户豁免约束；合同非客户任意可取消，例外为AMD未补救重大违约；无固定美元采购承诺",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A13",
+      "date_or_period": "2026-11-16",
+      "claim": "TensorWave宣布向OpenAI提供457MW、6年、MI455X专用容量，作为现有AMD合作的一部分；发行稿含OpenAI支持表态",
+      "status": "新签部署协议",
+      "sources": [
+        {
+          "title": "TensorWave",
+          "url": "https://tensorwave.com/blog/tensorwave-to-provide-openai-with-457-megawatts-of-amd-powered-ai-infrastructure"
+        },
+        {
+          "title": "发行稿转载",
+          "url": "https://finance.yahoo.com/technology/ai/articles/tensorwave-announces-agreement-openai-deliver-140000669.html"
+        }
+      ],
+      "limitations": "官网正文抓取不全，全文使用Business Wire原稿转载，仍属发行人来源。不能在6GW之上再加457MW；未取得OpenAI单独项目页、完整合同、价格、提款与现场验收",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    },
+    {
+      "id": "A14",
+      "date_or_period": "2026-11-04披露",
+      "claim": "AMD披露先进产品依赖TSMC及先进封装；Instinct产品同受出口许可限制",
+      "status": "已披露供应链及政策风险",
+      "sources": [
+        {
+          "title": "AMD 10-Q风险因素",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+        }
+      ],
+      "limitations": "未取得可供转移的产能数量；不是英伟达缩单便能立即将同一产能无损切给AMD，也不是AMD可绕过许可",
+      "verification": "发行人/客户原件核实；凡AMD季度财务金额均未获得第二独立财务数源"
+    }
+  ],
+  "cross_cutting_inferences": [
+    "技术替代、订单份额、激励后利润、净现金和融资支持分别判断。",
+    "既有合作不能归因于11月11日黄仁勋离任；只能讨论前瞻条件传导。",
+    "6GW总体协议、项目云容量与采购里程碑须去重；不把TensorWave457MW叠加为新增6GW之外需求。",
+    "AMD有实际信用支持证据，但无法据此证明可等量替代英伟达整个融资缺口。",
+    "行业共同预算下降时，AMD份额上升与收入利润下降可能同时成立。"
+  ],
+  "unresolved": [
+    "AMD季度财务数值第二独立来源未验证。",
+    "TensorWave完整合同、站点、融资、验收及OpenAI单独项目公告未取得。",
+    "Anthropic11月10日拟并行私募不能未经交割后证据写成已到账。"
+  ]
+}

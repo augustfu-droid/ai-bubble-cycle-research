@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "status": "ALIGNED",
+  "date": "2026-11-17",
+  "scope": "Translator alignment record for four finalized Chinese/English source pairs. This is not an independent semantic approval.",
+  "source_lock_confirmed_by": [
+    "/root/amd_competition_research"
+  ],
+  "source_lock_record": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\competition_claim_map.json",
+  "source_lock_record_sha256": "23690651f616def2bcee9d5e9c2a99962eec3d96138883ba4b059da789e03f90",
+  "files": [
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\author_view_zh.md",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\author_view_en.md",
+      "source_sha256": "963be375d125eb175bf918ad96df3b2753e7aa2880827e90b0808c69b7f18d9b",
+      "translation_sha256": "b334d75c90d39044c673deb8dda9bc35f7ab846ad60f5d5d029660fbdf3987cf",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 6,
+      "untranslated_chinese_characters": 0,
+      "baseline_english_retained": true,
+      "retention_method": "Original file bytes retained as prefix; appended only"
+    },
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\brief_zh.md",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\brief_en.md",
+      "source_sha256": "863064432b6d234772e07bbc96a436093dde16f16fdd3147a55318e5adc6e2b5",
+      "translation_sha256": "15bb1b61510d2b95a9ac73145f8e89681cdf33dd5d6866501bfc162d2e717159",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 28,
+      "untranslated_chinese_characters": 0,
+      "baseline_english_retained": true,
+      "retention_method": "Original file bytes retained as prefix; appended only"
+    },
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\event_chapter_zh.md",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\event_chapter_en.md",
+      "source_sha256": "8ea4933dd08fc08298325f71afd6dc386bd6c65497bcf5c1db807d4eed7469ad",
+      "translation_sha256": "6ef44f60ee916e765e610b9c8307dd6cf960fcdc423e58a99eda3c0112a21f68",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 70,
+      "untranslated_chinese_characters": 0,
+      "baseline_english_retained": true,
+      "retention_method": "Removing sections 14.8.1-14.8.5 restores all baseline English text"
+    },
+    {
+      "source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\body_updates_zh.json",
+      "translation": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.11_20261117\\body_updates_en.json",
+      "source_sha256": "f34a670d9908d8734d566cb91322052ff087ec94d0ea04897d9cd060c85a2f00",
+      "translation_sha256": "78c92de100e43a14afc65ed491d65848e8e0a4e39f391f40793fd9bb1c64c9df",
+      "matches_locked_chinese": true,
+      "url_sequence_identical": true,
+      "url_count": 17,
+      "untranslated_chinese_characters": 0,
+      "baseline_english_retained": true,
+      "retention_method": "Six original chapter, heading and markdown fields retained; append-only markdown increments"
+    }
+  ],
+  "checks": [
+    {
+      "check": "All original English text, both matrices, nine author judgments, original URLs and original forecast/falsification terms retained",
+      "verified": true
+    },
+    {
+      "check": "Event chapter retains one H2 and nine original H3 subsections; five H4 subsections added within14.8",
+      "verified": true
+    },
+    {
+      "check": "JSON retains chapters1,2,8,10,12,13 and original headings containing November17",
+      "verified": true
+    },
+    {
+      "check": "Product dates and stages distinguish announcement, initial use, GA, rental access and completed deployment; eighth-generation TPUs remain Coming soon",
+      "verified": true
+    },
+    {
+      "check": "Meta101.2% throughput retained with1000W/750W limits, recommendation-workload boundary and no universal TCO ranking",
+      "verified": true
+    },
+    {
+      "check": "AMD6.2B commitments and7.7B lease guarantees kept distinct; no13.9B aggregation example remains in new block",
+      "verified": true
+    },
+    {
+      "check": "Alphabet6.6B contingent repurchase requires return in working order; not realized loss",
+      "verified": true
+    },
+    {
+      "check": "Broadcom43B potential support only after full deployment;72.5% lease formula less disposal; old29B not added",
+      "verified": true
+    },
+    {
+      "check": "Chinese420 yi dollars rendered as USD42 billion conditional note facility, not cash received or additional equipment demand",
+      "verified": true
+    },
+    {
+      "check": "Pre-November11 agreements not attributed to Huang departure, and later announcement alone does not establish causality",
+      "verified": true
+    },
+    {
+      "check": "Supplier diversification distinguished from ultimate customer credit; substitution can support absorption or impair old asset recovery",
+      "verified": true
+    },
+    {
+      "check": "Final Chinese corrections synchronized: public production cases; return condition; product/inventory factors before industry inference; budget/collections/financing alternatives",
+      "verified": true
+    },
+    {
+      "check": "No new share forecasts, price targets, uncalibrated probabilities or changed June30,2028 accountability",
+      "verified": true
+    },
+    {
+      "check": "Independent reviewer corrections synchronized: vacancy explicitly rises while renewals and cash gross profit deteriorate; table uses reporting or event dates rather than disclosure dates",
+      "verified": true
+    }
+  ],
+  "baseline_english_reused": [
+    "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\author_view_en.md",
+    "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\brief_en.md",
+    "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\event_chapter_en.md",
+    "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\10_源码_markdown\\V1.10_20261117\\body_updates_en.json"
+  ],
+  "unit_convention": "Amounts in Chinese yi dollars converted at10 yi=USD1 billion; new credit table remains USD billions. Old hypothetical project remains USD millions and untouched.",
+  "heading_counts": {
+    "2": 1,
+    "3": 9,
+    "4": 5
+  },
+  "chapters": [
+    1,
+    2,
+    8,
+    10,
+    12,
+    13
+  ],
+  "independent_semantic_review": {
+    "performed_by_translator": false,
+    "reviewer": "/root/amd_competition_research",
+    "status": "PASS",
+    "status_source": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\复审与版本记录\\V1.11_20261117\\semantic_review_en.json",
+    "review_notes": "C:\\Users\\付强\\Documents\\ChatGPT\\AI预测\\AI泡沫研究报告\\复审与版本记录\\V1.11_20261117\\semantic_review_en.md",
+    "review_sha256_matches_translations": true,
+    "review_record_sha256": "deeb501406af950d950544d524930ad43ceeb0492f95aa184756e22a04b5ba33",
+    "note": "PASS imported from the separate reviewer record after checking all four English and four Chinese SHA256 values; translator did not independently grant approval."
+  },
+  "unresolved_translator_findings": [],
+  "reviewer_requested_revisions": [
+    {
+      "reviewer": "/root/amd_competition_research",
+      "resolution": "Scenario counterevidence now states vacancy rises, while renewals and cash-based gross profit deteriorate.",
+      "status": "confirmed_closed_by_independent_reviewer"
+    },
+    {
+      "reviewer": "/root/amd_competition_research",
+      "resolution": "Funding table distinguishes reporting/event dates from disclosure dates.",
+      "status": "confirmed_closed_by_independent_reviewer"
+    },
+    {
+      "reviewer": "/root/amd_competition_research",
+      "resolution": "Chapter 12 incorporates budget, collections or financing deterioration rather than budget alone.",
+      "status": "confirmed_closed_by_independent_reviewer"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "file_sha256": {
+    "author_view_zh.md": "963be375d125eb175bf918ad96df3b2753e7aa2880827e90b0808c69b7f18d9b",
+    "brief_zh.md": "863064432b6d234772e07bbc96a436093dde16f16fdd3147a55318e5adc6e2b5",
+    "event_chapter_zh.md": "8ea4933dd08fc08298325f71afd6dc386bd6c65497bcf5c1db807d4eed7469ad",
+    "body_updates_zh.json": "f34a670d9908d8734d566cb91322052ff087ec94d0ea04897d9cd060c85a2f00"
+  }
+}

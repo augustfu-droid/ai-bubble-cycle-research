@@ -1,0 +1,302 @@
+{
+  "title": "AWS、定制ASIC及共同供应链事实底稿",
+  "cutoff": "2026-11-17 Asia/Shanghai",
+  "claims": [
+    {
+      "id": "ALT01",
+      "as_of_or_publication": "2025-12-02",
+      "claim": "EC2 Trn3 UltraServers正式可用；Trainium3配HBM3e、支持训练与推理",
+      "unit_and_status": "每芯片144GB HBM3e；云服务GA",
+      "sources": [
+        {
+          "title": "AWS发布",
+          "url": "https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-ec2-trn3-ultraservers/"
+        }
+      ],
+      "limitations": "GA不等于任何地区、任何数量立即可获；性能是供应商口径，不作跨平台排名。说明替代是可用服务而非纯路线图。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT02",
+      "as_of_or_publication": "2026-02-05／Q4 2025发布",
+      "claim": "Project Rainier为运行中的集群，含50万余Trainium2，Anthropic用于训练Claude",
+      "unit_and_status": "芯片颗数／已运行",
+      "sources": [
+        {
+          "title": "Amazon Q4结果",
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx"
+        }
+      ],
+      "limitations": "当时公司披露，不能把这一数目当11/17新增部署；客户2024公告另确认与Annapurna联合写内核、优化Neuron，但不是独立核验全部规模。[客户确认](https://www.anthropic.com/news/anthropic-amazon-trainium)",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT03",
+      "as_of_or_publication": "2026-11-17查阅的产品文档",
+      "claim": "Inf2为Inferentia2云实例；Trainium2/3也覆盖推理",
+      "unit_and_status": "产品／云服务",
+      "sources": [
+        {
+          "title": "AWS实例产品",
+          "url": "https://aws.amazon.com/ec2/instance-types/accelerated-computing/"
+        }
+      ],
+      "limitations": "动态文档不证明本日新增发布；不把Inferentia和Trainium当互不重叠的两份推理市场。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT04",
+      "as_of_or_publication": "2026-10-30",
+      "claim": "Jassy称拟2027年末使Trainium可在AWS之外获得；旧代Trainium短期容量价高于上半年",
+      "unit_and_status": "管理层计划／价格定性",
+      "sources": [
+        {
+          "title": "Amazon Q3芯片说明",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-custom-chips-demand-q3-2026-earnings"
+        }
+      ],
+      "limitations": "云外销售还不是已交付事实；芯片业务指标不能直接当独立芯片出货收入；旧代价格只是一项反证，不证明所有GPU保值。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT05",
+      "as_of_or_publication": "2026-04-20；Q3 10-Q及11-10客户招股书续核",
+      "claim": "4月宣布未来十年AWS新增承诺超过100B、最多5GW当前与未来Trainium；11/10客户文件细化Amazon最低承诺110B，2026-05至2036-04，欠用有补差及例外；云合同含AWS芯片性能义务",
+      "unit_and_status": "合同承诺／B、GW",
+      "sources": [
+        {
+          "title": "合作公告",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai"
+        },
+        {
+          "title": "Amazon Q3 10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        },
+        {
+          "title": "Anthropic S-1/A2 p180",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        }
+      ],
+      "limitations": "110B是后续更具体客户披露，不与>100B相加；不是现金已付或5GW已投产；性能义务使芯片能力和融资里程碑相连。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT06",
+      "as_of_or_publication": "2026-10-29／截至9-30；11-10客户续核",
+      "claim": "Amazon此前8B可转票据；Q2再投Series G 5B和Series H 5B，后者占用20B融资安排，余15B；客户披露这15B截至9-30未发行本金",
+      "unit_and_status": "历史出资8+5+5=18B；剩余额度15B",
+      "sources": [
+        {
+          "title": "Amazon 10-Q Note 3",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        },
+        {
+          "title": "Anthropic S-1/A2 pp173–174",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        }
+      ],
+      "limitations": "18B是历史投入加总，不是当期账面价值；15B随容量里程碑开放，不是现金；不能将Series H的5B再加进原20B作为额外承诺。两交易方文件核对。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT07",
+      "as_of_or_publication": "2026-10-29／Q3与TTM",
+      "claim": "AWS Q3收入46.0B、营业利润17.8B；Amazon TTM经营现金168.3B、公司FCF约−42.4B",
+      "unit_and_status": "分部季度损益／集团滚动现金",
+      "sources": [
+        {
+          "title": "Amazon业绩",
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
+        }
+      ],
+      "limitations": "沿用旧报告财务基线；本行发行人单源，非独立双源。不能算出Trainium利润，也不能由集团负FCF推断AWS亏损。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT08",
+      "as_of_or_publication": "2026-09-02／截至8-02财季",
+      "claim": "Broadcom AI半导体收入16.7B，包含定制加速器与网络；Q4 21.7B为指引",
+      "unit_and_status": "单季收入／B",
+      "sources": [
+        {
+          "title": "Broadcom Q3发布",
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+        }
+      ],
+      "limitations": "非纯ASIC收入，未单列各芯片/客户利润；单一发行人口径，未独立财务双源核验。最新财年Q4尚未披露，不能把指引当已实现。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT09",
+      "as_of_or_publication": "2026-09-10／截至8-02",
+      "claim": "初始AI XPV 35B、逾1GW；该批部署全部完成后Backstop最大潜在责任29B；当时未付款；42B票据当时未发行",
+      "unit_and_status": "融资结构／未折现或有责任",
+      "sources": [
+        {
+          "title": "Broadcom 10-Q Note10与MD&A",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm"
+        }
+      ],
+      "limitations": "旧基线复核。违约责任按85%未偿Backstop减资产处置价值；29B不是已损失，35B不是Broadcom直接现金投入。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT10",
+      "as_of_or_publication": "2026-10-26公告；10-27申报",
+      "claim": "金融伙伴宣布63B新SPV交易与承诺融资，购XPU和网络租给Anthropic，预计2027开始交付；Broadcom给残值支持",
+      "unit_and_status": "交易规模／B；计划交付",
+      "sources": [
+        {
+          "title": "Blackstone及银行联合声明",
+          "url": "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/"
+        },
+        {
+          "title": "Broadcom 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+        }
+      ],
+      "limitations": "承诺资金不是全额提款；联合声明是一个联合消息源，SEC独立文件确认或有责任但非现金到账。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT11",
+      "as_of_or_publication": "2026-10-27／10-26事项",
+      "claim": "上述新Backstop全部机架部署后最大潜在责任约43B；违约时按72.5%未偿租赁额减处置价值",
+      "unit_and_status": "未折现潜在责任／B",
+      "sources": [
+        {
+          "title": "Broadcom 8-K Item2.03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+        }
+      ],
+      "limitations": "不能把旧29B和新43B直接相加成当前合计风险；须核批次与重叠。更不能将63B交易额、43B担保和42B票据额度加成投入。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT12",
+      "as_of_or_publication": "2026-11-10／截至9-30及招股书日",
+      "claim": "Broadcom/可转让金融伙伴42B NPA仍无已发行票据；仅融资2026设备租赁季度租金，提款窗口设备可服务后启动",
+      "unit_and_status": "条件额度42B；已出票0",
+      "sources": [
+        {
+          "title": "Anthropic S-1/A2 pp175、313",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        },
+        {
+          "title": "Broadcom较早10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm"
+        }
+      ],
+      "limitations": "旧42B事实的较新状态续核。受增长、最低流动性、履约条件约束；PIK利息通常9%，特定收入条件下13%；未发行即未形成该笔现金债。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT13",
+      "as_of_or_publication": "2026-10-12",
+      "claim": "Maia 200已服务Microsoft Copilot等生产负载；Maia 300及多GW部署从2027起，拟成为微软自有服务主力推理平台",
+      "unit_and_status": "已生产／未来计划",
+      "sources": [
+        {
+          "title": "Microsoft公告",
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+        }
+      ],
+      "limitations": "自用计算替代不是芯片对外销售；最多1.7倍tokens/W是厂商工作负载比较；2027芯片不计当前供给。其N2P、HBM4设计亦表明不能脱离共同供应链。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT14",
+      "as_of_or_publication": "2026-10-15",
+      "claim": "TSMC重申2026 CapEx 60–64B；2026–28投入计划高于此前三年；5倍光罩尺寸先进封装已生产，9倍/14倍仍推进",
+      "unit_and_status": "公司资本预算／技术状态",
+      "sources": [
+        {
+          "title": "TSMC Q3官方电话会pp3、12",
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf"
+        }
+      ],
+      "limitations": "CapEx预算非实付；各客户产能份额/即时可转配比例未披露；不能由一个GPU客户缩单推定总晶圆需求同比下降。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT15",
+      "as_of_or_publication": "2026-10-28",
+      "claim": "SK hynix称已与14个大客户签LTA，覆盖2027–28总产能逾50%；协议价格在约定区间内反映市场，拟2027大增投资并可调整节奏",
+      "unit_and_status": "合同覆盖／全产品总产能",
+      "sources": [
+        {
+          "title": "SK hynix Q3",
+          "url": "https://news.skhynix.com/en/q3-2026-business-results/"
+        }
+      ],
+      "limitations": "不能写为50%“HBM”产能锁定，也不能将LTA当全额回款或不受价格影响；仅厂商披露，未逐个客户交叉确认。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT16",
+      "as_of_or_publication": "2026-07-17；9-19生态更新",
+      "claim": "华为展示1024卡Atlas 950实机；厂商称384超节点已部署750余套；CANN/Ascend软件持续开放",
+      "unit_and_status": "展示／厂商部署声明",
+      "sources": [
+        {
+          "title": "华为WAIC实机公告",
+          "url": "https://www.huawei.com/cn/news/2026/7/atlas-950-superpod"
+        },
+        {
+          "title": "9月生态更新",
+          "url": "https://www.huawei.com/en/news/2026/9/hc-agentic-thinkpro-pto-cann"
+        }
+      ],
+      "limitations": "不是8192卡最高规格已规模交付的证明；未取得等质量训练/推理、功耗、可靠性、交付成本独立对照，不写同等商业能力。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    },
+    {
+      "id": "ALT17",
+      "as_of_or_publication": "2026-11-16预公示；计划11-19刊登",
+      "claim": "远程算力IFR截至11-17未生效；含D:5/澳门实体及算力门槛、用途判断；五个目的地另有美国总部/最终母公司且满足报告要求的例外",
+      "unit_and_status": "法规状态／具体准入",
+      "sources": [
+        {
+          "title": "预公示原文pp1–8",
+          "url": "https://public-inspection.federalregister.gov/2026-23529.pdf"
+        }
+      ],
+      "limitations": "不等于所有API禁止；五目的地例外不是对D:5远程终端用途限制的通用豁免。换成美国厂商ASIC不会自动规避规则，国产替代也不因此无条件赚钱。",
+      "fact_type": "issuer_statement_or_filing",
+      "cutoff": "2026-11-17 Asia/Shanghai"
+    }
+  ],
+  "audit": {
+    "claim_count": 17,
+    "independent_financial_crosscheck": "仅ALT06有交易双方相关金额核对；发行人IR与SEC不当作独立两源；联合新闻稿仅一源；其余不足已标记",
+    "do_not_add": [
+      "Amazon Series H 5B包含于20B融资安排，余15B",
+      "Broadcom 63B交易额、43B或有责任、42B票据额度不得相加",
+      "旧29B与新43B担保批次/重叠未完全穿透，不相加"
+    ],
+    "known_gaps": [
+      "ASIC独立利润",
+      "跨平台同质量完整成本",
+      "云内与芯片外销去重收入",
+      "SPV担保重叠",
+      "ASIC二手残值",
+      "中国平台外部性能和成本验证"
+    ]
+  }
+}

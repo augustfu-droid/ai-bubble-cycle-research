@@ -1,0 +1,3 @@
+# 中文终稿独立复核：PASS
+
+四稿已完整阅读，审查问题均由作者修正并回读关闭。详细范围、证据与处理记录见本目录semantic_review_zh.md，机器可读通过状态与四稿SHA-256见semantic_review_zh.json。该文件是competition_claim_map.json原预留审计路径的索引，不另设一套验收结论。

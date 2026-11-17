@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "review_date": "2026-11-17",
+  "calculation_sha256": "00F18FF686E05F590FCF97B5EE3127413F454A1F1DF38386EBA596367569CE69",
+  "source_file": "C:/Users/付强/Documents/ChatGPT/AI预测/AI泡沫研究报告/复审与版本记录/V1.10_20261117/calculations.json",
+  "arithmetic_status": "PASS",
+  "method": "Independent closed-form cumulative operating periods, scheduled capex, principal counts and arithmetic interest sums, using Decimal precision 40. The embedded JavaScript engine was not executed or reused.",
+  "verification": {
+    "reported_financial_arithmetic": 5,
+    "commitment_rows": 7,
+    "scenarios": 8,
+    "summary_metrics": 72,
+    "monthly_cash_and_cumulative_project_fcf_rows": 584,
+    "max_cash_difference_usd_million": "0.0000003333333333333333333333334",
+    "project_fcf_difference": "0"
+  },
+  "findings": [
+    {
+      "id": "C1",
+      "priority": 2,
+      "status": "closed",
+      "location": "hypothetical_project.definitions and finance_deep.md lines 77,83,93-116",
+      "problem": "M0 includes a full month of preparation cost and interest, while prose describes it as an instantaneous investment date and M0..M72 as a six-year/72-month observation. There are 73 full settlement periods and payback output is a zero-based index.",
+      "requested_fix": "Define M0 as period 1, M12/M24 as period-end 13/25, M40/M46 payback as period-end 41/47, and M72 as period-end 73. Interest is on month-start newly drawn balance before month-end principal repayment; first principal index is draw index + 13. Keep 72-month depreciation independent of observation length.",
+      "resolution": "JSON definitions.time_axis and interest_timing now specify 73 complete monthly periods, zero-based indices and month-start draw before interest; finance_deep lines 77/83/93-116 use matching reader-facing period labels."
+    }
+  ],
+  "clarifications_requested": [
+    {
+      "id": "C2",
+      "status": "closed",
+      "location": "finance_deep.md pressure scenario and JSON limitations",
+      "detail": "7.85M is maximum unmet funding in M0..M24 only. Maintaining the hypothetical pressure path to M72 produces minimum cash -20.53M, before rescue costs. Clarify that the near-term amount does not finance the entire observation path.",
+      "resolution": "JSON funding_gap/limitations and finance_deep line 112 explicitly distinguish first-25-period gap 7.85M from full-observation low cash -20.53M; rescue funding and cost remain unmodeled."
+    }
+  ],
+  "mechanism_checks": {
+    "negative_cash_not_executable_without_funding": "PASS",
+    "approval_delay_requires_bridge_and_cost_exclusion": "PASS",
+    "acceptance_tail_and_operating_cost_shift_is_assumption": "PASS",
+    "slowdown_requires_counterparty_agreement_and_lower_preparation_cost": "PASS",
+    "alternative_equity_not_operating_revenue": "PASS",
+    "depreciation_not_deducted_twice": "PASS",
+    "principal_excluded_from_project_fcf": "PASS",
+    "simple_payback_not_npv_or_equity_return": "PASS",
+    "end_cash_not_terminal_equity_value": "PASS"
+  },
+  "evidence_file": "calculations_independent_review_notes.md",
+  "original_source_unchanged_by_reviewer": true,
+  "previous_calculation_sha256": "65D9BF8728DA29754581CE8705A604C697E0EB00786E9F48A9A176B34045E499",
+  "final_verification": "Read final definitions and limitations, checked finance_deep revised timing, amount and repayment wording, and computed final source SHA. No model numerical revision was requested or made; original high-precision numerical review remains applicable.",
+  "unresolved_findings": [],
+  "initial_review_file": "calculations_review_initial.json"
+}

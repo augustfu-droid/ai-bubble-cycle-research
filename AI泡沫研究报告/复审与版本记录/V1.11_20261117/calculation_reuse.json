@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-17",
+  "scope": "The hypothetical cash-flow engine, monthly outputs and independent calculation review are reused without modification from V1.10. The new work extends competition research rather than changing that model.",
+  "files": [
+    {
+      "name": "calculations.json",
+      "source": "AI泡沫研究报告/复审与版本记录/V1.10_20261117/calculations.json",
+      "sha256": "00f18ff686e05f590fcf97b5ee3127413f454a1f1df38386eba596367569ce69"
+    },
+    {
+      "name": "calculations_review.json",
+      "source": "AI泡沫研究报告/复审与版本记录/V1.10_20261117/calculations_review.json",
+      "sha256": "b033b0f9ec6c4c6ec06b9ac618cf6645c46234e3e912fa73989327de9c4ce002"
+    },
+    {
+      "name": "calculations_independent_review_notes.md",
+      "source": "AI泡沫研究报告/复审与版本记录/V1.10_20261117/calculations_independent_review_notes.md",
+      "sha256": "29ab990ac185c765693081a9de88a8ac4c2ef68cc972f04a7e8ccd5d583b5d48"
+    }
+  ]
+}

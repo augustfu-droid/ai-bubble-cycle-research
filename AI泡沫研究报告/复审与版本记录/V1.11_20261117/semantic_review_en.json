@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "file_sha256": {
+    "author_view_en.md": "b334d75c90d39044c673deb8dda9bc35f7ab846ad60f5d5d029660fbdf3987cf",
+    "brief_en.md": "15bb1b61510d2b95a9ac73145f8e89681cdf33dd5d6866501bfc162d2e717159",
+    "event_chapter_en.md": "6ef44f60ee916e765e610b9c8307dd6cf960fcdc423e58a99eda3c0112a21f68",
+    "body_updates_en.json": "78c92de100e43a14afc65ed491d65848e8e0a4e39f391f40793fd9bb1c64c9df"
+  },
+  "scope": "Independent paragraph-by-paragraph review of V1.11 English additions against final Chinese, primary-source evidence and inherited-text preservation. Unchanged V1.10 historical facts were not all re-audited.",
+  "reviewer": "/root/amd_competition_research",
+  "corrections_closed": [
+    "Scenario counterevidence now states vacancy rises, while renewals and cash-based gross profit deteriorate.",
+    "Funding table distinguishes reporting/event dates from disclosure dates.",
+    "Chapter 12 incorporates budget, collections or financing deterioration rather than budget alone."
+  ],
+  "source_zh_sha256": {
+    "event_chapter_zh.md": "8ea4933dd08fc08298325f71afd6dc386bd6c65497bcf5c1db807d4eed7469ad",
+    "author_view_zh.md": "963be375d125eb175bf918ad96df3b2753e7aa2880827e90b0808c69b7f18d9b",
+    "brief_zh.md": "863064432b6d234772e07bbc96a436093dde16f16fdd3147a55318e5adc6e2b5",
+    "body_updates_zh.json": "f34a670d9908d8734d566cb91322052ff087ec94d0ea04897d9cd060c85a2f00"
+  }
+}

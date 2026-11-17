@@ -1,0 +1,169 @@
+{
+  "version": "V1.11",
+  "cutoff": "2026-11-17 Asia/Shanghai",
+  "status": "LOCKED: Chinese root and independent review complete; semantic clarifications synchronized; no further expansion",
+  "claims": [
+    {
+      "id": "C01",
+      "claim": "英伟达公司风险与共同客户预算风险不同；技术多元不等于信用分散",
+      "sections": "14.8.1; author; brief 7; chapters 2/10/12",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+      ],
+      "limitations": "作者推论；并未确认行业共同收缩已发生，也未将既有合同归因离任。"
+    },
+    {
+      "id": "C02",
+      "claim": "AMD已有实际客户部署；TPU、AWS、Maia同时存在现货/云服务与未来计划",
+      "sections": "14.8.1; brief 7",
+      "sources": [
+        "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/",
+        "https://cloud.google.com/tpu",
+        "https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-ec2-trn3-ultraservers/",
+        "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      ],
+      "limitations": "公告、生产、GA及完整部署分开；官方网页截至2026-11-17，GA不代表所有区域任意配额。"
+    },
+    {
+      "id": "C03",
+      "claim": "Meta生产训练证明局部迁移可行，不证明AMD普遍或同功耗领先",
+      "sections": "14.8.2; author; brief 7; chapter 8",
+      "sources": [
+        "https://arxiv.org/html/2610.22230v1"
+      ],
+      "limitations": "10项推荐模型；MI350X1000W/B200750W；101.2%为匹配卡数/batch吞吐几何均值；不推广到全部LLM或TCO。"
+    },
+    {
+      "id": "C04",
+      "claim": "ROCm/PyTorch/vLLM及TorchTPU降低门槛但工程、质量与可靠性仍须验收",
+      "sections": "14.8.2; brief 7; chapter 8",
+      "sources": [
+        "https://docs.vllm.ai/en/latest/getting_started/installation/gpu/",
+        "https://pytorch.org/blog/introducing-torchtpu/",
+        "https://arxiv.org/html/2610.22230v1"
+      ],
+      "limitations": "框架支持不是所有自定义算子、精度、动态形状或通信无需迁移；无统一跨平台排行榜。"
+    },
+    {
+      "id": "C05",
+      "claim": "AMD可份额升而利润承压；TPU内部节约、Cloud收费、系统销售不同；ASIC和网络收益也须区分",
+      "sections": "14.8.2; author; brief 7; chapters 1/10",
+      "sources": [
+        "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/",
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+      ],
+      "limitations": "部分为作者条件推论；数据中心收入非纯GPU、Cloud利润非TPU利润，AI半导体收入非纯ASIC。"
+    },
+    {
+      "id": "C06",
+      "claim": "AMD已有对外算力承诺及租赁担保，不能等同无成本接替英伟达全部信用支持",
+      "sections": "14.8.3; author; brief 7; chapter 2",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+      ],
+      "limitations": "2026-09-26：6.2B最大算力承诺随第三方付款减少；7.7B租赁担保违约触发、期末无代偿；金额未获独立财务数源。"
+    },
+    {
+      "id": "C07",
+      "claim": "TPU外售仍留部分回购风险，Broadcom新Backstop与客户NPA不得相加成采购或现金缺口",
+      "sections": "14.8.3; author; brief 7; chapters 2/10/13",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+      ],
+      "limitations": "9/30Alphabet6.6B为最大潜在回购；10/26Broadcom43B为全部部署后最大或有责任，72.5%相关余额减处置价值；客户42B票据截至11/10未出票，条件性用于特定租金；新旧批次不合计。 Alphabet回购按约触发且须完好返还设备。"
+    },
+    {
+      "id": "C08",
+      "claim": "订单、GW、云项目与股权/租金融资需要去重；既有协议不是离任导致转单的证据",
+      "sections": "14.8.1/14.8.3; author; brief 7; chapter 12",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+        "https://openai.com/index/openai-amd-strategic-partnership/",
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+      ],
+      "limitations": "没有把未投产容量当即期现金或算力，不将同一客户和项目多层公告相加。"
+    },
+    {
+      "id": "C09",
+      "claim": "多路线共用上游和准入边界，份额转移不自动等于总需求萎缩或无限替代",
+      "sections": "14.8.4; brief 7; chapter 8",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+        "https://public-inspection.federalregister.gov/2026-23529.pdf"
+      ],
+      "limitations": "无可核即时产能切换比例；BIS截至11/17为预公示，不能写已生效或所有API受禁。"
+    },
+    {
+      "id": "C10",
+      "claim": "竞争可帮助消化，也可压旧资产回收并伴随净硬义务扩大；需按验收、回款、融资顺序改判",
+      "sections": "14.8.4/14.8.5; author; brief 7; chapters 12/13",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+        "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+      ],
+      "limitations": "作者条件判断，无主观胜率/份额预测/目标价；原主窗口及2028-06-30未兑现结算责任不变。"
+    }
+  ],
+  "validation": [
+    {
+      "file": "event_chapter_zh.md",
+      "original_text_preserved": true,
+      "original_urls_preserved": true,
+      "new_chinese_characters": 3500,
+      "total_chinese_characters": 9669,
+      "sha256": "8ea4933dd08fc08298325f71afd6dc386bd6c65497bcf5c1db807d4eed7469ad"
+    },
+    {
+      "file": "author_view_zh.md",
+      "original_text_preserved": true,
+      "original_urls_preserved": true,
+      "new_chinese_characters": 420,
+      "total_chinese_characters": 3988,
+      "sha256": "963be375d125eb175bf918ad96df3b2753e7aa2880827e90b0808c69b7f18d9b"
+    },
+    {
+      "file": "brief_zh.md",
+      "original_text_preserved": true,
+      "original_urls_preserved": true,
+      "new_chinese_characters": 868,
+      "total_chinese_characters": 7376,
+      "sha256": "863064432b6d234772e07bbc96a436093dde16f16fdd3147a55318e5adc6e2b5"
+    },
+    {
+      "file": "body_updates_zh.json",
+      "original_text_fields_and_urls_preserved": true,
+      "chapters": [
+        1,
+        2,
+        8,
+        10,
+        12,
+        13
+      ],
+      "sha256": "f34a670d9908d8734d566cb91322052ff087ec94d0ea04897d9cd060c85a2f00"
+    }
+  ],
+  "financial_source_rule": "Issuer SEC and IR are not independent sources. Numeric terms not independently cross-verified remain issuer/customer disclosures, not independent financial validation.",
+  "review": {
+    "root_corrections": [
+      "单一销量变化先检验份额、迭代和库存，不直接归因行业收缩。",
+      "生产经验改为依据公开生产案例。",
+      "TPU回购补合同触发与设备完好返还。",
+      "删除AMD承诺与担保13.9示例合计。"
+    ],
+    "independent_reviewer": "/root/alternative_platforms_research",
+    "independent_correction": "第12章以共同预算、回款或融资条件恶化支持行业传导，不将预算下降视为唯一必要条件。",
+    "audit_file": "AI泡沫研究报告/复审与版本记录/V1.11_20261117/final_chinese_review_by_alternatives.md",
+    "semantic_clarifications": [
+      "数据日期区分报告期末与事项日，不误称全部披露日。",
+      "旧资产空置明确为增加，与续约和现金毛利转弱方向一致。"
+    ]
+  }
+}

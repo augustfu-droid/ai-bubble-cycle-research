@@ -1,0 +1,264 @@
+{
+  "research_date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "scope": "Google TPU ecosystem, value capture and financing",
+  "baseline_note": "V1.10 already mentions TPU system sales; this expands competitive and capital-recovery interpretation, not a correction of a cloud-only assertion.",
+  "claims": [
+    {
+      "id": "T01",
+      "type": "observed_product_status",
+      "claim": "TPU7x Ironwood generally available on 2026-03-31; preview on 2025-11-24.",
+      "as_of": "2026-11-17",
+      "sources": [
+        "https://docs.cloud.google.com/tpu/docs/release-notes"
+      ],
+      "independent_financial_verification": null,
+      "limit": "GA does not establish unlimited regional supply or usage."
+    },
+    {
+      "id": "T02",
+      "type": "observed_product_status",
+      "claim": "Official product page labels TPU 8t, 8i, 8tx and 8i Max Coming soon.",
+      "as_of": "2026-11-17",
+      "sources": [
+        "https://cloud.google.com/tpu"
+      ],
+      "limit": "Do not infer no selected-customer use, and do not assert general availability. Nonofficial mirrored pages excluded."
+    },
+    {
+      "id": "T03",
+      "type": "announced_system",
+      "claim": "8tx uses 8t silicon and 5th Gen AMD EPYC hosts; 8i Max combines two 8i chips; both announced 2026-11-09.",
+      "sources": [
+        "https://cloud.google.com/blog/topics/ai-infrastructure/tpu-8tx-and-tpu-8i-max"
+      ],
+      "limit": "EPYC host collaboration is not an Instinct accelerator order or proof AMD designed the TPU. Vendor performance claims not independently ranked."
+    },
+    {
+      "id": "T04",
+      "type": "pricing_policy",
+      "claim": "Cloud TPU is charged while READY with prices expressed per chip-hour and differing by region/commitment.",
+      "as_of": "2026-11-17",
+      "sources": [
+        "https://cloud.google.com/tpu/pricing"
+      ],
+      "limit": "List price is not contracted net price or cost per accepted task."
+    },
+    {
+      "id": "T05",
+      "type": "recognized_revenue_exists",
+      "claim": "Alphabet began recognizing revenue from limited on-premises TPU systems supply agreements in Q2 2026; significant majority expected in 2027.",
+      "as_of": "2026-09-30",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+      ],
+      "locator": "Note 1 Revenue Recognition; MD&A Google Cloud",
+      "limit": "System sales include hardware, software, installation, support and extended warranty; not open-market bare-die retail."
+    },
+    {
+      "id": "T06",
+      "type": "disclosure_gap",
+      "claim": "Alphabet explicitly does not provide product-level TPU financials or margin breakdown.",
+      "event_date": "2026-10-28",
+      "sources": [
+        "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/"
+      ],
+      "limit": "Cloud segment revenue/profit cannot proxy TPU revenue/profit; absence of separate disclosure is not absence of sales."
+    },
+    {
+      "id": "T07",
+      "type": "contingent_guarantee",
+      "claim": "Maximum potential future payments for certain previously sold TPU hardware/embedded software repurchase guarantees were USD 6.6B.",
+      "value": 6.6,
+      "unit": "USD billion",
+      "as_of": "2026-09-30",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+      ],
+      "locator": "Note 10 Financial Guarantees",
+      "independent_financial_verification": false,
+      "limit": "Conditional return in working order; fair value not material; Alphabet believes discount limits economic incentive. Not current cash payment, debt principal or realized loss."
+    },
+    {
+      "id": "T08",
+      "type": "planned_availability",
+      "claim": "Google TPUs on OCI expected available in calendar 2027 with multi-year ramp; OCI supplies power, cooling and data-center networking.",
+      "event_date": "2026-10-27",
+      "sources": [
+        "https://www.oracle.com/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27/"
+      ],
+      "limit": "Announced partnership not deployed capacity, recognized revenue or cash collections; Google duplicate is a joint announcement."
+    },
+    {
+      "id": "T09",
+      "type": "customer_usage_confirmation",
+      "claim": "Apple says it expanded pre-training on cloud TPUs and optimized AFM 3 Cloud Pro for NVIDIA GPUs.",
+      "as_of": "2026-11-17",
+      "sources": [
+        "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models"
+      ],
+      "limit": "Customer confirmation of usage, not contract value or TPU hardware sales volume."
+    },
+    {
+      "id": "T10",
+      "type": "software_release",
+      "claim": "TorchTPU open sourced 2026-10-20; native PyTorch execution complements JAX; PyTorch documents compiler, bounded dynamism and production kernel considerations.",
+      "event_date": "2026-10-20",
+      "sources": [
+        "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+        "https://pytorch.org/blog/introducing-torchtpu/"
+      ],
+      "limit": "Collaborating platform confirmations are not independent performance validation; CUDA custom kernels and operations still need workload-specific validation."
+    },
+    {
+      "id": "T11",
+      "type": "competitor_coexistence",
+      "claim": "Google NVIDIA A5X instances updated to generally available on 2026-11-06.",
+      "event_date": "2026-11-06",
+      "sources": [
+        "https://cloud.google.com/blog/topics/ai-infrastructure/google-cloud-infrastructure-at-nvidia-gtc-berlin-2026"
+      ],
+      "limit": "Availability is not order volume. Supports coexistence rather than proof no GPU share erosion."
+    },
+    {
+      "id": "T12",
+      "type": "future_capacity_commitment",
+      "claim": "Anthropic to access approximately 3.5 GW via Broadcom starting in 2027 as part of wider next-generation TPU capacity commitment.",
+      "value": 3.5,
+      "unit": "GW",
+      "event_date": "2026-04-06",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+        "https://www.googlecloudpresscorner.com/2026-04-06-Anthropic-Expands-Use-of-Google-Cloud-and-TPUs"
+      ],
+      "independent_financial_verification": false,
+      "limit": "Exact 3.5 GW quantified by Broadcom; use depends on Anthropic commercial success. Nested in broader deal, not additive to it or proof already live."
+    },
+    {
+      "id": "T13",
+      "type": "minimum_purchase_commitment",
+      "claim": "Anthropic Google CSP hosting commitment at least approximately USD121.3B from April2026 to July2033, regardless of usage with true-up and specified adjustments/exceptions.",
+      "value": 121.3,
+      "unit": "USD billion",
+      "disclosure_date": "2026-11-10",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+      ],
+      "locator": "Contractual Obligations, Google CSP agreement",
+      "supersedes_old_value": 114.5,
+      "independent_financial_verification": false,
+      "limit": "Updated single-issuer disclosure replaces old USD114.5B figure; do not sum, infer delta is pure new orders, or treat full obligation as paid."
+    },
+    {
+      "id": "T13B",
+      "type": "estimated_future_payments",
+      "claim": "Additional TPU compute expected 2028-2031, estimated payments USD125-150B, excluded from contractual obligations table and subject to delivery/pricing/financing method.",
+      "value_range": [
+        125,
+        150
+      ],
+      "unit": "USD billion",
+      "disclosure_date": "2026-11-10",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+      ],
+      "independent_financial_verification": false,
+      "limit": "Estimate rather than fixed-dollar commitment or cash; alternatives include cloud hosting, direct purchase with five-year finance, third-party purchase/lease with five-year finance. Avoid mechanical addition to GW announcements."
+    },
+    {
+      "id": "T14",
+      "type": "financing_framework_and_pending_placement",
+      "claim": "Google 2026 NPA had a March2026 USD30B limit. May2026 USD10B Series H investment reduced availability to USD20B; no notes or non-voting common stock issued under the NPA as of2026-09-30. Pending IPO concurrent USD10B subscription further uses the framework, leaving USD10B available.",
+      "disclosure_date": "2026-11-10",
+      "as_of_balance": "2026-09-30",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/exhibit1015-sx1ax2.htm",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026073040/anthropicpbc-fwpxeeaprospea.htm",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+      ],
+      "independent_financial_verification": false,
+      "limit": "Same issuer/transaction documents not two independent ledgers. Subject to closing and ownership provisions; not cash received as of research date; do not total 20+10."
+    },
+    {
+      "id": "T15",
+      "type": "finance_lease_and_funding",
+      "claim": "Leases with Broadcom and financing entities after assignment total approximately USD161.2B excluding interest; the 2026 Lease Arrangement is USD125.2B within this total. Some TPU capacity began coming online in 2026, with more expected from2027. USD42B conditional note framework funds part of quarterly rent for the 2026 arrangement and had none outstanding 2026-09-30.",
+      "disclosure_date": "2026-11-10",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+      ],
+      "independent_financial_verification": false,
+      "limit": "Payments typically start ready-for-service but may start earlier if facility readiness delayed. Do not sum rent, subset and funding as procurement; not pure chip revenue or proof all capacity deployed. Assignment did not increase aggregate rent."
+    },
+    {
+      "id": "T16",
+      "type": "joint_venture_plan",
+      "claim": "Blackstone initially committed USD5B equity; first 500 MW of TPU cloud capacity planned for 2027.",
+      "event_date": "2026-05-18",
+      "sources": [
+        "https://www.blackstone.com/news/press-releases/blackstone-announces-joint-venture-with-google-to-create-new-tpu-cloud/",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+      ],
+      "independent_financial_verification": "counterparty framework confirmation only",
+      "limit": "Equity commitment not disbursement, capacity plan not operational usage."
+    },
+    {
+      "id": "T17",
+      "type": "related_party_backlog_and_backstop",
+      "claim": "Alphabet revenue backlog includes USD16.8B Crux AI agreement; joint venture is unconsolidated equity-method related party. Alphabet conditional future data-center/energy backstops up to USD10B.",
+      "as_of": "2026-09-30",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+      ],
+      "locator": "Notes 2 and 3",
+      "independent_financial_verification": false,
+      "limit": "Backlog is not cash; backstop is not equity cash deployed or realized loss. Do not automatically add with TPU repurchase guarantee as current cash need."
+    },
+    {
+      "id": "T18",
+      "type": "supplier_relationship",
+      "claim": "Broadcom agreement covers future Google custom TPUs and rack networking/components through up to 2031; Broadcom reports substantial dependence on TSMC for outsourced wafers.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+        "https://investors.broadcom.com/static-files/96641754-401f-4090-a4ab-210728c83a28"
+      ],
+      "limit": "No TPU-specific foundry revenue or profit split obtained; do not apply aggregate wafer share to every TPU generation."
+    }
+  ],
+  "inferences": [
+    {
+      "id": "I01",
+      "claim": "Lower same-quality task cost can reduce old GPU lease prices and residual values, but incremental paid usage may offset this.",
+      "status": "conditional economic inference",
+      "observable": "same-generation renewal rent, utilization, accepted task quality/SLA, cash margin, resale realization"
+    },
+    {
+      "id": "I02",
+      "claim": "System sales can lower Google's own facility CapEx while adding buyer/JV capex or finance leases; industry total need not fall.",
+      "status": "conditional accounting/economic inference",
+      "observable": "inventory, customer receipts, buyer capex/lease obligations, backstops and returns"
+    },
+    {
+      "id": "I03",
+      "claim": "Internal savings, cloud margin, model margin and semiconductor/foundry profit are distinct possible recipients of cost reductions.",
+      "status": "value-capture framework",
+      "limit": "No product-level TPU profits disclosed; do not quantify allocation."
+    },
+    {
+      "id": "I04",
+      "claim": "Multi-platform procurement diversifies hardware supply but correlated model-customer budgets can preserve shared financing risk.",
+      "status": "conditional inference",
+      "observable": "outside-customer cash receipts, vendor investment share, minimum commitment revisions and utilization"
+    }
+  ],
+  "excluded_conclusions": [
+    "All 8th-generation TPUs generally available",
+    "Oracle TPU revenue already realized",
+    "Cloud segment income equals TPU income",
+    "Vendor benchmark implies universal TCO superiority",
+    "IPO placement is already funded",
+    "GW announcements and overlapping dollar commitments are additive",
+    "TPU success mechanically lowers all industry capex",
+    "No TPU revenue because no standalone segment"
+  ]
+}

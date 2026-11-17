@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="849.6pt" height="482.4pt" viewBox="0 0 849.6 482.4" version="1.1">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:description>https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 482.4  L 849.6 482.4  L 849.6 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 84.96 332.856  L 798.624 332.856  L 798.624 115.776  L 84.96 115.776  z " style="fill: #ffffff" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="me85c5fb2ab" d="M 0 0  L 0 3.5  " style="stroke: #61788a; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use xlink:href="#me85c5fb2ab" x="169.19307" y="332.856" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_1">
+      <text x="169.19307" y="347.815375" fill="#61788a" font-family="Arial, sans-serif" text-anchor="middle" font-size="10.000"><tspan x="169.19307" dy="0">Operating cash flow</tspan></text></g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#me85c5fb2ab" x="350.92569" y="332.856" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_2">
+      <text x="350.92569" y="347.815375" fill="#61788a" font-family="Arial, sans-serif" text-anchor="middle" font-size="10.000"><tspan x="350.92569" dy="0">Cash purchases</tspan><tspan x="350.92569" dy="11.000">of PP&amp;E</tspan></text></g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#me85c5fb2ab" x="532.65831" y="332.856" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_3">
+      <text x="532.65831" y="347.815375" fill="#61788a" font-family="Arial, sans-serif" text-anchor="middle" font-size="10.000"><tspan x="532.65831" dy="0">Government incentives</tspan><tspan x="532.65831" dy="11.000">and asset sales</tspan></text></g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#me85c5fb2ab" x="714.39093" y="332.856" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_4">
+      <text x="714.39093" y="347.815375" fill="#61788a" font-family="Arial, sans-serif" text-anchor="middle" font-size="10.000"><tspan x="714.39093" dy="0">Company-adjusted</tspan><tspan x="714.39093" dy="11.000">free cash flow</tspan></text></g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <path d="M 84.96 332.856  L 798.624 332.856  " clip-path="url(#pdbbee40379)" style="fill: none; stroke: #e7eef3; stroke-width: 0.8; stroke-linecap: square" />
+     </g>
+     <g id="line2d_6">
+      <defs>
+       <path id="m04587b4ac0" d="M 0 0  L -3.5 0  " style="stroke: #61788a; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use xlink:href="#m04587b4ac0" x="84.96" y="332.856" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- 0 -->
+      <g style="fill: #61788a" transform="translate(71.855 337.233656) scale(0.11 -0.11)">
+       <defs>
+        <path id="NotoSansSC-Regular-30" d="M 1779 -83  Q 1338 -83 1008 185  Q 678 454 499 998  Q 320 1542 320 2362  Q 320 3181 499 3715  Q 678 4250 1008 4512  Q 1338 4774 1779 4774  Q 2227 4774 2553 4508  Q 2880 4243 3059 3712  Q 3238 3181 3238 2362  Q 3238 1542 3059 998  Q 2880 454 2553 185  Q 2227 -83 1779 -83  z M 1779 390  Q 2048 390 2249 595  Q 2451 800 2563 1238  Q 2675 1677 2675 2362  Q 2675 3046 2563 3478  Q 2451 3910 2249 4112  Q 2048 4314 1779 4314  Q 1517 4314 1312 4112  Q 1107 3910 995 3478  Q 883 3046 883 2362  Q 883 1677 995 1238  Q 1107 800 1312 595  Q 1517 390 1779 390  z " transform="scale(0.015625)" />
+       </defs>
+       <use xlink:href="#NotoSansSC-Regular-30" />
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <path d="M 84.96 290.291294  L 798.624 290.291294  " clip-path="url(#pdbbee40379)" style="fill: none; stroke: #e7eef3; stroke-width: 0.8; stroke-linecap: square" />
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m04587b4ac0" x="84.96" y="290.291294" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- 10 -->
+      <g style="fill: #61788a" transform="translate(65.75 294.66895) scale(0.11 -0.11)">
+       <defs>
+        <path id="NotoSansSC-Regular-31" d="M 563 0  L 563 486  L 1613 486  L 1613 3987  L 774 3987  L 774 4358  Q 1088 4416 1321 4499  Q 1555 4582 1747 4691  L 2195 4691  L 2195 486  L 3136 486  L 3136 0  L 563 0  z " transform="scale(0.015625)" />
+       </defs>
+       <use xlink:href="#NotoSansSC-Regular-31" />
+       <use xlink:href="#NotoSansSC-Regular-30" transform="translate(55.499985 0)" />
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <path d="M 84.96 247.726588  L 798.624 247.726588  " clip-path="url(#pdbbee40379)" style="fill: none; stroke: #e7eef3; stroke-width: 0.8; stroke-linecap: square" />
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m04587b4ac0" x="84.96" y="247.726588" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- 20 -->
+      <g style="fill: #61788a" transform="translate(65.75 252.104244) scale(0.11 -0.11)">
+       <defs>
+        <path id="NotoSansSC-Regular-32" d="M 282 0  L 282 346  Q 1018 992 1494 1523  Q 1971 2054 2201 2512  Q 2432 2970 2432 3373  Q 2432 3642 2339 3853  Q 2246 4064 2054 4182  Q 1862 4301 1568 4301  Q 1280 4301 1033 4147  Q 787 3994 595 3757  L 256 4090  Q 538 4403 864 4588  Q 1190 4774 1638 4774  Q 2061 4774 2365 4604  Q 2669 4435 2838 4124  Q 3008 3814 3008 3398  Q 3008 2931 2774 2451  Q 2541 1971 2128 1475  Q 1715 979 1165 461  Q 1350 474 1552 490  Q 1754 506 1933 506  L 3232 506  L 3232 0  L 282 0  z " transform="scale(0.015625)" />
+       </defs>
+       <use xlink:href="#NotoSansSC-Regular-32" />
+       <use xlink:href="#NotoSansSC-Regular-30" transform="translate(55.499985 0)" />
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_11">
+      <path d="M 84.96 205.161882  L 798.624 205.161882  " clip-path="url(#pdbbee40379)" style="fill: none; stroke: #e7eef3; stroke-width: 0.8; stroke-linecap: square" />
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m04587b4ac0" x="84.96" y="205.161882" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- 30 -->
+      <g style="fill: #61788a" transform="translate(65.75 209.539539) scale(0.11 -0.11)">
+       <defs>
+        <path id="NotoSansSC-Regular-33" d="M 1683 -83  Q 1318 -83 1040 6  Q 762 96 550 243  Q 339 390 186 563  L 486 941  Q 691 730 969 566  Q 1248 403 1645 403  Q 1926 403 2140 508  Q 2355 614 2476 809  Q 2598 1005 2598 1274  Q 2598 1555 2460 1766  Q 2323 1978 2003 2096  Q 1683 2214 1139 2214  L 1139 2662  Q 1626 2662 1907 2780  Q 2189 2899 2313 3104  Q 2438 3309 2438 3558  Q 2438 3898 2227 4099  Q 2016 4301 1645 4301  Q 1363 4301 1116 4173  Q 870 4045 672 3846  L 358 4218  Q 627 4461 944 4617  Q 1261 4774 1664 4774  Q 2061 4774 2371 4636  Q 2682 4499 2858 4236  Q 3034 3974 3034 3603  Q 3034 3174 2803 2892  Q 2573 2611 2202 2477  L 2202 2445  Q 2477 2381 2701 2221  Q 2925 2061 3059 1817  Q 3194 1574 3194 1254  Q 3194 838 2989 537  Q 2784 237 2445 77  Q 2106 -83 1683 -83  z " transform="scale(0.015625)" />
+       </defs>
+       <use xlink:href="#NotoSansSC-Regular-33" />
+       <use xlink:href="#NotoSansSC-Regular-30" transform="translate(55.499985 0)" />
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13">
+      <path d="M 84.96 162.597176  L 798.624 162.597176  " clip-path="url(#pdbbee40379)" style="fill: none; stroke: #e7eef3; stroke-width: 0.8; stroke-linecap: square" />
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m04587b4ac0" x="84.96" y="162.597176" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- 40 -->
+      <g style="fill: #61788a" transform="translate(65.75 166.974833) scale(0.11 -0.11)">
+       <defs>
+        <path id="NotoSansSC-Regular-34" d="M 2176 0  L 2176 3200  Q 2176 3373 2189 3622  Q 2202 3872 2208 4051  L 2182 4051  Q 2093 3885 2000 3709  Q 1907 3533 1805 3360  L 736 1760  L 3354 1760  L 3354 1293  L 128 1293  L 128 1677  L 2080 4691  L 2726 4691  L 2726 0  L 2176 0  z " transform="scale(0.015625)" />
+       </defs>
+       <use xlink:href="#NotoSansSC-Regular-34" />
+       <use xlink:href="#NotoSansSC-Regular-30" transform="translate(55.499985 0)" />
+      </g>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_15">
+      <path d="M 84.96 120.032471  L 798.624 120.032471  " clip-path="url(#pdbbee40379)" style="fill: none; stroke: #e7eef3; stroke-width: 0.8; stroke-linecap: square" />
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m04587b4ac0" x="84.96" y="120.032471" style="fill: #61788a; stroke: #61788a; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- 50 -->
+      <g style="fill: #61788a" transform="translate(65.75 124.410127) scale(0.11 -0.11)">
+       <defs>
+        <path id="NotoSansSC-Regular-35" d="M 1677 -83  Q 1312 -83 1033 6  Q 755 96 547 237  Q 339 378 173 538  L 467 922  Q 602 787 765 668  Q 928 550 1139 476  Q 1350 403 1619 403  Q 1894 403 2121 537  Q 2349 672 2483 921  Q 2618 1171 2618 1510  Q 2618 2010 2352 2294  Q 2086 2579 1645 2579  Q 1414 2579 1241 2508  Q 1069 2438 864 2304  L 550 2502  L 704 4691  L 2982 4691  L 2982 4192  L 1216 4192  L 1094 2835  Q 1248 2925 1417 2973  Q 1587 3021 1798 3021  Q 2189 3021 2509 2864  Q 2829 2707 3021 2374  Q 3213 2042 3213 1523  Q 3213 1011 2992 652  Q 2771 294 2419 105  Q 2067 -83 1677 -83  z " transform="scale(0.015625)" />
+       </defs>
+       <use xlink:href="#NotoSansSC-Regular-35" />
+       <use xlink:href="#NotoSansSC-Regular-30" transform="translate(55.499985 0)" />
+      </g>
+     </g>
+    </g>
+    <g id="text_11">
+     <text x="59.230312" y="246.316" fill="#536b7c" font-family="Arial, sans-serif" transform="rotate(-90 59.230312 246.316)" font-size="11.000"><tspan x="59.230312" dy="0">USD billion</tspan></text></g>
+   </g>
+   <g id="patch_3">
+    <path d="M 117.399273 332.856  L 220.986866 332.856  L 220.986866 145.686219  L 117.399273 145.686219  z " clip-path="url(#pdbbee40379)" style="fill: #719cbe" />
+   </g>
+   <g id="patch_4">
+    <path d="M 299.131893 192.975607  L 402.719487 192.975607  L 402.719487 145.686219  L 299.131893 145.686219  z " clip-path="url(#pdbbee40379)" style="fill: #b9cedb" />
+   </g>
+   <g id="patch_5">
+    <path d="M 480.864513 192.975607  L 584.452107 192.975607  L 584.452107 191.545433  L 480.864513 191.545433  z " clip-path="url(#pdbbee40379)" style="fill: #8db6bd" />
+   </g>
+   <g id="patch_6">
+    <path d="M 662.597134 332.856  L 766.184727 332.856  L 766.184727 191.545433  L 662.597134 191.545433  z " clip-path="url(#pdbbee40379)" style="fill: #315e7c" />
+   </g>
+   <g id="text_12">
+    <!-- 43.973 -->
+    <g style="fill: #294d6b" transform="translate(149.54307 140.578454) scale(0.12 -0.12)">
+     <defs>
+      <path id="NotoSansSC-Bold-34" d="M 2157 0  L 2157 2912  Q 2157 3117 2169 3401  Q 2182 3686 2195 3898  L 2163 3898  Q 2080 3706 1984 3514  Q 1888 3322 1786 3123  L 1050 1946  L 3597 1946  L 3597 1229  L 134 1229  L 134 1869  L 1901 4742  L 3034 4742  L 3034 0  L 2157 0  z " transform="scale(0.015625)" />
+      <path id="NotoSansSC-Bold-33" d="M 1747 -90  Q 1376 -90 1081 -3  Q 787 83 560 233  Q 333 384 166 570  L 608 1165  Q 826 966 1085 822  Q 1344 678 1664 678  Q 1907 678 2089 755  Q 2272 832 2371 979  Q 2470 1126 2470 1338  Q 2470 1574 2358 1744  Q 2246 1914 1964 2003  Q 1683 2093 1171 2093  L 1171 2771  Q 1606 2771 1856 2864  Q 2106 2957 2211 3120  Q 2317 3283 2317 3494  Q 2317 3770 2150 3926  Q 1984 4083 1683 4083  Q 1434 4083 1219 3971  Q 1005 3859 794 3667  L 307 4250  Q 621 4512 966 4669  Q 1312 4826 1728 4826  Q 2182 4826 2531 4678  Q 2880 4531 3072 4249  Q 3264 3968 3264 3565  Q 3264 3181 3059 2905  Q 2854 2630 2477 2483  L 2477 2451  Q 2739 2381 2953 2224  Q 3168 2067 3293 1830  Q 3418 1594 3418 1280  Q 3418 851 3190 544  Q 2963 237 2582 73  Q 2202 -90 1747 -90  z " transform="scale(0.015625)" />
+      <path id="NotoSansSC-Bold-2e" d="M 1043 -90  Q 787 -90 620 89  Q 454 269 454 525  Q 454 794 620 966  Q 787 1139 1043 1139  Q 1293 1139 1459 966  Q 1626 794 1626 525  Q 1626 269 1459 89  Q 1293 -90 1043 -90  z " transform="scale(0.015625)" />
+      <path id="NotoSansSC-Bold-39" d="M 1632 -90  Q 1190 -90 867 70  Q 544 230 333 448  L 832 1018  Q 960 870 1165 774  Q 1370 678 1581 678  Q 1786 678 1971 771  Q 2157 864 2294 1072  Q 2432 1280 2512 1625  Q 2592 1971 2592 2477  Q 2592 3085 2480 3443  Q 2368 3802 2182 3958  Q 1997 4115 1760 4115  Q 1587 4115 1440 4019  Q 1293 3923 1206 3731  Q 1120 3539 1120 3245  Q 1120 2970 1203 2787  Q 1286 2605 1436 2515  Q 1587 2426 1792 2426  Q 1990 2426 2201 2547  Q 2413 2669 2586 2957  L 2630 2323  Q 2509 2150 2333 2022  Q 2157 1894 1971 1824  Q 1786 1754 1613 1754  Q 1222 1754 915 1917  Q 608 2080 432 2409  Q 256 2739 256 3245  Q 256 3731 461 4086  Q 666 4442 1005 4634  Q 1344 4826 1747 4826  Q 2086 4826 2390 4688  Q 2694 4550 2934 4265  Q 3174 3981 3312 3536  Q 3450 3091 3450 2477  Q 3450 1805 3302 1321  Q 3155 838 2896 524  Q 2637 211 2310 60  Q 1984 -90 1632 -90  z " transform="scale(0.015625)" />
+      <path id="NotoSansSC-Bold-37" d="M 1190 0  Q 1222 614 1299 1136  Q 1376 1658 1517 2122  Q 1658 2586 1885 3034  Q 2112 3482 2451 3949  L 320 3949  L 320 4742  L 3469 4742  L 3469 4166  Q 3059 3667 2806 3206  Q 2554 2746 2422 2272  Q 2291 1798 2230 1248  Q 2170 698 2138 0  L 1190 0  z " transform="scale(0.015625)" />
+     </defs>
+     <use xlink:href="#NotoSansSC-Bold-34" />
+     <use xlink:href="#NotoSansSC-Bold-33" transform="translate(58.999985 0)" />
+     <use xlink:href="#NotoSansSC-Bold-2e" transform="translate(117.999969 0)" />
+     <use xlink:href="#NotoSansSC-Bold-39" transform="translate(150.499954 0)" />
+     <use xlink:href="#NotoSansSC-Bold-37" transform="translate(209.499939 0)" />
+     <use xlink:href="#NotoSansSC-Bold-33" transform="translate(268.499924 0)" />
+    </g>
+   </g>
+   <g id="text_13">
+    <!-- −11.110 -->
+    <g style="fill: #294d6b" transform="translate(327.73569 140.578454) scale(0.12 -0.12)">
+     <defs>
+      <path id="NotoSansSC-Bold-2212" d="M 250 2061  L 250 2733  L 3526 2733  L 3526 2061  L 250 2061  z " transform="scale(0.015625)" />
+      <path id="NotoSansSC-Bold-31" d="M 525 0  L 525 768  L 1549 768  L 1549 3757  L 685 3757  L 685 4346  Q 1043 4410 1302 4502  Q 1562 4595 1786 4742  L 2483 4742  L 2483 768  L 3373 768  L 3373 0  L 525 0  z " transform="scale(0.015625)" />
+      <path id="NotoSansSC-Bold-30" d="M 1888 -90  Q 1408 -90 1046 188  Q 685 467 483 1020  Q 282 1574 282 2394  Q 282 3206 483 3747  Q 685 4288 1046 4557  Q 1408 4826 1888 4826  Q 2374 4826 2732 4554  Q 3091 4282 3292 3744  Q 3494 3206 3494 2394  Q 3494 1574 3292 1020  Q 3091 467 2732 188  Q 2374 -90 1888 -90  z M 1888 646  Q 2099 646 2259 806  Q 2419 966 2508 1347  Q 2598 1728 2598 2394  Q 2598 3053 2508 3427  Q 2419 3802 2259 3952  Q 2099 4102 1888 4102  Q 1690 4102 1526 3952  Q 1363 3802 1267 3427  Q 1171 3053 1171 2394  Q 1171 1728 1267 1347  Q 1363 966 1526 806  Q 1690 646 1888 646  z " transform="scale(0.015625)" />
+     </defs>
+     <use xlink:href="#NotoSansSC-Bold-2212" />
+     <use xlink:href="#NotoSansSC-Bold-31" transform="translate(58.999985 0)" />
+     <use xlink:href="#NotoSansSC-Bold-31" transform="translate(117.999969 0)" />
+     <use xlink:href="#NotoSansSC-Bold-2e" transform="translate(176.999954 0)" />
+     <use xlink:href="#NotoSansSC-Bold-31" transform="translate(209.499939 0)" />
+     <use xlink:href="#NotoSansSC-Bold-31" transform="translate(268.499924 0)" />
+     <use xlink:href="#NotoSansSC-Bold-30" transform="translate(327.499908 0)" />
+    </g>
+   </g>
+   <g id="text_14">
+    <!-- +0.336 -->
+    <g style="fill: #294d6b" transform="translate(513.00831 186.437668) scale(0.12 -0.12)">
+     <defs>
+      <path id="NotoSansSC-Bold-2b" d="M 1536 704  L 1536 2061  L 250 2061  L 250 2733  L 1536 2733  L 1536 4096  L 2234 4096  L 2234 2733  L 3526 2733  L 3526 2061  L 2234 2061  L 2234 704  L 1536 704  z " transform="scale(0.015625)" />
+      <path id="NotoSansSC-Bold-36" d="M 2022 -90  Q 1690 -90 1379 51  Q 1069 192 832 483  Q 595 774 457 1225  Q 320 1677 320 2304  Q 320 2963 470 3443  Q 621 3923 877 4227  Q 1133 4531 1462 4678  Q 1792 4826 2157 4826  Q 2592 4826 2909 4669  Q 3226 4512 3437 4288  L 2938 3725  Q 2816 3866 2617 3968  Q 2419 4070 2214 4070  Q 1926 4070 1692 3904  Q 1459 3738 1318 3354  Q 1178 2970 1178 2304  Q 1178 1690 1290 1322  Q 1402 954 1587 787  Q 1773 621 2003 621  Q 2182 621 2326 720  Q 2470 819 2560 1014  Q 2650 1210 2650 1498  Q 2650 1779 2563 1958  Q 2477 2138 2326 2227  Q 2176 2317 1971 2317  Q 1779 2317 1568 2198  Q 1357 2080 1178 1786  L 1133 2419  Q 1261 2598 1437 2726  Q 1613 2854 1801 2918  Q 1990 2982 2144 2982  Q 2541 2982 2851 2822  Q 3162 2662 3334 2336  Q 3507 2010 3507 1498  Q 3507 1011 3305 656  Q 3104 301 2765 105  Q 2426 -90 2022 -90  z " transform="scale(0.015625)" />
+     </defs>
+     <use xlink:href="#NotoSansSC-Bold-2b" />
+     <use xlink:href="#NotoSansSC-Bold-30" transform="translate(58.999985 0)" />
+     <use xlink:href="#NotoSansSC-Bold-2e" transform="translate(117.999969 0)" />
+     <use xlink:href="#NotoSansSC-Bold-33" transform="translate(150.499954 0)" />
+     <use xlink:href="#NotoSansSC-Bold-33" transform="translate(209.499939 0)" />
+     <use xlink:href="#NotoSansSC-Bold-36" transform="translate(268.499924 0)" />
+    </g>
+   </g>
+   <g id="text_15">
+    <!-- 33.199 -->
+    <g style="fill: #294d6b" transform="translate(694.74093 186.437668) scale(0.12 -0.12)">
+     <use xlink:href="#NotoSansSC-Bold-33" />
+     <use xlink:href="#NotoSansSC-Bold-33" transform="translate(58.999985 0)" />
+     <use xlink:href="#NotoSansSC-Bold-2e" transform="translate(117.999969 0)" />
+     <use xlink:href="#NotoSansSC-Bold-31" transform="translate(150.499954 0)" />
+     <use xlink:href="#NotoSansSC-Bold-39" transform="translate(209.499939 0)" />
+     <use xlink:href="#NotoSansSC-Bold-39" transform="translate(268.499924 0)" />
+    </g>
+   </g>
+  </g>
+  <g id="text_16">
+   <text x="59.472" y="33.768" fill="#294d6b" font-family="Arial, sans-serif" font-size="17.000"><tspan x="59.472" dy="0">Micron: strong realized cash; customer deposits are outside this operating cash bridge</tspan></text></g>
+  <g id="text_17">
+   <text x="59.472" y="67.536" fill="#294d6b" font-family="Arial, sans-serif" font-size="10.500"><tspan x="59.472" dy="0">FY26Q4 ended 3 September | 43.973 - 11.110 + 0.327 + 0.009 = 33.199B</tspan></text></g>
+  <g id="text_18">
+   <text x="59.472" y="383.508" fill="#294d6b" font-family="Arial, sans-serif" font-size="10.000"><tspan x="59.472" dy="0">Operating cash less cash purchases alone: 32.863B. The company-adjusted measure adds incentives and asset-sale proceeds.</tspan></text></g>
+  <g id="text_19">
+   <text x="59.472" y="412.452" fill="#294d6b" font-family="Arial, sans-serif" font-size="10.000"><tspan x="59.472" dy="0">About 12.3B of quarterly customer deposits is classified as financing, not deducted again from operating cash. Q4 had 14 weeks.</tspan></text></g>
+  <g id="text_20">
+   <text x="59.472" y="446.22" fill="#294d6b" font-family="Arial, sans-serif" font-size="9.000"><tspan x="59.472" dy="0">Sources: Micron FY26Q4 results, official deck p. 43 and script pp. 8-9. Financial statements are unaudited.</tspan></text></g>
+ </g>
+ <defs>
+  <clipPath id="pdbbee40379">
+   <rect x="84.96" y="115.776" width="713.664" height="217.08" />
+  </clipPath>
+ </defs>
+</svg>
