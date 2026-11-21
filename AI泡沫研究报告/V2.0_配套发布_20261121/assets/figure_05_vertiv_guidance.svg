@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+<title id="title">Subtract the realized half before interpreting the remaining guidance</title>
+<desc id="desc">Subtract the realized half before interpreting the remaining guidance Vertiv | 2026 adjusted free cash flow | USD million | Guidance issued 2026-07-29 Full-year guidance midpoint: 2500.0 H1 actual: 1578.1 Implied H2: 921.9 Full-year range 2400-2600 -&gt; implied H2 arithmetic remainder 821.9-1021.9 Full-year guidance - realized first half = implied remaining half Do not simply multiply Q2 cash of 925.3 by four; H1 includes working-capital changes and is not normalized FCFF. Sources: Vertiv Q2 earnings release and 2026 Q2 Form 10-Q. Author's like-for-like arithmetic, not a new earnings forecast.</desc>
+<rect width="1200" height="480" fill="#ffffff" />
+<g font-family="Noto Sans SC, sans-serif" fill="#294759">
+<text x="45" y="48" font-size="27.000" font-weight="700" style="font-size:27.000px;font-family:Arial,sans-serif">Subtract the realized half before interpreting the remaining guidance</text>
+<text x="45" y="86" font-size="19.000" fill="#647b8e" style="font-size:19.000px;font-family:Arial,sans-serif">Vertiv | 2026 adjusted free cash flow | USD million | Guidance issued 2026-07-29</text>
+<rect x="45" y="125" width="1110" height="205" rx="8" fill="#f5f9fc" stroke="#c7d9e4" />
+<text x="70" y="165" font-size="22.000" style="font-size:22.000px;font-family:Arial,sans-serif">Full-year guidance midpoint: 2500.0</text>
+<rect x="70" y="195" width="656.49" height="67" fill="#78aaca" />
+<rect x="726.49" y="195" width="383.51" height="67" fill="#d4e5ef" />
+<text x="90" y="235" font-size="22.000" style="font-size:22.000px;font-family:Arial,sans-serif">H1 actual: 1578.1</text>
+<text x="750" y="235" font-size="22.000" style="font-size:22.000px;font-family:Arial,sans-serif">Implied H2: 921.9</text>
+<text x="70" y="302" font-size="20.000" style="font-size:20.000px;font-family:Arial,sans-serif">Full-year range 2400-2600 -&gt; implied H2 arithmetic remainder 821.9-1021.9</text>
+<text x="45" y="375" font-size="21.000" style="font-size:21.000px;font-family:Arial,sans-serif">Full-year guidance - realized first half = implied remaining half</text>
+<text x="45" y="413" font-size="19.000" fill="#647b8e" style="font-size:19.000px;font-family:Arial,sans-serif">Do not simply multiply Q2 cash of 925.3 by four; H1 includes working-capital changes and is not normalized FCFF.</text>
+<text x="45" y="449" font-size="17.000" fill="#647b8e" style="font-size:17.000px;font-family:Arial,sans-serif">Sources: Vertiv Q2 earnings release and 2026 Q2 Form 10-Q. Author's like-for-like arithmetic, not a new earnings forecast.</text>
+</g></svg>
