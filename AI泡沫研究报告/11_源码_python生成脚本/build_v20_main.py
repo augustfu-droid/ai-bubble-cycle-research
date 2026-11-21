@@ -43,7 +43,9 @@ CHAPTER_PATTERNS = {
     "en": r"^## Chapter (\d+):",
 }
 CHINESE_NUMBERS = "一 二 三 四 五 六 七 八 九 十 十一 十二 十三".split()
-UPDATED_CHAPTERS = {1, 2, 3, 6, 8, 9, 10, 11, 12}
+CHAPTER_COUNT = 13
+FULL_CHAPTER_UPDATES = {9, 12, 13}
+UPDATED_CHAPTERS = {1, 2, 3, 6, 8, 10, 11} | FULL_CHAPTER_UPDATES
 ARCHIVED_SECTIONS = {"1.2.4", "1.2.11", "4.4", "4.16"}
 LOCAL_MARKET_CASES = re.compile(
     r"中际旭创|新易盛|天孚通信|江波龙|兆易创新|澜起科技|中文在线|兑吧|快手|"
@@ -116,7 +118,7 @@ def updates(lang):
     if set(result) != UPDATED_CHAPTERS or len(parts) != 1 + 2 * len(result):
         raise ValueError(f"{lang}: missing or repeated update containers")
     for n, content in result.items():
-        if n in (9, 12):
+        if n in FULL_CHAPTER_UPDATES:
             heading = re.match(CHAPTER_PATTERNS[lang], content)
             if heading is None or len(re.findall(r"^## ", content, flags=re.M)) != 1:
                 raise ValueError(f"{lang}: chapter {n} requires one chapter heading")
@@ -134,8 +136,8 @@ def compose(lang):
             raise ValueError(f"{lang}: revision location in chapter {chapter}: {before[:60]}")
         old[chapter] = old[chapter].replace(before, after, 1)
     chapters = []
-    for n in range(1, 13):
-        if n in (9, 12):
+    for n in range(1, CHAPTER_COUNT + 1):
+        if n in FULL_CHAPTER_UPDATES:
             chapters.append(new[n])
             continue
         chapter = retire_legacy_cases(old[n])
@@ -145,7 +147,7 @@ def compose(lang):
         chapters.append(chapter)
     body = "\n\n".join(chapters)
     headings = re.findall(CHAPTER_PATTERNS[lang], body, re.M)
-    expected = CHINESE_NUMBERS[:12] if lang == "zh" else [str(n) for n in range(1, 13)]
+    expected = CHINESE_NUMBERS[:CHAPTER_COUNT] if lang == "zh" else [str(n) for n in range(1, CHAPTER_COUNT + 1)]
     if headings != expected:
         raise ValueError(f"{lang}: unexpected chapter order")
     bibliography = zh_renderer.bibliography(body) if lang == "zh" else en_renderer.bibliography(body)
@@ -160,9 +162,9 @@ def edition_note(lang):
             "基础研究的财期和原始证据日期保留。增量截至北京时间 2026 年 11 月 21 日，"
             "本周市场观察截至美东 11 月 20 日常规收盘。"
             "带日期的章节内容记录了本轮新查证的事实、既有证据的复用和作者算例。\n\n"
-            "第九章改为供电与验收的工程账，第十二章新增五年资产回收试算。"
-            "原区域市场案例可在 V1.9 存档按原日期和小节号查阅。英文选用 V1.9 英文全文中与原中文主报告对应的章节，"
-            "两版均编为十二章。V1.9.1 与 V1.9.2 的后续观点及登记时点见第十一章。\n\n"
+            "第九章为供电与验收，第十二章为五年资产回收，第十三章写区域市场与现金传导。"
+            "第十三章沿用 V1.9 原区域章节的分析框架，并使用北美、欧洲、韩国和日本的公开案例。英文选用 V1.9 英文全文中与原中文主报告对应的章节，"
+            "两版均编为十三章。V1.9.1 与 V1.9.2 的后续观点及登记时点见第十一章。\n\n"
             "[V1.9 主报告存档](../V1.9现行正文版/01_主报告.md)\n"
         )
     return (
@@ -171,10 +173,10 @@ def edition_note(lang):
         "original periods and evidence dates. The additions run through November 21, 2026 in Beijing. "
         "This week's market observations end at the November 20 regular U.S. close. Dated updates identify "
         "new checks, inherited evidence and illustrative calculations.\n\n"
-        "Chapter 9 now follows power delivery and service acceptance. Chapter 12 adds a five-year asset recovery "
-        "example. The original regional-market cases are dated and accessible in V1.9. The English edition uses "
+        "Chapter 9 follows power delivery and service acceptance. Chapter 12 covers five-year asset recovery. "
+        "Chapter 13 applies V1.9's regional framework to public cases in North America, Europe, South Korea and Japan. The English edition uses "
         "the chapters of the V1.9 English full report corresponding to the Chinese main report. Both editions "
-        "now have twelve chapters. Chapter 11 identifies the distinct dates of the V1.9.1 and V1.9.2 records.\n\n"
+        "now have thirteen chapters. Chapter 11 identifies the distinct dates of the V1.9.1 and V1.9.2 records.\n\n"
         "[V1.9 English archive](../V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.md)\n"
     )
 
@@ -343,6 +345,7 @@ def main():
             "editorial_date": DATE,
             "base_version": "V1.9",
             "base_cutoff": BASE_CUTOFF,
+            "chapters": CHAPTER_COUNT,
             "market_cutoff_et": "2026-11-20 regular close",
             "builder_sha256": sha256(Path(__file__)),
             "baseline_edits_sha256": sha256(SRC / "baseline_edits.json"),

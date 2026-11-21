@@ -16,13 +16,13 @@ An outside customer pays a model provider **USD 100**. The provider spends **USD
 
 For each project, record the dates that equipment and rent become payable, power and acceptance tests finish, customers actually pay, and equipment stops earning as planned. Record recognized revenue, funded financing, enforceable minimum payments, guarantee exposure and cash actually paid in their respective columns. Even a profitable company can face an interim funding gap, and a project that pays its bills can fall short of recovering the initial equipment cost.
 
-Chapters 1 and 2 trace the new financial and contractual evidence. Chapters 9, 11 and 12 cover delivery milestones, tests of cycle transmission and the five-year cash example. Chapters 4 through 6 continue the original research on paid video, coding economics and the path from adoption to cash.
+Chapters 1 and 2 trace the new financial and contractual evidence. Chapters 9, 11 and 12 cover delivery milestones, tests of cycle transmission and the five-year cash example. Chapter 13 follows the chain through regional operating examples. Chapters 4 through 6 continue the original research on paid video, coding economics and the path from adoption to cash.
 
 ## Edition and evidence dates
 
 V2.0 builds directly on the October 31, 2026 V1.9 main report. The underlying research retains its original periods and evidence dates. The additions run through November 21, 2026 in Beijing. This week's market observations end at the November 20 regular U.S. close. Dated updates identify new checks, inherited evidence and illustrative calculations.
 
-Chapter 9 now follows power delivery and service acceptance. Chapter 12 adds a five-year asset recovery example. The original regional-market cases are dated and accessible in V1.9. The English edition uses the chapters of the V1.9 English full report corresponding to the Chinese main report. Both editions now have twelve chapters. Chapter 11 identifies the distinct dates of the V1.9.1 and V1.9.2 records.
+Chapter 9 follows power delivery and service acceptance. Chapter 12 covers five-year asset recovery. Chapter 13 applies V1.9's regional framework to public cases in North America, Europe, South Korea and Japan. The English edition uses the chapters of the V1.9 English full report corresponding to the Chinese main report. Both editions now have thirteen chapters. Chapter 11 identifies the distinct dates of the V1.9.1 and V1.9.2 records.
 
 [V1.9 English archive](../V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.md)
 
@@ -2826,11 +2826,51 @@ Preserve the observation dates, subjects and conditions in the November 1 record
 
 The near-term record should therefore keep market prices, financing completion, project milestones and operating collections in separate columns. November's equity losses establish market repricing. Anthropic's closing establishes completed financing. NVIDIA's financial statements establish a period of strong supplier cash generation. Only subsequent contract and cash evidence can determine whether those observations connect into the broader adverse mechanism, or whether growing paid use and better capital discipline are absorbing earlier investment.
 
+## Chapter 13: Regional Markets and the Transmission of Cash Pressure
+
+A North American data center can use lithography, memory and test equipment from several regions and bill a customer based elsewhere. One build-out may contribute to several companies' revenue. Cash moves in different quarters under each contract. Chapter 9 of V1.9 tracked orders, collections, financing and valuation as separate steps. The following cases put that method to work across regions. [V1.9 regional chapter](../V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.md)
+
+### 13.1 Place the facility, the customer and the payment on the same timeline
+
+Record the location of the facility, the delivery counterparty and the legal entity that ultimately pays. For a single batch, follow when the order becomes enforceable, when the equipment ships, when the customer accepts delivery and revenue can be recognized under the contract, when payment is received and when the customer decides to renew or expand. Invoicing and revenue recognition can also fall on different dates. This separates power availability, equipment demand and the end customer's own budget.
+
+Track minimum purchases, payment terms, advances, guarantees, supplier investments in customers and cancellation rights. One customer can place orders through several intermediaries that ultimately depend on the same payer. Leave undisclosed counterparty identities open until a company release or actual payment provides a link.
+
+### 13.2 Four regions viewed from five places in the supply chain
+
+The examples are selected by business activity. Amounts remain in the reporting currency and the reporting periods are stated for each case. Consolidated figures can include activity in several regions. Vertiv's regional sales rates use its own reported geographic groups.
+
+**North American cloud operator.** On November 10 CoreWeave reported consolidated results for the quarter ended September 30, 2026. Revenue was **USD 3.661 billion**. Net cash provided by operating activities was **USD 1.975 billion** and cash purchases of property and equipment, including capitalized internal-use software, were **USD 9.441 billion**. The simple difference was **negative USD 7.466 billion**, a measure of the gap between these two cash lines for the quarter. The company reported over **1.7 GW** of active power and over **4.6 GW** of contracted power. The two largest customers separately accounted for about **30%** and **24%** of quarterly revenue. Follow project acceptance, load, collections and the funding terms attached to equipment. [CoreWeave quarterly results and cash flows](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm) · [CoreWeave Form 10-Q](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm)
+
+**Power and cooling.** Vertiv reported **USD 4.313 billion** of third-quarter 2026 net sales and **USD 794 million** of consolidated operating cash flow, up **61%** and **64%** year on year, respectively. Under its own regional reporting, net sales rose **75%** in the Americas, **50%** in Asia-Pacific and **23%** in Europe, the Middle East and Africa. Its corresponding organic rates were **66%**, **48%** and **19%**, after adjustments for factors including acquisitions and currencies. Sales diverged across regions even within the same equipment supplier. Attributing these changes to a particular campus would require its orders, deliveries and payments. [Vertiv quarterly and regional results](https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm)
+
+**European semiconductor equipment.** Netherlands-based ASML reported **EUR 11.662 billion** of net sales for the third quarter ended September 27. Installed Base Management net sales of **EUR 3.289 billion** covered services and field options and represented about **28.2%** of sales. Quarterly operating cash flow was about **EUR 11.798 billion**. Subtracting cash purchases of property, plant and equipment and intangible assets gives about **EUR 11.350 billion**. Changes in assets and liabilities produced a **EUR 7.009 billion** net operating cash-flow contribution. The company attributed its strong free cash flow partly to orders and related customer down payments. Reconcile advances with subsequent deliveries to assess repeatable cash. Equipment orders, upgrades on installed systems and customer receipts can have different timing. [ASML quarterly results](https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026) · [ASML consolidated cash-flow statements](https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm) · [ASML prepared remarks, p. 2](https://investor.asml.com/static-files/40c56a6b-1460-4f69-9340-6a869560d24b)
+
+**South Korean memory.** In preliminary K-IFRS results released on October 28, SK hynix reported third-quarter 2026 revenue of **KRW 104.6155 trillion** and operating profit of **KRW 83.3338 trillion**. Operating profit increased **38%** from the prior quarter and net profit declined **58%**. The company reported that HBM4 and high-value server sales expanded. Evaluate operating performance and net profit separately, then follow product mix, inventory, collections and the delivery and pricing terms of long-term capacity agreements. [SK hynix preliminary quarterly results](https://news.skhynix.com/en/q3-2026-business-results/)
+
+**Japanese testing.** Advantest reported **JPY 845.2 billion** of net sales for the six months ended September 30, a **60.5%** year-on-year increase. Operating cash flow was **JPY 306.966 billion** over the same six months, while inventory increases used **JPY 119.541 billion** in the cash-flow statement. Sales growth and inventory investment can coexist. Management also cited rising DRAM prices among the reasons for expecting a lower second-half operating margin than in the first half. This last point is a management outlook. [Advantest semiannual results](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf) · [Advantest Q&A, questions 5–6](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)
+
+These results locate cash pressure at different points. The U.S. cloud example grew while cash purchases ran ahead of operating cash. The Dutch equipment supplier generated strong cash in the quarter, where the timing of receipts matters. The Korean memory company's operating and net profits moved in different directions. Business role and contract timing help explain these differences before any broader inference about a region.
+
+### 13.3 Follow price changes and funding into cash
+
+Consider a hypothetical equipment order of 100. The customer prepays 30 and the supplier pays 45 for inputs. Suppose acceptance completes performance and gives the supplier an unconditional right to payment. It recognizes the full revenue and offsets the advance, leaving 70 as a receivable. With no new cash paid at acceptance, the supplier still has 15 of net cash tied up across the two payments. If the buyer postpones acceptance while the supplier's input payments stay fixed, the cash remains tied up longer. Start with the actual milestone dates and payment terms.
+
+Software has its own sequence. A coding tool saves cash only when hours translate into more billable deliveries or lower outlays. Contract income less labor, tools, compute and other delivery costs gives a starting point. Then check whether the customer negotiates a lower price, when the work is accepted and how much rework it takes. Differences in wages and procurement terms can change the result across regions.
+
+Keep financing by legal entity. Equity proceeds, available debt, supplier payment terms, guarantees and customer operating budgets all affect who can pay. For a procurement restriction, identify the product, license, delivery date and qualified alternatives. A financing instrument can be listed in a different jurisdiction from the site it funds. Identify the source, availability date and terms of that cash.
+
+### 13.4 Higher earnings can coexist with lower modeled equity value
+
+Take the V1.9 sensitivity example. Hypothetical earnings before interest, taxes, depreciation and amortization (EBITDA) are 100, enterprise value at 20 times EBITDA is 2,000 and net debt is 200. Implied equity value is 1,800. At EBITDA of 120 and a multiple of 15, equity value is 1,600, **11.1%** lower than the starting level. Keeping net debt fixed isolates the variables. For a real business, investments, refinancing and dilution change the cash schedule and equity value. Future cash flows also need to be discounted. [V1.9 hypothetical valuation](../V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.md)
+
+Follow the next round of disclosures for three conditions. **Delivery.** If projects can reschedule rental and advance payments and redeploy equipment, slower construction can help the sector absorb prior investment. **Credit.** If one payer's late payments affect multiple suppliers and produce tighter financing terms or contract renegotiations, the evidence of transmission strengthens. **Counterevidence.** Services, upgrades and product transitions can offset slower orders in individual regions. Match shipments, concentration, receivables and post-period settlements before revising the conclusion.
+
 <!-- REFERENCES_START -->
 
 ## Reference index
 
-This edition contains 300 references after exact-URL deduplication. The links beside the relevant passages are retained, and full URLs are listed below in order of first citation for use in print. Titles use the checked company, reporting period and document type, or the source shorthand used in the text; they are not invariably official titles. The period, verification limits and access restrictions stated in the relevant passages govern. This list does not mean that every historical source was obtained anew during this research round.
+This edition contains 306 references after exact-URL deduplication. The links beside the relevant passages are retained, and full URLs are listed below in order of first citation for use in print. Titles use the checked company, reporting period and document type, or the source shorthand used in the text; they are not invariably official titles. The period, verification limits and access restrictions stated in the relevant passages govern. This list does not mean that every historical source was obtained anew during this research round.
 
 1. [NVIDIA FY27Q3 results](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027) | nvidianews.nvidia.com
 
@@ -4031,6 +4071,30 @@ This edition contains 300 references after exact-URL deduplication. The links be
 300. [Reuters market-reaction report](https://www.investing.com/news/stock-market-news/intel-warning-sparks-chip-rout-as-pc-weakness-clouds-turnaround-4987123?source=newscura) | www.investing.com
 
     <span class="ref-url">https://www.investing.com/news/stock-market-news/intel-warning-sparks-chip-rout-as-pc-weakness-clouds-turnaround-4987123?source=newscura</span>
+
+301. [CoreWeave quarterly results and cash flows](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm) | www.sec.gov
+
+    <span class="ref-url">https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm</span>
+
+302. [CoreWeave Form 10-Q](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm) | www.sec.gov
+
+    <span class="ref-url">https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm</span>
+
+303. [Vertiv quarterly and regional results](https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm) | www.sec.gov
+
+    <span class="ref-url">https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm</span>
+
+304. [ASML: Q3 2026 US GAAP financial statements](https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm) | www.sec.gov  Quarter ended 2026-09-27. A company filing hosted by the SEC does not imply SEC endorsement of this report's conclusions.
+
+    <span class="ref-url">https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm</span>
+
+305. [Advantest semiannual results](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf) | www.advantest.com
+
+    <span class="ref-url">https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf</span>
+
+306. [Advantest Q&A, questions 5–6](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf) | www.advantest.com
+
+    <span class="ref-url">https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf</span>
 
 ## Disclosure
 
