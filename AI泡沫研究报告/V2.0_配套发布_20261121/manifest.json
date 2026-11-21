@@ -1,0 +1,77 @@
+{
+  "version": "V2.0",
+  "editorial_date": "2026-11-21",
+  "base_version": "V1.9",
+  "base_cutoff": "2026-10-31",
+  "market_cutoff_et": "2026-11-20 regular close",
+  "builder_sha256": "4062c0fe3b2e87ce21798ee3e743369b5925492735b0b24f7193d212e99458bd",
+  "baseline_edits_sha256": "8f1fbbda3c9ba9401478da1c9511d1aaca32f6a1190f0773f61fafcec6319ee0",
+  "reports": [
+    {
+      "language": "zh",
+      "stem": "AI周期与泡沫研究_主报告_V2.0_20261121",
+      "baseline": "AI泡沫研究报告/V1.9现行正文版/01_主报告.md",
+      "baseline_sha256": "0b86622b36ec2af35902b7c27b9efc550d282fbdf520678c61eff2085aebafc4",
+      "opening_sha256": "8f144de765be902cd794cdda7dc7a13016726a59b43e35ba76d45041a132d1d0",
+      "updates_sha256": "79b2ce947dc9f800e0fae89786fb0f4661f5b58d155e1e71f036f1a891e57075",
+      "references": 290,
+      "sections_in_contents": 131,
+      "pages": 159,
+      "formats": {
+        "md": {
+          "file": "AI周期与泡沫研究_主报告_V2.0_20261121.md",
+          "sha256": "984c22969632dcd7f14d6e6ee0d89017251921c41fe17eefaa6201a59716c45d"
+        },
+        "html": {
+          "file": "AI周期与泡沫研究_主报告_V2.0_20261121.html",
+          "sha256": "5f67d2b61d977bd3394effa0f1cace3fbe00c00ab086acea43d7e640a421889b"
+        },
+        "pdf": {
+          "file": "AI周期与泡沫研究_主报告_V2.0_20261121.pdf",
+          "sha256": "c9aef9c2c178c0b9311a7d27eb263154c7c68c7b1777d440bc609ac21563b58c"
+        }
+      }
+    },
+    {
+      "language": "en",
+      "stem": "AI_Cycles_and_Bubble_Main_Report_EN_V2.0_2026-11-21",
+      "baseline": "AI泡沫研究报告/V1.9_English_Full_Report/AI_Cycles_and_Bubble_Full_Report_EN_2026-10-31.md",
+      "baseline_sha256": "c27bd74a2ddf5ad1a995c1228c3837b86cef5c00c7654f47c28b4981edf1c7e5",
+      "opening_sha256": "9674ed0613f6b9ad4f177c5e69f029fef4adb6997cc82707ab254dffda4613dc",
+      "updates_sha256": "f83680835944b0b2a167c7a9522751bc636f557e8e7f66a6e3d9f1f164616937",
+      "references": 300,
+      "sections_in_contents": 135,
+      "pages": 206,
+      "formats": {
+        "md": {
+          "file": "AI_Cycles_and_Bubble_Main_Report_EN_V2.0_2026-11-21.md",
+          "sha256": "82549f978dfe4316ad4df352fd6b41198d2fe5309e11b37396aef2e15185f7d4"
+        },
+        "html": {
+          "file": "AI_Cycles_and_Bubble_Main_Report_EN_V2.0_2026-11-21.html",
+          "sha256": "9568ce0d432ecf1a66ea04d64ea1c6551eb7dabdddb9ef5a271800bdb95fd0d6"
+        },
+        "pdf": {
+          "file": "AI_Cycles_and_Bubble_Main_Report_EN_V2.0_2026-11-21.pdf",
+          "sha256": "50da2499a895a913cc8d588433fc3376ea5b6b89402bfc5f1a9017b98728ad69"
+        }
+      }
+    }
+  ],
+  "assets": {
+    "assets/V1.6.1_台积电季度_20261027.svg": "5f9452a853fc80b947b536bf8ed718a6ecbaf9726b41f1de63115609abf8b00c",
+    "assets/V1.5.1_APLD收入构成_20261009.svg": "5263e18e79554566d92a6edb41a47a5ae1ca574539343ff10d4562fb2354d443",
+    "assets/V1.5.1_Oracle_FY27Q1资金桥_20260915.svg": "24de00632c508ae60052dcc812f2740efe2b36231dabbd129137763949f13ee8",
+    "assets/V1.6.1_Meta现金桥_20261027.svg": "1669efb21b427373f2a5efa34936d1f1f714eb6a3f55c9c4857ba5fe1ae074db",
+    "assets/V1.5.1_CoreWeave融资现金桥_20260924.svg": "52ac88c3145552558567dad5ffa61d4e8013e7d39e410cd713513bf649c9823a",
+    "assets/V1.5.1_维谛现金指引桥_20260908.svg": "25701ab20878863a93b55e734abb06ed962679a7789dbf540cea2eb473483604",
+    "assets/V1.5.1_美光现金桥_20261001.svg": "2f4daca3dc9dfe79b477143fe983ec004349854eeb2ac51c787327ed5f3c210e",
+    "assets/figure_07_meta_cash.svg": "18c5caea64aca9d50ed6e46c294ec64fa9781eda622d8d1936ff9f5d46abd985",
+    "assets/figure_06_micron_cash.svg": "d7cc240dae767be5cbe429cc85ff2ce803793faa087ee1ff98983401977910ab",
+    "assets/figure_03_coreweave_financing.svg": "a718f5ec429275257edeee44d709b011644a7a47f896939af597f2543584de55",
+    "assets/figure_02_apld_revenue.svg": "25d9660278ab057886cb3635d17b2f53c604d81b0bb2e1852883d16a0f9387d6",
+    "assets/figure_05_vertiv_guidance.svg": "8eccc7c56f033120689144e4e9837e406701285e455172afc05f527fe5b777b2",
+    "assets/figure_08_tsmc_quarters.svg": "347e023439b3458b717ca0e3d20753757b7c88b2fe50cf35a941aa9a829240a2",
+    "assets/figure_04_oracle_cash.svg": "d4514bd001baa04d5b1804c42cd7e80235857114f442a34cdc6e987232338a05"
+  }
+}
